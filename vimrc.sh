@@ -1,4 +1,4 @@
-source ${HOME}/Dropbox/TomCraig/Dotfiles/vundle_settings.sh
+source ${HOME}/Dotfiles/vundle_settings.sh
 
 set number                                  "show line numbers"
 set laststatus=2                            "show the status line at the bottom"
@@ -42,7 +42,7 @@ nnoremap <Leader>t <C-]><CR>
 nnoremap <Leader>G :Gblame<CR>
 nnoremap <Leader>p :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
-nmap <leader>bq :bp <BAR> bd #<CR>  
+nmap <leader>bq :bp <BAR> bd #<CR>
 
 nmap <leader>y <Plug>yankstack_substitute_older_paste
 nmap <leader>Y <Plug>yankstack_substitute_newer_paste
@@ -63,7 +63,7 @@ nnoremap <leader>b :10PreviewMarks<CR>
 "Searching"
 """""""""""
 "Search - Recurisve grep (text) "
-command! -nargs=1 GrepYourHeartOut call s:recursive_ag(<q-args>)  
+command! -nargs=1 GrepYourHeartOut call s:recursive_ag(<q-args>)
 
 nnoremap ff :GrepYourHeartOut<Space>
 function! s:recursive_ag(query)
@@ -73,23 +73,23 @@ function! s:recursive_ag(query)
 endfunction
 
 "File Search"
-nnoremap FF :CtrlP<CR>                                            
+nnoremap FF :CtrlP<CR>
 
-vmap <Leader>y "*y   
+vmap <Leader>y "*y
 
 """""""""
 "Buffers"
 """"""""
-set hidden                                       
+set hidden
 nnoremap <silent> <C-l> :bnext<CR>
-nnoremap <silent> <C-h> :bprevious<CR> 
+nnoremap <silent> <C-h> :bprevious<CR>
 nnoremap <silent> <C-q> :bd<CR>
 
 """"""""""""""
 "Marks colors"
 """"""""""""""
 "Visual Mark Searching"
-let g:mwDefaultHighlightingPalette = 'extended' 
+let g:mwDefaultHighlightingPalette = 'extended'
 
 highlight MarkWord1 ctermbg=Magenta ctermfg=Black guibg=#8CCBEA guifg=Black
 highlight MarkWord2 ctermbg=Cyan ctermfg=Black guibg=#8CCBEA guifg=Black
@@ -137,11 +137,11 @@ let g:tmuxline_preset = {
       \'a'    : '#[fg=white,bg=green,bold] #S ',
       \'b'    : '#[fg=white,bg=blue,bold] #(~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_current_db) ',
       \'c'    : '#[fg=black,bg=yellow,bold] #(python ~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_errors) ',
-      \'d'    : '#[fg=black,bg=red,bold] #(python ~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_failing_tests) ', 
+      \'d'    : '#[fg=black,bg=red,bold] #(python ~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_failing_tests) ',
       \'win'  : '#[fg=white,bg=default] #I >#[fg=white,bg=default] #W ',
       \'cwin' : '#[fg=white,bg=black] #I >#[fg=red,bg=black] #W #[fg=white,bg=default]',
       \'x'    : '#[fg=white,bg=magenta,bold] #(~/Dropbox/TomCraig/Dotfiles/tmux-swinsian.sh) ',
-      \'y'    : '#[fg=default,bg=yellow,bold] #(~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py git_branch) ', 
+      \'y'    : '#[fg=default,bg=yellow,bold] #(~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py git_branch) ',
       \'z'    : '#[fg=black,bg=cyan,bold] %-I:%M '}
 
 let g:tmuxline_separators = {
@@ -207,26 +207,26 @@ map <Leader>f <Plug>(easymotion-k)
 """"""""""""""""""""""""""
 let hostname = substitute(system('hostname'), '\n', '', '')
 if hostname == 'ZENO.local'
-    let g:syntastic_mode_map = { 'mode': 'active' } 
+    let g:syntastic_mode_map = { 'mode': 'active' }
 elseif hostname == 'tcraig-m01'
     " Column Limit "
     let g:syntastic_python_flake8_args='--ignore=E501,W191'
-    let g:syntastic_mode_map = { 'mode': 'passive' } 
+    let g:syntastic_mode_map = { 'mode': 'passive' }
     set noet
 else
-    let g:syntastic_mode_map = { 'mode': 'active' } 
+    let g:syntastic_mode_map = { 'mode': 'active' }
 endif
 
 """"""""""""""""""""""""
 "God damned fucking tabs"
 """"""""""""""""""""""""
-set shiftround  
-set smartindent 
-set autoindent  
+set shiftround
+set smartindent
+set autoindent
 
 let s:tabwidth=4
 exec 'set tabstop='    .s:tabwidth
 exec 'set shiftwidth=' .s:tabwidth
 exec 'set softtabstop='.s:tabwidth
 
-set expandtab 
+set expandtab

@@ -1,7 +1,7 @@
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
-dotfiles_location="${HOME}/Dropbox/TomCraig/Dotfiles"
+dotfiles_location="${HOME}/Dotfiles"
 personal_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Personal"
 pandora_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Pandora"
 
@@ -95,7 +95,7 @@ alias sv="set -o vi"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
 alias scpa="cd ${HOME}/Dropbox/TomCraig/Scripts/Pandora"
 alias scpe="cd ${HOME}/Dropbox/TomCraig/Scripts/Personal"
-alias dot="cd ${HOME}/Dropbox/TomCraig/Dotfiles"
+alias dot="cd ${HOME}/Dotfiles"
 
 alias mo="cd ${HOME}/Dropbox/TomCraig/Movies"
 alias mu="cd ${HOME}/Dropbox/TomCraig/Music"
