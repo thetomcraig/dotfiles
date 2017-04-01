@@ -5,7 +5,7 @@ dotfiles_location="${HOME}/Dotfiles"
 personal_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Personal"
 pandora_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Pandora"
 
-source "${HOME}/Dotfiles/shell_prompt.sh"
+# source "${HOME}/Dotfiles/shell_prompt.sh"
 ZSH_THEME="robbyrussell"
 
 

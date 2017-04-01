@@ -73,6 +73,19 @@ end
 k:bind({}, 'p', nil, afun)
 
 afun = function()
+  hs.eventtap.keyStroke({'ctrl'}, ']')
+  k.triggered = true
+end
+k:bind({}, ']', nil, afun)
+
+afun = function()
+  hs.eventtap.keyStroke({'ctrl'}, '[')
+  k.triggered = true
+end
+k:bind({}, '[', nil, afun)
+
+
+afun = function()
   hs.eventtap.keyStroke({'ctrl'}, 'f')
   k.triggered = true
 end
