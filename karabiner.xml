@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+
+<root>
+  <item>
+    <name>F19 to HYPER</name>
+    <identifier>private.f192f19</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::F19,
+
+      KeyCode::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L
+  </autogen>
+  </item>
+
+  <item>
+    <name>HYPER HJKL to arrows</name>
+    <identifier>private.hyper2arrows</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::CURSOR_DOWN
+  </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::K |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::CURSOR_UP
+  </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::L |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::CURSOR_RIGHT
+  </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::H |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::CURSOR_LEFT
+  </autogen>
+  </item>
+
+  <item>
+    <name>HYPER Backspace to delete</name>
+    <identifier>private.hyper2del</identifier>
+    <autogen>
+    __KeyToKey__
+    KeyCode::DELETE |
+    ModifierFlag::OPTION_L |
+    ModifierFlag::SHIFT_L |
+    ModifierFlag::CONTROL_L |
+    ModifierFlag::COMMAND_L,
+
+    KeyCode::FORWARD_DELETE
+  </autogen>
+  </item>
+
+  <item>
+    <name>HYPER w,q to vim save,quit</name>
+    <identifier>private.hyper2vim</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::W |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::ESCAPE,
+      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+      KeyCode::W,
+      KeyCode::ENTER
+  </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::Q |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::ESCAPE,
+      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+      KeyCode::Q,
+      KeyCode::ENTER
+  </autogen>
+  </item>
+
+  <item>
+    <name>HYPER c,n,p to tmux new,next,previous</name>
+    <identifier>private.hyper2tmuxnewnextprev</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::C |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::B,
+      ModifierFlag::CONTROL_L,
+      KeyCode::C
+  </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::N |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::B,
+      ModifierFlag::CONTROL_L,
+      KeyCode::N
+  </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::P |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::B,
+      ModifierFlag::CONTROL_L,
+      KeyCode::P
+  </autogen>
+  </item>
+
+  <item>
+    <name>HYPER i,o to bash back,forward 1 word</name>
+    <identifier>private.hyper2bashnextprevword</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::I |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::ESCAPE,
+      KeyCode::B
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::O |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::ESCAPE,
+      KeyCode::F
+    </autogen>
+  </item>
+
+  <item>
+    <name>HYPER =,- to pageup, pagedown</name>
+    <identifier>private.hyper2pageuppagedown</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::EQUAL |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::CURSOR_UP,
+      ModifierFlag::FN
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::MINUS |
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+
+      KeyCode::CURSOR_DOWN,
+      ModifierFlag::FN
+    </autogen>
+  </item>
+
+  <item>
+    <name>HYPER numbers to tmux panes</name>
+    <identifier>private.hyper2tmuxnumbers</identifier>
+    <autogen>
+    __KeyToKey__
+    KeyCode::KEY_1 |
+    ModifierFlag::OPTION_L |
+    ModifierFlag::SHIFT_L |
+    ModifierFlag::CONTROL_L |
+    ModifierFlag::COMMAND_L,
+
+    KeyCode::B,
+    ModifierFlag::CONTROL_L,
+    KeyCode::KEY_1
+  </autogen>
+    <autogen>
+    __KeyToKey__
+    KeyCode::KEY_2 |
+    ModifierFlag::OPTION_L |
+    ModifierFlag::SHIFT_L |
+    ModifierFlag::CONTROL_L |
+    ModifierFlag::COMMAND_L,
+
+    KeyCode::B,
+    ModifierFlag::CONTROL_L,
+    KeyCode::KEY_2
+  </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_3 |
+        ModifierFlag::OPTION_L |
+        ModifierFlag::SHIFT_L |
+        ModifierFlag::CONTROL_L |
+        ModifierFlag::COMMAND_L,
+        
+        KeyCode::B,
+        ModifierFlag::CONTROL_L,
+        KeyCode::KEY_3
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_4 |
+        ModifierFlag::OPTION_L |
+        ModifierFlag::SHIFT_L |
+        ModifierFlag::CONTROL_L |
+        ModifierFlag::COMMAND_L,
+        
+        KeyCode::B,
+        ModifierFlag::CONTROL_L,
+        KeyCode::KEY_4
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_5 |
+        ModifierFlag::OPTION_L |
+        ModifierFlag::SHIFT_L |
+        ModifierFlag::CONTROL_L |
+        ModifierFlag::COMMAND_L,
+        
+        KeyCode::B,
+        ModifierFlag::CONTROL_L,
+        KeyCode::KEY_5
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_6 |
+        ModifierFlag::OPTION_L |
+        ModifierFlag::SHIFT_L |
+        ModifierFlag::CONTROL_L |
+        ModifierFlag::COMMAND_L,
+        
+        KeyCode::B,
+        ModifierFlag::CONTROL_L,
+        KeyCode::KEY_6
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_7 |
+        ModifierFlag::OPTION_L |
+        ModifierFlag::SHIFT_L |
+        ModifierFlag::CONTROL_L |
+        ModifierFlag::COMMAND_L,
+        
+        KeyCode::B,
+        ModifierFlag::CONTROL_L,
+        KeyCode::KEY_7
+    </autogen>
+  </item>
+  <item>
+    <name>HYPER f to next tmux window</name>
+    <identifier>private.hyper2tmuxnext</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F|
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+      
+      KeyCode::B,
+      ModifierFlag::CONTROL_L,
+      KeyCode::O
+    </autogen>
+  </item>
+  <item>
+    <name>HYPER q to next kill tmux session</name>
+    <identifier>private.hyper2tmuxkill</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::Q|
+      ModifierFlag::OPTION_L |
+      ModifierFlag::SHIFT_L |
+      ModifierFlag::CONTROL_L |
+      ModifierFlag::COMMAND_L,
+      
+      KeyCode::B,
+      ModifierFlag::CONTROL_L,
+      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+      KeyCode::K,
+      KeyCode::I,
+      KeyCode::L,
+      KeyCode::L,
+      KeyCode::MINUS,
+      KeyCode::S,
+      KeyCode::E,
+      KeyCode::S,
+      KeyCode::S,
+      KeyCode::I,
+      KeyCode::O,
+      KeyCode::N
+
+    </autogen>
+  </item>
+</root>
