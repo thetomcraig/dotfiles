@@ -5,8 +5,7 @@ dotfiles_location="${HOME}/Dotfiles"
 personal_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Personal"
 pandora_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Pandora"
 
-# source "/Users/tcraig/Dotfiles/shell_prompt.sh"
-source "$pandora_scripts_location/slingshot_settings.sh"
+source "${HOME}/Dotfiles/shell_prompt.sh"
 ZSH_THEME="robbyrussell"
 
 
