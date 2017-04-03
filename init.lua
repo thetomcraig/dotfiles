@@ -72,17 +72,6 @@ afun = function()
 end
 k:bind({}, 'p', nil, afun)
 
-afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, ']')
-  k.triggered = true
-end
-k:bind({}, ']', nil, afun)
-
-afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '[')
-  k.triggered = true
-end
-k:bind({}, '[', nil, afun)
 
 
 afun = function()
@@ -159,5 +148,3 @@ end
 
 -- Bind the Hyper key
 f18 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
-
-

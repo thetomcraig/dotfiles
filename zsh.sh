@@ -8,7 +8,6 @@ pandora_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Pandora"
 # source "${HOME}/Dotfiles/shell_prompt.sh"
 ZSH_THEME="robbyrussell"
 
-
 #Aliases
 alias rr=my_grep
 my_grep() {
