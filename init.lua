@@ -46,11 +46,12 @@ end
 k:bind({}, 'o', nil, afun)
 
 -- HYPER+backspace: Forward delete
-afun = function()
-  hs.eventtap.keyStroke({}, 'forwarddelete')
-  k.triggered = true
-end
 k:bind({}, 'delete', nil, afun)
+afun = function()
+  local event = require("hs.eventtap").event
+  event.newKeyEvent(modifiers, 'forwarddelete', true):post()
+end
+k:bind({}, 'delete', afun, nil, afun)
 
 
 -- For tmux
