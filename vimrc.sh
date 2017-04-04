@@ -23,7 +23,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ag
 " set wildignore+=*/tmp/*, *.so, *.sw*, *.sql, *.zip, *.pyc, */tags/* "
 
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""  --path-to-agignore /Users/tcraig/Dropbox/TomCraig/Scripts/Pandora/agignore.sh'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""  --path-to-agignore /Users/tcraig/slingshot-utils/agignore.sh'
 
 
 """"""""""""""""""""""""""
@@ -68,7 +68,7 @@ command! -nargs=1 GrepYourHeartOut call s:recursive_ag(<q-args>)
 nnoremap ff :GrepYourHeartOut<Space>
 function! s:recursive_ag(query)
   let &l:q=a:query
-  execute "Ag -r" a:query " --path-to-agignore /Users/tcraig/Dropbox/TomCraig/Scripts/Pandora/agignore.sh"
+  execute "Ag -r" a:query " --path-to-agignore /Users/tcraig/slingshot-utils/agignore.sh"
 
 endfunction
 
@@ -135,13 +135,13 @@ let g:airline_theme='term'
 "then that snapshop loaded into the tmux.conf"
 let g:tmuxline_preset = {
       \'a'    : '#[fg=white,bg=green,bold] #S ',
-      \'b'    : '#[fg=white,bg=blue,bold] #(~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_current_db) ',
-      \'c'    : '#[fg=black,bg=yellow,bold] #(python ~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_errors) ',
-      \'d'    : '#[fg=black,bg=red,bold] #(python ~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py get_failing_tests) ',
+      \'b'    : '#[fg=white,bg=blue,bold] #(python ~/slingshot-utils/slingshot_functions.py get_current_db) ',
+      \'c'    : '#[fg=black,bg=yellow,bold] #(python ~/slingshot-utils/slingshot_functions.py get_errors) ',
+      \'d'    : '#[fg=black,bg=red,bold] #(python ~/slingshot-utils/slingshot_functions.py get_failing_tests) ',
       \'win'  : '#[fg=white,bg=default] #I >#[fg=white,bg=default] #W ',
       \'cwin' : '#[fg=white,bg=black] #I >#[fg=red,bg=black] #W #[fg=white,bg=default]',
-      \'x'    : '#[fg=white,bg=magenta,bold] #(~/Dropbox/TomCraig/Dotfiles/tmux-swinsian.sh) ',
-      \'y'    : '#[fg=default,bg=yellow,bold] #(~/Dropbox/TomCraig/Scripts/Pandora/slingshot_utils.py git_branch) ',
+      \'x'    : '#[fg=white,bg=magenta,bold] #(~/Dotfiles/tmux-swinsian.sh) ',
+      \'y'    : '#[fg=default,bg=yellow,bold] #(~/slingshot-utils/slingshot_functions.py git_branch) ',
       \'z'    : '#[fg=black,bg=cyan,bold] %-I:%M '}
 
 let g:tmuxline_separators = {

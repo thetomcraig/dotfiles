@@ -2,8 +2,7 @@
 #MY PERSONAL BASH PROFILE
 #########################
 dotfiles_location="${HOME}/Dotfiles"
-personal_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Personal"
-pandora_scripts_location="${HOME}/Dropbox/TomCraig/Scripts/Pandora"
+scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
 # source "${HOME}/Dotfiles/shell_prompt.sh"
 ZSH_THEME="robbyrussell"
@@ -60,6 +59,7 @@ notify_func() {
 }
 
 alias s='source ${HOME}/.zshrc'
+alias b='vim ${HOME}/Dotfiles/zsh.sh'
 alias g="git status"
 alias ga="git add"
 alias gb="git branch"
@@ -86,7 +86,7 @@ alias trh="tmux select-layout even-horizontal"
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
 alias pf="pip freeze"
-alias p="python $personal_scripts_location/start_ipython.py"
+alias p="python $scripts_location/start_ipython.py"
 
 alias b="vim $dotfiles_location/zsh.sh"
 alias v="vim $dotfiles_location/vimrc.sh"
@@ -96,8 +96,6 @@ alias tms="vim $dotfiles_location/tmux_line_snapshot.conf"
 # alias tom="cd ${HOME}/Dropbox/TomCraig"
 alias sv="set -o vi"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
-alias scpa="cd ${HOME}/Dropbox/TomCraig/Scripts/Pandora"
-alias scpe="cd ${HOME}/Dropbox/TomCraig/Scripts/Personal"
 alias dot="cd ${HOME}/Dotfiles"
 
 alias mo="cd ${HOME}/Dropbox/TomCraig/Movies"
@@ -110,7 +108,7 @@ alias E="cd ${HOME}/Dropbox/TomCraig/Projects/EROS"
 alias L="cd ${HOME}/Dropbox/TomCraig/Logs"
 alias LE="cd ${HOME}/Dropbox/TomCraig/Logs/EROS/"
 alias wE="workon EROS"
-alias erosstart="$personal_scripts_location/eros_start.sh eros"
+alias erosstart="$scripts_location/eros_start.sh eros"
 alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
 
@@ -138,3 +136,7 @@ bindkey '^ ' autosuggest-accept
 #alwaysontop > /dev/null
 #unautoclear > /dev/null
 #autoclear > /dev/null
+
+# Extra slingshot stuff
+alias slingstart='${HOME}/slingshot-utils/slingshot_start.sh'
+
