@@ -76,6 +76,7 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
+alias tmux="tmux -u"
 alias ta="tmux a -t"
 alias ts="tmux ls"
 alias tk="tmux kill-session -t"
@@ -93,8 +94,6 @@ alias v="vim $dotfiles_location/vimrc.sh"
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias tm="vim $dotfiles_location/tmux.conf"
 alias tms="vim $dotfiles_location/tmux_line_snapshot.conf"
-# alias tom="cd ${HOME}/Dropbox/TomCraig"
-alias sv="set -o vi"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
 alias dot="cd ${HOME}/Dotfiles"
 
@@ -124,12 +123,14 @@ SAVEHIST=10
 HISTFILE=~/.zsh_history
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
+
 plugins=(git, zsh-autosuggestions, zsh-syntax-highlighting)
 bindkey '^ ' autosuggest-accept
 
 
 #Start alwaysontop
-# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
+source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
 
 #Fix alwaysontop, it gets fucked up somehow
 #unalwaysontop > /dev/null
@@ -139,4 +140,11 @@ bindkey '^ ' autosuggest-accept
 
 # Extra slingshot stuff
 alias slingstart='${HOME}/slingshot-utils/slingshot_start.sh'
+alias slingbranch='${HOME}/slingshot-utils/slingshot_functions.py create_branch $1'
 
+#TMUX
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+    export TERM='xterm-256color'
+else
+    export TERM='xterm-color'
+fi

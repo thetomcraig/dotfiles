@@ -21,7 +21,6 @@ Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete.vim'
-"Plugin 'python-mode/python-mode'"
 Plugin 'edkolev/promptline.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-surround'
