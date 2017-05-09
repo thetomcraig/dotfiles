@@ -176,10 +176,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 #unautoclear > /dev/null
 #autoclear > /dev/null
 
-# Extra slingshot stuff
-alias slingstart='${HOME}/slingshot-utils/slingshot_start.sh'
-alias slingbranch='${HOME}/slingshot-utils/slingshot_functions.py create_branch $1'
-
 #TMUX
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
     export TERM='xterm-256color'
@@ -187,21 +183,3 @@ else
     export TERM='xterm-color'
 fi
 
-if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
-	index=$(tmux display-message -p '#I')
-	if [ $index -eq 1 ]; then
-		tmux rename-window "💻"
-	elif [ $index -eq 2 ]; then
-		tmux rename-window "💎"
-	elif [ $index -eq 3 ]; then
-	  tmux rename-window "💾"
-	elif [ $index -eq 4 ]; then
-	  tmux rename-window "🥒"
-	elif [ $index -eq 5 ]; then
-	 tmux rename-window "🐍"
-	elif [ $index -eq 6 ]; then
-		tmux rename-window "📝"
-	elif [ $index -eq 7 ]; then
-	  tmux rename-window "🔌"
-    fi
-fi
