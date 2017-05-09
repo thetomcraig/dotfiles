@@ -1,13 +1,11 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
+source ${HOME}/Dotfiles/vim_and_ideavim_common.sh
 
-set number                                  "show line numbers"
+
+let mapleader = "<Space>"
 set laststatus=2                            "show the status line at the bottom"
 set showmatch                               "Show the matching paren"
-set incsearch                               "highlight while typing search"
-set hlsearch                                "highlight all search results"
 set smartcase                               "ignore case if search pattern is all lowercase"
-"set paste"                                 "To fix paste issues - Need to have this off for neocomplete"
-set backspace=2                             "To make it work all normal like"
 set mouse=nicr                              "Scroll with mouse"
 syntax on                                   "turn on the syntax coloring"
 
@@ -26,21 +24,17 @@ set runtimepath^=~/.vim/bundle/ag
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""  --path-to-agignore /Users/tcraig/slingshot-utils/agignore.sh'
 
 
-""""""""""""""""""""""""""
-"General Leader shortcuts"
-""""""""""""""""""""""""""
-let mapleader = "\<Space>"
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>wq :wq<CR>
-nnoremap <Leader>nh :noh<CR>
-nnoremap <Leader>o :on<CR>
-nnoremap <Leader>i :set list<CR>
-nnoremap <Leader>ni :set nolist<CR>
-nnoremap <Leader>T :TagbarToggle<CR>
-nnoremap <Leader>t <C-]><CR>
-nnoremap <Leader>G :Gblame<CR>
-nnoremap <Leader>p :echo expand("%:p")<CR>
+""""""""""""""""""""""""""""""""""
+"General Space (Leader) shortcuts"
+""""""""""""""""""""""""""""""""""
+nnoremap <Space>i :set list<CR>
+nnoremap <Space>ni :set nolist<CR>
+nnoremap <Space>T :TagbarToggle<CR>
+nnoremap <Space>o :on<CR>
+nnoremap <Space>T :TagbarToggle<CR>
+nnoremap <Space>t <C-]><CR>
+nnoremap <Space>G :Gblame<CR>
+nnoremap <Space>p :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
 nmap <leader>bq :bp <BAR> bd #<CR>
 
@@ -75,7 +69,7 @@ endfunction
 "File Search"
 nnoremap FF :CtrlP<CR>
 
-vmap <Leader>y "*y
+vmap <Space>y "*y
 
 """""""""
 "Buffers"
@@ -108,17 +102,17 @@ highlight MarkWord14 ctermbg=White ctermfg=Green guibg=#8CCBEA guifg=Black
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
-nmap <Leader>M :Marks<CR>
-nmap <Leader>N :MarkClear<CR>
-nmap <Leader>1 <k1>
-nmap <Leader>2 <k2>
-nmap <Leader>3 <k3>
-nmap <Leader>4 <k4>
-nmap <Leader>5 <k5>
-nmap <Leader>6 <k6>
-nmap <Leader>7 <k7>
-nmap <Leader>8 <k8>
-nmap <Leader>9 <k9>
+nmap <Space>M :Marks<CR>
+nmap <Space>N :MarkClear<CR>
+nmap <Space>1 <k1>
+nmap <Space>2 <k2>
+nmap <Space>3 <k3>
+nmap <Space>4 <k4>
+nmap <Space>5 <k5>
+nmap <Space>6 <k6>
+nmap <Space>7 <k7>
+nmap <Space>8 <k8>
+nmap <Space>9 <k9>
 
 
 """"""""
@@ -197,9 +191,9 @@ set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 """"""""""""
 "Easy motion"
 """"""""""""
-map <Leader>s <Plug>(easymotion-s)
-map <Leader>g <Plug>(easymotion-j)
-map <Leader>f <Plug>(easymotion-k)
+map <Space>s <Plug>(easymotion-s)
+map <Space>g <Plug>(easymotion-j)
+map <Space>f <Plug>(easymotion-k)
 
 
 """"""""""""""""""""""""""
