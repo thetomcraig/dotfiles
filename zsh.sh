@@ -4,8 +4,15 @@
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
+
+source "$dotfiles_location/themes/gruvbox-dark.sh"
+#source "$dotfiles_location/themes/gruvbox-light.sh"
+#source "$dotfiles_location/themes/gotham.sh"
+#source "$dotfiles_location/themes/iceberg.sh"
+
 # source "${HOME}/Dotfiles/shell_prompt.sh"
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="bira"
 
 #Aliases
 alias rr=my_grep
@@ -84,6 +91,9 @@ alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
 
+alias cat="ccat"
+alias rm="trash"
+
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
 alias pf="pip freeze"
@@ -150,26 +160,26 @@ HISTFILE=~/.zsh_history
 autoload -Uz compinit
 compinit
 
-zstyle ':completion:*' auto-description 'specify: %d'
-zstyle ':completion:*' completer _expand _complete _correct _approximate
-zstyle ':completion:*' format 'Completing %d'
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
-zstyle ':completion:*' menu select=long
-zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle ':completion:*' use-compctl false
-zstyle ':completion:*' verbose true
-
-zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-
+#zstyle ':completion:*' auto-description 'specify: %d'
+#zstyle ':completion:*' completer _expand _complete _correct _approximate
+#zstyle ':completion:*' format 'Completing %d'
+#zstyle ':completion:*' group-name ''
+#zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+#zstyle ':completion:*' list-colors ''
+#zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+#zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+#zstyle ':completion:*' menu select=long
+#zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+#zstyle ':completion:*' use-compctl false
+#zstyle ':completion:*' verbose true
+#
+#zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+#zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+#
 
 #Start alwaysontop
 #source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
-source ${HOME}/Dropbox/TomCraig/Projects/ALWAYS_ON_TOP/alwaysontop.sh > /dev/null
+# source ${HOME}/Dropbox/TomCraig/Projects/ALWAYS_ON_TOP/alwaysontop.sh > /dev/null
 
 #Fix alwaysontop, it gets fucked up somehow
 #unalwaysontop > /dev/null
