@@ -115,35 +115,6 @@ nmap <Space>8 <k8>
 nmap <Space>9 <k9>
 
 
-""""""""
-"Airline"
-""""""""
-"Enable the list of buffers"
-let g:airline#extensions#tabline#enabled = 1
-"Show just the filename"
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme='term'
-"This will change the tmux bar when vim is loaded,"
-"any change to the tmux bar should be made here,"
-"then a snapshot created,"
-"then that snapshop loaded into the tmux.conf"
-let g:tmuxline_preset = {
-      \'a'    : '#[fg=white,bg=green,bold] #S ',
-      \'b'    : '#[fg=white,bg=blue,bold] #(python ~/slingshot-utils/slingshot_functions.py get_current_db) ',
-      \'c'    : '#[fg=black,bg=yellow,bold] #(python ~/slingshot-utils/slingshot_functions.py get_errors) ',
-      \'d'    : '#[fg=black,bg=red,bold] #(python ~/slingshot-utils/slingshot_functions.py get_failing_tests) ',
-      \'win'  : '#[fg=white,bg=default] #I >#[fg=white,bg=default] #W ',
-      \'cwin' : '#[fg=white,bg=black] #I >#[fg=red,bg=black] #W #[fg=white,bg=default]',
-      \'x'    : '#[fg=white,bg=magenta,bold] #(~/Dotfiles/tmux-swinsian.sh) ',
-      \'y'    : '#[fg=default,bg=yellow,bold] #(~/slingshot-utils/slingshot_functions.py git_branch) ',
-      \'z'    : '#[fg=black,bg=cyan,bold] %-I:%M '}
-
-let g:tmuxline_separators = {
-    \ 'left' : '',
-    \ 'left_alt': '>',
-    \ 'right' : '',
-    \ 'right_alt' : '<',
-    \ 'space' : ''}
 
 """"""""""
 "NERD Tree"

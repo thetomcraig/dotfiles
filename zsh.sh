@@ -5,16 +5,12 @@ dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
 
-source "$dotfiles_location/themes/gruvbox-dark.sh"
-#source "$dotfiles_location/themes/gruvbox-light.sh"
-#source "$dotfiles_location/themes/gotham.sh"
-#source "$dotfiles_location/themes/iceberg.sh"
-
-# source "${HOME}/Dotfiles/shell_prompt.sh"
-# ZSH_THEME="robbyrussell"
+export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 ZSH_THEME="bira"
 
-#Aliases
+
+# Aliases
 alias rr=my_grep
 my_grep() {
 	#Recursive and colorized
@@ -66,7 +62,7 @@ notify_func() {
 }
 
 alias s='source ${HOME}/.zshrc'
-alias b='vim ${HOME}/Dotfiles/zsh.sh'
+alias b='vim $dotfiles_location/zsh.sh'
 alias g="git status"
 alias ga="git add"
 alias gb="git branch"
@@ -83,7 +79,7 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
-alias tmux="tmux -u"
+
 alias ta="tmux a -t"
 alias ts="tmux ls"
 alias tk="tmux kill-session -t"
@@ -107,12 +103,12 @@ alias tms="vim $dotfiles_location/tmux_line_snapshot.conf"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
 alias dot="cd ${HOME}/Dotfiles"
 
+# Media
 alias mo="cd ${HOME}/Dropbox/TomCraig/Movies"
 alias mu="cd ${HOME}/Dropbox/TomCraig/Music"
 alias tv="cd ${HOME}/Dropbox/TomCraig/TV"
 
-
-#EROS
+# EROS
 alias E="cd ${HOME}/Dropbox/TomCraig/Projects/EROS"
 alias L="cd ${HOME}/Dropbox/TomCraig/Logs"
 alias LE="cd ${HOME}/Dropbox/TomCraig/Logs/EROS/"
@@ -120,16 +116,13 @@ alias wE="workon EROS"
 alias erosstart="$scripts_location/eros_start.sh eros"
 alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
-
-#SSH
+# SSH
 alias sshariston="ssh tom@10.0.1.9"
 
-#History
-#Remove duplicates
+# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTCONTROL=ignoredups
-#ignore same sucessive entries.
-HISTCONTROL=ignoreboth
-SAVEHIST=10
+HISTSIZE=1000
+SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -139,57 +132,5 @@ plugins=(git, zsh-autosuggestions, zsh-syntax-highlighting)
 setopt auto_cd
 bindkey '^ ' autosuggest-accept
 
-
-# Set up the prompt
-
-autoload -Uz promptinit
-promptinit
-prompt adam1
-
-setopt histignorealldups sharehistory
-
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
-
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
-HISTFILE=~/.zsh_history
-
-# Use modern completion system
-autoload -Uz compinit
-compinit
-
-#zstyle ':completion:*' auto-description 'specify: %d'
-#zstyle ':completion:*' completer _expand _complete _correct _approximate
-#zstyle ':completion:*' format 'Completing %d'
-#zstyle ':completion:*' group-name ''
-#zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-#zstyle ':completion:*' list-colors ''
-#zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-#zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
-#zstyle ':completion:*' menu select=long
-#zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-#zstyle ':completion:*' use-compctl false
-#zstyle ':completion:*' verbose true
-#
-#zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-#zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-#
-
 #Start alwaysontop
 # source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
-
-#Fix alwaysontop, it gets fucked up somehow
-#unalwaysontop > /dev/null
-#alwaysontop > /dev/null
-#unautoclear > /dev/null
-#autoclear > /dev/null
-
-#TMUX
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-    export TERM='xterm-256color'
-else
-    export TERM='xterm-color'
-fi
-
