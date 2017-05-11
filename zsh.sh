@@ -44,12 +44,12 @@ mycd() {
 	tree -C -L 1
 }
 
-#t for tree 
+#t for tree
 alias t=mytree
 mytree() {
-	#this does tree with 1 level 
+	#this does tree with 1 level
 	#if no first parameter,
-	#and otherwise uses the 
+	#and otherwise uses the
 	#supplied paramter for level depth
 	tree -C -L ${1-1}
 }
@@ -133,7 +133,7 @@ SAVEHIST=10
 HISTFILE=~/.zsh_history
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
 
 plugins=(git, zsh-autosuggestions, zsh-syntax-highlighting)
 setopt auto_cd
@@ -178,8 +178,7 @@ compinit
 #
 
 #Start alwaysontop
-#source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
-# source ${HOME}/Dropbox/TomCraig/Projects/ALWAYS_ON_TOP/alwaysontop.sh > /dev/null
+# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
 
 #Fix alwaysontop, it gets fucked up somehow
 #unalwaysontop > /dev/null
@@ -187,13 +186,10 @@ compinit
 #unautoclear > /dev/null
 #autoclear > /dev/null
 
-# Extra slingshot stuff
-alias slingstart='${HOME}/slingshot-utils/slingshot_start.sh'
-alias slingbranch='${HOME}/slingshot-utils/slingshot_functions.py create_branch $1'
-
 #TMUX
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
     export TERM='xterm-256color'
 else
     export TERM='xterm-color'
 fi
+
