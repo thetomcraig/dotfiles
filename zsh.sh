@@ -5,9 +5,9 @@ dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
 
+ZSH_THEME="bira"
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-ZSH_THEME="bira"
 
 
 # Aliases
@@ -61,7 +61,7 @@ notify_func() {
 	terminal-notifier -message $? -title $title
 }
 
-alias s='source ${HOME}/.zshrc'
+alias s='source $dotfiles_location/zsh.sh'
 alias b='vim $dotfiles_location/zsh.sh'
 alias g="git status"
 alias ga="git add"
