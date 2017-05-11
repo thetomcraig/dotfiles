@@ -3079,7 +3079,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dotfiles_Orig</string>
+	<string>~/Dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -3119,7 +3119,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 382 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 26 1440 874 0 0 1440 900 </string>
+	<string>0 423 650 477 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>4 181 650 477 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3439,7 +3439,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>~/dotfiles/themes/switch_theme.sh gruvbox</string>
+			<string>~/dotfiles/themes/switch_theme.sh gruvbox &amp;&amp; s</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -3990,7 +3990,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>~/dotfiles/themes/switch_theme.sh alienblood</string>
+			<string>~/dotfiles/themes/switch_theme.sh alienblood &amp;&amp; s</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -4331,7 +4331,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/tom/Dotfiles_Orig</string>
+	<string>/Users/tom/Dotfiles</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
