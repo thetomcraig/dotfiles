@@ -80,6 +80,7 @@ alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
 
+alias tmux="tmux -u"
 alias ta="tmux a -t"
 alias ts="tmux ls"
 alias tk="tmux kill-session -t"
