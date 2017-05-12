@@ -21,7 +21,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ag
 " set wildignore+=*/tmp/*, *.so, *.sw*, *.sql, *.zip, *.pyc, */tags/* "
 
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""  --path-to-agignore /Users/tcraig/slingshot-utils/agignore.sh'
+
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 
 """"""""""""""""""""""""""""""""""

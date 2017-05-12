@@ -4,6 +4,7 @@
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
+TERM=screen
 
 ZSH_THEME="bira"
 export ZSH=$HOME/.oh-my-zsh
@@ -87,6 +88,8 @@ alias tk="tmux kill-session -t"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
+alias slingstart="$dotfiles_location/tmux/session_scripts/slingshot_general.sh slingshot && tmux attach -t slingshot"
+alias slingshotflexcpvstart="$dotfiles_location/tmux/session_scripts/slingshot_general.sh slingshot-flex-cpv && tmux attach -t slingshot-flex-cpv"
 
 alias cat="ccat"
 alias rm="trash"
@@ -120,17 +123,20 @@ alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 alias sshariston="ssh tom@10.0.1.9"
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTCONTROL=ignoredups
+#HISTCONTROL=ignoredups
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
 
-plugins=(git, zsh-autosuggestions, zsh-syntax-highlighting)
+#plugins=(git, zsh-autosuggestions, zsh-syntax-highlighting)
+plugins=(git)
 setopt auto_cd
 bindkey '^ ' autosuggest-accept
 
 #Start alwaysontop
 # source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
+DISABLE_AUTO_TITLE=true
+

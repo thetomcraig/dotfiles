@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'rking/ag.vim'
+Plugin 'vim-airline/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
@@ -25,7 +26,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'jacquesbh/vim-showmarks'
 
