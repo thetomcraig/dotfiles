@@ -14,9 +14,9 @@ autocmd FileType python set colorcolumn=120
 hi ColorColumn ctermbg=7
 hi String ctermfg=4
 
-""""""""""""""
+""""""""""""""""
 "Path variables"
-""""""""""""""
+""""""""""""""""
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ag
 " set wildignore+=*/tmp/*, *.so, *.sw*, *.sql, *.zip, *.pyc, */tags/* "
@@ -179,6 +179,7 @@ elseif hostname == 'tcraig-m01'
 else
     let g:syntastic_mode_map = { 'mode': 'active' }
 endif
+
 
 """"""""""""""""""""""""
 "God damned fucking tabs"

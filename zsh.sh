@@ -113,7 +113,7 @@ alias E="cd ${HOME}/Dropbox/TomCraig/Projects/EROS"
 alias L="cd ${HOME}/Dropbox/TomCraig/Logs"
 alias LE="cd ${HOME}/Dropbox/TomCraig/Logs/EROS/"
 alias wE="workon EROS"
-alias erosstart="$scripts_location/eros_start.sh eros"
+alias erosstart="$dotfiles_location/tmux/session_scripts/eros.sh && tmux attach -t eros"
 alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
 # SSH
