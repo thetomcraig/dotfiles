@@ -20,8 +20,6 @@ hi String ctermfg=4
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ag
 " set wildignore+=*/tmp/*, *.so, *.sw*, *.sql, *.zip, *.pyc, */tags/* "
-
-
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 
@@ -37,10 +35,10 @@ nnoremap <Space>t <C-]><CR>
 nnoremap <Space>G :Gblame<CR>
 nnoremap <Space>p :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
-nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <Space>bq :bp <BAR> bd #<CR>
 
-nmap <leader>y <Plug>yankstack_substitute_older_paste
-nmap <leader>Y <Plug>yankstack_substitute_newer_paste
+nmap <Space>y <Plug>yankstack_substitute_older_paste
+nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-u> :s#^\###<cr>:noh<cr>
@@ -63,8 +61,7 @@ command! -nargs=1 GrepYourHeartOut call s:recursive_ag(<q-args>)
 nnoremap ff :GrepYourHeartOut<Space>
 function! s:recursive_ag(query)
   let &l:q=a:query
-  execute "Ag -r" a:query " --path-to-agignore /Users/tcraig/slingshot-utils/agignore.sh"
-
+  execute "Ag -r" a:query " -p /Users/tcraig/slingshot-utils/agignore.sh"
 endfunction
 
 "File Search"
