@@ -1,15 +1,12 @@
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
-dotfiles_location="${HOME}/Dotfiles"
-scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
+export ZSH=/Users/tom/.oh-my-zsh
+ZSH_THEME="agnoster"
 
 TERM=screen
-
-ZSH_THEME="bira"
-export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-
+dotfiles_location="${HOME}/Dotfiles"
+scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
 # Aliases
 alias rr=my_grep
@@ -64,7 +61,7 @@ notify_func() {
 
 alias s='source $dotfiles_location/zsh.sh'
 alias b='vim $dotfiles_location/zsh.sh'
-alias g="git status"
+alias gs="git status"
 alias ga="git add"
 alias gb="git branch"
 alias gba="git branch -a"
@@ -122,21 +119,20 @@ alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 # SSH
 alias sshariston="ssh tom@10.0.1.9"
 
+# Custom files
+# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
+
+# ZSH END
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 #HISTCONTROL=ignoredups
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
-
-#plugins=(git, zsh-autosuggestions, zsh-syntax-highlighting)
-plugins=(git)
+plugins=(git, zsh-autosuggestions)
 setopt auto_cd
-bindkey '^ ' autosuggest-accept
-
-#Start alwaysontop
-# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
+bindkey '^j' autosuggest-accept
 DISABLE_AUTO_TITLE=true
 
+source $ZSH/oh-my-zsh.sh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
