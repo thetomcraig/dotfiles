@@ -25,18 +25,20 @@ my_fuzzy_ls() {
 	ls *$1*
 }
 
+
+#function cd() { builtin cd "$@" ; }
 #My cd alias
-alias cdu=mycd
-mycd() {
-	i=0
-	while [ $i -lt ${1-1} ]
-	do
-		cd ..
-		i=`expr $i + 1`
-	done
-	clear
-	tree -C -L 1
-}
+#alias cdu=mycdu
+#mycdu() {
+#	i=0
+#	while [ $i -lt ${1-1} ]
+#	do
+#		cd ..
+#		i=`expr $i + 1`
+#	done
+#	clear
+#	tree -C -L 1
+#}
 
 #t for tree
 alias t=mytree
@@ -61,7 +63,7 @@ notify_func() {
 
 alias s='source $dotfiles_location/zsh.sh'
 alias b='vim $dotfiles_location/zsh.sh'
-alias gs="git status"
+alias g="git status"
 alias ga="git add"
 alias gb="git branch"
 alias gba="git branch -a"
