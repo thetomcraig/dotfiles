@@ -1,13 +1,17 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
 source ${HOME}/Dotfiles/vim_and_ideavim_common.sh
 
-
-let mapleader = "<Space>"
+set number                                  "show line numbers"
+set incsearch                               "highlight while typing search"
+set hlsearch                                "highlight all search results"
+set backspace=2                             "To make it work all normal like"
 set laststatus=2                            "show the status line at the bottom"
 set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 syntax on                                   "turn on the syntax coloring"
+
+"let mapleader = '<Space>'
 
 let g:pymode_options_max_line_length=120
 autocmd FileType python set colorcolumn=120
