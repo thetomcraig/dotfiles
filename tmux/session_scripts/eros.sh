@@ -11,8 +11,7 @@ name='eros'
 cd $project_path
 tmux -u new-session -d -s $name
 
-
-tmux new-window -t $1:1 -n Server 
+tmux new-window -t $1:1 -n Server
 tmux new-window -t $1:2 -n Vim
 tmux new-window -t $1:3 -n ZSH
 
