@@ -8,6 +8,25 @@ TERM=screen
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
+
+# Custom files
+# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
+
+# ZSH END
+# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+#HISTCONTROL=ignoredups
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+
+plugins=(git, zsh-autosuggestions)
+setopt auto_cd
+bindkey '^j' autosuggest-accept
+DISABLE_AUTO_TITLE=true
+
+source $ZSH/oh-my-zsh.sh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
+
 # Aliases
 alias rr=my_grep
 my_grep() {
@@ -53,6 +72,7 @@ mytree() {
 alias T="tree -a -C -L 1"
 #tt for maximum depth tree
 alias tt="mytree 999"
+unalias d
 alias d="tree -a -C -L 1 -d"
 
 alias n=notify_func
@@ -121,21 +141,3 @@ alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
 # SSH
 alias sshariston="ssh tom@10.0.1.9"
-
-# Custom files
-# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
-
-# ZSH END
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-#HISTCONTROL=ignoredups
-HISTSIZE=1000
-SAVEHIST=1000
-HISTFILE=~/.zsh_history
-
-plugins=(git, zsh-autosuggestions)
-setopt auto_cd
-bindkey '^j' autosuggest-accept
-DISABLE_AUTO_TITLE=true
-
-source $ZSH/oh-my-zsh.sh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
