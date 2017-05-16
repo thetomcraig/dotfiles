@@ -2,4 +2,6 @@ alwaysontop/*
 com.googlecode.iterm2.plist
 themes/main_colors.sh
 themes/tmux_colors.conf
-tmux/segments/weather_out.txt
+themes/current_iterm_top_color.sh
+themes/current_theme
+tmux/segments/weather_out.
