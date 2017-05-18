@@ -2,8 +2,6 @@ source ${HOME}/Dotfiles/vundle_settings.sh
 source ${HOME}/Dotfiles/vim_and_ideavim_common.sh
 
 set number                                  "show line numbers"
-set incsearch                               "highlight while typing search"
-set hlsearch                                "highlight all search results"
 set backspace=2                             "To make it work all normal like"
 set laststatus=2                            "show the status line at the bottom"
 set showmatch                               "Show the matching paren"
