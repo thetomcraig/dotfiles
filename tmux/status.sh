@@ -1,7 +1,7 @@
 #!/bin/bash
 
-source ~/dotfiles/themes/main_colors.sh
-source ~/dotfiles/tmux/segment.sh
+source ~/Dotfiles/themes/main_colors.sh
+source ~/Dotfiles/tmux/segment.sh
 
 displayStatus() {
   if [[ $1 == "left" ]]; then
