@@ -3,8 +3,9 @@
 #########################
 export ZSH=${HOME}/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history virtualenv pyenv)
+POWERLEVEL9K_HISTORY_BACKGROUND="cyan"
 
 
 TERM=screen
