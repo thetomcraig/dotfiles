@@ -3,9 +3,11 @@
 #########################
 export ZSH=${HOME}/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history virtualenv pyenv)
-POWERLEVEL9K_HISTORY_BACKGROUND="cyan"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir dir_writable)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_HISTORY_BACKGROUND="magenta"
+POWERLEVEL9K_PYENV_BACKGROUND="green"
+POWERLEVEL9K_VIRTUALENV_BACKGROUND="red"
 
 
 TERM=screen
