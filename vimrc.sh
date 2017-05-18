@@ -19,7 +19,7 @@ hi ColorColumn ctermbg=7
 hi String ctermfg=4
 
 """"""""""""""""
-"Path variables"
+"Path variables
 """"""""""""""""
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ag
@@ -27,8 +27,8 @@ set runtimepath^=~/.vim/bundle/ag
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 
-""""""""""""""""""""""""""""""""""
-"General Space (Leader) shortcuts"
+"""""""""""""""""""""""""""""""""
+"General Space (Leader) shortcuts
 """"""""""""""""""""""""""""""""""
 nnoremap <Space>i :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
