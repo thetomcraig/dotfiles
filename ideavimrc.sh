@@ -1,4 +1,11 @@
-source ${HOME}/Dotfiles/vim_and_ideavim_common.sh
+set incsearch                               "highlight while typing search"
+set hlsearch                                "highlight all search results"
+
+nnoremap <Space>w :w<CR> 
+nnoremap <Space>q :q<CR>
+nnoremap <Space>wq :wq<CR>
+nnoremap <Space>nh :noh<CR>
+
 
 set showmode
 nnoremap FF :action GotoFile<CR>
