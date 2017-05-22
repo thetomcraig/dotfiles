@@ -24,7 +24,7 @@ tmux send-keys -t $name:3 "tmux rename-window -t 3 ' '" C-m
 tmux send-keys -t $name:3 "redis-server"
 
 tmux send-keys -t $name:4 "tmux rename-window -t 4 ' '" C-m
-tmux send-keys -t $name:4 "cd web/aap ../../env/bin/celery -A slingshot worker"
+tmux send-keys -t $name:4 "cd web/aap && ../../env/bin/celery -A slingshot worker"
 
 tmux send-keys -t $name:5 "tmux rename-window -t 5 ' '" C-m
 tmux send-keys -t $name:5 "env/bin/python web/aap/manage.py shell" C-m
