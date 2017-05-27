@@ -118,7 +118,6 @@ alias slingstart="$dotfiles_location/tmux/session_scripts/slingshot_general.sh s
 alias slingshotflexcpvstart="$dotfiles_location/tmux/session_scripts/slingshot_general.sh slingshot-flex-cpv && tmux attach -t slingshot-flex-cpv"
 
 alias cat="ccat"
-alias rm="trash"
 
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
@@ -147,3 +146,9 @@ alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
 # SSH
 alias sshariston="ssh tom@10.0.1.9"
+
+case $(uname -a) in
+  (Darwin) alias rm="trash";;
+  (*) ;;
+esac
+
