@@ -145,7 +145,7 @@ alias erosstart="$dotfiles_location/tmux/session_scripts/eros.sh && tmux attach 
 alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
 # SSH
-alias sshariston="ssh tom@10.0.1.9"
+alias sshariston="ssh tom@10.0.1.3"
 
 case $(uname -a) in
   (Darwin) alias rm="trash";;
