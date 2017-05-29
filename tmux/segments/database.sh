@@ -5,6 +5,7 @@ runSegment() {
     project_path=''
     case $(hostname) in
         (ZENO) echo "";;
+        (ZENO.local) echo "";;
         (tcraig-m01) echo "$db  ";;
         (*) echo "How did I get in the middle of nowhere?";;
     esac
