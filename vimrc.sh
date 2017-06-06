@@ -155,6 +155,7 @@ au FileType python setlocal formatprg=autopep8\ -
 """"""""""""
 "Neocomplete"
 """"""""""""
+set completeopt-=preview
 let g:neocomplete#enable_at_startup = 1
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 let g:neocomplete#sources#syntax#min_keyword_length = 3
