@@ -50,6 +50,31 @@ afun = function()
 end
 k:bind({}, 'l', afun, nil, afun)
 
+-- HYPER+wasd: arrow keys
+afun = function()
+  local event = require("hs.eventtap").event
+  event.newKeyEvent(modifiers, 'left', true):post()
+end
+k:bind({}, 'a', afun, nil, afun)
+
+afun = function()
+  local event = require("hs.eventtap").event
+  event.newKeyEvent(modifiers, 'down', true):post()
+end
+k:bind({}, 's', afun, nil, afun)
+
+afun = function()
+  local event = require("hs.eventtap").event
+  event.newKeyEvent(modifiers, 'up', true):post()
+end
+k:bind({}, 'w', afun, nil, afun)
+
+afun = function()
+  local event = require("hs.eventtap").event
+  event.newKeyEvent(modifiers, 'right', true):post()
+end
+k:bind({}, 'd', afun, nil, afun)
+
 -- HYPER+io: Back and Forward 1 word
 afun = function()
   hs.eventtap.keyStroke({'alt'}, 'left')
