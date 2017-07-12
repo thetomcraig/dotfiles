@@ -50,6 +50,13 @@ afun = function()
 end
 k:bind({}, 'l', afun, nil, afun)
 
+-- HYPER+tab: enter
+afun = function()
+  local event = require("hs.eventtap").event
+  event.newKeyEvent(modifiers, 'return', true):post()
+end
+k:bind({}, 'tab', afun, nil, afun)  
+
 -- HYPER+wasd: arrow keys
 afun = function()
   local event = require("hs.eventtap").event
