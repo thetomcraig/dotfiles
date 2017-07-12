@@ -2,16 +2,21 @@
 #MY PERSONAL BASH PROFILE
 #########################
 export ZSH=${HOME}/.oh-my-zsh
+export LANG="en_US.UTF-8"
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_HISTORY_BACKGROUND="magenta"
 POWERLEVEL9K_PYENV_BACKGROUND="green"
 POWERLEVEL9K_VIRTUALENV_BACKGROUND="red"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 
-TERM=screen
+export TERM=screen
+#export TERM="xterm-256color"
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
@@ -153,3 +158,4 @@ case $(uname -a) in
   (*) ;;
 esac
 
+alias s='source $dotfiles_location/zsh.sh'

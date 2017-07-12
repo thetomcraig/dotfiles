@@ -20,5 +20,5 @@ nnoremap <Space>G :action Annotate<CR>
 nnoremap <Space>T :action ActivateStructureToolWindow<CR>
 nnoremap <Space>s :action AceAction<CR>
 nnoremap <Space>u :action ShowUsages<CR>
-nnoremap <Space>o :action CloseActiveTab<CR>
-
+nnoremap <Space>on :action CloseActiveTab<CR>
+nnoremap <Space>r :action ToggleLineBreakpoint<CR>
