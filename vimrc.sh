@@ -50,7 +50,7 @@ nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-u> :s#^\###<cr>:noh<cr>
+vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
 
 nnoremap <leader>x :exec "normal i".nr2char(getchar())."\e"<CR>
 nnoremap <leader>X :exec "normal a".nr2char(getchar())."\e"<CR>
