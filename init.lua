@@ -1,5 +1,6 @@
 -- A global variable for the Hyper Mode
 k = hs.hotkey.modal.new({}, 'F17')
+delay = hs.eventtap.keyRepeatDelay()
 
 
 pressedF18 = function()
@@ -7,16 +8,9 @@ pressedF18 = function()
   k:enter()
 end
 
--- Leave Hyper Mode when F18 is pressed,
---   send ESCAPE if no other keys are pressed.
-
 releasedF18 = function()
   k:exit()
-  if not k.triggered then
-    hs.eventtap.keyStroke({}, 'ESCAPE')
-  end
 end
-
 
 -- Screensaver
 afun = function()
@@ -25,30 +19,31 @@ afun = function()
 end
 k:bind({}, 'space', nil, afun)
 
--- HYPER+hjkl: VIM arrow keys
+-- HYPER+wasd AND +hjkl: arrow keys
 afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'left', true):post()
+  hs.eventtap.keyStroke({}, 'left', delay)
 end
-k:bind({}, 'h', afun, nil, afun)
+k:bind({}, 'a', nil, afun, afun)
+k:bind({}, 'h', nil, afun, afun)
 
 afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'down', true):post()
+  hs.eventtap.keyStroke({}, 'right', delay)
 end
-k:bind({}, 'j', afun, nil, afun)
+k:bind({}, 'd', nil, afun, afun)
+k:bind({}, 'l', nil, afun, afun)
 
 afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'up', true):post()
+  hs.eventtap.keyStroke({}, 'up', delay)
 end
-k:bind({}, 'k', afun, nil, afun)
+k:bind({}, 'w', nil, afun, afun)
+k:bind({}, 'k', nil, afun, afun)
 
 afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'right', true):post()
+  hs.eventtap.keyStroke({}, 'down', delay)
 end
-k:bind({}, 'l', afun, nil, afun)
+k:bind({}, 's', nil, afun, afun)
+k:bind({}, 'j', nil, afun, afun)
+
 
 -- HYPER+tab: enter
 afun = function()
@@ -57,144 +52,82 @@ afun = function()
 end
 k:bind({}, 'tab', afun, nil, afun)  
 
--- HYPER+wasd: arrow keys
-afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'left', true):post()
-end
-k:bind({}, 'a', afun, nil, afun)
-
-afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'down', true):post()
-end
-k:bind({}, 's', afun, nil, afun)
-
-afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'up', true):post()
-end
-k:bind({}, 'w', afun, nil, afun)
-
-afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'right', true):post()
-end
-k:bind({}, 'd', afun, nil, afun)
-
 -- HYPER+io: Back and Forward 1 word
 afun = function()
-  hs.eventtap.keyStroke({'alt'}, 'left')
-  k.triggered = true
+  hs.eventtap.keyStroke({'alt'}, 'right', delay)
 end
-k:bind({}, 'i', nil, afun)
+k:bind({}, 'o', nil, afun, afun)
+
 afun = function()
-  hs.eventtap.keyStroke({'alt'}, 'right')
-  k.triggered = true
+  hs.eventtap.keyStroke({'alt'}, 'left', delay)
 end
-k:bind({}, 'o', nil, afun)
+k:bind({}, 'i', nil, afun, afun)
 
 -- HYPER+backspace: Forward delete
-k:bind({}, 'delete', nil, afun)
 afun = function()
-  local event = require("hs.eventtap").event
-  event.newKeyEvent(modifiers, 'forwarddelete', true):post()
+  hs.eventtap.keyStroke({}, 'forwarddelete', delay)
 end
-k:bind({}, 'delete', afun, nil, afun)
+k:bind({}, 'delete', nil, afun, afun)
 
-
--- For tmux
+-- For tmux, navigating
 afun = function()
-  hs.eventtap.keyStroke({'ctrl','shift'}, 'up')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl', 'shift'}, 'up', delay)
 end
-k:bind({}, 'y', nil, afun)
+k:bind({}, 'y', nil, afun, afun)
 
 afun = function()
-  hs.eventtap.keyStroke({'ctrl','shift'}, 'right')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl', 'shift'}, 'right', delay)
 end
-k:bind({}, 'n', nil, afun)
+k:bind({}, 'n', nil, afun, afun)
 
 afun = function()
-  hs.eventtap.keyStroke({'ctrl','shift'}, 'left')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl', 'shift'}, 'left', delay)
 end
-k:bind({}, 'p', nil, afun)
+k:bind({}, 'p', nil, afun, afun)
 
-
-
+-- HYPER+f: switch tmux panes
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, 'f')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, 'f', delay)
 end
-k:bind({}, 'f', nil, afun)
+k:bind({}, 'f', nil, afun, afun)
 
+-- HYPER+N: tmux window number N 
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '1')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '1', delay)
 end
-k:bind({}, '1', nil, afun)
-
+k:bind({}, '1', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '2')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '2', delay)
 end
-k:bind({}, '2', nil, afun)
-
+k:bind({}, '2', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '3')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '3', delay)
 end
-k:bind({}, '3', nil, afun)
-
+k:bind({}, '3', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '4')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '4', delay)
 end
-k:bind({}, '4', nil, afun)
-
+k:bind({}, '4', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '5')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '5', delay)
 end
-k:bind({}, '5', nil, afun)
-
+k:bind({}, '5', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '6')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '6', delay)
 end
-k:bind({}, '6', nil, afun)
-
+k:bind({}, '6', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '7')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '7', delay)
 end
-k:bind({}, '7', nil, afun)
-
+k:bind({}, '7', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '8')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '8', delay)
 end
-k:bind({}, '8', nil, afun)
-
+k:bind({}, '8', nil, afun, afun)
 afun = function()
-  hs.eventtap.keyStroke({'ctrl'}, '9')
-  k.triggered = true
+  hs.eventtap.keyStroke({'ctrl'}, '9', delay)
 end
-k:bind({}, '9', nil, afun)
-
--- Enter Hyper Mode when F18 (Hyper/Capslock) is pressed
-pressedF18 = function()
-  k.triggered = false
-  k:enter()
-end
-
--- Leave Hyper Mode when F18 (Hyper/Capslock) is pressed,
---   send ESCAPE if no other keys are pressed.
-releasedF18 = function()
-  k:exit()
-end
+k:bind({}, '9', nil, afun, afun)
 
 -- Bind the Hyper key
-f17 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
+f18 = hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
