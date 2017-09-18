@@ -195,12 +195,13 @@ endif
 "God damned fucking tabs"
 """"""""""""""""""""""""
 set shiftround
-set smartindent
-set autoindent
 
 let s:tabwidth=4
 exec 'set tabstop='    .s:tabwidth
 exec 'set shiftwidth=' .s:tabwidth
 exec 'set softtabstop='.s:tabwidth
 
+set autoindent
+set smartindent
+set smarttab
 set expandtab
