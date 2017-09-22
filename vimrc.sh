@@ -20,8 +20,8 @@ syntax on                                   "turn on the syntax coloring"
 
 let g:pymode_options_max_line_length=120
 autocmd FileType python set colorcolumn=120
-hi ColorColumn ctermbg=7
-hi String ctermfg=4
+"hi ColorColumn ctermbg=7
+"hi String ctermfg=4
 
 """"""""""""""""
 "Path variables
@@ -187,21 +187,10 @@ elseif hostname == 'tcraig-m01'
     let g:syntastic_mode_map = { 'mode': 'passive' }
     set noet
 else
-    let g:syntastic_mode_map = { 'mode': 'active' }
 endif
 
-
-""""""""""""""""""""""""
-"God damned fucking tabs"
-""""""""""""""""""""""""
-set shiftround
-
-let s:tabwidth=4
-exec 'set tabstop='    .s:tabwidth
-exec 'set shiftwidth=' .s:tabwidth
-exec 'set softtabstop='.s:tabwidth
-
-set autoindent
-set smartindent
-set smarttab
-set expandtab
+""""""""
+"Colors"
+""""""""
+"highlight LineNr ctermfg=Grey
+"highlight Statement ctermfg=Grey

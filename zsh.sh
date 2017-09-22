@@ -16,7 +16,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 
 export TERM=screen
-#export TERM="xterm-256color"
+#export TERM=xterm-256color
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 

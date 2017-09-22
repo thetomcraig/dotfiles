@@ -14,4 +14,4 @@ cp $themes_location/$1/iterm_top_bar_color.sh $themes_location/current_iterm_top
 
 clear
 $themes_location/current_iterm_top_color.sh
-cat $themes_location/current_theme
+#cat $themes_location/current_theme
