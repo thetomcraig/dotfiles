@@ -15,13 +15,12 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 syntax on                                   "turn on the syntax coloring"
+colorscheme seoul256
 
 "let mapleader = '<Space>'
 
 let g:pymode_options_max_line_length=120
 autocmd FileType python set colorcolumn=120
-"hi ColorColumn ctermbg=7
-"hi String ctermfg=4
 
 """"""""""""""""
 "Path variables
@@ -189,8 +188,22 @@ elseif hostname == 'tcraig-m01'
 else
 endif
 
-""""""""
-"Colors"
-""""""""
-"highlight LineNr ctermfg=Grey
-"highlight Statement ctermfg=Grey
+"""""""""
+"Airline"
+"""""""""
+let g:airline_theme='seoul256'
+
+""""""""""""""""""""""""
+"God damned fucking tabs"
+""""""""""""""""""""""""
+set shiftround
+
+let s:tabwidth=4
+exec 'set tabstop='    .s:tabwidth
+exec 'set shiftwidth=' .s:tabwidth
+exec 'set softtabstop='.s:tabwidth
+
+set autoindent
+set smartindent
+set smarttab
+set expandtab

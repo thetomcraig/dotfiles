@@ -4,6 +4,8 @@
 export ZSH=${HOME}/.oh-my-zsh
 export LANG="en_US.UTF-8"
 
+export TERM=xterm-256color
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
@@ -14,12 +16,8 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
-
-export TERM=screen
-#export TERM=xterm-256color
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
-
 
 # Custom files
 # source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
