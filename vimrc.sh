@@ -3,7 +3,7 @@ source ${HOME}/Dotfiles/vundle_settings.sh
 set incsearch                               "highlight while typing search"
 set hlsearch                                "highlight all search results"
 
-nnoremap <Space>w :w<CR> 
+nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
@@ -15,7 +15,8 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 syntax on                                   "turn on the syntax coloring"
-colorscheme seoul256
+set t_Co=256
+colorscheme alienblood
 
 "let mapleader = '<Space>'
 

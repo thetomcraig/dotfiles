@@ -13,4 +13,6 @@ zsh
 oh my zsh
 powerlevel9k
 github keys (delete old ones!)
+vim and airline themes
+
 
