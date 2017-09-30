@@ -4,26 +4,14 @@
 export ZSH=${HOME}/.oh-my-zsh
 export LANG="en_US.UTF-8"
 
-export TERM=xterm-256color
+#export TERM=xterm-256color
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="yellow"
-POWERLEVEL9K_HISTORY_BACKGROUND="magenta"
-POWERLEVEL9K_PYENV_BACKGROUND="green"
-POWERLEVEL9K_VIRTUALENV_BACKGROUND="red"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_SHORTEN_DELIMITER=""
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+ZSH_THEME="agnoster_shortened"
 
+alias s="source $dotfiles_location/zsh.sh"
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 
-# Custom files
-# source $dotfiles_location/alwaysontop/alwaysontop.sh > /dev/null
-
-# ZSH END
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 #HISTCONTROL=ignoredups
 HISTSIZE=1000
@@ -38,37 +26,11 @@ DISABLE_AUTO_TITLE=true
 source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
 
-# Aliases
-alias rr=my_grep
-my_grep() {
-	#Recursive and colorized
-	echo "Directories:"
-	find . -name $1
-	echo "------------------------"
-	echo "Files"
-	grep --exclude="*.pyc" --color=always -r $1 .
-}
-
 alias l=my_fuzzy_ls
 my_fuzzy_ls() {
 	#Find files the match the fuzzy query
 	ls *$1*
 }
-
-
-#function cd() { builtin cd "$@" ; }
-#My cd alias
-#alias cdu=mycdu
-#mycdu() {
-#	i=0
-#	while [ $i -lt ${1-1} ]
-#	do
-#		cd ..
-#		i=`expr $i + 1`
-#	done
-#	clear
-#	tree -C -L 1
-#}
 
 #t for tree
 alias t=mytree
@@ -99,7 +61,6 @@ alias ga="git add"
 alias gb="git branch"
 alias gba="git branch -a"
 alias gv="git branch -vv"
-alias gvc="git branch -vv | grep '^\*.*'"
 alias gbd="git branch -d $1"
 alias gc="git checkout"
 alias gcb="git checkout -b"
@@ -121,8 +82,6 @@ alias tk="tmux kill-session -t"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
-alias slingstart="$dotfiles_location/tmux/session_scripts/slingshot_general.sh slingshot && tmux attach -t slingshot"
-alias slingshotflexcpvstart="$dotfiles_location/tmux/session_scripts/slingshot_general.sh slingshot-flex-cpv && tmux attach -t slingshot-flex-cpv"
 
 alias cat="ccat"
 
@@ -158,5 +117,3 @@ case $(uname -a) in
   (Darwin) alias rm="trash";;
   (*) ;;
 esac
-
-alias s='source $dotfiles_location/zsh.sh'
