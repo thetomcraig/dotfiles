@@ -6,7 +6,8 @@ export LANG="en_US.UTF-8"
 
 #export TERM=xterm-256color
 
-ZSH_THEME="agnoster_shortened"
+#ZSH_THEME="agnoster_shortened"
+ZSH_THEME="robbyrussell"
 
 alias s="source $dotfiles_location/zsh.sh"
 dotfiles_location="${HOME}/Dotfiles"
@@ -19,6 +20,7 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 plugins=(git, zsh-autosuggestions)
+#plugins=(git)
 setopt auto_cd
 bindkey '^j' autosuggest-accept
 DISABLE_AUTO_TITLE=true
@@ -113,7 +115,9 @@ alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 # SSH
 alias sshariston="ssh tom@10.0.1.3"
 
-case $(uname -a) in
-  (Darwin) alias rm="trash";;
-  (*) ;;
-esac
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+host=$(uname -a)
+if [[ $host == *"Darwin"* ]]; then
+    alias rm="trash"
+fi

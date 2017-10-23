@@ -75,7 +75,7 @@ function! s:recursive_ag(query)
 endfunction
 
 "File Search"
-nnoremap FF :CtrlP<CR>
+nnoremap FF :FZF<CR>
 
 vmap <Space>y "*y
 
