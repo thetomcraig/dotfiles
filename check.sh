@@ -1,4 +1,5 @@
 git fetch origin master
+cd ${HOME}/Dotfiles
 changes=$(git log master..origin/master --oneline | awk '{print $1}')
 num_changes=${#changes}
 if [ $num_changes -gt 0 ]

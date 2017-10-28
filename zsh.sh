@@ -121,3 +121,5 @@ host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
 fi
+
+$($dotfiles_location/check.sh)
