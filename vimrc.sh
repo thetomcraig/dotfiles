@@ -65,15 +65,8 @@ nnoremap <leader>b :10PreviewMarks<CR>
 """""""""""
 "Searching"
 """""""""""
-"Search - Recurisve grep (text) "
-command! -nargs=1 GrepYourHeartOut call s:recursive_ag(<q-args>)
-
-nnoremap ff :GrepYourHeartOut<Space>
-function! s:recursive_ag(query)
-  let &l:q=a:query
-  execute "Ag -r" a:query " -p /Users/tcraig/slingshot-utils/agignore.sh"
-endfunction
-
+"Text Search"
+nnoremap ff :Ack <CR>
 "File Search"
 nnoremap FF :FZF<CR>
 

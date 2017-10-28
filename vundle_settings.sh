@@ -10,7 +10,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ap/vim-buftabline'
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
+"Plugin 'rking/ag.vim'"
 Plugin 'vim-airline/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 "Plugin 'ctrlpvim/ctrlp.vim'"
