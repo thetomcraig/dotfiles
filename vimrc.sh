@@ -22,8 +22,8 @@ colorscheme alienblood
 "let mapleader = '<Space>'
 
 let g:pymode_options_max_line_length=120
-execute "set colorcolumn=" . join(range(120,335), ',')
 autocmd FileType python set colorcolumn=120
+execute "set colorcolumn=" . join(range(120,335), ',')
 set tw=120
 
 """""""""""""""""
@@ -68,7 +68,8 @@ nnoremap <leader>b :10PreviewMarks<CR>
 "Searching"
 """""""""""
 "Text Search"
-nnoremap ff :Ack <CR>
+nnoremap ff :Ack 
+nnoremap gr :Ack <cword> *<CR>
 "File Search"
 nnoremap FF :FZF<CR>
 
