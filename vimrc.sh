@@ -23,6 +23,7 @@ colorscheme alienblood
 
 let g:pymode_options_max_line_length=120
 autocmd FileType python set colorcolumn=120
+execute "set colorcolumn=" . join(range(81,335), ',')
 
 """"""""""""""""
 "Path variables
