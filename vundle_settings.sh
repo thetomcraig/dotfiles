@@ -11,24 +11,16 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ap/vim-buftabline'
 Plugin 'mileszs/ack.vim'
-"Plugin 'rking/ag.vim'"
 Plugin 'vim-airline/vim-airline'
 Plugin 'easymotion/vim-easymotion'
-"Plugin 'ctrlpvim/ctrlp.vim'"
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'pangloss/vim-javascript'"
-"Plugin 'vim-jsbeautify'"
-"Plugin 'thetomcraig/Mark--Karkat'"
-"Plugin 'Valloric/MatchTagAlways'"
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete.vim'
-"Plugin 'edkolev/promptline.vim'"
 Plugin 'kshenoy/vim-signature'
 Plugin 'tpope/vim-surround'
-"Plugin 'scrooloose/syntastic'"
 Plugin 'majutsushi/tagbar'
-"Plugin 'tomtom/tcomment_vim'"
+Plugin 'w0rp/ale'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
 

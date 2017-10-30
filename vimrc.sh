@@ -1,43 +1,27 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
 
+colorscheme alienblood
+
+syntax on                                   "turn on the syntax coloring"
 set incsearch                               "highlight while typing search"
 set hlsearch                                "highlight all search results"
-
-nnoremap <Space>w :w<CR>
-nnoremap <Space>q :q<CR>
-nnoremap <Space>wq :wq<CR>
-nnoremap <Space>nh :noh<CR>
-
 set number                                  "show line numbers"
 set backspace=2                             "To make it work all normal like"
 set laststatus=2                            "show the status line at the bottom"
 set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
-syntax on                                   "turn on the syntax coloring"
-"set clipboard=unnamed
-colorscheme alienblood
-""
-
-"let mapleader = '<Space>'
-
-let g:pymode_options_max_line_length=120
-autocmd FileType python set colorcolumn=120
+set tw=120                                  "Column limit"
 execute "set colorcolumn=" . join(range(120,335), ',')
-set tw=120
-
-"""""""""""""""""
-"Path variables
-""""""""""""""""
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/ag
-" set wildignore+=*/tmp/*, *.so, *.sw*, *.sql, *.zip, *.pyc, */tags/* "
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 
 """""""""""""""""""""""""""""""""
 "General Space (Leader) shortcuts
 """"""""""""""""""""""""""""""""""
+nnoremap <Space>w :w<CR>
+nnoremap <Space>q :q<CR>
+nnoremap <Space>wq :wq<CR>
+nnoremap <Space>nh :noh<CR>
 nnoremap <Space>i :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>T :TagbarToggle<CR>
@@ -55,13 +39,10 @@ nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
 
-nnoremap <leader>x :exec "normal i".nr2char(getchar())."\e"<CR>
-nnoremap <leader>X :exec "normal a".nr2char(getchar())."\e"<CR>
+nnoremap <Space>J :lnext<CR>
+nnoremap <Space>K :lprev<CR>
 
-nnoremap <leader>J :lnext<CR>
-nnoremap <leader>K :lprev<CR>
-
-nnoremap <leader>b :10PreviewMarks<CR>
+nnoremap <Space>b :10PreviewMarks<CR>
 
 
 """""""""""
@@ -74,15 +55,15 @@ nnoremap gr :Ack <cword> *<CR>
 "File Search"
 nnoremap FF :FZF<CR>
 
-vmap <Space>y "*y
 
 """""""""
 "Buffers"
-""""""""
+"""""""""
 set hidden
 nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <C-h> :bprevious<CR>
 nnoremap <silent> <C-q> :bd<CR>
+
 
 """"""""""""""
 "Marks colors"
@@ -120,28 +101,11 @@ nmap <Space>8 <k8>
 nmap <Space>9 <k9>
 
 
-
 """"""""""
 "NERD Tree"
 """"""""""
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
-
-
-""""""""""""""""""
-"Syntastic settings"
-""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 
 """"""""""""
@@ -164,7 +128,6 @@ highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 
 
-
 """"""""""""
 "Easy motion"
 """"""""""""
@@ -173,24 +136,21 @@ map <Space>g <Plug>(easymotion-j)
 map <Space>f <Plug>(easymotion-k)
 
 
-""""""""""""""""""""""""""
-"Machine specific settings"
-""""""""""""""""""""""""""
-let hostname = substitute(system('hostname'), '\n', '', '')
-if hostname == 'ZENO.local'
-    let g:syntastic_mode_map = { 'mode': 'active' }
-elseif hostname == 'tcraig-m01'
-    " Column Limit "
-    let g:syntastic_python_flake8_args='--ignore=E501,W191'
-    let g:syntastic_mode_map = { 'mode': 'passive' }
-    set noet
-else
-endif
-
 """""""""
 "Airline"
 """""""""
 let g:airline_theme='seoul256'
+
+
+"""""
+"ALE"
+"""""
+
+let g:ale_python_pylint_options =
+    \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
+let g:ale_python_flake8_options = '--ignore=E501'
+
+
 
 """"""""""""""""""""""""
 "God damned fucking tabs"
@@ -206,3 +166,5 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
+set clipboard=unnamed
+

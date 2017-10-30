@@ -12,6 +12,8 @@ open https://cachefly.alfredapp.com/Alfred_3.5_876.dmg
 open https://www.iterm2.com/downloads.html
 git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git .
 
+open https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/SourceCodePro.zip
+
 open https://github.com/Hammerspoon/hammerspoon/releases/download/0.9.56/Hammerspoon-0.9.56.zip
 echo "Hammerspoon Installed? "
 read answer
