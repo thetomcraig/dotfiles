@@ -49,7 +49,8 @@ nnoremap <Space>b :10PreviewMarks<CR>
 "Searching"
 """""""""""
 "Text Search"
-nnoremap ff :Ack <CR>
+nnoremap ff :Ack 
+nnoremap gr :Ack <cword> *<CR>
 "File Search"
 nnoremap FF :FZF<CR>
 
@@ -140,6 +141,9 @@ map <Space>f <Plug>(easymotion-k)
 let g:airline_theme='seoul256'
 
 
+"""""
+"ALE"
+"""""
 
 let g:ale_python_pylint_options =
     \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
