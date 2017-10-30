@@ -165,3 +165,5 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
+set clipboard=unnamed
+
