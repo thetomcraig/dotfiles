@@ -68,6 +68,7 @@ nnoremap <leader>b :10PreviewMarks<CR>
 "Searching"
 """""""""""
 "Text Search"
+let g:ackhighlight = 1
 nnoremap ff :Ack 
 nnoremap gr :Ack <cword> *<CR>
 "File Search"
