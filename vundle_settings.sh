@@ -23,6 +23,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'w0rp/ale'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
+Plugin 'vim-scripts/Mark--Karkat'
 
 " All of your Plugins must be added before the following line "
 call vundle#end()            " required "
