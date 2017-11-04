@@ -41,7 +41,7 @@ mytree() {
 	#if no first parameter,
 	#and otherwise uses the
 	#supplied paramter for level depth
-	tree -C -L ${1-1}
+	tree -C -L ${1-1} -I "*.pyc"
 }
 #T for tree 1 level deep with no invisibles
 alias T="tree -a -C -L 1"
@@ -122,4 +122,6 @@ if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
 fi
 
-$("$dotfiles_location/check.sh")
+# $("$dotfiles_location/check.sh")
+
+eval $(thefuck --alias)
