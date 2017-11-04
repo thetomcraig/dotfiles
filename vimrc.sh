@@ -1,11 +1,10 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
 
-colorscheme alienblood
-
 syntax on                                   "turn on the syntax coloring"
 set incsearch                               "highlight while typing search"
 set hlsearch                                "highlight all search results"
 set number                                  "show line numbers"
+set number relativenumber                   "Hybrid - shows exact and relative numbers"
 set backspace=2                             "To make it work all normal like"
 set laststatus=2                            "show the status line at the bottom"
 set showmatch                               "Show the matching paren"
@@ -18,6 +17,7 @@ execute "set colorcolumn=" . join(range(120,335), ',')
 """""""""""""""""""""""""""""""""
 "General Space (Leader) shortcuts
 """"""""""""""""""""""""""""""""""
+let mapleader=" "
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
@@ -42,7 +42,11 @@ vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
 
-nnoremap <Space>b :10PreviewMarks<CR>
+vnoremap // y/<C-R>"<CR> "Search for visually selected text
+"Used for moving around the command line in vim"
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
+
 
 
 """""""""""
@@ -50,9 +54,10 @@ nnoremap <Space>b :10PreviewMarks<CR>
 """""""""""
 "Text Search"
 nnoremap ff :Ack 
-nnoremap gr :Ack <cword> *<CR>
+nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 
 """""""""
@@ -105,6 +110,7 @@ nmap <Space>9 <k9>
 """"""""""
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
+let NERDTreeIgnore = ['\.pyc$']
 
 
 """"""""""""
@@ -144,11 +150,48 @@ let g:airline_theme='seoul256'
 """""
 "ALE"
 """""
-
+let g:ale_fixers = {
+    \   'python': ['isort', 'trim_whitespace', 'remove_trailing_lines', 'autopep8'],
+\}
 let g:ale_python_pylint_options =
     \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
 let g:ale_python_flake8_options = '--ignore=E501'
 
+
+""""""""""""""
+"Marks colors"
+""""""""""""""
+"Visual Mark Searching"
+let g:mwDefaultHighlightingPalette = 'extended'
+
+highlight MarkWord1 ctermbg=Magenta ctermfg=Black guibg=#8CCBEA guifg=Black
+highlight MarkWord2 ctermbg=Cyan ctermfg=Black guibg=#8CCBEA guifg=Black
+highlight MarkWord3 ctermbg=Red ctermfg=Black guibg=#8CCBEA guifg=Black
+highlight MarkWord4 ctermbg=White ctermfg=Black guibg=#8CCBEA guifg=Black
+highlight MarkWord5 ctermbg=Green ctermfg=Black guibg=#8CCBEA guifg=Black
+highlight MarkWord6 ctermbg=Magenta ctermfg=White guibg=#8CCBEA guifg=Black
+highlight MarkWord7 ctermbg=Cyan ctermfg=White guibg=#8CCBEA guifg=Black
+highlight MarkWord8 ctermbg=Red ctermfg=White guibg=#8CCBEA guifg=Black
+highlight MarkWord9 ctermbg=White ctermfg=White guibg=#8CCBEA guifg=Black
+highlight MarkWord10 ctermbg=Green ctermfg=White guibg=#8CCBEA guifg=Black
+highlight MarkWord11 ctermbg=White ctermfg=Magenta guibg=#8CCBEA guifg=Black
+highlight MarkWord12 ctermbg=White ctermfg=Cyan guibg=#8CCBEA guifg=Black
+highlight MarkWord13 ctermbg=White ctermfg=Red guibg=#8CCBEA guifg=Black
+highlight MarkWord14 ctermbg=White ctermfg=Green guibg=#8CCBEA guifg=Black
+
+"For the Marks plugin seen here:"
+"http://www.vim.org/scripts/script.php?script_id=2666"
+nmap <Space>M :Marks<CR>
+nmap <Space>N :MarkClear<CR>
+nmap <Space>1 <k1>
+nmap <Space>2 <k2>
+nmap <Space>3 <k3>
+nmap <Space>4 <k4>
+nmap <Space>5 <k5>
+nmap <Space>6 <k6>
+nmap <Space>7 <k7>
+nmap <Space>8 <k8>
+nmap <Space>9 <k9>
 
 
 """"""""""""""""""""""""
@@ -166,4 +209,8 @@ set smartindent
 set smarttab
 set expandtab
 set clipboard=unnamed
+
+colorscheme alienblood
+
+":call delete(expand('%')) | bdelete!
 
