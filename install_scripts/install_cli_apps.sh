@@ -1,3 +1,6 @@
+#Install preferences for GUI apps
+cp ../com.googlecode.iterm2.plist ${HOME}/Library/Preferences/
+
 #Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -28,17 +31,21 @@ mv ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 #Link Files
+#Make sure these point to actual paths
 rm ~/.zshrc
-ln -s ./zsh.sh ~/.zshrc
+ln -s ../zsh.sh ~/.zshrc
 rm ~/.vimrc
-ln -s ./vim.sh ~/.vimrc
+ln -s ../vim.sh ~/.vimrc
 rm ~/.tmux.conf
-ln -s ./.tmux.conf ~/tmux/tmux.conf
+ln -s ../tmux/tmux.conf ~/.tmux.conf
 rm ~/.hammerspoon/init.lua
-ln -s ./init.lua ~/.hammerspoon/init.lua
+cat "../init.lua" >> ~/.hammerspoon/init.lua
 
-mv ./themes/alienblood/alienblood.vim /usr/local/share/vim/vim80/colors
-mv ./themes/alienblood/alienblood_airline.vim ${HOME}/.vim/bundle/vim-airline/autoload/airline/themes
+#Install vundle thru vim
+#Download fzf binary
+
+cp ./themes/alienblood/alienblood.vim /usr/local/share/vim/vim80/colors
+cp ./themes/alienblood/alienblood_airline.vim ${HOME}/.vim/bundle/vim-airline/autoload/airline/themes
 
 git clone https://github.com/powerline/powerline.git
 
@@ -53,4 +60,3 @@ pbcopy < ~/.ssh/id_rsa.pub
 open "https://github.com/settings/keys"
 # Do user stuff here
 
-git@github.com:thetomcraig/Alienblood.git
