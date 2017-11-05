@@ -145,7 +145,7 @@ map <Space>f <Plug>(easymotion-k)
 """""""""
 "Airline"
 """""""""
-let g:airline_theme='seoul256'
+let g:airline_theme='alienblood_airline'
 
 
 """""

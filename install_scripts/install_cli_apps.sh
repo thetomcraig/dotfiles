@@ -1,5 +1,6 @@
 #Install preferences for GUI apps
 cp ../com.googlecode.iterm2.plist ${HOME}/Library/Preferences/
+cp ../com.manytricks.Moom.plist ${HOME}/Library/Preferences/
 
 #Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -7,10 +8,12 @@ cp ../com.googlecode.iterm2.plist ${HOME}/Library/Preferences/
 #Install brew stuff
 brew install vim --with-lua
 brew install tmux
+brew install reattach-to-user-namespace
 brew install trash
 brew install tree
 brew install ack
 brew install wget
+brew install thefuck
 brew install zsh
 
 # vim setup - vundle
@@ -26,7 +29,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #Install OMZ
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #Install my theme for ZSH
-mv ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
+ ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
 #Install Autosuggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
