@@ -29,7 +29,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #Install OMZ
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #Install my theme for ZSH
- ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
+./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
 #Install Autosuggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 

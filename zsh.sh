@@ -125,3 +125,6 @@ fi
 # $("$dotfiles_location/check.sh")
 
 eval $(thefuck --alias)
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
