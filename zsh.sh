@@ -4,7 +4,7 @@
 export ZSH=${HOME}/.oh-my-zsh
 export LANG="en_US.UTF-8"
 
-#export TERM=xterm-256color
+export TERM=xterm-256color
 
 #ZSH_THEME="agnoster_shortened"
 ZSH_THEME="robbyrussell"
@@ -125,3 +125,6 @@ fi
 # $("$dotfiles_location/check.sh")
 
 eval $(thefuck --alias)
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
