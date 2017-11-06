@@ -2,5 +2,5 @@
 
 runSegment() {
   time=$(date +%I:%M)
-  echo -n "  ${time}"
+  echo -n " ${time}"
 }

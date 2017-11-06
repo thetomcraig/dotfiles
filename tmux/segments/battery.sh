@@ -10,6 +10,6 @@ runSegment() {
     echo -n " ${battery}"
   else
     # if on battery
-    echo -n "  ${battery}"
+    echo -n " ${battery}"
   fi
 }
