@@ -63,3 +63,5 @@ pbcopy < ~/.ssh/id_rsa.pub
 open "https://github.com/settings/keys"
 # Do user stuff here
 
+git config --global core.editor /usr/bin/vim
+
