@@ -15,6 +15,7 @@ brew install ack
 brew install wget
 brew install thefuck
 brew install zsh
+brew install ccat
 
 # vim setup - vundle
 # hot key stuff, casplock disable, hammer spoon, karabiner
