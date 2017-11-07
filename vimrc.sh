@@ -60,6 +60,21 @@ nnoremap gr :Ack <cword> <CR>
 nnoremap FF :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
 
 """""""""
 "Buffers"
@@ -76,7 +91,8 @@ nnoremap <silent> <C-q> :bd<CR>
 "Visual Mark Searching"
 let g:mwDefaultHighlightingPalette = 'extended'
 
-highlight MarkWord1 ctermbg=Magenta ctermfg=Black guibg=#8CCBEA guifg=Black
+"highlight MarkWord1 ctermbg=Magenta ctermfg=Black guibg=#8CCBEA guifg=Black
+"highlight MarkWord1 ctermbg=0 ctermfg=4 guibg=#8CCBEA guifg=Black
 highlight MarkWord2 ctermbg=Cyan ctermfg=Black guibg=#8CCBEA guifg=Black
 highlight MarkWord3 ctermbg=Red ctermfg=Black guibg=#8CCBEA guifg=Black
 highlight MarkWord4 ctermbg=White ctermfg=Black guibg=#8CCBEA guifg=Black
@@ -145,7 +161,7 @@ map <Space>f <Plug>(easymotion-k)
 """""""""
 "Airline"
 """""""""
-let g:airline_theme='alienblood_airline'
+let g:airline_theme='alienblood'
 
 
 """""
@@ -165,20 +181,6 @@ let g:ale_python_flake8_options = '--ignore=E501'
 "Visual Mark Searching"
 let g:mwDefaultHighlightingPalette = 'extended'
 
-highlight MarkWord1 ctermbg=Magenta ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord2 ctermbg=Cyan ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord3 ctermbg=Red ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord4 ctermbg=White ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord5 ctermbg=Green ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord6 ctermbg=Magenta ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord7 ctermbg=Cyan ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord8 ctermbg=Red ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord9 ctermbg=White ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord10 ctermbg=Green ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord11 ctermbg=White ctermfg=Magenta guibg=#8CCBEA guifg=Black
-highlight MarkWord12 ctermbg=White ctermfg=Cyan guibg=#8CCBEA guifg=Black
-highlight MarkWord13 ctermbg=White ctermfg=Red guibg=#8CCBEA guifg=Black
-highlight MarkWord14 ctermbg=White ctermfg=Green guibg=#8CCBEA guifg=Black
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
@@ -213,5 +215,5 @@ set clipboard=unnamed
 
 colorscheme alienblood
 
-":call delete(expand('%')) | bdelete!
+":call delete(expand('%')) | bdelete! "
 
