@@ -3,8 +3,7 @@ export EVENT_NOKQUEUE=1
 project_path=''
 case $HOSTNAME in
     (ZENO.local) project_path=${HOME}/Dropbox/TomCraig/Projects/EROS;;
-    (tcraig-m01) project_path={$HOME}/EROS;;
-    (*)   echo "How did I get in the middle of nowhere?";;
+    (*) project_path={$HOME}/EROS;;
 esac
 
 name='eros'

@@ -66,3 +66,5 @@ open "https://github.com/settings/keys"
 
 git config --global core.editor /usr/bin/vim
 
+sudo easy_install pip
+sudo pip install virtualenv
