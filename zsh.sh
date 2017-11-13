@@ -28,6 +28,7 @@ DISABLE_AUTO_TITLE=true
 source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
 
+alias ctags="`brew --prefix`/bin/ctags"
 alias l=my_fuzzy_ls
 my_fuzzy_ls() {
 	#Find files the match the fuzzy query
