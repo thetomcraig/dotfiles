@@ -91,21 +91,14 @@ nnoremap <silent> <C-q> :bd<CR>
 "Visual Mark Searching"
 let g:mwDefaultHighlightingPalette = 'extended'
 
-"highlight MarkWord1 ctermbg=Magenta ctermfg=Black guibg=#8CCBEA guifg=Black
-"highlight MarkWord1 ctermbg=0 ctermfg=4 guibg=#8CCBEA guifg=Black
-highlight MarkWord2 ctermbg=Cyan ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord3 ctermbg=Red ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord4 ctermbg=White ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord5 ctermbg=Green ctermfg=Black guibg=#8CCBEA guifg=Black
-highlight MarkWord6 ctermbg=Magenta ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord7 ctermbg=Cyan ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord8 ctermbg=Red ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord9 ctermbg=White ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord10 ctermbg=Green ctermfg=White guibg=#8CCBEA guifg=Black
-highlight MarkWord11 ctermbg=White ctermfg=Magenta guibg=#8CCBEA guifg=Black
-highlight MarkWord12 ctermbg=White ctermfg=Cyan guibg=#8CCBEA guifg=Black
-highlight MarkWord13 ctermbg=White ctermfg=Red guibg=#8CCBEA guifg=Black
-highlight MarkWord14 ctermbg=White ctermfg=Green guibg=#8CCBEA guifg=Black
+highlight MarkWord1 ctermfg=1 ctermbg=8
+highlight MarkWord2 ctermfg=2 ctermbg=8
+highlight MarkWord3 ctermfg=3 ctermbg=8
+highlight MarkWord4 ctermfg=4 ctermbg=8
+highlight MarkWord5 ctermfg=5 ctermbg=8
+highlight MarkWord6 ctermfg=6 ctermbg=8
+highlight MarkWord7 ctermfg=7 ctermbg=8
+highlight MarkWord8 ctermfg=8 ctermbg=8
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
@@ -167,6 +160,10 @@ let g:airline_theme='alienblood'
 """""
 "ALE"
 """""
+let g:ale_lint_on_enter = 'never'
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_text_changed = 'never'
+
 let g:ale_fixers = {
     \   'python': ['isort', 'trim_whitespace', 'remove_trailing_lines', 'autopep8'],
 \}
@@ -216,4 +213,3 @@ set clipboard=unnamed
 colorscheme alienblood
 
 ":call delete(expand('%')) | bdelete! "
-
