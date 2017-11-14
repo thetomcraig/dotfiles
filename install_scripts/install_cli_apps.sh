@@ -15,6 +15,9 @@ brew install ack
 brew install wget
 brew install thefuck
 brew install zsh
+brew install ccat
+brew install ack
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 # vim setup - vundle
 # hot key stuff, casplock disable, hammer spoon, karabiner
@@ -65,3 +68,5 @@ open "https://github.com/settings/keys"
 
 git config --global core.editor /usr/bin/vim
 
+sudo easy_install pip
+sudo pip install virtualenv
