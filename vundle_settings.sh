@@ -25,6 +25,7 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
 Plugin 'gko/vim-coloresque'
 Plugin 'thetomcraig/Mark--Karkat'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line "
 call vundle#end()            " required "

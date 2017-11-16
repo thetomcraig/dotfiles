@@ -1,5 +1,6 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
 
+filetype plugin on                          "Used by the NERDcommenter plugin"
 syntax on                                   "turn on the syntax coloring"
 set incsearch                               "highlight while typing search"
 set hlsearch                                "highlight all search results"
@@ -12,6 +13,7 @@ set smartcase                               "ignore case if search pattern is al
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
 execute "set colorcolumn=" . join(range(120,335), ',')
+
 
 
 """""""""""""""""""""""""""""""""
