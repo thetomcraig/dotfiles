@@ -34,7 +34,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 #Install my theme for ZSH
 ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
 #Install Autosuggestions
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
+
 
 #Link Files
 #Make sure these point to actual paths

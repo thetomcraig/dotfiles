@@ -2,16 +2,20 @@
 #MY PERSONAL BASH PROFILE
 #########################
 export ZSH=${HOME}/.oh-my-zsh
-export LANG="en_US.UTF-8"
-
-export TERM=xterm-256color
-
-#ZSH_THEME="agnoster_shortened"
-ZSH_THEME="robbyrussell"
-
-alias s="source $dotfiles_location/zsh.sh"
 dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
+
+export LANG="en_US.UTF-8"
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host dir)
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+POWERLEVEL9K_DISABLE_RPROMPT=true
+
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 #HISTCONTROL=ignoredups
@@ -26,6 +30,7 @@ DISABLE_AUTO_TITLE=true
 
 source $ZSH/oh-my-zsh.sh
 
+alias s="source $dotfiles_location/zsh.sh"
 alias ctags="`brew --prefix`/bin/ctags"
 alias l=my_fuzzy_ls
 my_fuzzy_ls() {
@@ -125,4 +130,3 @@ fi
 
 eval $(thefuck --alias)
 
-export LC_ALL=en_US.UTF-8
