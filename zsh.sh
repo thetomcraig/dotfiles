@@ -20,13 +20,11 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 plugins=(git, zsh-autosuggestions)
-#plugins=(git)
 setopt auto_cd
 bindkey '^j' autosuggest-accept
 DISABLE_AUTO_TITLE=true
 
 source $ZSH/oh-my-zsh.sh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=red'
 
 alias ctags="`brew --prefix`/bin/ctags"
 alias l=my_fuzzy_ls
@@ -127,5 +125,4 @@ fi
 
 eval $(thefuck --alias)
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+export LC_ALL=en_US.UTF-8
