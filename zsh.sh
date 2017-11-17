@@ -10,11 +10,12 @@ export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host dir)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_VIRTUALENV_BACKGROUND=green
 
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
