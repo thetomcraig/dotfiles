@@ -38,9 +38,6 @@ nmap <Space>bq :bp <BAR> bd #<CR>
 nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
-vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
-
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
 
@@ -162,9 +159,9 @@ let g:airline_theme='alienblood'
 """""
 "ALE"
 """""
-let g:ale_lint_on_enter = 'never'
-let g:ale_lint_on_save = 0
-let g:ale_lint_on_text_changed = 'never'
+"let g:ale_lint_on_enter = 'never'"
+"let g:ale_lint_on_save = 0"
+"let g:ale_lint_on_text_changed = 'never'"
 
 let g:ale_fixers = {
     \   'python': ['isort', 'trim_whitespace', 'remove_trailing_lines', 'autopep8'],
@@ -172,6 +169,7 @@ let g:ale_fixers = {
 let g:ale_python_pylint_options =
     \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
 let g:ale_python_flake8_options = '--ignore=E501'
+
 
 
 """"""""""""""
@@ -194,6 +192,12 @@ nmap <Space>6 <k6>
 nmap <Space>7 <k7>
 nmap <Space>8 <k8>
 nmap <Space>9 <k9>
+
+
+""""""""""""""
+"Vim Fugitive"
+""""""""""""""
+set diffopt+=vertical
 
 
 """"""""""""""""""""""""
