@@ -1,19 +1,17 @@
 #!/bin/bash
 
-source ~/Dotfiles/themes/main_colors.sh
-source ~/Dotfiles/tmux/segment.sh
+source $tmux_dotfiles_location/segment.sh
 
 displayStatus() {
   if [[ $1 == "left" ]]; then
-    displaySegment "session" "${TMUX_LIGHT_SEGMENT_FG}" "${TMUX_LIGHT_SEGMENT_BG}"
-    displaySegment "database" "${TMUX_DARK_SEGMENT_FG}" "${TMUX_DARK_SEGMENT_BG}"
+    displaySegment "session" "#${TMUX_LIGHT_SEGMENT_FG}" "#${TMUX_LIGHT_SEGMENT_BG}"
+    displaySegment "database" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
   else
-    displaySegment "itunes" "${TMUX_DARK_SEGMENT_FG}" "${TMUX_DARK_SEGMENT_BG}"
-    displaySegment "git_branch" "${TMUX_DARK_SEGMENT_FG}" "${TMUX_DARK_SEGMENT_BG}"
-    #displaySegment "weather" "${TMUX_DARK_SEGMENT_FG}" "${TMUX_DARK_SEGMENT_BG}"
-    displaySegment "time" "${TMUX_DARK_SEGMENT_FG}" "${TMUX_DARK_SEGMENT_BG}"
-    displaySegment "battery" "${TMUX_DARK_SEGMENT_FG}" "${TMUX_DARK_SEGMENT_BG}"
-    displaySegment "hostname" "${TMUX_LIGHT_SEGMENT_FG}" "${TMUX_LIGHT_SEGMENT_BG}"
+    displaySegment "itunes" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
+    displaySegment "git_branch" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
+    displaySegment "time" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
+    displaySegment "battery" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
+    displaySegment "hostname" "#${TMUX_LIGHT_SEGMENT_FG}" "#${TMUX_LIGHT_SEGMENT_BG}"
   fi
 
   exit 0
