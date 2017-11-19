@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# Status bar segments (session and hostname)
 export TMUX_LIGHT_SEGMENT_FG="15321d"
 export TMUX_LIGHT_SEGMENT_BG="3b7d92"
 
@@ -9,6 +7,17 @@ export TMUX_CURRENT_WINDOW_FG="c8e200"
 export TMUX_CURRENT_WINDOW_BG="838f2f"
 export TMUX_WINDOW_FG="838f2f"
 export TMUX_WINDOW_BG="121d13"
+
+# Panes
+export TMUX_PANE_ACTIVE_BORDER_FG="838f2f"
+export TMUX_PANE_BORDER_FG="838f2f"
+export TMUX_PANE_BG="121d13"
+
+# Messages
+export TMUX_MESSAGE_FG="778f88"
+export TMUX_MESSAGE_BG="121d13"
+export TMUX_MESSAGE_COMMAND_FG="778f88"
+export TMUX_MESSAGE_COMMAND_BG="121d13"
 
 # Dynamic segments
 export TMUX_DARK_SEGMENT_FG="00e3cf"

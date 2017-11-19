@@ -116,5 +116,5 @@ fi
 
 eval $(thefuck --alias)
 
-export tmux_dotfiles_location="$dotfiles_location/tmux/"
+export tmux_dotfiles_location="$dotfiles_location/tmux"
 source $tmux_dotfiles_location/tmux_colors.sh
