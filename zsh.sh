@@ -2,8 +2,10 @@
 #MY PERSONAL BASH PROFILE
 #########################
 export ZSH=${HOME}/.oh-my-zsh
-dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
+dotfiles_location="${HOME}/Dotfiles"
+export tmux_dotfiles_location="$dotfiles_location/tmux"
+source $tmux_dotfiles_location/tmux_colors.sh
 
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
@@ -116,5 +118,3 @@ fi
 
 eval $(thefuck --alias)
 
-export tmux_dotfiles_location="$dotfiles_location/tmux"
-source $tmux_dotfiles_location/tmux_colors.sh
