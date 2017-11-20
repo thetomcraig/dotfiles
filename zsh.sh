@@ -2,8 +2,10 @@
 #MY PERSONAL BASH PROFILE
 #########################
 export ZSH=${HOME}/.oh-my-zsh
-dotfiles_location="${HOME}/Dotfiles"
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
+dotfiles_location="${HOME}/Dotfiles"
+export tmux_dotfiles_location="$dotfiles_location/tmux"
+source $tmux_dotfiles_location/tmux_colors.sh
 
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
@@ -16,7 +18,6 @@ POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_VIRTUALENV_BACKGROUND=green
-
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 #HISTCONTROL=ignoredups
@@ -54,13 +55,6 @@ alias T="tree -a -C -L 1"
 alias tt="mytree 999"
 unalias d
 alias d="tree -a -C -L 1 -d"
-
-alias n=notify_func
-notify_func() {
-	title='Job Done'
-	terminal-notifier -message $? -title $title
-}
-
 alias s='source $dotfiles_location/zsh.sh'
 alias b='vim $dotfiles_location/zsh.sh'
 alias g="git status"
@@ -81,6 +75,7 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
+alias cat="ccat"
 
 alias tmux="tmux -u"
 alias ta="tmux a -t"
@@ -89,8 +84,6 @@ alias tk="tmux kill-session -t"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
-
-alias cat="ccat"
 
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
@@ -110,11 +103,7 @@ alias mu="cd ${HOME}/Dropbox/TomCraig/Music"
 alias tv="cd ${HOME}/Dropbox/TomCraig/TV"
 
 # EROS
-alias E="cd ${HOME}/Dropbox/TomCraig/Projects/EROS"
-alias L="cd ${HOME}/Dropbox/TomCraig/Logs"
-alias LE="cd ${HOME}/Dropbox/TomCraig/Logs/EROS/"
-alias wE="workon EROS"
-alias erosstart="$dotfiles_location/tmux/session_scripts/eros.sh && tmux attach -t eros"
+alias erosstart="$dotfiles_location/session_scripts/eros.sh && tmux attach -t eros"
 alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
 
 # SSH
@@ -126,7 +115,5 @@ host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
 fi
-
-# $("$dotfiles_location/check.sh")
 
 eval $(thefuck --alias)
