@@ -1,5 +1,8 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
 
+""""""""
+"General"
+""""""""
 filetype plugin on                          "Used by the NERDcommenter plugin"
 syntax on                                   "turn on the syntax coloring"
 set incsearch                               "highlight while typing search"
@@ -29,6 +32,7 @@ nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
+nnoremap <Space>nt :NERDTree<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>G :Gblame<CR>
 nnoremap <Space>p :echo expand("%:p")<CR>
@@ -56,7 +60,7 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nnoremap ff :Ack
+nnoremap ff :Ack 
 nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
@@ -159,24 +163,17 @@ map <Space>f <Plug>(easymotion-k)
 
 
 
-"""""""""""""
-"Colorscheme"
-"""""""""""""
-let g:airline_theme='alienblood'
-colorscheme alienblood
-
-
-
 """""
 "ALE"
 """""
-let g:ale_lint_on_enter = 'never'
-let g:ale_lint_on_save = 0
-let g:ale_lint_on_text_changed = 'never'
+"let g:ale_lint_on_enter = 'never'"
+"let g:ale_lint_on_save = 0"
+"let g:ale_lint_on_text_changed = 'never'"
 
 let g:ale_fixers = {
-    \   'python': ['isort', 'trim_whitespace', 'remove_trailing_lines', 'autopep8'],
+    \   'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
 \}
+let g:ale_python_autopep8_options = '--max-line-length=120'
 let g:ale_python_pylint_options =
     \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
 let g:ale_python_flake8_options = '--ignore=E501'
@@ -201,3 +198,9 @@ set clipboard=unnamed
 
 
 ":call delete(expand('%')) | bdelete! "
+
+"""""""""""""
+"Colorscheme"
+"""""""""""""
+let g:airline_theme='alienblood'
+colorscheme alienblood
