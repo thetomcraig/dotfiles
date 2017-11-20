@@ -130,4 +130,3 @@ fi
 # $("$dotfiles_location/check.sh")
 
 eval $(thefuck --alias)
-

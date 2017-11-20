@@ -38,6 +38,9 @@ nmap <Space>bq :bp <BAR> bd #<CR>
 nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
+vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
+vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
+
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
 
@@ -53,7 +56,7 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nnoremap ff :Ack 
+nnoremap ff :Ack
 nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
@@ -82,6 +85,7 @@ set hidden
 nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <C-h> :bprevious<CR>
 nnoremap <silent> <C-q> :bd<CR>
+
 
 
 """"""""""""""
@@ -114,6 +118,7 @@ nmap <Space>8 <k8>
 nmap <Space>9 <k9>
 
 
+
 """"""""""
 "NERD Tree"
 """"""""""
@@ -122,10 +127,12 @@ let g:NERDTreeDirArrowCollapsible = 'v'
 let NERDTreeIgnore = ['\.pyc$']
 
 
+
 """"""""""""
 "AUTO PEP 8"
 """"""""""""
 au FileType python setlocal formatprg=autopep8\ -
+
 
 
 """"""""""""
@@ -142,6 +149,7 @@ highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 
 
+
 """"""""""""
 "Easy motion"
 """"""""""""
@@ -150,18 +158,21 @@ map <Space>g <Plug>(easymotion-j)
 map <Space>f <Plug>(easymotion-k)
 
 
-"""""""""
-"Airline"
-"""""""""
+
+"""""""""""""
+"Colorscheme"
+"""""""""""""
 let g:airline_theme='alienblood'
+colorscheme alienblood
+
 
 
 """""
 "ALE"
 """""
-"let g:ale_lint_on_enter = 'never'"
-"let g:ale_lint_on_save = 0"
-"let g:ale_lint_on_text_changed = 'never'"
+let g:ale_lint_on_enter = 'never'
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_text_changed = 'never'
 
 let g:ale_fixers = {
     \   'python': ['isort', 'trim_whitespace', 'remove_trailing_lines', 'autopep8'],
@@ -170,34 +181,6 @@ let g:ale_python_pylint_options =
     \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
 let g:ale_python_flake8_options = '--ignore=E501'
 
-
-
-""""""""""""""
-"Marks colors"
-""""""""""""""
-"Visual Mark Searching"
-let g:mwDefaultHighlightingPalette = 'extended'
-
-
-"For the Marks plugin seen here:"
-"http://www.vim.org/scripts/script.php?script_id=2666"
-nmap <Space>M :Marks<CR>
-nmap <Space>N :MarkClear<CR>
-nmap <Space>1 <k1>
-nmap <Space>2 <k2>
-nmap <Space>3 <k3>
-nmap <Space>4 <k4>
-nmap <Space>5 <k5>
-nmap <Space>6 <k6>
-nmap <Space>7 <k7>
-nmap <Space>8 <k8>
-nmap <Space>9 <k9>
-
-
-""""""""""""""
-"Vim Fugitive"
-""""""""""""""
-set diffopt+=vertical
 
 
 """"""""""""""""""""""""
@@ -216,6 +199,5 @@ set smarttab
 set expandtab
 set clipboard=unnamed
 
-colorscheme alienblood
 
 ":call delete(expand('%')) | bdelete! "
