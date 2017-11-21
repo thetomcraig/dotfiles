@@ -24,7 +24,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'w0rp/ale'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
-Plugin 'gko/vim-coloresque'
+#Plugin 'gko/vim-coloresque'
 Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'scrooloose/nerdcommenter'
 
