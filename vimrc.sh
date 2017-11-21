@@ -34,6 +34,7 @@ nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>nt :NERDTree<CR>
 nnoremap <Space>t <C-]><CR>
+nnoremap <cr> <c-w>w
 nnoremap <Space>G :Gblame<CR>
 nnoremap <Space>p :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
@@ -204,3 +205,5 @@ set clipboard=unnamed
 """""""""""""
 let g:airline_theme='alienblood'
 colorscheme alienblood
+
+set diffopt+=horizontal
