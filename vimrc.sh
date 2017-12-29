@@ -15,6 +15,7 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments'
 execute "set colorcolumn=" . join(range(120,335), ',')
 
 
