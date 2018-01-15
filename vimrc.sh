@@ -15,6 +15,7 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 execute "set colorcolumn=" . join(range(120,335), ',')
 
 
@@ -32,9 +33,11 @@ nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
-nnoremap <Space>nt :NERDTree<CR>
+nnoremap <Space>nt :NERDTreeFind<CR>
+nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>t <C-]><CR>
-nnoremap <cr> <c-w>w
+"nnoremap <cr> <c-w>w"
+"nnoremap <space>dd :call delete(expand('%')) | bdelete! "
 nnoremap <Space>G :Gblame<CR>
 nnoremap <Space>p :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
@@ -172,12 +175,38 @@ map <Space>f <Plug>(easymotion-k)
 "let g:ale_lint_on_text_changed = 'never'"
 
 let g:ale_fixers = {
-    \   'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'python':     ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'javascript': ['eslint'],
+    \ 'html': ['tidy'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
 let g:ale_python_pylint_options =
     \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
 let g:ale_python_flake8_options = '--ignore=E501'
+let g:ale_linters = {'javascript': 'all', 'html': 'all'}
+
+
+
+""""""""""
+"FUGITVIE"
+""""""""""
+set diffopt+=vertical
+
+nnoremap <space>ga :Git add %:p<CR><CR>
+nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gm :Gcommit -v -q<CR>
+"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
+nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>ge :Gedit<CR>
+"nnoremap <space>gr :Gread<CR>"
+nnoremap <space>gw :Gwrite<CR><CR>
+"nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
+"nnoremap <space>gp :Ggrep<Space>"
+"nnoremap <space>gm :Gmove<Space>"
+"nnoremap <space>gb :Git branch<Space>"
+"nnoremap <space>go :Git checkout<Space>"
+nnoremap <space>gp :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
 
 
 
@@ -198,7 +227,6 @@ set expandtab
 set clipboard=unnamed
 
 
-":call delete(expand('%')) | bdelete! "
 
 """""""""""""
 "Colorscheme"
@@ -206,6 +234,5 @@ set clipboard=unnamed
 let g:airline_theme='alienblood'
 colorscheme alienblood
 
-set diffopt+=horizontal
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
 

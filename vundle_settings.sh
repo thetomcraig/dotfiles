@@ -14,6 +14,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-dispatch'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete.vim'
@@ -25,10 +26,11 @@ Plugin 'w0rp/ale'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/limelight.vim'
-Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'ryanoasis/vim-devicons'
+
 
 " All of your Plugins must be added before the following line "
 call vundle#end()            " required "
