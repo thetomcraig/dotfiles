@@ -207,3 +207,5 @@ let g:airline_theme='alienblood'
 colorscheme alienblood
 
 set diffopt+=horizontal
+let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
+
