@@ -24,8 +24,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'w0rp/ale'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
-#Plugin 'gko/vim-coloresque'
+Plugin 'junegunn/limelight.vim'
 Plugin 'thetomcraig/Mark--Karkat'
+Plugin 'junegunn/goyo.vim'
+Plugin 'kazuph/dayone.vim'
 Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line "
