@@ -15,7 +15,7 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
-syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments'
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 execute "set colorcolumn=" . join(range(120,335), ',')
 
 
@@ -133,6 +133,13 @@ nmap <Space>9 <k9>
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
 let NERDTreeIgnore = ['\.pyc$']
+
+
+
+"""""""""""""""
+"NERD Commenter"
+"""""""""""""""
+let g:NERDSpaceDelims=1
 
 
 

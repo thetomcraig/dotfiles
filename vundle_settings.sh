@@ -27,6 +27,8 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
 "Plugin 'gko/vim-coloresque'"
 Plugin 'inkarkat/vim-mark'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ryanoasis/vim-devicons'
 
