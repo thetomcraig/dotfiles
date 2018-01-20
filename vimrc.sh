@@ -16,7 +16,7 @@ set smartcase                               "ignore case if search pattern is al
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
 syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
-execute "set colorcolumn=" . join(range(120,335), ',')
+autocmd FileType python execute "set colorcolumn=" . join(range(120,335), ',')
 
 
 
