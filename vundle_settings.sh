@@ -25,10 +25,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'w0rp/ale'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'junegunn/fzf'
-"Plugin 'gko/vim-coloresque'"
-Plugin 'inkarkat/vim-mark'
-Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'kazuph/dayone.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ryanoasis/vim-devicons'
 
