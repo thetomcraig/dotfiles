@@ -76,7 +76,6 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
-alias cat="ccat"
 
 alias tmux="tmux -u"
 alias ta="tmux a -t"
@@ -115,6 +114,7 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
+    alias cat="ccat"
 fi
 
 eval $(thefuck --alias)
