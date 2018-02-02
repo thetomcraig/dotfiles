@@ -46,9 +46,6 @@ nmap <Space>bq :bp <BAR> bd #<CR>
 nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
-vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
-
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
 
@@ -242,4 +239,9 @@ let g:airline_theme='alienblood'
 colorscheme alienblood
 
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
+
+<Leader>b :MBEFocus
+
+vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
+vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
 
