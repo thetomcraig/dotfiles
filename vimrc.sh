@@ -114,15 +114,6 @@ highlight MarkWord8 ctermfg=8 ctermbg=8
 "http://www.vim.org/scripts/script.php?script_id=2666"
 nmap <Space>M :Marks<CR>
 nmap <Space>N :MarkClear<CR>
-nmap <Space>1 <k1>
-nmap <Space>2 <k2>
-nmap <Space>3 <k3>
-nmap <Space>4 <k4>
-nmap <Space>5 <k5>
-nmap <Space>6 <k6>
-nmap <Space>7 <k7>
-nmap <Space>8 <k8>
-nmap <Space>9 <k9>
 
 
 
@@ -175,7 +166,7 @@ map <Space>f <Plug>(easymotion-k)
 
 let g:ale_fixers = {
     \ 'python':     ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
-    \ 'javascript': ['eslint'],
+    \ 'javascript': ['stylelint', 'eslint'],
     \ 'html': ['tidy'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
@@ -193,19 +184,20 @@ set diffopt+=vertical
 
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gm :Gcommit -v -q<CR>
-"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
+nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
-"nnoremap <space>gr :Gread<CR>"
 nnoremap <space>gw :Gwrite<CR><CR>
+nnoremap <space>gp :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+"nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
+"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
+"nnoremap <space>gr :Gread<CR>"
 "nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
 "nnoremap <space>gp :Ggrep<Space>"
 "nnoremap <space>gm :Gmove<Space>"
 "nnoremap <space>gb :Git branch<Space>"
 "nnoremap <space>go :Git checkout<Space>"
-nnoremap <space>gp :Dispatch! git push<CR>
-nnoremap <space>gpl :Dispatch! git pull<CR>
 
 
 
@@ -231,4 +223,19 @@ set clipboard=unnamed
 "Colorscheme"
 """""""""""""
 let g:airline_theme='alienblood'
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#enabled = 1
+nmap <Space>1 :b 1<CR>
+nmap <Space>2 :b 2<CR>
+nmap <Space>3 :b 3<CR>
+nmap <Space>4 :b 4<CR>
+nmap <Space>5 :b 5<CR>
+nmap <Space>6 :b 6<CR>
+nmap <Space>7 :b 7<CR>
+nmap <Space>8 :b 8<CR>
+nmap <Space>9 :b 9<CR>
+
 colorscheme alienblood
