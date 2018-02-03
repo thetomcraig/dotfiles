@@ -240,7 +240,8 @@ colorscheme alienblood
 
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
 
-<Leader>b :MBEFocus
+<Leader>B :MBEFocus<CR>
+<Leader>b :b 
 
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
