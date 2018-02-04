@@ -246,11 +246,3 @@ nnoremap <space>b :b
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
 
-"let g:airline_section_a = airline#section#create([])
-"let g:airline_section_b = airline#section#create([])
-"let g:airline_section_c = airline#section#create([])"
-"let g:airline_section_x = airline#section#create([])
-"let g:airline_section_y = airline#section#create([])
-"let g:airline_section_z = airline#section#create([])
-"let g:airline_section_warning"
-"let g:airline_section_error"
