@@ -15,7 +15,8 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
-execute "set colorcolumn=" . join(range(120,335), ',')
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
+autocmd FileType python execute "set colorcolumn=" . join(range(120,335), ',')
 
 
 
@@ -44,9 +45,6 @@ nmap <Space>bq :bp <BAR> bd #<CR>
 
 nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
-
-vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
 
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
@@ -123,6 +121,13 @@ nmap <Space>N :MarkClear<CR>
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
 let NERDTreeIgnore = ['\.pyc$']
+
+
+
+"""""""""""""""
+"NERD Commenter"
+"""""""""""""""
+let g:NERDSpaceDelims=1
 
 
 
@@ -239,3 +244,11 @@ nmap <Space>8 :b 8<CR>
 nmap <Space>9 :b 9<CR>
 
 colorscheme alienblood
+
+let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
+
+<Leader>b :MBEFocus
+
+vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
+vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
+
