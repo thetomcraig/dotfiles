@@ -228,11 +228,6 @@ set clipboard=unnamed
 "Colorscheme"
 """""""""""""
 let g:airline_theme='alienblood'
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#tab_nr_type = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#show_tab_nr = 0
-let g:airline#extensions#tabline#enabled = 1
 nmap <Space>1 :b 1<CR>
 nmap <Space>2 :b 2<CR>
 nmap <Space>3 :b 3<CR>
@@ -247,7 +242,8 @@ colorscheme alienblood
 
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
 
-<Leader>b :MBEFocus
+nmap <Space>B :MBEFocus<CR>
+nmap <SPace>b :b 
 
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
