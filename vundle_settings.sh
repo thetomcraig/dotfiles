@@ -31,6 +31,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
+Plugin 'thetomcraig/Mark--Karkat'
 
 
 " All of your Plugins must be added before the following line "
