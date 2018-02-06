@@ -65,6 +65,11 @@ nnoremap ff :Ack
 nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
+nnoremap <space>dd :call fzf#run({'source': map(range(1, bufnr('$')),
+                                  \'bufname(v:val)'),
+                                  \'sink': 'e',
+                                  \'down': '30%'})<CR>
+'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 let g:fzf_colors =
@@ -106,7 +111,7 @@ highlight MarkWord4 ctermfg=4 ctermbg=8
 highlight MarkWord5 ctermfg=5 ctermbg=8
 highlight MarkWord6 ctermfg=6 ctermbg=8
 highlight MarkWord7 ctermfg=7 ctermbg=8
-highlight MarkWord8 ctermfg=8 ctermbg=8
+highlight MarkWord8 ctermfg=8 ctermbg=2
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
@@ -157,8 +162,6 @@ set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 "Easy motion"
 """"""""""""
 map <Space>s <Plug>(easymotion-s)
-map <Space>g <Plug>(easymotion-j)
-map <Space>f <Plug>(easymotion-k)
 
 
 
@@ -171,7 +174,9 @@ map <Space>f <Plug>(easymotion-k)
 
 let g:ale_fixers = {
     \ 'python':     ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'less': ['stylelint'],
     \ 'javascript': ['stylelint', 'eslint'],
+    \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
@@ -247,4 +252,5 @@ nmap <SPace>b :b
 
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
+
 
