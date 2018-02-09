@@ -22,7 +22,7 @@ autocmd FileType python execute "set colorcolumn=" . join(range(120,335), ',')
 
 """""""""""""""""""""""""""""""""
 "General Space (Leader) shortcuts
-""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 let mapleader=" "
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
@@ -37,7 +37,7 @@ nnoremap <Space>nt :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>t <C-]><CR>
 "nnoremap <cr> <c-w>w"
-"nnoremap <space>dd :call delete(expand('%')) | bdelete! "
+"nnoremap <space>ff :call delete(expand('%')) | bdelete! "
 nnoremap <Space>G :Gblame<CR>
 nnoremap <Space>p :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
@@ -95,6 +95,7 @@ set hidden
 nnoremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <C-h> :bprevious<CR>
 nnoremap <silent> <C-q> :bd<CR>
+nmap <Space>B :MBEFocus<CR>
 
 
 
@@ -111,7 +112,22 @@ highlight MarkWord4 ctermfg=4 ctermbg=8
 highlight MarkWord5 ctermfg=5 ctermbg=8
 highlight MarkWord6 ctermfg=6 ctermbg=8
 highlight MarkWord7 ctermfg=7 ctermbg=8
-highlight MarkWord8 ctermfg=8 ctermbg=2
+
+highlight MarkWord8 ctermfg=8 ctermbg=1
+highlight MarkWord9 ctermfg=8 ctermbg=2
+"Skipping yellow (3) because it's for search"
+highlight MarkWord10 ctermfg=8 ctermbg=4
+highlight MarkWord11 ctermfg=8 ctermbg=5
+highlight MarkWord12 ctermfg=8 ctermbg=6
+highlight MarkWord13 ctermfg=8 ctermbg=7
+
+highlight MarkWord14 ctermfg=15 ctermbg=1
+highlight MarkWord15 ctermfg=15 ctermbg=2
+"Skipping yellow (3) because it's for search"
+highlight MarkWord16 ctermfg=15 ctermbg=4
+highlight MarkWord17 ctermfg=15 ctermbg=5
+highlight MarkWord18 ctermfg=15 ctermbg=6
+highlight MarkWord19 ctermfg=15 ctermbg=7
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
@@ -133,6 +149,7 @@ let NERDTreeIgnore = ['\.pyc$']
 "NERD Commenter"
 """""""""""""""
 let g:NERDSpaceDelims=1
+let g:NERDTreeQuitOnOpen=1
 
 
 
@@ -173,7 +190,7 @@ map <Space>s <Plug>(easymotion-s)
 "let g:ale_lint_on_text_changed = 'never'"
 
 let g:ale_fixers = {
-    \ 'python':     ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
     \ 'less': ['stylelint'],
     \ 'javascript': ['stylelint', 'eslint'],
     \ 'json': ['jsonlint'],
@@ -233,24 +250,12 @@ set clipboard=unnamed
 "Colorscheme"
 """""""""""""
 let g:airline_theme='alienblood'
-nmap <Space>1 :b 1<CR>
-nmap <Space>2 :b 2<CR>
-nmap <Space>3 :b 3<CR>
-nmap <Space>4 :b 4<CR>
-nmap <Space>5 :b 5<CR>
-nmap <Space>6 :b 6<CR>
-nmap <Space>7 :b 7<CR>
-nmap <Space>8 :b 8<CR>
-nmap <Space>9 :b 9<CR>
-
 colorscheme alienblood
 
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
 
-nmap <Space>B :MBEFocus<CR>
-nmap <SPace>b :b 
-
-vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
-
+function GetSling()
+    call system('git rev-parse --abbrev-ref --symbolic-full-name @{u} | grep -o "SLING-[0-9]*" | pbcopy')
+endfunction
+command! SLING call GetSling()
 
