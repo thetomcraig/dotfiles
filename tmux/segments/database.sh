@@ -1,6 +1,6 @@
 #!/bin/bash
 
-db=$(python ~/slingshot-utils/slingshot_functions.py get_current_dbi $(tmux display-message -p '#S'))
+db=$(python ~/slingshot-utils/slingshot_functions.py get_current_db $(tmux display-message -p '#S'))
 runSegment() {
     project_path=''
     case $(hostname) in

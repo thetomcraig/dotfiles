@@ -65,6 +65,11 @@ nnoremap ff :Ack
 nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
+nnoremap <space>dd :call fzf#run({'source': map(range(1, bufnr('$')),
+                                  \'bufname(v:val)'),
+                                  \'sink': 'e',
+                                  \'down': '30%'})<CR>
+'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 let g:fzf_colors =
@@ -106,21 +111,12 @@ highlight MarkWord4 ctermfg=4 ctermbg=8
 highlight MarkWord5 ctermfg=5 ctermbg=8
 highlight MarkWord6 ctermfg=6 ctermbg=8
 highlight MarkWord7 ctermfg=7 ctermbg=8
-highlight MarkWord8 ctermfg=8 ctermbg=8
+highlight MarkWord8 ctermfg=8 ctermbg=2
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
 nmap <Space>M :Marks<CR>
 nmap <Space>N :MarkClear<CR>
-nmap <Space>1 <k1>
-nmap <Space>2 <k2>
-nmap <Space>3 <k3>
-nmap <Space>4 <k4>
-nmap <Space>5 <k5>
-nmap <Space>6 <k6>
-nmap <Space>7 <k7>
-nmap <Space>8 <k8>
-nmap <Space>9 <k9>
 
 
 
@@ -166,8 +162,6 @@ set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 "Easy motion"
 """"""""""""
 map <Space>s <Plug>(easymotion-s)
-map <Space>g <Plug>(easymotion-j)
-map <Space>f <Plug>(easymotion-k)
 
 
 
@@ -180,7 +174,9 @@ map <Space>f <Plug>(easymotion-k)
 
 let g:ale_fixers = {
     \ 'python':     ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
-    \ 'javascript': ['eslint'],
+    \ 'less': ['stylelint'],
+    \ 'javascript': ['stylelint', 'eslint'],
+    \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
@@ -198,19 +194,20 @@ set diffopt+=vertical
 
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gm :Gcommit -v -q<CR>
-"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
+nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
-"nnoremap <space>gr :Gread<CR>"
 nnoremap <space>gw :Gwrite<CR><CR>
+nnoremap <space>gp :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+"nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
+"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
+"nnoremap <space>gr :Gread<CR>"
 "nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
 "nnoremap <space>gp :Ggrep<Space>"
 "nnoremap <space>gm :Gmove<Space>"
 "nnoremap <space>gb :Git branch<Space>"
 "nnoremap <space>go :Git checkout<Space>"
-nnoremap <space>gp :Dispatch! git push<CR>
-nnoremap <space>gpl :Dispatch! git pull<CR>
 
 
 
@@ -236,13 +233,24 @@ set clipboard=unnamed
 "Colorscheme"
 """""""""""""
 let g:airline_theme='alienblood'
+nmap <Space>1 :b 1<CR>
+nmap <Space>2 :b 2<CR>
+nmap <Space>3 :b 3<CR>
+nmap <Space>4 :b 4<CR>
+nmap <Space>5 :b 5<CR>
+nmap <Space>6 :b 6<CR>
+nmap <Space>7 :b 7<CR>
+nmap <Space>8 :b 8<CR>
+nmap <Space>9 :b 9<CR>
+
 colorscheme alienblood
 
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
 
-nnoremap <space>B :MBEFocus<CR>
-nnoremap <space>b :b 
+nmap <Space>B :MBEFocus<CR>
+nmap <SPace>b :b 
 
 vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
 vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
+
 
