@@ -15,13 +15,14 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
+set splitright                              "Open splits to the right"
 syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 autocmd FileType python execute "set colorcolumn=" . join(range(120,335), ',')
 
 
 
 """""""""""""""""""""""""""""""""
-"General Space (Leader) shortcuts
+"General Space (Leader) shortcuts"
 """""""""""""""""""""""""""""""""
 let mapleader=" "
 nnoremap <Space>w :w<CR>
@@ -65,7 +66,7 @@ nnoremap ff :Ack
 nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
-nnoremap <space>dd :call fzf#run({'source': map(range(1, bufnr('$')),
+nnoremap <space>ff :call fzf#run({'source': map(range(1, bufnr('$')),
                                   \'bufname(v:val)'),
                                   \'sink': 'e',
                                   \'down': '30%'})<CR>
@@ -92,9 +93,12 @@ let g:fzf_colors =
 "Buffers"
 """""""""
 set hidden
-nnoremap <silent> <C-l> :bnext<CR>
-nnoremap <silent> <C-h> :bprevious<CR>
-nnoremap <silent> <C-q> :bd<CR>
+"nnoremap <silent> <C-l> :bnext<CR>"
+"nnoremap <silent> <C-h> :bprevious<CR>"
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 nmap <Space>B :MBEFocus<CR>
 
 
