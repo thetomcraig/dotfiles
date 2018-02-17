@@ -37,6 +37,11 @@ nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>nt :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>t <C-]><CR>
+nnoremap <space>b :call fzf#run({'source': map(range(1, bufnr('$')),
+                                  \'bufname(v:val)'),
+                                  \'sink': 'e',
+                                  \'down': '30%'})<CR>
+'
 "nnoremap <cr> <c-w>w"
 "nnoremap <space>ff :call delete(expand('%')) | bdelete! "
 nnoremap <Space>G :Gblame<CR>
@@ -66,11 +71,6 @@ nnoremap ff :Ack
 nnoremap gr :Ack <cword> <CR>
 "File Search"
 nnoremap FF :FZF<CR>
-nnoremap <space>ff :call fzf#run({'source': map(range(1, bufnr('$')),
-                                  \'bufname(v:val)'),
-                                  \'sink': 'e',
-                                  \'down': '30%'})<CR>
-'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 let g:fzf_colors =
