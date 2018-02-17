@@ -120,3 +120,8 @@ if [[ $host == *"Darwin"* ]]; then
 fi
 
 eval $(thefuck --alias)
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
