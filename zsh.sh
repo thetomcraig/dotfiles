@@ -94,6 +94,7 @@ alias p="python $scripts_location/start_ipython.py"
 
 alias b="vim $dotfiles_location/zsh.sh"
 alias v="vim $dotfiles_location/vimrc.sh"
+alias spacemacs="env SHELL=/usr/local/bin/zsh /usr/local/Cellar/emacs/25.3/bin/emacs --no-window"
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias tm="vim $dotfiles_location/tmux/tmux.conf"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
