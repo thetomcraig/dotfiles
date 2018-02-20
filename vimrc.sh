@@ -250,7 +250,4 @@ let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Da
 nmap <Space>B :MBEFocus<CR>
 nmap <SPace>b :b 
 
-vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
-
-
+let g:goyo_width=125
