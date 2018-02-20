@@ -82,3 +82,4 @@ sudo pip install virtualenv
 #autopep8
 #isort
 #make sure these are all global
+#pyenv and virtualenv
