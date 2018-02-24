@@ -1,7 +1,7 @@
 export EVENT_NOKQUEUE=1
 
 name=$1
-sling_path="${HOME}/dev/$name/SavageBeast/Engineering/projects/aap"
+sling_path="${HOME}/dev/$name/projects/aap/"
 cd $sling_path
 tmux -u new-session -d -s $name
 
@@ -15,7 +15,7 @@ tmux new-window -t $1:6 -n Vim
 tmux new-window -t $1:7 -n ZSH
 
 tmux send-keys -t $name:1 "tmux rename-window -t 1 ' '" C-m C-m
-tmux send-keys -t $name:1 "env/bin/python web/aap/manage.py runserver"
+tmux send-keys -t $name:1 "../../env/bin/python web/aap/manage.py runserver"
 
 tmux send-keys -t $name:2 "tmux rename-window -t 2 ' '" C-m C-m
 tmux send-keys -t $name:2 "npm run dev" C-m

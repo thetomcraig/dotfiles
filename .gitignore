@@ -5,3 +5,4 @@ themes/current_iterm_top_color.sh
 themes/current_theme
 tmux/segments/weather_out.txt
 .DS_Store
+*.sw*

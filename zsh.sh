@@ -34,11 +34,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias s="source $dotfiles_location/zsh.sh"
 alias ctags="`brew --prefix`/bin/ctags"
-alias l=my_fuzzy_ls
-my_fuzzy_ls() {
-	#Find files the match the fuzzy query
-	ls *$1*
-}
 
 #t for tree
 alias t=mytree
@@ -71,7 +66,6 @@ alias gm="git commit -m "
 alias gpu="git push"
 alias gpl="git pull"
 alias gr="git checkout HEAD -- $1"
-#alias gb="git reflog | egrep -io "moving from ([^[:space:]]+)" | awk '{ print $3 }' | awk ' !x[$0]++' | head -n5"
 alias vg="vim $($scripts_location/get_conflicted_files.sh)"
 alias git_log="git log --graph --pretty=format:'[%h] -%d %an %cr: %s' --abbrev-commit --date=relative"
 alias h="history"
@@ -105,9 +99,7 @@ alias mo="cd ${HOME}/Dropbox/TomCraig/Movies"
 alias mu="cd ${HOME}/Dropbox/TomCraig/Music"
 alias tv="cd ${HOME}/Dropbox/TomCraig/TV"
 
-# EROS
-alias erosstart="$dotfiles_location/session_scripts/eros.sh && tmux attach -t eros"
-alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
+alias launch="$dotfiles_location/launch_projects.sh"
 
 # SSH
 alias sshariston="ssh tom@10.0.1.3"
@@ -118,6 +110,9 @@ host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
     alias cat="ccat"
+fi
+if [[ $host == *"tcraig"* ]]; then
+    alias spacemacs="/usr/local/Cellar/emacs-plus/25.3/bin/emacs --no-window"
 fi
 
 eval $(thefuck --alias)
