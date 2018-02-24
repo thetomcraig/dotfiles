@@ -269,7 +269,8 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
+
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
@@ -321,8 +322,10 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
 
-    (setq-default evil-escape-key-sequence "C-[")
     (setq-default dotspacemacs-themes '(django, gotham))
+    (add-to-list 'custom-theme-load-path "~/.spacemacs.d/themes/")
+    (evil-leader/set-key "bl" 'ibuffer)
+
 
 
   )
