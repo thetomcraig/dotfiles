@@ -36,6 +36,7 @@ values."
      html
      markdown
      themes-megapack
+     shell
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -315,7 +316,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
 (setq-default
  ;; Default theme applied at startup
- dotspacemacs-default-theme 'alienblood
+ dotspacemacs-default-theme 'xenomorph
  )
 
 (defun dotspacemacs/user-config ()
