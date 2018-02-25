@@ -112,7 +112,11 @@ if [[ $host == *"Darwin"* ]]; then
     alias cat="ccat"
 fi
 if [[ $host == *"tcraig"* ]]; then
-    alias spacemacs="/usr/local/Cellar/emacs-plus/25.3/bin/emacs --no-window"
+    alias spacemacs="/usr/local/Cellar/emacs/25.3/bin/emacs -nw"
+elif [[ $host == *"ZENO"* ]]; then
+    alias spacemacs="/usr/local/Cellar/emacs-plus/25.3/bin/emacs -nw"
+else
+    alias spacemacs="echo 'no spacemacs'"
 fi
 
 eval $(thefuck --alias)
