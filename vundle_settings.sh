@@ -32,6 +32,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'kablamo/vim-git-log'
+Plugin 'jreybert/vimagit'
+Plugin 'wsdjeg/FlyGrep.vim'
+
 
 
 " All of your Plugins must be added before the following line "
