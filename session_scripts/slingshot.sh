@@ -15,7 +15,8 @@ tmux new-window -t $1:6 -n Vim
 tmux new-window -t $1:7 -n ZSH
 
 tmux send-keys -t $name:1 "tmux rename-window -t 1 ' '" C-m C-m
-tmux send-keys -t $name:1 "../../env/bin/python web/aap/manage.py runserver"
+tmux send-keys -t $name:1 "cd web/aap" C-m C-m
+tmux send-keys -t $name:1 "source ~/.pyenv/versions/slingshot_develop/bin/activate && python manage.py runserver"
 
 tmux send-keys -t $name:2 "tmux rename-window -t 2 ' '" C-m C-m
 tmux send-keys -t $name:2 "npm run dev" C-m
@@ -27,7 +28,9 @@ tmux send-keys -t $name:4 "tmux rename-window -t 4 ' '" C-m C-m
 tmux send-keys -t $name:4 "cd web/aap && ../../env/bin/celery -A slingshot worker"
 
 tmux send-keys -t $name:5 "tmux rename-window -t 5 ' '" C-m C-m
-tmux send-keys -t $name:5 "env/bin/python web/aap/manage.py shell" C-m
+tmux send-keys -t $name:5 "cd web/aap" C-m C-m
+tmux send-keys -t $name:5 "source ~/.pyenv/versions/slingshot_develop/bin/activate" C-m C-m
+tmux send-keys -t $name:5 "python manage.py shell"
 
 tmux send-keys -t $name:6 "tmux rename-window -t 6 ' '" C-m C-m
 tmux send-keys -t $name:6 "vim" C-m C-m
