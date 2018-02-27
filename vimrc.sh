@@ -17,7 +17,6 @@ set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
 set splitright                              "Open splits to the right"
 syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
-autocmd FileType python execute "set colorcolumn=" . join(range(120,335), ',')
 
 
 
@@ -34,7 +33,7 @@ nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
-nnoremap <Space>nt :NERDTreeFind<CR>
+nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <space>b :call fzf#run({'source': map(range(1, bufnr('$')),
@@ -42,18 +41,36 @@ nnoremap <space>b :call fzf#run({'source': map(range(1, bufnr('$')),
                                   \'sink': 'e',
                                   \'down': '30%'})<CR>
 '
-"nnoremap <cr> <c-w>w"
-"nnoremap <space>ff :call delete(expand('%')) | bdelete! "
-nnoremap <Space>G :Gblame<CR>
-nnoremap <Space>p :echo expand("%:p")<CR>
+nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
-nmap <Space>bq :bp <BAR> bd #<CR>
+nmap <Space>bd :bp <BAR> bd #<CR>
 
 nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
+
+nmap <Space>s) ysiw)
+nmap <Space>s( ysiw)
+nmap <Space>s} ysiw}
+nmap <Space>s{ ysiw{
+nmap <Space>s' ysiw'
+nmap <Space>s" ysiw"
+
+
+nmap <Space>w/ :vsplit<CR>
+nmap <Space>w\ :vsplit<CR>
+nmap <Space>w- :split<CR>
+nmap <Space>wd :q<CR>
+let i = 1
+while i <= 9
+    execute 'nnoremap <Space>' . i . ' :' . i . 'wincmd w<CR>'
+    let i = i + 1
+endwhile
+
+
+
 
 vnoremap // y/<C-R>"<CR> "Search for visually selected text
 "Used for moving around the command line in vim"
@@ -67,10 +84,10 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nnoremap ff :Ack 
-nnoremap gr :Ack <cword> <CR>
+nmap <Space>ps :Ack \'
+nmap <Space>ss :Ack <cword> <CR>
 "File Search"
-nnoremap FF :FZF<CR>
+nmap <Space>pf :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 let g:fzf_colors =
@@ -93,8 +110,6 @@ let g:fzf_colors =
 "Buffers"
 """""""""
 set hidden
-"nnoremap <silent> <C-l> :bnext<CR>"
-"nnoremap <silent> <C-h> :bprevious<CR>"
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -145,7 +160,7 @@ nmap <Space>N :MarkClear<CR>
 """"""""""
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '*.sw*']
 
 
 
@@ -182,7 +197,7 @@ set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 """"""""""""
 "Easy motion"
 """"""""""""
-map <Space>s <Plug>(easymotion-s)
+map <Space>jj <Plug>(easymotion-s)
 
 
 
@@ -214,6 +229,7 @@ let g:ale_linters = {'javascript': 'all', 'html': 'all'}
 set diffopt+=vertical
 
 nnoremap <space>ga :Git add %:p<CR><CR>
+nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
@@ -221,14 +237,14 @@ nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
 nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
-"nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
-"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
-"nnoremap <space>gr :Gread<CR>"
-"nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
-"nnoremap <space>gp :Ggrep<Space>"
-"nnoremap <space>gm :Gmove<Space>"
-"nnoremap <space>gb :Git branch<Space>"
-"nnoremap <space>go :Git checkout<Space>"
+
+
+
+"""""""""""""
+"Colorscheme"
+"""""""""""""
+let g:airline_theme='xenomorph'
+colorscheme xenomorph
 
 
 
@@ -250,16 +266,5 @@ set clipboard=unnamed
 
 
 
-"""""""""""""
-"Colorscheme"
-"""""""""""""
-let g:airline_theme='xenomorph'
-colorscheme xenomorph
-
-let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
-
 let g:goyo_width=125
-function GetSling()
-    call system('git rev-parse --abbrev-ref --symbolic-full-name @{u} | grep -o "SLING-[0-9]*" | pbcopy')
-endfunction
-command! SLING call GetSling()
+
