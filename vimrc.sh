@@ -253,8 +253,8 @@ set clipboard=unnamed
 """""""""""""
 "Colorscheme"
 """""""""""""
-let g:airline_theme='alienblood'
-colorscheme alienblood
+let g:airline_theme='xenomorph'
+colorscheme xenomorph
 
 let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
 
