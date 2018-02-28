@@ -16,7 +16,6 @@ set smartcase                               "ignore case if search pattern is al
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
 set splitright                              "Open splits to the right"
-syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 
 
 
@@ -245,6 +244,7 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 """""""""""""
 let g:airline_theme='xenomorph'
 colorscheme xenomorph
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 
 
 
