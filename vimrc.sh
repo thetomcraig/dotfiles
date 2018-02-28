@@ -35,6 +35,8 @@ nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
+nnoremap <Space>ad :ALEDisable<CR>
+nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <space>b :call fzf#run({'source': map(range(1, bufnr('$')),
                                   \'bufname(v:val)'),
@@ -69,6 +71,8 @@ while i <= 9
     let i = i + 1
 endwhile
 
+nmap <Space>fed :e ~/.vimrc<CR>
+nmap <Space>fer :source ~/.vimrc<CR>
 
 
 
@@ -84,7 +88,8 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nmap <Space>ps :Ack \'
+nmap <Space>ps :Ack "
+""Search Current Word"
 nmap <Space>ss :Ack <cword> <CR>
 "File Search"
 nmap <Space>pf :FZF<CR>
@@ -190,7 +195,7 @@ let g:neocomplete#enable_smart_case = 1
 inoremap <expr><C-l>     neocomplete#complete_common_string()
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 highlight Pmenu ctermbg=238 ctermfg=White gui=bold
-set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
+set nofoldenable    " disable folding, conflicts w/ pymode otherwise"
 
 
 
@@ -204,9 +209,7 @@ map <Space>jj <Plug>(easymotion-s)
 """""
 "ALE"
 """""
-"let g:ale_lint_on_enter = 'never'"
-"let g:ale_lint_on_save = 0"
-"let g:ale_lint_on_text_changed = 'never'"
+"let g:ale_fix_on_save = 1
 
 let g:ale_fixers = {
     \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
@@ -230,7 +233,8 @@ set diffopt+=vertical
 
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <Space>gb :Gblame<CR>
-nnoremap <space>gs :Gstatus<CR>
+"This opens fugitive, goes to the first modified file, and switchs to a vertical split"
+nnoremap <space>gs :Gstatus<CR>/Changes<CR>:noh<CR>2j<C-w>b<C-w>H<C-w>w
 nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
