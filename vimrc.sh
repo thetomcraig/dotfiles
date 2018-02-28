@@ -194,7 +194,6 @@ let g:neocomplete#enable_smart_case = 1
 inoremap <expr><C-l>     neocomplete#complete_common_string()
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 highlight Pmenu ctermbg=238 ctermfg=White gui=bold
-set nofoldenable    " disable folding, conflicts w/ pymode otherwise"
 
 
 
@@ -208,7 +207,7 @@ map <Space>jj <Plug>(easymotion-s)
 """""
 "ALE"
 """""
-"let g:ale_fix_on_save = 1
+"let g:ale_fix_on_save = 1"
 
 let g:ale_fixers = {
     \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
@@ -271,4 +270,3 @@ set clipboard=unnamed
 
 
 let g:goyo_width=125
-
