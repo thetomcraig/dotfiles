@@ -11,9 +11,11 @@ tmux new-window -t $1:3 -n ZSH
 tmux select-window -t produktizr:1
 
 tmux send-keys -t $name:1 "cd $path" C-m C-m
-tmux send-keys -t $name:1 "env/bin/python manage.py runserver" C-m C-m
+tmux send-keys -t $name:1 "source env/bin/activate" C-m C-m
+tmux send-keys -t $name:1 "cd heron" C-m C-m
+tmux send-keys -t $name:1 "python manage.py runserver" C-m C-m
 
 tmux send-keys -t $name:2 "cd $path" C-m C-m
-tmux send-keys -t $name:2 "spacemacs" C-m C-m
+tmux send-keys -t $name:2 "vim" C-m C-m
 
 tmux send-keys -t $name:3 "cd $path" C-m C-m
