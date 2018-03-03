@@ -10,31 +10,36 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/fzf'
 Plugin 'vim-airline/vim-airline'
+
 Plugin 'easymotion/vim-easymotion'
+Plugin 'majutsushi/tagbar'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'kshenoy/vim-signature'
+Plugin 'thetomcraig/Mark--Karkat'
+Plugin 'junegunn/vim-peekaboo'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+
+Plugin 'kablamo/vim-git-log'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'kshenoy/vim-signature'
-Plugin 'majutsushi/tagbar'
-Plugin 'w0rp/ale'
-Plugin 'maxbrunsfeld/vim-yankstack'
-Plugin 'junegunn/fzf'
+
+
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/html5.vim'
+Plugin 'w0rp/ale'
+
 Plugin 'junegunn/limelight.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'thetomcraig/Mark--Karkat'
-Plugin 'kablamo/vim-git-log'
-Plugin 'jreybert/vimagit'
-Plugin 'wsdjeg/FlyGrep.vim'
-
 
 
 " All of your Plugins must be added before the following line "
