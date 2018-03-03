@@ -1,19 +1,20 @@
 export EVENT_NOKQUEUE=1
 
 name="heron"
-path="~/Dropbox/TomCraig/Projects/HERON/"
-tmux -u new-session -d -s 'heron'
+path=$1/HERON
 
-tmux new-window -t $1:1 -n Server
-tmux new-window -t $1:2 -n Text
-tmux new-window -t $1:3 -n ZSH 
+cd $path
+tmux -u new-session -d -s $2
 
-tmux select-window -t produktizr:1
+tmux new-window -t $2:1 -n Server
+tmux new-window -t $2:2 -n Text
+tmux new-window -t $2:3 -n ZSH 
 
 tmux send-keys -t $name:1 "cd $path" C-m C-m
-tmux send-keys -t $name:1 "env/bin/python manage.py runserver" C-m C-m
+tmux send-keys -t $name:1 "source env/bin/activate" C-m C-m
+tmux send-keys -t $name:1 "cd heron && python manage.py runserver" C-m C-m
 
 tmux send-keys -t $name:2 "cd $path" C-m C-m
-tmux send-keys -t $name:2 "spacemacs" C-m C-m
+tmux send-keys -t $name:2 "vim" C-m C-m
 
 tmux send-keys -t $name:3 "cd $path" C-m C-m

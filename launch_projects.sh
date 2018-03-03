@@ -20,6 +20,17 @@ echo "1: Slingshot
 9: Total Immersion Files"
 read choice
 
-name=${projects[$choice]}
-~/Dotfiles/session_scripts/$name.sh $name && tmux attach -t $name
 
+project_path="~/Dropbox/TomCraig/Projects"
+host=$(uname -a)
+if [[ $host == *"tcraig"* ]]; then
+    project_path="~/dev"
+elif [[ $host == *"ZENO"* ]]; then
+    project_path="~/Dropbox/TomCraig/Projects"
+else
+    alias spacemacs="echo 'no spacemacs'"
+fi
+
+name=${projects[$choice]}
+
+~/Dotfiles/session_scripts/$name.sh $project_path $name && tmux attach -t $name
