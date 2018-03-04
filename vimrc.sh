@@ -87,13 +87,13 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nmap <Space>ps :Ack "
-""Search Current Word"
+nmap <Space>ps :Ack '
+"'Search Current Word"
 nmap <Space>ss :Ack <cword> <CR>
 "File Search"
 nmap <Space>pf :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-
+"
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -227,12 +227,11 @@ let g:ale_linters = {'javascript': 'all', 'html': 'all'}
 """"""""""
 "FUGITVIE"
 """"""""""
-set diffopt+=vertical
+" set diffopt+=vertical"
 
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <Space>gb :Gblame<CR>
-"This opens fugitive, goes to the first modified file, and switchs to a vertical split"
-nnoremap <space>gs :Gstatus<CR>/Changes<CR>:noh<CR>2j<C-w>b<C-w>H<C-w>w
+nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
