@@ -70,8 +70,9 @@ while i <= 9
     let i = i + 1
 endwhile
 
-nmap <Space>fed :e ~/.vimrc<CR>
-nmap <Space>fer :source ~/.vimrc<CR>
+nmap <Space>ve :e ~/.vimrc<CR>
+nmap <Space>vue :e ~/Dotfiles/vundle_settings.sh<CR>
+nmap <Space>vr :source ~/.vimrc<CR>
 
 
 
@@ -269,3 +270,4 @@ set clipboard=unnamed
 
 
 let g:goyo_width=125
+set diffopt+=vertical

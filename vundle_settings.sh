@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/fzf'
 Plugin 'vim-airline/vim-airline'
+Plugin 'skwp/greplace.vim'
 
 Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
@@ -19,17 +20,17 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'junegunn/vim-peekaboo'
-Plugin 'jlanzarotta/bufexplorer'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'mattn/emmet-vim'
 
 Plugin 'kablamo/vim-git-log'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'christoomey/vim-conflicted'
 Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-
 
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'pangloss/vim-javascript'
@@ -40,6 +41,7 @@ Plugin 'w0rp/ale'
 Plugin 'junegunn/limelight.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
+Plugin 'shime/vim-livedown'
 
 
 " All of your Plugins must be added before the following line "
