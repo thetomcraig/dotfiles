@@ -242,24 +242,32 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 
 
 
-"""""""""""""
-"Colorscheme"
-"""""""""""""
+"""""""""""
+"Colors/UI"
+"""""""""""
 let g:airline_theme='xenomorph'
+let g:airline_section_b = airline#section#create(['branch'])
+let g:airline_section_c = airline#section#create(['%f'])
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+
+
 colorscheme xenomorph
 syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
+let g:goyo_width=125
+set diffopt+=vertical
+set cursorline
 
 
 
-""""""""""""""""""""""""
-"God damned fucking tabs"
-""""""""""""""""""""""""
+""""""""""""""""""
+"Tabs and Spacing"
+""""""""""""""""""
 set shiftround
 
-let s:tabwidth=4
-exec 'set tabstop='    .s:tabwidth
-exec 'set shiftwidth=' .s:tabwidth
-exec 'set softtabstop='.s:tabwidth
+autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
+autocmd FileType javascriptset tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set autoindent
 set smartindent
@@ -268,6 +276,3 @@ set expandtab
 set clipboard=unnamed
 
 
-
-let g:goyo_width=125
-set diffopt+=vertical
