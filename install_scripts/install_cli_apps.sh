@@ -72,3 +72,14 @@ git config --global core.editor /usr/bin/vim
 
 sudo easy_install pip
 sudo pip install virtualenv
+
+# TODO
+#linters
+#eslint
+#jsonfix
+#stylelint
+#tidy
+#autopep8
+#isort
+#make sure these are all global
+#pyenv and virtualenv

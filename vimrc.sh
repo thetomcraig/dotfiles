@@ -15,14 +15,13 @@ set showmatch                               "Show the matching paren"
 set smartcase                               "ignore case if search pattern is all lowercase"
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
-syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
-autocmd FileType python execute "set colorcolumn=" . join(range(120,335), ',')
+set splitright                              "Open splits to the right"
 
 
 
 """""""""""""""""""""""""""""""""
-"General Space (Leader) shortcuts
-""""""""""""""""""""""""""""""""""
+"General Space (Leader) shortcuts"
+"""""""""""""""""""""""""""""""""
 let mapleader=" "
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
@@ -33,21 +32,49 @@ nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
-nnoremap <Space>nt :NERDTreeFind<CR>
+nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
+nnoremap <Space>ad :ALEDisable<CR>
+nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
-"nnoremap <cr> <c-w>w"
-"nnoremap <space>dd :call delete(expand('%')) | bdelete! "
-nnoremap <Space>G :Gblame<CR>
-nnoremap <Space>p :echo expand("%:p")<CR>
+nnoremap <space>b :call fzf#run({'source': map(range(1, bufnr('$')),
+                                  \'bufname(v:val)'),
+                                  \'sink': 'e',
+                                  \'down': '30%'})<CR>
+'
+nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
-nmap <Space>bq :bp <BAR> bd #<CR>
+nmap <Space>bd :bp <BAR> bd #<CR>
 
 nmap <Space>y <Plug>yankstack_substitute_older_paste
 nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
+
+nmap <Space>s) ysiw)
+nmap <Space>s( ysiw)
+nmap <Space>s} ysiw}
+nmap <Space>s{ ysiw{
+nmap <Space>s' ysiw'
+nmap <Space>s" ysiw"
+
+
+nmap <Space>w/ :vsplit<CR>
+nmap <Space>w\ :vsplit<CR>
+nmap <Space>w- :split<CR>
+nmap <Space>wd :q<CR>
+let i = 1
+while i <= 9
+    execute 'nnoremap <Space>' . i . ' :' . i . 'wincmd w<CR>'
+    let i = i + 1
+endwhile
+
+nmap <Space>ve :e ~/.vimrc<CR>
+nmap <Space>vue :e ~/Dotfiles/vundle_settings.sh<CR>
+nmap <Space>vr :source ~/.vimrc<CR>
+
+
 
 vnoremap // y/<C-R>"<CR> "Search for visually selected text
 "Used for moving around the command line in vim"
@@ -61,12 +88,13 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nnoremap ff :Ack 
-nnoremap gr :Ack <cword> <CR>
+nmap <Space>ps :Ack '
+"'Search Current Word"
+nmap <Space>ss :Ack <cword> <CR>
 "File Search"
-nnoremap FF :FZF<CR>
+nmap <Space>pf :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-
+"
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -87,9 +115,11 @@ let g:fzf_colors =
 "Buffers"
 """""""""
 set hidden
-nnoremap <silent> <C-l> :bnext<CR>
-nnoremap <silent> <C-h> :bprevious<CR>
-nnoremap <silent> <C-q> :bd<CR>
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+nmap <Space>B :MBEFocus<CR>
 
 
 
@@ -106,21 +136,27 @@ highlight MarkWord4 ctermfg=4 ctermbg=8
 highlight MarkWord5 ctermfg=5 ctermbg=8
 highlight MarkWord6 ctermfg=6 ctermbg=8
 highlight MarkWord7 ctermfg=7 ctermbg=8
-highlight MarkWord8 ctermfg=8 ctermbg=8
+
+highlight MarkWord8 ctermfg=8 ctermbg=1
+highlight MarkWord9 ctermfg=8 ctermbg=2
+"Skipping yellow (3) because it's for search"
+highlight MarkWord10 ctermfg=8 ctermbg=4
+highlight MarkWord11 ctermfg=8 ctermbg=5
+highlight MarkWord12 ctermfg=8 ctermbg=6
+highlight MarkWord13 ctermfg=8 ctermbg=7
+
+highlight MarkWord14 ctermfg=15 ctermbg=1
+highlight MarkWord15 ctermfg=15 ctermbg=2
+"Skipping yellow (3) because it's for search"
+highlight MarkWord16 ctermfg=15 ctermbg=4
+highlight MarkWord17 ctermfg=15 ctermbg=5
+highlight MarkWord18 ctermfg=15 ctermbg=6
+highlight MarkWord19 ctermfg=15 ctermbg=7
 
 "For the Marks plugin seen here:"
 "http://www.vim.org/scripts/script.php?script_id=2666"
 nmap <Space>M :Marks<CR>
 nmap <Space>N :MarkClear<CR>
-nmap <Space>1 <k1>
-nmap <Space>2 <k2>
-nmap <Space>3 <k3>
-nmap <Space>4 <k4>
-nmap <Space>5 <k5>
-nmap <Space>6 <k6>
-nmap <Space>7 <k7>
-nmap <Space>8 <k8>
-nmap <Space>9 <k9>
 
 
 
@@ -129,7 +165,7 @@ nmap <Space>9 <k9>
 """"""""""
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '*.sw*']
 
 
 
@@ -137,6 +173,7 @@ let NERDTreeIgnore = ['\.pyc$']
 "NERD Commenter"
 """""""""""""""
 let g:NERDSpaceDelims=1
+let g:NERDTreeQuitOnOpen=1
 
 
 
@@ -158,29 +195,26 @@ let g:neocomplete#enable_smart_case = 1
 inoremap <expr><C-l>     neocomplete#complete_common_string()
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 highlight Pmenu ctermbg=238 ctermfg=White gui=bold
-set nofoldenable    " disable folding, conflicts w/ pytmode otherwise"
 
 
 
 """"""""""""
 "Easy motion"
 """"""""""""
-map <Space>s <Plug>(easymotion-s)
-map <Space>g <Plug>(easymotion-j)
-map <Space>f <Plug>(easymotion-k)
+map <Space>jj <Plug>(easymotion-s)
 
 
 
 """""
 "ALE"
 """""
-"let g:ale_lint_on_enter = 'never'"
-"let g:ale_lint_on_save = 0"
-"let g:ale_lint_on_text_changed = 'never'"
+"let g:ale_fix_on_save = 1"
 
 let g:ale_fixers = {
-    \ 'python':     ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
-    \ 'javascript': ['eslint'],
+    \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'less': ['stylelint'],
+    \ 'javascript': ['stylelint', 'eslint'],
+    \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
@@ -194,35 +228,46 @@ let g:ale_linters = {'javascript': 'all', 'html': 'all'}
 """"""""""
 "FUGITVIE"
 """"""""""
-set diffopt+=vertical
+" set diffopt+=vertical"
 
 nnoremap <space>ga :Git add %:p<CR><CR>
+nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gm :Gcommit -v -q<CR>
-"nnoremap <space>gt :Gcommit -v -q %:p<CR>"
+nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
-"nnoremap <space>gr :Gread<CR>"
 nnoremap <space>gw :Gwrite<CR><CR>
-"nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>"
-"nnoremap <space>gp :Ggrep<Space>"
-"nnoremap <space>gm :Gmove<Space>"
-"nnoremap <space>gb :Git branch<Space>"
-"nnoremap <space>go :Git checkout<Space>"
 nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
 
 
-""""""""""""""""""""""""
-"God damned fucking tabs"
-""""""""""""""""""""""""
+"""""""""""
+"Colors/UI"
+"""""""""""
+let g:airline_theme='xenomorph'
+let g:airline_section_b = airline#section#create(['branch'])
+let g:airline_section_c = airline#section#create(['%f'])
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+
+
+colorscheme xenomorph
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
+let g:goyo_width=125
+set diffopt+=vertical
+set cursorline
+
+
+
+""""""""""""""""""
+"Tabs and Spacing"
+""""""""""""""""""
 set shiftround
 
-let s:tabwidth=4
-exec 'set tabstop='    .s:tabwidth
-exec 'set shiftwidth=' .s:tabwidth
-exec 'set softtabstop='.s:tabwidth
+autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
+autocmd FileType javascriptset tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set autoindent
 set smartindent
@@ -237,12 +282,3 @@ set clipboard=unnamed
 """""""""""""
 let g:airline_theme='alienblood'
 colorscheme alienblood
-
-let g:dayone_path = "/Users/tom/Library/Group Containers/5U8NS4GX82.dayoneapp/Data/Documents/Journal.dayone/entries"
-
-nnoremap <Space>B :MBEFocus<CR>
-nnoremap <Space>b :b 
-
-vnoremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
-vnoremap <silent> <C-l> :s#^\###<cr>:noh<cr>
-

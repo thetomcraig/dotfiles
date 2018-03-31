@@ -9,28 +9,39 @@ call vundle#begin()
 " let Vundle manage Vundle, required "
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'ap/vim-buftabline'
 Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/fzf'
 Plugin 'vim-airline/vim-airline'
+Plugin 'skwp/greplace.vim'
+
 Plugin 'easymotion/vim-easymotion'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-dispatch'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'kshenoy/vim-signature'
+Plugin 'thetomcraig/Mark--Karkat'
+Plugin 'junegunn/vim-peekaboo'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'majutsushi/tagbar'
+Plugin 'mattn/emmet-vim'
+
+Plugin 'kablamo/vim-git-log'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'christoomey/vim-conflicted'
+Plugin 'tpope/vim-dispatch'
+
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/html5.vim'
 Plugin 'w0rp/ale'
-Plugin 'maxbrunsfeld/vim-yankstack'
-Plugin 'junegunn/fzf'
+
 Plugin 'junegunn/limelight.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'fholgado/minibufexpl.vim'
+Plugin 'shime/vim-livedown'
 
 
 " All of your Plugins must be added before the following line "

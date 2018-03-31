@@ -34,11 +34,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias s="source $dotfiles_location/zsh.sh"
 alias ctags="`brew --prefix`/bin/ctags"
-alias l=my_fuzzy_ls
-my_fuzzy_ls() {
-	#Find files the match the fuzzy query
-	ls *$1*
-}
 
 #t for tree
 alias t=mytree
@@ -61,7 +56,7 @@ alias g="git status"
 alias ga="git add"
 alias gb="git branch"
 alias gba="git branch -a"
-alias gv="git branch -vv"
+alias gv="git branch -vv --sort=-committerdate"
 alias gbd="git branch -d $1"
 alias gc="git checkout"
 alias gcb="git checkout -b"
@@ -70,8 +65,9 @@ alias gdd="git ls-files --deleted -z | xargs -0 git rm"
 alias gm="git commit -m "
 alias gpu="git push"
 alias gpl="git pull"
-alias gr="git checkout HEAD -- $1"
-alias git_log="git log --graph --pretty=format:'[%h] -%d %an %cr: %s' --abbrev-commit --date=relative"
+alias detatched_commits="git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')"
+alias log="git log --oneline --all --graph --decorate"
+# alias vg="vim $($scripts_location/get_conflicted_files.sh)"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -80,6 +76,7 @@ alias cpb="pwd | pbcopy"
 alias tmux="tmux -u"
 alias ta="tmux a -t"
 alias ts="tmux ls"
+alias td="tmux detatch"
 alias tk="tmux kill-session -t"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
@@ -92,6 +89,7 @@ alias p="python $scripts_location/start_ipython.py"
 
 alias b="vim $dotfiles_location/zsh.sh"
 alias v="vim $dotfiles_location/vimrc.sh"
+alias spacemacs="env SHELL=/usr/local/bin/zsh /usr/local/Cellar/emacs/25.3/bin/emacs --no-window"
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias tm="vim $dotfiles_location/tmux/tmux.conf"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
@@ -102,9 +100,7 @@ alias mo="cd ${HOME}/Dropbox/TomCraig/Movies"
 alias mu="cd ${HOME}/Dropbox/TomCraig/Music"
 alias tv="cd ${HOME}/Dropbox/TomCraig/TV"
 
-# EROS
-alias erosstart="$dotfiles_location/session_scripts/eros.sh && tmux attach -t eros"
-alias erostop="cd ~/Dropbox/TomCraig/Projects/EROS/"
+alias launch="$dotfiles_location/launch_projects.sh"
 
 # SSH
 alias sshariston="ssh tom@10.0.1.3"
@@ -116,5 +112,17 @@ if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
     alias cat="ccat"
 fi
+if [[ $host == *"tcraig"* ]]; then
+    alias spacemacs="/usr/local/Cellar/emacs/25.3/bin/emacs -nw"
+elif [[ $host == *"ZENO"* ]]; then
+    alias spacemacs="/usr/local/Cellar/emacs-plus/25.3/bin/emacs -nw"
+else
+    alias spacemacs="echo 'no spacemacs'"
+fi
 
 eval $(thefuck --alias)
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
