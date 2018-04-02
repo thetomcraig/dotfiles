@@ -275,3 +275,9 @@ set expandtab
 set clipboard=unnamed
 
 
+
+"""""""""""""
+"Colorscheme"
+"""""""""""""
+let g:airline_theme='alienblood'
+colorscheme alienblood
