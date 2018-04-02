@@ -37,11 +37,7 @@ nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
-nnoremap <space>b :call fzf#run({'source': map(range(1, bufnr('$')),
-                                  \'bufname(v:val)'),
-                                  \'sink': 'e',
-                                  \'down': '30%'})<CR>
-'
+
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
 nmap <Space>bd :bp <BAR> bd #<CR>
@@ -93,8 +89,8 @@ nmap <Space>ps :Ack '
 nmap <Space>ss :Ack <cword> <CR>
 "File Search"
 nmap <Space>pf :FZF<CR>
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-"
+"let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -109,6 +105,8 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+nnoremap <space>pb :Buffers<CR>
 
 
 """""""""
@@ -267,7 +265,8 @@ set cursorline
 set shiftround
 
 autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
-autocmd FileType javascriptset tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType sh set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set autoindent
 set smartindent
