@@ -106,7 +106,7 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-nnoremap <space>pb :Buffers<CR>
+nnoremap <space>bb :Buffers<CR>
 
 
 """""""""
