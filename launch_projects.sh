@@ -26,9 +26,9 @@ host=$(uname -a)
 if [[ $host == *"tcraig"* ]]; then
     project_path="~/dev"
 elif [[ $host == *"ZENO"* ]]; then
-    project_path="~/Dropbox/TomCraig/Projects"
-else
-    alias spacemacs="echo 'no spacemacs'"
+    project_path="~"
+elif [[ $host == *"HERMES"* ]]; then
+    project_path="~"
 fi
 
 name=${projects[$choice]}

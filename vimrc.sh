@@ -267,7 +267,8 @@ set cursorline
 set shiftround
 
 autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
-autocmd FileType javascriptset tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType javascript set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType markdown set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set autoindent
 set smartindent
