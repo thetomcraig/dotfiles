@@ -1,23 +1,19 @@
 declare -A projects=(['1']=slingshot
                      ['2']=produktizr
-                     ['3']=produktizr-front-end
-                     ['4']=produktizr-back-end
-                     ['5']=dotfiles
-                     ['6']=xenomorph
-                     ['7']=heron
-                     ['8']=total-immersion-pocast
-                     ['9']=tipcast)
+                     ['3']=dotfiles
+                     ['4']=xenomorph
+                     ['5']=heron
+                     ['6']=total-immersion-pocast
+                     ['7']=tipcast)
 
 echo "What would you like to work on?"
 echo "1: Slingshot
 2: Produktizr
-3: Produktizr Front End
-4: Produktizr Back End
-5: Dotfiles
-6: Xenomorph
-7: HERON
-8: Total Immersion Backend
-9: Total Immersion Files"
+3: Dotfiles
+4: Xenomorph
+5: HERON
+6: Total Immersion Backend
+7: Total Immersion Files"
 read choice
 
 
