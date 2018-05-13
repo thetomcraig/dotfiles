@@ -39,4 +39,4 @@ tmux send-keys -t $2:6 "cd $1/slingshot/projects/aap &&
 vim" C-m C-m
 
 tmux send-keys -t $2:7 "tmux rename-window -t 7 ' '" C-m C-m
-tmux send-keys -t $2:7 "cd $1/slingshot/projects/aap" C-m C-m
+tmux send-keys -t $2:7 "cd $1/slingshot/projects/aap/web/aap" C-m C-m

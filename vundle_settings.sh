@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'skwp/greplace.vim'
 
@@ -19,7 +20,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'thetomcraig/Mark--Karkat'
-Plugin 'junegunn/vim-peekaboo'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
@@ -43,6 +43,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
 Plugin 'shime/vim-livedown'
 
+Plugin 'gcmt/taboo.vim'
 
 " All of your Plugins must be added before the following line "
 call vundle#end()            " required "

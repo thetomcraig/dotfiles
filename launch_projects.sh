@@ -11,13 +11,11 @@ declare -A projects=(['1']=slingshot
 echo "What would you like to work on?"
 echo "1: Slingshot
 2: Produktizr
-3: Produktizr Front End
-4: Produktizr Back End
-5: Dotfiles
-6: Xenomorph
-7: HERON
-8: Total Immersion Backend
-9: Total Immersion Files"
+3: Dotfiles
+4: Xenomorph
+5: HERON
+6: Total Immersion Backend
+7: Total Immersion Files"
 read choice
 
 
@@ -26,9 +24,9 @@ host=$(uname -a)
 if [[ $host == *"tcraig"* ]]; then
     project_path="~/dev"
 elif [[ $host == *"ZENO"* ]]; then
-    project_path="~/Dropbox/TomCraig/Projects"
-else
-    alias spacemacs="echo 'no spacemacs'"
+    project_path="~"
+elif [[ $host == *"HERMES"* ]]; then
+    project_path="~"
 fi
 
 name=${projects[$choice]}
