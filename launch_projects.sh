@@ -5,7 +5,7 @@ declare -A projects=(['1']=slingshot
                      ['5']=dotfiles
                      ['6']=xenomorph
                      ['7']=heron
-                     ['8']=total-immersion-pocast
+                     ['8']=total-immersion-podcast
                      ['9']=tipcast)
 
 echo "What would you like to work on?"
