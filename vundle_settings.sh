@@ -29,6 +29,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kablamo/vim-git-log'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'sodapopcan/vim-twiggy'
 Plugin 'christoomey/vim-conflicted'
 Plugin 'tpope/vim-dispatch'
 
@@ -37,11 +38,13 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/html5.vim'
 Plugin 'w0rp/ale'
+Plugin 'ap/vim-css-color'
 
-Plugin 'junegunn/limelight.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
 Plugin 'shime/vim-livedown'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 't9md/vim-choosewin'
 
 Plugin 'gcmt/taboo.vim'
 
