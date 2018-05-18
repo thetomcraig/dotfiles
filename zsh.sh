@@ -58,6 +58,7 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias gv="git branch -vv --sort=-committerdate"
 alias gbd="git branch -d $1"
+alias gbD="git branch -D $1"
 alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gd="git diff"
@@ -67,6 +68,15 @@ alias gpu="git push"
 alias gpl="git pull"
 alias detatched_commits="git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')"
 alias log="git log --oneline --all --graph --decorate"
+alias gg=gitbranchgrep
+gitbranchgrep() {
+  git pull && \
+  git checkout -b ${1} $(git branch -a | grep ${2}) && \
+  git branch -vv
+}
+
+
+
 # alias vg="vim $($scripts_location/get_conflicted_files.sh)"
 alias h="history"
 alias hg="history | grep $1"
@@ -89,7 +99,7 @@ alias p="python $scripts_location/start_ipython.py"
 
 alias b="vim $dotfiles_location/zsh.sh"
 alias v="vim $dotfiles_location/vimrc.sh"
-alias spacemacs="env SHELL=/usr/local/bin/zsh /usr/local/Cellar/emacs/25.3/bin/emacs --no-window"
+alias vv="vim +"NERDTree $1""
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias tm="vim $dotfiles_location/tmux/tmux.conf"
 alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
@@ -112,13 +122,15 @@ if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
     alias cat="ccat"
 fi
-if [[ $host == *"tcraig"* ]]; then
-    alias spacemacs="/usr/local/Cellar/emacs/25.3/bin/emacs -nw"
-elif [[ $host == *"ZENO"* ]]; then
-    alias spacemacs="/usr/local/Cellar/emacs-plus/25.3/bin/emacs -nw"
-else
-    alias spacemacs="echo 'no spacemacs'"
-fi
+# Quick commands to sync CWD between terminals.
+pin() {
+  rm -f ~/.pindir
+  echo $PWD >~/.pindir
+  chmod 0600 ~/.pindir >/dev/null 2>&1
+}
+pout() {
+  cd `cat ~/.pindir`
+}
 
 eval $(thefuck --alias)
 
