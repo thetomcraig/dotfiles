@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-markdown'
 
 Plugin 'kablamo/vim-git-log'
 Plugin 'airblade/vim-gitgutter'

@@ -33,6 +33,7 @@ values."
    '(
      python
      ipython-notebook
+     (python :variables python-enable-yapf-format-on-save t)
      html
      markdown
      themes-megapack
