@@ -60,6 +60,7 @@ nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
 nmap <Space>w- :split<CR>
 nmap <Space>wd :q<CR>
+nmap <Space>ww :ChooseWin<CR>
 let i = 1
 while i <= 9
     execute 'nnoremap <Space>' . i . ' :' . i . 'wincmd w<CR>'
