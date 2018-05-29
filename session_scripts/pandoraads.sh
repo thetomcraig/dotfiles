@@ -10,10 +10,9 @@ tmux new-window -t $2:4 -n ZSH
 
 tmux select-window -t produktizr:1
 
-tmux send-keys -t $2:1 "cd $1" C-m C-m
-tmux send-keys -t $2:1 "cd $2" C-m C-m
+tmux send-keys -t $2:1 "cd ${HOME}/dev/pandora-ads-api" C-m C-m
 tmux send-keys -t $2:1 "nvm use 8.9.4" C-m C-m
-tmux send-keys -t $2:1 "npm run graphql" C-m C-m
+tmux send-keys -t $2:1 "npm start" C-m C-m
 
 tmux send-keys -t $2:2 "cd $1" C-m C-m
 tmux send-keys -t $2:2 "cd $2" C-m C-m
