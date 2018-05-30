@@ -66,7 +66,6 @@ alias gdd="git ls-files --deleted -z | xargs -0 git rm"
 alias gm="git commit -m "
 alias gpu="git push"
 alias gpl="git pull"
-alias detatched_commits="git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')"
 alias log="git log --oneline --all --graph --decorate"
 alias gg=gitbranchgrep
 gitbranchgrep() {
@@ -76,7 +75,18 @@ gitbranchgrep() {
 }
 
 
-alias vc="vim $($scripts_location/get_conflicted_files.sh)"
+alias vc=vimconflicted
+vimconflicted() {
+  git_root=$(git rev-parse --show-toplevel)
+  conflicted_files=$(git diff --name-only --diff-filter=U)
+  full_path_file_list=()
+  for f in $conflicted_files; do
+      full_path_file_list+="$git_root/$f "
+  done
+  vim $full_path_file_list
+}
+
+
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -86,7 +96,7 @@ alias tmux="tmux -u"
 alias ta="tmux a -t"
 alias ts="tmux ls"
 alias td="tmux detatch"
-alias tk="tmux kill-session -t"
+alias tk="tmux kill-session -t "
 alias tk="tmux kill-session -t $(tmux display-message -p '#S')"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
