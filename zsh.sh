@@ -76,8 +76,7 @@ gitbranchgrep() {
 }
 
 
-
-# alias vg="vim $($scripts_location/get_conflicted_files.sh)"
+alias vc="vim $($scripts_location/get_conflicted_files.sh)"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -88,6 +87,7 @@ alias ta="tmux a -t"
 alias ts="tmux ls"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t"
+alias tk="tmux kill-session -t $(tmux display-message -p '#S')"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
