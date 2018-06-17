@@ -50,6 +50,7 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 't9md/vim-choosewin'
 
 Plugin 'gcmt/taboo.vim'
+Plugin 'panozzaj/vim-autocorrect'
 
 " All of your Plugins must be added before the following line "
 call vundle#end()            " required "

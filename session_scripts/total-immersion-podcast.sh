@@ -11,14 +11,14 @@ validator_url="http://castfeedvalidator.com/"
 stitcher_url="https://partners.stitcher.com/dashboard.php"
 itunes_url="https://podcastsconnect.apple.com/my-podcasts"
 soundcloud_url="https://soundcloud.com/upload"
-web_pages=(
-  xml_url,
-  podtrac_url,
-  s3_url,
-  validator_url,
-  stitcher_url,
-  itunes_url,
-  soundcloud_url,
+declare -A web_pages=(
+  $xml_url
+  $podtrac_url
+  $s3_url
+  $validator_url
+  $stitcher_url
+  $itunes_url
+  $soundcloud_url
 )
 
 cd $path
@@ -26,11 +26,10 @@ tmux -u new-session -d -s $name
 
 tmux new-window -t $name:1 -n Text
 
-count=0
-while [ "x${web_pages[count]}" != "x" ]
+
+for i in "${web_pages[@]}"
 do
-  open ${projects[$count]}
-  count=$(( $count + 1 ))
+   open $i
 done
 
 tmux send-keys -t $name:1 "cd $path" C-m C-m
