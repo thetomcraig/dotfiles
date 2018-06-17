@@ -26,7 +26,7 @@ host=$(uname -a)
 if [[ $host == *"tcraig"* ]]; then
     project_path="~/dev"
 elif [[ $host == *"ZENO"* ]]; then
-    project_path="~"
+    project_path="~/Dropbox/TomCraig/Projects"
 elif [[ $host == *"HERMES"* ]]; then
     project_path="~"
 fi
