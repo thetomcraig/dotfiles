@@ -1,3 +1,18 @@
+# Define the path to the projects directory based on physical machine
+project_path="${HOME}/Dropbox/TomCraig/Projects"
+session_scripts_dir="${HOME}/Dotfiles/session_scripts"
+
+host=$(uname -a)
+if [[ $host == *"tcraig"* ]]; then
+    project_path="${HOME}/dev"
+elif [[ $host == *"ZENO"* ]]; then
+    project_path="${HOME}/Dropbox/TomCraig/Projects"
+elif [[ $host == *"HERMES"* ]]; then
+    project_path="${HOME}"
+fi
+
+# Declare project choices
+# Ask user to work on project
 declare -A projects=(['1']=slingshot
                      ['2']=produktizr
                      ['3']=pandoraads
@@ -19,18 +34,16 @@ echo "1: Slingshot
 8: HERON
 9: Total Immersion"
 read choice
-
-
-project_path="~/Dropbox/TomCraig/Projects"
-host=$(uname -a)
-if [[ $host == *"tcraig"* ]]; then
-    project_path="~/dev"
-elif [[ $host == *"ZENO"* ]]; then
-    project_path="~/Dropbox/TomCraig/Projects"
-elif [[ $host == *"HERMES"* ]]; then
-    project_path="~"
-fi
-
+# Get project choice
 name=${projects[$choice]}
 
-~/Dotfiles/session_scripts/$name.sh $project_path $name && tmux attach -t $name
+# cd to project dir and start tmux 
+path=$project_path/$name
+cd $path
+tmux -u new-session -d -s $name
+
+# Setup Session windows/pane
+echo "setting up, give me a second..."
+$session_scripts_dir/${name}.sh $name $project_path
+sleep 3s
+tmux attach -t $name

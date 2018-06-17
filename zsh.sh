@@ -4,6 +4,7 @@
 export ZSH=${HOME}/.oh-my-zsh
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 dotfiles_location="${HOME}/Dotfiles"
+tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 export tmux_dotfiles_location="$dotfiles_location/tmux"
 source $tmux_dotfiles_location/tmux_colors.sh
 
@@ -122,6 +123,11 @@ if [[ $host == *"Darwin"* ]]; then
     alias rm="trash"
     alias cat="ccat"
 fi
+# Do this if in a tmux session
+if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
+  $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
+fi
+
 # Quick commands to sync CWD between terminals.
 pin() {
   rm -f ~/.pindir
