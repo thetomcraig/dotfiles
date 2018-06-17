@@ -107,7 +107,7 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-nnoremap <space>bb :Buffers<CR>
+ noremap <space>bb :Buffers<CR>
 
 
 """""""""
@@ -228,10 +228,14 @@ let g:ale_linters = {'javascript': 'all', 'html': 'all'}
 "FUGITVIE"
 """"""""""
 " set diffopt+=vertical"
+:function Status()
+:  Gstatus
+:  MBEClose
+:endfunction
 
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <Space>gb :Gblame<CR>
-nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gs :call Status()<CR>
 nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
@@ -245,19 +249,27 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 "Colors/UI"
 """""""""""
 let g:airline_theme='xenomorph'
+
+function! WindowNumber(...)
+    let builder = a:1
+    let context = a:2
+    call builder.add_section('airline_b', '%{tabpagewinnr(tabpagenr())}')
+    return 0
+endfunction
+
+call airline#add_statusline_func('WindowNumber')
+call airline#add_inactive_statusline_func('WindowNumber')
 let g:airline_section_b = airline#section#create(['branch'])
 let g:airline_section_c = airline#section#create(['%f'])
 let g:airline_section_x = ''
 let g:airline_section_y = ''
 let g:airline_section_z = ''
 
-
-colorscheme xenomorph
-syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 let g:goyo_width=125
 set diffopt+=vertical
 set cursorline
 
+colorscheme xenomorph
 
 
 """"""""""""""""""
@@ -276,9 +288,4 @@ set smarttab
 set expandtab
 set clipboard=unnamed
 
-
-"""""""""""""
-"Colorscheme"
-"""""""""""""
-let g:airline_theme='xenomorph'
-colorscheme xenomorph 
+syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
