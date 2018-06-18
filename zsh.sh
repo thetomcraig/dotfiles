@@ -79,11 +79,7 @@ alias vc=vimconflicted
 vimconflicted() {
   git_root=$(git rev-parse --show-toplevel)
   conflicted_files=$(git diff --name-only --diff-filter=U)
-  full_path_file_list=()
-  for f in $conflicted_files; do
-      full_path_file_list+="$git_root/$f "
-  done
-  vim $full_path_file_list
+  echo $conflicted_files
 }
 
 
@@ -97,7 +93,7 @@ alias ta="tmux a -t"
 alias ts="tmux ls"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "
-alias tk="tmux kill-session -t $(tmux display-message -p '#S')"
+alias tkk="tmux kill-session -t $(tmux display-message -p '#S')"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
