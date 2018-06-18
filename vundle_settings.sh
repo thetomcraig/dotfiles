@@ -15,6 +15,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'skwp/greplace.vim'
 Plugin 'tpope/vim-repeat'
+Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
