@@ -232,7 +232,7 @@ let g:ale_linters = {'javascript': 'all', 'html': 'all'}
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gl :Glog <CR>
+nnoremap <space>gl :Glog -- %<CR> :copen<CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
@@ -264,10 +264,6 @@ set cursorline
 "Tabs and Spacing"
 """"""""""""""""""
 set shiftround
-
-autocmd FileType python set tabstop=4|set shiftwidth=4|set softtabstop=4|set expandtab
-autocmd FileType javascript set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
-autocmd FileType markdown set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 autocmd FileType sh set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 set autoindent
@@ -275,6 +271,8 @@ set smartindent
 set smarttab
 set expandtab
 set clipboard=unnamed
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
 
 
 """""""""""""
