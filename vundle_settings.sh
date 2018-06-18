@@ -46,7 +46,6 @@ Plugin 'ap/vim-css-color'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
 Plugin 'shime/vim-livedown'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 't9md/vim-choosewin'
 
 Plugin 'gcmt/taboo.vim'
