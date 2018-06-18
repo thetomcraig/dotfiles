@@ -45,6 +45,14 @@ cd $path
 tmux -u new-session -d -s $name
 
 # Setup Session windows/pane
-echo "setting up, give me a second..."
-sleep 3s
+printf "setting up, give me a second";
+$session_scripts_dir/$name.sh $name $path
+sleep 1s
+printf ".";
+sleep 1s
+printf ".";
+sleep 1s
+printf ".";
+sleep 1s
+
 tmux attach -t $name
