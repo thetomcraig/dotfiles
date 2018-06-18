@@ -172,8 +172,11 @@ echo "LOADING ENVIRONMENT SETTINGS..."
 host=$(uname -a)
 # MACOS
 if [[ $host == *"Darwin"* ]]; then
-    alias rm="trash"
-    alias cat="ccat"
+  alias rm="trash"
+  alias cat="ccat"
+fi
+if [[ $host == *"tcraig-m01"* ]]; then
+  source $dotfiles_location/pandorarc.sh
 fi
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
