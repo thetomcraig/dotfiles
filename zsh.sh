@@ -176,7 +176,7 @@ if [[ $host == *"Darwin"* ]]; then
     alias cat="ccat"
 fi
 # TMUX SESSION
-if [[ "$TERM" =~ "screen".* ]]; then
+if tmux display-message -p '#S' &> /dev/null; then
   $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
 
