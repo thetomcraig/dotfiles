@@ -7,7 +7,7 @@ displayStatus() {
     displaySegment "session" "#${TMUX_LIGHT_SEGMENT_FG}" "#${TMUX_LIGHT_SEGMENT_BG}"
     displaySegment "database" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
   else
-    displaySegment "itunes" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
+    # displaySegment "itunes" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
     displaySegment "git_branch" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
     displaySegment "time" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
     displaySegment "battery" "#${TMUX_DARK_SEGMENT_FG}" "#${TMUX_DARK_SEGMENT_BG}"
