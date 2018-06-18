@@ -176,6 +176,7 @@ if [[ $host == *"Darwin"* ]]; then
   alias cat="ccat"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
+  echo "LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
 fi
 # TMUX SESSION
