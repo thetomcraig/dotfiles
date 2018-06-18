@@ -21,7 +21,8 @@ declare -A projects=(['1']=slingshot
                      ['6']=dotfiles
                      ['7']=xenomorph
                      ['8']=heron
-                     ['9']=total-immersion-podcast)
+                     ['9']=total-immersion-podcast
+                     ['10']=get_template)
 
 echo "What would you like to work on?"
 echo "1: Slingshot
@@ -32,7 +33,8 @@ echo "1: Slingshot
 6: Dotfiles
 7: Xenomorph
 8: HERON
-9: Total Immersion"
+9: Total Immersion
+10: Git Template"
 read choice
 # Get project choice
 name=${projects[$choice]}
@@ -44,6 +46,5 @@ tmux -u new-session -d -s $name
 
 # Setup Session windows/pane
 echo "setting up, give me a second..."
-$session_scripts_dir/${name}.sh $name $project_path
 sleep 3s
 tmux attach -t $name
