@@ -6,6 +6,8 @@ scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 dotfiles_location="${HOME}/Dotfiles"
 tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 tmux_dotfiles_location="$dotfiles_location/tmux"
+# TODO, wtf?
+export tmux_dotfiles_location
 source $tmux_dotfiles_location/tmux_colors.sh
 
 
@@ -15,12 +17,6 @@ echo "BEGIN INITIALIZATION..."
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
-export FZF_DEFAULT_COMMAND='ag -g ""'
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
-HISTFILE=~/.zsh_history
-
 
 
 # ZSH STUFF
@@ -33,6 +29,11 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_VIRTUALENV_BACKGROUND=green
 
+# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+
 plugins=(git, zsh-autosuggestions)
 setopt auto_cd
 bindkey '^j' autosuggest-accept
@@ -41,6 +42,8 @@ DISABLE_AUTO_TITLE=true
 source $ZSH/oh-my-zsh.sh
 
 
+
+export FZF_DEFAULT_COMMAND='ag -g ""'
 
 # CD ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
