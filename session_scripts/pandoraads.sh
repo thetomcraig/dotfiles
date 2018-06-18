@@ -1,27 +1,26 @@
 export EVENT_NOKQUEUE=1
+name=$1
+path=$2
 
-cd $1
-tmux -u new-session -d -s $2
-
-tmux new-window -t $2:1 -n Graphql
-tmux new-window -t $2:2 -n NPM
-tmux new-window -t $2:3 -n Text
-tmux new-window -t $2:4 -n ZSH 
+tmux new-window -t $name:1 -n Graphql
+tmux new-window -t $name:2 -n NPM
+tmux new-window -t $name:3 -n Text
+tmux new-window -t $name:4 -n ZSH 
 
 tmux select-window -t produktizr:1
 
-tmux send-keys -t $2:1 "cd ${HOME}/dev/pandora-ads-api" C-m C-m
-tmux send-keys -t $2:1 "nvm use 8.9.4" C-m C-m
-tmux send-keys -t $2:1 "npm start" C-m C-m
+tmux send-keys -t $name:1 "cd ${HOME}/dev/pandora-ads-api" C-m C-m
+tmux send-keys -t $name:1 "nvm use 8.9.4" C-m C-m
+tmux send-keys -t $name:1 "npm start" C-m C-m
 
-tmux send-keys -t $2:2 "cd $1" C-m C-m
-tmux send-keys -t $2:2 "cd $2" C-m C-m
-tmux send-keys -t $2:2 "nvm use 8.9.4" C-m C-m
-tmux send-keys -t $2:2 "npm start" C-m C-m
+tmux send-keys -t $name:2 "cd $path" C-m C-m
+tmux send-keys -t $name:2 "cd $name" C-m C-m
+tmux send-keys -t $name:2 "nvm use 8.9.4" C-m C-m
+tmux send-keys -t $name:2 "npm start" C-m C-m
 
-tmux send-keys -t $2:3 "cd $1" C-m C-m
-tmux send-keys -t $2:3 "cd $2/src" C-m C-m
-tmux send-keys -t $2:3 "vim" C-m C-m
+tmux send-keys -t $name:3 "cd $path" C-m C-m
+tmux send-keys -t $name:3 "cd $name/src" C-m C-m
+tmux send-keys -t $name:3 "vim" C-m C-m
 
-tmux send-keys -t $2:4 "cd $1" C-m C-m
-tmux send-keys -t $2:4 "cd $2" C-m C-m
+tmux send-keys -t $name:4 "cd $path" C-m C-m
+tmux send-keys -t $name:4 "cd $name" C-m C-m

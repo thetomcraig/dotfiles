@@ -1,11 +1,10 @@
 export EVENT_NOKQUEUE=1
+name=$1
+path=$2
 
-name="total-immersion-podcast"
-path=$1/total-immersion-podcast
+# Setup windows/panes
+tmux new-window -t $name:2 -n VIM
 
-cd $path
-tmux -u new-session -d -s $2
-
-tmux new-window -t $1:1 -n Text
-tmux send-keys -t $name:1 "cd ~/Dropbox/TomCraig/Projects/total-immersion-podcast/" C-m C-m
-tmux send-keys -t $name:1 "vim" C-m C-m
+tmux send-keys -t $name:2 "cd $path" C-m C-m
+tmux send-keys -t $name:2 "vim" C-m C-m
+tmux send-keys -t $name:2 ":call AutoCorrect()" C-m C-m

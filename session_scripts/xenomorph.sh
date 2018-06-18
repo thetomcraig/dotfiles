@@ -1,11 +1,13 @@
+name=$1
+path=$2
 export EVENT_NOKQUEUE=1
 
 name="xenomorph"
 path="~/Dropbox/TomCraig/Projects/Xenomorph/"
 tmux -u new-session -d -s $name
 
-tmux new-window -t $1:1 -n ZSH
-tmux new-window -t $1:2 -n Text
+tmux new-window -t $path:1 -n ZSH
+tmux new-window -t $path:2 -n Text
 
 tmux select-window -t $name:1
 
