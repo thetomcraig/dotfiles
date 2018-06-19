@@ -45,7 +45,7 @@ cd $path
 tmux -u new-session -d -s $name
 
 # Setup Session windows/pane
-printf "setting up, give me a second";
+printf "INITIALIZING TMUX SESSION";
 $session_scripts_dir/$name.sh $name $path
 sleep 1s
 printf ".";
