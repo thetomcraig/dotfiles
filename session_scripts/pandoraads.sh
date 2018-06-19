@@ -10,11 +10,11 @@ tmux select-window -t $name:1
 
 tmux send-keys -t $name:1 "cd ${HOME}/dev/pandora-ads-api" C-m C-m
 tmux send-keys -t $name:1 "nvm use 8.9.4" C-m C-m
-tmux send-keys -t $name:1 "npm start" C-m C-m
+tmux send-keys -t $name:1 "npm start" 
 
 tmux send-keys -t $name:2 "cd $path" C-m C-m
 tmux send-keys -t $name:2 "nvm use 8.9.4" C-m C-m
-tmux send-keys -t $name:2 "npm start" C-m C-m
+tmux send-keys -t $name:2 "npm start" 
 
 tmux send-keys -t $name:3 "cd $path/src" C-m C-m
 tmux send-keys -t $name:3 "vim" C-m C-m

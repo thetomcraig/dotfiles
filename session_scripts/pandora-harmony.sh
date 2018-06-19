@@ -9,7 +9,7 @@ tmux select-window -t $name:1
 
 tmux send-keys -t $name:1 "cd $path" C-m C-m
 tmux send-keys -t $name:1 "nvm use 8.9.4" C-m C-m
-tmux send-keys -t $name:1 "npm run styleguide" C-m C-m
+tmux send-keys -t $name:1 "npm run styleguide" 
 
 tmux send-keys -t $name:2 "cd $path" C-m C-m
 tmux send-keys -t $name:2 "vim" C-m C-m
