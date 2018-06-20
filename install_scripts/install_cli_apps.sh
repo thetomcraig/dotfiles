@@ -18,6 +18,7 @@ brew install zsh
 brew install ccat
 brew install ack
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install terminal-notifier
 
 # vim setup - vundle
 # hot key stuff, casplock disable, hammer spoon, karabiner
