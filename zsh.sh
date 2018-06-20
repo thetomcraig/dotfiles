@@ -1,21 +1,22 @@
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
+# Setup Zsh
 export ZSH=${HOME}/.oh-my-zsh
-scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
-dotfiles_location="${HOME}/Dotfiles"
 
-. $dotfiles_location/helper_functions.sh
+# Get the zsh.sh pwd
+# Use the pwd to load helpers
+echo "LOADING GENERAL SETTINGS..."
+dotfiles_location=$(cd "$(dirname "$0")" && pwd)
 tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 tmux_dotfiles_location="$dotfiles_location/tmux"
+source $dotfiles_location/helper_functions.sh
+
 # TODO, wtf?
 export tmux_dotfiles_location
 source $tmux_dotfiles_location/tmux_colors.sh
 
-
-
 # GENERAL STUFF
-echoYellow "BEGIN INITIALIZATION..."
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
@@ -23,7 +24,7 @@ echoGreen "  OK"
 
 
 # ZSH STUFF
-echoYellow "LOADING ZSH..."
+echo "LOADING ZSH..."
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
@@ -48,7 +49,7 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 echoGreen "  OK"
 
 # CD ALIASES
-echoYellow "LOADING ALIASES AND FUNCTIONS..."
+echo "LOADING ALIASES AND FUNCTIONS..."
 alias v="vim $dotfiles_location/vimrc.sh"
 alias vv="vim +"NERDTree $1""
 alias vu="vim $dotfiles_location/vundle_settings.sh"
@@ -163,7 +164,6 @@ kill_current_session() {
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
 alias pf="pip freeze"
-alias p="python $scripts_location/start_ipython.py"
 
 
 
@@ -175,7 +175,7 @@ echoGreen "  OK"
 
 
 # ENVIRONMENT SETTINGS
-echoYellow "LOADING ENVIRONMENT SETTINGS..."
+echo "LOADING ENVIRONMENT SETTINGS..."
 host=$(uname -a)
 # MACOS
 if [[ $host == *"Darwin"* ]]; then
@@ -183,11 +183,12 @@ if [[ $host == *"Darwin"* ]]; then
   alias cat="ccat"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
-  echoYellow "  LOADING PANDORA SETTINGS..."
+  echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
 fi
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
+  echo "  LOADING TMUX ENV VARS..."
   $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
 
@@ -195,7 +196,7 @@ echoGreen "  OK"
 
 
 # LOAD EXTERNAL STUFF
-echoYellow "LOADING PYENV..."
+echo "LOADING PYENV..."
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
