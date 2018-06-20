@@ -7,10 +7,11 @@ export ZSH=${HOME}/.oh-my-zsh
 # Get the zsh.sh pwd
 # Use the pwd to load helpers
 echo "LOADING GENERAL SETTINGS..."
-dotfiles_location=$(cd "$(dirname "$0")" && pwd)
+dotfiles_location="${HOME}/Dotfiles"
+source $dotfiles_location/helper_functions.sh
+
 tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 tmux_dotfiles_location="$dotfiles_location/tmux"
-source $dotfiles_location/helper_functions.sh
 
 # TODO, wtf?
 export tmux_dotfiles_location
@@ -189,7 +190,7 @@ fi
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
   echo "  LOADING TMUX ENV VARS..."
-  $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
+  source $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
 
 echoGreen "  OK"
