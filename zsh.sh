@@ -63,6 +63,7 @@ alias h="history"
 alias hg="history | grep $1"
 alias cpb="pwd | pbcopy"
 alias launch="$dotfiles_location/launch_projects.sh"
+alias n="echo '$?' | terminal-notifier"
 
 #t for tree
 alias t=mytree
