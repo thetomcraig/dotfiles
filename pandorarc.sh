@@ -63,7 +63,10 @@ alias statuspg='pg_ctl -D /usr/local/var/postgres status'
 # NVM
 #####
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+alias load_nvm=load_nvm
+load_nvm() {
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+}
 
 
 
