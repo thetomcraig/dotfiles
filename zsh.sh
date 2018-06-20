@@ -1,11 +1,11 @@
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
-. $dotfiles_location/helper_functions.sh
-
 export ZSH=${HOME}/.oh-my-zsh
 scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
 dotfiles_location="${HOME}/Dotfiles"
+
+. $dotfiles_location/helper_functions.sh
 tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 tmux_dotfiles_location="$dotfiles_location/tmux"
 # TODO, wtf?
@@ -15,15 +15,15 @@ source $tmux_dotfiles_location/tmux_colors.sh
 
 
 # GENERAL STUFF
-echoGreen "BEGIN INITIALIZATION..."
+echoYellow "BEGIN INITIALIZATION..."
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
-echoYellow "  OK"
+echoGreen "  OK"
 
 
 # ZSH STUFF
-echoGreen "LOADING ZSH..."
+echoYellow "LOADING ZSH..."
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
@@ -45,10 +45,10 @@ DISABLE_AUTO_TITLE=true
 source $ZSH/oh-my-zsh.sh
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
-echoYellow "  OK"
+echoGreen "  OK"
 
 # CD ALIASES
-echoGreen "LOADING ALIASES AND FUNCTIONS..."
+echoYellow "LOADING ALIASES AND FUNCTIONS..."
 alias v="vim $dotfiles_location/vimrc.sh"
 alias vv="vim +"NERDTree $1""
 alias vu="vim $dotfiles_location/vundle_settings.sh"
@@ -169,12 +169,12 @@ alias p="python $scripts_location/start_ipython.py"
 # SSH ALIASES
 alias sshariston="ssh tom@10.0.1.3"
 
-echoYellow "  OK"
+echoGreen "  OK"
 
 
 
 # ENVIRONMENT SETTINGS
-echoGreen "LOADING ENVIRONMENT SETTINGS..."
+echoYellow "LOADING ENVIRONMENT SETTINGS..."
 host=$(uname -a)
 # MACOS
 if [[ $host == *"Darwin"* ]]; then
@@ -182,7 +182,7 @@ if [[ $host == *"Darwin"* ]]; then
   alias cat="ccat"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
-  echoGreen "  LOADING PANDORA SETTINGS..."
+  echoYellow "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
 fi
 # TMUX SESSION
@@ -190,11 +190,11 @@ if tmux display-message -p '#S' &> /dev/null; then
   $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
 
-echoYellow "  OK"
+echoGreen "  OK"
 
 
 # LOAD EXTERNAL STUFF
-echoGreen "LOADING PYENV..."
+echoYellow "LOADING PYENV..."
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -202,4 +202,4 @@ eval "$(pyenv virtualenv-init -)"
 
 
 
-echoCyan "INITIALIZATION COMPLETE"
+echoGreen "INITIALIZATION COMPLETE"
