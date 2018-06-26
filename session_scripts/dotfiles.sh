@@ -1,6 +1,6 @@
 export EVENT_NOKQUEUE=1
 name=$1
-path=$2
+path=${HOME}/Dotfiles
 
 tmux new-window -t $name:2 -n Text
 tmux new-window -t $name:3 -n ZSH 
