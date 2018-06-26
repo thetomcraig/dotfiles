@@ -8,6 +8,7 @@ tmux new-window -t $name:3 -n ZSH
 tmux select-window -t $name:1
 
 tmux send-keys -t $name:1 "cd $path" C-m C-m
+tmux send-keys -t $name:1 "load_nvm" C-m C-m
 tmux send-keys -t $name:1 "nvm use 8.9.4" C-m C-m
 tmux send-keys -t $name:1 "npm run styleguide" 
 
