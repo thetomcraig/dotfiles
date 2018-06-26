@@ -29,7 +29,7 @@ total-immersion-podcast)
   echoGreen "TOTAL IMMERSION ENGAGED"
   ;;
 *)
-  echoYellow "NO ENV VARS"
+  echoYellow "  NO ENV VARS"
   ;;
 esac
 
