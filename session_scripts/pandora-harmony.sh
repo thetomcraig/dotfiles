@@ -15,4 +15,6 @@ tmux send-keys -t $name:1 "npm start"
 tmux send-keys -t $name:2 "cd $path" C-m C-m
 tmux send-keys -t $name:2 "vim" C-m C-m
 
+tmux send-keys -t $name:3 "load_nvm" C-m C-m
+tmux send-keys -t $name:3 "nvm use 8.9.4" C-m C-m
 tmux send-keys -t $name:3 "cd $path" C-m C-m
