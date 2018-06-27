@@ -22,7 +22,7 @@ declare -A projects=(['1']=slingshot
                      ['7']=xenomorph
                      ['8']=heron
                      ['9']=total-immersion-podcast
-                     ['10']=get_template)
+                     ['10']=git_template)
 
 echo "What would you like to work on?"
 echo "1: Slingshot
