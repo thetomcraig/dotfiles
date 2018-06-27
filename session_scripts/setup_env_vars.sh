@@ -1,3 +1,6 @@
+dotfiles_location=$(cd "$(dirname "$0")" && cd .. && pwd)
+source $dotfiles_location/helper_functions.sh
+
 case $1 in
 total-immersion-podcast)
   alias post=open_tabs_for_posting
@@ -23,10 +26,10 @@ total-immersion-podcast)
       open $i
     done
   }
-  echo "TOTAL IMMERSION ENGAGED"
+  echoGreen "TOTAL IMMERSION ENGAGED"
   ;;
 *)
-  Message="I seem to be running with an nonexistent amount of disk space..."
+  echoYellow "  NO ENV VARS"
   ;;
 esac
 

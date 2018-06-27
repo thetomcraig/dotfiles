@@ -1,22 +1,27 @@
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
+# Setup Zsh
 export ZSH=${HOME}/.oh-my-zsh
-scripts_location="${HOME}/Dropbox/TomCraig/Scripts"
+
+# Get the zsh.sh pwd
+# Use the pwd to load helpers
+echo "LOADING GENERAL SETTINGS..."
 dotfiles_location="${HOME}/Dotfiles"
+source $dotfiles_location/helper_functions.sh
+
 tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 tmux_dotfiles_location="$dotfiles_location/tmux"
+
 # TODO, wtf?
 export tmux_dotfiles_location
 source $tmux_dotfiles_location/tmux_colors.sh
 
-
-
 # GENERAL STUFF
-echo "BEGIN INITIALIZATION..."
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
+echoGreen "  OK"
 
 
 # ZSH STUFF
@@ -41,9 +46,8 @@ DISABLE_AUTO_TITLE=true
 
 source $ZSH/oh-my-zsh.sh
 
-
-
 export FZF_DEFAULT_COMMAND='ag -g ""'
+echoGreen "  OK"
 
 # CD ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
@@ -61,6 +65,7 @@ alias h="history"
 alias hg="history | grep $1"
 alias cpb="pwd | pbcopy"
 alias launch="$dotfiles_location/launch_projects.sh"
+alias n="echo '$?' | terminal-notifier"
 
 #t for tree
 alias t=mytree
@@ -144,7 +149,6 @@ alias ta="tmux a -t"
 alias ts="tmux ls"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "
-alias tkk="tmux kill-session -t $(tmux display-message -p '#S')"
 alias tm="vim $dotfiles_location/tmux/tmux.conf"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
@@ -161,12 +165,13 @@ kill_current_session() {
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
 alias pf="pip freeze"
-alias p="python $scripts_location/start_ipython.py"
 
 
 
 # SSH ALIASES
 alias sshariston="ssh tom@10.0.1.3"
+
+echoGreen "  OK"
 
 
 
@@ -179,14 +184,16 @@ if [[ $host == *"Darwin"* ]]; then
   alias cat="ccat"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
-  echo "LOADING PANDORA SETTINGS..."
+  echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
 fi
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
-  $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
+  echo "  LOADING TMUX ENV VARS..."
+  source $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
 
+echoGreen "  OK"
 
 
 # LOAD EXTERNAL STUFF
@@ -198,4 +205,4 @@ eval "$(pyenv virtualenv-init -)"
 
 
 
-echo "INITIALIZATION COMPLETE"
+echoGreen "INITIALIZATION COMPLETE"
