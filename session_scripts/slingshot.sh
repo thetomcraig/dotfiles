@@ -30,11 +30,3 @@ tmux send-keys -t $name:6 "cd $path/projects/aap" C-m C-m
 tmux send-keys -t $name:6 "vim" C-m C-m
 
 tmux send-keys -t $name:7 "cd $path/projects/aap/web/aap" C-m C-m
-
-
-tmux send-keys -t $name:2 "tmux rename-window -t 2 ' '" C-m C-m
-tmux send-keys -t $name:3 "tmux rename-window -t 3 ' '" C-m C-m
-tmux send-keys -t $name:4 "tmux rename-window -t 4 ' '" C-m C-m
-tmux send-keys -t $name:5 "tmux renate-window -t 5 ' '" C-m C-m
-tmux send-keys -t $name:6 "tmux rename-window -t 6 ' '" C-m C-m
-tmux send-keys -t $name:7 "tmux rename-window -t 7 ' '" C-m C-m
