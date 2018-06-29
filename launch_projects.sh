@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Define the path to the projects directory based on physical machine
 project_path="${HOME}/Dropbox/TomCraig/Projects"
 session_scripts_dir="${HOME}/Dotfiles/session_scripts"
