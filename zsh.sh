@@ -105,10 +105,10 @@ alias gpl="git pull"
 alias log="git log --oneline --all --graph --decorate"
 
 # Show detatched commits
-alias gdc=detatched_commits
-detatched_commits() {
-  git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')
-}
+# alias gdc=detatched_commits
+# detatched_commits() {
+  # git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')
+# }
 # Make local branch tracking remote that matches regex
 alias gg=gitbranchgrep
 gitbranchgrep() {
