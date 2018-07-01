@@ -8,7 +8,6 @@ elif [[ $host == *"ZENO"* ]]; then
 elif [[ $host == *"HERMES"* ]]; then
   projects_root="${HOME}"
 fi
-echo $projects_root
 
 #Link Files
 #Make sure these point to actual paths
@@ -16,13 +15,13 @@ cd ..
 dotfiles_location=$(pwd)
 cd ~
 
-rm .projects_root
+rm -f -- .projects_root
 ln -s $projects_root .projects_root
-rm ~/.zshrc
+rm -f -- ~/.zshrc
 ln -s $dotfiles_location/zsh.sh .zshrc
-rm ~/.vimrc
+rm -f -- ~/.vimrc
 ln -s $dotfiles_location/vim.sh .vimrc
-rm ~/.tmux.conf
+rm -f -- ~/.tmux.conf
 ln -s $dotfiles_locationtmux/tmux.conf .tmux.conf
-rm ~/.hammerspoon/init.lua
+rm -f -- ~/.hammerspoon/init.lua
 cat "../init.lua" >> ~/.hammerspoon/init.lua
