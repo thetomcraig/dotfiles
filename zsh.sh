@@ -178,7 +178,6 @@ echoGreen "  OK"
 
 # ENVIRONMENT SETTINGS
 echo "LOADING ENVIRONMENT SETTINGS..."
-project_root="~"
 host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
   alias rm="trash"
@@ -187,17 +186,7 @@ fi
 if [[ $host == *"tcraig-m01"* ]]; then
   echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
-  project_root="${HOME}/dev"
-elif [[ $host == *"ZENO"* ]]; then
-  project_root="${HOME}/Dropbox/TomCraig/Projects"
-elif [[ $host == *"HERMES"* ]]; then
-  project_root="${HOME}"
 fi
-if [ ! -f ~/.project_root ]; then
-  ln -s $project_root ~/.project_root
-fi
-
-
 
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
