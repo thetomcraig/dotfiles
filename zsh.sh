@@ -193,6 +193,7 @@ if tmux display-message -p '#S' &> /dev/null; then
   echo "  LOADING TMUX ENV VARS..."
   source $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
+source $dotfiles_location/tmuxinator.zsh
 
 echoGreen "  OK"
 
