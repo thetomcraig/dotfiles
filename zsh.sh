@@ -46,6 +46,7 @@ DISABLE_AUTO_TITLE=true
 
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR="/usr/local/bin/vim"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 echoGreen "  OK"
 
