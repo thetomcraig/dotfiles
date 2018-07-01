@@ -8,6 +8,7 @@ cp ../com.manytricks.Moom.plist ${HOME}/Library/Preferences/
 #Install brew stuff
 brew install vim --with-lua
 brew install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 gem install tmuxinator
 brew install reattach-to-user-namespace
 brew install trash
@@ -39,10 +40,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
 
-
-
-#Install vundle thru vim
-#Download fzf binary
 
 cp ./themes/alienblood/alienblood.vim /usr/local/share/vim/vim80/colors
 cp ./themes/alienblood/alienblood_airline.vim ${HOME}/.vim/bundle/vim-airline/autoload/airline/themes
