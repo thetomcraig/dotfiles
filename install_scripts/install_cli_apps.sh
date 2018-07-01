@@ -8,6 +8,7 @@ cp ../com.manytricks.Moom.plist ${HOME}/Library/Preferences/
 #Install brew stuff
 brew install vim --with-lua
 brew install tmux
+gem install tmuxinator
 brew install reattach-to-user-namespace
 brew install trash
 brew install tree
