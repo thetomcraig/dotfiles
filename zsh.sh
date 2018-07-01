@@ -178,8 +178,8 @@ echoGreen "  OK"
 
 # ENVIRONMENT SETTINGS
 echo "LOADING ENVIRONMENT SETTINGS..."
+project_root="~"
 host=$(uname -a)
-# MACOS
 if [[ $host == *"Darwin"* ]]; then
   alias rm="trash"
   alias cat="ccat"
@@ -187,13 +187,25 @@ fi
 if [[ $host == *"tcraig-m01"* ]]; then
   echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
+  project_root="${HOME}/dev"
+elif [[ $host == *"ZENO"* ]]; then
+  project_root="${HOME}/Dropbox/TomCraig/Projects"
+elif [[ $host == *"HERMES"* ]]; then
+  project_root="${HOME}"
 fi
+if [ ! -f ~/.project_root ]; then
+  ln -s $project_root ~/.project_root
+fi
+
+
+
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
   echo "  LOADING TMUX ENV VARS..."
   source $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
-source $dotfiles_location/tmuxinator.zsh
+source $dotfiles_location/tmuxinator/tmuxinator.zsh
+export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
 
 echoGreen "  OK"
 
