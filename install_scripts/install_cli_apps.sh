@@ -40,16 +40,6 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
 
 
-#Link Files
-#Make sure these point to actual paths
-rm ~/.zshrc
-ln -s ../zsh.sh ~/.zshrc
-rm ~/.vimrc
-ln -s ../vim.sh ~/.vimrc
-rm ~/.tmux.conf
-ln -s ../tmux/tmux.conf ~/.tmux.conf
-rm ~/.hammerspoon/init.lua
-cat "../init.lua" >> ~/.hammerspoon/init.lua
 
 #Install vundle thru vim
 #Download fzf binary
