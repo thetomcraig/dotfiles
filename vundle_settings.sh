@@ -44,6 +44,7 @@ Plugin 'othree/html5.vim'
 Plugin 'w0rp/ale'
 Plugin 'ap/vim-css-color'
 Plugin 'tmux-plugins/vim-tmux'
+Plugin 'tpope/vim-tbone'
 
 Plugin 'junegunn/goyo.vim'
 Plugin 'kazuph/dayone.vim'
