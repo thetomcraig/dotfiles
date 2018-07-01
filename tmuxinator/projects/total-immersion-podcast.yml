@@ -1,0 +1,18 @@
+# /Users/tom/Dotfiles/tmuxinator/projects/TIPCast.yml
+
+name: total-immersion-podcast
+root: ~/.projects_root/total-immersion-podcast
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - clear
+  - editor: 
+      layout: main-vertical
+      panes:
+        - editor:
+          - vim
+          - ":call AutoCorrect()"
+          - ":set spell spelllang=en_us"
+
