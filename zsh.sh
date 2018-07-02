@@ -49,12 +49,11 @@ source $ZSH/oh-my-zsh.sh
 export FZF_DEFAULT_COMMAND='ag -g ""'
 echoGreen "  OK"
 
-# CD ALIASES
+# GENERAL ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
 alias v="vim $dotfiles_location/vimrc.sh"
 alias vv="vim +"NERDTree $1""
 alias vu="vim $dotfiles_location/vundle_settings.sh"
-alias sc="cd ${HOME}/Dropbox/TomCraig/Scripts"
 alias dot="cd ${HOME}/Dotfiles"
 
 
@@ -82,8 +81,8 @@ alias T="tree -a -C -L 1"
 alias tt="mytree 999"
 unalias d
 alias d="tree -a -C -L 1 -d"
-alias s='source $dotfiles_location/zsh.sh'
-alias b='vim $dotfiles_location/zsh.sh'
+alias s="source $dotfiles_location/zsh.sh"
+alias b="vim $dotfiles_location/zsh.sh"
 
 
 
