@@ -46,6 +46,7 @@ DISABLE_AUTO_TITLE=true
 
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR="/usr/local/bin/vim"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 echoGreen "  OK"
 
@@ -104,10 +105,10 @@ alias gpl="git pull"
 alias log="git log --oneline --all --graph --decorate"
 
 # Show detatched commits
-alias gdc=detatched_commits
-detatched_commits() {
-  git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')
-}
+# alias gdc=detatched_commits
+# detatched_commits() {
+  # git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')
+# }
 # Make local branch tracking remote that matches regex
 alias gg=gitbranchgrep
 gitbranchgrep() {
@@ -177,7 +178,6 @@ echoGreen "  OK"
 # ENVIRONMENT SETTINGS
 echo "LOADING ENVIRONMENT SETTINGS..."
 host=$(uname -a)
-# MACOS
 if [[ $host == *"Darwin"* ]]; then
   alias rm="trash"
   alias cat="ccat"
@@ -186,11 +186,14 @@ if [[ $host == *"tcraig-m01"* ]]; then
   echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
 fi
+
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
   echo "  LOADING TMUX ENV VARS..."
   source $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
+source $dotfiles_location/tmuxinator/tmuxinator.zsh
+export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
 
 echoGreen "  OK"
 

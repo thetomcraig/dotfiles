@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Define the path to the projects directory based on physical machine
 project_path="${HOME}/Dropbox/TomCraig/Projects"
 session_scripts_dir="${HOME}/Dotfiles/session_scripts"
@@ -22,7 +23,7 @@ declare -A projects=(['1']=slingshot
                      ['7']=xenomorph
                      ['8']=heron
                      ['9']=total-immersion-podcast
-                     ['10']=git_template)
+                     ['10']=DIONYSIS)
 
 echo "What would you like to work on?"
 echo "1: Slingshot
@@ -34,7 +35,7 @@ echo "1: Slingshot
 7: Xenomorph
 8: HERON
 9: Total Immersion
-10: Git Template"
+10: DIONYSIS"
 read choice
 # Get project choice
 name=${projects[$choice]}
