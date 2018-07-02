@@ -1,7 +1,7 @@
 # /Users/tom/Dotfiles/tmuxinator/projects/DIONYSIS.yml
 
 name: DIONYSIS
-root: ~/{{ $HOME }}
+root: ~/.project_roots/DIONYSIS
 
 # Optional tmux socket
 # socket_name: foo
