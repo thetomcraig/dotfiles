@@ -29,8 +29,8 @@ root: ~/.project_roots/DIONYSIS
 
 
 windows:
-  - editor:
+  - zsh:
       layout: main-vertical
       panes:
         - clear
-  - server: vim
+  - editor: vim
