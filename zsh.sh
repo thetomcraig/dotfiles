@@ -64,7 +64,7 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias h="history"
 alias hg="history | grep $1"
 alias cpb="pwd | pbcopy"
-alias launch="$dotfiles_location/launch_projects.sh"
+alias launch="tmuxinator list"
 alias n="echo '$?' | terminal-notifier"
 
 #t for tree
