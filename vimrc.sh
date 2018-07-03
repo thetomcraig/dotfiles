@@ -287,3 +287,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 
 syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
+
+nnoremap <silent> <leader>z :Goyo<cr>
+autocmd! User GoyoLeave
+autocmd  User GoyoLeave nested source ~/.vimrc
