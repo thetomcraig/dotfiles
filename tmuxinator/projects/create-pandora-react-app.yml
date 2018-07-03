@@ -1,16 +1,9 @@
 # /Users/tcraig/Dotfiles/tmuxinator/projects/orcus.yml
 
-name: pandoraads
-root: ~/.projects_root/pandoraads
+name: orcus
+root: ~/.projects_root/create-pandora-react-app
 
 windows:
-  - api:
-      layout: main-vertical
-      panes:
-        - cd ../pandora-ads-api &&
-          load_nvm &&
-          nvm use 8.9.4 &&
-          npm start
   - server:
       layout: main-vertical
       panes:
@@ -21,7 +14,7 @@ windows:
       layout: main-vertical
       panes:
         - vim &&
-        - ":nmap <Space>pf :call fzf#run(fzf#wrap({'dir': '..'}))"
+        - ":nmap <Space>pf :call fzf#run(fzf#wrap({'src': '..'}))"
   - zsh:
       layout: main-vertical
       panes:
