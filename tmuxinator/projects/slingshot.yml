@@ -1,0 +1,36 @@
+# /Users/tcraig/Dotfiles/tmuxinator/projects/orcus.yml
+
+name: slingshot
+root: ~/.projects_root/slingshot
+
+windows:
+  - server:
+      layout: main-vertical
+      panes:
+        - cd projects/aap/web/aap &&
+        - python manage.py runserver
+  - npm:
+      layout: main-vertical
+      panes:
+        - cd projects/aap/web/aap &&
+        - npm run dev
+  - redis:
+      layout: main-vertical
+      panes:
+        - redis-server
+  - celery:
+      layout: main-vertical
+      panes:
+        - cd projects/aap/web/aap &&
+        - celery -A slingshot worker
+  - shell:
+      layout: main-vertical
+      panes:
+        - cd projects/aap/web/aap &&
+        - python manage.py shell
+  - editor: vim
+  - zsh:
+      layout: main-vertical
+      panes:
+        - cd projects/aap/web/aap &&
+        - clear

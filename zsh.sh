@@ -190,7 +190,7 @@ fi
 # TMUX SESSION
 if tmux display-message -p '#S' &> /dev/null; then
   echo "  LOADING TMUX ENV VARS..."
-  source $tmux_session_scripts_dir/setup_env_vars.sh $(tmux display-message -p '#S')
+  source $dotfiles_location/tmux/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
 source $dotfiles_location/tmuxinator/tmuxinator.zsh
 export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
