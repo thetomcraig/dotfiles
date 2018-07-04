@@ -11,6 +11,8 @@ brew install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 gem install tmuxinator
 brew install reattach-to-user-namespace
+brew install urlview
+brew install extract_url
 brew install trash
 brew install tree
 brew install ack
