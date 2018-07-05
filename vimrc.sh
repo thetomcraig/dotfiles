@@ -227,12 +227,6 @@ let g:ale_linters = {'javascript': 'all', 'html': 'all'}
 """"""""""
 "FUGITVIE"
 """"""""""
-" set diffopt+=vertical"
-:function Status()
-:  Gstatus
-:  MBEClose
-:endfunction
-
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>gs :Gstatus<CR>
@@ -259,13 +253,13 @@ endfunction
 
 call airline#add_statusline_func('WindowNumber')
 call airline#add_inactive_statusline_func('WindowNumber')
-let g:airline_section_b = airline#section#create(['branch'])
-let g:airline_section_c = airline#section#create(['%f'])
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-let g:airline_section_z = ''
+" let g:airline_section_a = airline"section"create(['branch'])
+" let g:airline_section_b = airline"section"create(['branch'])
+" let g:airline_section_c = airline"section"create(['%f'])
+" let g:airline_section_x = ''
+" let g:airline_section_y = airline"section"create(['%f'])
+"let g:airline_section_z = ''
 
-let g:goyo_width=125
 set diffopt+=vertical
 set cursorline
 
@@ -288,6 +282,10 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 
+let g:goyo_height=100
+let g:goyo_width=125
 nnoremap <silent> <leader>z :Goyo<cr>
 autocmd! User GoyoLeave
 autocmd  User GoyoLeave nested source ~/.vimrc
+" This puts the menu for completion in command mode"
+set wildmenu
