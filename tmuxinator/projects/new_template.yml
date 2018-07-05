@@ -1,5 +1,3 @@
-# /Users/tcraig/Dotfiles/tmuxinator/projects/orcus.yml
-
 name: <NAME>
 root: ~/.projects_root/<NAME>
 

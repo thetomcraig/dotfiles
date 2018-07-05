@@ -1,0 +1,9 @@
+name: CASTOR
+root: ~/.projects_root/CASTOR
+
+windows:
+  - editor: vim
+  - zsh:
+      layout: main-vertical
+      panes:
+        - clear
