@@ -313,3 +313,13 @@ if in_tmux == 1
   endif
 
 endif
+
+echo "LOADING EDITCONFIG..."
+"check if there is an editorconfig file"
+"1 - no"
+"0 - yes"
+let editconfig_exists = system("ls .editorconfig; echo $?")
+if editconfig_exists == 1
+  echo "Editor config file created"
+  let new_file = system("ln -s ~/Dotfiles/editorconfig.sh .editorconfig")
+endif

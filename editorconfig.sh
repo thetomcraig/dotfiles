@@ -1,0 +1,17 @@
+# http://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.js]
+trim_trailing_whitespace = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+max_line_length = 100
