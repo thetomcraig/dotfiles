@@ -1,9 +1,12 @@
+# /Users/tom/Dotfiles/tmuxinator/projects/CASTOR.yml
+
 name: CASTOR
 root: ~/.projects_root/CASTOR
 
+
 windows:
-  - editor: vim
   - zsh:
       layout: main-vertical
       panes:
         - clear
+  - editor: vim

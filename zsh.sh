@@ -188,7 +188,7 @@ if [[ $host == *"tcraig-m01"* ]]; then
 fi
 
 # TMUX SESSION
-if tmux display-message -p '#S' &> /dev/null; then
+if [ -n "$TMUX" ]; then
   echo "  LOADING TMUX ENV VARS..."
   source $dotfiles_location/tmux/setup_env_vars.sh $(tmux display-message -p '#S')
 fi

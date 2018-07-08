@@ -1,6 +1,4 @@
-# /Users/tcraig/Dotfiles/tmuxinator/projects/orcus.yml
-
-name: orcus
+name: create-pandora-react-app
 root: ~/.projects_root/create-pandora-react-app
 
 windows:
@@ -8,13 +6,12 @@ windows:
       layout: main-vertical
       panes:
         - load_nvm &&
-        nvm use 8.9.4 &&
-        npm start
+          nvm use 8.9.4 &&
+          npm start
   - editor:
       layout: main-vertical
       panes:
-        - vim &&
-        - ":nmap <Space>pf :call fzf#run(fzf#wrap({'src': '..'}))"
+        - vim
   - zsh:
       layout: main-vertical
       panes:
