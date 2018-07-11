@@ -10,12 +10,13 @@ echo "LOADING GENERAL SETTINGS..."
 dotfiles_location="${HOME}/Dotfiles"
 source $dotfiles_location/helper_functions.sh
 
-tmux_session_scripts_dir="$dotfiles_location/session_scripts"
 tmux_dotfiles_location="$dotfiles_location/tmux"
 
 # TODO, wtf?
 export tmux_dotfiles_location
 source $tmux_dotfiles_location/tmux_colors.sh
+source $dotfiles_location/tmuxinator/tmuxinator.zsh
+export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
 
 # GENERAL STUFF
 export LANG="en_US.UTF-8"
@@ -34,38 +35,38 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_VIRTUALENV_BACKGROUND=green
 
+plugins=(git, zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-plugins=(git, zsh-autosuggestions)
-setopt auto_cd
 bindkey '^j' autosuggest-accept
+setopt auto_cd
 DISABLE_AUTO_TITLE=true
-
-source $ZSH/oh-my-zsh.sh
-
-export EDITOR="/usr/local/bin/vim"
-export FZF_DEFAULT_COMMAND='ag -g ""'
 echoGreen "  OK"
+
+
 
 # GENERAL ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
-alias v="vim $dotfiles_location/vimrc.sh"
-alias vv="vim +"NERDTree $1""
-alias vu="vim $dotfiles_location/vundle_settings.sh"
-alias dot="cd ${HOME}/Dotfiles"
 
+export EDITOR="/usr/local/bin/vim"
+export FZF_DEFAULT_COMMAND='ag -g ""'
 
-
-# GENERAL AIASES
 alias ctags="`brew --prefix`/bin/ctags"
 alias h="history"
 alias hg="history | grep $1"
 alias cpb="pwd | pbcopy"
-alias launch="tmuxinator list"
 alias n="echo '$?' | terminal-notifier"
+
+alias v="vim $dotfiles_location/vimrc.sh"
+alias vv="vim +"NERDTree $1""
+alias vu="vim $dotfiles_location/vundle_settings.sh"
+alias dot="cd ${HOME}/Dotfiles"
 
 #t for tree
 alias t=mytree
@@ -117,25 +118,6 @@ gitbranchgrep() {
   git branch -vv
 }
 
-# Open conflicted files in vim
-alias vc=vim_conflicted_files
-vim_conflicted_files() {
-  git_root=$(git rev-parse --show-toplevel)
-  conflicted_files=$(git diff --name-only --diff-filter=U)
-  full_path_file_list=()
-  for f in $conflicted_files; do
-      full_path_file_list+="$git_root/$f "
-  done
-  vim $full_path_file_list
-}
-
-
-alias vc=vimconflicted
-vimconflicted() {
-  git_root=$(git rev-parse --show-toplevel)
-  conflicted_files=$(git diff --name-only --diff-filter=U)
-  echo $conflicted_files
-}
 
 
 alias h="history"
@@ -153,6 +135,11 @@ alias tm="vim $dotfiles_location/tmux/tmux.conf"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
+
+alias txs='tmuxinator start'
+alias txo='tmuxinator open'
+alias txn='tmuxinator new'
+alias txl='tmuxinator list'
 
 alias tkk=kill_current_session
 kill_current_session() {
@@ -192,8 +179,6 @@ if [ -n "$TMUX" ]; then
   echo "  LOADING TMUX ENV VARS..."
   source $dotfiles_location/tmux/setup_env_vars.sh $(tmux display-message -p '#S')
 fi
-source $dotfiles_location/tmuxinator/tmuxinator.zsh
-export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
 
 echoGreen "  OK"
 
