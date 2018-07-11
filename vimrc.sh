@@ -17,6 +17,7 @@ set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
 set splitright                              "Open splits to the right"
 set wildmenu                                "Put completion menu in command mode"
+set shortmess+=A                            "Ignore warning when swp file exists"
 
 
 
@@ -303,13 +304,13 @@ if in_tmux == 1
   let match = match(session, "pandoraads")
   if match == 0
     nnoremap <Space>fg :echo expand("%:p")<CR>
-    nmap <Space>pf :call fzf#run(fzf#wrap({'dir': '..'}))<CR>
+    nmap <Space>pf :call fzf#run(fzf#wrap('src', {'dir': './src'}))<CR>
   endif
 
   let match = match(session, "create-pandora-react-app")
   if match == 0
     nnoremap <Space>fg :echo expand("%:p")<CR>
-    nmap <Space>pf :call fzf#run(fzf#wrap({'src': '..'}))<CR>
+    nmap <Space>pf :call fzf#run(fzf#wrap('lib', {'dir': 'lib'}))<CR>
   endif
 
 endif
