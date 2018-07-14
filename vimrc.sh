@@ -261,7 +261,6 @@ call airline#add_inactive_statusline_func('WindowNumber')
 "let g:airline_section_z = ''
 
 set diffopt+=vertical
-set cursorline
 
 colorscheme xenomorph
 
