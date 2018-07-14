@@ -21,6 +21,7 @@ brew install thefuck
 brew install zsh
 brew install ccat
 brew install ack
+brew install node
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install terminal-notifier
 

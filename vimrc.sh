@@ -16,6 +16,8 @@ set smartcase                               "ignore case if search pattern is al
 set mouse=nicr                              "Scroll with mouse"
 set tw=120                                  "Column limit"
 set splitright                              "Open splits to the right"
+set wildmenu                                "Put completion menu in command mode"
+set shortmess+=A                            "Ignore warning when swp file exists"
 
 
 
@@ -260,6 +262,12 @@ call airline#add_inactive_statusline_func('WindowNumber')
 " let g:airline_section_y = airline"section"create(['%f'])
 "let g:airline_section_z = ''
 
+let g:goyo_height=100
+let g:goyo_width=125
+nnoremap <silent> <leader>z :Goyo<cr>
+autocmd! User GoyoLeave
+autocmd  User GoyoLeave nested source ~/.vimrc
+
 set diffopt+=vertical
 
 colorscheme xenomorph
@@ -279,12 +287,39 @@ set clipboard=unnamed
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 
-syn region Comment start=/"""/ end=/"""/    "Makes python docstrings color like comments"
 
-let g:goyo_height=100
-let g:goyo_width=125
-nnoremap <silent> <leader>z :Goyo<cr>
-autocmd! User GoyoLeave
-autocmd  User GoyoLeave nested source ~/.vimrc
-" This puts the menu for completion in command mode"
-set wildmenu
+"""""""""""""""""""""
+"ENVIRONMENT SETTINGS"
+"""""""""""""""""""""
+echo "LOADING ENVIRONMENT SETTINGS..."
+"check if we're in tmux"
+"1 - yes"
+"0 - no"
+let in_tmux = system("[ -z ${TMUX} ]; echo $?")
+if in_tmux == 1
+  let session = system("tmux display-message -p '#S'")
+  echo "Vim loading with tmux session: " . session
+
+  let match = match(session, "pandoraads")
+  if match == 0
+    nnoremap <Space>fg :echo expand("%:p")<CR>
+    nmap <Space>pf :call fzf#run(fzf#wrap('src', {'dir': './src'}))<CR>
+  endif
+
+  let match = match(session, "create-pandora-react-app")
+  if match == 0
+    nnoremap <Space>fg :echo expand("%:p")<CR>
+    nmap <Space>pf :call fzf#run(fzf#wrap('lib', {'dir': 'lib'}))<CR>
+  endif
+
+endif
+
+echo "LOADING EDITCONFIG..."
+"check if there is an editorconfig file"
+"1 - no"
+"0 - yes"
+let editconfig_exists = system("ls .editorconfig; echo $?")
+if editconfig_exists == 1
+  echo "Editor config file created"
+  let new_file = system("ln -s ~/Dotfiles/editorconfig.sh .editorconfig")
+endif
