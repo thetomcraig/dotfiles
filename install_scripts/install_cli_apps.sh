@@ -75,3 +75,6 @@ sudo pip install virtualenv
 #isort
 #make sure these are all global
 #pyenv and virtualenv
+
+npm install -g livedown
+# eslint for vim (global)
