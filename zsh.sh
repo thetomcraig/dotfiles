@@ -121,7 +121,6 @@ gitbranchgrep() {
 # TMUX ALIASES AND FUNCTIONS
 alias tmux="tmux -u"
 alias ta="tmux a -t"
-alias ts="tmux ls"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "
 alias tm="vim $dotfiles_location/tmux/tmux.conf"
@@ -138,6 +137,15 @@ alias tkk=kill_current_session
 kill_current_session() {
   tmux kill-session -t $(tmux display-message -p '#S')
 }
+
+#alias tmux_list_sessions="tmux l; echo $?"
+#tmux_list_sessions() {
+#  sessions=$(tmux ls)
+#  if [[ $? == 0 ]]; then
+#    echo sessions
+#  fi
+#}
+
 
 # PYTHON ALISES
 alias vev="virtualenv env"

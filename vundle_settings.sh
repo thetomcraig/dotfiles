@@ -24,11 +24,14 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-markdown'
+Plugin 'aklt/plantuml-syntax'
 Plugin 'scrooloose/vim-slumlord'
+Plugin 'francoiscabrol/ranger.vim'
 
 Plugin 'kablamo/vim-git-log'
 Plugin 'airblade/vim-gitgutter'
@@ -55,6 +58,7 @@ Plugin 't9md/vim-choosewin'
 
 Plugin 'gcmt/taboo.vim'
 Plugin 'panozzaj/vim-autocorrect'
+Plugin 'neilagabriel/vim-geeknote'
 
 " All of your Plugins must be added before the following line "
 call vundle#end()            " required "
