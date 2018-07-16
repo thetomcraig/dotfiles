@@ -57,6 +57,10 @@ nmap <Space>s{ ysiw{
 nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
@@ -263,6 +267,7 @@ call airline#add_inactive_statusline_func('WindowNumber')
 " let g:airline_section_y = airline"section"create(['%f'])
 "let g:airline_section_z = ''
 
+let g:livedown_browser = "safari"
 let g:goyo_height=100
 let g:goyo_width=125
 nnoremap <silent> <leader>z :Goyo<cr>
@@ -270,7 +275,6 @@ autocmd! User GoyoLeave
 autocmd  User GoyoLeave nested source ~/.vimrc
 
 set diffopt+=vertical
-set cursorline
 
 colorscheme xenomorph
 

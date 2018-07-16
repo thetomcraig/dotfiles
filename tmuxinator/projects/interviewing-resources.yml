@@ -1,0 +1,9 @@
+name: Interviewing-Resources
+root: ~/.projects_root/Interviewing-Resources
+
+windows:
+  - editor: vim
+  - zsh:
+      layout: main-vertical
+      panes:
+        - clear
