@@ -16,6 +16,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'francoiscabrol/ranger.vim'
 
 " Colors/UI "
 Plugin 'vim-airline/vim-airline'
@@ -34,6 +35,7 @@ Plugin 'amix/vim-zenroom2'
 Plugin 'kazuph/dayone.vim'
 Plugin 'shime/vim-livedown'
 Plugin 'panozzaj/vim-autocorrect'
+Plugin 'neilagabriel/vim-geeknote'
 
 " Coding "
 Plugin 'w0rp/ale'
@@ -41,6 +43,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 
@@ -65,6 +68,7 @@ Plugin 'othree/html5.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tpope/vim-tbone'
+Plugin 'aklt/plantuml-syntax'
 
 
 " All of your Plugins must be added before the following line "
