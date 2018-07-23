@@ -213,8 +213,6 @@ map <Space>jj <Plug>(easymotion-s)
 """""
 "ALE"
 """""
-"let g:ale_fix_on_save = 1"
-
 let g:ale_fixers = {
     \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
     \ 'less': ['stylelint'],
@@ -259,12 +257,8 @@ endfunction
 
 call airline#add_statusline_func('WindowNumber')
 call airline#add_inactive_statusline_func('WindowNumber')
-" let g:airline_section_a = airline"section"create(['branch'])
-" let g:airline_section_b = airline"section"create(['branch'])
-" let g:airline_section_c = airline"section"create(['%f'])
-" let g:airline_section_x = ''
-" let g:airline_section_y = airline"section"create(['%f'])
-"let g:airline_section_z = ''
+
+let g:vim_markdown_folding_disabled = 1
 
 let g:livedown_browser = "safari"
 let g:goyo_height=100
@@ -324,7 +318,3 @@ echo "LOADING EDITCONFIG..."
 "1 - no"
 "0 - yes"
 let editconfig_exists = system("ls .editorconfig; echo $?")
-if editconfig_exists == 1
-  echo "Editor config file created"
-  let new_file = system("ln -s ~/Dotfiles/editorconfig.sh .editorconfig")
-endif
