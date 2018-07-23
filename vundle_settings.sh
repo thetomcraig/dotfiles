@@ -56,9 +56,10 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'thetomcraig/Mark--Karkat'
 
 " Syntax "
-Plugin 'tpope/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'elzr/vim-json'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'othree/html5.vim'
 Plugin 'ap/vim-css-color'
