@@ -248,6 +248,7 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 "Colors/UI"
 """""""""""
 let g:airline_theme='xenomorph'
+colorscheme xenomorph
 
 function! WindowNumber(...)
     let builder = a:1
@@ -270,14 +271,15 @@ autocmd  User GoyoLeave nested source ~/.vimrc
 
 set diffopt+=vertical
 
-colorscheme xenomorph
 
 
 """"""""""""""""""
 "Tabs and Spacing"
 """"""""""""""""""
 set shiftround
-autocmd FileType sh set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
+autocmd FileType python set tabstop=4 | set shiftwidth=4 | set softtabstop=4 | set expandtab
+autocmd FileType javascript set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
+autocmd FileType markdown set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
 
 set autoindent
 set smartindent
@@ -319,3 +321,7 @@ echo "LOADING EDITCONFIG..."
 "1 - no"
 "0 - yes"
 let editconfig_exists = system("ls .editorconfig; echo $?")
+if editconfig_exists == 1
+  echo "NO EDITORCONFIG FILE; KEEPING DEFAULTS"
+endif
+
