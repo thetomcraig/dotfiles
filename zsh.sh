@@ -139,13 +139,7 @@ kill_current_session() {
   tmux kill-session -t $(tmux display-message -p '#S')
 }
 
-#alias tmux_list_sessions="tmux l; echo $?"
-#tmux_list_sessions() {
-#  sessions=$(tmux ls)
-#  if [[ $? == 0 ]]; then
-#    echo sessions
-#  fi
-#}
+alias ts=tmux l
 
 
 # PYTHON ALISES
