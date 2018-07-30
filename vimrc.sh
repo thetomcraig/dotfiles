@@ -241,6 +241,7 @@ nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
 nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
+nnoremap <Space>gx :only<CR> :Gedit<CR>
 
 
 
