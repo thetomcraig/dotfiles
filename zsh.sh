@@ -123,7 +123,7 @@ alias tmux="tmux -u"
 alias ta="tmux a -t"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "
-alias ts="tmux list-sessions "
+alias ts="tmux list-sessions"
 alias tm="vim $dotfiles_location/tmux/tmux.conf"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
@@ -139,7 +139,6 @@ kill_current_session() {
   tmux kill-session -t $(tmux display-message -p '#S')
 }
 
-alias ts=tmux l
 
 
 # PYTHON ALISES
