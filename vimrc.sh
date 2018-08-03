@@ -220,6 +220,7 @@ let g:ale_fixers = {
     \ 'javascript': ['stylelint', 'eslint'],
     \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
+    \ 'sh': ['language_server'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
 let g:ale_python_pylint_options =
