@@ -24,6 +24,7 @@ brew install ack
 brew install node
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install terminal-notifier
+brew install shellcheck
 
 # vim setup - vundle
 # hot key stuff, casplock disable, hammer spoon, karabiner
@@ -77,4 +78,5 @@ sudo pip install virtualenv
 #pyenv and virtualenv
 
 npm install -g livedown
-# eslint for vim (global)
+npm install -g eslint
+npm install -g bash-language-server
