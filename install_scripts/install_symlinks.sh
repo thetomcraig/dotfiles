@@ -15,8 +15,10 @@ cd ..
 dotfiles_location=$(pwd)
 cd ~
 
-rm -f -- .projects_root
+rm -f -- ~/.projects_root
 ln -s $projects_root .projects_root
+rm -f -- ~/.editorconfig
+ln -s $dotfiles_location/editorconfig.sh .projects_root
 rm -f -- ~/.zshrc
 ln -s $dotfiles_location/zsh.sh .zshrc
 rm -f -- ~/.vimrc

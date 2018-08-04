@@ -18,7 +18,7 @@ set tw=120                                  "Column limit"
 set splitright                              "Open splits to the right"
 set wildmenu                                "Put completion menu in command mode"
 set shortmess+=A                            "Ignore warning when swp file exists"
-
+set clipboard=unnamed
 
 
 """""""""""""""""""""""""""""""""
@@ -220,6 +220,7 @@ let g:ale_fixers = {
     \ 'javascript': ['stylelint', 'eslint'],
     \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
+    \ 'sh': ['language_server'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
 let g:ale_python_pylint_options =
@@ -241,6 +242,7 @@ nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
 nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
+nnoremap <Space>gx :only<CR> :Gedit<CR>
 
 
 
@@ -273,24 +275,6 @@ set diffopt+=vertical
 
 
 
-""""""""""""""""""
-"Tabs and Spacing"
-""""""""""""""""""
-set shiftround
-autocmd FileType python set tabstop=4 | set shiftwidth=4 | set softtabstop=4 | set expandtab
-autocmd FileType javascript set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
-autocmd FileType markdown set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
-autocmd FileType sh set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
-
-set autoindent
-set smartindent
-set smarttab
-set expandtab
-set clipboard=unnamed
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-
-
-
 """""""""""""""""""""
 "ENVIRONMENT SETTINGS"
 """""""""""""""""""""
@@ -317,19 +301,25 @@ if in_tmux == 1
 
 endif
 
-echo "LOADING EDITCONFIG..."
-"check if there is an editorconfig file"
-"1 - no"
-"0 - yes"
-let editconfig_exists = system("ls .editorconfig; echo $?")
-if editconfig_exists == 1
-  echo "NO EDITORCONFIG FILE; KEEPING DEFAULTS"
-endif
 
-
+""""""""""""""""""
+"CUSTOM FUNCTIONS" 
+""""""""""""""""""
 function! StartWritingEpisodeNotes()
   :call AutoCorrect()
   :set spell spelllang=en_us
   :Goyo
 endfunction
 command! Start call StartWritingEpisodeNotes()
+
+
+
+""""""""""""""""""
+"Tabs and Spacing"
+""""""""""""""""""
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+set shiftround
+set autoindent
+set smartindent
+set smarttab
+set expandtab

@@ -11,6 +11,10 @@ windows:
           load_nvm &&
           nvm use 8.9.4 &&
           npm start
+  - auth:
+      panes:
+        - cd ../pads-auth &&
+          python manage.py runserver
   - server:
       layout: main-vertical
       panes:
