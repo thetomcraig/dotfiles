@@ -280,6 +280,7 @@ set shiftround
 autocmd FileType python set tabstop=4 | set shiftwidth=4 | set softtabstop=4 | set expandtab
 autocmd FileType javascript set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
 autocmd FileType markdown set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
+autocmd FileType sh set tabstop=2 | set shiftwidth=2 | set softtabstop=2 | set expandtab
 
 set autoindent
 set smartindent
@@ -325,3 +326,10 @@ if editconfig_exists == 1
   echo "NO EDITORCONFIG FILE; KEEPING DEFAULTS"
 endif
 
+
+function! StartWritingEpisodeNotes()
+  :call AutoCorrect()
+  :set spell spelllang=en_us
+  :Goyo
+endfunction
+command! Start call StartWritingEpisodeNotes()
