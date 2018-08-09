@@ -302,6 +302,17 @@ if in_tmux == 1
 endif
 
 
+""""""""""""""""""
+"CUSTOM FUNCTIONS" 
+""""""""""""""""""
+function! StartWritingEpisodeNotes()
+  :call AutoCorrect()
+  :set spell spelllang=en_us
+  :Goyo
+endfunction
+command! Start call StartWritingEpisodeNotes()
+
+
 
 """"""""""""""""""
 "Tabs and Spacing"
