@@ -1,4 +1,4 @@
-"Install with this command `PluginInstall`"  
+"Install with this command `PluginInstall`"
 set nocompatible              " be iMproved, required "
 filetype off                  " required "
 
@@ -62,7 +62,6 @@ Plugin 'thetomcraig/Mark--Karkat'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'elzr/vim-json'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'othree/html5.vim'
 Plugin 'ap/vim-css-color'
