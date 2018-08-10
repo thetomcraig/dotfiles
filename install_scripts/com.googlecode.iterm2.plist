@@ -4068,7 +4068,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Dotfiles/install_scripts</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -4129,27 +4129,27 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>2105 592 735 382 1920 -242 1200 1920 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1000 910 400 129 0 0 1920 1200 </string>
+	<string>82 638 400 129 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>445 209 550 622 0 0 1440 900 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>378 41 606 469 0 0 1440 900 </string>
+	<string>-931 -252 606 469 -1200 -390 1200 1920 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>213 519 918 381 0 0 1440 900 </string>
+	<string>269 238 918 512 0 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 316 592 584 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 6 1440 894 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 6 1440 894 0 0 1440 900 </string>
+	<string>0 6 1920 1194 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>1772 4 148 1076 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>-1200 -387 1200 1917 -1200 -390 1200 1920 </string>
+	<string>960 5 960 1195 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 452 720 448 0 0 1440 900 </string>
+	<string>0 723 650 477 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>1645 4 274 1076 0 0 1920 1080 </string>
+	<string>1270 723 650 477 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>1680 4 240 1076 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -5600,7 +5600,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -7241,7 +7241,7 @@
 			<key>Cursor Type</key>
 			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -8220,7 +8220,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/tcraig/Dotfiles</string>
+	<string>/Users/tcraig/Dotfiles/install_scripts</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -8232,7 +8232,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-11T19:38:41Z</date>
+	<date>2018-08-03T22:29:40Z</date>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -8260,7 +8260,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
