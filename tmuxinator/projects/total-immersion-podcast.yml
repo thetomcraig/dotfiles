@@ -13,7 +13,4 @@ windows:
       panes:
         - editor:
           - vim
-          - ":call AutoCorrect()"
-          - ":set spell spelllang=en_us"
-          - ":Goyo"
 
