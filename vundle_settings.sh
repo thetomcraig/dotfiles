@@ -21,6 +21,7 @@ Plugin 'francoiscabrol/ranger.vim'
 " Colors/UI "
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'junegunn/seoul256.vim'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
@@ -35,7 +36,6 @@ Plugin 'amix/vim-zenroom2'
 Plugin 'kazuph/dayone.vim'
 Plugin 'shime/vim-livedown'
 Plugin 'panozzaj/vim-autocorrect'
-Plugin 'neilagabriel/vim-geeknote'
 
 " Coding "
 Plugin 'w0rp/ale'
