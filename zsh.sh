@@ -183,4 +183,10 @@ eval "$(pyenv virtualenv-init -)"
 
 
 
+echo "LOADING DIRENV..."
+eval "$(direnv hook zsh)"
+
+
+
 echoGreen "INITIALIZATION COMPLETE"
+
