@@ -24,6 +24,8 @@ open https://app-updates.agilebits.com/download/OPM4
 
 open https://slack.com/downloads/instructions/osx
 
-open https://github.com/transmission/transmission-releases/raw/master/Transmission-2.92.dmg 
+open https://github.com/transmission/transmission-releases/raw/master/Transmission-2.92.dmg
 
-echo "Install these from the Mac App Store: [Fantastical, Moom, Trashme, Day One CLassic, Amphetamine, 1Password, The Unarchiver]"
+open https://www.tripmode.ch/thank-you-for-downloading-tripmode/
+
+echo "Install these from the Mac App Store: [Fantastical, Moom, Trashme, Day One Classic, Amphetamine, 1Password, The Unarchiver, Mr. Battery]"
