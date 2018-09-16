@@ -1,5 +1,6 @@
 source ${HOME}/Dotfiles/vundle_settings.sh
 
+
 """"""""
 "General"
 """"""""
@@ -19,6 +20,7 @@ set splitright                              "Open splits to the right"
 set wildmenu                                "Put completion menu in command mode"
 set shortmess+=A                            "Ignore warning when swp file exists"
 set clipboard=unnamed
+set shell=/bin/bash
 
 
 """""""""""""""""""""""""""""""""
@@ -220,7 +222,7 @@ let g:ale_fixers = {
     \ 'javascript': ['stylelint', 'eslint'],
     \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
-    \ 'sh': ['language_server'],
+    \ 'sh': ['shfmt'],
 \}
 let g:ale_python_autopep8_options = '--max-line-length=120'
 let g:ale_python_pylint_options =

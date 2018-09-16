@@ -34,10 +34,8 @@ Plugin 't9md/vim-choosewin'
 " Writing Plaintext and Markdown "
 Plugin 'junegunn/goyo.vim'
 Plugin 'amix/vim-zenroom2'
-Plugin 'kazuph/dayone.vim'
 Plugin 'shime/vim-livedown'
 Plugin 'panozzaj/vim-autocorrect'
-Plugin 'neilagabriel/vim-geeknote'
 
 " Coding "
 Plugin 'w0rp/ale'
