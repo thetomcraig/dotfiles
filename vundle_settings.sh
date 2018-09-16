@@ -21,6 +21,8 @@ Plugin 'francoiscabrol/ranger.vim'
 " Colors/UI "
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'junegunn/seoul256.vim'
+Plugin 'thetomcraig/Xenomorph'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
