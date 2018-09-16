@@ -1,5 +1,5 @@
 name: Xenomorph
-root: ~/.projects_root/XENOMORPH
+root: ~/.projects_root/Xenomorph
 
 windows:
   - server:
