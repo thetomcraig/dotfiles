@@ -1,0 +1,12 @@
+name: Xenomorph
+root: ~/.projects_root/XENOMORPH
+
+windows:
+  - server:
+      layout: main-vertical
+      panes:
+  - editor: vim
+  - zsh:
+      layout: main-vertical
+      panes:
+        - clear
