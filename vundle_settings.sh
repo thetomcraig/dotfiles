@@ -22,7 +22,7 @@ Plugin 'francoiscabrol/ranger.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'junegunn/seoul256.vim'
-Plugin 'thetomcraig/Xenomorph'
+Plugin 'thetomcraig/xenomorph.vim'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
