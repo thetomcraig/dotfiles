@@ -16,7 +16,6 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'francoiscabrol/ranger.vim'
 
 " Colors/UI "
 Plugin 'vim-airline/vim-airline'
