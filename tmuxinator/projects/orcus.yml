@@ -1,13 +1,9 @@
 # /Users/tcraig/Dotfiles/tmuxinator/projects/orcus.yml
 
 name: orcus
-root: ~/.projects_root/orcus-api
+root: ~/.projects_root/orcus
 
 windows:
-  - server:
-      layout: main-vertical
-      panes:
-        - python manage.py runserver 127.0.0.1:9090
   - editor: vim
   - zsh:
       layout: main-vertical
