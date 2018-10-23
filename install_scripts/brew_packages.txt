@@ -8,6 +8,7 @@ ack
 terminal-notifier
 shellcheck
 node
+fzf
 zsh
 install pyenv
 pyenv-virtualenv
