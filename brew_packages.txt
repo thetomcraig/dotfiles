@@ -1,0 +1,18 @@
+vim --with-lua
+trash
+tree
+ack
+wget
+ccat
+ack
+terminal-notifier
+shellcheck
+node
+zsh
+install pyenv
+pyenv-virtualenv
+
+tmux
+reattach-to-user-namespace
+urlview
+extract_url
