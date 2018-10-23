@@ -33,9 +33,10 @@ echo "Paste the key into the GitHub website"
 # ZSH
 sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
+# ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
+
 
 # Configure stuff
 git config --global core.editor "vim"
