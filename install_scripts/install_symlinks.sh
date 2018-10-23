@@ -1,4 +1,4 @@
-projects_root="~"
+projects_root="${HOME}"
 
 host=$(uname -a)
 if [[ $host == *"tcraig-m01"* ]]; then
@@ -12,14 +12,14 @@ else
 fi
 
 # Link Files
-cd ..
-dotfiles_location=$(pwd)
+cd "${HOME}"
+dotfiles_location="${HOME}"/dotfiles
 
 cd ~
 rm -f -- ~/.projects_root
 ln -s $projects_root .projects_root
 rm -f -- ~/.editorconfig
-ln -s $dotfiles_location/editorconfig.sh .projects_root
+ln -s $dotfiles_location/editorconfig.sh .editorconfig
 rm -f -- ~/.zshrc
 ln -s $dotfiles_location/zsh.sh .zshrc
 rm -f -- ~/.vimrc
