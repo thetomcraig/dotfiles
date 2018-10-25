@@ -1,4 +1,5 @@
 vim --with-lua
+direnv
 trash
 tree
 ack
@@ -10,7 +11,7 @@ shellcheck
 node
 fzf
 zsh
-install pyenv
+pyenv
 pyenv-virtualenv
 
 tmux
