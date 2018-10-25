@@ -59,7 +59,6 @@ echoGreen "  OK"
 # GENERAL ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
 alias ctags="`brew --prefix`/bin/ctags"
-alias n="echo '$?' | terminal-notifier"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -164,6 +163,10 @@ if [[ $host == *"tcraig-m01"* ]]; then
   echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
 fi
+if [[ $host == *"lebowski"* ]]; then
+  echo "  LOADING WELKIN SETTINGS..."
+  source $dotfiles_location/welkinrc.sh
+fi
 
 # TMUX SESSION
 if [ -n "$TMUX" ]; then
@@ -174,12 +177,12 @@ fi
 echoGreen "  OK"
 
 
-# LOAD EXTERNAL STUFF
-echo "LOADING PYENV..."
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# # LOAD EXTERNAL STUFF
+# echo "LOADING PYENV..."
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 
 
@@ -189,4 +192,5 @@ eval "$(direnv hook zsh)"
 
 
 echoGreen "INITIALIZATION COMPLETE"
+
 
