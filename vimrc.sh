@@ -217,18 +217,29 @@ map <Space>jj <Plug>(easymotion-s)
 "ALE"
 """""
 let g:ale_fixers = {
-    \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'python': ['autopep8', 'isort'],
     \ 'less': ['stylelint'],
-    \ 'javascript': ['stylelint', 'eslint'],
+    \ 'sass': ['stylelint'],
+    \ 'scss': ['stylelint'],
+    \ 'javascript': ['stylelint'],
     \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
     \ 'sh': ['shfmt'],
-\}
-let g:ale_python_autopep8_options = '--max-line-length=120'
-let g:ale_python_pylint_options =
-    \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
-let g:ale_python_flake8_options = '--ignore=E501'
-let g:ale_linters = {'javascript': 'all', 'html': 'all'}
+\ }
+let g:ale_linters = {
+    \ 'python': ['flake8', 'isort'],
+    \ 'javascript': ['stylelint'],
+    \ 'html': ['tidy'],
+    \ 'sass': ['stylelint'],
+    \ 'scss': ['stylelint'],
+\ }
+
+let g:ale_html_tidy_executable = '/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy'
+let g:ale_html_tidy_options = '-indent auto, -indent-spaces, 2 -tidy-mark no'
+
+"let g:ale_python_autopep8_options = '--max-line-length=120'
+"let g:ale_python_pylint_options = \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
+"let g:ale_python_flake8_options = '--ignore=E501'
 
 
 
@@ -305,7 +316,7 @@ endif
 
 
 """"""""""""""""""
-"CUSTOM FUNCTIONS" 
+"CUSTOM FUNCTIONS"
 """"""""""""""""""
 function! StartWritingEpisodeNotes()
   :call AutoCorrect()
