@@ -7,11 +7,27 @@ root = true
 trim_trailing_whitespace = false
 indent_size = 2
 
+[*.yaml]
+trim_trailing_whitespace = false
+indent_size = 2
+
+[*.yml]
+trim_trailing_whitespace = false
+indent_size = 2
+
 [*.py]
 trim_trailing_whitespace = false
 indent_size = 4
 
+[*.html]
+trim_trailing_whitespace = false
+indent_size = 2
+
 [*.js]
+trim_trailing_whitespace = true
+indent_size = 2
+
+[*.scss]
 trim_trailing_whitespace = true
 indent_size = 2
 
