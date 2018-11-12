@@ -1,4 +1,5 @@
-source ${HOME}/Dotfiles/vundle_settings.sh
+exec 'source ' . $dotfiles_location."/vundle_settings.sh"
+" Run this to color this file with vim syntax highlighting: `set syntax=vim` "
 
 
 """"""""
@@ -21,6 +22,7 @@ set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists"
 set clipboard=unnamed
 set shell=/bin/bash
+set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
 
 
 """""""""""""""""""""""""""""""""
@@ -33,8 +35,8 @@ nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
 nnoremap <Space>i :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
-nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>o :on<CR>
+nnoremap <Space>t :Twiggy<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
@@ -58,8 +60,16 @@ nmap <Space>s} ysiw}
 nmap <Space>s{ ysiw{
 nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
+" Function will make a word into a bash variable
+"   word -> "${word}"
+function! BashVariableify()
+  execute "normal! mqviwo\<esc>i\"\${\<esc>ea\}\"\<esc>`qmq"
+endfunction
+nmap <Space>s$ :call BashVariableify()<CR>
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
+
+
+" Start interactive EasyAlign in visual mode (e.g. vipga) "
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
@@ -76,7 +86,7 @@ while i <= 9
 endwhile
 
 nmap <Space>ve :e ~/.vimrc<CR>
-nmap <Space>vue :e ~/Dotfiles/vundle_settings.sh<CR>
+nmap <Space>vue :e "$dotfiles_location"/vundle_settings.sh<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
 
 
@@ -234,12 +244,9 @@ let g:ale_linters = {
     \ 'scss': ['stylelint'],
 \ }
 
+let g:ale_python_autopep8_options = '--indent-size=2'
 let g:ale_html_tidy_executable = '/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy'
 let g:ale_html_tidy_options = '-indent auto, -indent-spaces, 2 -tidy-mark no'
-
-"let g:ale_python_autopep8_options = '--max-line-length=120'
-"let g:ale_python_pylint_options = \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
-"let g:ale_python_flake8_options = '--ignore=E501'
 
 
 
