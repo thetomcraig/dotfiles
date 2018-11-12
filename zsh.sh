@@ -7,7 +7,7 @@ export ZSH=${HOME}/.oh-my-zsh
 # Get the zsh.sh pwd
 # Use the pwd to load helpers
 echo "LOADING GENERAL SETTINGS..."
-dotfiles_location="${HOME}/Dotfiles"
+export dotfiles_location="${HOME}/Dotfiles"
 source $dotfiles_location/helper_functions.sh
 
 export LANG="en_US.UTF-8"
@@ -92,7 +92,7 @@ alias g="git status"
 alias ga="git add"
 alias gb="git branch"
 alias gba="git branch -a"
-alias gv="git branch -vv --sort=-committerdate"
+alias gv="git branch -vv"
 alias gbd="git branch -d $1"
 alias gbD="git branch -D $1"
 alias gc="git checkout"
@@ -144,6 +144,7 @@ kill_current_session() {
 alias vev="virtualenv env"
 alias seba="source env/bin/activate"
 alias pf="pip freeze"
+alias pyclean="find . -name '*.pyc' -exec rm -f {} \; && find . -name '__pycache__' -exec rm -rf {} \;"
 
 # SSH ALIASES
 alias sshariston="ssh tom@10.0.1.3"
@@ -194,3 +195,16 @@ eval "$(direnv hook zsh)"
 echoGreen "INITIALIZATION COMPLETE"
 
 
+# Regex checkout
+gcr() {
+  git fetch
+  local branches branch
+  branches=$(git branch -a) &&
+  branch=$(echo "$branches" | fzf +s +m -e) &&
+  git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
+}
+
+outstanding_commits()
+{
+  git cherry -v develop "${1}"
+}
