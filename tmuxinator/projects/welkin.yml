@@ -8,7 +8,10 @@ windows:
     - yarn start-client
   - server: 
     - enter_welkin_env 
-    - ./start_server.sh --app dugong --attached
+    - yarn start-server
+  - shell: 
+    - enter_welkin_env 
+    - welkin shell
   - editor: vim
   - zsh:
     - enter_welkin_env
