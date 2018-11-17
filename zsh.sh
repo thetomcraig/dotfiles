@@ -1,6 +1,9 @@
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
+DIR=$(dirname $(readlink "${HOME}/.zshrc"))
+. "${DIR}/git_bash_utilities.sh"
+
 # Setup Zsh
 export ZSH=${HOME}/.oh-my-zsh
 
@@ -65,7 +68,6 @@ alias c="clear "
 alias cpb="pwd | pbcopy"
 
 alias v="vim $dotfiles_location/vimrc.sh"
-alias vv="vim +"NERDTree $1""
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias dot="cd ${HOME}/Dotfiles"
 
@@ -87,35 +89,7 @@ alias d="tree -a -C -L 1 -d"
 alias s="source $dotfiles_location/zsh.sh"
 alias b="vim $dotfiles_location/zsh.sh"
 
-# GIT ALIASES AND FUNCTIONS
-alias g="git status"
-alias ga="git add"
-alias gb="git branch"
-alias gba="git branch -a"
-alias gv="git branch -vv"
-alias gbd="git branch -d $1"
-alias gbD="git branch -D $1"
-alias gc="git checkout"
-alias gcb="git checkout -b"
-alias gd="git diff"
-alias gdd="git ls-files --deleted -z | xargs -0 git rm"
-alias gm="git commit -m "
-alias gpu="git push"
-alias gpl="git pull"
-alias log="git log --oneline --all --graph --decorate"
 
-# Show detatched commits
-# alias gdc=detatched_commits
-# detatched_commits() {
-  # git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')
-# }
-# Make local branch tracking remote that matches regex
-alias gg=gitbranchgrep
-gitbranchgrep() {
-  git pull && \
-  git checkout -b ${1} $(git branch -a | grep ${2}) && \
-  git branch -vv
-}
 
 # TMUX ALIASES AND FUNCTIONS
 alias tmux="tmux -u"
@@ -184,27 +158,9 @@ echoGreen "  OK"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
-
-
-
 echo "LOADING DIRENV..."
 eval "$(direnv hook zsh)"
 
 
 
 echoGreen "INITIALIZATION COMPLETE"
-
-
-# Regex checkout
-gcr() {
-  git fetch
-  local branches branch
-  branches=$(git branch -a) &&
-  branch=$(echo "$branches" | fzf +s +m -e) &&
-  git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
-}
-
-outstanding_commits()
-{
-  git cherry -v develop "${1}"
-}
