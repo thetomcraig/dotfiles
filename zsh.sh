@@ -2,8 +2,6 @@
 #MY PERSONAL BASH PROFILE
 #########################
 DIR=$(dirname $(readlink "${HOME}/.zshrc"))
-. "${DIR}/git_bash_utilities.sh"
-
 # Setup Zsh
 export ZSH=${HOME}/.oh-my-zsh
 
@@ -12,6 +10,8 @@ export ZSH=${HOME}/.oh-my-zsh
 echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
 source $dotfiles_location/helper_functions.sh
+source "${DIR}/git_bash_utilities.sh"
+source "${DIR}/helper_functions.sh"
 
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
