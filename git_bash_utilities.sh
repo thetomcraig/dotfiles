@@ -2,8 +2,8 @@ PROJECT_PREFIX='[a-zA-Z]+'
 GITHUB_HOSTNAME="https://github.com/welkinhealth/welkin"
 
 # Helper function - make the name for a new feature branch
-# Input: URL that looks like: "LYRA-763: Route customer phone numbers to unique numbers in Ring # Central"
-# Output: string that looks like: "LYRA-763_route_customer_phone_numbers"
+# Input: URL that looks like: "PROJECT-763: Add dropdown to homepage"
+# Output: string that looks like: "PROJECT-763_add_dropdown_to"
 construct_branch_name() {
   local JIRA_NUMBER=$(echo "${1}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
 
@@ -41,9 +41,8 @@ alias gpr=open "${GITHUB_HOSTNAME}/compare/$(git branch | grep \* | cut -d ' ' -
 
 # Start a feature (git flow) and name the branch based on a jira description
 alias gfs=gitfeaturestart
-# Checkout the new branch and show the branches afterwards to verify
 gitfeaturestart() {
-  BRANCH_NAME=$(construct_branch_name "${1}")
+  local BRANCH_NAME=$(construct_branch_name "${1}")
   git checkout -b feature/"${BRANCH_NAME}" develop
   git branch -vv
 }
