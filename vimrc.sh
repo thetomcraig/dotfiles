@@ -322,16 +322,7 @@ if in_tmux == 1
 endif
 
 
-""""""""""""""""""
-"CUSTOM FUNCTIONS"
-""""""""""""""""""
-function! StartWritingEpisodeNotes()
-  :call AutoCorrect()
-  :set spell spelllang=en_us
-  :Goyo
-endfunction
-command! Start call StartWritingEpisodeNotes()
-
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 
 """"""""""""""""""
