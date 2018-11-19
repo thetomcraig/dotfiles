@@ -8,6 +8,7 @@ windows:
     - yarn start-client
   - server: 
     - enter_welkin_env 
+    - cd dugong
     - yarn start-server
   - shell: 
     - enter_welkin_env 

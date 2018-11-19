@@ -36,7 +36,7 @@ nnoremap <Space>nh :noh<CR>
 nnoremap <Space>i :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>o :on<CR>
-nnoremap <Space>t :Twiggy<CR>
+nnoremap <Space>g :Twiggy<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
@@ -62,10 +62,10 @@ nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
 " Function will make a word into a bash variable
 "   word -> "${word}"
-function! BashVariableify()
+function! Bashify()
   execute "normal! mqviwo\<esc>i\"\${\<esc>ea\}\"\<esc>`qmq"
 endfunction
-nmap <Space>s$ :call BashVariableify()<CR>
+nmap <Space>s$ :call Bashify()<CR>
 
 
 
@@ -105,7 +105,11 @@ cnoremap <Esc>f <S-Right>
 let g:ackhighlight = 1
 nmap <Space>ps :Ack '
 "'Search Current Word"
-nmap <Space>ss :Ack <cword> <CR>
+" By default, ignore test directories
+nmap <Space>ss :Ack --ignore-dir=test <cword> <CR>
+" This will include test directories <CR>
+nmap <Space>swt :Ack <cword> <CR>
+
 "File Search"
 nmap <Space>pf :FZF<CR>
 "let $FZF_DEFAULT_COMMAND = 'ag -g ""'
@@ -270,17 +274,14 @@ nnoremap <Space>gx :only<CR> :Gedit<CR>
 "Colors/UI"
 """""""""""
 let g:airline_theme='xenomorph'
+
+let g:airline_section_b = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+
+
 colorscheme xenomorph
-
-function! WindowNumber(...)
-    let builder = a:1
-    let context = a:2
-    call builder.add_section('airline_b', '%{tabpagewinnr(tabpagenr())}')
-    return 0
-endfunction
-
-call airline#add_statusline_func('WindowNumber')
-call airline#add_inactive_statusline_func('WindowNumber')
 
 let g:vim_markdown_folding_disabled = 1
 
