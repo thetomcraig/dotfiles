@@ -8,23 +8,24 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-[*.yaml]
+[{*.yaml,*.yml}]
 trim_trailing_whitespace = false
 indent_size = 2
 
-[*.yml]
-trim_trailing_whitespace = false
-indent_size = 2
-
-[*{.md,.js}]
+[*sh]
 indent_style = space
+indent_size = 2
+
+[*.md]
+indent_style = space
+
+[*.js]
+indent_style = space
+trim_trailing_whitespace = true
+indent_size = 2
 
 [*.html]
 trim_trailing_whitespace = false
-indent_size = 2
-
-[*.js]
-trim_trailing_whitespace = true
 indent_size = 2
 
 [*.scss]
@@ -33,7 +34,6 @@ indent_size = 2
 
 [*.json]
 trim_trailing_whitespace = true
->>>>>>> 317cdc9c14d97f5e0485a09696ee92eefe38b517
 indent_size = 2
 
 [{package.json,.travis.yml}]
