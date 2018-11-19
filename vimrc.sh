@@ -1,4 +1,5 @@
-source ${HOME}/Dotfiles/vundle_settings.sh
+exec 'source ' . $dotfiles_location."/vundle_settings.sh"
+" Run this to color this file with vim syntax highlighting: `set syntax=vim` "
 
 
 """"""""
@@ -21,6 +22,7 @@ set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists"
 set clipboard=unnamed
 set shell=/bin/bash
+set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
 
 
 """""""""""""""""""""""""""""""""
@@ -33,8 +35,8 @@ nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
 nnoremap <Space>i :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
-nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>o :on<CR>
+nnoremap <Space>g :Twiggy<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
@@ -58,8 +60,16 @@ nmap <Space>s} ysiw}
 nmap <Space>s{ ysiw{
 nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
+" Function will make a word into a bash variable
+"   word -> "${word}"
+function! Bashify()
+  execute "normal! mqviwo\<esc>i\"\${\<esc>ea\}\"\<esc>`qmq"
+endfunction
+nmap <Space>s$ :call Bashify()<CR>
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
+
+
+" Start interactive EasyAlign in visual mode (e.g. vipga) "
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
@@ -76,7 +86,7 @@ while i <= 9
 endwhile
 
 nmap <Space>ve :e ~/.vimrc<CR>
-nmap <Space>vue :e ~/Dotfiles/vundle_settings.sh<CR>
+nmap <Space>vue :e "$dotfiles_location"/vundle_settings.sh<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
 
 
@@ -95,7 +105,11 @@ cnoremap <Esc>f <S-Right>
 let g:ackhighlight = 1
 nmap <Space>ps :Ack '
 "'Search Current Word"
-nmap <Space>ss :Ack <cword> <CR>
+" By default, ignore test directories
+nmap <Space>ss :Ack --ignore-dir=test <cword> <CR>
+" This will include test directories <CR>
+nmap <Space>swt :Ack <cword> <CR>
+
 "File Search"
 nmap <Space>pf :FZF<CR>
 "let $FZF_DEFAULT_COMMAND = 'ag -g ""'
@@ -217,18 +231,26 @@ map <Space>jj <Plug>(easymotion-s)
 "ALE"
 """""
 let g:ale_fixers = {
-    \ 'python': ['trim_whitespace', 'remove_trailing_lines', 'autopep8', 'isort'],
+    \ 'python': ['autopep8', 'isort'],
     \ 'less': ['stylelint'],
-    \ 'javascript': ['stylelint', 'eslint'],
+    \ 'sass': ['stylelint'],
+    \ 'scss': ['stylelint'],
+    \ 'javascript': ['stylelint'],
     \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
     \ 'sh': ['shfmt'],
-\}
-let g:ale_python_autopep8_options = '--max-line-length=120'
-let g:ale_python_pylint_options =
-    \ '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
-let g:ale_python_flake8_options = '--ignore=E501'
-let g:ale_linters = {'javascript': 'all', 'html': 'all'}
+\ }
+let g:ale_linters = {
+    \ 'python': ['flake8', 'isort'],
+    \ 'javascript': ['stylelint'],
+    \ 'html': ['tidy'],
+    \ 'sass': ['stylelint'],
+    \ 'scss': ['stylelint'],
+\ }
+
+let g:ale_python_autopep8_options = '--indent-size=2'
+let g:ale_html_tidy_executable = '/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy'
+let g:ale_html_tidy_options = '-indent auto, -indent-spaces, 2 -tidy-mark no'
 
 
 
@@ -252,17 +274,14 @@ nnoremap <Space>gx :only<CR> :Gedit<CR>
 "Colors/UI"
 """""""""""
 let g:airline_theme='xenomorph'
+
+let g:airline_section_b = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+
+
 colorscheme xenomorph
-
-function! WindowNumber(...)
-    let builder = a:1
-    let context = a:2
-    call builder.add_section('airline_b', '%{tabpagewinnr(tabpagenr())}')
-    return 0
-endfunction
-
-call airline#add_statusline_func('WindowNumber')
-call airline#add_inactive_statusline_func('WindowNumber')
 
 let g:vim_markdown_folding_disabled = 1
 
@@ -304,16 +323,7 @@ if in_tmux == 1
 endif
 
 
-""""""""""""""""""
-"CUSTOM FUNCTIONS" 
-""""""""""""""""""
-function! StartWritingEpisodeNotes()
-  :call AutoCorrect()
-  :set spell spelllang=en_us
-  :Goyo
-endfunction
-command! Start call StartWritingEpisodeNotes()
-
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 
 """"""""""""""""""

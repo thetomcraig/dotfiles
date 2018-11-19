@@ -8,18 +8,32 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-# Matches multiple files with brace expansion notation
-# Set default charset
-[*.{js,py}]
-charset = utf-8
+[*.yaml]
+trim_trailing_whitespace = false
+indent_size = 2
 
-# 4 space indentation
-[*.py]
-indent_style = space
-indent_size = 4
+[*.yml]
+trim_trailing_whitespace = false
+indent_size = 2
 
 [*{.md,.js}]
 indent_style = space
+
+[*.html]
+trim_trailing_whitespace = false
+indent_size = 2
+
+[*.js]
+trim_trailing_whitespace = true
+indent_size = 2
+
+[*.scss]
+trim_trailing_whitespace = true
+indent_size = 2
+
+[*.json]
+trim_trailing_whitespace = true
+>>>>>>> 317cdc9c14d97f5e0485a09696ee92eefe38b517
 indent_size = 2
 
 [{package.json,.travis.yml}]
