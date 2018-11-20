@@ -164,3 +164,5 @@ eval "$(direnv hook zsh)"
 
 
 echoGreen "INITIALIZATION COMPLETE"
+
+alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
