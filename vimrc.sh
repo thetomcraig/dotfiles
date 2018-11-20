@@ -1,4 +1,4 @@
-exec 'source ' . $dotfiles_location."/vundle_settings.sh"
+exec "source " . $dotfiles_location."/vundle_settings.sh"
 " Run this to color this file with vim syntax highlighting: `set syntax=vim` "
 
 
@@ -323,16 +323,7 @@ if in_tmux == 1
 endif
 
 
-""""""""""""""""""
-"CUSTOM FUNCTIONS"
-""""""""""""""""""
-function! StartWritingEpisodeNotes()
-  :call AutoCorrect()
-  :set spell spelllang=en_us
-  :Goyo
-endfunction
-command! Start call StartWritingEpisodeNotes()
-
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 
 """"""""""""""""""
