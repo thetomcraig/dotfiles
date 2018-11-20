@@ -1,5 +1,3 @@
-# http://editorconfig.org
-
 # top-most EditorConfig file
 root = true
 
@@ -17,7 +15,7 @@ indent_size = 2
 
 [*.py]
 trim_trailing_whitespace = false
-indent_size = 4
+indent_size = 2
 
 [*.html]
 trim_trailing_whitespace = false
