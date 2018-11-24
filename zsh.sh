@@ -61,6 +61,7 @@ echoGreen "  OK"
 # GENERAL ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
 alias ctags="`brew --prefix`/bin/ctags"
+python_tags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
