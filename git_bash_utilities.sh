@@ -37,7 +37,11 @@ alias gpl="git pull"
 alias log="git log --oneline --all --graph --decorate"
 
 # Start a pull request for the current branch
-alias gpr=open "${GITHUB_HOSTNAME}/compare/$(git branch | grep \* | cut -d ' ' -f2)?expand\=1"
+alias gpr=gitpullrequest
+gitpullrequest() {
+  local BRANCH_NAME="$(git branch | grep \* | cut -d ' ' -f2)?expand\=1"
+  open ${GITHUB_HOSTNAME}/compare/"${BRANCH_NAME}"
+}
 
 # Start a feature (git flow) and name the branch based on a jira description
 alias gfs=gitfeaturestart
