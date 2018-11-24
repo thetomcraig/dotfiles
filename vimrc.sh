@@ -1,5 +1,5 @@
-exec "source " . $dotfiles_location."/vundle_settings.sh"
-" Run this to color this file with vim syntax highlighting: `set syntax=vim` "
+let dotfiles_location = system('echo ${dotfiles_location}')
+source dotfiles_location."/vundle_settings.sh"
 
 
 """"""""
@@ -43,6 +43,7 @@ nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
+nnoremap <Space>ue :UltiSnipsEdit<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one"
@@ -60,18 +61,29 @@ nmap <Space>s} ysiw}
 nmap <Space>s{ ysiw{
 nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
-" Function will make a word into a bash variable
+" Function will make a word into a bash variable "
 "   word -> "${word}"
+"
 function! Bashify()
   execute "normal! mqviwo\<esc>i\"\${\<esc>ea\}\"\<esc>`qmq"
 endfunction
 nmap <Space>s$ :call Bashify()<CR>
 
+" Function will surround line wirth python print syntax "
+"   several word on a line -> print("several words on a line") "
+nmap <Space>sp :call Printify()<CR>
+" Function will wrap a line with a python print statement and quotes
+"   series of words -> print("series of words")
+function! Printify()
+  execute "normal! ^iprint(\"\<esc>$i\")\<esc>"
+endfunction
+nmap <Space>sp :call Printify()<CR>
+
 
 
 " Start interactive EasyAlign in visual mode (e.g. vipga) "
 xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip) "
 nmap ga <Plug>(EasyAlign)
 
 nmap <Space>w/ :vsplit<CR>
@@ -103,12 +115,12 @@ cnoremap <Esc>f <S-Right>
 """""""""""
 "Text Search"
 let g:ackhighlight = 1
-nmap <Space>ps :Ack '
-"'Search Current Word"
-" By default, ignore test directories
-nmap <Space>ss :Ack --ignore-dir=test <cword> <CR>
-" This will include test directories <CR>
-nmap <Space>swt :Ack <cword> <CR>
+nmap <Space>ps :Grepper<CR>
+"Search Current Word"
+"By default, ignore test directories"
+nmap <Space>ss :Grepper<CR> --ignore-dir=test <cword> <CR>
+"This will include test directories"
+nmap <Space>swt :Grepper<CR> <cword> <CR>
 
 "File Search"
 nmap <Space>pf :FZF<CR>
@@ -130,17 +142,21 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
  noremap <space>bb :Buffers<CR>
+ noremap <space>cc :Commits<CR>
+ noremap <space>gg :GFiles?<CR>
+ noremap <space>hh :History<CR>
+ noremap <space>h/ :History/<CR>
+ noremap <space>ll :Lines<CR>
 
 
 """""""""
-"Buffers"
+"Movement"
 """""""""
 set hidden
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-nmap <Space>B :MBEFocus<CR>
 
 
 
@@ -264,6 +280,7 @@ nnoremap <space>gl :Glog <CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
+nnoremap <Space>gD  <Leader>gD <c-w>h<c-w>c<c-w>k<c-w>c
 nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 nnoremap <Space>gx :only<CR> :Gedit<CR>
@@ -335,3 +352,10 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
+
+
+let g:UltiSnipsExpandTrigger="<C-j>"
+:
+
+
+
