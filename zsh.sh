@@ -132,7 +132,7 @@ echo "LOADING ENVIRONMENT SETTINGS..."
 host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
   alias rm="trash"
-  alias cat="ccat"
+  alias cat="bat"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
   echo "  LOADING PANDORA SETTINGS..."
