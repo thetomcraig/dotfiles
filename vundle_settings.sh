@@ -11,24 +11,30 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Searching "
 Plugin 'mileszs/ack.vim'
+Plugin 'mhinz/vim-grepper'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/nerdtree-ack'
 
 " Colors/UI "
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'thetomcraig/xenomorph.vim'
+Plugin 'simeji/winresizer'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-dispatch'
 Plugin 't9md/vim-choosewin'
+Plugin 'kshenoy/vim-signature'
 
 " Writing Plaintext and Markdown "
 Plugin 'junegunn/goyo.vim'
@@ -47,15 +53,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 
 " Git "
-Plugin 'scrooloose/vim-slumlord'
-Plugin 'kablamo/vim-git-log'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
 Plugin 'sodapopcan/vim-twiggy'
-
-" Marks "
-Plugin 'kshenoy/vim-signature'
-Plugin 'thetomcraig/Mark--Karkat'
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
 
 " Syntax "
 Plugin 'plasticboy/vim-markdown'
