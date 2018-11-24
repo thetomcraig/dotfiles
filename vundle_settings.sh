@@ -48,7 +48,6 @@ Plugin 'mattn/emmet-vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 
