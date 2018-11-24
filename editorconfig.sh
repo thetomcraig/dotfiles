@@ -1,30 +1,37 @@
-# http://editorconfig.org
-
 # top-most EditorConfig file
 root = true
 
-[*.md]
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[{*.yaml,*.yml}]
 trim_trailing_whitespace = false
 indent_size = 2
 
-[*.yaml]
-trim_trailing_whitespace = false
-indent_size = 2
-
-[*.yml]
-trim_trailing_whitespace = false
+[*sh]
+indent_style = space
 indent_size = 2
 
 [*.py]
 trim_trailing_whitespace = false
-indent_size = 4
+indent_size = 2
 
 [*.html]
 trim_trailing_whitespace = false
 indent_size = 2
 
+[*.md]
+indent_style = space
+
 [*.js]
+indent_style = space
 trim_trailing_whitespace = true
+indent_size = 2
+
+[*.html]
+trim_trailing_whitespace = false
 indent_size = 2
 
 [*.scss]
@@ -35,12 +42,10 @@ indent_size = 2
 trim_trailing_whitespace = true
 indent_size = 2
 
-[*.sh]
-trim_trailing_whitespace = true
+[{package.json,.travis.yml}]
+indent_style = space
 indent_size = 2
 
-[*]
-indent_style = space
-end_of_line = lf
-charset = utf-8
-max_line_length = 100
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab

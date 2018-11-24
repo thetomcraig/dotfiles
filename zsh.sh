@@ -11,7 +11,6 @@ echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
 source $dotfiles_location/helper_functions.sh
 source "${DIR}/git_bash_utilities.sh"
-source "${DIR}/helper_functions.sh"
 
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
@@ -165,3 +164,5 @@ eval "$(direnv hook zsh)"
 
 
 echoGreen "INITIALIZATION COMPLETE"
+
+alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
