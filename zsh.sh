@@ -70,6 +70,7 @@ alias cpb="pwd | pbcopy"
 alias v="vim $dotfiles_location/vimrc.sh"
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias dot="cd ${HOME}/Dotfiles"
+alias drop="cd ${HOME}/Dropbox/TomCraig"
 
 #t for tree
 alias t=mytree
