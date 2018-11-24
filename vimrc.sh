@@ -1,5 +1,4 @@
-let dotfiles_location = system('echo ${dotfiles_location}')
-source dotfiles_location."/vundle_settings.sh"
+exec "source" $dotfiles_location . "/vundle_settings.sh"
 
 
 """"""""
