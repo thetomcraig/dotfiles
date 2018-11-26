@@ -24,6 +24,7 @@ indent_size = 2
 
 [*.md]
 indent_style = space
+indent_size = 2
 
 [*.js]
 indent_style = space
