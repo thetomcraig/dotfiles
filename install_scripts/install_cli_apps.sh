@@ -40,6 +40,7 @@ git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerl
 
 # Configure stuff
 git config --global core.editor "vim"
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
 # TODO
 #linters

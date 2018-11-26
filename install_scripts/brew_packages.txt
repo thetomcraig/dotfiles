@@ -4,7 +4,7 @@ trash
 tree
 ack
 wget
-ccat
+bat
 ag
 terminal-notifier
 shellcheck
