@@ -44,6 +44,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'honza/vim-snippets'
 
 " Git "
 Plugin 'scrooloose/vim-slumlord'
