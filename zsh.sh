@@ -134,6 +134,7 @@ host=$(uname -a)
 if [[ $host == *"Darwin"* ]]; then
   alias rm="trash"
   alias cat="bat"
+  alias diff="diff-so-fancy"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
   echo "  LOADING PANDORA SETTINGS..."

@@ -15,6 +15,7 @@ Plugin 'mhinz/vim-grepper'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'skwp/greplace.vim'
+Plugin 'brooth/far.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/nerdtree-ack'
@@ -25,6 +26,7 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'thetomcraig/xenomorph.vim'
 Plugin 'simeji/winresizer'
+Plugin 'lfv89/vim-interestingwords'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
@@ -34,6 +36,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-dispatch'
 Plugin 't9md/vim-choosewin'
 Plugin 'kshenoy/vim-signature'
+Plugin 'mbbill/undotree'
 
 " Writing Plaintext and Markdown "
 Plugin 'junegunn/goyo.vim'
@@ -50,6 +53,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'honza/vim-snippets'
+Plugin 'wakatime/vim-wakatime'
 
 " Git "
 Plugin 'airblade/vim-gitgutter'
