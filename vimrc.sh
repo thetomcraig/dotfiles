@@ -148,6 +148,7 @@ let g:fzf_colors =
  noremap <space>ll :Lines<CR>
 
 
+
 """""""""
 "Movement"
 """""""""
@@ -157,43 +158,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-
-
-""""""""""""""
-"Marks colors"
-""""""""""""""
-"Visual Mark Searching"
-let g:mwDefaultHighlightingPalette = 'extended'
-
-highlight MarkWord1 ctermfg=8 ctermbg=1
-highlight MarkWord2 ctermfg=8 ctermbg=2
-"Skipping yellow (3) because it's for search"
-highlight MarkWord3 ctermfg=8 ctermbg=4
-highlight MarkWord4 ctermfg=8 ctermbg=5
-highlight MarkWord5 ctermfg=8 ctermbg=6
-highlight MarkWord6 ctermfg=8 ctermbg=7
-
-highlight MarkWord7 ctermfg=15 ctermbg=1
-highlight MarkWord8 ctermfg=15 ctermbg=2
-"Skipping yellow (3) because it's for search"
-highlight MarkWord9 ctermfg=15 ctermbg=4
-highlight MarkWord10 ctermfg=15 ctermbg=5
-highlight MarkWord11 ctermfg=15 ctermbg=6
-highlight MarkWord12 ctermfg=15 ctermbg=7
-
-highlight MarkWord13 ctermfg=1 ctermbg=8
-highlight MarkWord14 ctermfg=2 ctermbg=8
-highlight MarkWord15 ctermfg=3 ctermbg=8
-highlight MarkWord16 ctermfg=4 ctermbg=8
-highlight MarkWord17 ctermfg=5 ctermbg=8
-highlight MarkWord18 ctermfg=6 ctermbg=8
-highlight MarkWord19 ctermfg=7 ctermbg=8
-
-
-"For the Marks plugin seen here:"
-"http://www.vim.org/scripts/script.php?script_id=2666"
-nmap <Space>M :Marks<CR>
-nmap <Space>N :MarkClear<CR>
 
 
 
@@ -296,7 +260,6 @@ let g:airline_section_x = ''
 let g:airline_section_y = ''
 let g:airline_section_z = ''
 
-
 colorscheme xenomorph
 
 let g:vim_markdown_folding_disabled = 1
@@ -354,7 +317,3 @@ set expandtab
 
 
 let g:UltiSnipsExpandTrigger="<C-j>"
-:
-
-
-
