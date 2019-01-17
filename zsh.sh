@@ -9,6 +9,7 @@ export ZSH=${HOME}/.oh-my-zsh
 # Use the pwd to load helpers
 echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
+export THEME=$(cat ~/.theme)
 source $dotfiles_location/helper_functions.sh
 source "${DIR}/git_bash_utilities.sh"
 
@@ -123,6 +124,7 @@ alias pyclean="find . -name '*.pyc' -exec rm -f {} \; && find . -name '__pycache
 
 # SSH ALIASES
 alias sshariston="ssh tom@10.0.1.3"
+alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
 
 echoGreen "  OK"
 
@@ -142,7 +144,7 @@ if [[ $host == *"tcraig-m01"* ]]; then
 fi
 if [[ $host == *"lebowski"* ]]; then
   echo "  LOADING WELKIN SETTINGS..."
-  source $dotfiles_location/welkinrc.sh
+  source $dotfiles_location/welkin/welkinrc.sh
 fi
 
 # TMUX SESSION
