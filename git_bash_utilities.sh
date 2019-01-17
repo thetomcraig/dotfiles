@@ -1,10 +1,26 @@
 PROJECT_PREFIX='[a-zA-Z]+'
 GITHUB_HOSTNAME="https://github.com/welkinhealth/welkin"
 
+getLocalBranchName() {
+  echo $(git for-each-ref --format='%(refname:short)' $(git symbolic-ref -q HEAD))
+
+}
+getRemoteBranchName() {
+  echo $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
+}
+
+# Get the jira number from the current banch name
+alias jj=getCurrentJiraNumber
+getCurrentJiraNumber() {
+  local BRANCH_NAME=$(getLocalBranchName)
+  local JIRA_NUMBER=$(echo "${BRANCH_NAME}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
+  echo "${JIRA_NUMBER}"
+}
+
 # Helper function - make the name for a new feature branch
 # Input: URL that looks like: "PROJECT-763: Add dropdown to homepage"
 # Output: string that looks like: "PROJECT-763_add_dropdown_to"
-construct_branch_name() {
+constructBranchName() {
   local JIRA_NUMBER=$(echo "${1}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
 
   local WORDS=($(echo "${1}"| grep -oE "([A-z]+)"))
@@ -46,7 +62,7 @@ gitpullrequest() {
 # Start a feature (git flow) and name the branch based on a jira description
 alias gfs=gitfeaturestart
 gitfeaturestart() {
-  local BRANCH_NAME=$(construct_branch_name "${1}")
+  local BRANCH_NAME=$(constructBranchName "${1}")
   git checkout -b feature/"${BRANCH_NAME}" develop
   git branch -vv
 }
@@ -60,7 +76,7 @@ gitbranchgrep() {
   git branch -vv
 }
 
-outstanding_commits()
+outstandingCommits()
 {
   git cherry -v develop "${1}"
 }
