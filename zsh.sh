@@ -9,6 +9,7 @@ export ZSH=${HOME}/.oh-my-zsh
 # Use the pwd to load helpers
 echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
+# This should be set by the change_theme() helper function. (not implemented yet)
 export THEME=$(cat ~/.theme)
 source $dotfiles_location/helper_functions.sh
 source "${DIR}/git_bash_utilities.sh"
