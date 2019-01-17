@@ -18,13 +18,14 @@ Plugin 'skwp/greplace.vim'
 Plugin 'brooth/far.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-scripts/nerdtree-ack'
 
 " Colors/UI "
-Plugin 'vim-airline/vim-airline'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'thetomcraig/xenomorph.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'ryanoasis/vim-devicons'
 Plugin 'simeji/winresizer'
 Plugin 'lfv89/vim-interestingwords'
 
@@ -71,6 +72,7 @@ Plugin 'ap/vim-css-color'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tpope/vim-tbone'
 Plugin 'aklt/plantuml-syntax'
+Plugin 'leafgarland/typescript-vim'
 
 
 " All of your Plugins must be added before the following line "
