@@ -9,7 +9,7 @@ windows:
   - server: 
     - enter_welkin_env 
     - cd dugong
-    - yarn start-server
+    - sleep 30s && yarn start-server
   - shell: 
     - enter_welkin_env 
     - welkin shell
@@ -17,4 +17,4 @@ windows:
   - zsh:
     - enter_welkin_env
     - pg_ctl start -D /usr/local/var/postgres
-    - open http://127.0.0.1:2349/
+    - sleep 30s && open http://127.0.0.1:2349/
