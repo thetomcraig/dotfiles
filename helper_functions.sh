@@ -51,3 +51,7 @@ promptToContinue() {
     esac
   done
 }
+
+change_theme() {
+  echo "${1}" > ~/.theme
+}
