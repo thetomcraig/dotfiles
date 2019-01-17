@@ -35,7 +35,6 @@ nnoremap <Space>nh :noh<CR>
 nnoremap <Space>i :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>o :on<CR>
-nnoremap <Space>g :Twiggy<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>af :ALEFix<CR>
@@ -99,6 +98,7 @@ endwhile
 nmap <Space>ve :e ~/.vimrc<CR>
 nmap <Space>vue :e "$dotfiles_location"/vundle_settings.sh<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
+nmap <Space>wl :e ~/Dropbox/TomCraig/workflow_automation/worklog.md<CR>
 
 
 
@@ -109,21 +109,27 @@ cnoremap <Esc>f <S-Right>
 
 
 
-"""""""""""
-"Searching"
-"""""""""""
-"Text Search"
+"""""""""""""
+"AG and GREP"
+"""""""""""""
 let g:ackhighlight = 1
-nmap <Space>ps :Grepper<CR>
-"Search Current Word"
-"By default, ignore test directories"
-nmap <Space>ss :Grepper<CR> --ignore-dir=test <cword> <CR>
-"This will include test directories"
-nmap <Space>swt :Grepper<CR> <cword> <CR>
 
-"File Search"
+" Grepper settings
+let g:grepper = {
+    \ 'tools': ['ag'],
+    \ }
+let g:grepper.highlight=1
+" By default, ignore alembics, tests, etc
+nmap <Space>ps :Grepper -tool ag -grepprg ag --path-to-ignore "$dotfiles_location/welkin/ignore.sh" <CR>
+" This will not ignore anything
+nmap <Space>pt :Grepper -tool ag <CR>
+nmap <Space>ss :Grepper -cword<CR>
+
+
+"""""""
+" FZF "
+"""""""
 nmap <Space>pf :FZF<CR>
-"let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
@@ -228,14 +234,15 @@ let g:ale_linters = {
 \ }
 
 let g:ale_python_autopep8_options = '--indent-size=2'
+let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
 let g:ale_html_tidy_executable = '/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy'
 let g:ale_html_tidy_options = '-indent auto, -indent-spaces, 2 -tidy-mark no'
 
 
 
-""""""""""
-"FUGITVIE"
-""""""""""
+""""""""""""""""""
+"FUGITVIE ANG GIT"
+""""""""""""""""""
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>gs :Gstatus<CR>
@@ -248,6 +255,8 @@ nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 nnoremap <Space>gx :only<CR> :Gedit<CR>
 
+nnoremap <Space>gt :Twiggy<CR>
+
 
 
 """""""""""
@@ -259,8 +268,6 @@ let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
 let g:airline_section_z = ''
-
-colorscheme xenomorph
 
 let g:vim_markdown_folding_disabled = 1
 
@@ -279,14 +286,12 @@ set diffopt+=vertical
 "ENVIRONMENT SETTINGS"
 """""""""""""""""""""
 echo "LOADING ENVIRONMENT SETTINGS..."
-"check if we're in tmux"
+"TMUX"
 "1 - yes"
 "0 - no"
 let in_tmux = system("[ -z ${TMUX} ]; echo $?")
 if in_tmux == 1
   let session = system("tmux display-message -p '#S'")
-  echo "Vim loading with tmux session: " . session
-
   let match = match(session, "pandoraads")
   if match == 0
     nnoremap <Space>fg :echo expand("%:p")<CR>
@@ -298,8 +303,21 @@ if in_tmux == 1
     nnoremap <Space>fg :echo expand("%:p")<CR>
     nmap <Space>pf :call fzf#run(fzf#wrap('lib', {'dir': 'lib'}))<CR>
   endif
-
+  echo "Vim loading with tmux session: " . session
 endif
+
+"iTERM2"
+let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
+echo "Vim loading with theme: " . theme
+let match = match(theme, "xenomorph")
+if match == 0
+  colorscheme xenomorph
+endif
+let match = match(theme, "seoul256")
+if match == 0
+  colorscheme seoul256
+endif
+
 
 
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
