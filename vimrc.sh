@@ -292,6 +292,7 @@ echo "LOADING ENVIRONMENT SETTINGS..."
 let in_tmux = system("[ -z ${TMUX} ]; echo $?")
 if in_tmux == 1
   let session = system("tmux display-message -p '#S'")
+
   let match = match(session, "pandoraads")
   if match == 0
     nnoremap <Space>fg :echo expand("%:p")<CR>
@@ -303,6 +304,12 @@ if in_tmux == 1
     nnoremap <Space>fg :echo expand("%:p")<CR>
     nmap <Space>pf :call fzf#run(fzf#wrap('lib', {'dir': 'lib'}))<CR>
   endif
+
+  let match = match(session, "welkin")
+  if match == 0
+    nnoremap <Space>nn :e $dotfiles_location/welkin/dev_notes<CR>
+  endif
+
   echo "Vim loading with tmux session: " . session
 endif
 
