@@ -2,14 +2,18 @@ name: welkin
 root: ~/.projects_root/welkin
 
 windows:
-  - client: 
+  - CP client: 
     - enter_welkin_env 
     - cd dugong
     - yarn start-client
-  - server: 
+  - CP server: 
     - enter_welkin_env 
     - cd dugong
     - sleep 30s && yarn start-server
+  - WB server: 
+    - enter_welkin_env 
+    - cd workbench 
+    - yarn start
   - shell: 
     - enter_welkin_env 
     - welkin shell
