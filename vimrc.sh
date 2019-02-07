@@ -139,10 +139,9 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
  noremap <space>ff :FZF<CR>
- noremap <space>ss :Rg<CR>
- noremap <space>bb :Buffers<CR>
+ noremap <space>rr :Rg<CR>
+ " noremap <space>bb :Buffers<CR>
  noremap <space>cc :Commits<CR>
- noremap <space>gg :GFiles?<CR>
  noremap <space>hh :History<CR>
  noremap <space>h/ :History/<CR>
  noremap <space>ll :Lines<CR>
