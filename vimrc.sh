@@ -116,9 +116,9 @@ cnoremap <Esc>f <S-Right>
 """""""""""""
 " Grepper settings
 " By default, ignore alembics, tests, etc
-nmap <Space>aa :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
+nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
 " This will not ignore anything
-nmap <Space>at :GrepperRg 
+nmap <Space>gt :GrepperRg 
 
 """""""
 " FZF "
@@ -140,7 +140,7 @@ let g:fzf_colors =
 
  noremap <space>ff :FZF<CR>
  noremap <space>rr :Rg<CR>
- " noremap <space>bb :Buffers<CR>
+ noremap <space>bb :Buffers<CR>
  noremap <space>cc :Commits<CR>
  noremap <space>hh :History<CR>
  noremap <space>h/ :History/<CR>
