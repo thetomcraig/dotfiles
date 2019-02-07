@@ -109,28 +109,20 @@ cnoremap <Esc>f <S-Right>
 
 
 
+
+
 """""""""""""
 "AG and GREP"
 """""""""""""
-let g:ackhighlight = 1
-
 " Grepper settings
-let g:grepper = {
-    \ 'tools': ['ag'],
-    \ }
-let g:grepper.highlight=1
 " By default, ignore alembics, tests, etc
-nmap <Space>ps :Grepper -tool ag -grepprg ag --path-to-ignore "$dotfiles_location/welkin/ignore.sh" <CR>
+nmap <Space>aa :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
 " This will not ignore anything
-nmap <Space>pt :Grepper -tool ag <CR>
-nmap <Space>ss :Grepper -cword<CR>
-
+nmap <Space>at :GrepperRg 
 
 """""""
 " FZF "
 """""""
-nmap <Space>pf :FZF<CR>
-
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -146,6 +138,8 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+ noremap <space>ff :FZF<CR>
+ noremap <space>ss :Rg<CR>
  noremap <space>bb :Buffers<CR>
  noremap <space>cc :Commits<CR>
  noremap <space>gg :GFiles?<CR>
