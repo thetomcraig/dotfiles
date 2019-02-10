@@ -1,0 +1,9 @@
+name: tomcraigslist
+root: ~/.projects_root/tomcraigslist
+
+windows:
+  - editor: vim
+  - zsh:
+      layout: main-vertical
+      panes:
+        - clear
