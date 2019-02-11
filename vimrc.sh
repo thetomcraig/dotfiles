@@ -1,24 +1,28 @@
 exec "source" $dotfiles_location . "/vundle_settings.sh"
 
 
+" Set the syntax and filetype of this file to .rc "
+" vim: set syntax=rc "
+au BufReadPost vimrc.sh set ft=vim.rc
+
 """"""""
 "General"
 """"""""
-filetype plugin on                          "Used by the NERDcommenter plugin"
-syntax on                                   "turn on the syntax coloring"
-set incsearch                               "highlight while typing search"
-set hlsearch                                "highlight all search results"
-set number                                  "show line numbers"
-set number relativenumber                   "Hybrid - shows exact and relative numbers"
-set backspace=2                             "To make it work all normal like"
-set laststatus=2                            "show the status line at the bottom"
-set showmatch                               "Show the matching paren"
-set smartcase                               "ignore case if search pattern is all lowercase"
-set mouse=nicr                              "Scroll with mouse"
-set tw=120                                  "Column limit"
-set splitright                              "Open splits to the right"
-set wildmenu                                "Put completion menu in command mode"
-set shortmess+=A                            "Ignore warning when swp file exists"
+filetype plugin on                          "Used by the NERDcommenter plugin
+syntax on                                   "turn on the syntax coloring
+set incsearch                               "highlight while typing search
+set hlsearch                                "highlight all search results
+set number                                  "show line numbers
+set number relativenumber                   "Hybrid - shows exact and relative numbers
+set backspace=2                             "To make it work all normal like
+set laststatus=2                            "show the status line at the bottom
+set showmatch                               "Show the matching paren
+set smartcase                               "ignore case if search pattern is all lowercase
+set mouse=nicr                              "Scroll with mouse
+set tw=120                                  "Column limit
+set splitright                              "Open splits to the right
+set wildmenu                                "Put completion menu in command mode
+set shortmess+=A                            "Ignore warning when swp file exists
 set clipboard=unnamed
 set shell=/bin/bash
 set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
@@ -42,9 +46,10 @@ nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
+nnoremap <Space>fp :let @+=expand('%:p')<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
-"Close the current buffer and move to the previous one"
+"Close the current buffer and move to the previous one
 nmap <Space>bd :bp <BAR> bd #<CR>
 
 nmap <Space>y <Plug>yankstack_substitute_older_paste
@@ -59,7 +64,7 @@ nmap <Space>s} ysiw}
 nmap <Space>s{ ysiw{
 nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
-" Function will make a word into a bash variable "
+" Function will make a word into a bash variable 
 "   word -> "${word}"
 "
 function! Bashify()
@@ -67,8 +72,8 @@ function! Bashify()
 endfunction
 nmap <Space>s$ :call Bashify()<CR>
 
-" Function will surround line wirth python print syntax "
-"   several word on a line -> print("several words on a line") "
+" Function will surround line wirth python print syntax 
+"   several word on a line -> print("several words on a line") 
 nmap <Space>sp :call Printify()<CR>
 " Function will wrap a line with a python print statement and quotes
 "   series of words -> print("series of words")
@@ -79,9 +84,9 @@ nmap <Space>sp :call Printify()<CR>
 
 
 
-" Start interactive EasyAlign in visual mode (e.g. vipga) "
+" Start interactive EasyAlign in visual mode (e.g. vipga) 
 xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip) "
+" Start interactive EasyAlign for a motion/text object (e.g. gaip) 
 nmap ga <Plug>(EasyAlign)
 
 nmap <Space>w/ :vsplit<CR>
@@ -103,7 +108,7 @@ nmap <Space>wl :e ~/Dropbox/TomCraig/workflow_automation/worklog.md<CR>
 
 
 vnoremap // y/<C-R>"<CR> "Search for visually selected text
-"Used for moving around the command line in vim"
+"Used for moving around the command line in vim
 cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 
@@ -118,7 +123,7 @@ cnoremap <Esc>f <S-Right>
 " By default, ignore alembics, tests, etc
 nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
 " This will not ignore anything
-nmap <Space>gt :GrepperRg 
+nmap <Space>ag :GrepperRg 
 
 """""""
 " FZF "
@@ -141,7 +146,7 @@ let g:fzf_colors =
  noremap <space>ff :FZF<CR>
  noremap <space>rr :Rg<CR>
  noremap <space>bb :Buffers<CR>
- noremap <space>cc :Commits<CR>
+ noremap <space>mm :Commits<CR>
  noremap <space>hh :History<CR>
  noremap <space>h/ :History/<CR>
  noremap <space>ll :Lines<CR>
