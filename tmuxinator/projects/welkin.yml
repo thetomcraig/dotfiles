@@ -9,11 +9,7 @@ windows:
   - CP server: 
     - enter_welkin_env 
     - cd dugong
-    - sleep 30s && yarn start-server
-  - WB server: 
-    - enter_welkin_env 
-    - cd workbench 
-    - yarn start
+    - yarn start-server
   - shell: 
     - enter_welkin_env 
     - welkin shell
