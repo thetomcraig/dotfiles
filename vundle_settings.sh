@@ -18,6 +18,7 @@ Plugin 'skwp/greplace.vim'
 Plugin 'brooth/far.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-scripts/nerdtree-ack'
 
