@@ -1,4 +1,7 @@
-"Install with this command `PluginInstall`"
+" Set the syntax and filetype of this file to .rc "
+" vim: set syntax=rc "
+au BufReadPost vundle_settings.sh set ft=vim.rc
+
 set nocompatible              " be iMproved, required "
 filetype off                  " required "
 

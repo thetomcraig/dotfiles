@@ -1,3 +1,6 @@
+" vim: set syntax=zsh "
+au BufReadPost zsh.sh set ft=zsh.rc
+
 #########################
 #MY PERSONAL BASH PROFILE
 #########################

@@ -47,6 +47,7 @@ nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
+nnoremap <Space>cl :ccl \| NERDTreeClose <CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
@@ -101,9 +102,8 @@ while i <= 9
 endwhile
 
 nmap <Space>ve :e ~/.vimrc<CR>
-nmap <Space>vue :e "$dotfiles_location"/vundle_settings.sh<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
-nmap <Space>wl :e ~/Dropbox/TomCraig/workflow_automation/worklog.md<CR>
+nmap <Space>vu :e $dotfiles_location/vundle_settings.sh<CR>
 
 
 
@@ -150,6 +150,7 @@ let g:fzf_colors =
  noremap <space>hh :History<CR>
  noremap <space>h/ :History/<CR>
  noremap <space>ll :Lines<CR>
+ noremap <space>bl :BLines<CR>
 
 
 
