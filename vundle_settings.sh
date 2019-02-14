@@ -18,7 +18,6 @@ Plugin 'mhinz/vim-grepper'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'skwp/greplace.vim'
-Plugin 'brooth/far.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -77,6 +76,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tpope/vim-tbone'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'lepture/vim-jinja'
 
 
 " All of your Plugins must be added before the following line "
