@@ -59,6 +59,15 @@ nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 nnoremap <Space>J :lnext<CR>
 nnoremap <Space>K :lprev<CR>
 
+
+nmap <Space>r) vi)p
+nmap <Space>r( vi)p
+nmap <Space>r} vi}p
+nmap <Space>r{ vi{p
+nmap <Space>r' vi'p
+nmap <Space>r" vi"p
+nmap <Space>rw viwp
+
 nmap <Space>s) ysiw)
 nmap <Space>s( ysiw)
 nmap <Space>s} ysiw}
