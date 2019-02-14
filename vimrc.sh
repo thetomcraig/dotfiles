@@ -36,7 +36,7 @@ nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
-nnoremap <Space>i :set list<CR>
+nnoremap <Space>iv :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
@@ -47,7 +47,7 @@ nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
-nnoremap <Space>cl :ccl \| NERDTreeClose <CR>
+nnoremap <Space>is :ccl \| NERDTreeClose <CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
