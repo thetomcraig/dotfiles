@@ -19,7 +19,7 @@ set laststatus=2                            "show the status line at the bottom
 set showmatch                               "Show the matching paren
 set smartcase                               "ignore case if search pattern is all lowercase
 set mouse=nicr                              "Scroll with mouse
-set tw=120                                  "Column limit
+" set tw=120                                  "Column limit
 set splitright                              "Open splits to the right
 set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists
@@ -47,19 +47,30 @@ nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
-nnoremap <Space>is :ccl \| NERDTreeClose <CR>
+nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
 nmap <Space>bd :bp <BAR> bd #<CR>
+" Start interactive EasyAlign in visual mode (e.g. vipga) 
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip) 
+nmap ga <Plug>(EasyAlign)
+"Search for visually selected text
+vnoremap // y/<C-R>"<CR> 
+"Used for moving around the command line in vim
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
+" Edit and reload dot files
+nmap <Space>ve :e ~/.vimrc<CR>
+nmap <Space>vr :source ~/.vimrc<CR>
+nmap <Space>vu :e $dotfiles_location/vundle_settings.sh<CR>
 
-nmap <Space>y <Plug>yankstack_substitute_older_paste
-nmap <Space>Y <Plug>yankstack_substitute_newer_paste
-
-nnoremap <Space>J :lnext<CR>
-nnoremap <Space>K :lprev<CR>
 
 
+""""""""""
+"SURROUND"
+""""""""""
 nmap <Space>r) vi)p
 nmap <Space>r( vi)p
 nmap <Space>r} vi}p
@@ -94,10 +105,14 @@ nmap <Space>sp :call Printify()<CR>
 
 
 
-" Start interactive EasyAlign in visual mode (e.g. vipga) 
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip) 
-nmap ga <Plug>(EasyAlign)
+
+"""""""""
+"WINDOWS"
+"""""""""
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
@@ -110,29 +125,18 @@ while i <= 9
     let i = i + 1
 endwhile
 
-nmap <Space>ve :e ~/.vimrc<CR>
-nmap <Space>vr :source ~/.vimrc<CR>
-nmap <Space>vu :e $dotfiles_location/vundle_settings.sh<CR>
-
-
-
-vnoremap // y/<C-R>"<CR> "Search for visually selected text
-"Used for moving around the command line in vim
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
-
-
-
 
 
 """""""""""""
-"AG and GREP"
+"RG and GREP"
 """""""""""""
 " Grepper settings
 " By default, ignore alembics, tests, etc
 nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
 " This will not ignore anything
 nmap <Space>ag :GrepperRg 
+
+
 
 """""""
 " FZF "
@@ -232,6 +236,7 @@ let g:ale_fixers = {
     \ 'json': ['jsonlint'],
     \ 'html': ['tidy'],
     \ 'sh': ['shfmt'],
+    \ 'markdown': ['prettier'],
 \ }
 let g:ale_linters = {
     \ 'python': ['flake8', 'isort'],
@@ -239,12 +244,12 @@ let g:ale_linters = {
     \ 'html': ['tidy'],
     \ 'sass': ['stylelint'],
     \ 'scss': ['stylelint'],
+    \ 'markdown': ['prettier'],
 \ }
 
-let g:ale_python_autopep8_options = '--indent-size=2'
-let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
-let g:ale_html_tidy_executable = '/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy'
-let g:ale_html_tidy_options = '-indent auto, -indent-spaces, 2 -tidy-mark no'
+let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
+let g:ale_python_isort_options = '-skip-globs=alembics -m3'
+let g:javascript_prettier_options = '--write --prose-wrap always'
 
 
 
@@ -263,7 +268,7 @@ nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 nnoremap <Space>gx :only<CR> :Gedit<CR>
 
-nnoremap <Space>gt :Twiggy<CR>
+nnoremap <Space>gt :Merginal<CR>
 
 
 
@@ -335,7 +340,6 @@ endif
 
 
 
-au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 
 """"""""""""""""""
@@ -350,3 +354,30 @@ set expandtab
 
 
 let g:UltiSnipsExpandTrigger="<C-j>"
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
+
+" ----------------------------------------------------------------------------
+" DiffRev
+" ----------------------------------------------------------------------------
+let s:git_status_dictionary = {
+            \ "A": "Added",
+            \ "B": "Broken",
+            \ "C": "Copied",
+            \ "D": "Deleted",
+            \ "M": "Modified",
+            \ "R": "Renamed",
+            \ "T": "Changed",
+            \ "U": "Unmerged",
+            \ "X": "Unknown"
+            \ }
+function! s:get_diff_files(rev)
+  let list = map(split(system(
+              \ 'git diff --name-status '.a:rev), '\n'),
+              \ '{"filename":matchstr(v:val, "\\S\\+$"),"text":s:git_status_dictionary[matchstr(v:val, "^\\w")]}'
+              \ )
+  call setqflist(list)
+  copen
+endfunction
+
+command! -nargs=1 DiffRev call s:get_diff_files(<q-args>)
