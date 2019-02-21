@@ -17,6 +17,7 @@ sudo pip install virtualenv
 npm install -g livedown
 npm install -g eslint
 npm install -g bash-language-server
+npm install --global prettier
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # SSH Keys
