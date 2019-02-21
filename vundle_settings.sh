@@ -43,8 +43,6 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'mbbill/undotree'
 
 " Writing Plaintext and Markdown "
-Plugin 'junegunn/goyo.vim'
-Plugin 'amix/vim-zenroom2'
 Plugin 'shime/vim-livedown'
 Plugin 'panozzaj/vim-autocorrect'
 
@@ -61,8 +59,8 @@ Plugin 'wakatime/vim-wakatime'
 
 " Git "
 Plugin 'airblade/vim-gitgutter'
-Plugin 'sodapopcan/vim-twiggy'
 Plugin 'tpope/vim-fugitive'
+Plugin 'idanarye/vim-merginal'
 Plugin 'gregsexton/gitv'
 
 " Syntax "
