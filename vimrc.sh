@@ -197,13 +197,6 @@ let g:NERDTreeQuitOnOpen=1
 
 
 """"""""""""
-"AUTO PEP 8"
-""""""""""""
-au FileType python setlocal formatprg=autopep8\ -
-
-
-
-""""""""""""
 "Neocomplete"
 """"""""""""
 set completeopt-=preview
@@ -224,11 +217,11 @@ map <Space>jj <Plug>(easymotion-s)
 
 
 
-"""""
-"ALE"
-"""""
+"""""""""""""""""
+"ALE AND LINTING"
+"""""""""""""""""
 let g:ale_fixers = {
-    \ 'python': ['autopep8', 'isort'],
+    \ 'python': ['yapf', 'isort'],
     \ 'less': ['stylelint'],
     \ 'sass': ['stylelint'],
     \ 'scss': ['stylelint'],
@@ -250,6 +243,9 @@ let g:ale_linters = {
 let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
 let g:ale_python_isort_options = '-skip-globs=alembics -m3'
 let g:javascript_prettier_options = '--write --prose-wrap always'
+let style = "'{based_on_style: google, indent_width: 2}'"
+let g:ale_python_yapf_options = '--parallel --in-place --recursive --style='.style
+
 
 
 
@@ -320,7 +316,7 @@ if in_tmux == 1
 
   let match = match(session, "welkin")
   if match == 0
-    nnoremap <Space>nn :e $dotfiles_location/welkin/dev_notes<CR>
+    nnoremap <Space>nn :e /Users/tom/notes<CR>
   endif
 
   echo "Vim loading with tmux session: " . session
