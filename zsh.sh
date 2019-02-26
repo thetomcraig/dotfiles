@@ -20,7 +20,6 @@ export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
-# export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_DEFAULT_COMMAND='rg --files'
 echoGreen "  OK"
 
@@ -160,17 +159,8 @@ fi
 echoGreen "  OK"
 
 
-# # LOAD EXTERNAL STUFF
-# echo "LOADING PYENV..."
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-echo "LOADING DIRENV..."
-eval "$(direnv hook zsh)"
+alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
 
-
+alias notes="cd ${HOME}/notes && vim -c 'FZF'"
 
 echoGreen "INITIALIZATION COMPLETE"
-
-alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
