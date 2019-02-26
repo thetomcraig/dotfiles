@@ -1,12 +1,14 @@
 projects_root="${HOME}"
+# TODO do a mkdir with this
+notes_root="${HOME}/notes"
 
 host=$(uname -a)
-if [[ $host == *"tcraig-m01"* ]]; then
-  projects_root="${HOME}/dev"
-elif [[ $host == *"ZENO"* ]]; then
+if [[ $host == *"ZENO"* ]]; then
   projects_root="${HOME}/Dropbox/TomCraig/Projects"
 elif [[ $host == *"HERMES"* ]]; then
   projects_root="${HOME}"
+elif [[ $host == *"lebowski"* ]]; then
+  projects_root="${HOME}/dev"
 else
    projects_root="${HOME}"
 fi
