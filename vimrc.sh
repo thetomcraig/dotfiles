@@ -19,7 +19,6 @@ set laststatus=2                            "show the status line at the bottom
 set showmatch                               "Show the matching paren
 set smartcase                               "ignore case if search pattern is all lowercase
 set mouse=nicr                              "Scroll with mouse
-" set tw=120                                  "Column limit
 set splitright                              "Open splits to the right
 set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists
@@ -47,6 +46,7 @@ nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
+nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
 nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
@@ -222,26 +222,27 @@ map <Space>jj <Plug>(easymotion-s)
 """""""""""""""""
 let g:ale_fixers = {
     \ 'python': ['yapf', 'isort'],
-    \ 'less': ['stylelint'],
-    \ 'sass': ['stylelint'],
-    \ 'scss': ['stylelint'],
-    \ 'javascript': ['stylelint'],
+    \ 'less': [],
+    \ 'sass': [],
+    \ 'scss': [],
+    \ 'javascript': [],
     \ 'json': ['jsonlint'],
-    \ 'html': ['tidy'],
+    \ 'html': [],
     \ 'sh': ['shfmt'],
     \ 'markdown': ['prettier'],
+    \ 'vim': ['vint'],
 \ }
 let g:ale_linters = {
     \ 'python': ['flake8', 'isort'],
-    \ 'javascript': ['stylelint'],
-    \ 'html': ['tidy'],
-    \ 'sass': ['stylelint'],
-    \ 'scss': ['stylelint'],
+    \ 'javascript': [],
+    \ 'html': [],
+    \ 'sass': [],
+    \ 'scss': [],
     \ 'markdown': ['prettier'],
+    \ 'vim': ['vint'],
 \ }
 
-let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
-let g:ale_python_isort_options = '-skip-globs=alembics -m3'
+let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
 let g:javascript_prettier_options = '--write --prose-wrap always'
 let style = "'{based_on_style: google, indent_width: 2}'"
 let g:ale_python_yapf_options = '--parallel --in-place --recursive --style='.style
@@ -294,37 +295,29 @@ set diffopt+=vertical
 """""""""""""""""""""
 "ENVIRONMENT SETTINGS"
 """""""""""""""""""""
-echo "LOADING ENVIRONMENT SETTINGS..."
+echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
+let environment_settings = ""
 "TMUX"
 "1 - yes"
 "0 - no"
 let in_tmux = system("[ -z ${TMUX} ]; echo $?")
 if in_tmux == 1
   let session = system("tmux display-message -p '#S'")
-
-  let match = match(session, "pandoraads")
-  if match == 0
-    nnoremap <Space>fg :echo expand("%:p")<CR>
-    nmap <Space>pf :call fzf#run(fzf#wrap('src', {'dir': './src'}))<CR>
-  endif
-
-  let match = match(session, "create-pandora-react-app")
-  if match == 0
-    nnoremap <Space>fg :echo expand("%:p")<CR>
-    nmap <Space>pf :call fzf#run(fzf#wrap('lib', {'dir': 'lib'}))<CR>
-  endif
-
+         
+  "WELKIN
   let match = match(session, "welkin")
   if match == 0
     nnoremap <Space>nn :e /Users/tom/notes<CR>
   endif
 
-  echo "Vim loading with tmux session: " . session
+  let environment_settings = "    TMUX SESSION: " . session
 endif
 
 "iTERM2"
+"Checks the profile name"
+"I have a colorscheme for each profile"
 let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
-echo "Vim loading with theme: " . theme
+let environment_settings = environment_settings . "    iTERM PROFILE: " . theme
 let match = match(theme, "xenomorph")
 if match == 0
   colorscheme xenomorph
@@ -333,6 +326,8 @@ let match = match(theme, "seoul256")
 if match == 0
   colorscheme seoul256
 endif
+echo environment_settings
+
 
 
 
