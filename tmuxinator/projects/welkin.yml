@@ -5,11 +5,11 @@ windows:
   - CP client: 
     - enter_welkin_env 
     - cd dugong
-    - yarn start-client
+    - read && yarn start-client
   - CP server: 
     - enter_welkin_env 
     - cd dugong
-    - yarn start-server
+    - read && yarn start-server
   - shell: 
     - enter_welkin_env 
     - welkin shell
@@ -17,4 +17,3 @@ windows:
   - zsh:
     - enter_welkin_env
     - pg_ctl start -D /usr/local/var/postgres
-    - sleep 30s && open http://127.0.0.1:2349/
