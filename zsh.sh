@@ -21,6 +21,7 @@ export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
 export FZF_DEFAULT_COMMAND='rg --files'
+# export FZF_DEFAULT_COMMAND="find -L * -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null"
 echoGreen "  OK"
 
 
@@ -65,7 +66,7 @@ echoGreen "  OK"
 # GENERAL ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
 alias ctags="`brew --prefix`/bin/ctags"
-python_tags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
+alias make_python_tags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -161,6 +162,6 @@ echoGreen "  OK"
 
 alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
 
-alias notes="cd ${HOME}/notes && vim -c 'FZF'"
+alias notes="cd ${HOME}/notes && vim -c 'NERDTree'"
 
 echoGreen "INITIALIZATION COMPLETE"

@@ -220,32 +220,32 @@ map <Space>jj <Plug>(easymotion-s)
 """""""""""""""""
 "ALE AND LINTING"
 """""""""""""""""
-let g:ale_fixers = {
-    \ 'python': ['yapf', 'isort'],
-    \ 'less': [],
+let g:ale_linters = {
+    \ 'html': [],
+    \ 'javascript': [],
+    \ 'markdown': ['prettier'],
+    \ 'python': ['flake8', 'isort'],
     \ 'sass': [],
     \ 'scss': [],
-    \ 'javascript': [],
-    \ 'json': ['jsonlint'],
-    \ 'html': [],
-    \ 'sh': ['shfmt'],
-    \ 'markdown': ['prettier'],
+    \ 'sh': [],
     \ 'vim': ['vint'],
 \ }
-let g:ale_linters = {
-    \ 'python': ['flake8', 'isort'],
-    \ 'javascript': [],
+let g:ale_fixers = {
     \ 'html': [],
+    \ 'javascript': [],
+    \ 'json': ['jsonlint'],
+    \ 'less': [],
+    \ 'markdown': ['prettier'],
+    \ 'python': ['isort', 'autopep8'],
     \ 'sass': [],
     \ 'scss': [],
-    \ 'markdown': ['prettier'],
+    \ 'sh': [],
     \ 'vim': ['vint'],
 \ }
 
 let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
 let g:javascript_prettier_options = '--write --prose-wrap always'
-let style = "'{based_on_style: google, indent_width: 2}'"
-let g:ale_python_yapf_options = '--parallel --in-place --recursive --style='.style
+let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
 
 
 
@@ -253,19 +253,56 @@ let g:ale_python_yapf_options = '--parallel --in-place --recursive --style='.sty
 """"""""""""""""""
 "FUGITVIE ANG GIT"
 """"""""""""""""""
+" Most are similar to zsh aliases
+nnoremap <space>g :Gstatus<CR>
+nnoremap <space>gpu :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+
 nnoremap <space>ga :Git add %:p<CR><CR>
-nnoremap <Space>gb :Gblame<CR>
-nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gl :Glog <CR>
+
 nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>gdd :Gdiff develop:%<CR>
+nnoremap <space>gD :DiffWithBranch develop<CR>
+
+nnoremap <Space>grd :Grebase -i develop<CR>
+
+nnoremap <space>gl :Glog <CR>
+
+nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
-nnoremap <Space>gD  <Leader>gD <c-w>h<c-w>c<c-w>k<c-w>c
-nnoremap <space>gp :Dispatch! git push<CR>
-nnoremap <space>gpl :Dispatch! git pull<CR>
-nnoremap <Space>gx :only<CR> :Gedit<CR>
 
-nnoremap <Space>gt :Merginal<CR>
+nnoremap <Space>gv :Merginal<CR>
+
+nnoremap <space>gpr :PullRequestView develop<CR>
+
+"CUSTOM FUNCTIONS
+let s:git_status_dictionary = {
+            \ "A": "Added",
+            \ "B": "Broken",
+            \ "C": "Copied",
+            \ "D": "Deleted",
+            \ "M": "Modified",
+            \ "R": "Renamed",
+            \ "T": "Changed",
+            \ "U": "Unmerged",
+            \ "X": "Unknown"
+            \ }
+function! s:get_diff_files(rev)
+  let list = map(split(system(
+              \ 'git diff --name-status '.a:rev), '\n'),
+              \ '{"filename":matchstr(v:val, "\\S\\+$"),"text":s:git_status_dictionary[matchstr(v:val, "^\\w")]}'
+              \ )
+  call setqflist(list)
+  copen
+endfunction
+
+command! -nargs=1 PullRequestView call s:get_diff_files(<q-args>)
+
+function! s:diff_file_against_branch(branch)
+  execute ':Gdiff ' . a:branch . ':%'
+endfunction
+command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 
 
 
@@ -277,16 +314,11 @@ let g:airline_theme='xenomorph'
 let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
-let g:airline_section_z = ''
+"let g:airline_section_z = ''
 
 let g:vim_markdown_folding_disabled = 1
 
 let g:livedown_browser = "safari"
-let g:goyo_height=100
-let g:goyo_width=125
-nnoremap <silent> <leader>z :Goyo<cr>
-autocmd! User GoyoLeave
-autocmd  User GoyoLeave nested source ~/.vimrc
 
 set diffopt+=vertical
 
@@ -346,29 +378,3 @@ set expandtab
 
 let g:UltiSnipsExpandTrigger="<C-j>"
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
-
-
-" ----------------------------------------------------------------------------
-" DiffRev
-" ----------------------------------------------------------------------------
-let s:git_status_dictionary = {
-            \ "A": "Added",
-            \ "B": "Broken",
-            \ "C": "Copied",
-            \ "D": "Deleted",
-            \ "M": "Modified",
-            \ "R": "Renamed",
-            \ "T": "Changed",
-            \ "U": "Unmerged",
-            \ "X": "Unknown"
-            \ }
-function! s:get_diff_files(rev)
-  let list = map(split(system(
-              \ 'git diff --name-status '.a:rev), '\n'),
-              \ '{"filename":matchstr(v:val, "\\S\\+$"),"text":s:git_status_dictionary[matchstr(v:val, "^\\w")]}'
-              \ )
-  call setqflist(list)
-  copen
-endfunction
-
-command! -nargs=1 DiffRev call s:get_diff_files(<q-args>)
