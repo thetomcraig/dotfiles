@@ -127,6 +127,7 @@ alias pyclean="find . -name '*.pyc' -exec rm -f {} \; && find . -name '__pycache
 # SSH ALIASES
 alias sshariston="ssh tom@10.0.1.3"
 alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
+alias sshpi="ssh pi@10.0.1.20"
 
 echoGreen "  OK"
 
