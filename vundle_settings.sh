@@ -1,4 +1,7 @@
-"Install with this command `PluginInstall`"
+" Set the syntax and filetype of this file to .rc "
+" vim: set syntax=rc "
+au BufReadPost vundle_settings.sh set ft=vim.rc
+
 set nocompatible              " be iMproved, required "
 filetype off                  " required "
 
@@ -15,9 +18,9 @@ Plugin 'mhinz/vim-grepper'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'skwp/greplace.vim'
-Plugin 'brooth/far.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-scripts/nerdtree-ack'
 
@@ -40,8 +43,6 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'mbbill/undotree'
 
 " Writing Plaintext and Markdown "
-Plugin 'junegunn/goyo.vim'
-Plugin 'amix/vim-zenroom2'
 Plugin 'shime/vim-livedown'
 Plugin 'panozzaj/vim-autocorrect'
 
@@ -58,8 +59,8 @@ Plugin 'wakatime/vim-wakatime'
 
 " Git "
 Plugin 'airblade/vim-gitgutter'
-Plugin 'sodapopcan/vim-twiggy'
 Plugin 'tpope/vim-fugitive'
+Plugin 'idanarye/vim-merginal'
 Plugin 'gregsexton/gitv'
 
 " Syntax "
@@ -73,6 +74,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tpope/vim-tbone'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'lepture/vim-jinja'
 
 
 " All of your Plugins must be added before the following line "

@@ -1,3 +1,7 @@
+# vim: set syntax=zsh
+# au BufReadPost zsh.sh set ft=zsh.rc
+
+
 #########################
 #MY PERSONAL BASH PROFILE
 #########################
@@ -9,8 +13,6 @@ export ZSH=${HOME}/.oh-my-zsh
 # Use the pwd to load helpers
 echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
-# This should be set by the change_theme() helper function. (not implemented yet)
-export THEME=$(cat ~/.theme)
 source $dotfiles_location/helper_functions.sh
 source "${DIR}/git_bash_utilities.sh"
 
@@ -18,8 +20,8 @@ export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
-# export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_DEFAULT_COMMAND='rg --files'
+# export FZF_DEFAULT_COMMAND="find -L * -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null"
 echoGreen "  OK"
 
 
@@ -64,7 +66,7 @@ echoGreen "  OK"
 # GENERAL ALIASES
 echo "LOADING ALIASES AND FUNCTIONS..."
 alias ctags="`brew --prefix`/bin/ctags"
-python_tags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
+alias make_python_tags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -159,17 +161,8 @@ fi
 echoGreen "  OK"
 
 
-# # LOAD EXTERNAL STUFF
-# echo "LOADING PYENV..."
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-echo "LOADING DIRENV..."
-eval "$(direnv hook zsh)"
+alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
 
-
+alias notes="cd ${HOME}/notes && vim -c 'NERDTree'"
 
 echoGreen "INITIALIZATION COMPLETE"
-
-alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""

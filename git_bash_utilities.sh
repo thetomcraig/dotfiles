@@ -1,6 +1,9 @@
 PROJECT_PREFIX='[a-zA-Z]+'
 GITHUB_HOSTNAME="https://github.com/welkinhealth/welkin"
 
+####################
+# HELPER FUNCTIONS #
+####################
 getLocalBranchName() {
   echo $(git for-each-ref --format='%(refname:short)' $(git symbolic-ref -q HEAD))
 
@@ -32,56 +35,58 @@ constructBranchName() {
   echo "${BRANCH_NAME}"
 }
 
-alias g="git status"
-alias ga="git add"
-alias gb="git branch"
-alias gba="git branch -a"
-alias gv="git branch -vv"
-# "Short" version - limit the output toe 120 columns
-alias gvs="git branch -vv | sed -e 's/\(.\{120\}\)\(.*\)/\1/g' "
-alias gbd="git branch -d $1"
-alias gbD="git branch -D $1"
-alias gc="git checkout"
-alias gcb="git checkout -b"
-alias gd="git diff"
-# Stage the deletion of any files you've deleted
-alias gdd="git ls-files --deleted -z | xargs -0 git rm"
-alias gm="git commit -m "
-alias gpu="git push"
-alias gpl="git pull"
-# Pretty looking git log
-alias log="git log --oneline --all --graph --decorate"
-
-# Start a pull request for the current branch
-alias gpr=gitpullrequest
+####################
+# CUSTOM FUNCTIONS #
+####################
 gitpullrequest() {
   local BRANCH_NAME="$(git branch | grep \* | cut -d ' ' -f2)?expand\=1"
   open ${GITHUB_HOSTNAME}/compare/"${BRANCH_NAME}"
 }
 
-# Start a feature (git flow) and name the branch based on a jira description
-alias gfs=gitfeaturestart
-gitfeaturestart() {
-  local BRANCH_NAME=$(constructBranchName "${1}")
-  git checkout -b feature/"${BRANCH_NAME}" develop
-  git branch -vv
-}
-
-# Make local branch tracking remote that matches a regex
-# For example gg hotfix nov-14
-alias gg=gitbranchgrep
 gitbranchgrep() {
   git pull && \
   git checkout -b ${1} $(git branch -a | grep ${2}) && \
   git branch -vv
 }
 
-outstandingCommits()
-{
-  git cherry -v develop "${1}"
+gitPushAndSetMatchingUpstream() {
+  local BRANCH_NAME=$(getLocalBranchName)
+  git push --set-upstream origin "${BRANCH_NAME}"
 }
-# Show detatched commits
-# alias gdc=detatched_commits
-# detatched_commits() {
-  # git log --oneline --all --graph --decorate  $(git reflog | awk '{print $1}')
-# }
+
+###########
+# ALIASES #
+###########
+# Small ones, similar to vim key bindings
+alias g="git status"
+alias gpu="git push"
+alias gpl="git pull"
+
+alias gc="git checkout"
+
+alias ga="git add"
+alias gm="git commit -m "
+
+alias gd="git diff"
+alias gD="git diff develop..${getLocalBranchName}"
+
+alias grd="git rebase -i develop"
+# Pretty looking git log
+alias gl="git log --oneline --all --graph --decorate"
+
+alias gba="git branch -a"
+alias gv="git branch -vv"
+alias gbd="git branch -d ${1}"
+alias gbD="git branch -D ${1}"
+alias gcb="git checkout -b"
+
+# Large and complicated ones
+# Make local branch tracking remote that matches a regex
+# For example gg hotfix nov-14
+alias gg=gitbranchgrep
+# Stage the deletion of any files you've deleted
+alias grm="git ls-files --deleted -z | xargs -0 git rm"
+# Push this branch and make a new upstream with the same name
+alias gsu=gitPushAndSetMatchingUpstream
+# Start a pull request for the current branch
+alias gpr=gitpullrequest

@@ -17,7 +17,12 @@ sudo pip install virtualenv
 npm install -g livedown
 npm install -g eslint
 npm install -g bash-language-server
+npm install --global prettier
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+pip install vim-vint
+pip install autopep8
+pip install isort
+pip install yapf
 
 # SSH Keys
 ssh-keygen -t rsa -b 4096 -C "thetomcraig@icloud.com"
@@ -43,13 +48,6 @@ git config --global core.editor "vim"
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
 # TODO
-#linters
-#eslint
-#jsonfix
-#stylelint
-#tidy
-#autopep8
-#isort
 #make sure these are all global
 # git clone https://github.com/powerline/powerline.git
 

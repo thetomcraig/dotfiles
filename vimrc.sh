@@ -1,24 +1,27 @@
 exec "source" $dotfiles_location . "/vundle_settings.sh"
 
 
+" Set the syntax and filetype of this file to .rc "
+" vim: set syntax=rc "
+au BufReadPost vimrc.sh set ft=vim.rc
+
 """"""""
 "General"
 """"""""
-filetype plugin on                          "Used by the NERDcommenter plugin"
-syntax on                                   "turn on the syntax coloring"
-set incsearch                               "highlight while typing search"
-set hlsearch                                "highlight all search results"
-set number                                  "show line numbers"
-set number relativenumber                   "Hybrid - shows exact and relative numbers"
-set backspace=2                             "To make it work all normal like"
-set laststatus=2                            "show the status line at the bottom"
-set showmatch                               "Show the matching paren"
-set smartcase                               "ignore case if search pattern is all lowercase"
-set mouse=nicr                              "Scroll with mouse"
-set tw=120                                  "Column limit"
-set splitright                              "Open splits to the right"
-set wildmenu                                "Put completion menu in command mode"
-set shortmess+=A                            "Ignore warning when swp file exists"
+filetype plugin on                          "Used by the NERDcommenter plugin
+syntax on                                   "turn on the syntax coloring
+set incsearch                               "highlight while typing search
+set hlsearch                                "highlight all search results
+set number                                  "show line numbers
+set number relativenumber                   "Hybrid - shows exact and relative numbers
+set backspace=2                             "To make it work all normal like
+set laststatus=2                            "show the status line at the bottom
+set showmatch                               "Show the matching paren
+set smartcase                               "ignore case if search pattern is all lowercase
+set mouse=nicr                              "Scroll with mouse
+set splitright                              "Open splits to the right
+set wildmenu                                "Put completion menu in command mode
+set shortmess+=A                            "Ignore warning when swp file exists
 set clipboard=unnamed
 set shell=/bin/bash
 set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
@@ -32,7 +35,7 @@ nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
-nnoremap <Space>i :set list<CR>
+nnoremap <Space>iv :set list<CR>
 nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
@@ -42,16 +45,39 @@ nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
+nnoremap <Space>fp :let @+=expand('%:p')<CR>
+nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
+nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
-"Close the current buffer and move to the previous one"
+"Close the current buffer and move to the previous one
 nmap <Space>bd :bp <BAR> bd #<CR>
+" Start interactive EasyAlign in visual mode (e.g. vipga) 
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip) 
+nmap ga <Plug>(EasyAlign)
+"Search for visually selected text
+vnoremap // y/<C-R>"<CR> 
+"Used for moving around the command line in vim
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
+" Edit and reload dot files
+nmap <Space>ve :e ~/.vimrc<CR>
+nmap <Space>vr :source ~/.vimrc<CR>
+nmap <Space>vu :e $dotfiles_location/vundle_settings.sh<CR>
 
-nmap <Space>y <Plug>yankstack_substitute_older_paste
-nmap <Space>Y <Plug>yankstack_substitute_newer_paste
 
-nnoremap <Space>J :lnext<CR>
-nnoremap <Space>K :lprev<CR>
+
+""""""""""
+"SURROUND"
+""""""""""
+nmap <Space>r) vi)p
+nmap <Space>r( vi)p
+nmap <Space>r} vi}p
+nmap <Space>r{ vi{p
+nmap <Space>r' vi'p
+nmap <Space>r" vi"p
+nmap <Space>rw viwp
 
 nmap <Space>s) ysiw)
 nmap <Space>s( ysiw)
@@ -59,7 +85,7 @@ nmap <Space>s} ysiw}
 nmap <Space>s{ ysiw{
 nmap <Space>s' ysiw'
 nmap <Space>s" ysiw"
-" Function will make a word into a bash variable "
+" Function will make a word into a bash variable 
 "   word -> "${word}"
 "
 function! Bashify()
@@ -67,8 +93,8 @@ function! Bashify()
 endfunction
 nmap <Space>s$ :call Bashify()<CR>
 
-" Function will surround line wirth python print syntax "
-"   several word on a line -> print("several words on a line") "
+" Function will surround line wirth python print syntax 
+"   several word on a line -> print("several words on a line") 
 nmap <Space>sp :call Printify()<CR>
 " Function will wrap a line with a python print statement and quotes
 "   series of words -> print("series of words")
@@ -79,10 +105,14 @@ nmap <Space>sp :call Printify()<CR>
 
 
 
-" Start interactive EasyAlign in visual mode (e.g. vipga) "
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip) "
-nmap ga <Plug>(EasyAlign)
+
+"""""""""
+"WINDOWS"
+"""""""""
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
@@ -95,30 +125,18 @@ while i <= 9
     let i = i + 1
 endwhile
 
-nmap <Space>ve :e ~/.vimrc<CR>
-nmap <Space>vue :e "$dotfiles_location"/vundle_settings.sh<CR>
-nmap <Space>vr :source ~/.vimrc<CR>
-nmap <Space>wl :e ~/Dropbox/TomCraig/workflow_automation/worklog.md<CR>
-
-
-
-vnoremap // y/<C-R>"<CR> "Search for visually selected text
-"Used for moving around the command line in vim"
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
-
-
-
 
 
 """""""""""""
-"AG and GREP"
+"RG and GREP"
 """""""""""""
 " Grepper settings
 " By default, ignore alembics, tests, etc
 nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
 " This will not ignore anything
-nmap <Space>gt :GrepperRg 
+nmap <Space>ag :GrepperRg 
+
+
 
 """""""
 " FZF "
@@ -141,10 +159,11 @@ let g:fzf_colors =
  noremap <space>ff :FZF<CR>
  noremap <space>rr :Rg<CR>
  noremap <space>bb :Buffers<CR>
- noremap <space>cc :Commits<CR>
+ noremap <space>mm :Commits<CR>
  noremap <space>hh :History<CR>
  noremap <space>h/ :History/<CR>
  noremap <space>ll :Lines<CR>
+ noremap <space>bl :BLines<CR>
 
 
 
@@ -178,13 +197,6 @@ let g:NERDTreeQuitOnOpen=1
 
 
 """"""""""""
-"AUTO PEP 8"
-""""""""""""
-au FileType python setlocal formatprg=autopep8\ -
-
-
-
-""""""""""""
 "Neocomplete"
 """"""""""""
 set completeopt-=preview
@@ -205,50 +217,92 @@ map <Space>jj <Plug>(easymotion-s)
 
 
 
-"""""
-"ALE"
-"""""
-let g:ale_fixers = {
-    \ 'python': ['autopep8', 'isort'],
-    \ 'less': ['stylelint'],
-    \ 'sass': ['stylelint'],
-    \ 'scss': ['stylelint'],
-    \ 'javascript': ['stylelint'],
-    \ 'json': ['jsonlint'],
-    \ 'html': ['tidy'],
-    \ 'sh': ['shfmt'],
-\ }
+"""""""""""""""""
+"ALE AND LINTING"
+"""""""""""""""""
 let g:ale_linters = {
+    \ 'html': [],
+    \ 'javascript': [],
+    \ 'markdown': ['prettier'],
     \ 'python': ['flake8', 'isort'],
-    \ 'javascript': ['stylelint'],
-    \ 'html': ['tidy'],
-    \ 'sass': ['stylelint'],
-    \ 'scss': ['stylelint'],
+    \ 'sass': [],
+    \ 'scss': [],
+    \ 'sh': [],
+    \ 'vim': ['vint'],
+\ }
+let g:ale_fixers = {
+    \ 'html': [],
+    \ 'javascript': [],
+    \ 'json': ['jsonlint'],
+    \ 'less': [],
+    \ 'markdown': ['prettier'],
+    \ 'python': ['isort', 'autopep8'],
+    \ 'sass': [],
+    \ 'scss': [],
+    \ 'sh': [],
+    \ 'vim': ['vint'],
 \ }
 
-let g:ale_python_autopep8_options = '--indent-size=2'
-let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
-let g:ale_html_tidy_executable = '/usr/local/Cellar/tidy-html5/5.6.0/bin/tidy'
-let g:ale_html_tidy_options = '-indent auto, -indent-spaces, 2 -tidy-mark no'
+let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
+let g:javascript_prettier_options = '--write --prose-wrap always'
+let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
+
 
 
 
 """"""""""""""""""
 "FUGITVIE ANG GIT"
 """"""""""""""""""
+" Most are similar to zsh aliases
+nnoremap <space>g :Gstatus<CR>
+nnoremap <space>gpu :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+
 nnoremap <space>ga :Git add %:p<CR><CR>
-nnoremap <Space>gb :Gblame<CR>
-nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gl :Glog <CR>
+
 nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>gdd :Gdiff develop:%<CR>
+nnoremap <space>gD :DiffWithBranch develop<CR>
+
+nnoremap <Space>grd :Grebase -i develop<CR>
+
+nnoremap <space>gl :Glog <CR>
+
+nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
-nnoremap <Space>gD  <Leader>gD <c-w>h<c-w>c<c-w>k<c-w>c
-nnoremap <space>gp :Dispatch! git push<CR>
-nnoremap <space>gpl :Dispatch! git pull<CR>
-nnoremap <Space>gx :only<CR> :Gedit<CR>
 
-nnoremap <Space>gt :Twiggy<CR>
+nnoremap <Space>gv :Merginal<CR>
+
+nnoremap <space>gpr :PullRequestView develop<CR>
+
+"CUSTOM FUNCTIONS
+let s:git_status_dictionary = {
+            \ "A": "Added",
+            \ "B": "Broken",
+            \ "C": "Copied",
+            \ "D": "Deleted",
+            \ "M": "Modified",
+            \ "R": "Renamed",
+            \ "T": "Changed",
+            \ "U": "Unmerged",
+            \ "X": "Unknown"
+            \ }
+function! s:get_diff_files(rev)
+  let list = map(split(system(
+              \ 'git diff --name-status '.a:rev), '\n'),
+              \ '{"filename":matchstr(v:val, "\\S\\+$"),"text":s:git_status_dictionary[matchstr(v:val, "^\\w")]}'
+              \ )
+  call setqflist(list)
+  copen
+endfunction
+
+command! -nargs=1 PullRequestView call s:get_diff_files(<q-args>)
+
+function! s:diff_file_against_branch(branch)
+  execute ':Gdiff ' . a:branch . ':%'
+endfunction
+command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 
 
 
@@ -260,16 +314,11 @@ let g:airline_theme='xenomorph'
 let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
-let g:airline_section_z = ''
+"let g:airline_section_z = ''
 
 let g:vim_markdown_folding_disabled = 1
 
 let g:livedown_browser = "safari"
-let g:goyo_height=100
-let g:goyo_width=125
-nnoremap <silent> <leader>z :Goyo<cr>
-autocmd! User GoyoLeave
-autocmd  User GoyoLeave nested source ~/.vimrc
 
 set diffopt+=vertical
 
@@ -278,37 +327,29 @@ set diffopt+=vertical
 """""""""""""""""""""
 "ENVIRONMENT SETTINGS"
 """""""""""""""""""""
-echo "LOADING ENVIRONMENT SETTINGS..."
+echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
+let environment_settings = ""
 "TMUX"
 "1 - yes"
 "0 - no"
 let in_tmux = system("[ -z ${TMUX} ]; echo $?")
 if in_tmux == 1
   let session = system("tmux display-message -p '#S'")
-
-  let match = match(session, "pandoraads")
-  if match == 0
-    nnoremap <Space>fg :echo expand("%:p")<CR>
-    nmap <Space>pf :call fzf#run(fzf#wrap('src', {'dir': './src'}))<CR>
-  endif
-
-  let match = match(session, "create-pandora-react-app")
-  if match == 0
-    nnoremap <Space>fg :echo expand("%:p")<CR>
-    nmap <Space>pf :call fzf#run(fzf#wrap('lib', {'dir': 'lib'}))<CR>
-  endif
-
+         
+  "WELKIN
   let match = match(session, "welkin")
   if match == 0
-    nnoremap <Space>nn :e $dotfiles_location/welkin/dev_notes<CR>
+    nnoremap <Space>nn :e /Users/tom/notes<CR>
   endif
 
-  echo "Vim loading with tmux session: " . session
+  let environment_settings = "    TMUX SESSION: " . session
 endif
 
 "iTERM2"
+"Checks the profile name"
+"I have a colorscheme for each profile"
 let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
-echo "Vim loading with theme: " . theme
+let environment_settings = environment_settings . "    iTERM PROFILE: " . theme
 let match = match(theme, "xenomorph")
 if match == 0
   colorscheme xenomorph
@@ -317,10 +358,11 @@ let match = match(theme, "seoul256")
 if match == 0
   colorscheme seoul256
 endif
+echo environment_settings
 
 
 
-au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
 
 
 """"""""""""""""""
@@ -335,3 +377,4 @@ set expandtab
 
 
 let g:UltiSnipsExpandTrigger="<C-j>"
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
