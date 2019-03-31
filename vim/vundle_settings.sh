@@ -31,6 +31,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'simeji/winresizer'
 Plugin 'lfv89/vim-interestingwords'
+Plugin 'bilalq/lite-dfm'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'

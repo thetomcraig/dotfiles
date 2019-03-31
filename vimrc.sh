@@ -1,4 +1,4 @@
-exec "source" $dotfiles_location . "/vundle_settings.sh"
+exec "source" $dotfiles_location . "/vim/vundle_settings.sh"
 
 
 " Set the syntax and filetype of this file to .rc "
