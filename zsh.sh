@@ -14,7 +14,7 @@ export ZSH=${HOME}/.oh-my-zsh
 echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
 source $dotfiles_location/helper_functions.sh
-source "${DIR}/git_bash_utilities.sh"
+source "${DIR}/git_settings.sh"
 
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
@@ -36,7 +36,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_VIRTUALENV_BACKGROUND=green
 
-plugins=(git, zsh-autosuggestions)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 echoGreen "  OK"
@@ -159,9 +159,5 @@ fi
 
 echoGreen "  OK"
 
-
-alias lattice="git log  --pretty=format:"%s" --since=7.days --abbrev-commit --author="Tom Craig""
-
-alias notes="cd ${HOME}/notes && vim -c 'NERDTree'"
 
 echoGreen "INITIALIZATION COMPLETE"
