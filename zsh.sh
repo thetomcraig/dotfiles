@@ -72,7 +72,7 @@ alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
 
-alias v="vim $dotfiles_location/vimrc.sh"
+alias v="vim $dotfiles_location/vim/vimrc.sh"
 alias vu="vim $dotfiles_location/vundle_settings.sh"
 alias dot="cd ${HOME}/Dotfiles"
 alias drop="cd ${HOME}/Dropbox/TomCraig"
