@@ -1,18 +1,8 @@
 #!/bin/sh
+
 #################### 
 # HELPER FUNCTIONS #
 #################### 
-PROJECT_PREFIX='[a-zA-Z]+'
-
-localBranch() {
-  echo $(git for-each-ref --format='%(refname:short)' $(git symbolic-ref -q HEAD))
-
-}
-upstreamBranch() {
-  echo $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
-}
-
-
 echoGreen() {
   tput setaf 2
   echo "$1"
@@ -50,8 +40,4 @@ promptToContinue() {
         * ) echo "Please answer y or n for yes or no.";;
     esac
   done
-}
-
-change_theme() {
-  echo "${1}" > ~/.theme
 }

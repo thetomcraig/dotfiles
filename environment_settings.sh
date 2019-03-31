@@ -11,12 +11,12 @@ if [[ $host == *"Darwin"* ]]; then
   alias diff="diff-so-fancy"
 fi
 if [[ $host == *"tcraig-m01"* ]]; then
-  echo "  LOADING PANDORA SETTINGS..."
   source $dotfiles_location/pandorarc.sh
+  echo "  PANDORA ENVIRONMENT LOADED"
 fi
 if [[ $host == *"lebowski"* ]]; then
-  echo "  LOADING WELKIN SETTINGS..."
   source $dotfiles_location/welkin/welkinrc.sh
+  echo "  WELKIN ENVIRONMENT LOADED"
 fi
 
 
@@ -26,6 +26,5 @@ fi
 #####################################
 if [ -n "$TMUX" ]; then
   tmux_session_name=$(tmux display-message -p '#S')
-  echo "  LOADING TMUX ENVRONMENT FOR PROJECT '${tmux_session_name}'"
-  source $dotfiles_location/tmux/setup_env_vars.sh ${tmux_session_name}
+  source $dotfiles_location/tmux/project_settings.sh ${tmux_session_name}
 fi

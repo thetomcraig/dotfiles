@@ -4,7 +4,6 @@
 # If the name is the same as the name of a project (tmuxinator), it loads any env variables defined for that project 
 
 project_name=${1}
-echo "${project_name}"
 
 # Set env vars
 export ROOT=~/.projects_root/${project_name}
@@ -15,14 +14,14 @@ alias root="cd ${ROOT}"
 # Do specific stuff here
 case ${project_name} in
 total-immersion-podcast)
-  echoGreen "TOTAL IMMERSION ENGAGED"
+  echoGreen "TOTAL IMMERSION LOADED"
   ;;
 welkin)
   export GITHUB_HOSTNAME="https://github.com/welkinhealth/welkin"
-  echoGreen "WELKIN ENGAGED"
+  echoGreen "WELKIN LOADED"
   ;;
 *)
-  echoYellow "  NO ENV VARS"
+  echoYellow "NO PROJECT SETTINGS LOADED"
   ;;
 esac
 

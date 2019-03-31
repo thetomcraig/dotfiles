@@ -13,7 +13,7 @@ export ZSH=${HOME}/.oh-my-zsh
 # Use the pwd to load helpers
 echo "LOADING GENERAL SETTINGS..."
 export dotfiles_location="${HOME}/Dotfiles"
-source $dotfiles_location/helper_functions.sh
+source $dotfiles_location/general_settings.sh
 source "${DIR}/git_settings.sh"
 
 export LANG="en_US.UTF-8"
@@ -22,7 +22,7 @@ export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
 export FZF_DEFAULT_COMMAND='rg --files'
 # export FZF_DEFAULT_COMMAND="find -L * -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null"
-echoGreen "  OK"
+echoGreen "OK"
 
 
 
@@ -39,7 +39,7 @@ POWERLEVEL9K_VIRTUALENV_BACKGROUND=green
 plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-echoGreen "  OK"
+echoGreen "OK"
 
 
 
@@ -53,13 +53,7 @@ bindkey '^j' autosuggest-accept
 setopt auto_cd
 DISABLE_AUTO_TITLE=true
 
-# TODO, wtf?
-tmux_dotfiles_location="$dotfiles_location/tmux"
-export tmux_dotfiles_location
-source $tmux_dotfiles_location/tmux_colors.sh
-source $dotfiles_location/tmuxinator/tmuxinator.zsh
-export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
-echoGreen "  OK"
+echoGreen "OK"
 
 
 
@@ -95,6 +89,8 @@ alias d="tree -a -C -L 1 -d"
 alias s="source $dotfiles_location/zsh.sh"
 alias b="vim $dotfiles_location/zsh.sh"
 
+alias sshariston="ssh tom@10.0.1.3"
+alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
 
 
 # TMUX ALIASES AND FUNCTIONS
@@ -118,46 +114,21 @@ kill_current_session() {
   tmux kill-session -t $(tmux display-message -p '#S')
 }
 
-
-
-# PYTHON ALISES
-alias vev="virtualenv env"
-alias seba="source env/bin/activate"
-alias pf="pip freeze"
-alias pyclean="find . -name '*.pyc' -exec rm -f {} \; && find . -name '__pycache__' -exec rm -rf {} \;"
-
-# SSH ALIASES
-alias sshariston="ssh tom@10.0.1.3"
-alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
-
-echoGreen "  OK"
-
-
+tmux_dotfiles_location="$dotfiles_location/tmux"
+export tmux_dotfiles_location
+source $tmux_dotfiles_location/tmux_colors.sh
+source $dotfiles_location/tmuxinator/tmuxinator.zsh
+export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
+echoGreen "OK"
 
 # ENVIRONMENT SETTINGS
 echo "LOADING ENVIRONMENT SETTINGS..."
-host=$(uname -a)
-if [[ $host == *"Darwin"* ]]; then
-  alias rm="trash"
-  alias cat="bat"
-  alias diff="diff-so-fancy"
-fi
-if [[ $host == *"tcraig-m01"* ]]; then
-  echo "  LOADING PANDORA SETTINGS..."
-  source $dotfiles_location/pandorarc.sh
-fi
-if [[ $host == *"lebowski"* ]]; then
-  echo "  LOADING WELKIN SETTINGS..."
-  source $dotfiles_location/welkin/welkinrc.sh
-fi
+source $dotfiles_location/environment_settings.sh
+echoGreen "OK"
 
-# TMUX SESSION
-if [ -n "$TMUX" ]; then
-  echo "  LOADING TMUX ENV VARS..."
-  source $dotfiles_location/tmux/setup_env_vars.sh $(tmux display-message -p '#S')
-fi
+# PYTHON ALISES
+echo "LOADING PYTHON SETTINGS..."
+source $dotfiles_location/python_settings.sh
+echoGreen "OK"
 
-echoGreen "  OK"
-
-
-echoGreen "INITIALIZATION COMPLETE"
+echo "INITIALIZATION COMPLETE"
