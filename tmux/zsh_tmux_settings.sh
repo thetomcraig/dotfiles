@@ -20,6 +20,15 @@ kill_current_session() {
 
 tmux_dotfiles_location="$dotfiles_location/tmux"
 export tmux_dotfiles_location
-source $tmux_dotfiles_location/tmux_colors.sh
-source $dotfiles_location/tmuxinator/tmuxinator.zsh
-export TMUXINATOR_CONFIG=$dotfiles_location/tmuxinator/projects
+source $dotfiles_location/tmux/tmuxinator/tmuxinator.zsh
+export TMUXINATOR_CONFIG=$dotfiles_location/tmux/tmuxinator/projects
+
+# Load the theme!
+iterm_profile_name=$(osascript $dotfiles_location/get_iterm_profile_name.scpt)
+if [ ! -f ${theme_file_name} ]; then
+  default_theme_file_name="${tmux_dotfiles_location}/color_definitions/default.sh"
+  source ${default_theme_file_name}
+else
+  theme_file_name="${tmux_dotfiles_location}/color_definitions/${iterm_profile_name}.sh"
+  source ${theme_file_name}
+fi
