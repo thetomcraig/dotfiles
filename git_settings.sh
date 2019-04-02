@@ -6,6 +6,7 @@ PROJECT_PREFIX='[a-zA-Z]+'
 # Small ones, similar to vim key bindings
 alias g="git status"
 alias gpu="git push"
+alias gpf="git push -f"
 alias gpl="git pull"
 
 alias gc="git checkout"
@@ -17,6 +18,7 @@ alias gd="git diff"
 alias gD="git diff develop..${getLocalBranchName}"
 
 alias grd="git rebase -i develop"
+alias grc="git rebase --continue"
 # Pretty looking git log
 alias gl="git log --oneline --all --graph --decorate"
 
