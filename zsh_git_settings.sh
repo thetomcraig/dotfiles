@@ -10,6 +10,7 @@ alias gpf="git push -f"
 alias gpl="git pull"
 
 alias gc="git checkout"
+alias gcp="git cherry-pick ${1}"
 
 alias ga="git add"
 alias gm="git commit -m "
