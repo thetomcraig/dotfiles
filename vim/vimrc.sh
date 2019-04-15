@@ -1,4 +1,4 @@
-exec "source" $dotfiles_location . "/vundle_settings.sh"
+exec "source" $dotfiles_location . "/vim/vundle_settings.sh"
 
 
 " Set the syntax and filetype of this file to .rc "
@@ -64,7 +64,7 @@ cnoremap <Esc>f <S-Right>
 " Edit and reload dot files
 nmap <Space>ve :e ~/.vimrc<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
-nmap <Space>vu :e $dotfiles_location/vundle_settings.sh<CR>
+nmap <Space>vu :e $dotfiles_location/vim/vundle_settings.sh<CR>
 
 
 
