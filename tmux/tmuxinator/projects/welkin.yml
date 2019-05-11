@@ -13,7 +13,10 @@ windows:
   - shell: 
     - enter_welkin_env 
     - welkin shell
+  - prod shell: 
+    - enter_welkin_env 
+    - read && welkin shell prod
   - editor: vim
-  - zsh:
+  - root:
     - enter_welkin_env
     - pg_ctl start -D /usr/local/var/postgres
