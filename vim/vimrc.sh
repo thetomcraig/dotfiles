@@ -349,15 +349,8 @@ endif
 "Checks the profile name"
 "I have a colorscheme for each profile"
 let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
+execute "colorscheme " . theme
 let environment_settings = environment_settings . "    iTERM PROFILE: " . theme
-let match = match(theme, "xenomorph")
-if match == 0
-  colorscheme xenomorph
-endif
-let match = match(theme, "seoul256")
-if match == 0
-  colorscheme seoul256
-endif
 echo environment_settings
 
 
