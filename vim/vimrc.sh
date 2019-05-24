@@ -367,6 +367,9 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
+set sw=2 
+set ts=2
+set sts=2
 
 
 let g:UltiSnipsExpandTrigger="<C-j>"
