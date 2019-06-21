@@ -47,7 +47,7 @@ nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
 nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
-nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose<CR>
+nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
@@ -118,7 +118,7 @@ nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
 nmap <Space>w- :split<CR>
 nmap <Space>wd :q<CR>
-nmap <Space>ww :ChooseWin<CR>
+"nmap <Space>w :ChooseWin<CR>
 let i = 1
 while i <= 9
     execute 'nnoremap <Space>' . i . ' :' . i . 'wincmd w<CR>'
@@ -224,7 +224,7 @@ let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': [],
     \ 'markdown': ['prettier'],
-    \ 'python': ['flake8', 'isort'],
+    \ 'python': ['flake8', 'pylint'],
     \ 'sass': [],
     \ 'scss': [],
     \ 'sh': [],
@@ -246,6 +246,7 @@ let g:ale_fixers = {
 let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
 let g:javascript_prettier_options = '--write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
+let g:ale_python_pylint_options = '--py3k'
 
 
 
@@ -256,6 +257,7 @@ let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
 " Most are similar to zsh aliases
 nnoremap <space>g :Gstatus<CR>
 nnoremap <space>gpu :Dispatch! git push<CR>
+nnoremap <space>gpf :Dispatch! git push --force<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
 nnoremap <space>ga :Git add %:p<CR><CR>
@@ -265,6 +267,7 @@ nnoremap <space>gdd :Gdiff develop:%<CR>
 nnoremap <space>gD :DiffWithBranch develop<CR>
 
 nnoremap <Space>grd :Grebase -i develop<CR>
+nnoremap <Space>grc :Grebase --continue<CR>
 
 nnoremap <space>gl :Glog <CR>
 
@@ -339,7 +342,7 @@ if in_tmux == 1
   "WELKIN
   let match = match(session, "welkin")
   if match == 0
-    nnoremap <Space>nn :e /Users/tom/notes<CR>
+
   endif
 
   let environment_settings = "    TMUX SESSION: " . session
@@ -374,3 +377,7 @@ set sts=2
 
 let g:UltiSnipsExpandTrigger="<C-j>"
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+set scrolloff=20
+
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
