@@ -10,6 +10,7 @@ au BufReadPost vimrc.sh set ft=vim.rc
 """"""""
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
+set scrolloff=20                            "Center the cusrsor"
 set incsearch                               "highlight while typing search
 set hlsearch                                "highlight all search results
 set number                                  "show line numbers
@@ -179,23 +180,6 @@ map <C-l> <C-w>l
 
 
 
-""""""""""
-"NERD Tree"
-""""""""""
-let g:NERDTreeDirArrowExpandable = '>'
-let g:NERDTreeDirArrowCollapsible = 'v'
-let NERDTreeIgnore = ['\.pyc$', '*.sw*']
-
-
-
-"""""""""""""""
-"NERD Commenter"
-"""""""""""""""
-let g:NERDSpaceDelims=1
-let g:NERDTreeQuitOnOpen=1
-
-
-
 """"""""""""
 "Neocomplete"
 """"""""""""
@@ -208,12 +192,6 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 
-
-
-""""""""""""
-"Easy motion"
-""""""""""""
-map <Space>jj <Plug>(easymotion-s)
 
 
 
@@ -279,7 +257,52 @@ nnoremap <Space>gv :Merginal<CR>
 
 nnoremap <space>gpr :PullRequestView develop<CR>
 
-"CUSTOM FUNCTIONS
+
+
+
+"""""""""""
+"Colors/UI"
+"""""""""""
+let g:airline_theme='xenomorph'
+
+let g:airline_section_b = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+"let g:airline_section_z = ''
+
+let g:vim_markdown_folding_disabled = 1
+
+let g:livedown_browser = "safari"
+
+set diffopt+=vertical
+
+
+
+""""""""""""""""""""""
+"MISC PLUGIN SETTINGS"
+""""""""""""""""""""""
+map <Space>jj <Plug>(easymotion-s)
+let g:UltiSnipsExpandTrigger="<C-j>"
+
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
+let NERDTreeIgnore = ['\.pyc$', '*.sw*']
+
+let g:NERDSpaceDelims=1
+let g:NERDTreeQuitOnOpen=1
+
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+ 
+let g:vimwiki_list = [{'path': $projects_root . '/tomcraigslist',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+
+
+
+""""""""""""""""""
+"CUSTOM FUNCTIONS"
+""""""""""""""""""
+
 let s:git_status_dictionary = {
             \ "A": "Added",
             \ "B": "Broken",
@@ -308,22 +331,7 @@ endfunction
 command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 
 
-
-"""""""""""
-"Colors/UI"
-"""""""""""
-let g:airline_theme='xenomorph'
-
-let g:airline_section_b = ''
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-"let g:airline_section_z = ''
-
-let g:vim_markdown_folding_disabled = 1
-
-let g:livedown_browser = "safari"
-
-set diffopt+=vertical
+nmap <space>nn :e $projects_root/tomcraigslist/index.md<CR>
 
 
 
@@ -358,11 +366,8 @@ echo environment_settings
 
 
 
-
-
-
 """"""""""""""""""
-"Tabs and Spacing"
+"TABS AND SPACING"
 """"""""""""""""""
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 set shiftround
@@ -373,11 +378,3 @@ set expandtab
 set sw=2 
 set ts=2
 set sts=2
-
-
-let g:UltiSnipsExpandTrigger="<C-j>"
-au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
-set scrolloff=20
-
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
