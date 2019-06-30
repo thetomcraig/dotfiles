@@ -26,11 +26,14 @@ Plugin 'vim-scripts/nerdtree-ack'
 
 " Colors/UI "
 Plugin 'junegunn/seoul256.vim'
+Plugin 'cocopon/iceberg.vim'
 Plugin 'thetomcraig/xenomorph.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'simeji/winresizer'
 Plugin 'lfv89/vim-interestingwords'
+Plugin 'gcmt/taboo.vim'
+Plugin 'fholgado/minibufexpl.vim'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
@@ -45,6 +48,7 @@ Plugin 'mbbill/undotree'
 " Writing Plaintext and Markdown "
 Plugin 'shime/vim-livedown'
 Plugin 'panozzaj/vim-autocorrect'
+Plugin 'vimwiki/vimwiki'
 
 " Coding "
 Plugin 'w0rp/ale'
@@ -56,10 +60,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'honza/vim-snippets'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'Quramy/tsuquyomi'
 
 " Git "
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'idanarye/vim-merginal'
 Plugin 'gregsexton/gitv'
 

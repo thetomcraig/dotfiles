@@ -25,10 +25,9 @@ export TMUXINATOR_CONFIG=$dotfiles_location/tmux/tmuxinator/projects
 
 # Load the theme!
 iterm_profile_name=$(osascript $dotfiles_location/get_iterm_profile_name.scpt)
-if [ ! -f ${theme_file_name} ]; then
-  default_theme_file_name="${tmux_dotfiles_location}/color_definitions/default.sh"
-  source ${default_theme_file_name}
-else
-  theme_file_name="${tmux_dotfiles_location}/color_definitions/${iterm_profile_name}.sh"
-  source ${theme_file_name}
+tmux_color_file="${tmux_dotfiles_location}/color_definitions/${iterm_profile_name}.sh"
+if ! $(ls $tmux_color_file); then
+  tmux_color_file="${tmux_dotfiles_location}/color_definitions/default.sh"
 fi
+echo $tmux_color_file
+source $tmux_color_file

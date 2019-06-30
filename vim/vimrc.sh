@@ -10,6 +10,7 @@ au BufReadPost vimrc.sh set ft=vim.rc
 """"""""
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
+set scrolloff=20                            "Center the cusrsor"
 set incsearch                               "highlight while typing search
 set hlsearch                                "highlight all search results
 set number                                  "show line numbers
@@ -47,7 +48,7 @@ nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
 nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
-nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose<CR>
+nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
@@ -118,7 +119,7 @@ nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
 nmap <Space>w- :split<CR>
 nmap <Space>wd :q<CR>
-nmap <Space>ww :ChooseWin<CR>
+"nmap <Space>w :ChooseWin<CR>
 let i = 1
 while i <= 9
     execute 'nnoremap <Space>' . i . ' :' . i . 'wincmd w<CR>'
@@ -179,23 +180,6 @@ map <C-l> <C-w>l
 
 
 
-""""""""""
-"NERD Tree"
-""""""""""
-let g:NERDTreeDirArrowExpandable = '>'
-let g:NERDTreeDirArrowCollapsible = 'v'
-let NERDTreeIgnore = ['\.pyc$', '*.sw*']
-
-
-
-"""""""""""""""
-"NERD Commenter"
-"""""""""""""""
-let g:NERDSpaceDelims=1
-let g:NERDTreeQuitOnOpen=1
-
-
-
 """"""""""""
 "Neocomplete"
 """"""""""""
@@ -210,12 +194,6 @@ highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 
 
 
-""""""""""""
-"Easy motion"
-""""""""""""
-map <Space>jj <Plug>(easymotion-s)
-
-
 
 """""""""""""""""
 "ALE AND LINTING"
@@ -224,7 +202,7 @@ let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': [],
     \ 'markdown': ['prettier'],
-    \ 'python': ['flake8', 'isort'],
+    \ 'python': ['flake8', 'pylint'],
     \ 'sass': [],
     \ 'scss': [],
     \ 'sh': [],
@@ -246,6 +224,7 @@ let g:ale_fixers = {
 let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
 let g:javascript_prettier_options = '--write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
+let g:ale_python_pylint_options = '--py3k'
 
 
 
@@ -256,6 +235,7 @@ let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
 " Most are similar to zsh aliases
 nnoremap <space>g :Gstatus<CR>
 nnoremap <space>gpu :Dispatch! git push<CR>
+nnoremap <space>gpf :Dispatch! git push --force<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
 nnoremap <space>ga :Git add %:p<CR><CR>
@@ -265,6 +245,7 @@ nnoremap <space>gdd :Gdiff develop:%<CR>
 nnoremap <space>gD :DiffWithBranch develop<CR>
 
 nnoremap <Space>grd :Grebase -i develop<CR>
+nnoremap <Space>grc :Grebase --continue<CR>
 
 nnoremap <space>gl :Glog <CR>
 
@@ -276,7 +257,52 @@ nnoremap <Space>gv :Merginal<CR>
 
 nnoremap <space>gpr :PullRequestView develop<CR>
 
-"CUSTOM FUNCTIONS
+
+
+
+"""""""""""
+"Colors/UI"
+"""""""""""
+let g:airline_theme='xenomorph'
+
+let g:airline_section_b = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+"let g:airline_section_z = ''
+
+let g:vim_markdown_folding_disabled = 1
+
+let g:livedown_browser = "safari"
+
+set diffopt+=vertical
+
+
+
+""""""""""""""""""""""
+"MISC PLUGIN SETTINGS"
+""""""""""""""""""""""
+map <Space>jj <Plug>(easymotion-s)
+let g:UltiSnipsExpandTrigger="<C-j>"
+
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
+let NERDTreeIgnore = ['\.pyc$', '*.sw*']
+
+let g:NERDSpaceDelims=1
+let g:NERDTreeQuitOnOpen=1
+
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+ 
+let g:vimwiki_list = [{'path': $projects_root . '/tomcraigslist',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+
+
+
+""""""""""""""""""
+"CUSTOM FUNCTIONS"
+""""""""""""""""""
+
 let s:git_status_dictionary = {
             \ "A": "Added",
             \ "B": "Broken",
@@ -305,22 +331,7 @@ endfunction
 command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 
 
-
-"""""""""""
-"Colors/UI"
-"""""""""""
-let g:airline_theme='xenomorph'
-
-let g:airline_section_b = ''
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-"let g:airline_section_z = ''
-
-let g:vim_markdown_folding_disabled = 1
-
-let g:livedown_browser = "safari"
-
-set diffopt+=vertical
+nmap <space>nn :e $projects_root/tomcraigslist/index.md<CR>
 
 
 
@@ -339,7 +350,7 @@ if in_tmux == 1
   "WELKIN
   let match = match(session, "welkin")
   if match == 0
-    nnoremap <Space>nn :e /Users/tom/notes<CR>
+
   endif
 
   let environment_settings = "    TMUX SESSION: " . session
@@ -349,24 +360,14 @@ endif
 "Checks the profile name"
 "I have a colorscheme for each profile"
 let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
+execute "colorscheme " . theme
 let environment_settings = environment_settings . "    iTERM PROFILE: " . theme
-let match = match(theme, "xenomorph")
-if match == 0
-  colorscheme xenomorph
-endif
-let match = match(theme, "seoul256")
-if match == 0
-  colorscheme seoul256
-endif
 echo environment_settings
 
 
 
-
-
-
 """"""""""""""""""
-"Tabs and Spacing"
+"TABS AND SPACING"
 """"""""""""""""""
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 set shiftround
@@ -374,7 +375,6 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
-
-
-let g:UltiSnipsExpandTrigger="<C-j>"
-au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+set sw=2 
+set ts=2
+set sts=2

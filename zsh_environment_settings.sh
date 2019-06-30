@@ -9,17 +9,17 @@ if [[ $host == *"Darwin"* ]]; then
   alias rm="trash"
   alias cat="bat"
   alias diff="diff-so-fancy"
-fi
-if [[ $host == *"tcraig-m01"* ]]; then
-  source $dotfiles_location/pandorarc.sh
-  echo "  PANDORA ENVIRONMENT LOADED"
+
+  export projects_root="~/Dropbox/TomCraig/Projects"
 fi
 if [[ $host == *"lebowski"* ]]; then
   source $dotfiles_location/welkin/welkinrc.sh
+  export projects_root="~/dev/"
   echo "  WELKIN ENVIRONMENT LOADED"
 fi
 
 
+alias nn="vim $projects_root/tomcraigslist/index.md"
 
 #####################################
 # ENVIRONMENT SETTINGS (TMUX SESSION)

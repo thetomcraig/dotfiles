@@ -39,6 +39,8 @@ alias grm="git ls-files --deleted -z | xargs -0 git rm"
 alias gsu=gitPushAndSetMatchingUpstream
 # Start a pull request for the current branch
 alias gpr=gitpullrequest
+# List the 5 most recently used branches
+alias grb=git for-each-ref --sort=-committerdate --format='%(refname)' refs/heads  | head -5
 
 
 

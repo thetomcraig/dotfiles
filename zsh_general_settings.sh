@@ -7,7 +7,15 @@ export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
-export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_COMMAND="rg --files --ignore-file ${dotfiles_location}/welkin/ignore.sh"
+
+HISTSIZE=5000               #How many lines of history to keep in memory
+HISTFILE=~/.zsh_history     #Where to save history to disk
+SAVEHIST=5000               #Number of history entries to save to disk
+#HISTDUP=erase               #Erase duplicates in the history file
+setopt    appendhistory     #Append history to the history file (no overwriting)
+setopt    sharehistory      #Share history across terminals
+setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
 
 #########
@@ -20,7 +28,7 @@ alias c="clear "
 alias cpb="pwd | pbcopy"
 
 alias v="vim $dotfiles_location/vim/vimrc.sh"
-alias vu="vim $dotfiles_location/vundle_settings.sh"
+alias vu="vim $dotfiles_location/vim/vundle_settings.sh"
 alias dot="cd ${HOME}/Dotfiles"
 alias drop="cd ${HOME}/Dropbox/TomCraig"
 
@@ -85,3 +93,5 @@ promptToContinue() {
     esac
   done
 }
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
