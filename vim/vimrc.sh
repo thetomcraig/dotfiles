@@ -10,7 +10,6 @@ au BufReadPost vimrc.sh set ft=vim.rc
 """"""""
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
-set scrolloff=20                            "Center the cusrsor"
 set incsearch                               "highlight while typing search
 set hlsearch                                "highlight all search results
 set number                                  "show line numbers
@@ -209,7 +208,7 @@ let g:ale_linters = {
     \ 'vim': ['vint'],
 \ }
 let g:ale_fixers = {
-    \ 'html': [],
+    \ 'html': ['prettier'],
     \ 'javascript': [],
     \ 'json': ['jsonlint'],
     \ 'less': [],
@@ -253,7 +252,7 @@ nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
 
-nnoremap <Space>gv :Merginal<CR>
+" nnoremap <Space>gv :Merginal<CR>
 
 nnoremap <space>gpr :PullRequestView develop<CR>
 
@@ -378,3 +377,14 @@ set expandtab
 set sw=2 
 set ts=2
 set sts=2
+
+function! s:changebranch(branch)
+    execute 'Git checkout' . a:branch
+    call feedkeys("i")
+endfunction
+
+command! -bang Gbranch call fzf#run({
+            \ 'source': 'git branch --no-color | grep -v "^\* " ',
+            \ 'sink': function('s:changebranch')
+            \ })
+nnoremap <Space>gv :Gbranch<CR>
