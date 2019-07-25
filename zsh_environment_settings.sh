@@ -15,6 +15,7 @@ fi
 if [[ $host == *"lebowski"* ]]; then
   source $dotfiles_location/welkin/welkinrc.sh
   export projects_root="~/dev/"
+  # export dropdbs="psql -l | grep 'unittest' | awk '{split($0, a,"|"); print a[1]}' | while read name; do dropdb $name; done"
   echo "  WELKIN ENVIRONMENT LOADED"
 fi
 
