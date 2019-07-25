@@ -252,7 +252,7 @@ nnoremap <Space>gb :Gblame<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gw :Gwrite<CR><CR>
 
-" nnoremap <Space>gv :Merginal<CR>
+nnoremap <Space>gv :Merginal<CR>
 
 nnoremap <space>gpr :PullRequestView develop<CR>
 
@@ -377,14 +377,3 @@ set expandtab
 set sw=2 
 set ts=2
 set sts=2
-
-function! s:changebranch(branch)
-    execute 'Git checkout' . a:branch
-    call feedkeys("i")
-endfunction
-
-command! -bang Gbranch call fzf#run({
-            \ 'source': 'git branch --no-color | grep -v "^\* " ',
-            \ 'sink': function('s:changebranch')
-            \ })
-nnoremap <Space>gv :Gbranch<CR>
