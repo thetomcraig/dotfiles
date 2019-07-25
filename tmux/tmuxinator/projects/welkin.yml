@@ -5,32 +5,38 @@ windows:
   - server: 
       layout: tiled
       panes:  
-        - echidna:
+        - wb-client:
           - enter_welkin_env
-          - cd echidna/shared-ng2
-          - yarn build welkin
-          - cd dist/welkin
-          - yarn link
-        - client:
+          - cd workbench
+          - read && yarn start-client
+        - cp-client:
           - enter_welkin_env
           - cd dugong
           - yarn link welkin
           - read && yarn start-client
-        - workbench:
+        - wb-server:
           - enter_welkin_env
           - cd workbench
-          - read && yarn start
-        - server:
+          - read && yarn start-server
+        - cp-server:
           - enter_welkin_env
           - cd dugong
           - read && yarn start-server
   - shell: 
     - enter_welkin_env 
     - welkin shell
+  - editor: vim
   - prod shell: 
     - enter_welkin_env 
     - read && welkin shell prod
-  - editor: vim
   - root:
-    - enter_welkin_env
-    - pg_ctl start -D /usr/local/var/postgres
+      layout: tiled
+      panes:
+        - zsh:
+          - enter_welkin_env
+          - cd echidna/shared-ng2
+          - yarn build welkin
+          - cd dist/welkin
+          - yarn link
+          - enter_welkin_env
+          - pg_ctl start -D /usr/local/var/postgres
