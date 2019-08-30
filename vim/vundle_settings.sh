@@ -33,7 +33,6 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'simeji/winresizer'
 Plugin 'lfv89/vim-interestingwords'
 Plugin 'gcmt/taboo.vim'
-Plugin 'fholgado/minibufexpl.vim'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
