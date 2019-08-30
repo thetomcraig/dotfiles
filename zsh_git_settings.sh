@@ -20,11 +20,12 @@ alias gD="git diff develop..${getLocalBranchName}"
 
 alias grd="git rebase -i develop"
 alias grc="git rebase --continue"
+alias gra="git rebase --abort"
 # Pretty looking git log
 alias gl="git log --oneline --all --graph --decorate"
 
 alias gba="git branch -a"
-alias gv="git branch -vv"
+alias gvv="git branch -vv"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
@@ -44,15 +45,30 @@ alias grb=git for-each-ref --sort=-committerdate --format='%(refname)' refs/head
 
 
 
-#################
-# SMALL FUNCTIONS 
-#################
+##################
+# CUSTOM FUNCTIONS 
+##################
 getLocalBranchName() {
   echo $(git for-each-ref --format='%(refname:short)' $(git symbolic-ref -q HEAD))
 
 }
+
 getRemoteBranchName() {
   echo $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
+}
+
+# Input: URL that looks like: "PROJECT-763: Add dropdown to homepage"
+# Output: string that looks like: "PROJECT-763_add_dropdown_to"
+constructBranchName() {
+  local JIRA_NUMBER=$(echo "${1}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
+
+  local WORDS=($(echo "${1}"| grep -oE "([A-z]+)"))
+  local FIRST_THREE_WORDS="${WORDS[@]:1:3}"
+  local FIRST_THREE_WORDS_NO_SPACES=$(echo "${FIRST_THREE_WORDS}" | sed 's/\ /_/g')
+  local FIRST_THREE_WORDS_LOWER=$(echo "${FIRST_THREE_WORDS_NO_SPACES}" | tr '[:upper:]' '[:lower:]')
+  local BRANCH_NAME="${JIRA_NUMBER}_${FIRST_THREE_WORDS_LOWER}"
+
+  echo "${BRANCH_NAME}"
 }
 
 
@@ -80,22 +96,18 @@ getCurrentJiraNumber() {
   echo "${JIRA_NUMBER}"
 }
 
-
-
-##################
-# CUSTOM FUNCTIONS 
-##################
-# Helper function - make the name for a new feature branch
-# Input: URL that looks like: "PROJECT-763: Add dropdown to homepage"
-# Output: string that looks like: "PROJECT-763_add_dropdown_to"
-constructBranchName() {
-  local JIRA_NUMBER=$(echo "${1}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
-
-  local WORDS=($(echo "${1}"| grep -oE "([A-z]+)"))
-  local FIRST_THREE_WORDS="${WORDS[@]:1:3}"
-  local FIRST_THREE_WORDS_NO_SPACES=$(echo "${FIRST_THREE_WORDS}" | sed 's/\ /_/g')
-  local FIRST_THREE_WORDS_LOWER=$(echo "${FIRST_THREE_WORDS_NO_SPACES}" | tr '[:upper:]' '[:lower:]')
-  local BRANCH_NAME="${JIRA_NUMBER}_${FIRST_THREE_WORDS_LOWER}"
-
-  echo "${BRANCH_NAME}"
+alias gv=fco_preview
+fco_preview() {
+  local tags branches target
+  branches=$(
+    git --no-pager branch --sort=-committerdate \
+      --format="%(if)%(HEAD)%(then)%(else)%(if:equals=HEAD)%(refname:strip=3)%(then)%(else)%1B[0;34;1mbranch%09%1B[m%(refname:short)%(end)%(end)" \
+    | sed '/^$/d') || return
+  tags=$(
+    git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
+  target=$(
+    (echo "$branches"; echo "$tags") |
+    fzf --no-hscroll --no-multi -n 2 \
+        --ansi --preview="git --no-pager log -150 --pretty=format:%s '..{2}'") || return
+  git checkout $(awk '{print $2}' <<<"$target" )
 }

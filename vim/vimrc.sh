@@ -10,7 +10,6 @@ au BufReadPost vimrc.sh set ft=vim.rc
 """"""""
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
-set scrolloff=20                            "Center the cusrsor"
 set incsearch                               "highlight while typing search
 set hlsearch                                "highlight all search results
 set number                                  "show line numbers
@@ -41,14 +40,14 @@ nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
-nnoremap <Space>af :ALEFix<CR>
+nnoremap <Space>af :ALEFix \| write<CR>
 nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
 nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
-nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose<CR>
+nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose \| GstatusClose<CR>
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
@@ -133,7 +132,7 @@ endwhile
 """""""""""""
 " Grepper settings
 " By default, ignore alembics, tests, etc
-nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/ignore.sh" 
+nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/rg_ignore.sh" 
 " This will not ignore anything
 nmap <Space>ag :GrepperRg 
 
@@ -201,28 +200,30 @@ highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': [],
+    \ 'typescript': ['prettier'],
     \ 'markdown': ['prettier'],
     \ 'python': ['flake8', 'pylint'],
     \ 'sass': [],
-    \ 'scss': [],
+    \ 'scss': ['prettier'],
     \ 'sh': [],
     \ 'vim': ['vint'],
 \ }
 let g:ale_fixers = {
-    \ 'html': [],
+    \ 'html': ['prettier'],
     \ 'javascript': [],
+    \ 'typescript': ['prettier'],
     \ 'json': ['jsonlint'],
     \ 'less': [],
     \ 'markdown': ['prettier'],
     \ 'python': ['isort', 'autopep8'],
     \ 'sass': [],
-    \ 'scss': [],
+    \ 'scss': ['prettier'],
     \ 'sh': [],
     \ 'vim': ['vint'],
 \ }
 
 let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
-let g:javascript_prettier_options = '--write --prose-wrap always'
+let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
 let g:ale_python_pylint_options = '--py3k'
 
@@ -263,7 +264,6 @@ nnoremap <space>gpr :PullRequestView develop<CR>
 """""""""""
 "Colors/UI"
 """""""""""
-let g:airline_theme='xenomorph'
 
 let g:airline_section_b = ''
 let g:airline_section_x = ''
@@ -354,15 +354,31 @@ if in_tmux == 1
   endif
 
   let environment_settings = "    TMUX SESSION: " . session
+  echo environment_settings
 endif
 
 "iTERM2"
 "Checks the profile name"
 "I have a colorscheme for each profile"
 let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
-execute "colorscheme " . theme
-let environment_settings = environment_settings . "    iTERM PROFILE: " . theme
-echo environment_settings
+"XENOMORPH
+let match = match(theme, "xenomorph")
+if match == 0
+  execute "colorscheme " . theme
+  let g:airline_theme='xenomorph'
+endif
+"SEOUL256
+let match = match(theme, "seoul256")
+if match == 0
+  execute "colorscheme " . theme
+  let g:airline_theme='zenburn'
+endif
+"SEOUL256-LIGHT
+let match = match(theme, "seoul256-light")
+if match == 0
+  execute "colorscheme " . theme
+  let g:airline_theme='zenburn'
+endif
 
 
 
@@ -375,6 +391,26 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
-set sw=2 
-set ts=2
-set sts=2
+set shiftwidth=2 
+set tabstop=2
+set softtabstop=2
+nnoremap t1 :tabfirst<CR>
+nnoremap t9 :tablast<CR>
+nnoremap tn :tabnext<CR>
+nnoremap to :tabnext<CR>
+nnoremap tp :tabprev<CR>
+nnoremap ti :tabprev<CR>
+nnoremap ty :tabedit<CR>
+nnoremap td :tabclose<CR>
+nnoremap t. :tabmove +1<CR>
+nnoremap t, :tabmove -1<CR>
+
+function! s:close_gstatus()
+	for l:winnr in range(1, winnr('$'))
+		if !empty(getwinvar(l:winnr, 'fugitive_status'))
+			execute l:winnr.'close'
+		endif
+	endfor
+endfunction
+command! GstatusClose call s:close_gstatus()
+
