@@ -4327,7 +4327,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>0 407 796 486 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 720 877 0 0 1440 877 </string>
+	<string>0 385 650 492 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 385 650 492 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -6033,7 +6033,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>569579646.84264898</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>10</integer>
+	<integer>12</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
