@@ -1,27 +1,25 @@
 #!/bin/bash
-export TMUX_LIGHT_SEGMENT_FG="#d9d9d9"
-export TMUX_LIGHT_SEGMENT_BG="#4a4a4a"
 
-# Windows
-export TMUX_CURRENT_WINDOW_FG="#606060"
-export TMUX_CURRENT_WINDOW_BG="#97bcbc"
-export TMUX_CURRENT_WINDOW_FG_ZOOMED="$TMUX_LIGHT_SEGMENT_FG"
-export TMUX_CURRENT_WINDOW_BG_ZOOMED="$TMUX_LIGHT_SEGMENT_BG"
+export FOREGROUND="#d9d9d9"
+export BACKGROUND="#4a4a4a"
+export BOLD="#e9e9e9"
+export SELECTION="#007172"
+export DARKER_SELECTION="#"
 
-export TMUX_WINDOW_FG="#d9d9d9"
-export TMUX_WINDOW_BG="#4a4a4a"
+export NORMAL_BLACK="#606060"
+export BRIGHT_BLACK="#757575"
+export NORMAL_RED="#df9a98"
+export BRIGHT_RED="#e07798"
+export NORMAL_GREEN="#719672"
+export BRIGHT_GREEN="#97bb98"
+export NORMAL_YELLOW="#e0bb71"
+export BRIGHT_YELLOW="#ffdd98"
+export NORMAL_BLUE="#96bbdc"
+export BRIGHT_BLUE="#badcfb"
+export NORMAL_MAGENTA="#dfbdbc"
+export BRIGHT_MAGENTA="#ffbebc"
+export NORMAL_CYAN="#97bcbc"
+export BRIGHT_CYAN="#96ddde"
+export NORMAL_WHITE="#d8d8d8"
+export BIRGHT_WHITE="#e9e9e9"
 
-# Panes
-export TMUX_PANE_ACTIVE_BORDER_FG="#e0bb71"
-export TMUX_PANE_BORDER_FG="#e0bb71"
-export TMUX_PANE_BG="#4a4a4a"
-
-# Messages
-export TMUX_MESSAGE_FG="#d9d9d9"
-export TMUX_MESSAGE_BG="#4a4a4a"
-export TMUX_MESSAGE_COMMAND_FG="#d9d9d9"
-export TMUX_MESSAGE_COMMAND_BG="#4a4a4a"
-
-# Dynamic segments
-export TMUX_DARK_SEGMENT_FG="#9a1200"
-export TMUX_DARK_SEGMENT_BG="#006f00"

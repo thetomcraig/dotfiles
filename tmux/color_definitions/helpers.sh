@@ -2,9 +2,7 @@
 
 load_colors() {
   THEME_NAME=$1
-  echo $THEME_NAME
-  echo "in function"
-  echo "$tmux_dotfiles_location/color_definitions/$THEME_NAME.sh"
+  echo "LOADING: $tmux_dotfiles_location/color_definitions/$THEME_NAME.sh"
   source $tmux_dotfiles_location/color_definitions/$THEME_NAME.sh
 
   export TMUX_LIGHT_SEGMENT_FG="$DARKER_SELECTION"
