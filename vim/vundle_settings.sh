@@ -28,9 +28,13 @@ Plugin 'junegunn/seoul256.vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'thetomcraig/xenomorph.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'simeji/winresizer'
 Plugin 'gcmt/taboo.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+Plugin 'junegunn/rainbow_parentheses.vim'
 
 " Extra Functionality "
 Plugin 'tpope/vim-repeat'
@@ -40,6 +44,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-dispatch'
 Plugin 'kshenoy/vim-signature'
 Plugin 'mbbill/undotree'
+" Plugin 'wellle/tmux-complete.vim'
+Plugin 'junegunn/indentLine'
 
 " Writing Plaintext and Markdown "
 Plugin 'shime/vim-livedown'
@@ -63,7 +69,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
 Plugin 'idanarye/vim-merginal'
-Plugin 'gregsexton/gitv'
+Plugin 'junegunn/gv.vim'
 
 " Syntax "
 Plugin 'plasticboy/vim-markdown'
@@ -76,6 +82,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'lepture/vim-jinja'
+Plugin 'Valloric/MatchTagAlways'
 
 
 " All of your Plugins must be added before the following line "
