@@ -1,4 +1,4 @@
-# /Users/tcraig/Dotfiles/tmuxinator/projects/orcus.yml
+# ${HOME}/Dotfiles/tmux/tmuxinator/projects/HERON.yml
 
 name: HERON
 root: ~/.projects_root/HERON
@@ -12,9 +12,12 @@ windows:
       layout: main-vertical
       panes:
         - python manage.py runserver
-  - editor: vim
+  - editor: 
+      layout: main-vertical
+      panes:
+        - editor:
+          - vim
   - zsh:
       layout: main-vertical
       panes:
         - clear
-        export EVENT_NOKQUEUE=1
