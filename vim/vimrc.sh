@@ -48,6 +48,8 @@ nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
 nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
 nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose \| GstatusClose<CR>
+map oo o<C-c>I<Tab><C-c>A
+map OO o<C-c>I<C-c>hhxx<C-c>A
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
@@ -293,8 +295,11 @@ let g:NERDTreeQuitOnOpen=1
 
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
  
-let g:vimwiki_list = [{'path': $projects_root . '/tomcraigslist',
+let wiki_root = $projects_root . '/tomcraigslist'
+let g:vimwiki_list = [{'path': wiki_root,
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+nmap <Space>wr :exec "tabedit ".wiki_root."/index.md"<CR> :lcd %:p:h<CR> :Rg<CR>
+nmap <Space>wg :exec "tabedit ".wiki_root."/index.md"<CR> :lcd %:p:h<CR> :GrepperRg 
 
 
 
