@@ -27,9 +27,26 @@ set shell=/bin/bash
 set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
 
 
-"""""""""""""""""""""""""""""""""
+
+"""""""""""""""
+"Tab shortcuts"
+"""""""""""""""
+nnoremap t1 :tabfirst<CR>
+nnoremap t9 :tablast<CR>
+nnoremap tn :tabnext<CR>
+nnoremap to :tabnext<CR>
+nnoremap tp :tabprev<CR>
+nnoremap ti :tabprev<CR>
+nnoremap ty :tabedit<CR>
+nnoremap td :tabclose<CR>
+nnoremap t. :tabmove +1<CR>
+nnoremap t, :tabmove -1<CR>
+
+
+
+""""""""""""""""""""""""""""""""""
 "General Space (Leader) shortcuts"
-"""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""
 let mapleader=" "
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
@@ -40,9 +57,6 @@ nnoremap <Space>ni :set nolist<CR>
 nnoremap <Space>o :on<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
-nnoremap <Space>af :ALEFix \| write<CR>
-nnoremap <Space>ad :ALEDisable<CR>
-nnoremap <Space>ae :ALEEnable<CR>
 nnoremap <Space>t <C-]><CR>
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
@@ -134,7 +148,7 @@ endwhile
 """""""""""""
 " Grepper settings
 " By default, ignore alembics, tests, etc
-nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/welkin/rg_ignore.sh" 
+nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/rg_ignore.sh" 
 " This will not ignore anything
 nmap <Space>ag :GrepperRg 
 
@@ -229,6 +243,17 @@ let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap alwa
 let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
 let g:ale_python_pylint_options = '--py3k'
 
+nnoremap <Space>ad :ALEDisable<CR>
+nnoremap <Space>ae :ALEEnable<CR>
+nnoremap <Space>af :ALEFix \| write<CR>
+nnoremap <Space>afg :call LintAndCommit()<CR>
+function! LintAndCommit()
+  ALEFix
+  sleep 500ms
+  write
+  Gwrite
+  Gcommit -m "Lint file"
+endfunction
 
 
 
@@ -236,6 +261,15 @@ let g:ale_python_pylint_options = '--py3k'
 "FUGITVIE ANG GIT"
 """"""""""""""""""
 " Most are similar to zsh aliases
+function! s:close_gstatus()
+	for l:winnr in range(1, winnr('$'))
+		if !empty(getwinvar(l:winnr, 'fugitive_status'))
+			execute l:winnr.'close'
+		endif
+	endfor
+endfunction
+command! GstatusClose call s:close_gstatus()
+
 nnoremap <space>g :Gstatus<CR>
 nnoremap <space>gpu :Dispatch! git push<CR>
 nnoremap <space>gpf :Dispatch! git push --force<CR>
@@ -262,11 +296,9 @@ nnoremap <space>gpr :PullRequestView develop<CR>
 
 
 
-
 """""""""""
 "Colors/UI"
 """""""""""
-
 let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
@@ -307,7 +339,6 @@ nmap <Space>wg :exec "tabedit ".wiki_root."/index.md"<CR> :lcd %:p:h<CR> :Greppe
 """"""""""""""""""
 "CUSTOM FUNCTIONS"
 """"""""""""""""""
-
 let s:git_status_dictionary = {
             \ "A": "Added",
             \ "B": "Broken",
@@ -351,13 +382,6 @@ let environment_settings = ""
 let in_tmux = system("[ -z ${TMUX} ]; echo $?")
 if in_tmux == 1
   let session = system("tmux display-message -p '#S'")
-         
-  "WELKIN
-  let match = match(session, "welkin")
-  if match == 0
-
-  endif
-
   let environment_settings = "    TMUX SESSION: " . session
   echo environment_settings
 endif
@@ -399,23 +423,3 @@ set expandtab
 set shiftwidth=2 
 set tabstop=2
 set softtabstop=2
-nnoremap t1 :tabfirst<CR>
-nnoremap t9 :tablast<CR>
-nnoremap tn :tabnext<CR>
-nnoremap to :tabnext<CR>
-nnoremap tp :tabprev<CR>
-nnoremap ti :tabprev<CR>
-nnoremap ty :tabedit<CR>
-nnoremap td :tabclose<CR>
-nnoremap t. :tabmove +1<CR>
-nnoremap t, :tabmove -1<CR>
-
-function! s:close_gstatus()
-	for l:winnr in range(1, winnr('$'))
-		if !empty(getwinvar(l:winnr, 'fugitive_status'))
-			execute l:winnr.'close'
-		endif
-	endfor
-endfunction
-command! GstatusClose call s:close_gstatus()
-
