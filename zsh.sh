@@ -4,6 +4,11 @@
 
 export dotfiles_location="${HOME}/Dotfiles"
 
+# ENVIRONMENT SETTINGS
+echo "LOADING ENVIRONMENT SETTINGS..."
+source $dotfiles_location/zsh_environment_settings.sh
+echoGreen "OK"
+
 echo "LOADING GENERAL SETTINGS..."
 source $dotfiles_location/zsh_general_settings.sh
 echoGreen "OK"
@@ -18,11 +23,6 @@ echoGreen "OK"
 
 echo "LOADING TMUX SETTINGS..."
 source $dotfiles_location/tmux/zsh_tmux_settings.sh
-echoGreen "OK"
-
-# ENVIRONMENT SETTINGS
-echo "LOADING ENVIRONMENT SETTINGS..."
-source $dotfiles_location/zsh_environment_settings.sh
 echoGreen "OK"
 
 # PYTHON ALISES
