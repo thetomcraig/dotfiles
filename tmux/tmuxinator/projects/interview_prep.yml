@@ -1,5 +1,5 @@
-name: Interviewing-Resources
-root: ~/.projects_root/Interviewing-Resources
+name: interview_prep
+root: ~/.projects_root/interview_prep
 
 windows:
   - editor: vim

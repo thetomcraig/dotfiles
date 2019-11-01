@@ -1,0 +1,16 @@
+# /Users/tom/Dotfiles/tmux/tmuxinator/projects/python_scratch.yml
+
+name: python_scratch
+root: /Users/tom/.projects_root/python_scratch
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - clear
+  - editor: 
+      layout: main-vertical
+      panes:
+        - editor:
+          - vim
+

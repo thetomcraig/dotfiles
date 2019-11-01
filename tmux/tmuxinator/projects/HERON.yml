@@ -11,7 +11,7 @@ windows:
   - server:
       layout: main-vertical
       panes:
-        - python manage.py runserver
+        - cd heron && python manage.py runserver
   - editor: 
       layout: main-vertical
       panes:
