@@ -7,7 +7,7 @@ export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
-export FZF_DEFAULT_COMMAND="rg --files --ignore-file ${dotfiles_location}/welkin/fzf_ignore.sh"
+export FZF_DEFAULT_COMMAND="rg --files"
 
 HISTSIZE=5000               #How many lines of history to keep in memory
 HISTFILE=~/.zsh_history     #Where to save history to disk
@@ -27,10 +27,13 @@ alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
 
+alias dot="cd ${dotfiles_location}"
 alias v="vim $dotfiles_location/vim/vimrc.sh"
 alias vu="vim $dotfiles_location/vim/vundle_settings.sh"
-alias dot="cd ${HOME}/Dotfiles"
-alias drop="cd ${HOME}/Dropbox/TomCraig"
+alias db="cd ${HOME}/Dropbox/TomCraig"
+alias wiki="cd ${wiki_root} && vim README.md"
+alias notes="cd ${HOME}/Dropbox/TomCraig/Notes && vim README.md"
+alias proj="cd ${projects_root}"
 
 #t for tree
 alias t=mytree
@@ -93,6 +96,10 @@ promptToContinue() {
         * ) echo "Please answer y or n for yes or no.";;
     esac
   done
+}
+
+ripgrep_search() {
+  rg --files-with-matches --no-messages "${1}" . | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '${1}' || rg --ignore-case --pretty --context 10 '${1}' {}"
 }
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
