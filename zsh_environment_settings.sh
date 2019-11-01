@@ -10,7 +10,8 @@ if [[ $host == *"Darwin"* ]]; then
   alias cat="bat"
   alias diff="diff-so-fancy"
 
-  export projects_root="~/Dropbox/TomCraig/Projects"
+  export dropbox_root="~/Dropbox/TomCraig"
+  export projects_root="$dropbox_root/Projects"
 fi
 if [[ $host == *"lebowski"* ]]; then
   source $dotfiles_location/welkin/welkinrc.sh
@@ -20,7 +21,6 @@ if [[ $host == *"lebowski"* ]]; then
 fi
 
 
-alias nn="vim $projects_root/tomcraigslist/index.md"
 
 #####################################
 # ENVIRONMENT SETTINGS (TMUX SESSION)
@@ -29,3 +29,5 @@ if [ -n "$TMUX" ]; then
   tmux_session_name=$(tmux display-message -p '#S')
   source $dotfiles_location/tmux/project_settings.sh ${tmux_session_name}
 fi
+
+export wiki_root="$projects_root/tomcraigslist"
