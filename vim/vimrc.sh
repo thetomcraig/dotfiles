@@ -5,9 +5,12 @@ exec "source" $dotfiles_location . "/vim/vundle_settings.sh"
 " vim: set syntax=rc "
 au BufReadPost vimrc.sh set ft=vim.rc
 
+
+
 """"""""
 "General"
 """"""""
+set nocompatible
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
 set incsearch                               "highlight while typing search
@@ -24,7 +27,47 @@ set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists
 set clipboard=unnamed
 set shell=/bin/bash
+
+
+
+"""""""""""""""""""""
+"ENVIRONMENT SETTINGS"
+"""""""""""""""""""""
+echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
 set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
+let environment_settings = ""
+"TMUX"
+"1 - yes"
+"0 - no"
+let in_tmux = system("[ -z ${TMUX} ]; echo $?")
+if in_tmux == 1
+  let session = system("tmux display-message -p '#S'")
+  let environment_settings = "    TMUX SESSION: " . session
+  echo environment_settings
+endif
+
+"iTERM2"
+"Checks the profile name"
+"I have a colorscheme for each profile"
+let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
+"XENOMORPH
+let match = match(theme, "xenomorph")
+if match == 0
+  execute "colorscheme " . theme
+  let g:airline_theme='xenomorph'
+endif
+"SEOUL256
+let match = match(theme, "seoul256")
+if match == 0
+  execute "colorscheme " . theme
+  let g:airline_theme='zenburn'
+endif
+"SEOUL256-LIGHT
+let match = match(theme, "seoul256-light")
+if match == 0
+  execute "colorscheme " . theme
+  let g:airline_theme='zenburn'
+endif
 
 
 
@@ -52,18 +95,23 @@ nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
-nnoremap <Space>iv :set list<CR>
-nnoremap <Space>ni :set nolist<CR>
-nnoremap <Space>o :on<CR>
+nnoremap <Space>i :set list!<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
+nnoremap <Space>fo :! open %<CR>
+" Jump to tag
 nnoremap <Space>t <C-]><CR>
+" Indent, then insert
+map <Space>o o<C-c>v>A
+" UNindent, then insert
+map <Space>O o<C-c>v<A
+
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
+" Insert the current date
 nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
+" Close all extraneous splits
 nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose \| GstatusClose<CR>
-map oo o<C-c>I<Tab><C-c>A
-map OO o<C-c>I<C-c>hhxx<C-c>A
 
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
@@ -148,9 +196,10 @@ endwhile
 """""""""""""
 " Grepper settings
 " By default, ignore alembics, tests, etc
-nmap <Space>gg :GrepperRg --ignore-file "$dotfiles_location/rg_ignore.sh" 
+nmap <Space>gg :GrepperRg 
 " This will not ignore anything
 nmap <Space>ag :GrepperRg 
+nmap <Space>bg :Grepper-buffer
 
 
 
@@ -172,14 +221,14 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
- noremap <space>ff :FZF<CR>
- noremap <space>rr :Rg<CR>
- noremap <space>bb :Buffers<CR>
- noremap <space>mm :Commits<CR>
- noremap <space>hh :History<CR>
- noremap <space>h/ :History/<CR>
- noremap <space>ll :Lines<CR>
- noremap <space>bl :BLines<CR>
+noremap <space>ff :FZF<CR>
+noremap <space>rr :Rg<CR>
+noremap <space>bb :Buffers<CR>
+noremap <space>mm :Commits<CR>
+noremap <space>hh :History<CR>
+noremap <space>h/ :History/<CR>
+noremap <space>ll :Lines<CR>
+noremap <space>bl :BLines<CR>
 
 
 
@@ -213,12 +262,22 @@ highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 """""""""""""""""
 "ALE AND LINTING"
 """""""""""""""""
+let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
+let g:ale_python_autopep8_options = '--global-config setup.cfg --aggressive --aggressive'
+
+function! FixWithRemarkLint(test_arg)
+  set autoreload
+  let remark_cmd="! remark " . expand('%:p') . " -o"
+  silent execute remark_cmd
+endfunction
+
 let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': [],
     \ 'typescript': ['prettier'],
-    \ 'markdown': ['prettier'],
-    \ 'python': ['flake8', 'pylint'],
+    \ 'markdown': ['remark-lint'],
+    \ 'vimwiki': ['remark-lint'],
+    \ 'python': ['flake8'],
     \ 'sass': [],
     \ 'scss': ['prettier'],
     \ 'sh': [],
@@ -230,7 +289,8 @@ let g:ale_fixers = {
     \ 'typescript': ['prettier'],
     \ 'json': ['jsonlint'],
     \ 'less': [],
-    \ 'markdown': ['prettier'],
+    \ 'markdown': ['FixWithRemarkLint' ],
+    \ 'vimwiki': ['FixWithRemarkLint' ],
     \ 'python': ['isort', 'autopep8'],
     \ 'sass': [],
     \ 'scss': ['prettier'],
@@ -238,14 +298,9 @@ let g:ale_fixers = {
     \ 'vim': ['vint'],
 \ }
 
-let g:ale_python_isort_options = '-skip-globs=alembics -m3 '
-let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
-let g:ale_python_autopep8_options = '--aggressive --aggressive --indent-size=2'
-let g:ale_python_pylint_options = '--py3k'
-
 nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
-nnoremap <Space>af :ALEFix \| write<CR>
+nnoremap <Space>af :ALEFix<CR>
 nnoremap <Space>afg :call LintAndCommit()<CR>
 function! LintAndCommit()
   ALEFix
@@ -304,35 +359,9 @@ let g:airline_section_x = ''
 let g:airline_section_y = ''
 "let g:airline_section_z = ''
 
-let g:vim_markdown_folding_disabled = 1
-
 let g:livedown_browser = "safari"
 
 set diffopt+=vertical
-
-
-
-""""""""""""""""""""""
-"MISC PLUGIN SETTINGS"
-""""""""""""""""""""""
-map <Space>jj <Plug>(easymotion-s)
-let g:UltiSnipsExpandTrigger="<C-j>"
-
-let g:NERDTreeDirArrowExpandable = '>'
-let g:NERDTreeDirArrowCollapsible = 'v'
-let NERDTreeIgnore = ['\.pyc$', '*.sw*']
-
-let g:NERDSpaceDelims=1
-let g:NERDTreeQuitOnOpen=1
-
-au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
- 
-let wiki_root = $projects_root . '/tomcraigslist'
-let g:vimwiki_list = [{'path': wiki_root,
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-nmap <Space>wr :exec "tabedit ".wiki_root."/index.md"<CR> :lcd %:p:h<CR> :Rg<CR>
-nmap <Space>wg :exec "tabedit ".wiki_root."/index.md"<CR> :lcd %:p:h<CR> :GrepperRg 
-
 
 
 
@@ -367,47 +396,32 @@ endfunction
 command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 
 
-nmap <space>nn :e $projects_root/tomcraigslist/index.md<CR>
+
+"""""""""
+"VIMWIKI"
+"""""""""
+let g:vimwiki_list = [
+                      \{'path': $dropbox_root . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
+                      \{'path': $wiki_root, 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
+                      \{'path': $projects_root . '/interview_prep','index': 'README',  'syntax': 'markdown', 'ext': '.md'}
+                     \]
+let g:vimwiki_dir_link = 'README'
+let g:vimwiki_hl_headers = 1
 
 
 
-"""""""""""""""""""""
-"ENVIRONMENT SETTINGS"
-"""""""""""""""""""""
-echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
-let environment_settings = ""
-"TMUX"
-"1 - yes"
-"0 - no"
-let in_tmux = system("[ -z ${TMUX} ]; echo $?")
-if in_tmux == 1
-  let session = system("tmux display-message -p '#S'")
-  let environment_settings = "    TMUX SESSION: " . session
-  echo environment_settings
-endif
+""""""""""""""""""""""
+"MISC PLUGIN SETTINGS"
+""""""""""""""""""""""
+map <Space>jj <Plug>(easymotion-s)
+let g:UltiSnipsExpandTrigger="<C-j>"
 
-"iTERM2"
-"Checks the profile name"
-"I have a colorscheme for each profile"
-let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
-"XENOMORPH
-let match = match(theme, "xenomorph")
-if match == 0
-  execute "colorscheme " . theme
-  let g:airline_theme='xenomorph'
-endif
-"SEOUL256
-let match = match(theme, "seoul256")
-if match == 0
-  execute "colorscheme " . theme
-  let g:airline_theme='zenburn'
-endif
-"SEOUL256-LIGHT
-let match = match(theme, "seoul256-light")
-if match == 0
-  execute "colorscheme " . theme
-  let g:airline_theme='zenburn'
-endif
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
+let NERDTreeIgnore = ['\.pyc$', '*.sw*']
+
+let g:NERDSpaceDelims=1
+let g:NERDTreeQuitOnOpen=1
 
 
 
