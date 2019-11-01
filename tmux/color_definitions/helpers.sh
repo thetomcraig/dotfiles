@@ -2,6 +2,10 @@
 
 load_colors() {
   THEME_NAME=$1
+
+  if [ -z "$THEME_NAME" ]; then
+    THEME_NAME="default"
+  fi
   echo "LOADING: $tmux_dotfiles_location/color_definitions/$THEME_NAME.sh"
   source $tmux_dotfiles_location/color_definitions/$THEME_NAME.sh
 
