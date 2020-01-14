@@ -1,8 +1,8 @@
 #!/bin/sh
 
-##########
+###########
 # VARIABLES
-##########
+###########
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
@@ -42,10 +42,8 @@ mytree() {
   #if no first parameter,
   #and otherwise uses the
   #supplied paramter for level depth
-  tree -C -L ${1-1} -I "*.pyc"
+  exa -T -L=${1-1} 
 }
-#T for tree 1 level deep with no invisibles
-alias T="tree -a -C -L 1"
 #tt for maximum depth tree
 alias tt="mytree 999"
 alias s="source $dotfiles_location/zsh.sh"
