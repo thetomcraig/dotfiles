@@ -4334,9 +4334,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>373 250 928 394 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>480 435 570 442 0 0 1440 877 </string>
+	<string>960 615 570 442 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>960 0 960 1057 0 0 1920 1057 </string>
+	<string>0 615 570 442 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>527 307 570 442 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -6020,13 +6020,13 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.4</string>
+		<string>3.3.2</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
-		<string>3.3.0</string>
 		<string>3.2.9</string>
-		<string>3.3.2</string>
+		<string>3.3.0</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -6053,7 +6053,7 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
 		<string>{269, 595}</string>
 	</dict>
@@ -6062,7 +6062,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>CDBBC483-0FB3-4B73-B113-28DE92E7DA1B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>78</integer>
+	<integer>91</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6783,8 +6783,10 @@
 	</array>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>remark</string>
+		<string>/Users/tom/Dropbox/TomCraig/Music/iTunes/iTunes Media/Music/Avicii/True</string>
 		<string>mark</string>
+		<string>shims</string>
+		<string>remark</string>
 		<string>vimw1</string>
 		<string>avatar</string>
 		<string>filt</string>
@@ -6847,7 +6849,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-26T16:44:16Z</date>
+	<date>2019-11-10T02:09:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -6855,7 +6857,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
