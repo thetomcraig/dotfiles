@@ -27,6 +27,7 @@ set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists
 set clipboard=unnamed
 set shell=/bin/bash
+set notagbsearch
 
 
 
@@ -101,8 +102,12 @@ nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>fo :! open %<CR>
 " Jump to tag
 nnoremap <Space>t <C-]><CR>
+
+""" Indents and outdents """
 " Indent, then insert
 map <Space>o o<C-c>v>A
+" (same thing, from insert mode)
+imap ooo <C-c>o<C-c>v>A
 " UNindent, then insert
 map <Space>O o<C-c>v<A
 
@@ -116,10 +121,6 @@ nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose \| Gsta
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
 nmap <Space>bd :bp <BAR> bd #<CR>
-" Start interactive EasyAlign in visual mode (e.g. vipga) 
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip) 
-nmap ga <Plug>(EasyAlign)
 "Search for visually selected text
 vnoremap // y/<C-R>"<CR> 
 "Used for moving around the command line in vim
@@ -182,12 +183,6 @@ nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
 nmap <Space>w- :split<CR>
 nmap <Space>wd :q<CR>
-"nmap <Space>w :ChooseWin<CR>
-let i = 1
-while i <= 9
-    execute 'nnoremap <Space>' . i . ' :' . i . 'wincmd w<CR>'
-    let i = i + 1
-endwhile
 
 
 
@@ -247,14 +242,14 @@ map <C-l> <C-w>l
 """"""""""""
 "Neocomplete"
 """"""""""""
-set completeopt-=preview
-let g:neocomplete#enable_at_startup = 1
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#enable_smart_case = 1
-inoremap <expr><C-l>     neocomplete#complete_common_string()
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-highlight Pmenu ctermbg=238 ctermfg=White gui=bold
+" set completeopt-=preview
+" let g:neocomplete#enable_at_startup = 1
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" let g:neocomplete#sources#syntax#min_keyword_length = 3
+" let g:neocomplete#enable_smart_case = 1
+" inoremap <expr><C-l>     neocomplete#complete_common_string()
+" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" highlight Pmenu ctermbg=238 ctermfg=White gui=bold
 
 
 
@@ -266,9 +261,11 @@ let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap alwa
 let g:ale_python_autopep8_options = '--global-config setup.cfg --aggressive --aggressive'
 
 function! FixWithRemarkLint(test_arg)
-  set autoreload
   let remark_cmd="! remark " . expand('%:p') . " -o"
-  silent execute remark_cmd
+  write
+  silent execute remark_cmd 
+  edit
+  redraw!
 endfunction
 
 let g:ale_linters = {
@@ -289,13 +286,13 @@ let g:ale_fixers = {
     \ 'typescript': ['prettier'],
     \ 'json': ['jsonlint'],
     \ 'less': [],
-    \ 'markdown': ['FixWithRemarkLint' ],
-    \ 'vimwiki': ['FixWithRemarkLint' ],
     \ 'python': ['isort', 'autopep8'],
     \ 'sass': [],
     \ 'scss': ['prettier'],
     \ 'sh': [],
     \ 'vim': ['vint'],
+    \ 'vimwiki': ['FixWithRemarkLint', 'remove_trailing_lines'],
+    \ 'markdown': ['FixWithRemarkLint', 'remove_trailing_lines'],
 \ }
 
 nnoremap <Space>ad :ALEDisable<CR>
@@ -361,7 +358,7 @@ let g:airline_section_y = ''
 
 let g:livedown_browser = "safari"
 
-set diffopt+=vertical
+"set diffopt+=vertical
 
 
 
@@ -419,6 +416,9 @@ let g:UltiSnipsExpandTrigger="<C-j>"
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
 let NERDTreeIgnore = ['\.pyc$', '*.sw*']
+" Close vim if NERDTree is only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let g:NERDTreeFileManagerProgram='open'
 
 let g:NERDSpaceDelims=1
 let g:NERDTreeQuitOnOpen=1
@@ -437,3 +437,24 @@ set expandtab
 set shiftwidth=2 
 set tabstop=2
 set softtabstop=2
+
+" Function to show the vim-highlight group associated with the word under the
+" cursor
+nmap <leader>sp :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+" Distraction free writing for markdown 
+nmap <leader>df :call DistractionFreeWriting()<CR>
+function! DistractionFreeWriting()
+    Goyo
+    set spell
+    set signcolumn=no
+endfunction
+
+
+
