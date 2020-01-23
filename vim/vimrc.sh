@@ -244,11 +244,15 @@ map <C-l> <C-w>l
 let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive'
 let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
+let g:ale_python_black_options = '--exclude migrations'
+let g:remark_settings = '--setting "\"bullet\":\"*\",\"list-item-indent\":\"1\""'
+let g:ale_markdown_remark_lint_options = remark_settings
+
 " let g:ale_python_pylint_options = '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
 " let g:ale_python_flake8_options = '--ignore=E501'
 
 function! FixWithRemarkLint(test_arg)
-  let remark_cmd="! remark " . expand('%:p') . " -o"
+  let remark_cmd="! remark " . g:remark_settings . " " . expand('%:p') . " -o"
   write
   silent execute remark_cmd 
   edit
@@ -273,13 +277,13 @@ let g:ale_fixers = {
     \ 'typescript': ['prettier'],
     \ 'json': ['jsonlint'],
     \ 'less': [],
-    \ 'python': ['isort', 'autopep8'],
+    \ 'python': ['isort', 'black'],
     \ 'sass': [],
     \ 'scss': ['prettier'],
     \ 'sh': [],
     \ 'vim': ['vint'],
-    \ 'vimwiki': ['FixWithRemarkLint', 'remove_trailing_lines'],
-    \ 'markdown': ['FixWithRemarkLint', 'remove_trailing_lines'],
+    \ 'vimwiki': ['FixWithRemarkLint'],
+    \ 'markdown': ['FixWithRemarkLint'],
 \ }
 
 nnoremap <Space>ad :ALEDisable<CR>
