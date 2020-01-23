@@ -238,27 +238,14 @@ map <C-l> <C-w>l
 
 
 
-
-""""""""""""
-"Neocomplete"
-""""""""""""
-" set completeopt-=preview
-" let g:neocomplete#enable_at_startup = 1
-" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-" let g:neocomplete#sources#syntax#min_keyword_length = 3
-" let g:neocomplete#enable_smart_case = 1
-" inoremap <expr><C-l>     neocomplete#complete_common_string()
-" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" highlight Pmenu ctermbg=238 ctermfg=White gui=bold
-
-
-
-
 """""""""""""""""
 "ALE AND LINTING"
 """""""""""""""""
 let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
-let g:ale_python_autopep8_options = '--global-config setup.cfg --aggressive --aggressive'
+let g:ale_python_autopep8_options = '--aggressive --aggressive'
+let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
+" let g:ale_python_pylint_options = '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
+" let g:ale_python_flake8_options = '--ignore=E501'
 
 function! FixWithRemarkLint(test_arg)
   let remark_cmd="! remark " . expand('%:p') . " -o"
@@ -272,13 +259,13 @@ let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': [],
     \ 'typescript': ['prettier'],
-    \ 'markdown': ['remark-lint'],
-    \ 'vimwiki': ['remark-lint'],
     \ 'python': ['flake8'],
     \ 'sass': [],
     \ 'scss': ['prettier'],
     \ 'sh': [],
     \ 'vim': ['vint'],
+    \ 'markdown': ['remark-lint'],
+    \ 'vimwiki': ['remark-lint'],
 \ }
 let g:ale_fixers = {
     \ 'html': ['prettier'],
@@ -394,14 +381,25 @@ command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 
 
 
+""""""""""
+"MARKDOWN"
+""""""""""
+" Distraction free writing for markdown 
+nmap <leader>df :call DistractionFreeWriting()<CR>
+function! DistractionFreeWriting()
+    Goyo
+    set spell
+    set signcolumn=no
+endfunction
+" Markdown folding
+let g:vim_markdown_folding_level = 4
+
+
+
 """""""""
 "VIMWIKI"
 """""""""
-let g:vimwiki_list = [
-                      \{'path': $dropbox_root . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
-                      \{'path': $wiki_root, 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
-                      \{'path': $projects_root . '/interview_prep','index': 'README',  'syntax': 'markdown', 'ext': '.md'}
-                     \]
+let g:vimwiki_list = [{'path': $dropbox_root . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
 
@@ -411,24 +409,20 @@ let g:vimwiki_hl_headers = 1
 "MISC PLUGIN SETTINGS"
 """"""""""""""""""""""
 map <Space>jj <Plug>(easymotion-s)
-let g:UltiSnipsExpandTrigger="<C-j>"
 
+let g:NERDTreeQuitOnOpen=1
+let g:NERDTreeFileManagerProgram='open'
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
 let NERDTreeIgnore = ['\.pyc$', '*.sw*']
-" Close vim if NERDTree is only window open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let g:NERDTreeFileManagerProgram='open'
 
 let g:NERDSpaceDelims=1
-let g:NERDTreeQuitOnOpen=1
 
 
 
 """"""""""""""""""
 "TABS AND SPACING"
 """"""""""""""""""
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 set shiftround
 set autoindent
 set smartindent
@@ -437,24 +431,3 @@ set expandtab
 set shiftwidth=2 
 set tabstop=2
 set softtabstop=2
-
-" Function to show the vim-highlight group associated with the word under the
-" cursor
-nmap <leader>sp :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
-
-" Distraction free writing for markdown 
-nmap <leader>df :call DistractionFreeWriting()<CR>
-function! DistractionFreeWriting()
-    Goyo
-    set spell
-    set signcolumn=no
-endfunction
-
-
-
