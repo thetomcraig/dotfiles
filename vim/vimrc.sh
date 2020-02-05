@@ -1,4 +1,4 @@
-exec "source" $dotfiles_location . "/vim/vundle_settings.sh"
+exec "source" $dotfiles_location . "/vim/vim-plug_settings.sh"
 
 
 " Set the syntax and filetype of this file to .rc "
@@ -36,39 +36,13 @@ set notagbsearch
 """""""""""""""""""""
 echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
 set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
-let environment_settings = ""
-"TMUX"
-"1 - yes"
-"0 - no"
-let in_tmux = system("[ -z ${TMUX} ]; echo $?")
-if in_tmux == 1
-  let session = system("tmux display-message -p '#S'")
-  let environment_settings = "    TMUX SESSION: " . session
-  echo environment_settings
-endif
 
 "iTERM2"
 "Checks the profile name"
 "I have a colorscheme for each profile"
-let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
-"XENOMORPH
-let match = match(theme, "xenomorph")
-if match == 0
-  execute "colorscheme " . theme
-  let g:airline_theme='xenomorph'
-endif
-"SEOUL256
-let match = match(theme, "seoul256")
-if match == 0
-  execute "colorscheme " . theme
-  let g:airline_theme='zenburn'
-endif
-"SEOUL256-LIGHT
-let match = match(theme, "seoul256-light")
-if match == 0
-  execute "colorscheme " . theme
-  let g:airline_theme='zenburn'
-endif
+let theme = $VIM_COLORSCHEME
+execute "colorscheme " . theme
+let g:airline_theme=theme
 
 
 
@@ -104,12 +78,14 @@ nnoremap <Space>fo :! open %<CR>
 nnoremap <Space>t <C-]><CR>
 
 """ Indents and outdents """
-" Indent, then insert
-map <Space>o o<C-c>v>A
+" Indent, then insert, (note the trailing space)
+map <Space>o o<C-c>v>A 
 " (same thing, from insert mode)
-imap ooo <C-c>o<C-c>v>A
+imap ooo <C-c>o<C-c>v>A 
 " UNindent, then insert
-map <Space>O o<C-c>v<A
+" TODO: check if all the way to the left
+" If so, get out of list mode
+map <Space>O o<C-c>v<A 
 
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
@@ -129,45 +105,17 @@ cnoremap <Esc>f <S-Right>
 " Edit and reload dot files
 nmap <Space>ve :e ~/.vimrc<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
-nmap <Space>vu :e $dotfiles_location/vim/vundle_settings.sh<CR>
+nmap <Space>vu :e $dotfiles_location/vim/vim-plug_settings.sh<CR>
 
 
 
 """"""""""
 "SURROUND"
 """"""""""
-nmap <Space>r) vi)p
-nmap <Space>r( vi)p
-nmap <Space>r} vi}p
-nmap <Space>r{ vi{p
-nmap <Space>r' vi'p
-nmap <Space>r" vi"p
-nmap <Space>rw viwp
-
-nmap <Space>s) ysiw)
-nmap <Space>s( ysiw)
-nmap <Space>s} ysiw}
-nmap <Space>s{ ysiw{
-nmap <Space>s' ysiw'
-nmap <Space>s" ysiw"
-" Function will make a word into a bash variable 
-"   word -> "${word}"
-"
-function! Bashify()
-  execute "normal! mqviwo\<esc>i\"\${\<esc>ea\}\"\<esc>`qmq"
-endfunction
-nmap <Space>s$ :call Bashify()<CR>
-
-" Function will surround line wirth python print syntax 
-"   several word on a line -> print("several words on a line") 
-nmap <Space>sp :call Printify()<CR>
-" Function will wrap a line with a python print statement and quotes
-"   series of words -> print("series of words")
-function! Printify()
-  execute "normal! ^iprint(\"\<esc>$i\")\<esc>"
-endfunction
-nmap <Space>sp :call Printify()<CR>
-
+" Make into markdown link with 'l' as the trigger
+autocmd FileType markdown let b:surround_108 = "[\r](\1link: \1)"
+" Make into bash variable like "${this}" with '$' as the trigger
+autocmd FileType sh let b:surround_36= "\"${\r}\""
 
 
 
@@ -246,6 +194,7 @@ let g:ale_python_autopep8_options = '--aggressive --aggressive'
 let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
 let g:ale_python_black_options = '--exclude migrations'
 let g:remark_settings = '--setting "\"bullet\":\"*\",\"list-item-indent\":\"1\""'
+"let g:remark_settings = '--setting "\"maximum-line-length\":\"80\",\"list-item-indent\":\"1\""'
 let g:ale_markdown_remark_lint_options = remark_settings
 
 " let g:ale_python_pylint_options = '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
@@ -347,9 +296,6 @@ let g:airline_section_x = ''
 let g:airline_section_y = ''
 "let g:airline_section_z = ''
 
-let g:livedown_browser = "safari"
-
-"set diffopt+=vertical
 
 
 
@@ -388,24 +334,15 @@ command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 """"""""""
 "MARKDOWN"
 """"""""""
-" Distraction free writing for markdown 
-nmap <leader>df :call DistractionFreeWriting()<CR>
-function! DistractionFreeWriting()
-    Goyo
-    set spell
-    set signcolumn=no
-endfunction
-" Markdown folding
-let g:vim_markdown_folding_level = 4
-
-
-
-"""""""""
+let g:livedown_browser = "safari"
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_new_list_item_indent = 2
+"let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
-"""""""""
 let g:vimwiki_list = [{'path': $dropbox_root . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
+let g:vimwiki_global_ext = 0
 
 
 
@@ -427,11 +364,37 @@ let g:NERDSpaceDelims=1
 """"""""""""""""""
 "TABS AND SPACING"
 """"""""""""""""""
-set shiftround
+set shiftround " use multiple of shiftwidth when indenting with '<' and '>'
 set autoindent
 set smartindent
 set smarttab
 set expandtab
-set shiftwidth=2 
-set tabstop=2
-set softtabstop=2
+setlocal shiftwidth=4
+setlocal tabstop=4
+setlocal softtabstop=4
+
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 formatoptions=ron textwidth=80
+
+" GOYO
+function! s:goyo_enter()
+  set noshowmode
+  set spell
+  set signcolumn=no
+  set linebreak
+  set scrolloff=999
+endfunction
+
+function! s:goyo_leave()
+  set showmode
+  set nospell
+  set signcolumn=yes
+  set nolinebreak
+  set scrolloff=5
+  let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
+  execute "colorscheme " . theme
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+nmap <leader>df :Goyo<CR>
