@@ -1,0 +1,25 @@
+
+#!/bin/bash
+
+export FOREGROUND="#606060"
+export BACKGROUND="#e1e1e1"
+export BOLD="#4a4a4a"
+export SELECTION="#bbdede"
+export DARKER_SELECTION="#"
+
+export NORMAL_BLACK="#606060"
+export BRIGHT_BLACK="#4a4a4a"
+export NORMAL_RED="#be7472"
+export BRIGHT_RED="#9a1200"
+export NORMAL_GREEN="#709872"
+export BRIGHT_GREEN="#006f00"
+export NORMAL_YELLOW="#bd9873"
+export BRIGHT_YELLOW="#e09871"
+export NORMAL_BLUE="#7199bc"
+export BRIGHT_BLUE="#0098bd"
+export NORMAL_MAGENTA="#997498"
+export BRIGHT_MAGENTA="#9a1c72"
+export NORMAL_CYAN="#719899"
+export BRIGHT_CYAN="#009799"
+export NORMAL_WHITE="#e9e9e9"
+export BIRGHT_WHITE="#f1f1f1"
