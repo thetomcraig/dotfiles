@@ -24,7 +24,7 @@ local PROJECTS_ROOT="$DROPBOX_ROOT/Projects"
 # iTERM ENVIRONMENT
 ###################
 ITERM_PROFILE_NAME=$(osascript $dotfiles_location/get_iterm_profile_name.scpt)
-export VIM_COLORSCHEME="${iterm_profile_name}"
+export VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
 
 
 
@@ -54,5 +54,4 @@ export dropbox_root="${DROPBOX_ROOT}"
 export PROJECT_ROOT="${PROJECT_ROOT}"
 export PROJECTS_ROOT="${PROJECTS_ROOT}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
-echo $VIM_COLORSCHEME
 export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
