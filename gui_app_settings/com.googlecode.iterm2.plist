@@ -8,8 +8,12 @@
 	<integer>0</integer>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>AlternateMouseScroll</key>
+	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -4255,12 +4259,16 @@
 	<true/>
 	<key>HideScrollbar</key>
 	<true/>
+	<key>HideTab</key>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>JobName</key>
 	<false/>
 	<key>LeftCommand</key>
@@ -4334,11 +4342,11 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>373 250 928 394 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>960 615 570 442 0 0 1920 1057 </string>
+	<string>240 525 570 442 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 615 570 442 0 0 1920 1057 </string>
+	<string>506 154 570 426 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>527 307 570 442 0 0 1440 877 </string>
+	<string>818 434 570 442 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>528 325 650 477 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -6020,13 +6028,15 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.2</string>
+		<string>3.3.4</string>
+		<string>3.3.8</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
-		<string>3.2.9</string>
+		<string>3.3.7</string>
 		<string>3.3.0</string>
-		<string>3.3.4</string>
+		<string>3.2.9</string>
+		<string>3.3.2</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -6053,16 +6063,16 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{174, 788}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>CDBBC483-0FB3-4B73-B113-28DE92E7DA1B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>91</integer>
+	<integer>182</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6519,6 +6529,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.titleOverrideFormat</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.tty</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -6771,34 +6789,16 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>bil</string>
-		<string>bill</string>
-		<string>star</string>
-		<string>star wa</string>
-		<string>start</string>
-		<string>stri</string>
-		<string>your coun</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>/Users/tom/Dropbox/TomCraig/Music/iTunes/iTunes Media/Music/Avicii/True</string>
-		<string>mark</string>
-		<string>shims</string>
-		<string>remark</string>
-		<string>vimw1</string>
-		<string>avatar</string>
-		<string>filt</string>
-		<string>process_custom_macros_keyns</string>
-		<string>rout</string>
-	</array>
 	<key>NoSyncSuppressAnnyoingBellOffer</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchForIncompatibilityWarnings</key>
 	<real>486267648.80238199</real>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>480706606.88505101</real>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
+	<key>OpenNoWindowsAtStartup</key>
+	<true/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -6849,19 +6849,25 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-10T02:09:57Z</date>
+	<date>2020-02-03T20:21:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
+	<key>Selection Respects Soft Boundaries</key>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
+	<true/>
+	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.12666766826923076</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>SwitchPaneModifier</key>
 	<integer>9</integer>
 	<key>SwitchTabModifier</key>
@@ -6876,6 +6882,8 @@
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WindowNumber</key>
+	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
@@ -6885,7 +6893,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
