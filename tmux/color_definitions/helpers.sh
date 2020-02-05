@@ -6,7 +6,7 @@ load_colors() {
   if [ -z "$THEME_NAME" ]; then
     THEME_NAME="default"
   fi
-  echo "LOADING: $tmux_dotfiles_location/color_definitions/$THEME_NAME.sh"
+  echo "LOADING COLORS FOR theme '${THEME_NAME}'"
   source $tmux_dotfiles_location/color_definitions/$THEME_NAME.sh
 
   export TMUX_LIGHT_SEGMENT_FG="$DARKER_SELECTION"
