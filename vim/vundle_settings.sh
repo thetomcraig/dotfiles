@@ -14,8 +14,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Writing Plaintext and Markdown "
 Plugin 'shime/vim-livedown'
-Plugin 'vimwiki/vimwiki'
 Plugin 'junegunn/goyo.vim'
+
+" These two can conflict, so do NOT load vimwiki
+" Will manually load that when necessary
+Plugin 'plasticboy/vim-markdown'
+" Plugin 'vimwiki/vimwiki'
 
 " Searching "
 Plugin 'mhinz/vim-grepper'
@@ -36,7 +40,6 @@ Plugin 'thetomcraig/Mark--Karkat'
 
 " Extra Functionality "
 Plugin 'easymotion/vim-easymotion'
-"Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-abolish'
 
