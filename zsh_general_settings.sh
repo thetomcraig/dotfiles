@@ -28,12 +28,16 @@ alias c="clear "
 alias cpb="pwd | pbcopy"
 
 alias dot="cd ${dotfiles_location}"
-alias v="vim $dotfiles_location/vim/vimrc.sh"
-alias vu="vim $dotfiles_location/vim/vundle_settings.sh"
+alias v="vim ${dotfiles_location}/vim/vimrc.sh"
+alias vu="vim ${dotfiles_location}/vim/vim-plug_settings.sh"
 alias db="cd ${HOME}/Dropbox/TomCraig"
-alias wiki="cd ${wiki_root} && vim README.md"
-alias notes="cd ${HOME}/Dropbox/TomCraig/Notes && vim README.md"
 alias proj="cd ${projects_root}"
+alias wiki="cd ${projects_root}/tomcraigslist && vim README.md"
+alias notes=openNotes
+openNotes() {
+  cd ${HOME}/Dropbox/TomCraig/Notes
+  vim README.md
+}
 
 #t for tree
 alias t=mytree
