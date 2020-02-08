@@ -3,7 +3,7 @@ alias ta="tmux a -t"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "
 alias ts="tmux list-sessions"
-alias tm="vim $dotfiles_location/tmux/tmux.conf"
+alias tm="vim $DOTFILES_LOCATION/tmux/tmux.conf"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
@@ -18,12 +18,14 @@ kill_current_session() {
   tmux kill-session -t $(tmux display-message -p '#S')
 }
 
-tmux_dotfiles_location="$dotfiles_location/tmux"
-export tmux_dotfiles_location
-source $dotfiles_location/tmux/tmuxinator/tmuxinator.zsh
-export TMUXINATOR_CONFIG=$dotfiles_location/tmux/tmuxinator/projects
+TMUX_DOTFILES_LOCATION="$DOTFILES_LOCATION/tmux"
+source $DOTFILES_LOCATION/tmux/tmuxinator/tmuxinator.zsh
+export TMUXINATOR_CONFIG=$DOTFILES_LOCATION/tmux/tmuxinator/projects
 
 # Load the theme!
-iterm_profile_name=$(osascript $dotfiles_location/get_iterm_profile_name.scpt)
-source "${tmux_dotfiles_location}/color_definitions/helpers.sh"
-load_colors "${iterm_profile_name}"
+source "${TMUX_DOTFILES_LOCATION}/color_definitions/helpers.sh"
+load_colors "${ITERM_PROFILE_NAME}"
+
+
+
+export TMUX_DOTFILES_LOCATION="${TMUX_DOTFILES_LOCATION}"

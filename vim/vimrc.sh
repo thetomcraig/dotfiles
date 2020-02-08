@@ -1,4 +1,4 @@
-exec "source" $dotfiles_location . "/vim/vim-plug_settings.sh"
+exec "source" $DOTFILES_LOCATION . "/vim/vim-plug_settings.sh"
 
 
 " Set the syntax and filetype of this file to .rc "
@@ -35,14 +35,18 @@ set notagbsearch
 "ENVIRONMENT SETTINGS"
 """""""""""""""""""""
 echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
-set spellfile="$dotfiles_location"."/vim/spell/en.utf-8.add"
+set spellfile="$DOTFILES_LOCATION"."/vim/spell/en.utf-8.add"
 
 "iTERM2"
 "Checks the profile name"
 "I have a colorscheme for each profile"
 let theme = $VIM_COLORSCHEME
 execute "colorscheme " . theme
-let g:airline_theme=theme
+let airlinetheme = theme
+if stridx(theme, 'seoul256') == 0
+    let airlinetheme='zenburn'
+endif
+let g:airline_theme=airlinetheme
 
 
 
@@ -105,7 +109,7 @@ cnoremap <Esc>f <S-Right>
 " Edit and reload dot files
 nmap <Space>ve :e ~/.vimrc<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
-nmap <Space>vu :e $dotfiles_location/vim/vim-plug_settings.sh<CR>
+nmap <Space>vu :e $DOTFILES_LOCATION/vim/vim-plug_settings.sh<CR>
 
 
 
@@ -339,7 +343,7 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
-let g:vimwiki_list = [{'path': $dropbox_root . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
 let g:vimwiki_global_ext = 0
@@ -390,8 +394,7 @@ function! s:goyo_leave()
   set signcolumn=yes
   set nolinebreak
   set scrolloff=5
-  let theme = system("osascript $dotfiles_location/get_iterm_profile_name.scpt")
-  execute "colorscheme " . theme
+  execute "colorscheme " . $VIM_COLORSCHEME
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()

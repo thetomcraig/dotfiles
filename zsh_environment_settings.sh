@@ -16,16 +16,15 @@ if [[ $host == *"Darwin"* ]]; then
 fi
 
 # this is used a lot in "zsh_general_settings.sh"
-local PROJECTS_ROOT="$DROPBOX_ROOT/Projects"
+PROJECTS_ROOT=~/.projects_root
 
 
 
 ###################
 # iTERM ENVIRONMENT
 ###################
-ITERM_PROFILE_NAME=$(osascript $dotfiles_location/get_iterm_profile_name.scpt)
-export VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
-
+ITERM_PROFILE_NAME=$(osascript ${DOTFILES_LOCATION}/get_iterm_profile_name.scpt)
+VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
 
 
 
@@ -34,7 +33,7 @@ export VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
 ##################
 if [ -n "$TMUX" ]; then
   TMUX_SESSION_NAME=$(tmux display-message -p '#S')
-  PROJECT_ROOT="${HOME}/.${PROJECTS_ROOT}/${TMUX_SESSION_NAME}"
+  PROJECT_ROOT="${PROJECTS_ROOT}/${TMUX_SESSION_NAME}"
   alias rr="cd ${PROJECT_ROOT}"
   alias root="cd ${PROJECT_ROOT}"
   # If there is an associate settings file, load it  
@@ -48,9 +47,6 @@ fi
 
 export ITERM_PROFILE_NAME="${ITERM_PROFILE_NAME}"
 export DROPBOX_ROOT="${DROPBOX_ROOT}"
-# TODO: grep and replace with caps
-export dropbox_root="${DROPBOX_ROOT}"
-# TODO: grep and replace these two
 export PROJECT_ROOT="${PROJECT_ROOT}"
 export PROJECTS_ROOT="${PROJECTS_ROOT}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"

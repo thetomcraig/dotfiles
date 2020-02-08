@@ -1,43 +1,43 @@
-projects_root="${HOME}"
+PROJECTS_ROOT="${HOME}"
 # TODO do a mkdir with this
 notes_root="${HOME}/notes"
 
 host=$(uname -a)
 if [[ $host == *"ZENO"* ]]; then
-  projects_root="${HOME}/Dropbox/TomCraig/Projects"
+  PROJECTS_ROOT="${HOME}/Dropbox/TomCraig/Projects"
 elif [[ $host == *"HERMES"* ]]; then
-  projects_root="${HOME}"
+  PROJECTS_ROOT="${HOME}"
 elif [[ $host == *"lebowski"* ]]; then
-  projects_root="${HOME}/dev"
+  PROJECTS_ROOT="${HOME}/dev"
 else
-   projects_root="${HOME}"
+   PROJECTS_ROOT="${HOME}"
 fi
 
 # Link Files
 cd "${HOME}"
-dotfiles_location="${HOME}"/dotfiles
+DOTFILES_LOCATION="${HOME}"/dotfiles
 
 cd ~
-rm -f -- ~/.projects_root
-ln -s $projects_root .projects_root
+rm -f -- ~/.PROJECTS_ROOT
+ln -s $PROJECTS_ROOT .PROJECTS_ROOT
 
 rm -f -- ~/.editorconfig
-ln -s $dotfiles_location/editorconfig.sh .editorconfig
+ln -s $DOTFILES_LOCATION/editorconfig.sh .editorconfig
 
 rm -f -- ~/.zshrc
-ln -s $dotfiles_location/zsh.sh .zshrc
+ln -s $DOTFILES_LOCATION/zsh.sh .zshrc
 
 rm -f -- ~/.vimrc
-ln -s $dotfiles_location/vim.sh .vimrc
+ln -s $DOTFILES_LOCATION/vim.sh .vimrc
 
 rm -f -- ~/.vim/spell
-ln -s $dotfiles_location/.vim/spell .vim/spell
+ln -s $DOTFILES_LOCATION/.vim/spell .vim/spell
 
 rm -f -- ~/.tmux.conf
-ln -s $dotfiles_location/tmux/tmux.conf .tmux.conf
+ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 
-ln -s $dotfiles_location/diff-so-fancy /usr/local/bin/diff-so-fancy
+ln -s $DOTFILES_LOCATION/diff-so-fancy /usr/local/bin/diff-so-fancy
 
 cd ~/Library/Preferences/
 rm -f -- ~/Library/Preferences/com.manytricks.Moom.plist
-ln -s $dotfiles_locationtmux/gui_apps/com.manytricks.Moom.plist com.manytricks.Moom.plist
+ln -s $DOTFILES_LOCATIONtmux/gui_apps/com.manytricks.Moom.plist com.manytricks.Moom.plist

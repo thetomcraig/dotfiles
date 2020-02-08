@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $tmux_dotfiles_location/segment.sh
+source $TMUX_DOTFILES_LOCATION/segment.sh
 
 displayStatus() {
   if [[ $1 == "left" ]]; then

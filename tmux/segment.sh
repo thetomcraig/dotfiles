@@ -5,7 +5,7 @@ displaySegment() {
   local foreground="$2"
   local background="$3"
 
-  source "$tmux_dotfiles_location/segments/${segmentName}.sh"
+  source "$TMUX_DOTFILES_LOCATION/segments/${segmentName}.sh"
 
   local result=$(runSegment)
   local output="#[fg=${foreground}, bg=${background}] ${result} "
