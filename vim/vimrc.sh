@@ -75,7 +75,7 @@ nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
 nnoremap <Space>nh :noh<CR>
 nnoremap <Space>i :set list!<CR>
-nnoremap <Space>T :TagbarToggle<CR>
+"nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>fo :! open %<CR>
 " Jump to tag
@@ -83,13 +83,13 @@ nnoremap <Space>t <C-]><CR>
 
 """ Indents and outdents """
 " Indent, then insert, (note the trailing space)
-map <Space>o o<C-c>v>A 
+"map <Space>o o<C-c>v>A 
 " (same thing, from insert mode)
-imap ooo <C-c>o<C-c>v>A 
+"imap ooo <C-c>o<C-c>v>A 
 " UNindent, then insert
 " TODO: check if all the way to the left
 " If so, get out of list mode
-map <Space>O o<C-c>v<A 
+"map <Space>O o<C-c>v<A 
 
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
@@ -196,9 +196,9 @@ map <C-l> <C-w>l
 let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive'
 let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
-let g:ale_python_black_options = '--exclude migrations'
-let g:remark_settings = '--setting "\"bullet\":\"*\",\"list-item-indent\":\"1\""'
-"let g:remark_settings = '--setting "\"maximum-line-length\":\"80\",\"list-item-indent\":\"1\""'
+let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116'
+let g:ale_python_black_options = '--exclude migrations --line-length 100'
+let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
 let g:ale_markdown_remark_lint_options = remark_settings
 
 " let g:ale_python_pylint_options = '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
@@ -338,7 +338,7 @@ command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
 """"""""""
 "MARKDOWN"
 """"""""""
-let g:livedown_browser = "safari"
+let g:livedown_browser = "brave"
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
@@ -347,6 +347,7 @@ let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syn
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
 let g:vimwiki_global_ext = 0
+let g:zettel_fzf_command = "rg"
 
 
 
@@ -359,7 +360,7 @@ let g:NERDTreeQuitOnOpen=1
 let g:NERDTreeFileManagerProgram='open'
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
-let NERDTreeIgnore = ['\.pyc$', '*.sw*']
+let NERDTreeIgnore = ['\.pyc$', '*.sw*', '__pycache__', '__pycache__']
 
 let g:NERDSpaceDelims=1
 
@@ -377,7 +378,8 @@ setlocal shiftwidth=4
 setlocal tabstop=4
 setlocal softtabstop=4
 
-autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 formatoptions=ron textwidth=80
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:2
+" formatoptions=ron 
 
 " GOYO
 function! s:goyo_enter()
