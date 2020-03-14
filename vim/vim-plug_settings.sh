@@ -10,6 +10,7 @@ Plug 'junegunn/goyo.vim'
 " Figuring out issues between these two
 " Plug 'plasticboy/vim-markdown'
 Plug 'vimwiki/vimwiki'
+Plug 'michal-h21/vim-zettel'
 
 " Searching "
 Plug 'mhinz/vim-grepper'
