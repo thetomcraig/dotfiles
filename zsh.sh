@@ -30,6 +30,3 @@ source $DOTFILES_LOCATION/zsh_python_settings.sh
 echoGreen "OK"
 
 echo "INITIALIZATION COMPLETE"
-
-# TODO - can delete this?
-# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
