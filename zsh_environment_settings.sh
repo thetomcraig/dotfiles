@@ -1,7 +1,5 @@
 # vim: set syntax=zsh
 # au BufReadPost zsh.sh set ft=zsh.rc
- 
-
 
 #########
 # HOST/OS
@@ -18,13 +16,31 @@ fi
 # this is used a lot in "zsh_general_settings.sh"
 PROJECTS_ROOT=~/.projects_root
 
+source "${PROJECTS_ROOT}"/scripts/bash/saved_settings.sh
 
+setColors() {
+  preset_name="${1}" 
+
+  set_saved_setting "${DOTFILES_LOCATION}"/preset_name.txt "${preset_name}"
+  echo -e "\033]1337;SetColors=preset=${preset_name}\a"
+  VIM_COLORSCHEME="${preset_name}"
+  export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
+  ITERM_PROFILE_NAME="${preset_name}"
+  export ITERM_PROFILE_NAME="${ITERM_PROFILE_NAME}"
+}
+alias sc=setColors
+
+preset_name=$(get_saved_setting "${DOTFILES_LOCATION}"/preset_name.txt)
+setColors "${preset_name}"
+
+VIM_COLORSCHEME="${preset_name}"
+ITERM_PROFILE_NAME="${preset_name}"
 
 ###################
 # iTERM ENVIRONMENT
 ###################
-ITERM_PROFILE_NAME=$(osascript ${DOTFILES_LOCATION}/get_iterm_profile_name.scpt)
-VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
+#ITERM_PROFILE_NAME=$(osascript ${DOTFILES_LOCATION}/get_iterm_profile_name.scpt)
+#VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
 
 
 
