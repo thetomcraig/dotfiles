@@ -5,7 +5,8 @@
 ###########
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
-export TERM=xterm-256color
+#export TERM=xterm-256color
+export TERM=xterm-24bit
 export EDITOR="/usr/local/bin/vim"
 export FZF_DEFAULT_COMMAND="rg --files"
 
@@ -28,15 +29,14 @@ alias c="clear "
 alias cpb="pwd | pbcopy"
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias v="vim ${DOTFILES_LOCATION}/vim/vimrc.sh"
+alias v="emacs -nw ${DOTFILES_LOCATION}/.spacemacs"
 alias vu="vim ${DOTFILES_LOCATION}/vim/vim-plug_settings.sh"
 alias db="cd ${HOME}/Dropbox/TomCraig"
 alias proj="cd ${PROJECTS_ROOT}"
-alias wiki="cd ${PROJECTS_ROOT}/tomcraigslist && vim README.md"
 alias notes=openNotes
 openNotes() {
   cd ${HOME}/Dropbox/TomCraig/Notes
-  vim README.md
+  emacs -nw README.md
 }
 
 #t for tree
@@ -51,7 +51,7 @@ mytree() {
 #tt for maximum depth tree
 alias tt="mytree 999"
 alias s="source $DOTFILES_LOCATION/zsh.sh"
-alias b="vim $DOTFILES_LOCATION/zsh.sh"
+alias b="emacs -nw $DOTFILES_LOCATION/zsh.sh"
 
 alias sshariston="ssh tom@10.0.1.3"
 alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
@@ -105,3 +105,4 @@ ripgrep_search() {
 }
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
