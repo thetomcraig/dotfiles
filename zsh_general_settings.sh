@@ -29,14 +29,14 @@ alias c="clear "
 alias cpb="pwd | pbcopy"
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias v="emacs -nw ${DOTFILES_LOCATION}/.spacemacs"
+alias v="vim ~/.vimrc"
 alias vu="vim ${DOTFILES_LOCATION}/vim/vim-plug_settings.sh"
 alias db="cd ${HOME}/Dropbox/TomCraig"
 alias proj="cd ${PROJECTS_ROOT}"
 alias notes=openNotes
 openNotes() {
   cd ${HOME}/Dropbox/TomCraig/Notes
-  emacs -nw README.md
+  vim README.md
 }
 
 #t for tree
@@ -51,7 +51,7 @@ mytree() {
 #tt for maximum depth tree
 alias tt="mytree 999"
 alias s="source $DOTFILES_LOCATION/zsh.sh"
-alias b="emacs -nw $DOTFILES_LOCATION/zsh.sh"
+alias b="vim $DOTFILES_LOCATION/zsh.sh"
 
 alias sshariston="ssh tom@10.0.1.3"
 alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
