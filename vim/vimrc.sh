@@ -28,6 +28,7 @@ set shortmess+=A                            "Ignore warning when swp file exists
 set clipboard=unnamed
 set shell=/bin/bash
 set notagbsearch
+set hidden
 
 
 
@@ -70,26 +71,17 @@ nnoremap t, :tabmove -1<CR>
 "General Space (Leader) shortcuts"
 """"""""""""""""""""""""""""""""""
 let mapleader=" "
+let maplocalleader="\<Space>"
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
-nnoremap <Space>nh :noh<CR>
+nnoremap <Space>noh :noh<CR>
 nnoremap <Space>i :set list!<CR>
 "nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>fo :! open %<CR>
 " Jump to tag
-nnoremap <Space>t <C-]><CR>
-
-""" Indents and outdents """
-" Indent, then insert, (note the trailing space)
-"map <Space>o o<C-c>v>A 
-" (same thing, from insert mode)
-"imap ooo <C-c>o<C-c>v>A 
-" UNindent, then insert
-" TODO: check if all the way to the left
-" If so, get out of list mode
-"map <Space>O o<C-c>v<A 
+nnoremap <Space>j <C-]><CR>
 
 nnoremap <Space>ue :UltiSnipsEdit<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
@@ -168,25 +160,12 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-noremap <space>ff :FZF<CR>
-noremap <space>rr :Rg<CR>
-noremap <space>bb :Buffers<CR>
-noremap <space>mm :Commits<CR>
-noremap <space>hh :History<CR>
-noremap <space>h/ :History/<CR>
-noremap <space>ll :Lines<CR>
-noremap <space>bl :BLines<CR>
-
-
-
-"""""""""
-"Movement"
-"""""""""
-set hidden
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+noremap <space>ff :Clap files<CR>
+noremap <space>rr :Clap grep<CR>
+noremap <space>bb :Clap buffers<CR>
+noremap <space>tt :Clap windows<CR>
+noremap <space>mm :Clap commits<CR>
+noremap <space>yy :Clap yanks<CR>
 
 
 
@@ -346,7 +325,10 @@ let g:vim_markdown_new_list_item_indent = 2
 let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
-let g:vimwiki_global_ext = 0
+map <Leader>vw- :VimwikiChangeSymbolTo -<CR> v <
+map <Leader>vwn ^xx
+map <Leader>vwc <Plug>VimwikiToggleListItem
+map <Leader>vwC  <Plug>VimwikiRemoveSingleCB
 let g:zettel_fzf_command = "rg"
 
 
@@ -388,6 +370,7 @@ function! s:goyo_enter()
   set signcolumn=no
   set linebreak
   set scrolloff=999
+  "EnableAutocorrect
 endfunction
 
 function! s:goyo_leave()
@@ -396,6 +379,7 @@ function! s:goyo_leave()
   set signcolumn=yes
   set nolinebreak
   set scrolloff=5
+  "DisableAutocorrect
   execute "colorscheme " . $VIM_COLORSCHEME
 endfunction
 
@@ -403,3 +387,8 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 nmap <leader>df :Goyo<CR>
+
+xmap <C-j> <Plug>(textmanip-move-down)
+xmap <C-k> <Plug>(textmanip-move-up)
+xmap <C-h> <Plug>(textmanip-move-left)
+xmap <C-l> <Plug>(textmanip-move-right)
