@@ -29,4 +29,5 @@ echo "LOADING PYTHON SETTINGS..."
 source $DOTFILES_LOCATION/zsh_python_settings.sh
 echoGreen "OK"
 
+source $DOTFILES_LOCATION/ceresrc.sh
 echo "INITIALIZATION COMPLETE"
