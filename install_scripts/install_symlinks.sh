@@ -1,16 +1,10 @@
 PROJECTS_ROOT="${HOME}"
-# TODO do a mkdir with this
-notes_root="${HOME}/notes"
 
 host=$(uname -a)
 if [[ $host == *"ZENO"* ]]; then
   PROJECTS_ROOT="${HOME}/Dropbox/TomCraig/Projects"
-elif [[ $host == *"HERMES"* ]]; then
+else; then
   PROJECTS_ROOT="${HOME}"
-elif [[ $host == *"lebowski"* ]]; then
-  PROJECTS_ROOT="${HOME}/dev"
-else
-   PROJECTS_ROOT="${HOME}"
 fi
 
 # Link Files
@@ -20,9 +14,6 @@ DOTFILES_LOCATION="${HOME}"/dotfiles
 cd ~
 rm -f -- ~/.PROJECTS_ROOT
 ln -s $PROJECTS_ROOT .PROJECTS_ROOT
-
-rm -f -- ~/.editorconfig
-ln -s $DOTFILES_LOCATION/editorconfig.sh .editorconfig
 
 rm -f -- ~/.zshrc
 ln -s $DOTFILES_LOCATION/zsh.sh .zshrc

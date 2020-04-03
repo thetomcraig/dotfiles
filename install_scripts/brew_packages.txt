@@ -1,4 +1,4 @@
-vim --with-lua
+vim
 direnv
 mas
 trash
@@ -14,8 +14,9 @@ fzf
 zsh
 pyenv
 pyenv-virtualenv
-
 tmux
 reattach-to-user-namespace
 urlview
 extract_url
+ripgrep
+diff-so-fancy
