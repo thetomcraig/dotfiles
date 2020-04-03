@@ -99,7 +99,7 @@ vnoremap // y/<C-R>"<CR>
 cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 " Edit and reload dot files
-nmap <Space>ve :e ~/.vimrc<CR>
+nmap <Space>ve :e $DOTFILES_LOCATION/vim/vimrc.sh<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
 nmap <Space>vu :e $DOTFILES_LOCATION/vim/vim-plug_settings.sh<CR>
 
@@ -160,12 +160,11 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-noremap <space>ff :Clap files<CR>
-noremap <space>rr :Clap grep<CR>
-noremap <space>bb :Clap buffers<CR>
-noremap <space>tt :Clap windows<CR>
-noremap <space>mm :Clap commits<CR>
-noremap <space>yy :Clap yanks<CR>
+noremap <space>ff :Files<CR>
+noremap <space>rr :Rg<CR>
+noremap <space>bb :Buffers<CR>
+noremap <space>tt :Windows<CR>
+noremap <space>mm :Commits<CR>
 
 
 
@@ -322,14 +321,29 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
-let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
+                    \ {'path': $DROPBOX_ROOT . '/CeresNotes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
-map <Leader>vw- :VimwikiChangeSymbolTo -<CR> v <
-map <Leader>vwn ^xx
-map <Leader>vwc <Plug>VimwikiToggleListItem
-map <Leader>vwC  <Plug>VimwikiRemoveSingleCB
+map <Leader>t- :VimwikiChangeSymbolTo -<CR> v <
+map <Leader>tn ^xx
+map <Leader>tt <Plug>VimwikiToggleListItem
+map <Leader>tL  <Plug>VimwikiRemoveSingleCB
 let g:zettel_fzf_command = "rg"
+
+function! s:finishToday()
+  :let @a=""
+  :g/- \[ \].*/yank A
+  :%s/- \[ \]/- \[>\]/g
+  :VimwikiMakeTomorrowDiaryNote
+  :put A
+  :%s/ *- \[ \]/- \[ \]/g
+  :read !icalBuddy -ic Work -iep title,datetime eventsFrom:tomorrow to:tomorrow
+  :%s/•/## /g
+  :%s/ (Work)\n    tomorrow at / - /g
+  :noh
+endfunction
+command! FinishToday call s:finishToday()
 
 
 
