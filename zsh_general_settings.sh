@@ -28,7 +28,7 @@ alias c="clear "
 alias cpb="pwd | pbcopy"
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias v="vim ~/.vimrc"
+alias v="vim ${DOTFILES_LOCATION}/vim/vimrc.sh"
 alias vu="vim ${DOTFILES_LOCATION}/vim/vim-plug_settings.sh"
 alias db="cd ${HOME}/Dropbox/TomCraig"
 alias proj="cd ${PROJECTS_ROOT}"
@@ -105,3 +105,6 @@ ripgrep_search() {
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
