@@ -2,3 +2,5 @@ alwaysontop/*
 .DS_Store
 *.sw*
 ceresrc.sh
+preset_name.txt
+tags
