@@ -20,6 +20,6 @@ kill_current_session() {
 
 TMUX_DOTFILES_LOCATION="$DOTFILES_LOCATION/tmux"
 source $DOTFILES_LOCATION/tmux/tmuxinator/tmuxinator.zsh
-export TMUXINATOR_CONFIG=$DOTFILES_LOCATION/tmux/tmuxinator/projects
 
+export TMUXINATOR_CONFIG=$DOTFILES_LOCATION/tmux/tmuxinator/projects
 export TMUX_DOTFILES_LOCATION="${TMUX_DOTFILES_LOCATION}"
