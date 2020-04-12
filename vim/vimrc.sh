@@ -29,6 +29,9 @@ set clipboard=unnamed
 set shell=/bin/bash
 set notagbsearch
 set hidden
+set undofile
+set undodir=$HOME."/.undodir"
+
 
 
 
@@ -77,7 +80,8 @@ nnoremap <Space>q :q<CR>
 nnoremap <Space>wq :wq<CR>
 nnoremap <Space>noh :noh<CR>
 nnoremap <Space>i :set list!<CR>
-"nnoremap <Space>T :TagbarToggle<CR>
+nnoremap <Space>fu :UndotreeToggle<CR>
+nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>fo :! open %<CR>
 " Jump to tag
@@ -93,8 +97,6 @@ nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose \| Gsta
 nnoremap <Space>fy :echo expand("%:p")<CR>
 "Close the current buffer and move to the previous one
 nmap <Space>bd :bp <BAR> bd #<CR>
-"Search for visually selected text
-vnoremap // y/<C-R>"<CR> 
 "Used for moving around the command line in vim
 cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
@@ -118,11 +120,6 @@ autocmd FileType sh let b:surround_36= "\"${\r}\""
 """""""""
 "WINDOWS"
 """""""""
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 nmap <Space>w/ :vsplit<CR>
 nmap <Space>w\ :vsplit<CR>
 nmap <Space>w- :split<CR>
@@ -134,10 +131,8 @@ nmap <Space>wd :q<CR>
 "RG and GREP"
 """""""""""""
 " Grepper settings
-" By default, ignore alembics, tests, etc
-nmap <Space>gg :GrepperRg 
-" This will not ignore anything
-nmap <Space>ag :GrepperRg 
+" nmap <Space>gg :GrepperRg 
+nmap <Space>gg :Grepper -tool rg -grepprg rg -l<CR>
 nmap <Space>bg :Grepper-buffer
 
 
@@ -145,6 +140,9 @@ nmap <Space>bg :Grepper-buffer
 """""""
 " FZF "
 """""""
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+let g:fzf_preview_window = 'right:60%'
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -171,9 +169,10 @@ noremap <space>mm :Commits<CR>
 """""""""""""""""
 "ALE AND LINTING"
 """""""""""""""""
+let g:ale_lint_on_save = 1
 let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive'
-let g:ale_python_isort_options = '--line_width=2, skip-glob alembics, length-sort 3'
+let g:ale_python_isort_options = '-l 120 -s alembics -m 3'
 let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116'
 let g:ale_python_black_options = '--exclude migrations --line-length 100'
 let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
@@ -252,7 +251,7 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 nnoremap <space>ga :Git add %:p<CR><CR>
 
 nnoremap <space>gd :Gdiff<CR>
-nnoremap <space>gdd :Gdiff develop:%<CR>
+nnoremap <space>gdd :Gvdiffsplit develop:%<CR>
 nnoremap <space>gD :DiffWithBranch develop<CR>
 
 nnoremap <Space>grd :Grebase -i develop<CR>
@@ -321,15 +320,14 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
-let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
-                    \ {'path': $DROPBOX_ROOT . '/CeresNotes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
 map <Leader>t- :VimwikiChangeSymbolTo -<CR> v <
 map <Leader>tn ^xx
 map <Leader>tt <Plug>VimwikiToggleListItem
 map <Leader>tL  <Plug>VimwikiRemoveSingleCB
-let g:zettel_fzf_command = "rg"
+map <Leader>tc  <Plug>CalendarH
 
 function! s:finishToday()
   :let @a=""
@@ -338,7 +336,7 @@ function! s:finishToday()
   :VimwikiMakeTomorrowDiaryNote
   :put A
   :%s/ *- \[ \]/- \[ \]/g
-  :read !icalBuddy -ic Work -iep title,datetime eventsFrom:tomorrow to:tomorrow
+  :read !exec ~/.projects_root/scripts/text/get_next_biz_day.sh
   :%s/•/## /g
   :%s/ (Work)\n    tomorrow at / - /g
   :noh
@@ -346,6 +344,7 @@ endfunction
 command! FinishToday call s:finishToday()
 
 
+":read !icalBuddy -ic Work -iep title,datetime eventsFrom:tomorrow to:tomorrow
 
 """"""""""""""""""""""
 "MISC PLUGIN SETTINGS"
@@ -375,6 +374,7 @@ setlocal tabstop=4
 setlocal softtabstop=4
 
 autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:2
+autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
 " formatoptions=ron 
 
 " GOYO
@@ -402,7 +402,4 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 nmap <leader>df :Goyo<CR>
 
-xmap <C-j> <Plug>(textmanip-move-down)
-xmap <C-k> <Plug>(textmanip-move-up)
-xmap <C-h> <Plug>(textmanip-move-left)
-xmap <C-l> <Plug>(textmanip-move-right)
+let g:move_key_modifier = 'C'
