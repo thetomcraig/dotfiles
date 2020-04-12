@@ -22,10 +22,4 @@ TMUX_DOTFILES_LOCATION="$DOTFILES_LOCATION/tmux"
 source $DOTFILES_LOCATION/tmux/tmuxinator/tmuxinator.zsh
 export TMUXINATOR_CONFIG=$DOTFILES_LOCATION/tmux/tmuxinator/projects
 
-# Load the theme!
-source "${TMUX_DOTFILES_LOCATION}/color_definitions/helpers.sh"
-load_colors "${ITERM_PROFILE_NAME}"
-
-
-
 export TMUX_DOTFILES_LOCATION="${TMUX_DOTFILES_LOCATION}"
