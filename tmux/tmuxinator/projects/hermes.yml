@@ -1,0 +1,13 @@
+name: Hermes
+root: ~/.projects_root/ceres/hermes
+
+windows:
+  - server:
+      layout: main-vertical
+      panes:
+        - docker-compose up
+  - editor: vim
+  - zsh:
+      layout: main-vertical
+      panes:
+        - clear

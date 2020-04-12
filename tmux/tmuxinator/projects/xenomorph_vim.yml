@@ -1,9 +1,0 @@
-name: xenomorph_vim
-root: ~/.projects_root/xenomorph.vim
-windows:
-  - editor: vim
-  - zsh:
-      layout: main-vertical
-      panes:
-        - clear
-
