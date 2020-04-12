@@ -178,9 +178,6 @@ let g:ale_python_black_options = '--exclude migrations --line-length 100'
 let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
 let g:ale_markdown_remark_lint_options = remark_settings
 
-" let g:ale_python_pylint_options = '--max-line-length=120, --disable=too-few-public-methods, --disable=missing-docstring'
-" let g:ale_python_flake8_options = '--ignore=E501'
-
 function! FixWithRemarkLint(test_arg)
   let remark_cmd="! remark " . g:remark_settings . " " . expand('%:p') . " -o"
   write
@@ -401,5 +398,3 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 nmap <leader>df :Goyo<CR>
-
-let g:move_key_modifier = 'C'
