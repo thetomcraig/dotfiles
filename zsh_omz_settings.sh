@@ -18,5 +18,4 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 bindkey '^j' autosuggest-accept
-setopt auto_cd
 DISABLE_AUTO_TITLE=true
