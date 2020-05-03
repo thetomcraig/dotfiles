@@ -5,7 +5,7 @@ windows:
   - server:
       layout: main-vertical
       panes:
-        - docker-compose up
+        - tmux send-keys "docker-compose up"
   - editor: vim
   - zsh:
       layout: main-vertical
