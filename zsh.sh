@@ -28,5 +28,4 @@ echoGreen "OK"
 echo "LOADING PYTHON SETTINGS..."
 source $DOTFILES_LOCATION/zsh_python_settings.sh
 echoGreen "OK"
-
 echo "INITIALIZATION COMPLETE"

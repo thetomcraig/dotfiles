@@ -1,18 +1,6 @@
 # vim: set syntax=zsh
 # au BufReadPost zsh.sh set ft=zsh.rc
 
-#########
-# HOST/OS
-#########
-host=$(uname -a)
-if [[ $host == *"Darwin"* ]]; then
-  alias rm="trash"
-  alias cat="bat"
-  alias diff="diff-so-fancy"
-
-  DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
-fi
-
 # this is used a lot in "zsh_general_settings.sh"
 PROJECTS_ROOT=~/.projects_root
 
@@ -25,8 +13,16 @@ setColors() {
   echo -e "\033]1337;SetColors=preset=${preset_name}\a"
   VIM_COLORSCHEME="${preset_name}"
   export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
-  ITERM_PROFILE_NAME="${preset_name}"
-  export ITERM_PROFILE_NAME="${ITERM_PROFILE_NAME}"
+
+  bat_theme="GitHub"
+  if [[ $preset_name == xenomorph ]]; then 
+    bat_theme="base16"
+  elif [[ $preset_name == seoul256-light ]]; then
+    bat_theme="ansi-light"
+  elif [[ $preset_name == seoul256 ]]; then
+    bat_theme="zenburn"
+  fi
+  export BAT_THEME=$bat_theme
 }
 alias sc=setColors
 
@@ -34,13 +30,19 @@ preset_name=$(get_saved_setting "${DOTFILES_LOCATION}"/preset_name.txt)
 setColors "${preset_name}"
 
 VIM_COLORSCHEME="${preset_name}"
-ITERM_PROFILE_NAME="${preset_name}"
 
-###################
-# iTERM ENVIRONMENT
-###################
-#ITERM_PROFILE_NAME=$(osascript ${DOTFILES_LOCATION}/get_iterm_profile_name.scpt)
-#VIM_COLORSCHEME="${ITERM_PROFILE_NAME}"
+
+
+#########
+# HOST/OS
+#########
+host=$(uname -a)
+if [[ $host == *"Darwin"* ]]; then
+  alias rm="trash"
+  alias diff="diff-so-fancy"
+
+  DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
+fi
 
 
 
@@ -50,8 +52,6 @@ ITERM_PROFILE_NAME="${preset_name}"
 if [ -n "$TMUX" ]; then
   TMUX_SESSION_NAME=$(tmux display-message -p '#S')
   PROJECT_ROOT="${PROJECTS_ROOT}/${TMUX_SESSION_NAME}"
-  alias rr="cd ${PROJECT_ROOT}"
-  alias root="cd ${PROJECT_ROOT}"
   # If there is an associate settings file, load it  
   settings_file="${PROJECT_ROOT}/.tmux_settings.sh"
   if [ -f "$settings_file" ]; then
@@ -61,7 +61,6 @@ fi
 
 
 
-export ITERM_PROFILE_NAME="${ITERM_PROFILE_NAME}"
 export DROPBOX_ROOT="${DROPBOX_ROOT}"
 export PROJECT_ROOT="${PROJECT_ROOT}"
 export PROJECTS_ROOT="${PROJECTS_ROOT}"
