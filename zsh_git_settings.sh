@@ -25,7 +25,7 @@ alias gra="git rebase --abort"
 alias gl="git log --oneline --all --graph --decorate"
 
 alias gba="git branch -a"
-alias gvv="git branch -vv"
+alias gv="git branch -vv"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
@@ -96,7 +96,7 @@ getCurrentJiraNumber() {
   echo "${JIRA_NUMBER}"
 }
 
-alias gv=fco_preview
+#alias gv=fco_preview
 fco_preview() {
   local tags branches target
   branches=$(
