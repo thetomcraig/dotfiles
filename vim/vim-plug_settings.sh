@@ -16,7 +16,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'preservim/nerdtree'
 Plug 'zackhsi/nerdtree-rg.vim'
-"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-obsession'
 Plug 'tecfu/YankRing.vim'
@@ -25,17 +24,18 @@ Plug 'simeji/winresizer'
 Plug 'thetomcraig/Mark--Karkat'
 Plug 'majutsushi/tagbar'
 Plug 'lfv89/vim-interestingwords'
+Plug 'jeetsukumaran/vim-pythonsense'
+
 
 " Searching "
 Plug 'mhinz/vim-grepper'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
+
 " Colors/UI "
-Plug 'danishprakash/vim-yami'
-Plug 'andreypopp/vim-colors-plain'
-Plug 'fxn/vim-monochrome'
-Plug 'reedes/vim-colors-pencil'
+Plug 'whatyouhide/vim-gotham'
+Plug 'morhetz/gruvbox'
 Plug 'davidosomething/vim-colors-meh'
 Plug 'jaredgorski/fogbell.vim'
 Plug 'liuchengxu/space-vim-theme'
@@ -43,7 +43,11 @@ Plug 'junegunn/seoul256.vim'
 Plug 'cocopon/iceberg.vim'
 Plug 'thetomcraig/xenomorph.vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'cocopon/iceberg.vim'
 
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-python/python-syntax'
 
 " Writing Plaintext and Markdown "
 Plug 'shime/vim-livedown'

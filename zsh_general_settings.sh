@@ -26,6 +26,8 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
 
 alias dot="cd ${DOTFILES_LOCATION}"
 alias v="vim ${DOTFILES_LOCATION}/vim/vimrc.sh"
