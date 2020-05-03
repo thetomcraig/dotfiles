@@ -1,15 +1,14 @@
 exec "source" $DOTFILES_LOCATION . "/vim/vim-plug_settings.sh"
 
-
 " Set the syntax and filetype of this file to .rc "
-" vim: set syntax=rc "
 au BufReadPost vimrc.sh set ft=vim.rc
 
 
 
-""""""""
+"""""""""
 "General"
-""""""""
+"""""""""
+set termguicolors
 set nocompatible
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
@@ -30,43 +29,56 @@ set shell=/bin/bash
 set notagbsearch
 set hidden
 set undofile
+set diffopt+=vertical
 set undodir=$HOME."/.undodir"
 
 
 
+"""""""""""""
+"Status Line"
+"""""""""""""
+set laststatus=2
+set statusline=
+set statusline+=%r
+set statusline+=\ 
+set statusline+=%{StatuslineMode()}
+set statusline+=\ 
+set statusline+=%f
+set statusline+=%=
+set statusline+=%P
+set statusline+=\ 
+set statusline+=%c
 
-"""""""""""""""""""""
+function! StatuslineMode()
+  let l:mode=mode()
+  if l:mode==#"n"
+    return "NORMAL"
+  elseif l:mode==?"v"
+    return "VISUAL"
+  elseif l:mode==#"i"
+    return "INSERT"
+  elseif l:mode==#"R"
+    return "REPLACE"
+  elseif l:mode==?"s"
+    return "SELECT"
+  elseif l:mode==#"t"
+    return "TERMINAL"
+  elseif l:mode==#"c"
+    return "COMMAND"
+  elseif l:mode==#"!"
+    return "SHELL"
+  endif
+endfunction
+
+
+
+""""""""""""""""""""""
 "ENVIRONMENT SETTINGS"
-"""""""""""""""""""""
+""""""""""""""""""""""
 echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
 set spellfile="$DOTFILES_LOCATION"."/vim/spell/en.utf-8.add"
-
-"iTERM2"
-"Checks the profile name"
-"I have a colorscheme for each profile"
-let theme = $VIM_COLORSCHEME
-execute "colorscheme " . theme
-let airlinetheme = theme
-if stridx(theme, 'seoul256') == 0
-    let airlinetheme='zenburn'
-endif
-let g:airline_theme=airlinetheme
-
-
-
-"""""""""""""""
-"Tab shortcuts"
-"""""""""""""""
-nnoremap t1 :tabfirst<CR>
-nnoremap t9 :tablast<CR>
-nnoremap tn :tabnext<CR>
-nnoremap to :tabnext<CR>
-nnoremap tp :tabprev<CR>
-nnoremap ti :tabprev<CR>
-nnoremap ty :tabedit<CR>
-nnoremap td :tabclose<CR>
-nnoremap t. :tabmove +1<CR>
-nnoremap t, :tabmove -1<CR>
+execute "" . $VIM_EXTRA
+execute "colorscheme " . $VIM_COLORSCHEME
 
 
 
@@ -75,31 +87,41 @@ nnoremap t, :tabmove -1<CR>
 """"""""""""""""""""""""""""""""""
 let mapleader=" "
 let maplocalleader="\<Space>"
-nnoremap <Space>w :w<CR>
-nnoremap <Space>q :q<CR>
-nnoremap <Space>wq :wq<CR>
 nnoremap <Space>noh :noh<CR>
 nnoremap <Space>i :set list!<CR>
-nnoremap <Space>fu :UndotreeToggle<CR>
 nnoremap <Space>T :TagbarToggle<CR>
-nnoremap <Space>ft :NERDTreeFind<CR>
-nnoremap <Space>fo :! open %<CR>
+nnoremap <Space>G :MerginalToggle<CR>
 " Jump to tag
 nnoremap <Space>j <C-]><CR>
-
 nnoremap <Space>ue :UltiSnipsEdit<CR>
-nnoremap <Space>fp :let @+=expand('%:p')<CR>
-" Insert the current date
-nnoremap <Space>d :r! date "+\%Y-\%m-\%d"<CR>
-" Close all extraneous splits
-nnoremap <Space>is :ccl \| NERDTreeClose \| MerginalClose \| TagbarClose \| GstatusClose<CR>
 
+nnoremap <Space>ft :NERDTreeFind<CR>
+nnoremap <Space>fu :UndotreeToggle<CR>
+nnoremap <Space>fo :! open %<CR>
+nnoremap <Space>fp :let @+=expand('%:p')<CR>
 nnoremap <Space>fy :echo expand("%:p")<CR>
-"Close the current buffer and move to the previous one
+
+nnoremap <Space>t1 :tabfirst<CR>
+nnoremap <Space>t9 :tablast<CR>
+nnoremap <Space>tn :tabnext<CR>
+nnoremap <Space>tp :tabprev<CR>
+nnoremap <Space>ty :tabedit<CR>
+nnoremap <Space>td :tabclose<CR>
+nnoremap <Space>t. :tabmove +1<CR>
+nnoremap <Space>t, :tabmove -1<CR>
+
 nmap <Space>bd :bp <BAR> bd #<CR>
-"Used for moving around the command line in vim
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
+" Close all extraneous splits
+nnoremap <Space>is :call CloseAll()<CR>
+function! CloseAll()
+  ccl
+  NERDTreeClose
+  TagbarClose
+  MerginalClose
+  GstatusClose
+endfunction
+
+"Close the current buffer and move to the previous one
 " Edit and reload dot files
 nmap <Space>ve :e $DOTFILES_LOCATION/vim/vimrc.sh<CR>
 nmap <Space>vr :source ~/.vimrc<CR>
@@ -172,10 +194,14 @@ noremap <space>mm :Commits<CR>
 let g:ale_lint_on_save = 1
 let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive'
-let g:ale_python_isort_options = '-l 120 -s alembics -m 3'
+let g:ale_python_isort_options = '-l 120'
 let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116'
 let g:ale_python_black_options = '--exclude migrations --line-length 100'
+
 let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
+
+"remark-lint-checkbox-character-style
+
 let g:ale_markdown_remark_lint_options = remark_settings
 
 function! FixWithRemarkLint(test_arg)
@@ -266,17 +292,6 @@ nnoremap <space>gpr :PullRequestView develop<CR>
 
 
 
-"""""""""""
-"Colors/UI"
-"""""""""""
-let g:airline_section_b = ''
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-"let g:airline_section_z = ''
-
-
-
-
 """"""""""""""""""
 "CUSTOM FUNCTIONS"
 """"""""""""""""""
@@ -320,11 +335,16 @@ let g:vim_markdown_new_list_item_indent = 2
 let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
-map <Leader>t- :VimwikiChangeSymbolTo -<CR> v <
-map <Leader>tn ^xx
-map <Leader>tt <Plug>VimwikiToggleListItem
-map <Leader>tL  <Plug>VimwikiRemoveSingleCB
-map <Leader>tc  <Plug>CalendarH
+map <Leader>l- :VimwikiChangeSymbolTo -<CR> v <
+map <Leader>ln ^xx
+map <Leader>lt <Plug>VimwikiToggleListItem
+map <Leader>lL  <Plug>VimwikiRemoveSingleCB
+map <Leader>wc  <Plug>CalendarH
+map <Leader>wp  :VimwikiDiaryPrevDay<CR>
+map <Leader>wn  :VimwikiDiaryNextDay<CR>
+inoremap <C-.> <Plug>VimwikiIncreaseLvlSingleItem
+inoremap <C-,> <Plug>VimwikiDecreaseLvlSingleItem
+
 
 function! s:finishToday()
   :let @a=""
@@ -333,15 +353,22 @@ function! s:finishToday()
   :VimwikiMakeTomorrowDiaryNote
   :put A
   :%s/ *- \[ \]/- \[ \]/g
-  :read !exec ~/.projects_root/scripts/text/get_next_biz_day.sh
-  :%s/•/## /g
+  :read !exec ~/.projects_root/scripts/text/get_next_day_events.sh
+  :%s/## /## /g
   :%s/ (Work)\n    tomorrow at / - /g
   :noh
 endfunction
 command! FinishToday call s:finishToday()
 
+function! s:startToday()
+  :read !exec ~/.projects_root/scripts/text/get_todays_events.sh
+  :%s/• /## /g
+  :%s/ (Work)\n    today at / - /g
+  :noh
+endfunction
+command! StartToday call s:startToday()
 
-":read !icalBuddy -ic Work -iep title,datetime eventsFrom:tomorrow to:tomorrow
+
 
 """"""""""""""""""""""
 "MISC PLUGIN SETTINGS"
