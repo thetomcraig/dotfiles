@@ -399,29 +399,3 @@ setlocal softtabstop=4
 
 autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:2
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
-" formatoptions=ron 
-
-" GOYO
-function! s:goyo_enter()
-  set noshowmode
-  set spell
-  set signcolumn=no
-  set linebreak
-  set scrolloff=999
-  "EnableAutocorrect
-endfunction
-
-function! s:goyo_leave()
-  set showmode
-  set nospell
-  set signcolumn=yes
-  set nolinebreak
-  set scrolloff=5
-  "DisableAutocorrect
-  execute "colorscheme " . $VIM_COLORSCHEME
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
-nmap <leader>df :Goyo<CR>
