@@ -39,9 +39,12 @@ setColors() {
   elif [[ $preset_name == gotham ]]; then
     VIM_COLORSCHEME="gotham"
     BAT_THEME="ansi-dark"
-  elif [[ $preset_name == ayu_light ]]; then
+  elif [[ $preset_name == "ayu Light" ]]; then
     VIM_COLORSCHEME="ayu"
     VIM_EXTRA='let ayucolor="light"'
+  elif [[ $preset_name == "ayu Dark" ]]; then
+    VIM_COLORSCHEME="ayu"
+    VIM_EXTRA='let ayucolor="dark"'
   elif [[ $preset_name == alduin ]]; then
     VIM_COLORSCHEME="alduin"
     BAT_THEME='1337'
