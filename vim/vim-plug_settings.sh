@@ -17,6 +17,7 @@ Plug 'wellle/targets.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'ycm-core/YouCompleteMe'
 
 
 " Visual Tools "
@@ -68,6 +69,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'idanarye/vim-merginal'
 Plug 'gregsexton/gitv'
 Plug 'rbong/vim-flog'
+Plug 'jreybert/vimagit'
 
 
 " Syntax "
