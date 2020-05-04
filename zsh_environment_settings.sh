@@ -42,6 +42,9 @@ setColors() {
   elif [[ $preset_name == ayu_light ]]; then
     VIM_COLORSCHEME="ayu"
     VIM_EXTRA='let ayucolor="light"'
+  elif [[ $preset_name == alduin ]]; then
+    VIM_COLORSCHEME="alduin"
+    BAT_THEME='1337'
   fi
   export BAT_THEME="${BAT_THEME}"
   export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
