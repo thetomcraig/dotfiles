@@ -45,6 +45,11 @@ setColors() {
   elif [[ $preset_name == "ayu Dark" ]]; then
     VIM_COLORSCHEME="ayu"
     VIM_EXTRA='let ayucolor="dark"'
+    BAT_THEME='ansi-dark'
+  elif [[ $preset_name == "ayu Mirage" ]]; then
+    VIM_COLORSCHEME="ayu"
+    VIM_EXTRA='let ayucolor="mirage"'
+    BAT_THEME='ansi-dark'
   elif [[ $preset_name == alduin ]]; then
     VIM_COLORSCHEME="alduin"
     BAT_THEME='1337'
