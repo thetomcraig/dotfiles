@@ -7024,7 +7024,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>539 368 841 470 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>960 24 960 1033 0 0 1920 1057 </string>
+	<string>435 653 570 404 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1920 963 570 354 1920 -340 1050 1657 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -7510,7 +7510,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SauceCodeProNerdFontCo-Regular 11</string>
+			<string>SauceCodeProNerdFontCo-Regular 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -7595,12 +7595,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{493, 752}</string>
+		<string>{497, 759}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>851F5EBB-F381-4F0B-923A-64408F5F1B88</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>24</integer>
+	<integer>26</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -8389,7 +8389,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-04T22:10:50Z</date>
+	<date>2020-05-05T22:10:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
