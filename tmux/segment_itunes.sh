@@ -31,6 +31,6 @@ runSegment() {
 	if ((${#TRACK_PARTS[0]} > 15)); then
 		echo "${INDICATOR}${TRACK_PARTS[0]:0:13}..."
 	else
-		echo ${INDICATOR}${TRACK_PARTS[0]}
+		echo "${INDICATOR}${TRACK_PARTS[0]}"
 	fi
 }

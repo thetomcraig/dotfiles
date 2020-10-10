@@ -1,5 +1,5 @@
-name: feedback
-root: ~/.projects_root/feedback
+name: Ansible
+root: ~/.projects_root/ceres/ansible
 
 windows:
   - editor: vim

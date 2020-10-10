@@ -4,7 +4,7 @@ PROJECT_PREFIX='[a-zA-Z]+'
 # ALIASES 
 #########
 # Small ones, similar to vim key bindings
-alias g="git status"
+alias g="git status -sb"
 alias gpu="git push"
 alias gpf="git push -f"
 alias gpl="git pull"
@@ -29,6 +29,11 @@ alias gv="git branch -vv"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
+
+# Copy last git commit message to clipboard
+alias gyp="git log -1 --pretty=%B | pbcopy"
+# Stage commit with last commit message, then open for editing
+alias gym="git commit -m '$(git log -1 --pretty=%B)' && git commit --amend"
 
 # Large and complicated ones
 # Make local branch tracking remote that matches a regex
@@ -78,9 +83,11 @@ gitpullrequest() {
 }
 
 gitbranchgrep() {
+  # Find a remote branch that includes the string in ${1}
+  # Make a new branch to track the remote branch, with a matching name
   git pull && \
-  git checkout -b ${1} $(git branch -a | grep ${2}) && \
-  git branch -vv
+  git checkout -b ${1} $(git branch -a | grep ${1}) && \
+  git branch -vv | grep '*'
 }
 
 gitPushAndSetMatchingUpstream() {

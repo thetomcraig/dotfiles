@@ -36,7 +36,7 @@ alias db="cd ${HOME}/Dropbox/TomCraig"
 alias proj="cd ${PROJECTS_ROOT}"
 alias notes=openNotes
 openNotes() {
-  cd ${HOME}/Dropbox/TomCraig/Notes
+  cd ${HOME}/Dropbox/TomCraig
   vim README.md
 }
 
@@ -106,8 +106,3 @@ ripgrep_search() {
   rg --files-with-matches --no-messages "${1}" . | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '${1}' || rg --ignore-case --pretty --context 10 '${1}' {}"
 }
 
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

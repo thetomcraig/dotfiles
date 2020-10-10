@@ -1,5 +1,5 @@
-name: tomcraigslist
-root: ~/.projects_root/tomcraigslist
+name: EngDocs
+root: ~/.projects_root/ceres/eng-docs
 
 windows:
   - editor: vim

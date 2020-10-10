@@ -1,4 +1,4 @@
-alias tmux="tmux -u"
+alias tx="tmux -u"
 alias ta="tmux a -t"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "

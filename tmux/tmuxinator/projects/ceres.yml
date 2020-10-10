@@ -1,0 +1,12 @@
+name: Ceres
+root: ~/.projects_root/ceres
+
+windows:
+  - WS: cd ceres_works
+  - WV: cd ceres_works && vim
+  - AS: cd avian
+  - AV: cd avian && vim
+  - OS: cd osiris
+  - OV: cd osiris && vim
+  - HS: cd hermes
+  - HV: cd hermes && vim

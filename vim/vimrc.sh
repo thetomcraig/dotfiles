@@ -1,4 +1,5 @@
 exec "source" $DOTFILES_LOCATION . "/vim/vim-plug_settings.sh"
+let g:scripts_root="~/.projects_root/scripts"
 
 " Set the syntax and filetype of this file to .rc "
 au BufReadPost vimrc.sh set ft=vim.rc
@@ -25,7 +26,8 @@ set splitright                              "Open splits to the right
 set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists
 set clipboard=unnamed
-set shell=/bin/bash
+"set shell=/bin/bash
+set shell=/usr/local/bin/zsh
 set notagbsearch
 set hidden
 set undofile
@@ -37,7 +39,6 @@ set undodir=$HOME."/.undodir"
 """""""""""""
 "Status Line"
 """""""""""""
-set laststatus=2
 set statusline=
 set statusline+=%r
 set statusline+=\ 
@@ -48,6 +49,7 @@ set statusline+=%=
 set statusline+=%P
 set statusline+=\ 
 set statusline+=%c
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 function! StatuslineMode()
   let l:mode=mode()
@@ -77,9 +79,29 @@ endfunction
 """"""""""""""""""""""
 echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
 set spellfile="$DOTFILES_LOCATION"."/vim/spell/en.utf-8.add"
-execute "" . $VIM_EXTRA
+
+" Set the theme on startup
+execute $VIM_BEFORE
 execute "colorscheme " . $VIM_COLORSCHEME
 
+" Testing for setColors
+function! s:switch_theme(theme_name)
+  silent execute "! " . g:scripts_root . "/bash/switch_theme/switch_theme.sh -s " . a:theme_name
+  echo $VIM_BEFORE
+  let $VIM_BEFORE = system(g:scripts_root . "/bash/switch_theme/switch_theme.sh -g vim_before")
+  let $VIM_COLORSCHEME = system(g:scripts_root .  "/bash/switch_theme/switch_theme.sh -g vim_colorscheme")
+  echo $VIM_BEFORE
+
+  "edit
+  "redraw!
+  call s:set_theme()
+endfunction
+command! -nargs=1 ST call s:switch_theme(<q-args>)
+
+function! s:set_theme()
+  execute $VIM_BEFORE
+  execute "colorscheme " . $VIM_COLORSCHEME
+endfunction
 
 
 """"""""""""""""""""""""""""""""""
@@ -87,13 +109,15 @@ execute "colorscheme " . $VIM_COLORSCHEME
 """"""""""""""""""""""""""""""""""
 let mapleader=" "
 let maplocalleader="\<Space>"
+nnoremap <Space>w :w<CR>
+nnoremap <Space>q :q<CR>
+nmap <Space>s <Plug>(choosewin)
 nnoremap <Space>noh :noh<CR>
 nnoremap <Space>i :set list!<CR>
 nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>G :MerginalToggle<CR>
 " Jump to tag
 nnoremap <Space>j <C-]><CR>
-nnoremap <Space>ue :UltiSnipsEdit<CR>
 
 nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>fu :UndotreeToggle<CR>
@@ -107,6 +131,7 @@ nnoremap <Space>tn :tabnext<CR>
 nnoremap <Space>tp :tabprev<CR>
 nnoremap <Space>ty :tabedit<CR>
 nnoremap <Space>td :tabclose<CR>
+nnoremap <Space>ta :tabonly<CR>
 nnoremap <Space>t. :tabmove +1<CR>
 nnoremap <Space>t, :tabmove -1<CR>
 
@@ -119,6 +144,7 @@ function! CloseAll()
   TagbarClose
   MerginalClose
   GstatusClose
+  CalendarClose
 endfunction
 
 "Close the current buffer and move to the previous one
@@ -162,8 +188,9 @@ nmap <Space>bg :Grepper-buffer
 """""""
 " FZF "
 """""""
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+set rtp+=/usr/local/opt/fzf
+"command! -bang -nargs=? -complete=dir Files
+"    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 let g:fzf_preview_window = 'right:60%'
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
@@ -214,7 +241,7 @@ endfunction
 
 let g:ale_linters = {
     \ 'html': [],
-    \ 'javascript': [],
+    \ 'javascript': ['eslint'],
     \ 'typescript': ['prettier'],
     \ 'python': ['flake8'],
     \ 'sass': [],
@@ -226,7 +253,7 @@ let g:ale_linters = {
 \ }
 let g:ale_fixers = {
     \ 'html': ['prettier'],
-    \ 'javascript': [],
+    \ 'javascript': ['vue-cli-service lint --format=pretty'],
     \ 'typescript': ['prettier'],
     \ 'json': ['jsonlint'],
     \ 'less': [],
@@ -257,14 +284,27 @@ endfunction
 "FUGITVIE ANG GIT"
 """"""""""""""""""
 " Most are similar to zsh aliases
-function! s:close_gstatus()
-	for l:winnr in range(1, winnr('$'))
-		if !empty(getwinvar(l:winnr, 'fugitive_status'))
-			execute l:winnr.'close'
-		endif
-	endfor
+
+" closeCalendar
+" 
+" If the vim-calendar window is open, close it
+function! s:closeCalendar()
+  :Calendar
+  q
 endfunction
-command! GstatusClose call s:close_gstatus()
+command! CalendarClose call s:closeCalendar()
+
+" closeGStatus
+" 
+" If the fugitive git status window is open, close it
+function! s:closeGStatus()
+  for l:winnr in range(1, winnr('$'))
+    if !empty(getwinvar(l:winnr, 'fugitive_status'))
+      execute l:winnr.'close'
+    endif
+  endfor
+endfunction
+command! GstatusClose call s:closeGStatus()
 
 nnoremap <space>g :Gstatus<CR>
 nnoremap <space>gpu :Dispatch! git push<CR>
@@ -275,7 +315,7 @@ nnoremap <space>ga :Git add %:p<CR><CR>
 
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>gdd :Gvdiffsplit develop:%<CR>
-nnoremap <space>gD :DiffWithBranch develop<CR>
+nnoremap <space>gda :GitDiffAgainstBranch 
 
 nnoremap <Space>grd :Grebase -i develop<CR>
 nnoremap <Space>grc :Grebase --continue<CR>
@@ -288,7 +328,7 @@ nnoremap <space>gw :Gwrite<CR><CR>
 
 nnoremap <Space>gv :Merginal<CR>
 
-nnoremap <space>gpr :PullRequestView develop<CR>
+nnoremap <Space>gs :GitShow<CR>
 
 
 
@@ -306,6 +346,7 @@ let s:git_status_dictionary = {
             \ "U": "Unmerged",
             \ "X": "Unknown"
             \ }
+
 function! s:get_diff_files(rev)
   let list = map(split(system(
               \ 'git diff --name-status '.a:rev), '\n'),
@@ -314,59 +355,157 @@ function! s:get_diff_files(rev)
   call setqflist(list)
   copen
 endfunction
+command! -nargs=1 GitDiffAgainstBranch call s:get_diff_files(<q-args>)
 
-command! -nargs=1 PullRequestView call s:get_diff_files(<q-args>)
-
-function! s:diff_file_against_branch(branch)
-  execute ':Gdiff ' . a:branch . ':%'
+function! s:show_commit_under_cursor()
+  let commit_no = expand("<cword>")
+  :execute "rightbelow split"
+  :execute "Gedit " . commit_no
 endfunction
-command! -nargs=1 DiffWithBranch call s:diff_file_against_branch(<q-args>)
+command! GitShow call s:show_commit_under_cursor()
 
 
 
 """"""""""
 "MARKDOWN"
 """"""""""
-let g:livedown_browser = "brave"
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_new_list_item_indent = 2
+let g:livedown_browser = "safari"
+"let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
+let g:vimwiki_folding = 'expr'
 let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
-map <Leader>l- :VimwikiChangeSymbolTo -<CR> v <
-map <Leader>ln ^xx
-map <Leader>lt <Plug>VimwikiToggleListItem
-map <Leader>lL  <Plug>VimwikiRemoveSingleCB
-map <Leader>wc  <Plug>CalendarH
-map <Leader>wp  :VimwikiDiaryPrevDay<CR>
-map <Leader>wn  :VimwikiDiaryNextDay<CR>
-inoremap <C-.> <Plug>VimwikiIncreaseLvlSingleItem
-inoremap <C-,> <Plug>VimwikiDecreaseLvlSingleItem
+nnoremap gl+ :VimwikiChangeSymbolTo +<CR>
+nnoremap gl= :VimwikiChangeSymbolTo +<CR>
+nnoremap gl- :VimwikiChangeSymbolTo -<CR>
+nnoremap gl_ :VimwikiChangeSymbolTo -<CR>
+" glx toggle rejected checkbox
+" gln increase the done status
+" glN toggle checkbox it done/not done
+nnoremap glN :VimwikiToggleListItem<CR>
+" Removes [ ] from a line
+nnoremap glg :VimwikiRemoveSingleCB<CR>
+" Adds [ ] to a line
+nnoremap gl[ ^bwwi[ ] <C-c>
+"<Leader>w<Leader>w today 
+"<Leader>w<Leader>m tomorrow
+"<Leader>w<Leader>y yesterday
+nnoremap <Space>w<Space>p :VimwikiDiaryPrevDay<CR>
+nnoremap <Space>w<Space>n :VimwikiDiaryNextDay<CR>
+" TODO: remove - bullet and make line "normal"
+" Will need a function that removes checkbox, then adds -, then removes it
 
 
-function! s:finishToday()
-  :let @a=""
-  :g/- \[ \].*/yank A
-  :%s/- \[ \]/- \[>\]/g
-  :VimwikiMakeTomorrowDiaryNote
-  :put A
-  :%s/ *- \[ \]/- \[ \]/g
-  :read !exec ~/.projects_root/scripts/text/get_next_day_events.sh
-  :%s/## /## /g
-  :%s/ (Work)\n    tomorrow at / - /g
-  :noh
+
+" insertStringTitle
+" 
+" Insert a given string as a top-level header in the current file
+function! s:insertStringTitle(string)
+  execute "normal! gg"
+  execute "normal! O"
+  execute "normal! a# " . a:string
 endfunction
-command! FinishToday call s:finishToday()
 
+" insertDayTitle
+" 
+" Insert the current date as a top-level header in the current file
+" Like so:
+" # Wednesday, April 20 2020
+function! s:insertDayTitle()
+  let date_string=system("echo $(date +'\%A, \%b \%e \%Y')")
+  call s:insertStringTitle(date_string)
+endfunction
+command! InsertDayTitle call s:insertDayTitle()
+
+function! s:copyToDos()
+  " Go to the 'ToDo' Section
+  execute "normal! gg"
+  execute "normal! /ToDo\<CR>"
+  " Select all text in the section to the z register
+  execute "normal \<Plug>VimwikiGoToNextHeader"
+  execute "normal! kkVN"
+  execute "normal! \"zy<CR>"
+endfunction
+
+function! s:pasteToDos()
+  execute "normal! \"zp<CR>"
+  execute "normal! G"
+endfunction
+
+" startToday
+"
+" Make diary note for today, and copy over any unfinished 
+" ToDos from yesterday to the file
 function! s:startToday()
-  :read !exec ~/.projects_root/scripts/text/get_todays_events.sh
-  :%s/• /## /g
-  :%s/ (Work)\n    today at / - /g
-  :noh
+  " Go to yesterday
+  VimwikiMakeYesterdayDiaryNote
+  # Visually select ToDos from yesterday
+  execute "normal! zR"
+  call s:copyToDos()
+  # Go to todday
+  VimwikiMakeDiaryNote
+  redraw
+  # Insert date
+  let date_string=system("echo $(date +'\%A, \%b \%e \%Y')")
+  call s:insertStringTitle(date_string)
+  call s:pasteToDos()
 endfunction
 command! StartToday call s:startToday()
+
+" startTomorrow
+"
+" Make diary note for tomorrow, and copy over any unfinished 
+" ToDos from today to that file
+function! s:startTomorrow()
+  call s:copyToDos()
+  VimwikiMakeTomorrowDiaryNote
+  redraw
+  let date_string=system("echo $(date -v +1d +'\%A, \%b \%e \%Y')")
+  call s:insertStringTitle(date_string)
+  call s:pasteToDos()
+endfunction
+command! StartTomorrow call s:startTomorrow()
+
+" openAllWeekDays
+" 
+" For every weekday in the current week,
+" Open (in a split) the diary file for that day
+" This is to review the entire week's events
+function! s:openAllWeekDays()
+  let days=system(g:scripts_root . "text/days.sh" . " " . expand('%:p'))
+  execute "" . days
+  bufdo normal! foldopen!
+endfunction
+command! OpenAllWeekDays call s:openAllWeekDays()
+
+function! s:finishWeek()
+    OpenAllWeekDays
+endfunction
+
+" gotoLastDiaryFileForString
+" 
+" For a given string, open the diary file containing
+" the most recent previous occurence of the string
+function! s:gotoLastDiaryFileForString(...)
+  let query = get(a:, 1, "")
+  let file_name=system(g:scripts_root . "text/reverse_grep_for_file.sh" . " " . expand('%:p') . query)
+  execute "edit " . file_name
+  execute "/" . query
+endfunction
+command! GoToLast1On1 call s:gotoLastDiaryFileForString("## 1:1")
+
+" makeSlides
+" 
+" Make an html slide deck from the current markdown file
+function! s:makeSlides()
+  let pandoc_cmd="! " . g:scripts_root . "text/convert_slides_to_html.sh " . expand('%:p')
+  execute pandoc_cmd
+endfunction
+command! MakeSlides call s:makeSlides()
+
 
 
 
@@ -397,5 +536,8 @@ setlocal shiftwidth=4
 setlocal tabstop=4
 setlocal softtabstop=4
 
-autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:2
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 
+" autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent 
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
+
+set foldlevelstart=1

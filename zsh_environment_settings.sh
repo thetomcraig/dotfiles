@@ -4,63 +4,15 @@
 # this is used a lot in "zsh_general_settings.sh"
 PROJECTS_ROOT=~/.projects_root
 
-source "${PROJECTS_ROOT}"/scripts/bash/saved_settings.sh
 
-setColors() {
-  preset_name="${1}" 
-
-  set_saved_setting "${DOTFILES_LOCATION}"/preset_name.txt "${preset_name}"
-  echo "setting iTerm to ${preset_name}"
-  echo -e "\033]1337;SetColors=preset=${preset_name}\a"
-
-  VIM_AIRLINE_THEME="nord"
-  VIM_COLORSCHEME="default"
-  BAT_THEME="GitHub"
-  VIM_EXTRA=""
-  if [[ $preset_name == Nord ]]; then 
-    VIM_COLORSCHEME="nord"
-    VIM_AIRLINE_THEME="nord"
-    BAT_THEME="base16"
-  elif [[ $preset_name == AlienBlood ]]; then 
-    VIM_COLORSCHEME="xenomorph"
-    VIM_AIRLINE_THEME="xenomorph"
-    BAT_THEME="base16"
-  elif [[ $preset_name == seoul256 ]]; then
-    BAT_THEME="base16"
-    VIM_COLORSCHEME="seoul256"
-  elif [[ $preset_name == gruvbox-dark ]]; then
-    BAT_THEME="base16"
-    VIM_COLORSCHEME="gruvbox"
-  elif [[ $preset_name == seoul256-light ]]; then
-    BAT_THEME="ansi-light"
-    VIM_COLORSCHEME="seoul256-light"
-  elif [[ $preset_name == onehalf-light ]]; then
-    VIM_COLORSCHEME="default"
-  elif [[ $preset_name == gotham ]]; then
-    VIM_COLORSCHEME="gotham"
-    BAT_THEME="ansi-dark"
-  elif [[ $preset_name == "ayu Light" ]]; then
-    VIM_COLORSCHEME="ayu"
-    VIM_EXTRA='let ayucolor="light"'
-  elif [[ $preset_name == "ayu Dark" ]]; then
-    VIM_COLORSCHEME="ayu"
-    VIM_EXTRA='let ayucolor="dark"'
-    BAT_THEME='ansi-dark'
-  elif [[ $preset_name == "ayu Mirage" ]]; then
-    VIM_COLORSCHEME="ayu"
-    VIM_EXTRA='let ayucolor="mirage"'
-    BAT_THEME='ansi-dark'
-  elif [[ $preset_name == alduin ]]; then
-    VIM_COLORSCHEME="alduin"
-    BAT_THEME='1337'
-  fi
-  export BAT_THEME="${BAT_THEME}"
-  export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
-}
-alias sc=setColors
-
-preset_name=$(get_saved_setting "${DOTFILES_LOCATION}"/preset_name.txt)
-setColors "${preset_name}"
+# START testing switch_theme 
+switch_theme_location=/Users/tomcraig/dev/scripts/bash/switch_theme/switch_theme.sh
+# Make the functions available
+source "${switch_theme_location}"
+setCurrentThemeVariables
+alias ST="setThemeVariables"
+alias STL="listThemes"
+# ENDtesting switch_theme
 
 
 
@@ -99,3 +51,15 @@ export VIM_EXTRA="${VIM_EXTRA}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
 export VIM_AIRLINE_THEME="${VIM_AIRLINE_THEME}"
 export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
+
+
+
+eval "$(rbenv init -)"
+export PATH="/usr/local/sbin:$PATH"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export NODE_PATH=$(npm root -g)
+export PATH="$NODE_PATH:$PATH"

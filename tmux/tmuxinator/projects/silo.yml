@@ -1,11 +1,11 @@
-name: <NAME>
-root: ~/.projects_root/<NAME>
+name: Silo
+root: ~/.projects_root/ceres/silo
 
 windows:
   - server:
       layout: main-vertical
       panes:
-        - <SERVER COMMAND>
+        - tmux send-keys "docker-compose up"
   - editor: vim
   - zsh:
       layout: main-vertical
