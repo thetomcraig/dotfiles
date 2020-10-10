@@ -6,7 +6,7 @@ PROJECTS_ROOT=~/.projects_root
 
 
 # START testing switch_theme 
-switch_theme_location=/Users/tomcraig/dev/scripts/bash/switch_theme/switch_theme.sh
+switch_theme_location=${PROJECTS_ROOT}/scripts/bash/switch_theme/switch_theme.sh
 # Make the functions available
 source "${switch_theme_location}"
 setCurrentThemeVariables
