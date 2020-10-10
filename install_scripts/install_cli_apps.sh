@@ -17,8 +17,16 @@ brew install $(cat brew_packages.txt)
 
 # Install brew-like things
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+# node js
+curl -sL install-node.now.sh | sh
+# yarn
+curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+
+# tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 gem install tmuxinator
+
+# linters
 npm install -g remark
 
 # Vim stuff
@@ -30,8 +38,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # ./agnoster_shortened.zsh-theme ~/.oh-my-zsh/themes/
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
-
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Configure stuff
 git config --global core.editor "vim"
