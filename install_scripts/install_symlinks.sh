@@ -18,6 +18,9 @@ ln -s $PROJECTS_ROOT .PROJECTS_ROOT
 rm -f -- ~/.zshrc
 ln -s $DOTFILES_LOCATION/zsh.sh .zshrc
 
+rm -f -- ~/.p10k.zsh
+ln -s $DOTFILES_LOCATION/p10k.sh .p10k.zsh
+
 rm -f -- ~/.vimrc
 ln -s $DOTFILES_LOCATION/vim.sh .vimrc
 
