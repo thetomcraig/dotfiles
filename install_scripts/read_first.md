@@ -1,31 +1,28 @@
-Sign in to icloud
-disable spotlight hotkeys
-Trackpad settings
-Key repeat settings
+# Read First
+- Copy this folder to new machine
 
-App store apps
-Moom
-Amphetamine
-Fantastical
-Transmit
-2Do
+## On Main Machine
+- Export bookmarks from browser
 
+## OS Stuff
+- Sign in to icloud
+- Disable spotlight hotkeys
+- Adjust Key repeat settings
+- Adjust Trackpad settings
 
+## Apps
+- [Dropbox](https://www.dropbox.com/install#downloaded)
+  - Setup and login, let is sync and continue
+- [Brave](https://laptop-updates.brave.com/latest/osx)
+  - Import bookmarks
+  - Set as deefault browser
+- [1Password](https://1password.com/downloads/mac/)
+- [Alfred](https://www.alfredapp.com/)
+- [Karabiner](https://karabiner-elements.pqrs.org/)
+- [iTerm2](https://www.iterm2.com/)
+- [Flux](https://justgetflux.com/)
+- [Typora](https://typora.io/)
 
-
-
-Non app store apps
-Brave
-https://1password.com/downloads/mac/
-https://justgetflux.com/
-https://www.alfredapp.com/
-https://karabiner-elements.pqrs.org/
-https://www.iterm2.com/
-https://typora.io/
-https://www.dropbox.com/downloading
-Zoom
-
-
-make the pojects directory and run the symlinks script
-git clone the "scripts" repo
-Browser extensions (manual copy)
+## Command Line Stuff
+- Run 
+  - `install_cli_apps.sh`

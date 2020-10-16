@@ -9,6 +9,13 @@ pbcopy < ~/.ssh/id_rsa.pub
 open "https://github.com/settings/keys"
 echo "Paste the key into the GitHub website"
 
+cd ~
+mkdir dev
+cd dev
+git clone git@github.com:thetomcraig/scripts.git
+cd ..
+git clone git@github.com:thetomcraig/dotfiles.git
+
 #Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -20,6 +27,16 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 gem install tmuxinator
 npm install -g remark
+
+
+App store apps
+Moom
+Amphetamine
+Fantastical
+Transmit
+2Do
+
+
 
 # Vim stuff
 npm install -g livedown
