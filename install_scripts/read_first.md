@@ -3,6 +3,9 @@
 
 ## On Main Machine
 - Export bookmarks from browser
+- Export Mac App Store Apps list (white listed):
+  - `mas list | grep -E 'Moom|The Unarchiver|Fantastical|Amphetamine|Key Codes|Ethernet Status' | awk '{print $1}' > mac_app_store_app_ids.txt` 
+
 
 ## OS Stuff
 - Sign in to icloud
@@ -22,6 +25,9 @@
 - [iTerm2](https://www.iterm2.com/)
 - [Flux](https://justgetflux.com/)
 - [Typora](https://typora.io/)
+- [Transmit](https://panic.com/transmit/#download)
+- [Transmission](https://transmissionbt.com/download/)
+- [Developer tools](https://developer.apple.com/download/more/)
 
 ## Command Line Stuff
 - Run 

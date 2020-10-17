@@ -4,7 +4,7 @@ host=$(uname -a)
 if [[ $host == *"ZENO"* ]]; then
   PROJECTS_ROOT="${HOME}/Dropbox/TomCraig/Projects"
 else; then
-  PROJECTS_ROOT="${HOME}"
+  PROJECTS_ROOT="${HOME}/dev"
 fi
 
 # Link Files
