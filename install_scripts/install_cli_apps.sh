@@ -14,11 +14,18 @@ echo "Paste the key into the GitHub website"
 cd ~
 mkdir dev
 cd dev
+
+# My resources
 git clone git@github.com:thetomcraig/scripts.git
+# TODO open the files to import
+git clone git@github.com:thetomcraig/iterm_schemes.git
+# TODO open the files to import
+git clone git@github.com:thetomcraig/fonts.git
+git clone git@github.com:thetomcraig/chromium-vim.git
 cd ..
 git clone git@github.com:thetomcraig/dotfiles.git
 
-#Install brew
+# Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install brew packages
