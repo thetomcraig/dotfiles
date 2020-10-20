@@ -34,6 +34,7 @@
   - [Transmit](https://panic.com/transmit/#download)
   - [Transmission](https://transmissionbt.com/download/)
   - [PIA](https://www.privateinternetaccess.com/installer/x/download_installer_osx)
+  - [Bartender](https://www.macfn.com/download/app/file/619/1abf63/)
   - [Developer tools](https://developer.apple.com/download/more/)
 
 ## Step 3: Command Line Setup
