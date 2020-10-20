@@ -24,6 +24,7 @@
 - [Karabiner](https://karabiner-elements.pqrs.org/)
 - [iTerm2](https://www.iterm2.com/)
 - [Flux](https://justgetflux.com/)
+- [Bartender](https://www.macfn.com/download/app/file/619/1abf63/)
 - [Typora](https://typora.io/)
 - [Transmit](https://panic.com/transmit/#download)
 - [Transmission](https://transmissionbt.com/download/)
