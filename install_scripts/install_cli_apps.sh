@@ -1,19 +1,4 @@
-sudo xcodebuild -license
-
-# SSH Keys
-ssh-keygen -t rsa -b 4096 -C "thetomcraig@icloud.com"
-eval "$(ssh-agent -s)"
-echo "Host *
- AddKeysToAgent yes
- UseKeychain yes
- IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
-pbcopy < ~/.ssh/id_rsa.pub
-open "https://github.com/settings/keys/new"
-echo "Paste the key into the GitHub website"
-
-cd ~
-mkdir dev
-cd dev
+cd ~/dev
 
 # My resources
 git clone git@github.com:thetomcraig/scripts.git
