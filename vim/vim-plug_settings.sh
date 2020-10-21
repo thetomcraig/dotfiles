@@ -9,11 +9,7 @@ Plug 'tpope/vim-rsi'
 
 
 " Coding and Text "
-" Plug 'w0rp/ale'"
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-Plug 'ineoclide/coc-vetur', {'do': 'yarn install --frozen-lockfile'}
+Plug 'w0rp/ale'
 Plug 'arthurxavierx/vim-caser'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-repeat'

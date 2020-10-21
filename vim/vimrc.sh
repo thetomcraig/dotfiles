@@ -49,7 +49,8 @@ set statusline+=%=
 set statusline+=%P
 set statusline+=\ 
 set statusline+=%c
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+"set statusline^=%{ale#statusline#Count()}
 
 function! StatuslineMode()
   let l:mode=mode()
@@ -253,8 +254,7 @@ let g:ale_linters = {
 \ }
 let g:ale_fixers = {
     \ 'html': ['prettier'],
-    \ 'javascript': ['vue-cli-service lint --format=pretty'],
-    \ 'typescript': ['prettier'],
+    \ 'javascript': ['FixWithVue'],
     \ 'json': ['jsonlint'],
     \ 'less': [],
     \ 'python': ['isort', 'black'],
@@ -265,6 +265,9 @@ let g:ale_fixers = {
     \ 'vimwiki': ['FixWithRemarkLint'],
     \ 'markdown': ['FixWithRemarkLint'],
 \ }
+
+"let g:ale_linter_aliases = {'vue': ['vue', 'FixWithVue']}
+"let g:ale_fixer_aliases = {'vue': ['vue', 'FixWithVue']}
 
 nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
