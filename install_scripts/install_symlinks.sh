@@ -3,7 +3,7 @@ PROJECTS_ROOT="${HOME}"
 host=$(uname -a)
 if [[ $host == *"ZENO"* ]]; then
   PROJECTS_ROOT="${HOME}/Dropbox/TomCraig/Projects"
-else; then
+else
   PROJECTS_ROOT="${HOME}/dev"
 fi
 
@@ -30,6 +30,7 @@ ln -s $DOTFILES_LOCATION/.vim/spell .vim/spell
 rm -f -- ~/.tmux.conf
 ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 
+rm -f -- /usr/local/bin/diff-so-fancy
 ln -s $DOTFILES_LOCATION/diff-so-fancy /usr/local/bin/diff-so-fancy
 
 cd ~/Library/Preferences/

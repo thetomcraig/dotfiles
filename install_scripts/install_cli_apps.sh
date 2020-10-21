@@ -1,3 +1,5 @@
+sudo xcodebuild -license
+
 # SSH Keys
 ssh-keygen -t rsa -b 4096 -C "thetomcraig@icloud.com"
 eval "$(ssh-agent -s)"
@@ -12,11 +14,18 @@ echo "Paste the key into the GitHub website"
 cd ~
 mkdir dev
 cd dev
+
+# My resources
 git clone git@github.com:thetomcraig/scripts.git
+# TODO open the files to import
+git clone git@github.com:thetomcraig/iterm_schemes.git
+# TODO open the files to import
+git clone git@github.com:thetomcraig/fonts.git
+git clone git@github.com:thetomcraig/chromium-vim.git
 cd ..
 git clone git@github.com:thetomcraig/dotfiles.git
 
-#Install brew
+# Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install brew packages
@@ -41,7 +50,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # ZSH
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 

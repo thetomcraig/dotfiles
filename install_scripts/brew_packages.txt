@@ -20,3 +20,5 @@ urlview
 extract_url
 ripgrep
 diff-so-fancy
+rbenv
+exa
