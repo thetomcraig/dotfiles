@@ -14,7 +14,11 @@
 - Adjust Key repeat settings
 - Adjust Trackpad settings
 
-## Step 2: App Install
+## Step 2: Clone dotfiles
+- Copy the following file to the new machine (dropbox, flash drive, etc)
+  - `install_dot_files.sh`
+
+## Step 3: App Install
 - Install these apps manually
   - - [Dropbox](https://www.dropbox.com/install#downloaded)
     - Setup and login, let is sync and continue
@@ -37,11 +41,11 @@
   - [Bartender](https://www.macfn.com/download/app/file/619/1abf63/)
   - [Developer tools](https://developer.apple.com/download/more/)
 
-## Step 3: Command Line Setup
+## Step 4: Command Line Setup
 - Run 
   - `install_cli_apps.sh`
 
-## Step 4: App Configurations
+## Step 5: App Configurations
 - Fantastical
   - Make a new iCloud app password
   - Sign into Flexibits account
