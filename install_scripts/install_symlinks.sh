@@ -30,6 +30,9 @@ ln -s $DOTFILES_LOCATION/.vim/spell .vim/spell
 rm -f -- ~/.tmux.conf
 ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 
+rm -f -- ~/.phoenix.js
+ln -s $DOTFILES_LOCATION/phoenix.phoenix.js .phoenix.js
+
 rm -f -- /usr/local/bin/diff-so-fancy
 ln -s $DOTFILES_LOCATION/diff-so-fancy /usr/local/bin/diff-so-fancy
 
