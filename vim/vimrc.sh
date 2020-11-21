@@ -544,3 +544,29 @@ autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
 
 set foldlevelstart=1
+autocmd BufRead,BufNewFile *.vue setfiletype html
+
+
+" TODO Function to make a tmux session for this
+function! s:moveToTmuxSession()
+  ":mksession filetype-%-.vim
+  :write
+endfunction
+command! MoveToTmuxSession call s:moveToTmuxSession()
+
+" CTRL-A CTRL-Q to select all and build quickfix list
+
+function! s:build_quickfix_list(lines)
+  "let uniqueList=filter(copy(a:lines), 'index(a:lines, v:val, v:key+1)==-1')
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+let $FZF_DEFAULT_OPTS = '--bind ctrl-a:select-all'

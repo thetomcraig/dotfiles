@@ -77,6 +77,7 @@ Plug 'idanarye/vim-merginal'
 Plug 'gregsexton/gitv'
 Plug 'rbong/vim-flog'
 Plug 'jreybert/vimagit'
+Plug 'tpope/vim-rhubarb'
 
 
 " Syntax "
@@ -95,6 +96,7 @@ Plug 'lepture/vim-jinja'
 Plug 'vim-scripts/textutil.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'posva/vim-vue'
+Plug 'gregsexton/matchtag'
 
 
 call plug#end()
