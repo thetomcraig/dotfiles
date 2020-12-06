@@ -1,0 +1,4 @@
+start.command
+*.swp
+*.swo
+
