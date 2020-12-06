@@ -4,8 +4,8 @@
 const corners = [
   ['q', HYPER, ['top-left']],
   ['e', HYPER, ['top-right']],
-  ['s', HYPER, ['bottom-right']],
-  ['a', HYPER, ['bottom-left']]
+  ['c', HYPER, ['bottom-right']],
+  ['z', HYPER, ['bottom-left']]
 ];
 
 setKeysHandler ( setFrame, corners );

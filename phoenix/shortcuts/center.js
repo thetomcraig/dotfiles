@@ -29,3 +29,7 @@ setKeyHandler ( 'v', HYPER_SHIFT, () => {
   center_window ( window );
 
 });
+
+
+/* SHIRNK AND CENTER */
+setKeysHandler ( setFrame, [['r', HYPER, ['center']]]);

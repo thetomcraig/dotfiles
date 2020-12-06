@@ -7,6 +7,8 @@ function getNamedFrame ( name ) {
         dLeft = ( LEFT_WIDTH_PERCENTAGE - 50 ) / 100;
 
   switch ( name ) {
+    /* CENTER */
+    case 'center': return [.175, .175, .65, .65];
     /* SIDES */
     case 'top': return [0, 0, 1, .5 + dTop];
     case 'right': return [.5 + dLeft, 0, .5 - dLeft, 1];
