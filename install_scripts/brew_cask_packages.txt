@@ -1,1 +1,14 @@
+alfred
+balenaetcher
+dropbox
 ferdi
+flux
+joplin
+karabiner-elements
+phoenix
+private-internet-access
+transmission
+transmit
+typora
+soundsource
+vlc
