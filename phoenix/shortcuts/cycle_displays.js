@@ -19,7 +19,7 @@ setKeyHandler ( 'x', HYPER, () => {
   if ( !window ) return;
 
   const oldScreen = window.screen(); 
-  const newScreen = oldScreen.next(); 
+  const newScreen = oldScreen.previous(); 
 
   if(oldScreen.isEqual(newScreen)){
      return; 
