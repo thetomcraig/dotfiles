@@ -15,6 +15,7 @@ zsh
 pyenv
 pyenv-virtualenv
 tmux
+tmuxinator
 reattach-to-user-namespace
 urlview
 extract_url

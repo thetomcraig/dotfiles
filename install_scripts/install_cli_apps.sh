@@ -28,7 +28,6 @@ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 
 # tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-sudo gem install tmuxinator
 
 # Vim stuff
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \

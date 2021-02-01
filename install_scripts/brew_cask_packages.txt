@@ -1,5 +1,7 @@
 alfred
 balenaetcher
+bartender
+brave-browser
 dropbox
 ferdi
 flux
