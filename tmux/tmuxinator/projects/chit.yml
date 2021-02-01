@@ -1,0 +1,18 @@
+# ${HOME}/Dotfiles/tmux/tmuxinator/projects/HERON.yml
+
+name: Chit
+root: ~/.projects_root/chit
+
+windows:
+  - Formula:
+      layout: main-vertical
+      panes:
+        - cd ../homebrew-chit && vim chit.rb
+  - Chit:
+      layout: main-vertical
+      panes:
+        - vim
+  - Zsh: 
+      layout: main-vertical
+      panes:
+        - echo "brew install --verbose --debug thetomcraig/chit/chit"

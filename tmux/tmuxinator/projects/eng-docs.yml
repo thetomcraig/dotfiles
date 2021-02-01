@@ -1,9 +1,0 @@
-name: EngDocs
-root: ~/.projects_root/ceres/eng-docs
-
-windows:
-  - editor: vim
-  - zsh:
-      layout: main-vertical
-      panes:
-        - clear

@@ -1,23 +1,28 @@
-# /Users/tom/Dotfiles/tmux/tmuxinator/projects/xenoorph.vim.yml
+# /Users/tomcraig/Dotfiles/tmux/tmuxinator/projects/test.yml
 
-name: xenoorph.vim
+name: test
 root: ~/
 
 # Optional tmux socket
 # socket_name: foo
 
-# Runs before everything. Use it to start daemons etc.
-# pre: sudo /etc/rc.d/mysqld start
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
 
 # Project hooks
+
 # Runs on project start, always
 # on_project_start: command
+
 # Run on project start, the first time
 # on_project_first_start: command
+
 # Run on project start, after the first time
 # on_project_restart: command
+
 # Run on project exit ( detaching from tmux session )
 # on_project_exit: command
+
 # Run on project stop
 # on_project_stop: command
 
@@ -38,9 +43,6 @@ root: ~/
 
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
-
-# Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t xenoorph.vim
 
 windows:
   - editor:

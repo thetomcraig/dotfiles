@@ -1,9 +1,0 @@
-name: Ansible
-root: ~/.projects_root/ceres/ansible
-
-windows:
-  - editor: vim
-  - zsh:
-      layout: main-vertical
-      panes:
-        - clear
