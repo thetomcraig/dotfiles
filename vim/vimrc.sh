@@ -81,29 +81,6 @@ endfunction
 echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
 set spellfile="$DOTFILES_LOCATION"."/vim/spell/en.utf-8.add"
 
-" Set the theme on startup
-execute $VIM_BEFORE
-execute "colorscheme " . $VIM_COLORSCHEME
-
-" Testing for setColors
-function! s:switch_theme(theme_name)
-  silent execute "! " . g:scripts_root . "/bash/switch_theme/switch_theme.sh -s " . a:theme_name
-  echo $VIM_BEFORE
-  let $VIM_BEFORE = system(g:scripts_root . "/bash/switch_theme/switch_theme.sh -g vim_before")
-  let $VIM_COLORSCHEME = system(g:scripts_root .  "/bash/switch_theme/switch_theme.sh -g vim_colorscheme")
-  echo $VIM_BEFORE
-
-  "edit
-  "redraw!
-  call s:set_theme()
-endfunction
-command! -nargs=1 ST call s:switch_theme(<q-args>)
-
-function! s:set_theme()
-  execute $VIM_BEFORE
-  execute "colorscheme " . $VIM_COLORSCHEME
-endfunction
-
 
 """"""""""""""""""""""""""""""""""
 "General Space (Leader) shortcuts"
@@ -444,17 +421,17 @@ endfunction
 " ToDos from yesterday to the file
 function! s:startToday()
   " Go to yesterday
-  VimwikiMakeYesterdayDiaryNote
-  # Visually select ToDos from yesterday
-  execute "normal! zR"
-  call s:copyToDos()
-  # Go to todday
+  " VimwikiMakeYesterdayDiaryNote
+  " Visually select ToDos from yesterday
+  " execute "normal! zR"
+  " call s:copyToDos()
+  " Go to todday
   VimwikiMakeDiaryNote
   redraw
-  # Insert date
+  " Insert date
   let date_string=system("echo $(date +'\%A, \%b \%e \%Y')")
   call s:insertStringTitle(date_string)
-  call s:pasteToDos()
+  " call s:pasteToDos()
 endfunction
 command! StartToday call s:startToday()
 
@@ -504,10 +481,21 @@ command! GoToLast1On1 call s:gotoLastDiaryFileForString("## 1:1")
 " 
 " Make an html slide deck from the current markdown file
 function! s:makeSlides()
-  let pandoc_cmd="! " . g:scripts_root . "text/convert_slides_to_html.sh " . expand('%:p')
+  let pandoc_cmd="! " . g:scripts_root . "/text/convert_slides_to_html.sh " . expand('%:p')
   execute pandoc_cmd
 endfunction
 command! MakeSlides call s:makeSlides()
+
+" WorkWiki
+" 
+" Open Vimwiki for work
+function! s:workWiki()
+  execute "edit ${HOME}/Dropbox/TomCraig/CeresNotes/tasks.md"
+  execute "normal! zR"
+  tabnew
+  call s:startToday()
+endfunction
+command! WorkWiki call s:workWiki()
 
 
 
