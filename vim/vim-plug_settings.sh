@@ -57,13 +57,13 @@ Plug 'rakr/vim-one'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'vim-scripts/summerfruit256.vim'
 Plug 'therubymug/vim-pyte'
+Plug 'aonemd/kuroi.vim'
 
 " Markdown "
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'shime/vim-livedown'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vim-zettel'
-"Plug 'sedm0784/vim-you-autocorrect' "
 Plug 'mattn/calendar-vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
@@ -98,5 +98,7 @@ Plug 'chrisbra/csv.vim'
 Plug 'posva/vim-vue'
 Plug 'gregsexton/matchtag'
 
+Plug 'skanehira/preview-markdown.vim'
+Plug 'thetomcraig/vim-chit'
 
 call plug#end()
