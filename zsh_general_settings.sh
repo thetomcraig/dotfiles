@@ -5,9 +5,20 @@
 ###########
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
-export TERM=xterm-256color
 export EDITOR="/usr/local/bin/vim"
 export FZF_DEFAULT_COMMAND="rg --files"
+
+terminal_emulator=$(osascript -e 'tell application "System Events"' \
+                              -e 'set frontApp to name of first application process whose frontmost is true' \
+                              -e 'end tell')
+case $terminal_emulator in
+  kitty)
+    export TERM=xterm-kitty 
+  ;;
+  iTerm2)
+    export TERM=xterm-256color
+  ;;
+esac
 
 HISTSIZE=5000               #How many lines of history to keep in memory
 HISTFILE=~/.zsh_history     #Where to save history to disk
