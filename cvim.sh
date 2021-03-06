@@ -19,7 +19,8 @@ let blacklists = [
       \ "https://www.google.com/maps",
       \ "https://docs.google.com/",
       \ "https://w3c.github.io/uievents/tools/key-event-viewer.html",
-      \ "https://www.hackerrank.com/*"
+      \ "https://www.hackerrank.com/*",
+      \ "https://miro.com/*"
 \ ]
 
 site 'https://github.com' {
