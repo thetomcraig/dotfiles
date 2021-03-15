@@ -4,6 +4,7 @@ let mapleader = " "
 let defaultnewtabpage = "true"
 map <C-;> :
 map <C-o> lastUsedTab
+map <Leader>tc :duplicate<CR>nextTab
 let blacklists = [
       \ "http://10.0.1.3/*",
       \ "http://127.0.0.1/*",
