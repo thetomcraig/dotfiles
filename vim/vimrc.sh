@@ -78,7 +78,7 @@ endfunction
 """"""""""""""""""""""
 "ENVIRONMENT SETTINGS"
 """"""""""""""""""""""
-echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
+"echo "VIM STARTING WITH ENVIRONMENT_SETTINGS:"
 set spellfile="$DOTFILES_LOCATION"."/vim/spell/en.utf-8.add"
 
 
@@ -108,6 +108,7 @@ nnoremap <Space>t9 :tablast<CR>
 nnoremap <Space>tn :tabnext<CR>
 nnoremap <Space>tp :tabprev<CR>
 nnoremap <Space>ty :tabedit<CR>
+nnoremap <Space>tc :tabedit %<CR>
 nnoremap <Space>td :tabclose<CR>
 nnoremap <Space>ta :tabonly<CR>
 nnoremap <Space>t. :tabmove +1<CR>
@@ -294,7 +295,8 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 nnoremap <space>ga :Git add %:p<CR><CR>
 
 nnoremap <space>gd :Gdiff<CR>
-nnoremap <space>gdd :Gvdiffsplit develop:%<CR>
+"nnoremap <space>gdd :Gvdiffsplit develop:%<CR>
+nnoremap <space>gdd :Gvdiffsplit dev:%<CR>
 nnoremap <space>gda :GitDiffAgainstBranch 
 
 nnoremap <Space>grd :Grebase -i develop<CR>
@@ -358,6 +360,7 @@ let g:vimwiki_folding = 'expr'
 let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
+setlocal foldlevel=3
 nnoremap gl+ :VimwikiChangeSymbolTo +<CR>
 nnoremap gl= :VimwikiChangeSymbolTo +<CR>
 nnoremap gl- :VimwikiChangeSymbolTo -<CR>
@@ -527,8 +530,8 @@ setlocal shiftwidth=4
 setlocal tabstop=4
 setlocal softtabstop=4
 
-autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 
-" autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent 
+
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:6
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
 
 set foldlevelstart=1
@@ -558,3 +561,5 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 let $FZF_DEFAULT_OPTS = '--bind ctrl-a:select-all'
+
+
