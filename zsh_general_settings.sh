@@ -65,10 +65,6 @@ alias tt="mytree 999"
 alias s="source $DOTFILES_LOCATION/zsh.sh"
 alias b="vim ${HOME}/.zshrc"
 
-alias sshariston="ssh tom@10.0.1.3"
-alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
-alias sshjuno="ssh pi@10.0.1.20"
-
 alias start="./start.command"
 
 
