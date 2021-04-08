@@ -5,16 +5,6 @@
 PROJECTS_ROOT=~/.projects_root
 
 
-# START testing switch_theme 
-# switch_theme_location=${PROJECTS_ROOT}/scripts/bash/switch_theme/switch_theme.sh
-# Make the functions available
-# source "${switch_theme_location}"
-# shellInit
-# alias ST="setThemeVariables"
-# alias STL="listThemes"
-# ENDtesting switch_theme
-
-
 
 #########
 # HOST/OS
@@ -26,6 +16,17 @@ if [[ $host == *"Darwin"* ]]; then
 
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
 fi
+
+
+#########
+# SERVERS 
+#########
+# export ARISTON_IP="10.0.1.3"
+export ARISTON_IP="192.168.133.179"
+export JUNO_IP=""
+alias sshariston="ssh tom@$ARISTON_IP"
+# alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
+alias sshjuno="ssh pi@10.0.1.20"
 
 
 
@@ -44,6 +45,25 @@ fi
 
 
 
+########
+# CHIT #
+########
+eval "$(chit shell-init)"
+cs() {
+  chit set-theme "${1}"
+  # Reload bash environment variables
+  eval "$(chit export-env-vars)"
+  if [ -n "$TMUX" ]; then
+    # Reload tmux environment variables
+    tmux source-file ~/.tmux.conf
+  fi
+}
+
+
+
+###################
+# EXPORT ENV VARS #
+###################
 export DROPBOX_ROOT="${DROPBOX_ROOT}"
 export PROJECT_ROOT="${PROJECT_ROOT}"
 export PROJECTS_ROOT="${PROJECTS_ROOT}"
@@ -54,6 +74,9 @@ export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
 
 
 
+########
+# PATH #
+########
 eval "$(rbenv init -)"
 export PATH="/usr/local/sbin:$PATH"
 
@@ -65,13 +88,5 @@ export NODE_PATH=$(npm root -g)
 export PATH="$NODE_PATH:$PATH"
 export PATH="${HOME}/Library/Python/3.7/$PATH"
 
-eval "$(chit shell-init)"
-cs() {
-  chit set-theme "${1}"
-  # Reload bash environment variables
-  eval "$(chit export-env-vars)"
-  if [ -n "$TMUX" ]; then
-    # Reload tmux environment variables
-    tmux source-file ~/.tmux.conf
-  fi
-}
+
+

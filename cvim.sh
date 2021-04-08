@@ -3,7 +3,16 @@ let smoothscroll = "true"
 let mapleader = " "
 let defaultnewtabpage = "true"
 map <C-;> :
+
 map <C-o> lastUsedTab
+map <Leader>tc :duplicate<CR>
+map <Leader>tn nextTab
+map <Leader>tp previousTab
+map <Leader>ty :tabnew<CR>
+map <Leader>ta closeTabsToRight
+map <Leader>t< moveTabLeft
+map <Leader>t> moveTabRight
+
 let blacklists = [
       \ "http://10.0.1.3/*",
       \ "http://127.0.0.1/*",
@@ -19,7 +28,8 @@ let blacklists = [
       \ "https://www.google.com/maps",
       \ "https://docs.google.com/",
       \ "https://w3c.github.io/uievents/tools/key-event-viewer.html",
-      \ "https://www.hackerrank.com/*"
+      \ "https://www.hackerrank.com/*",
+      \ "https://miro.com/*"
 \ ]
 
 site 'https://github.com' {
