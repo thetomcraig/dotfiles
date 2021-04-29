@@ -59,7 +59,7 @@ Plug 'vim-scripts/summerfruit256.vim'
 Plug 'therubymug/vim-pyte'
 Plug 'aonemd/kuroi.vim'
 
-" Markdown "
+" Markdown and Writing"
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'shime/vim-livedown'
 Plug 'vimwiki/vimwiki'
