@@ -21,12 +21,9 @@ fi
 #########
 # SERVERS 
 #########
-# export ARISTON_IP="10.0.1.3"
-export ARISTON_IP="192.168.133.179"
-export JUNO_IP=""
-alias sshariston="ssh tom@$ARISTON_IP"
+alias sshariston="ssh tom@ariston"
 # alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
-alias sshjuno="ssh pi@10.0.1.20"
+alias sshjuno="ssh pi@juno"
 
 
 

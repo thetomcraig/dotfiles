@@ -47,7 +47,7 @@ alias db="cd ${HOME}/Dropbox/TomCraig"
 alias proj="cd ${PROJECTS_ROOT}"
 alias notes=openNotes
 openNotes() {
-  cd ${HOME}/Dropbox/TomCraig
+  cd ${HOME}/Dropbox/TomCraig/Notes\ and\ Documents
   vim README.md
 }
 
