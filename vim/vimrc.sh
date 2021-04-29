@@ -42,15 +42,14 @@ set undodir=$HOME."/.undodir"
 set statusline=
 set statusline+=%r
 set statusline+=\ 
-set statusline+=%{StatuslineMode()}
-set statusline+=\ 
+"set statusline+=%{StatuslineMode()}
+"set statusline+=\ 
 set statusline+=%f
 set statusline+=%=
 set statusline+=%P
 set statusline+=\ 
 set statusline+=%c
-"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-"set statusline^=%{ale#statusline#Count()}
+set statusline+=%=%{WordCount()}\ words
 
 function! StatuslineMode()
   let l:mode=mode()
@@ -211,7 +210,7 @@ let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
 let g:ale_markdown_remark_lint_options = remark_settings
 
 function! FixWithRemarkLint(test_arg)
-  let remark_cmd="! remark " . g:remark_settings . " " . expand('%:p') . " -o"
+  let remark_cmd="! remark " . g:remark_settings . " " . fnameescape(expand('%:p')) . " -o"
   write
   silent execute remark_cmd 
   edit
@@ -563,3 +562,21 @@ let g:fzf_action = {
 let $FZF_DEFAULT_OPTS = '--bind ctrl-a:select-all'
 
 
+
+function! WordCount()
+  let s:old_status = v:statusmsg
+  let position = getpos(".")
+  exe ":silent normal g\<c-g>"
+  let stat = v:statusmsg
+  let s:word_count = 0
+  if stat != '--No lines in buffer--'
+    if stat =~ "^Selected"
+      let s:word_count = str2nr(split(v:statusmsg)[5])
+    else
+      let s:word_count = str2nr(split(v:statusmsg)[11])
+    end
+    let v:statusmsg = s:old_status
+  end
+  call setpos('.', position)
+  return s:word_count
+endfunction
