@@ -49,7 +49,7 @@ set statusline+=%=
 set statusline+=%P
 set statusline+=\ 
 set statusline+=%c
-set statusline+=%=%{WordCount()}\ words
+"set statusline+=%=%{WordCount()}\ words
 
 function! StatuslineMode()
   let l:mode=mode()
