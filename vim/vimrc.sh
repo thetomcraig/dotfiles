@@ -49,7 +49,6 @@ set statusline+=%=
 set statusline+=%P
 set statusline+=\ 
 set statusline+=%c
-set statusline+=%=%{WordCount()}\ words
 
 function! StatuslineMode()
   let l:mode=mode()
@@ -580,3 +579,5 @@ function! WordCount()
   call setpos('.', position)
   return s:word_count
 endfunction
+"set statusline=%=%{WordCount()}\ words\
+"set statusline=%{WordCount()}

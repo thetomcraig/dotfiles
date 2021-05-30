@@ -68,6 +68,8 @@ Plug 'mattn/calendar-vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
 Plug 'jszakmeister/markdown2ctags'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 
 " Git "
