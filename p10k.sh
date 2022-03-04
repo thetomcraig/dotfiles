@@ -34,6 +34,7 @@
     # os_icon                 # os identifier
     direnv
     pyenv
+    anaconda
     nodeenv
     nvm
     dir                     # current directory
@@ -538,7 +539,7 @@
   # typeset -g POWERLEVEL9K_DIRENV_FOREGROUND=3
   # typeset -g POWERLEVEL9K_DIRENV_BACKGROUND=0
   # Custom icon.
-  # typeset -g POWERLEVEL9K_DIRENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_DIRENV_VISUAL_IDENTIFIER_EXPANSION='📒'
 
   ###############[ asdf: asdf version manager (https://github.com/asdf-vm/asdf) ]###############
   # Default asdf color. Only used to display tools for which there is no color override (see below).
@@ -911,8 +912,8 @@
 
   #####################[ anaconda: conda environment (https://conda.io/) ]######################
   # Anaconda environment color.
-  # typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
-  # typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=4
+  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
+  typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=9
 
   # Anaconda segment format. The following parameters are available within the expansion.
   #
@@ -941,7 +942,7 @@
   typeset -g POWERLEVEL9K_ANACONDA_CONTENT_EXPANSION='${${${${CONDA_PROMPT_MODIFIER#\(}% }%\)}:-${CONDA_PREFIX:t}}'
 
   # Custom icon.
-  # typeset -g POWERLEVEL9K_ANACONDA_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_ANACONDA_VISUAL_IDENTIFIER_EXPANSION='🐍'
 
   ################[ pyenv: python environment (https://github.com/pyenv/pyenv) ]################
   # Pyenv color.
@@ -969,7 +970,7 @@
   typeset -g POWERLEVEL9K_PYENV_CONTENT_EXPANSION='${P9K_CONTENT}'
 
   # Custom icon.
-  # typeset -g POWERLEVEL9K_PYENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_PYENV_VISUAL_IDENTIFIER_EXPANSION='🦑'
 
   ################[ goenv: go environment (https://github.com/syndbg/goenv) ]################
   # Goenv color.
