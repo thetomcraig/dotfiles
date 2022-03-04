@@ -1,4 +1,5 @@
-alias tx="tmux -u"
+alias tmux="tmux -2"
+alias tmux="tmux -u"
 alias ta="tmux a -t"
 alias td="tmux detatch"
 alias tk="tmux kill-session -t "
@@ -7,6 +8,14 @@ alias tm="vim $DOTFILES_LOCATION/tmux/tmux.conf"
 alias trn="tmux rename-window $1"
 alias trv="tmux select-layout even-vertical"
 alias trh="tmux select-layout even-horizontal"
+alias to=tmux_only_window
+tmux_only_window() {
+  # Close all other windows,
+  # only keep the current one
+  while tmux next-window 2> /dev/null; do
+      tmux kill-window
+  done
+}
 
 alias txs='tmuxinator start'
 alias txo='tmuxinator open'
