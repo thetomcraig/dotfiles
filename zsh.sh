@@ -13,46 +13,46 @@ STEP_START="$(date +%s)"
 if $verbose; then echo "LOADING ENVIRONMENT SETTINGS..."; fi
 source $DOTFILES_LOCATION/zsh_environment_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo echoGreen "  OK (Took ${DURATION} s)"; fi
+if $verbose; then echo "  OK (Took ${DURATION} s)"; fi
 
 # General ZSH Settings
-if $verbose; then echo echo "LOADING GENERAL SETTINGS..."; fi
+if $verbose; then echo "LOADING GENERAL SETTINGS..."; fi
 STEP_START="$(date +%s)"
 source $DOTFILES_LOCATION/zsh_general_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo echoGreen " OK (Took ${DURATION} s)"; fi
+if $verbose; then echo " OK (Took ${DURATION} s)"; fi
 
 # OMZ Settings
-if $verbose; then echo echo "LOADING OMZ SETTINGS..."; fi
+if $verbose; then echo "LOADING OMZ SETTINGS..."; fi
 STEP_START="$(date +%s)"
 source $DOTFILES_LOCATION/zsh_omz_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo echoGreen " OK (Took ${DURATION} s)"; fi
+if $verbose; then echo " OK (Took ${DURATION} s)"; fi
 
 # GIT Settings
-if $verbose; then echo echo "LOADING GIT SETTINGS..."; fi
+if $verbose; then echo "LOADING GIT SETTINGS..."; fi
 STEP_START="$(date +%s)"
 source $DOTFILES_LOCATION/zsh_git_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo echoGreen " OK (Took ${DURATION} s)"; fi
+if $verbose; then echo " OK (Took ${DURATION} s)"; fi
 
 # TMUX Settings
-if $verbose; then echo echo "LOADING TMUX SETTINGS..."; fi
+if $verbose; then echo "LOADING TMUX SETTINGS..."; fi
 STEP_START="$(date +%s)"
 source $DOTFILES_LOCATION/tmux/zsh_tmux_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo echoGreen " OK (Took ${DURATION} s)"; fi
+if $verbose; then echo " OK (Took ${DURATION} s)"; fi
 
 # Python Settings
-if $verbose; then echo echo "LOADING PYTHON SETTINGS..."; fi
+if $verbose; then echo "LOADING PYTHON SETTINGS..."; fi
 STEP_START="$(date +%s)"
 source $DOTFILES_LOCATION/zsh_python_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo echoGreen " OK (Took ${DURATION} s)"; fi
+if $verbose; then echo " OK (Took ${DURATION} s)"; fi
 
 DURATION=$[ $(date +%s) - ${SCRIPT_START} ]
-if $verbose; then echo echo "INITIALIZATION COMPLETE!"; fi
-if $verbose; then echo echoGreen " OK (Took ${DURATION} s)"; fi
+if $verbose; then echo "INITIALIZATION COMPLETE!"; fi
+if $verbose; then echo " OK (Took ${DURATION} s in total)"; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
