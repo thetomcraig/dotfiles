@@ -26,28 +26,22 @@ alias gl1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 
 alias gba="git branch -a"
-alias gv="git branch -vv"
+alias gv="git branch --sort=committerdate -vv"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
 
-# Copy last git commit message to clipboard
-alias gyp="git log -1 --pretty=%B | pbcopy"
-# Stage commit with last commit message, then open for editing
-alias gym="git commit -m '$(git log -1 --pretty=%B)' && git commit --amend"
-
 # Large and complicated ones
 # Make local branch tracking remote that matches a regex
 # For example gg hotfix nov-14
-alias gg=gitbranchgrep
+alias gs=regexcheckout
+alias gg=regexcheckoutnew
 # Stage the deletion of any files you've deleted
 alias grm="git ls-files --deleted -z | xargs -0 git rm"
 # Push this branch and make a new upstream with the same name
 alias gsu=gitPushAndSetMatchingUpstream
 # Start a pull request for the current branch
 alias gpr=gitpullrequest
-# List the 5 most recently used branches
-alias grb=git for-each-ref --sort=-committerdate --format='%(refname)' refs/heads  | head -5
 
 
 
@@ -56,7 +50,6 @@ alias grb=git for-each-ref --sort=-committerdate --format='%(refname)' refs/head
 ##################
 getLocalBranchName() {
   echo $(git for-each-ref --format='%(refname:short)' $(git symbolic-ref -q HEAD))
-
 }
 
 getRemoteBranchName() {
@@ -83,7 +76,13 @@ gitpullrequest() {
   open ${GITHUB_HOSTNAME}/compare/"${BRANCH_NAME}"
 }
 
-gitbranchgrep() {
+regexcheckout() {
+  # For checking out a present branch
+  local DESIRED_BRANCH=$(git branch | grep ${1} | xargs)
+  git checkout "${DESIRED_BRANCH}"
+}
+
+regexcheckoutnew() {
   # Find a remote branch that includes the string in ${1}
   # Make a new branch to track the remote branch, with a matching name
   git pull && \
@@ -102,20 +101,4 @@ getCurrentJiraNumber() {
   local BRANCH_NAME=$(getLocalBranchName)
   local JIRA_NUMBER=$(echo "${BRANCH_NAME}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
   echo "${JIRA_NUMBER}"
-}
-
-#alias gv=fco_preview
-fco_preview() {
-  local tags branches target
-  branches=$(
-    git --no-pager branch --sort=-committerdate \
-      --format="%(if)%(HEAD)%(then)%(else)%(if:equals=HEAD)%(refname:strip=3)%(then)%(else)%1B[0;34;1mbranch%09%1B[m%(refname:short)%(end)%(end)" \
-    | sed '/^$/d') || return
-  tags=$(
-    git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
-  target=$(
-    (echo "$branches"; echo "$tags") |
-    fzf --no-hscroll --no-multi -n 2 \
-        --ansi --preview="git --no-pager log -150 --pretty=format:%s '..{2}'") || return
-  git checkout $(awk '{print $2}' <<<"$target" )
 }
