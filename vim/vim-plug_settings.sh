@@ -5,7 +5,9 @@ call plug#begin('~/.vim/plugged')
 
 " Extra Functionality "
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-rsi'
+"Plug 'tpope/vim-rsi'
+Plug 'ryvnf/readline.vim'
+Plug 'jlanzarotta/bufexplorer'
 
 
 " Coding and Text "
@@ -24,6 +26,7 @@ Plug 'jmcantrell/vim-virtualenv'
 " Visual Tools "
 Plug 'preservim/nerdtree'
 Plug 'zackhsi/nerdtree-rg.vim'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'mbbill/undotree'
 Plug 'tecfu/YankRing.vim'
 Plug 'majutsushi/tagbar'
@@ -33,6 +36,7 @@ Plug 'inkarkat/vim-mark'
 Plug 'lfv89/vim-interestingwords'
 Plug 'simeji/winresizer'
 Plug 't9md/vim-choosewin'
+Plug 'vim-airline/vim-airline'
 
 
 " Searching "
@@ -44,10 +48,10 @@ Plug 'junegunn/fzf.vim'
 " Colors "
 Plug 'whatyouhide/vim-gotham'
 Plug 'morhetz/gruvbox'
-Plug 'jaredgorski/fogbell.vim'
-Plug 'liuchengxu/space-vim-theme'
+Plug 'thenewvu/vim-colors-sketching'
+Plug 'vyshane/cleanroom-vim-color'
 Plug 'junegunn/seoul256.vim'
-Plug 'thetomcraig/xenomorph.vim'
+Plug 'thetomcraig/alienblood.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'cocopon/iceberg.vim'
@@ -55,9 +59,9 @@ Plug 'AlessandroYorba/Alduin'
 Plug 'rakr/vim-two-firewatch'
 Plug 'rakr/vim-one'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'vim-scripts/summerfruit256.vim'
-Plug 'therubymug/vim-pyte'
 Plug 'aonemd/kuroi.vim'
+Plug 'guns/xterm-color-table.vim'
+Plug 'lifepillar/vim-colortemplate'
 
 " Markdown and Writing"
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -74,12 +78,11 @@ Plug 'junegunn/limelight.vim'
 
 " Git "
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
 Plug 'idanarye/vim-merginal'
-Plug 'gregsexton/gitv'
-Plug 'rbong/vim-flog'
-Plug 'jreybert/vimagit'
 Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-fugitive'
+Plug 'rbong/vim-flog'
+Plug 'TamaMcGlinn/flog-forest'
 
 
 " Syntax "
@@ -89,6 +92,7 @@ Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'jeetsukumaran/vim-pythonsense'
