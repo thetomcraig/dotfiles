@@ -1,0 +1,11 @@
+name: CoreadAI
+root: ~/.projects_root/freelancing/jacob_johnson_code_review/
+
+
+windows:
+  - Notes: vim notes/README.md
+  - Vim: cd data-engine && vim
+  - Data-Engine:
+      layout: even-vertical
+      panes:
+        - cd data-engine

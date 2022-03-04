@@ -1,0 +1,8 @@
+name: DnD
+root: "Dropbox/TomCraig/03 References/DnD/campaign_1"
+
+windows:
+  - Vim:
+      layout: main-vertical
+      panes:
+        - vim README.md
