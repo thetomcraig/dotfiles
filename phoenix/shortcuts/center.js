@@ -33,3 +33,6 @@ setKeyHandler ( 'v', HYPER_SHIFT, () => {
 
 /* SHIRNK AND CENTER */
 setKeysHandler ( setFrame, [['r', HYPER, ['center']]]);
+setKeysHandler ( setFrame, [['t', HYPER, ['center_tall']]]);
+setKeysHandler ( setFrame, [['g', HYPER, ['center_medium']]]);
+setKeysHandler ( setFrame, [['v', HYPER, ['center_large']]]);

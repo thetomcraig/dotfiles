@@ -8,7 +8,10 @@ function getNamedFrame ( name ) {
 
   switch ( name ) {
     /* CENTER */
-    case 'center': return [.175, .175, .65, .65];
+    case 'center': return [3/20, 3/20, 14/20, 14/20];
+    case 'center_tall': return [4/20, 1/20, 12/20, 18/20];
+    case 'center_medium': return [2/20, 2/20, 16/20, 16/20];
+    case 'center_large': return [1/20, 1/20, 18/20, 18/20];
     /* SIDES */
     case 'top': return [0, 0, 1, .5 + dTop];
     case 'right': return [.5 + dLeft, 0, .5 - dLeft, 1];
