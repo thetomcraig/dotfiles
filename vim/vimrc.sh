@@ -9,7 +9,12 @@ au BufReadPost vimrc.sh set ft=vim.rc
 """""""""
 "General"
 """""""""
+" See the information here:
+" https://stackoverflow.com/questions/62702766/termguicolors-in-vim-makes-everything-black-and-white
 set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 set nocompatible
 filetype plugin on                          "Used by the NERDcommenter plugin
 syntax on                                   "turn on the syntax coloring
@@ -96,7 +101,6 @@ nnoremap <Space>G :MerginalToggle<CR>
 " Jump to tag
 nnoremap <Space>j <C-]><CR>
 
-nnoremap <Space>ft :NERDTreeFind<CR>
 nnoremap <Space>fu :UndotreeToggle<CR>
 nnoremap <Space>fo :! open %<CR>
 nnoremap <Space>fp :let @+=expand('%:p')<CR>
@@ -105,13 +109,15 @@ nnoremap <Space>fy :echo expand("%:p")<CR>
 nnoremap <Space>t1 :tabfirst<CR>
 nnoremap <Space>t9 :tablast<CR>
 nnoremap <Space>tn :tabnext<CR>
-nnoremap <Space>tp :tabprev<CR>
-nnoremap <Space>ty :tabedit<CR>
-nnoremap <Space>tc :tabedit %<CR>
+nnoremap <Space>tm :tabprev<CR>
+nnoremap <Space>t/ :tabedit<CR>
+nnoremap <Space>/c /\c
 nnoremap <Space>td :tabclose<CR>
-nnoremap <Space>ta :tabonly<CR>
+nnoremap <Space>to :tabonly<CR>
 nnoremap <Space>t. :tabmove +1<CR>
 nnoremap <Space>t, :tabmove -1<CR>
+" For vimwiki: Open the link in a new tab
+nnoremap <Space>t<CR> :VimwikiTabnewLink<CR>
 
 nmap <Space>bd :bp <BAR> bd #<CR>
 " Close all extraneous splits
@@ -166,7 +172,7 @@ nmap <Space>bg :Grepper-buffer
 """""""
 " FZF "
 """""""
-set rtp+=/usr/local/opt/fzf
+set rtp+=/usr/local/bin/fzf
 "command! -bang -nargs=? -complete=dir Files
 "    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 let g:fzf_preview_window = 'right:60%'
@@ -200,7 +206,7 @@ let g:ale_lint_on_save = 0
 let g:javascript_prettier_options = '--print-width 100 --write --prose-wrap always'
 let g:ale_python_autopep8_options = '--aggressive --aggressive'
 let g:ale_python_isort_options = '-l 120'
-let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116'
+let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116,E722'
 let g:ale_python_black_options = '--exclude migrations --line-length 100'
 
 let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
@@ -231,7 +237,7 @@ let g:ale_linters = {
 \ }
 let g:ale_fixers = {
     \ 'html': ['prettier'],
-    \ 'javascript': ['FixWithVue'],
+    \ 'javascript': [''],
     \ 'json': ['jsonlint'],
     \ 'less': [],
     \ 'python': ['isort', 'black'],
@@ -242,9 +248,6 @@ let g:ale_fixers = {
     \ 'vimwiki': ['FixWithRemarkLint'],
     \ 'markdown': ['FixWithRemarkLint'],
 \ }
-
-"let g:ale_linter_aliases = {'vue': ['vue', 'FixWithVue']}
-"let g:ale_fixer_aliases = {'vue': ['vue', 'FixWithVue']}
 
 nnoremap <Space>ad :ALEDisable<CR>
 nnoremap <Space>ae :ALEEnable<CR>
@@ -286,7 +289,7 @@ function! s:closeGStatus()
 endfunction
 command! GstatusClose call s:closeGStatus()
 
-nnoremap <space>g :Gstatus<CR>
+nnoremap <space>g :Git<CR>
 nnoremap <space>gpu :Dispatch! git push<CR>
 nnoremap <space>gpf :Dispatch! git push --force<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
@@ -298,18 +301,18 @@ nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>gdd :Gvdiffsplit dev:%<CR>
 nnoremap <space>gda :GitDiffAgainstBranch 
 
-nnoremap <Space>grd :Grebase -i develop<CR>
 nnoremap <Space>grc :Grebase --continue<CR>
 
-nnoremap <space>gl :Glog <CR>
-
-nnoremap <Space>gb :Gblame<CR>
-nnoremap <space>ge :Gedit<CR>
-nnoremap <space>gw :Gwrite<CR><CR>
-
-nnoremap <Space>gv :Merginal<CR>
+nnoremap <space>gl :0Gclog <CR>
 
 nnoremap <Space>gs :GitShow<CR>
+nnoremap <Space>gb :Git blame<CR>
+nnoremap <space>ge :Gedit<CR>
+nnoremap <space>gw :Gwrite<CR><CR>
+" Stage the file and close the window
+nnoremap <space>gws :Gwrite<CR>:q<CR>
+
+nnoremap <Space>gv :Merginal<CR>
 
 
 
@@ -350,16 +353,24 @@ command! GitShow call s:show_commit_under_cursor()
 """"""""""
 "MARKDOWN"
 """"""""""
-let g:livedown_browser = "safari"
+"let g:livedown_browser = 'safari'
 "let g:vim_markdown_folding_disabled = 1
 "let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
 let g:vimwiki_folding = 'expr'
-let g:vimwiki_list = [{'path': $DROPBOX_ROOT . '/Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [
+    \ {'path': $DROPBOX_ROOT . '/04 Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
+    \ {'path': $DROPBOX_ROOT . '/03 References', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
+    \ {'path': $DROPBOX_ROOT . '/03 References/DnD/campaign_2', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
+    \ ]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
-setlocal foldlevel=3
+let g:zettel_options = [{"template" :  $DOTFILES_LOCATION . "/vim/vim-zettel-template.tpl"}]
+nnoremap <Space>gt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
+nnoremap <Space>zn :ZettelNew<space>
+
+"setlocal foldlevel=3
 nnoremap gl+ :VimwikiChangeSymbolTo +<CR>
 nnoremap gl= :VimwikiChangeSymbolTo +<CR>
 nnoremap gl- :VimwikiChangeSymbolTo -<CR>
@@ -394,13 +405,19 @@ endfunction
 " insertDayTitle
 " 
 " Insert the current date as a top-level header in the current file
-" Like so:
-" # Wednesday, April 20 2020
 function! s:insertDayTitle()
-  let date_string=system("echo $(date +'\%A, \%b \%e \%Y')")
+  let date_string=s:getFormattedDateString()
   call s:insertStringTitle(date_string)
 endfunction
 command! InsertDayTitle call s:insertDayTitle()
+
+" GetFormattedDateString
+"
+" Return a string of the current date in the format Sunday, May 30 2021
+function! s:getFormattedDateString()
+  return system("echo $(date +'\%A, \%b \%e \%Y')")
+endfunction
+command! GetFormattedDateString call s:getFormattedDateString()
 
 function! s:copyToDos()
   " Go to the 'ToDo' Section
@@ -488,18 +505,6 @@ function! s:makeSlides()
 endfunction
 command! MakeSlides call s:makeSlides()
 
-" WorkWiki
-" 
-" Open Vimwiki for work
-function! s:workWiki()
-  execute "edit ${HOME}/Dropbox/TomCraig/CeresNotes/tasks.md"
-  execute "normal! zR"
-  tabnew
-  call s:startToday()
-endfunction
-command! WorkWiki call s:workWiki()
-
-
 
 
 """"""""""""""""""""""
@@ -532,11 +537,22 @@ setlocal tabstop=4
 setlocal softtabstop=4
 
 
-autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:6
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:6 spell
+autocmd FileType python setlocal nosmartindent
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
 
 set foldlevelstart=1
 autocmd BufRead,BufNewFile *.vue setfiletype html
+
+
+let g:airline_section_b = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = airline#section#create(['%1p%% col:%1v'])
+
+
+
+
 
 
 " TODO Function to make a tmux session for this
@@ -547,7 +563,6 @@ endfunction
 command! MoveToTmuxSession call s:moveToTmuxSession()
 
 " CTRL-A CTRL-Q to select all and build quickfix list
-
 function! s:build_quickfix_list(lines)
   "let uniqueList=filter(copy(a:lines), 'index(a:lines, v:val, v:key+1)==-1')
   call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
@@ -601,20 +616,23 @@ onoremap <silent> ]l :call NextIndent(0, 1, 0, 1)<CR>
 onoremap <silent> [L :call NextIndent(1, 0, 1, 1)<CR>
 onoremap <silent> ]L :call NextIndent(1, 1, 1, 1)<CR>
 
-function! WordCount()
-  let s:old_status = v:statusmsg
-  let position = getpos(".")
-  exe ":silent normal g\<c-g>"
-  let stat = v:statusmsg
-  let s:word_count = 0
-  if stat != '--No lines in buffer--'
-    if stat =~ "^Selected"
-      let s:word_count = str2nr(split(v:statusmsg)[5])
-    else
-      let s:word_count = str2nr(split(v:statusmsg)[11])
-    end
-    let v:statusmsg = s:old_status
-  end
-  call setpos('.', position)
-  return s:word_count
+
+" TODO: spaces are not being escaped properly
+" ALso, need to try with an older version of termpdf that works with tmux
+function! s:viewPDFInSplit(args)
+  TmuxDo("split-window -h")
+  TmuxDo("send-keys './termpdf/termpdf " . a:args)
+  TmuxDo("send-keys Enter")
 endfunction
+
+function! s:openCurrentPDFFileInSplit()
+  let file_path = expand("%:p")
+  call s:viewPDFInSplit("'" . file_path . "'")
+endfunction
+command! OpenCurrentPDFFileInSplit call s:openCurrentPDFFileInSplit()
+
+"nnoremap <Space>ft :NERDTreeFind<CR>
+nnoremap <Space>ft :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_autofind=1
+let g:nerdtree_tabs_open_on_new_tab=1
+let g:nerdtree_tabs_meaningful_tab_names=1
