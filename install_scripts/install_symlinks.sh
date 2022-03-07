@@ -1,11 +1,4 @@
-PROJECTS_ROOT="${HOME}"
-
-host=$(uname -a)
-if [[ $host == *"ZENO"* ]]; then
-  PROJECTS_ROOT="${HOME}/Dropbox/TomCraig/Projects"
-else
-  PROJECTS_ROOT="${HOME}/dev"
-fi
+PROJECTS_ROOT="${HOME}/Dropbox/TomCraig/Projects"
 
 # Link Files
 cd "${HOME}"
@@ -35,7 +28,3 @@ ln -s $DOTFILES_LOCATION/phoenix.phoenix.js .phoenix.js
 
 rm -f -- /usr/local/bin/diff-so-fancy
 ln -s $DOTFILES_LOCATION/diff-so-fancy /usr/local/bin/diff-so-fancy
-
-cd ~/Library/Preferences/
-rm -f -- ~/Library/Preferences/com.manytricks.Moom.plist
-ln -s $DOTFILES_LOCATIONtmux/gui_apps/com.manytricks.Moom.plist com.manytricks.Moom.plist

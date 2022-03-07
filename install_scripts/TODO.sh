@@ -1,4 +1,0 @@
-- login items
-- mounting disks
-- host file entries
-- output brew packages
