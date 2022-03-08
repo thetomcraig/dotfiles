@@ -40,17 +40,17 @@
 ## Brew Install
 - [X] Install Brew Packages
   ```
-  ./install_brew_packages.sh
+  sudo ./install_brew_packages.sh
   ```
   - (This will install Xcode tools)
 - [X] Set up Dropbox and start syncing
 - [X] Install Mac App Store Apps
   ```
-  mas install $(cat mac_app_store_app_ids.txt)
+  sudo mas install $(cat mac_app_store_app_ids.txt)
   ```
 - [X] Install Dot Files
   ```
-  ./install_dotfiles.sh
+  sudo ./install_dotfiles.sh
   ```
 
 - [X] Symlink Dot Files
@@ -60,12 +60,12 @@
 
 - [X] Install macOS settings
   ```
-  ./install_macos_settings.sh
+  sudo ./install_macos_settings.sh
   ```
 
 - [X] Install Command Line Applications
   ```
-  ./install_cli_apps.sh
+  sudo ./install_cli_apps.sh
   ```
   
 ## Step 5: Configurations
@@ -90,28 +90,22 @@
     - [ ] Install from my forked repo
     - Copy RAW URL from here: `https://gist.github.com/thetomcraig/dffaa31306bc1d5e2f5d1e91318b0055`
 - [X] Transmit
-- [ ] iTerm
+- [X] iTerm
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
 - [ ] Freecad
   - Flowwie's settings
-- [ ] Clean my Mac
 - [X] Hosts file
   - `sudo cat for_hosts_file.txt >> /etc/hosts`
 - [ ] Add Ariston to the Saved servers, and connect
+- dock items
+- Keep desktop icons arranged
+- finder sidebar items
+- disallow notifications from applications
+
 - Check for new versions of pirated software
   - office
   - adobe
 - Other things to install
   - python conda
   - nvm
-- Dim screen timeout
-- dock items
-- Keep desktop icons arranged
-- finder sidebar items
-- display sleep timeout
-- show battery percentage
--disallow notifications from applications
-- private-internet-access
-- run with sudo
-

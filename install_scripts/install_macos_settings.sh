@@ -55,6 +55,10 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
+# Four finger swipe up for mission control
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -175,6 +179,12 @@ defaults write com.apple.dock expose-group-by-app -bool false
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Uncheck "slightly dim the display on battery"
+sudo pmset -b lessbright 0
+
+# Turn off the display after 15 mins
+sudo pmset -b displaysleep 15
+
 # Expand print panel by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForPrintMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForPrintMode2 -bool true
@@ -221,6 +231,9 @@ for app in \
 done
 # Media Disk
 osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"Volumes/Bigboi\", kind:\"Volume\", hidden:false}"
+
+# Show battery percentage in menu bar
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
 
 # Hide menubar items
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1

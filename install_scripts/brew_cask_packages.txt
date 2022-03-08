@@ -7,6 +7,7 @@ backblaze
 balenaetcher
 brave-browser
 calibre
+cleanmymac
 ultimaker-cura
 discord
 homebrew/cask/docker
