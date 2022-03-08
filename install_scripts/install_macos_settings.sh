@@ -211,6 +211,7 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@^a"
 
 # Login Items
+# Applications
 for app in \
 	"Alfred 4" \
 	"Flux" \
@@ -218,6 +219,8 @@ for app in \
 	"Phoenix"; do
 	osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"/Applications/${app}.app\", hidden:false}"
 done
+# Media Disk
+osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"Volumes/Bigboi\", kind:\"Volume\", hidden:false}"
 
 # Hide menubar items
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1

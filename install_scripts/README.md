@@ -43,6 +43,7 @@
   cd dotfiles
   ./install_brew_packages.sh
   ```
+- [ ] Set up Dropbox to start syncing
 - [ ] Install Dot files
   ```
   cd ${HOME}
@@ -65,7 +66,8 @@
   ./install_macos_settings.sh
   ```
   
-## Step 5: App Configurations
+## Step 5: Configurations
+- [ ] Add Ariston to the Saved servers, and connect
 - [ ] Fantastical
   - Make a new iCloud app password
   - Sign into Flexibits account
@@ -85,3 +87,6 @@
 - Check for new versions of pirated software
   - office
   - adobe
+- Other things to install
+  - python conda
+  - nvm
