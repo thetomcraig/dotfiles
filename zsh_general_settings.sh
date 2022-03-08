@@ -20,7 +20,7 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 #########
 # ALIASES
 #########
-alias ctags="`brew --prefix`/bin/ctags"
+#alias ctags="`brew --prefix`/bin/ctags"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "

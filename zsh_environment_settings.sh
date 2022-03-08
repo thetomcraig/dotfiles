@@ -59,6 +59,9 @@ export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
 ##################
 # PATH AND HOOKS #
 ##################
+# BREW
+export PATH=/opt/homebrew/bin:$PATH
+
 # PYENV
 eval "$(pyenv init --path)"
 
@@ -70,13 +73,15 @@ eval "$(rbenv init -)"
 export PATH="/usr/local/sbin:$PATH"
 
 # NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # AVR GCC (QMK)
 export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
 
 eval "$(direnv hook zsh)"
+
 
 # NEEDED???
 #export NODE_PATH=$(npm root -g)
