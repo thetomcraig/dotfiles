@@ -69,11 +69,19 @@
   ```
   
 ## Step 5: Configurations
-- [ ] Copy all the home folder files over from the last computer
+- [X] Copy all the home folder files over from the last computer
+- [X] Install fonts from documents folder
 - [X] Create nvm folder:
   - `mkdir ~/.nvm`
 - [X] Copy `karabiner.json` to `${HOME}/.config/karabiner/karabiner.json`
+- [X] Finder stuff
+  - Go to Desktop -> View Options -> Sort By -> Name
 - [X] Sign into 1Password
+- [X] Homebrew
+- Install backblaze from the brew installer
+  - Have it start backing up
+- [X] Photos
+  - Preferences -> iCloud -> Download Originals to this Mac
 - [X] Alfred
   - [X] Power Pack
   - [X] Sync Folder Location
@@ -97,11 +105,11 @@
   - Flowwie's settings
 - [X] Hosts file
   - `sudo cat for_hosts_file.txt >> /etc/hosts`
-- [ ] Add Ariston to the Saved servers, and connect
-- dock items
-- Keep desktop icons arranged
-- finder sidebar items
-- disallow notifications from applications
+- [X] Turn off Notifications 
+- [ ] Add Wallpaper folder to desktop options
+   
+- Add Ariston to the Saved servers, and connect
+- After getting python setup, look at ncutil.py and see if it still works
 
 - Check for new versions of pirated software
   - office

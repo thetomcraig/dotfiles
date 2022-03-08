@@ -25,3 +25,12 @@ ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 
 rm -f -- ~/.phoenix.js
 ln -s $DOTFILES_LOCATION/phoenix/phoenix.js .phoenix.js
+
+rm -f -- ~/.config/karabiner/karabiner.json
+ln -s $DOTFILES_LOCATION/karabiner/karabiner.json .config/karabiner/karabiner.json
+
+rm -f -- ~/Library/Preferences/FreeCAD/system.cfg
+ln -s $DOTFILES_LOCATION/freecad/system.cfg ~/Library/Preferences/FreeCAD/system.cfg
+
+rm -f -- ~/Library/Preferences/FreeCAD/user.cfg
+ln -s $DOTFILES_LOCATION/freecad/user.cfg ~/Library/Preferences/FreeCAD/user.cfg

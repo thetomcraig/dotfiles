@@ -7,6 +7,7 @@ backblaze
 balenaetcher
 brave-browser
 calibre
+google-chrome
 cleanmymac
 ultimaker-cura
 discord
@@ -29,6 +30,7 @@ notion
 obs
 openemu
 phoenix
+plex
 postman
 avibrazil-rdm
 signal

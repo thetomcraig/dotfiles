@@ -5,10 +5,14 @@
 defaults write .GlobalPreferences AppleAccentColor -int 3
 defaults write .GlobalPreferences AppleHighlightColor -string "0.752941 0.964706 0.678431 Green"
 
+# Disable gatekeeper
+sudo spctl --master-disable
+
 # Show bars when scrolling
 defaults write .GlobalPreferences AppleShowScrollBars -string "WhenScrolling"
+
 # Click bar to jump to the spot that's clicked
-defaults write .GlobalPreferences AppleScrollerPagingBehavior -bool true
+defaults write NSGlobalDomain AppleScrollerPagingBehavior -int 1
 
 # Prefer tabs when opening documents
 defaults write .GlobalPreferences AppleWindowTabbingMode -string "always"
@@ -138,6 +142,15 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	OpenWith -bool true \
 	Privileges -bool true
 
+# Add favorites to the Finder sidebar
+mysides remove Recents
+mysides remove Downloads
+mysides add tomcraig file://${HOME}
+mysides add TomCraig file://${HOME}/Dropbox/TomCraig
+mysides add Music file://${HOME}/Music
+mysides add Movies file://${HOME}/Movies
+mysides add Pictures file://${HOME}/Pictures
+
 # Set the icon size of Dock items to 48 pixels
 defaults write com.apple.dock tilesize -int 48
 
@@ -146,6 +159,30 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 # Wipe all (default) app icons from the Dock
 defaults write com.apple.dock persistent-apps -array
+
+# Put all my applications into the dock
+for app in \
+  "/System/Applications/Messages.app" \
+  "/Applications/Discord.app" \
+  "/System/Applications/Mail.app" \
+  "/Applications/Fantastical.app" \
+  "/Applications/Brave Browser.app" \
+  "/Applications/Google Chrome.app" \
+  "/System/Applications/Reminders.app" \
+  "/Applications/iTerm.app" \
+  "/Applications/Visual Studio Code.app" \
+  "/Applications/Upwork.app" \
+  "/Applications/Slack.app" \
+  "/Applications/zoom.us.app" \
+  "/System/Applications/Preview.app" \
+  "/System/Applications/Photos.app" \
+  "/System/Applications/Music.app" \
+  "/Applications/Transmission.app" \
+  "/Applications/Transmit.app" \
+  "/Applications/Plex.app" \
+  "/System/Applications/System Preferences.app"; do
+  defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>${app}</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+done
 
 # Autohide dock
 defaults write com.apple.dock autohide -bool true
@@ -229,6 +266,8 @@ for app in \
 	"Phoenix"; do
 	osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"/Applications/${app}.app\", hidden:false}"
 done
+
+
 # Media Disk
 osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"Volumes/Bigboi\", kind:\"Volume\", hidden:false}"
 

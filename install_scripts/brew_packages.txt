@@ -12,6 +12,7 @@ gh
 git
 jq
 mas
+mysides
 pianobar
 poetry
 pyenv
