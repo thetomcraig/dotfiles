@@ -1,7 +1,3 @@
-# Mac App Store Apps
-# 'mas' installed from brew install previous
-mas install $(cat mac_app_store_app_ids.txt)
-
 # TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 

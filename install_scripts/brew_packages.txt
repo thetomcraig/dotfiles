@@ -5,7 +5,6 @@ brightness
 ctags
 diff-so-fancy
 direnv
-displayplacer
 exa
 extract_url
 fzf
@@ -17,7 +16,6 @@ pianobar
 poetry
 pyenv
 pyenv-virtualenv
-qmk
 rbenv
 ripgrep
 shellcheck

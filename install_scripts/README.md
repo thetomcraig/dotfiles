@@ -4,9 +4,10 @@
 
 ### Misc
 - [X] Move anything from the computer desktop
-- [ ] Clean up torrents
+- [X] Clean up torrents
 - [X] Push any git updates to dotfiles repo
 - [ ] Make sure projects don't have lingering commits
+- [X] Copy `${HOME}/.config/karabiner/karabiner.json`
 
 ### Update Applications Lists
 - [X] Mac App Store
@@ -33,57 +34,75 @@
     - `brew search --casks <APP NAME>`
 
 ## Initial Operating System Setup (Destination Machine)
-- [ ] Copy this folder to new machine
+- [X] Copy this folder to new machine
   - Manually, because git isn't set up yet
-- [ ] Sign in to icloud
 
 ## Brew Install
-- [ ] Install Brew Packages
+- [X] Install Brew Packages
   ```
-  cd dotfiles
-  ./install_brew_packages.sh
+  sudo ./install_brew_packages.sh
   ```
-- [ ] Set up Dropbox to start syncing
-- [ ] Install Dot files
+  - (This will install Xcode tools)
+- [X] Set up Dropbox and start syncing
+- [X] Install Mac App Store Apps
   ```
-  cd ${HOME}
-  git clone git@github.com:thetomcraig/dotfiles.git
+  sudo mas install $(cat mac_app_store_app_ids.txt)
   ```
-
-- [ ] Install Command Line Applications
+- [X] Install Dot Files
   ```
-  cd dotfiles
-  ./install_cli_apps.sh
+  sudo ./install_dotfiles.sh
   ```
 
-- [ ] Symlink Dot Files
+- [X] Symlink Dot Files
   ```
   ./install_symlinks.sh
   ```
 
-- [ ] Install macOS settings
+- [X] Install macOS settings
   ```
-  ./install_macos_settings.sh
+  sudo ./install_macos_settings.sh
+  ```
+
+- [X] Install Command Line Applications
+  ```
+  sudo ./install_cli_apps.sh
   ```
   
 ## Step 5: Configurations
-- [ ] Add Ariston to the Saved servers, and connect
-- [ ] Fantastical
-  - Make a new iCloud app password
+- [ ] Copy all the home folder files over from the last computer
+- [X] Create nvm folder:
+  - `mkdir ~/.nvm`
+- [X] Copy `karabiner.json` to `${HOME}/.config/karabiner/karabiner.json`
+- [X] Sign into 1Password
+- [X] Alfred
+  - [X] Power Pack
+  - [X] Sync Folder Location
+  - [X] Turn on Clipboard syncing
+- [X] Fantastical
   - Sign into Flexibits account
-- [ ] iTerm
-  - Schemes
-- [ ] Brave
-  - Bookmarks
-  - Set as default browser
-  - Sync
-  - uBlock Origin 
-    - CVim
-      - Copy RAW URL from here: `https://gist.github.com/thetomcraig/dffaa31306bc1d5e2f5d1e91318b0055`
-- [ ] Transmit
+  - Make a new iCloud app password
+- [X] Brave
+  - [X] Turn on Sync in Settings
+  - [X] X Browser Sync
+  - [X] uBlock Origin 
+    - https://github.com/gorhill/uBlock/wiki/Cloud-storage
+  - [ ] CVim
+    - [ ] Install from my forked repo
+    - Copy RAW URL from here: `https://gist.github.com/thetomcraig/dffaa31306bc1d5e2f5d1e91318b0055`
+- [X] Transmit
+- [X] iTerm
+  - Go to Preferences -> General -> Preferences -> Load preferences...
+  - And click Browse, and select the dotfiles folder
 - [ ] Freecad
   - Flowwie's settings
-- login items
+- [X] Hosts file
+  - `sudo cat for_hosts_file.txt >> /etc/hosts`
+- [ ] Add Ariston to the Saved servers, and connect
+- dock items
+- Keep desktop icons arranged
+- finder sidebar items
+- disallow notifications from applications
+
 - Check for new versions of pirated software
   - office
   - adobe
