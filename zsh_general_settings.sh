@@ -44,8 +44,6 @@ mytree() {
   #if no first parameter,
   #and otherwise uses the
   #supplied paramter for level depth
-
-
   local level=1
   local directory="."
 
@@ -56,7 +54,6 @@ mytree() {
       directory=${1}
     fi
   fi
-
 
   exa -T -L=${level} ${directory}
 }
