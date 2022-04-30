@@ -43,13 +43,6 @@ source $DOTFILES_LOCATION/tmux/zsh_tmux_settings.sh
 DURATION=$[ $(date +%s) - ${STEP_START} ]
 if $verbose; then echo " OK (Took ${DURATION} s)"; fi
 
-# Python Settings
-if $verbose; then echo "LOADING PYTHON SETTINGS..."; fi
-STEP_START="$(date +%s)"
-source $DOTFILES_LOCATION/zsh_python_settings.sh
-DURATION=$[ $(date +%s) - ${STEP_START} ]
-if $verbose; then echo " OK (Took ${DURATION} s)"; fi
-
 DURATION=$[ $(date +%s) - ${SCRIPT_START} ]
 if $verbose; then echo "INITIALIZATION COMPLETE!"; fi
 if $verbose; then echo " OK (Took ${DURATION} s in total)"; fi
