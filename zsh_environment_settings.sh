@@ -88,7 +88,7 @@ eval "$(direnv hook zsh)"
 
 
 
-if in_macos; then
+if $in_macos; then
   ########
   # CHIT #
   ########
