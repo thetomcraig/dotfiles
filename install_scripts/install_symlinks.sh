@@ -1,6 +1,5 @@
 PROJECTS_ROOT="${HOME}/Documents/Projects"
 
-
 # Link Files
 cd "${HOME}"
 DOTFILES_LOCATION="${HOME}"/dotfiles
@@ -15,7 +14,7 @@ rm -f -- ~/.p10k.zsh
 ln -s $DOTFILES_LOCATION/p10k.sh .p10k.zsh
 
 rm -f -- ~/.vimrc
-ln -s $DOTFILES_LOCATION/vim/vim.sh .vimrc
+ln -s $DOTFILES_LOCATION/vim/vimrc.sh .vimrc
 
 rm -f -- ~/.vim/spell
 ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
