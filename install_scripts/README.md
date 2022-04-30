@@ -6,7 +6,6 @@
 - [X] Move anything from the computer desktop
 - [X] Clean up torrents
 - [X] Push any git updates to dotfiles repo
-- [ ] Make sure projects don't have lingering commits
 - [X] Copy `${HOME}/.config/karabiner/karabiner.json`
 
 ### Update Applications Lists
@@ -78,10 +77,11 @@
   - Go to Desktop -> View Options -> Sort By -> Name
 - [X] Sign into 1Password
 - [X] Homebrew
-- Install backblaze from the brew installer
+- [X] Install backblaze from the brew installer
   - Have it start backing up
-- [X] Photos
+- [ ] Photos
   - Preferences -> iCloud -> Download Originals to this Mac
+  - Everything should be in iCloud, but make sure the size of the library on disk is correct
 - [X] Alfred
   - [X] Power Pack
   - [X] Sync Folder Location
@@ -94,26 +94,45 @@
   - [X] X Browser Sync
   - [X] uBlock Origin 
     - https://github.com/gorhill/uBlock/wiki/Cloud-storage
-  - [ ] CVim
-    - [ ] Install from my forked repo
-    - Copy RAW URL from here: `https://gist.github.com/thetomcraig/dffaa31306bc1d5e2f5d1e91318b0055`
+  - [X] CVim
+    - (Set up nvm first)
+    - [X] Install from my forked repo
+    - [X] Set up settings to sync from:
+      - `https://raw.githubusercontent.com/thetomcraig/dotfiles/master/vim/cvim.sh`
 - [X] Transmit
 - [X] iTerm
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
-- [ ] Freecad
-  - Flowwie's settings
 - [X] Hosts file
   - `sudo cat for_hosts_file.txt >> /etc/hosts`
 - [X] Turn off Notifications 
-- [ ] Add Wallpaper folder to desktop options
-   
-- Add Ariston to the Saved servers, and connect
-- After getting python setup, look at ncutil.py and see if it still works
+- [X] Add Wallpaper folder to desktop options
+- [X] NAS
+  - [X] Connect with finder
+  - [X] Add to login item
+- [X] Calibre
+  - Hold down `alt` when starting, select the library fro the NAS
+- [X] Music
+  1. Initial settings
+    - Open Music and sign in and let iCloud stuff sync
+    - Preferences -> Files 
+      - Music Media folder location -> Change
+        - Set to the NAS
+    - Check "Keep Music Media folder organized"
+    - Check Copy files to Music Media folder..."
+    - Preferences -> General
+      - Check "Sync Library"
+      - Check "Always check for available downloads"
+  2. Quit Music
+  3. Replace the Music library file on disk, with the one from the old machine
+  4. Hold down `alt`, open Music again, and select the new library file
 
-- Check for new versions of pirated software
-  - office
-  - adobe
-- Other things to install
-  - python conda
-  - nvm
+## Step 6: Developer Tools
+- Pyenv python versions
+- NVM node versions
+- Conda python versions
+
+## Step 7: Misc
+- Look for newer versions of software:
+  - Office, Photoshop, Fusion
+   
