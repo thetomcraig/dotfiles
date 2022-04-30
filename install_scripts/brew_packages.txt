@@ -5,6 +5,7 @@ brightness
 ctags
 diff-so-fancy
 direnv
+duti
 exa
 extract_url
 fzf
