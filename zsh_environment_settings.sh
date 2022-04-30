@@ -72,15 +72,17 @@ if $in_linux; then
   export PATH=$HOME/.rbenv/bin:$PATH
 fi
 
-export PATH="/usr/local/sbin:$PATH"
+if $in_macos; then
+  export PATH="/usr/local/sbin:$PATH"
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  # NVM
+  export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# AVR GCC (QMK)
-export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
+  # AVR GCC (QMK)
+  export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
+fi
 
 eval "$(direnv hook zsh)"
 

@@ -4,7 +4,7 @@ verbose=false
 if $verbose; then echo "LOADING DOTFILES..."; fi
 
 # This is used by a lot of the downstream scripts as well
-export DOTFILES_LOCATION="${HOME}/Dotfiles"
+export DOTFILES_LOCATION="${HOME}/dotfiles"
 
 # Environment Settings
 # For macOS vs Linux, and inside vs outside a tmux session
