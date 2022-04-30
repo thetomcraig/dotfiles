@@ -99,6 +99,7 @@ nnoremap <Space>T :TagbarToggle<CR>
 nnoremap <Space>G :MerginalToggle<CR>
 " Jump to tag
 nnoremap <Space>j <C-]><CR>
+nnoremap <C-]> <C-w><C-]><C-w>T
 
 nnoremap <Space>fu :UndotreeToggle<CR>
 nnoremap <Space>fo :! open %<CR>
@@ -174,7 +175,7 @@ nmap <Space>bg :Grepper-buffer
 set rtp+=/usr/local/bin/fzf
 "command! -bang -nargs=? -complete=dir Files
 "    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
-let g:fzf_preview_window = 'right:60%'
+let g:fzf_preview_window = 'right:80%'
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -630,8 +631,4 @@ function! s:openCurrentPDFFileInSplit()
 endfunction
 command! OpenCurrentPDFFileInSplit call s:openCurrentPDFFileInSplit()
 
-"nnoremap <Space>ft :NERDTreeFind<CR>
-nnoremap <Space>ft :NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_autofind=1
-let g:nerdtree_tabs_open_on_new_tab=1
-let g:nerdtree_tabs_meaningful_tab_names=1
+nnoremap <Space>ft :NERDTreeFind<CR>
