@@ -88,21 +88,23 @@ eval "$(direnv hook zsh)"
 
 
 
-########
-# CHIT #
-########
-eval "$(chit shell-init)"
+if in_macos; then
+  ########
+  # CHIT #
+  ########
+  eval "$(chit shell-init)"
 
-# cs() {
-  # chit set-theme "${1}"
-  # eval "$(chit export-env-vars)"
-  # if [ -n "$TMUX" ]; then
-    # Reload tmux environment variables
-  # tmux source-file ~/.tmux.conf
-  # fi
-# }
+  # cs() {
+    # chit set-theme "${1}"
+    # eval "$(chit export-env-vars)"
+    # if [ -n "$TMUX" ]; then
+      # Reload tmux environment variables
+    # tmux source-file ~/.tmux.conf
+    # fi
+  # }
 
-cs() {
-  chit set-theme "${1}"
-  eval "$(chit export-env-vars)"
-}
+  cs() {
+    chit set-theme "${1}"
+    eval "$(chit export-env-vars)"
+  }
+fi
