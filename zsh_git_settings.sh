@@ -14,7 +14,7 @@ alias gcp="git cherry-pick ${1}"
 
 alias ga="git add"
 _gm () {
-  git commit -m '"$*"'
+  git commit -m "$*"
 }
 alias gm="_gm"
 
