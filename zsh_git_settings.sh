@@ -13,7 +13,10 @@ alias gc="git checkout"
 alias gcp="git cherry-pick ${1}"
 
 alias ga="git add"
-alias gm="git commit -m "
+_gm () {
+  git commit -m '"$*"'
+}
+alias gm="_gm"
 
 alias gd="git diff"
 alias gD="git diff develop..${getLocalBranchName}"
