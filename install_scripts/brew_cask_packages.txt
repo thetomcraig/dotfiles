@@ -32,7 +32,6 @@ openemu
 phoenix
 plex
 postman
-avibrazil-rdm
 signal
 slack
 soundsource
