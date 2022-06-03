@@ -20,6 +20,7 @@
       Fantastical | \
       Amphetamine | \
       Key Codes | \
+      Xcode | \
       Gemini 2' \
       | awk '{print $1}' > mac_app_store_app_ids.txt
       ```
