@@ -206,7 +206,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock mru-spaces -bool false
 
 # Set Dock auto-hide delay
-defaults write com.apple.dock autohide-delay -float 5
+defaults write com.apple.dock autohide-delay -float .25
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
 
@@ -266,8 +266,9 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # TODO, not sure if this works or how to do the same for the finder hotkeys
 
 # Remove the spotlight hotkeys
-/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c \
-  "Set AppleSymbolicHotKeys:64:enabled false"
+# TODO didnt work
+# /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c \
+  # "Set AppleSymbolicHotKeys:64:enabled false"
 
 # Add the keyboard ⌘ ^a to archive
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@^a"
