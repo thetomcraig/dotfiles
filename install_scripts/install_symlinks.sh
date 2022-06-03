@@ -25,6 +25,9 @@ ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 rm -f -- ~/.phoenix.js
 ln -s $DOTFILES_LOCATION/phoenix/phoenix.js .phoenix.js
 
+mkdir .config
+mkdir .config/karabiner
+
 rm -f -- ~/.config/karabiner/karabiner.json
 ln -s $DOTFILES_LOCATION/karabiner/karabiner.json .config/karabiner/karabiner.json
 
