@@ -7,7 +7,7 @@ echo "Host *
  IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
 
 pbcopy < ~/.ssh/id_rsa.pub
-open "https://github.com/settings/keys/new"
+open "https://github.com/settings/ssh/new"
 echo "Paste the key into the GitHub website"
 
 git config --global user.name "Tom Craig"
