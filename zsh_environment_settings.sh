@@ -10,6 +10,18 @@ in_macos=false
 case "$(uname -s)" in
    Darwin)
      in_macos=true
+
+     intel_mac=false
+     arm_mac=false
+     case "$(uname -m)" in
+       x86_64)
+         intel_mac=true
+         ;;
+       arm64)
+         arm_mac=true
+         ;;
+     esac
+
      ;;
    Linux)
      in_linux=true
@@ -76,9 +88,15 @@ if $in_macos; then
   export PATH="/usr/local/sbin:$PATH"
 
   # NVM
-  export NVM_DIR="$HOME/.nvm"
-    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  if $intel_mac; then
+    export NVM_DIR="$HOME/.nvm"
+      [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+      [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  else
+    export NVM_DIR="$HOME/.nvm"
+      [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+      [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  fi
 
   # AVR GCC (QMK)
   export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
