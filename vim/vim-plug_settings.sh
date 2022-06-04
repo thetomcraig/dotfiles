@@ -73,6 +73,7 @@ Plug 'scrooloose/vim-slumlord'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'freitass/todo.txt-vim'
 
 
 " Git "
