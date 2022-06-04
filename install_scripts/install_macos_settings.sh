@@ -160,8 +160,12 @@ mysides add Movies file://${HOME}/Movies
 mysides add Pictures file://${HOME}/Pictures
 
 # Change the default applications for filetypes
+# (The "Open With" option)
+# Can find the bundle ID of an application with:
+#    osascript -e 'id of app "<APP NAME"'
 duti -s abnerworks.Typora .md all
 duti -s org.freecadteam.freecad .stl all
+duti -s com.microsoft.VSCode .sh all
 
 # Do not show recent items in the dock
 defaults write com.apple.dock show-recents -bool false
@@ -263,12 +267,8 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 
 # Disable inline attachments (just show the icons)
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
-# TODO, not sure if this works or how to do the same for the finder hotkeys
 
-# Remove the spotlight hotkeys
-# TODO didnt work
-# /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c \
-  # "Set AppleSymbolicHotKeys:64:enabled false"
+./disable_spotlight_keys.sh
 
 # Add the keyboard ⌘ ^a to archive
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@^a"
