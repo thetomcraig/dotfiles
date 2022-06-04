@@ -1,4 +1,5 @@
 PROJECTS_ROOT="${HOME}/Documents/Projects"
+mkdir -p ${PROJECTS_ROOT}
 
 # Link Files
 cd "${HOME}"

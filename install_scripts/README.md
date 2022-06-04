@@ -70,17 +70,12 @@
   
 ## Step 5: Configurations
 - [X] Copy all the home folder files over from the last computer
-- [X] Install fonts from documents folder
-- [X] Create nvm folder:
-  - `mkdir ~/.nvm`
-- [X] Copy `karabiner.json` to `${HOME}/.config/karabiner/karabiner.json`
-- [X] Finder stuff
-  - Go to Desktop -> View Options -> Sort By -> Name
+- [X] Install fonts
+  - `git clone git@github.com:thetomcraig/fonts.git`
 - [X] Sign into 1Password
-- [X] Homebrew
 - [X] Install backblaze from the brew installer
   - Have it start backing up
-- [ ] Photos
+- [X] Photos
   - Preferences -> iCloud -> Download Originals to this Mac
   - Everything should be in iCloud, but make sure the size of the library on disk is correct
 - [X] Alfred
@@ -90,17 +85,18 @@
 - [X] Fantastical
   - Sign into Flexibits account
   - Make a new iCloud app password
-- [X] Brave
+- [O] Brave
   - [X] Turn on Sync in Settings
+  - [X] Turn OFF webtorrent
   - [X] X Browser Sync
   - [X] uBlock Origin 
     - https://github.com/gorhill/uBlock/wiki/Cloud-storage
-  - [X] CVim
+  - [o] CVim
     - (Set up nvm first)
-    - [X] Install from my forked repo
+    - [ ] Install from my forked repo
+      - `git clone https://github.com/thetomcraig/chromium-vim`
     - [X] Set up settings to sync from:
       - `https://raw.githubusercontent.com/thetomcraig/dotfiles/master/vim/cvim.sh`
-- [X] Transmit
 - [X] iTerm
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
@@ -109,6 +105,7 @@
 - [X] Turn off Notifications 
 - [X] Add Wallpaper folder to desktop options
 - [X] NAS
+  - `smb://ariston`
   - [X] Connect with finder
   - [X] Add to login item
 - [X] Calibre
