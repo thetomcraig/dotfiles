@@ -5,7 +5,7 @@
 ###########
 export LANG="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
-export EDITOR="/usr/local/bin/vim"
+export EDITOR="vim"
 export FZF_DEFAULT_COMMAND="rg --files"
 
 HISTSIZE=5000               #How many lines of history to keep in memory
