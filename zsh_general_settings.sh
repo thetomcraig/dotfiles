@@ -12,7 +12,7 @@ HISTSIZE=5000               #How many lines of history to keep in memory
 HISTFILE=~/.zsh_history     #Where to save history to disk
 SAVEHIST=5000               #Number of history entries to save to disk
 HISTDUP=erase               #Erase duplicates in the history file
-setopt    appendhistory     #Append history to the history file (no overwriting)
+setopt    appendhistory     #Append history to the history file
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
@@ -29,16 +29,22 @@ alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias v="vim ${DOTFILES_LOCATION}/vim/vimrc.sh"
-alias vu="vim ${DOTFILES_LOCATION}/vim/vim-plug_settings.sh"
 alias db="cd ${HOME}/Dropbox/TomCraig"
 alias dbi="cd ${HOME}/Dropbox/TomCraig/00\ Inbox && mytree"
 alias refs="cd ${HOME}/Dropbox/TomCraig/03\ References && mytree"
 alias docs="cd ${HOME}/Dropbox/TomCraig/06\ Documents && mytree"
 alias proj="cd ${PROJECTS_ROOT}"
 
-#t for tree
-alias t=mytree
+alias s="source $DOTFILES_LOCATION/zsh.sh"
+alias ev="vim ${DOTFILES_LOCATION}/vim/vimrc.sh"
+alias evu="vim ${DOTFILES_LOCATION}/vim/vim-plug_settings.sh"
+alias eb="vim ${HOME}/.zshrc"
+alias ebe="vim ${DOTFILES_LOCATION}/zsh_environment_settings.sh"
+alias ebg="vim ${DOTFILES_LOCATION}/zsh_general_settings.sh"
+alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
+
+alias start="./start.command"
+
 mytree() {
   #this does tree with 1 level
   #if no first parameter,
@@ -57,12 +63,7 @@ mytree() {
 
   exa -T -L=${level} ${directory}
 }
+#t for tree
+alias t=mytree
 #tt for maximum depth tree
 alias tt="mytree 999"
-alias s="source $DOTFILES_LOCATION/zsh.sh"
-alias eb="vim ${HOME}/.zshrc"
-alias ebe="vim ${DOTFILES_LOCATION}/zsh_environment_settings.sh"
-alias ebg="vim ${DOTFILES_LOCATION}/zsh_general_settings.sh"
-alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
-
-alias start="./start.command"
