@@ -44,7 +44,7 @@ fi
 #########
 alias sshariston="ssh tom@ariston"
 # alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
-alias sshjuno="ssh pi@juno"
+alias sshjuno="ssh tom@juno"
 
 
 
@@ -63,11 +63,10 @@ export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
 ##################
 # PATH AND HOOKS #
 ##################
-# BREW
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/sbin:$PATH
-
 if $in_macos; then
+  # BREW
+  export PATH=/opt/homebrew/bin:$PATH
+  export PATH=/opt/homebrew/sbin:$PATH
   # PYENV
   eval "$(pyenv init --path)"
   # PYENV VIRTUALENV
@@ -105,12 +104,11 @@ fi
 eval "$(direnv hook zsh)"
 
 
-
-if $in_macos; then
-  ########
-  # CHIT #
-  ########
-  eval "$(chit shell-init)"
+eval "$(chit shell-init)"
+cst () {
+  chit set-theme "${1}"
+  eval "$(chit export-env-vars)"
+}
 
   # cs() {
     # chit set-theme "${1}"
@@ -120,9 +118,3 @@ if $in_macos; then
     # tmux source-file ~/.tmux.conf
     # fi
   # }
-
-  cs() {
-    chit set-theme "${1}"
-    eval "$(chit export-env-vars)"
-  }
-fi
