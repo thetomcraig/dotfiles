@@ -166,6 +166,14 @@ mysides add Pictures file://${HOME}/Pictures
 duti -s abnerworks.Typora .md all
 duti -s org.freecadteam.freecad .stl all
 duti -s com.microsoft.VSCode .sh all
+duti -s org.videolan.vlc .avi all
+duti -s org.videolan.vlc .mkv all
+duti -s org.videolan.vlc .mov all
+duti -s org.videolan.vlc .mp4 all
+duti -s duti -s org.videolan.vlc .rar all
+duti -s duti -s org.videolan.vlc .7z all
+duti -s duti -s org.videolan.vlc .zip all
+
 
 # Do not show recent items in the dock
 defaults write com.apple.dock show-recents -bool false
