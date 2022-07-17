@@ -4,13 +4,12 @@
 # this is used a lot in "zsh_general_settings.sh"
 PROJECTS_ROOT=~/.projects_root
 
-ARCH=$(./get_arch.sh)
+ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
 
 #########
 # HOST/OS
 #########
-host=$(uname -a)
-if [[ $host == *"Darwin"* ]]; then
+if [[ "${ARCH}" == *"${mac}"* ]]; then
   alias rm="trash"
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
 fi
