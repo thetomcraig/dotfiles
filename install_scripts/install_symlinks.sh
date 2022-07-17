@@ -1,12 +1,33 @@
-PROJECTS_ROOT="${HOME}/Documents/Projects"
-mkdir -p ${PROJECTS_ROOT}
+ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
 
-# Link Files
+
 cd "${HOME}"
 DOTFILES_LOCATION="${HOME}"/dotfiles
 
-rm -f -- ~/.PROJECTS_ROOT
-ln -s $PROJECTS_ROOT .projects_root
+
+if [[ "${ARCH}" == *"${mac}"* ]]; then
+  PROJECTS_ROOT="${HOME}/Documents/Projects"
+  mkdir -p ${PROJECTS_ROOT}
+
+  rm -f -- ~/.PROJECTS_ROOT
+  ln -s $PROJECTS_ROOT .projects_root
+
+  rm -f -- ~/.phoenix.js
+  ln -s $DOTFILES_LOCATION/phoenix/phoenix.js .phoenix.js
+
+  mkdir .config
+  mkdir .config/karabiner
+
+  rm -f -- ~/.config/karabiner/karabiner.json
+  ln -s $DOTFILES_LOCATION/karabiner/karabiner.json .config/karabiner/karabiner.json
+
+  rm -f -- ~/Library/Preferences/FreeCAD/system.cfg
+  ln -s $DOTFILES_LOCATION/freecad/system.cfg ~/Library/Preferences/FreeCAD/system.cfg
+
+  rm -f -- ~/Library/Preferences/FreeCAD/user.cfg
+  ln -s $DOTFILES_LOCATION/freecad/user.cfg ~/Library/Preferences/FreeCAD/user.cfg
+fi
+
 
 rm -f -- ~/.zshrc
 ln -s $DOTFILES_LOCATION/zsh.sh .zshrc
@@ -23,17 +44,4 @@ ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
 rm -f -- ~/.tmux.conf
 ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 
-rm -f -- ~/.phoenix.js
-ln -s $DOTFILES_LOCATION/phoenix/phoenix.js .phoenix.js
 
-mkdir .config
-mkdir .config/karabiner
-
-rm -f -- ~/.config/karabiner/karabiner.json
-ln -s $DOTFILES_LOCATION/karabiner/karabiner.json .config/karabiner/karabiner.json
-
-rm -f -- ~/Library/Preferences/FreeCAD/system.cfg
-ln -s $DOTFILES_LOCATION/freecad/system.cfg ~/Library/Preferences/FreeCAD/system.cfg
-
-rm -f -- ~/Library/Preferences/FreeCAD/user.cfg
-ln -s $DOTFILES_LOCATION/freecad/user.cfg ~/Library/Preferences/FreeCAD/user.cfg
