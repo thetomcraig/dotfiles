@@ -4,7 +4,8 @@ root: ~/.projects_root/freelancing/jacob_johnson_code_review/
 
 windows:
   - Notes: vim notes/README.md
-  - Vim: cd data-engine && vim
+  - E2: cd data-engine && ssh ${NODE_USERNAME}@e2
+  - E3: cd data-engine && ssh ${NODE_USERNAME}@e3
   - Data-Engine:
       layout: even-vertical
       panes:
