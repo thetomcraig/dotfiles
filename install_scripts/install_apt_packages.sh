@@ -1,9 +1,23 @@
-apt install zsh
-apt install exa
+# Apt Packages Install
 
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
-
-curl -sfL https://direnv.net/install.sh | bash
+ack
+ag
+bat
+ctags
+diff-so-fancy
+exa
+fzf
+git
+jq
+mas
+nvm
+poetry
+pyenv
+pyenv-virtualenv
+rbenv
+ripgrep
+shellcheck
+tmux
+tmuxinator
+vim
+wget

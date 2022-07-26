@@ -411,6 +411,17 @@ function! s:insertDayTitle()
 endfunction
 command! InsertDayTitle call s:insertDayTitle()
 
+" insertDate
+" 
+" Insert the current date as a top-level header in the current file
+function! s:insertDate()
+  let date_string=s:getFormattedDateString()
+  execute "normal! a# " . date_string
+  execute "normal! dd"
+  execute "normal! a- "
+endfunction
+command! InsertDate call s:insertDate()
+
 " GetFormattedDateString
 "
 " Return a string of the current date in the format Sunday, May 30 2021

@@ -23,6 +23,7 @@ karabiner-elements
 keyboard-cleaner
 key-codes
 kobo
+mediahuman-audio-converter
 miro
 mongodb-compass
 monodraw

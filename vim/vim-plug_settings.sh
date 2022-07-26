@@ -50,6 +50,7 @@ Plug 'morhetz/gruvbox'
 Plug 'thenewvu/vim-colors-sketching'
 Plug 'vyshane/cleanroom-vim-color'
 Plug 'junegunn/seoul256.vim'
+Plug 'altercation/vim-colors-solarized'
 Plug 'thetomcraig/alienblood.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
@@ -73,6 +74,7 @@ Plug 'scrooloose/vim-slumlord'
 Plug 'jszakmeister/markdown2ctags'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'freitass/todo.txt-vim'
 
 
 " Git "

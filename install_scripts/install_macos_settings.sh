@@ -121,9 +121,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
 
 # Increase the size of icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
@@ -165,7 +165,19 @@ mysides add Pictures file://${HOME}/Pictures
 #    osascript -e 'id of app "<APP NAME"'
 duti -s abnerworks.Typora .md all
 duti -s org.freecadteam.freecad .stl all
-duti -s com.microsoft.VSCode .sh all
+duti -s org.vim.MacVim .sh all
+duti -s org.vim.MacVim .yaml all
+duti -s org.vim.MacVim .yml all
+duti -s org.vim.MacVim .json all
+duti -s org.vim.MacVim .log all
+duti -s org.videolan.vlc .avi all
+duti -s org.videolan.vlc .mkv all
+duti -s org.videolan.vlc .mov all
+duti -s org.videolan.vlc .mp4 all
+duti -s duti -s org.videolan.vlc .rar all
+duti -s duti -s org.videolan.vlc .7z all
+duti -s duti -s org.videolan.vlc .zip all
+
 
 # Do not show recent items in the dock
 defaults write com.apple.dock show-recents -bool false

@@ -4,36 +4,12 @@
 # this is used a lot in "zsh_general_settings.sh"
 PROJECTS_ROOT=~/.projects_root
 
-
-in_linux=false
-in_macos=false
-case "$(uname -s)" in
-   Darwin)
-     in_macos=true
-
-     intel_mac=false
-     arm_mac=false
-     case "$(uname -m)" in
-       x86_64)
-         intel_mac=true
-         ;;
-       arm64)
-         arm_mac=true
-         ;;
-     esac
-
-     ;;
-   Linux)
-     in_linux=true
-     ;;
-esac
-
+ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
 
 #########
 # HOST/OS
 #########
-host=$(uname -a)
-if [[ $host == *"Darwin"* ]]; then
+if [[ "${ARCH}" == *"${mac}"* ]]; then
   alias rm="trash"
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
 fi
@@ -44,7 +20,7 @@ fi
 #########
 alias sshariston="ssh tom@ariston"
 # alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
-alias sshjuno="ssh pi@juno"
+alias sshjuno="ssh tom@juno"
 
 
 
@@ -63,20 +39,7 @@ export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
 ##################
 # PATH AND HOOKS #
 ##################
-# BREW
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/sbin:$PATH
-
-if $in_macos; then
-  # PYENV
-  eval "$(pyenv init --path)"
-  # PYENV VIRTUALENV
-  eval "$(pyenv virtualenv-init -)"
-  # RBENV
-  eval "$(rbenv init -)"
-fi
-
-if $in_linux; then
+if [[ "${ARCH}" == *"${linux}"* ]]; then
   # PYENV
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
@@ -84,11 +47,10 @@ if $in_linux; then
   export PATH=$HOME/.rbenv/bin:$PATH
 fi
 
-if $in_macos; then
-  export PATH="/usr/local/sbin:$PATH"
 
+if [[ "${ARCH}" == *"${mac}"* ]]; then
   # NVM
-  if $intel_mac; then
+  if [[ "${ARCH}" == *"${mac_intel}"* ]]; then
     export NVM_DIR="$HOME/.nvm"
       [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
       [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
@@ -100,17 +62,29 @@ if $in_macos; then
 
   # AVR GCC (QMK)
   export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
+  # BREW
+  export PATH=/opt/homebrew/bin:$PATH
+  export PATH=/opt/homebrew/sbin:$PATH
+  # PYENV
+  eval "$(pyenv init --path)"
+  # PYENV VIRTUALENV
+  eval "$(pyenv virtualenv-init -)"
+  # RBENV
+  eval "$(rbenv init -)"
+
+  export PATH="/usr/local/sbin:$PATH"
 fi
 
 eval "$(direnv hook zsh)"
 
 
 
-if $in_macos; then
-  ########
-  # CHIT #
-  ########
-  eval "$(chit shell-init)"
+
+eval "$(chit shell-init)"
+cst () {
+  chit set-theme "${1}"
+  eval "$(chit export-env-vars)"
+}
 
   # cs() {
     # chit set-theme "${1}"
@@ -120,9 +94,3 @@ if $in_macos; then
     # tmux source-file ~/.tmux.conf
     # fi
   # }
-
-  cs() {
-    chit set-theme "${1}"
-    eval "$(chit export-env-vars)"
-  }
-fi

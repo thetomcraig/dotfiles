@@ -30,6 +30,7 @@ Plugin 'vim-scripts/nerdtree-ack'
 
 " Colors/UI "
 Plugin 'junegunn/seoul256.vim'
+Plugin 'altercation/solarized'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'thetomcraig/xenomorph.vim'
 Plugin 'vim-airline/vim-airline'
