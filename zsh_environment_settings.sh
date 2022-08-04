@@ -9,9 +9,11 @@ ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
 #########
 # HOST/OS
 #########
-if [[ "${ARCH}" == *"${mac}"* ]]; then
+if [[ "${ARCH}" == *"mac"* ]]; then
   alias rm="trash"
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
+  export DROPBOX_ROOT="${DROPBOX_ROOT}"
+  export PROJECTS_ROOT="${PROJECTS_ROOT}"
 fi
 
 
@@ -27,8 +29,6 @@ alias sshjuno="ssh tom@juno"
 ###################
 # EXPORT ENV VARS #
 ###################
-export DROPBOX_ROOT="${DROPBOX_ROOT}"
-export PROJECTS_ROOT="${PROJECTS_ROOT}"
 export VIM_EXTRA="${VIM_EXTRA}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
 export VIM_AIRLINE_THEME="${VIM_AIRLINE_THEME}"
