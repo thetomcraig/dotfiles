@@ -10,11 +10,10 @@ ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
 # HOST/OS
 #########
 if [[ "${ARCH}" == *"mac"* ]]; then
-  echo "its a mac"
   alias rm="trash"
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
-else
-  echo "its linux"
+  export DROPBOX_ROOT="${DROPBOX_ROOT}"
+  export PROJECTS_ROOT="${PROJECTS_ROOT}"
 fi
 
 
@@ -30,8 +29,6 @@ alias sshjuno="ssh tom@juno"
 ###################
 # EXPORT ENV VARS #
 ###################
-export DROPBOX_ROOT="${DROPBOX_ROOT}"
-export PROJECTS_ROOT="${PROJECTS_ROOT}"
 export VIM_EXTRA="${VIM_EXTRA}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
 export VIM_AIRLINE_THEME="${VIM_AIRLINE_THEME}"
@@ -51,9 +48,9 @@ if [[ "${ARCH}" == *"${linux}"* ]]; then
 fi
 
 
-if [[ "${ARCH}" == *"${mac}"* ]]; then
+if [[ "${ARCH}" == *"mac"* ]]; then
   # NVM
-  if [[ "${ARCH}" == *"${mac_intel}"* ]]; then
+  if [[ "${ARCH}" == *"mac_intel"* ]]; then
     export NVM_DIR="$HOME/.nvm"
       [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
       [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

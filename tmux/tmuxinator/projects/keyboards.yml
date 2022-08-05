@@ -1,0 +1,10 @@
+# /Users/tomcraig/dotfiles/tmux/tmuxinator/projects/keyboards.yml
+
+name: keyboards
+root: "~/.projects_root/keyboard_utilities"
+
+windows:
+  - Karabiner:
+    layout: main-vertical
+    panes: 
+      - cd karabiner_keymaps
