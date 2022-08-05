@@ -1,0 +1,10 @@
+# /Users/tomcraig/dotfiles/tmux/tmuxinator/projects/dotfiles.yml
+
+name: dotfiles
+root: "/Users/tomcraig/dotfiles"
+
+windows:
+  - Zshrc:
+      layout: main-vertical
+      panes:
+        - vim zsh.sh
