@@ -9,9 +9,12 @@ ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
 #########
 # HOST/OS
 #########
-if [[ "${ARCH}" == *"${mac}"* ]]; then
+if [[ "${ARCH}" == *"mac"* ]]; then
+  echo "its a mac"
   alias rm="trash"
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
+else
+  echo "its linux"
 fi
 
 
