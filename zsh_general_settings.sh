@@ -67,3 +67,5 @@ mytree() {
 alias t=mytree
 #tt for maximum depth tree
 alias tt="mytree 999"
+alias ll="exa -T -L=${level} ${directory}"
+
