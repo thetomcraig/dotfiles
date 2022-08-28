@@ -29,7 +29,9 @@ alias gl1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 
 alias gba="git branch -a"
-alias gv="git branch --sort=committerdate -vv"
+# alias gv="git branch --sort=committerdate -vv"
+alias gv="git checkout $(git branch | fzf)"
+alias gv="git branch | fzf"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
