@@ -1,0 +1,7 @@
+# /Users/tomcraig/dotfiles/tmux/tmuxinator/projects/two.yml
+
+name: two
+root: ~/Desktop
+
+windows:
+  - Notes: vim 

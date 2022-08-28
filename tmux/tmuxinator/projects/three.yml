@@ -1,6 +1,6 @@
-# /Users/tomcraig/Dotfiles/tmux/tmuxinator/projects/test.yml
+# /Users/tomcraig/dotfiles/tmux/tmuxinator/projects/three.yml
 
-name: test
+name: three
 root: ~/
 
 # Optional tmux socket

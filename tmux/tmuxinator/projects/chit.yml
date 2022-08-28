@@ -1,6 +1,6 @@
 # ${HOME}/Dotfiles/tmux/tmuxinator/projects/HERON.yml
 
-name: Chit
+name: chit
 root: ~/.projects_root/chit
 
 windows:
