@@ -7,5 +7,5 @@ export DOTFILES_LOCATION="${HOME}/dotfiles"
 source $DOTFILES_LOCATION/zsh_environment_settings.sh
 source $DOTFILES_LOCATION/zsh_general_settings.sh
 source $DOTFILES_LOCATION/zsh_omz_settings.sh
-source $DOTFILES_LOCATION/zsh_git_settings.sh
+# source $DOTFILES_LOCATION/zsh_git_settings.sh
 source $DOTFILES_LOCATION/tmux/zsh_tmux_settings.sh
