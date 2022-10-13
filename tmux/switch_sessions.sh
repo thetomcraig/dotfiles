@@ -33,18 +33,9 @@ create_or_find_then_attach() {
   if [ "${session_name}" = "NEW" ]; then
     new_session_name=0
     IFS=$'\n' sorted_sessions=($(sort -n <<<"${all_sessions[*]}"))
-    echo "\nsorted_sessions"
-    echo "${sorted_sessions[0]}"
-    echo "${sorted_sessions[1]}"
-    echo "${sorted_sessions[2]}"
-    echo "${sorted_sessions[3]}"
-    echo "${sorted_sessions[4]}"
     highest_session_number="${sorted_sessions[0]}"
-    echo "\nhighest_session_number"
-    echo $highest_session_number
     # If it's an actual number
     if [[ $highest_session_number =~ ^-?[0-9]+$ ]]; then
-      echo "its a number"
       new_session_name=$((highest_session_number+1))
     fi
     if ! { [ -n "$TMUX" ]; } then
