@@ -1,5 +1,6 @@
 # For reference: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 # https://github.com/ulwlu/dotfiles/blob/master/system/macos.sh
+# https://macos-defaults.com/?
 
 
 
@@ -94,6 +95,7 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
+
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
@@ -126,6 +128,8 @@ sudo chflags nohidden ~/Library
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
 
+killall Finder
+
 
 
 # PLISTBUDDY
@@ -150,8 +154,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # UNIVERSAL ACCESS
 # Reduce Motion
-# TODO FIX
-# defaults write com.apple.universalaccess reduceMotion -bool true
+defaults write com.apple.universalaccess reduceMotion -bool true
 
 
 
@@ -172,6 +175,7 @@ defaults write com.apple.dock persistent-apps -array
 for app in \
   "/System/Applications/Messages.app" \
   "/Applications/Discord.app" \
+  "/Applications/Slack.app" \
   "/System/Applications/Mail.app" \
   "/Applications/Fantastical.app" \
   "/Applications/Brave Browser.app" \
@@ -179,7 +183,6 @@ for app in \
   "/System/Applications/Reminders.app" \
   "/Applications/iTerm.app" \
   "/Applications/Visual Studio Code.app" \
-  "/Applications/Slack.app" \
   "/Applications/zoom.us.app" \
   "/System/Applications/Preview.app" \
   "/System/Applications/Photos.app" \
@@ -249,10 +252,6 @@ defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 
 # Turn on app auto-update
 defaults write com.apple.commerce AutoUpdate -bool true
-
-
-
-
 
 
 
@@ -421,10 +420,9 @@ duti -s org.videolan.vlc .avi all
 duti -s org.videolan.vlc .mkv all
 duti -s org.videolan.vlc .mov all
 duti -s org.videolan.vlc .mp4 all
-# TODO fix
-# duti -s org.videolan.vlc .rar all
-# duti -s org.videolan.vlc .7z all
-# duti -s org.videolan.vlc .zip all
+duti -s cx.c3.theunarchiver .rar all
+duti -s cx.c3.theunarchiver .7z all
+duti -s cx.c3.theunarchiver .zip all
 
 
 
