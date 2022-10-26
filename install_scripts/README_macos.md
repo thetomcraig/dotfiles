@@ -52,64 +52,77 @@
   sudo ./install_dotfiles.sh
   ```
 
-- [X] Symlink Dot Files
-  ```
-  ./install_symlinks.sh
-  ```
-
 - [X] Install macOS settings
   ```
   sudo ./install_macos_settings.sh
   ```
 
-- [X] Install Command Line Applications
+- [x] Restart
+  
+- [x] Install Command Line Applications
+  
   ```
   sudo ./install_cli_apps.sh
   ```
   
+- [x] Symlink Dot Files
+
+  ```
+  ./install_symlinks.sh
+  ```
+
 ## Step 5: Configurations
-- [X] Copy all the home folder files over from the last computer
-- [X] Install fonts
-  - `git clone git@github.com:thetomcraig/fonts.git`
-- [X] Sign into 1Password
-- [X] Install backblaze from the brew installer
+
+- [x] Open Karabiner and give it permissions
+- [ ] TODO finder show items on Desktop 
+- [x] Copy all the home folder files over from the last computer
+- [x] Install fonts
+  - `proj && git clone git@github.com:thetomcraig/fonts.git`
+- [x] Sign into 1Password
+- [x] Install backblaze from the brew installer
   - Have it start backing up
-- [X] Photos
+- [x] Photos
   - Preferences -> iCloud -> Download Originals to this Mac
   - Everything should be in iCloud, but make sure the size of the library on disk is correct
-- [X] Alfred
-  - [X] Power Pack
-  - [X] Sync Folder Location
-  - [X] Turn on Clipboard syncing
-- [X] Fantastical
+- [x] Alfred
+  - [x] Power Pack
+  - [x] Sync Folder Location
+  - [x] Turn on Clipboard syncing
+- [x] Fantastical
   - Sign into Flexibits account
   - Make a new iCloud app password
-- [x] Brave
-  - [X] Turn on Sync in Settings
-  - [X] Turn OFF webtorrent
-  - [X] X Browser Sync
-  - [X] uBlock Origin 
+  - https://appleid.apple.com/account/manage
+- [ ] Brave
+  - [x] Turn on Sync in Settings
+    - [x] Sync everything except bookmarks and Reading list
+  - [x] Turn OFF webtorrent
+  - [x] X Browser Sync
+  - [ ] uBlock Origin 
     - https://github.com/gorhill/uBlock/wiki/Cloud-storage
-  - [o] CVim
+  - [x] CVim
     - (Set up nvm first)
-    - [ ] Install from my forked repo
+    - [x] Install from my forked repo
       - `git clone https://github.com/thetomcraig/chromium-vim`
-    - [X] Set up settings to sync from:
+    - [x] Set up settings to sync from:
       - `https://raw.githubusercontent.com/thetomcraig/dotfiles/master/vim/cvim.sh`
-- [X] iTerm
+- [x] iTerm
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
-- [X] Hosts file
+- [ ] Hosts file
+  
+  - [ ] TODO FIX
   - `sudo cat for_hosts_file.txt >> /etc/hosts`
-- [X] Turn off Notifications 
-- [X] Add Wallpaper folder to desktop options
-- [X] NAS
+  
+- [ ] Turn off Notifications 
+- [ ] TODO figure out how to 
+- [x] Add Wallpaper folder to desktop options
+- [ ] NAS
   - `smb://ariston`
-  - [X] Connect with finder
-  - [X] Add to login item
-- [X] Calibre
+  - [ ] Connect with finder
+  - [ ] Add to login item
+- [x] Calibre
   - Hold down `alt` when starting, select the library fro the NAS
-- [X] Music
+- [x] Music
   1. Initial settings
     - Open Music and sign in and let iCloud stuff sync
     - Preferences -> Files 
