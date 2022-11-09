@@ -132,7 +132,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/System/Applications/System Preferences.app</string>
+					<string>/System/Applications/System Settings.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
