@@ -9,7 +9,7 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(zsh-autosuggestions)
+plugins=(zsh-autosuggestions fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
