@@ -4,7 +4,7 @@
 # this is used a lot in "zsh_general_settings.sh"
 PROJECTS_ROOT=~/.projects_root
 
-ARCH=$(${DOTFILES_LOCATION}/get_arch.sh)
+source "${DOTFILES_LOCATION}/get_arch.sh"
 
 #########
 # HOST/OS

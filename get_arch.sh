@@ -1,22 +1,28 @@
-# arch (system architecture_
-# macos or linux
-arch=""
+ARCH=""
+IN_MACOS=false
+IN_LINUX=false
 
 case "$(uname -s)" in
    Darwin)
      case "$(uname -m)" in
        x86_64)
-         arch="macos_intel"
+         ARCH="macos_intel"
+         IN_MACOS=true
          ;;
        arm64)
-         arch="macos_arm"
+         ARCH="macos_arm"
+         IN_MACOS=true
          ;;
      esac
 
      ;;
    Linux)
-     arch="linux"
+     ARCH="linux"
+     IN_LINUX=true
      ;;
 esac
 
-echo "${arch}"
+export IN_MACOS="${IN_MACOS}"
+export IN_LINUX="${IN_LINUX}"
+export ARCH="${ARCH}"
+
