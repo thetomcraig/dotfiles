@@ -69,3 +69,5 @@ alias t=mytree
 alias tt="mytree 999"
 alias ll="exa -T -L=${level} ${directory}"
 
+alias imgcat="${DOTFILES_LOCATION}/imgcat.sh"
+alias imgls="${DOTFILES_LOCATION}/imgls.sh"
