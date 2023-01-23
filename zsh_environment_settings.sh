@@ -78,19 +78,42 @@ fi
 eval "$(direnv hook zsh)"
 
 
+########
+# CHIT #
+########
+if [[ "${ARCH}" == *"mac"* ]]; then
+  eval "$(chit shell-init)"
+  cst () {
+    chit set-theme "${1}"
+    eval "$(chit export-env-vars)"
+  }
 
+  cs() {
+    chit set-theme "${1}"
+    eval "$(chit export-env-vars)"
+    if [ -n "$TMUX" ]; then
+      Reload tmux environment variables
+    tmux source-file ~/.tmux.conf
+    fi
+  }
+fi
 
-eval "$(chit shell-init)"
-cst () {
-  chit set-theme "${1}"
-  eval "$(chit export-env-vars)"
-}
-
-cs() {
-  chit set-theme "${1}"
-  eval "$(chit export-env-vars)"
-  if [ -n "$TMUX" ]; then
-    Reload tmux environment variables
-  tmux source-file ~/.tmux.conf
+#########
+# CONDA #
+#########
+if [[ "${IN_COREAD}" == "true" ]];
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
+      eval "$__conda_setup"
+  else
+      if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+          . "/opt/miniconda3/etc/profile.d/conda.sh"
+      else
+          export PATH="/opt/miniconda3/bin:$PATH"
+      fi
   fi
-}
+  unset __conda_setup
+  # <<< conda initialize <<<
+fi
