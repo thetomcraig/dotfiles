@@ -418,7 +418,7 @@ function! s:insertDate()
   let date_string=s:getFormattedDateString()
   execute "normal! a# " . date_string
   execute "normal! dd"
-  execute "normal! a- "
+  execute "normal! a"
 endfunction
 command! InsertDate call s:insertDate()
 
