@@ -3,6 +3,6 @@
 
 Phoenix.set ({
   // Does not show in menubar
-  daemon: true,
+  daemon: false,
   openAtLogin: true
 });

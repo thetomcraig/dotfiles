@@ -17,6 +17,7 @@ let blacklists = [
       \ "http://10.0.1.3/*",
       \ "http://127.0.0.1/*",
       \ "http://localhost*",
+      \ "http://ariston:30000/*",
       \ "https://slack.com/",
       \ "https://www.youtube.com/",
       \ "https://www.icloud.com",

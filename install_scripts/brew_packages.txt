@@ -5,6 +5,7 @@ brightness
 ctags
 diff-so-fancy
 direnv
+displayplacer
 duti
 exa
 extract_url
@@ -14,6 +15,7 @@ git
 jq
 mas
 mysides
+nvm
 pianobar
 poetry
 pyenv

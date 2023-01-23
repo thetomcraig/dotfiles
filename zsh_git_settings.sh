@@ -13,7 +13,10 @@ alias gc="git checkout"
 alias gcp="git cherry-pick ${1}"
 
 alias ga="git add"
-alias gm="git commit -m "
+_gm () {
+  git commit -m "$*"
+}
+alias gm="_gm"
 
 alias gd="git diff"
 alias gD="git diff develop..${getLocalBranchName}"
@@ -26,10 +29,14 @@ alias gl1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 
 alias gba="git branch -a"
-alias gv="git branch --sort=committerdate -vv"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
+interactiveCheckout() {
+  git checkout $(git for-each-ref refs/heads/ --format='%(refname:short)' | fzf)
+}
+alias gv="interactiveCheckout"
+
 
 # Large and complicated ones
 # Make local branch tracking remote that matches a regex

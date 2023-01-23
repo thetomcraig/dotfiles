@@ -16,3 +16,5 @@ source $ZSH/oh-my-zsh.sh
 bindkey '^j' autosuggest-accept
 
 DISABLE_AUTO_TITLE=true
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
