@@ -5,6 +5,4 @@ ceresrc.sh
 preset_name.txt
 tags
 
-ceres_works.yml
-hermes.yml
-osiris.yml
+.envrc
