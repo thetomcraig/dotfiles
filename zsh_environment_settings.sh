@@ -5,6 +5,9 @@
 PROJECTS_ROOT=~/.projects_root
 
 
+#########
+# HOST/OS
+#########
 in_linux=false
 in_macos=false
 case "$(uname -s)" in
@@ -16,16 +19,16 @@ case "$(uname -s)" in
      ;;
 esac
 
-
-#########
-# HOST/OS
-#########
-host=$(uname -a)
-if [[ $host == *"Darwin"* ]]; then
+if $in_macos; then
   alias rm="trash"
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
 fi
 
+in_ssh=false
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  # Inside ssh session
+  in_ssh=true
+fi
 
 #########
 # SERVERS 
@@ -45,6 +48,7 @@ export VIM_EXTRA="${VIM_EXTRA}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
 export VIM_AIRLINE_THEME="${VIM_AIRLINE_THEME}"
 export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
+export IN_SSH="${in_ssh}"
 
 
 
