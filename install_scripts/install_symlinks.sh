@@ -1,4 +1,5 @@
-ARCH=$(../get_arch.sh)
+# ARCH=$(../get_arch.sh)
+source "${DOTFILES_LOCATION}/get_arch.sh"
 
 
 cd "${HOME}"
