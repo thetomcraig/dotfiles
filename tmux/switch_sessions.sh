@@ -28,8 +28,8 @@ create_or_find_then_attach() {
   # CASE 0 #
   ##########
   # Brand-new session
-  echo "\nsession_name"
-  echo $session_name
+  # echo "\nsession_name"
+  # echo $session_name
   if [ "${session_name}" = "NEW" ]; then
     new_session_name=0
     IFS=$'\n' sorted_sessions=($(sort -n <<<"${all_sessions[*]}"))

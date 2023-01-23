@@ -5,7 +5,6 @@ root: ~/.projects_root/coreadai
 windows:
   - Notes: vim notes/README.md
   - E2: cd data-engine && ssh ${NODE_USERNAME}@e2
-  - E3: cd data-engine && ssh ${NODE_USERNAME}@e3
   - Data-Engine:
       layout: even-vertical
       panes:
