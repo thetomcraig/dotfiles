@@ -56,13 +56,15 @@ export IN_SSH="${in_ssh}"
 # PATH AND HOOKS #
 ##################
 if [[ "${ARCH}" == *"${linux}"* ]]; then
-  # PYENV
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
-  # RBENV
-  export PATH=$HOME/.rbenv/bin:$PATH
+  if [[ "${IN_COREAD}" != "true" ]]; then
+    # PYENV
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    # RBENV
+    export PATH=$HOME/.rbenv/bin:$PATH
+  fi
   # fzf
-  if [[ "${ARCH}" == *"mac"* ]]; then
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
 
 
