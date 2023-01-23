@@ -61,6 +61,8 @@ if [[ "${ARCH}" == *"${linux}"* ]]; then
   export PATH="$PYENV_ROOT/bin:$PATH"
   # RBENV
   export PATH=$HOME/.rbenv/bin:$PATH
+  # fzf
+  if [[ "${ARCH}" == *"mac"* ]]; then
 fi
 
 
