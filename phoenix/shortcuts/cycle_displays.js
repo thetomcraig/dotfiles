@@ -1,15 +1,18 @@
+// Can use "displayplacer" to update these
 const windowIds = [
   // Internal
   "37D8832A-2D66-02CA-B9F7-8F30A301B230",
   // Dell 27
   "95458444-A649-45C1-94AA-7D8880A7144F",
   // Dell 25
-  "AA4129F8-E94C-455C-A2CE-F3C7DF605E8E",
+  "912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD",
   // Kogoda
   "B2085621-B801-4448-8FB9-30E7D08C1419",
   // HDMI Strip
   "3913815D-56F0-4FE7-90F7-6CB91892A81D"
 ];
+
+
 
 function frameRatio(a, b){
   const widthRatio = b.width / a.width;
