@@ -29,10 +29,8 @@ alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias db="cd ${HOME}/Dropbox/TomCraig"
-alias dbi="cd ${HOME}/Dropbox/TomCraig/00\ Inbox && mytree"
-alias refs="cd ${HOME}/Dropbox/TomCraig/03\ References && mytree"
-alias docs="cd ${HOME}/Dropbox/TomCraig/06\ Documents && mytree"
+alias refs="${HOME}/Documents/04\ References && mytree"
+alias notes="${HOME}/Documents/03\ Notes && mytree"
 alias proj="cd ${PROJECTS_ROOT}"
 
 alias s="source $DOTFILES_LOCATION/zsh.sh"
@@ -44,6 +42,11 @@ alias ebg="vim ${DOTFILES_LOCATION}/zsh_general_settings.sh"
 alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
 
 alias start="./start.command"
+
+dockerbash() {
+  docker exec -it $1 /bin/bash
+}
+alias de=dockerbash
 
 mytree() {
   #this does tree with 1 level
