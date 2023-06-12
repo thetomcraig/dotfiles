@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>697AC060-23DC-44DB-B91F-C9986338F978</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E1BB6FB-E780-428E-940D-A905E7B997A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8D24717E-AC58-43BC-A78E-A9CD21D622C4</key>
 		<array>
 			<dict>
@@ -60,11 +73,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
+		<key>D187D21A-E736-488F-BDCA-A607A6273354</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FA284970-976B-46B3-A836-2D6AC78D6BA4</string>
+				<string>37DFD05B-E0BA-40B5-AD42-F687E68DDA35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -72,6 +85,9 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>8D24717E-AC58-43BC-A78E-A9CD21D622C4</string>
@@ -93,19 +109,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>FA284970-976B-46B3-A836-2D6AC78D6BA4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>036F5265-FE6E-4870-9787-5765464DC579</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -117,54 +120,6 @@
 	<string>* Templates</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>*Automated Test Plan*
-* 
-
-*Integration Test Plan*
-* 
-
-*Internal UAT Plan*
-* Perform the Integration Test Plan on offside.
-
-*External UAT Plan*
-* </string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>036F5265-FE6E-4870-9787-5765464DC579</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>testing_steps</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>FA284970-976B-46B3-A836-2D6AC78D6BA4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -214,6 +169,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"d3837e349fe407e9f76c196723692df6ad87b760.png","title":"release","arg":"release","subtitle":"Release Ticket Notes"},{"imagefile":"b938fa2e18d1d909f695b783cec28785c631fbce.png","title":"recruiter","arg":"recruiter","subtitle":"Recruiter Template Email"},{"title":"testing_steps","arg":"testing_steps","subtitle":"Steps for PSE jira"}]</string>
+				<key>keyword</key>
+				<string>temp</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -229,35 +215,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>49C9BE7C-E2C1-443F-9A72-B06FCFF3928C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"d3837e349fe407e9f76c196723692df6ad87b760.png","title":"release","arg":"release","subtitle":"Release Ticket Notes"},{"imagefile":"b938fa2e18d1d909f695b783cec28785c631fbce.png","title":"recruiter","arg":"recruiter","subtitle":"Recruiter Template Email"},{"title":"testing_steps","arg":"testing_steps","subtitle":"Steps for PSE jira"}]</string>
-				<key>keyword</key>
-				<string>temp</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -284,6 +241,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>recruiter</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -301,97 +277,182 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
+				<key>autopaste</key>
 				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>recruiter</string>
+				<key>clipboardtext</key>
+				<string>thetomcraig@icloud.com</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</string>
+			<string>6E1BB6FB-E780-428E-940D-A905E7B997A1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>email</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Paste my email address</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>697AC060-23DC-44DB-B91F-C9986338F978</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cover</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Job Application Cover Letter</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D187D21A-E736-488F-BDCA-A607A6273354</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>My name is Tom Craig, and I am passionate about technology. 
+
+Professionally I have contributed to and created several technical projects including: developer tools, advertising technology, health care technology, notification systems, large API integrations, aerial imagery analysis, and Machine Learning.
+
+I have experience communicating and working closely with end-users, company partners, technical contractors, project managers, QA engineers, scientists, support staff, and customer representatives.
+
+I take great pride in clear communication and adherence to best practices for software documentation, organization, testing, and development.  And I care just as much about mentoring others and helping build a productive, impactful, and cohesive development team.  I believe a successful engineer is one who places importance on both these aspects of the work.
+
+I am eager to learn more about this role and careers at {query}.  Thank you for your time and consideration.
+
+I did not write this with ChatGPT.</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>37DFD05B-E0BA-40B5-AD42-F687E68DDA35</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>036F5265-FE6E-4870-9787-5765464DC579</key>
-		<dict>
-			<key>xpos</key>
-			<integer>800</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>2E0DC1E9-2E75-49E4-A9F6-65EBACE0B1B3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<real>340</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
+		</dict>
+		<key>37DFD05B-E0BA-40B5-AD42-F687E68DDA35</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>570</real>
 		</dict>
 		<key>49C9BE7C-E2C1-443F-9A72-B06FCFF3928C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<real>460</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
 		</dict>
 		<key>68E58998-557D-4F99-B620-DED38BCBFABA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>140</real>
+		</dict>
+		<key>697AC060-23DC-44DB-B91F-C9986338F978</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>435</real>
+		</dict>
+		<key>6E1BB6FB-E780-428E-940D-A905E7B997A1</key>
+		<dict>
+			<key>xpos</key>
+			<real>205</real>
+			<key>ypos</key>
+			<real>435</real>
 		</dict>
 		<key>8D24717E-AC58-43BC-A78E-A9CD21D622C4</key>
 		<dict>
 			<key>note</key>
 			<string>Description for Pull Request</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
 		</dict>
 		<key>9001792B-1FF7-4130-83FA-A2567C4F364F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
 		</dict>
 		<key>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</key>
 		<dict>
 			<key>note</key>
 			<string>Reply to Tech Recruiter</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
+		</dict>
+		<key>D187D21A-E736-488F-BDCA-A607A6273354</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>570</real>
 		</dict>
 		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>280</integer>
-		</dict>
-		<key>FA284970-976B-46B3-A836-2D6AC78D6BA4</key>
-		<dict>
-			<key>note</key>
-			<string>Description for PSE jira</string>
-			<key>xpos</key>
-			<integer>240</integer>
-			<key>ypos</key>
-			<integer>40</integer>
+			<real>280</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string></string>
 </dict>
