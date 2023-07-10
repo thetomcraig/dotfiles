@@ -21,6 +21,7 @@ esac
 
 if $in_macos; then
   alias rm="trash"
+
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
   export DROPBOX_ROOT="${DROPBOX_ROOT}"
   export PROJECTS_ROOT="${PROJECTS_ROOT}"
@@ -70,15 +71,16 @@ fi
 
 if [[ "${ARCH}" == *"mac"* ]]; then
   # NVM
-  if [[ "${ARCH}" == *"mac_intel"* ]]; then
-    export NVM_DIR="$HOME/.nvm"
-      [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-      [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-  else
-    export NVM_DIR="$HOME/.nvm"
-      [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-      [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-  fi
+  # echo "load nvm"
+  # if [[ "${ARCH}" == *"mac_intel"* ]]; then
+    # export NVM_DIR="$HOME/.nvm"
+      # [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+      # [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  # else
+    # export NVM_DIR="$HOME/.nvm"
+      # [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+      # [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  # fi
 
   # AVR GCC (QMK)
   export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
