@@ -75,6 +75,7 @@
 				<false/>
 			</dict>
 		</array>
+<<<<<<< HEAD
 		<key>4BCE9D85-DD70-4E43-BA17-FA5C11112FED</key>
 		<array>
 			<dict>
@@ -132,6 +133,13 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>458BA291-FBE6-45CA-B4FB-A48BDACED251</string>
+=======
+		<key>697AC060-23DC-44DB-B91F-C9986338F978</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E1BB6FB-E780-428E-940D-A905E7B997A1</string>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -220,6 +228,7 @@
 				<false/>
 			</dict>
 		</array>
+<<<<<<< HEAD
 		<key>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</key>
 		<array>
 			<dict>
@@ -234,10 +243,13 @@
 			</dict>
 		</array>
 		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
+=======
+		<key>D187D21A-E736-488F-BDCA-A607A6273354</key>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FA284970-976B-46B3-A836-2D6AC78D6BA4</string>
+				<string>37DFD05B-E0BA-40B5-AD42-F687E68DDA35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -245,6 +257,9 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>8D24717E-AC58-43BC-A78E-A9CD21D622C4</string>
@@ -266,19 +281,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>FA284970-976B-46B3-A836-2D6AC78D6BA4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>036F5265-FE6E-4870-9787-5765464DC579</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
@@ -290,54 +292,6 @@
 	<string>* Templates</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>*Automated Test Plan*
-* 
-
-*Integration Test Plan*
-* 
-
-*Internal UAT Plan*
-* Perform the Integration Test Plan on offside.
-
-*External UAT Plan*
-* </string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>036F5265-FE6E-4870-9787-5765464DC579</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>testing_steps</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>FA284970-976B-46B3-A836-2D6AC78D6BA4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -498,7 +452,11 @@
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
+<<<<<<< HEAD
 				<string>Hello {var:name}, my name is Tom Craig, and I am very interested in careers at {var:company}. I'm a full stack software engineer with 8 years of experience, and I'm currently looking for a position at a company with a great culture and an impactful mission. I would love to connect with you concerning positions at {var:company}. Let me know if you think it would be good fit!</string>
+=======
+				<string>thetomcraig@icloud.com</string>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -507,6 +465,7 @@
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
+<<<<<<< HEAD
 			<string>938BB5BA-BA8B-43CC-A184-24A04CFB8D9E</string>
 			<key>version</key>
 			<integer>3</integer>
@@ -548,6 +507,9 @@
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>6CA156FA-D05E-4E3D-BEA4-2F3AC7A0A14E</string>
+=======
+			<string>6E1BB6FB-E780-428E-940D-A905E7B997A1</string>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -557,17 +519,26 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
+<<<<<<< HEAD
 				<string>recruiter</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
 				<string>Cold Message To Recruiter</string>
+=======
+				<string>email</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Paste my email address</string>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
+<<<<<<< HEAD
 			<string>4BCE9D85-DD70-4E43-BA17-FA5C11112FED</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -788,14 +759,68 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</string>
+=======
+			<string>697AC060-23DC-44DB-B91F-C9986338F978</string>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cover</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Job Application Cover Letter</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D187D21A-E736-488F-BDCA-A607A6273354</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>My name is Tom Craig, and I am passionate about technology. 
+
+Professionally I have contributed to and created several technical projects including: developer tools, advertising technology, health care technology, notification systems, large API integrations, aerial imagery analysis, and Machine Learning.
+
+I have experience communicating and working closely with end-users, company partners, technical contractors, project managers, QA engineers, scientists, support staff, and customer representatives.
+
+I take great pride in clear communication and adherence to best practices for software documentation, organization, testing, and development.  And I care just as much about mentoring others and helping build a productive, impactful, and cohesive development team.  I believe a successful engineer is one who places importance on both these aspects of the work.
+
+I am eager to learn more about this role and careers at {query}.  Thank you for your time and consideration.
+
+I did not write this with ChatGPT.</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>37DFD05B-E0BA-40B5-AD42-F687E68DDA35</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+<<<<<<< HEAD
 		<key>036F5265-FE6E-4870-9787-5765464DC579</key>
 		<dict>
 			<key>xpos</key>
@@ -810,6 +835,8 @@
 			<key>ypos</key>
 			<real>445</real>
 		</dict>
+=======
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		<key>2E0DC1E9-2E75-49E4-A9F6-65EBACE0B1B3</key>
 		<dict>
 			<key>xpos</key>
@@ -817,6 +844,7 @@
 			<key>ypos</key>
 			<real>310</real>
 		</dict>
+<<<<<<< HEAD
 		<key>41965DC0-5E68-4147-90A4-25AAA0F88562</key>
 		<dict>
 			<key>xpos</key>
@@ -837,6 +865,14 @@
 			<real>355</real>
 			<key>ypos</key>
 			<real>475</real>
+=======
+		<key>37DFD05B-E0BA-40B5-AD42-F687E68DDA35</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>570</real>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 		<key>49C9BE7C-E2C1-443F-9A72-B06FCFF3928C</key>
 		<dict>
@@ -844,6 +880,7 @@
 			<real>460</real>
 			<key>ypos</key>
 			<real>280</real>
+<<<<<<< HEAD
 		</dict>
 		<key>4BCE9D85-DD70-4E43-BA17-FA5C11112FED</key>
 		<dict>
@@ -858,6 +895,8 @@
 			<real>425</real>
 			<key>ypos</key>
 			<real>585</real>
+=======
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 		<key>68E58998-557D-4F99-B620-DED38BCBFABA</key>
 		<dict>
@@ -866,6 +905,7 @@
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
+<<<<<<< HEAD
 		<key>6CA156FA-D05E-4E3D-BEA4-2F3AC7A0A14E</key>
 		<dict>
 			<key>xpos</key>
@@ -886,6 +926,21 @@
 			<real>435</real>
 			<key>ypos</key>
 			<real>445</real>
+=======
+		<key>697AC060-23DC-44DB-B91F-C9986338F978</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>435</real>
+		</dict>
+		<key>6E1BB6FB-E780-428E-940D-A905E7B997A1</key>
+		<dict>
+			<key>xpos</key>
+			<real>205</real>
+			<key>ypos</key>
+			<real>435</real>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 		<key>8D24717E-AC58-43BC-A78E-A9CD21D622C4</key>
 		<dict>
@@ -895,6 +950,7 @@
 			<real>240</real>
 			<key>ypos</key>
 			<real>170</real>
+<<<<<<< HEAD
 		</dict>
 		<key>8F36AFE3-185C-4173-8C85-0C408409C9C7</key>
 		<dict>
@@ -902,6 +958,8 @@
 			<real>585</real>
 			<key>ypos</key>
 			<real>615</real>
+=======
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 		<key>9001792B-1FF7-4130-83FA-A2567C4F364F</key>
 		<dict>
@@ -909,6 +967,7 @@
 			<real>800</real>
 			<key>ypos</key>
 			<real>280</real>
+<<<<<<< HEAD
 		</dict>
 		<key>938BB5BA-BA8B-43CC-A184-24A04CFB8D9E</key>
 		<dict>
@@ -937,6 +996,8 @@
 			<real>845</real>
 			<key>ypos</key>
 			<real>475</real>
+=======
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 		<key>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</key>
 		<dict>
@@ -947,12 +1008,21 @@
 			<key>ypos</key>
 			<real>310</real>
 		</dict>
+<<<<<<< HEAD
 		<key>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</key>
 		<dict>
 			<key>xpos</key>
 			<real>345</real>
 			<key>ypos</key>
 			<real>615</real>
+=======
+		<key>D187D21A-E736-488F-BDCA-A607A6273354</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>570</real>
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
 		<dict>
@@ -960,6 +1030,7 @@
 			<real>30</real>
 			<key>ypos</key>
 			<real>280</real>
+<<<<<<< HEAD
 		</dict>
 		<key>FA284970-976B-46B3-A836-2D6AC78D6BA4</key>
 		<dict>
@@ -969,6 +1040,8 @@
 			<real>240</real>
 			<key>ypos</key>
 			<real>40</real>
+=======
+>>>>>>> feca1daea4f06ff3d65756e90b44c3c7dfb8ed11
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

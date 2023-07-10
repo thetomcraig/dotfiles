@@ -10,6 +10,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>324763F5-EA03-4F36-A6E4-2139A0F7835E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>A6DD4A29-12B6-4C57-B683-792C26059FCE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -201,57 +211,57 @@ end alfred_script</string>
 		<key>062E8478-FA6E-499B-91A9-499396DF8D2A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>323C5113-5D2B-43D5-B8DE-7B16018BE991</key>
 		<dict>
 			<key>note</key>
 			<string>Turn OFF Dark Mode (goes to auto)</string>
 			<key>xpos</key>
-			<integer>395</integer>
+			<real>395</real>
 			<key>ypos</key>
-			<integer>460</integer>
+			<real>460</real>
 		</dict>
 		<key>324763F5-EA03-4F36-A6E4-2139A0F7835E</key>
 		<dict>
 			<key>note</key>
 			<string>Set Display Brightness to 20%</string>
 			<key>xpos</key>
-			<integer>400</integer>
+			<real>400</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>9F0F544F-30D5-4234-8726-8CC54149603B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>745</integer>
+			<real>745</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>A6DD4A29-12B6-4C57-B683-792C26059FCE</key>
 		<dict>
 			<key>note</key>
 			<string>Turn ON Dark Mode</string>
 			<key>xpos</key>
-			<integer>400</integer>
+			<real>400</real>
 			<key>ypos</key>
-			<integer>285</integer>
+			<real>285</real>
 		</dict>
 		<key>E1A3AFD3-763A-42A0-BACC-2AA720D39BF3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>695</integer>
+			<real>695</real>
 			<key>ypos</key>
-			<integer>275</integer>
+			<real>275</real>
 		</dict>
 		<key>E1E853A9-4840-4D94-B16E-C2703FB5DBC7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>15</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>460</integer>
+			<real>460</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

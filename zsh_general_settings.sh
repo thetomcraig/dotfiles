@@ -46,6 +46,11 @@ alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
 
 alias start="./start.command"
 
+dockerbash() {
+  docker exec -it $1 /bin/bash
+}
+alias de=dockerbash
+
 mytree() {
   #this does tree with 1 level
   #if no first parameter,

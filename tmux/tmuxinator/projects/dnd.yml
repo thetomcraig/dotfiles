@@ -1,8 +1,10 @@
 name: dnd
-root: "/Users/tomcraig/Library/CloudStorage/Dropbox/TomCraig/03\ References/dnd"
+root: "/Users/tomcraig/Documents/03\ Notes/dnd"
 
 windows:
   - Vim:
       layout: main-vertical
       panes:
         - cd campaign_2 && vim Notes.md
+
+

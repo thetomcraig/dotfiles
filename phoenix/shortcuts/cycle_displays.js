@@ -61,7 +61,7 @@ setKeyHandler ('4', HYPER, () => {
   moveToDisplayWithUUID(windowIds[3])
 });
 setKeyHandler ('5', HYPER, () => {
-  moveToDisplayWithUUID(windowIds[3])
+  moveToDisplayWithUUID(windowIds[4])
 });
 
 setKeyHandler ( 'x', HYPER, () => {

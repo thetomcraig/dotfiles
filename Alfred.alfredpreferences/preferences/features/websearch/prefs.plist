@@ -65,9 +65,7 @@
 			<key>text</key>
 			<string>Yelp</string>
 			<key>url</key>
-			<string>https://www.yelp.com/search?find_desc={query}&amp;find_loc=Pasadena</string>
-			<key>utf8</key>
-			<true/>
+			<string>https://www.yelp.com/search?find_desc={query}</string>
 		</dict>
 		<key>9F46E790-8A1A-436F-93B9-B1829D05E5F8</key>
 		<dict>
