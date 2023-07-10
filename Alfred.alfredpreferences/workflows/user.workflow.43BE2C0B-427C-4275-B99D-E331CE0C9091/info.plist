@@ -8,11 +8,52 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>064F3141-4D65-451A-B864-37B451FCE1A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>938BB5BA-BA8B-43CC-A184-24A04CFB8D9E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2E0DC1E9-2E75-49E4-A9F6-65EBACE0B1B3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>49C9BE7C-E2C1-443F-9A72-B06FCFF3928C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>41965DC0-5E68-4147-90A4-25AAA0F88562</key>
+		<array/>
+		<key>458BA291-FBE6-45CA-B4FB-A48BDACED251</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6CA156FA-D05E-4E3D-BEA4-2F3AC7A0A14E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4785ACEC-068C-4385-9D17-1C03AAF2D5C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>89520159-A8E5-40D5-A414-F68C2BE55B64</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,6 +75,71 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4BCE9D85-DD70-4E43-BA17-FA5C11112FED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7A2D9FA6-17C6-4F9B-9D7E-AC4F3FA68E1D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>657BB104-BB2F-4A67-AB61-07F372A42C96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F36AFE3-185C-4173-8C85-0C408409C9C7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6CA156FA-D05E-4E3D-BEA4-2F3AC7A0A14E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A59D9168-DB38-4A4E-8956-83C19DAF932B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7A2D9FA6-17C6-4F9B-9D7E-AC4F3FA68E1D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4785ACEC-068C-4385-9D17-1C03AAF2D5C0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>89520159-A8E5-40D5-A414-F68C2BE55B64</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>458BA291-FBE6-45CA-B4FB-A48BDACED251</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8D24717E-AC58-43BC-A78E-A9CD21D622C4</key>
 		<array>
 			<dict>
@@ -47,11 +153,78 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8F36AFE3-185C-4173-8C85-0C408409C9C7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>41965DC0-5E68-4147-90A4-25AAA0F88562</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>938BB5BA-BA8B-43CC-A184-24A04CFB8D9E</key>
+		<array/>
+		<key>9C1E3B98-7CBD-4518-81F1-B367BC1CC9BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9F327484-143C-484A-A4FE-E60C4D313089</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C1E3B98-7CBD-4518-81F1-B367BC1CC9BE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A59D9168-DB38-4A4E-8956-83C19DAF932B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>064F3141-4D65-451A-B864-37B451FCE1A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>2E0DC1E9-2E75-49E4-A9F6-65EBACE0B1B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>657BB104-BB2F-4A67-AB61-07F372A42C96</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -214,6 +387,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"d3837e349fe407e9f76c196723692df6ad87b760.png","title":"release","arg":"release","subtitle":"Release Ticket Notes"},{"imagefile":"b938fa2e18d1d909f695b783cec28785c631fbce.png","title":"recruiter","arg":"recruiter","subtitle":"Recruiter Template Email"},{"title":"testing_steps","arg":"testing_steps","subtitle":"Steps for PSE jira"}]</string>
+				<key>keyword</key>
+				<string>temp</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -229,35 +433,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>49C9BE7C-E2C1-443F-9A72-B06FCFF3928C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"d3837e349fe407e9f76c196723692df6ad87b760.png","title":"release","arg":"release","subtitle":"Release Ticket Notes"},{"imagefile":"b938fa2e18d1d909f695b783cec28785c631fbce.png","title":"recruiter","arg":"recruiter","subtitle":"Recruiter Template Email"},{"title":"testing_steps","arg":"testing_steps","subtitle":"Steps for PSE jira"}]</string>
-				<key>keyword</key>
-				<string>temp</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -284,6 +459,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>recruiter</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -301,19 +495,299 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
+				<key>autopaste</key>
 				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>recruiter</string>
+				<key>clipboardtext</key>
+				<string>Hello {var:name}, my name is Tom Craig, and I am very interested in careers at {var:company}. I'm a full stack software engineer with 8 years of experience, and I'm currently looking for a position at a company with a great culture and an impactful mission. I would love to connect with you concerning positions at {var:company}. Let me know if you think it would be good fit!</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</string>
+			<string>938BB5BA-BA8B-43CC-A184-24A04CFB8D9E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>name</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Recruiter's name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7A2D9FA6-17C6-4F9B-9D7E-AC4F3FA68E1D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{var:intro}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6CA156FA-D05E-4E3D-BEA4-2F3AC7A0A14E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>recruiter</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Cold Message To Recruiter</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4BCE9D85-DD70-4E43-BA17-FA5C11112FED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>company</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Company name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>89520159-A8E5-40D5-A414-F68C2BE55B64</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⇥</string>
+				<key>keycode</key>
+				<integer>48</integer>
+				<key>keymod</key>
+				<integer>0</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>064F3141-4D65-451A-B864-37B451FCE1A6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>name</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4785ACEC-068C-4385-9D17-1C03AAF2D5C0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>company</key>
+					<string>{query}</string>
+					<key>intro</key>
+					<string>Software engineer looking for something unique</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>458BA291-FBE6-45CA-B4FB-A48BDACED251</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>.5</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>A59D9168-DB38-4A4E-8956-83C19DAF932B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>company</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Company name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>657BB104-BB2F-4A67-AB61-07F372A42C96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>Hello {var:name}!  My name is Tom Craig, and I am  full stack software engineer looking for a position at a company with a great culture and an impactful mission. I would love to connect with you concerning positions at {var:company}.</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>41965DC0-5E68-4147-90A4-25AAA0F88562</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>short</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Cold Message To Recruiter (Short)</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9F327484-143C-484A-A4FE-E60C4D313089</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>name</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Recruiter's name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9C1E3B98-7CBD-4518-81F1-B367BC1CC9BE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>company</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8F36AFE3-185C-4173-8C85-0C408409C9C7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>name</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -325,73 +799,180 @@
 		<key>036F5265-FE6E-4870-9787-5765464DC579</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
+		</dict>
+		<key>064F3141-4D65-451A-B864-37B451FCE1A6</key>
+		<dict>
+			<key>xpos</key>
+			<real>935</real>
+			<key>ypos</key>
+			<real>445</real>
 		</dict>
 		<key>2E0DC1E9-2E75-49E4-A9F6-65EBACE0B1B3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<real>340</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
+		</dict>
+		<key>41965DC0-5E68-4147-90A4-25AAA0F88562</key>
+		<dict>
+			<key>xpos</key>
+			<real>665</real>
+			<key>ypos</key>
+			<real>585</real>
+		</dict>
+		<key>458BA291-FBE6-45CA-B4FB-A48BDACED251</key>
+		<dict>
+			<key>xpos</key>
+			<real>595</real>
+			<key>ypos</key>
+			<real>475</real>
+		</dict>
+		<key>4785ACEC-068C-4385-9D17-1C03AAF2D5C0</key>
+		<dict>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>475</real>
 		</dict>
 		<key>49C9BE7C-E2C1-443F-9A72-B06FCFF3928C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<real>460</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
+		</dict>
+		<key>4BCE9D85-DD70-4E43-BA17-FA5C11112FED</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>445</real>
+		</dict>
+		<key>657BB104-BB2F-4A67-AB61-07F372A42C96</key>
+		<dict>
+			<key>xpos</key>
+			<real>425</real>
+			<key>ypos</key>
+			<real>585</real>
 		</dict>
 		<key>68E58998-557D-4F99-B620-DED38BCBFABA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>140</real>
+		</dict>
+		<key>6CA156FA-D05E-4E3D-BEA4-2F3AC7A0A14E</key>
+		<dict>
+			<key>xpos</key>
+			<real>675</real>
+			<key>ypos</key>
+			<real>445</real>
+		</dict>
+		<key>7A2D9FA6-17C6-4F9B-9D7E-AC4F3FA68E1D</key>
+		<dict>
+			<key>xpos</key>
+			<real>195</real>
+			<key>ypos</key>
+			<real>445</real>
+		</dict>
+		<key>89520159-A8E5-40D5-A414-F68C2BE55B64</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>445</real>
 		</dict>
 		<key>8D24717E-AC58-43BC-A78E-A9CD21D622C4</key>
 		<dict>
 			<key>note</key>
 			<string>Description for Pull Request</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
+		</dict>
+		<key>8F36AFE3-185C-4173-8C85-0C408409C9C7</key>
+		<dict>
+			<key>xpos</key>
+			<real>585</real>
+			<key>ypos</key>
+			<real>615</real>
 		</dict>
 		<key>9001792B-1FF7-4130-83FA-A2567C4F364F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
+		</dict>
+		<key>938BB5BA-BA8B-43CC-A184-24A04CFB8D9E</key>
+		<dict>
+			<key>xpos</key>
+			<real>1135</real>
+			<key>ypos</key>
+			<real>445</real>
+		</dict>
+		<key>9C1E3B98-7CBD-4518-81F1-B367BC1CC9BE</key>
+		<dict>
+			<key>xpos</key>
+			<real>185</real>
+			<key>ypos</key>
+			<real>585</real>
+		</dict>
+		<key>9F327484-143C-484A-A4FE-E60C4D313089</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>585</real>
+		</dict>
+		<key>A59D9168-DB38-4A4E-8956-83C19DAF932B</key>
+		<dict>
+			<key>xpos</key>
+			<real>845</real>
+			<key>ypos</key>
+			<real>475</real>
 		</dict>
 		<key>ABF31D12-7410-4BC5-BF21-1FB246FB0DAE</key>
 		<dict>
 			<key>note</key>
 			<string>Reply to Tech Recruiter</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
+		</dict>
+		<key>E4F4BCCE-6379-47ED-80A0-7B7FB8E58F32</key>
+		<dict>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>615</real>
 		</dict>
 		<key>F0829530-367B-4D8A-A2B2-2F3EDD40AC42</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
 		</dict>
 		<key>FA284970-976B-46B3-A836-2D6AC78D6BA4</key>
 		<dict>
 			<key>note</key>
 			<string>Description for PSE jira</string>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>40</integer>
+			<real>40</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string></string>
 </dict>

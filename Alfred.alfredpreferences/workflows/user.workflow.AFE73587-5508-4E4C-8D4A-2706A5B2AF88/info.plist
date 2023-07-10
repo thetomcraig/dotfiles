@@ -38,7 +38,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>High Time</string>
 	<key>objects</key>
@@ -254,6 +254,8 @@ end alfred_script</string>
 			<integer>460</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string></string>
 </dict>
