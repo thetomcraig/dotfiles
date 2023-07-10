@@ -1,0 +1,10 @@
+# /Users/tomcraig/dotfiles/tmux/tmuxinator/projects/sc.yml
+
+name: sc
+root: $PROJECTS_ROOT/3DP/scholars_collective_3DP
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
