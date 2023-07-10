@@ -1,99 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>bundleid</key>
-	<string></string>
-	<key>category</key>
-	<string>Tools</string>
-	<key>connections</key>
-	<dict>
-		<key>F47F4518-E897-4B9E-8C2C-9AFA070C71DC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>13CA79F6-78CA-4115-9B94-DC25740E929B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-	</dict>
-	<key>createdby</key>
-	<string></string>
-	<key>description</key>
-	<string></string>
-	<key>disabled</key>
-	<true/>
-	<key>name</key>
-	<string>minibook</string>
-	<key>objects</key>
-	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-
--- SHOW the dock, regardless of statetell application "System Events" to set the autohide of the dock preferences to false-- SHOW the menubar, regardless of statetell application "System Preferences"	reveal pane id "com.apple.preference.general"end telltell application "System Events" to tell process "System Preferences" to tell window "General"	set theCheckbox to checkbox "Automatically hide and show the menu bar"	set checkboxStatus to value of theCheckbox as boolean	if checkboxStatus is true then click theCheckboxend telldelay 1quit application "System Preferences"-- Open Plextell application "Plex" to activate
-tell application "KeyboardCleanTool" to activate-- Center the windowtell application "Moom" to arrange windows according to snapshot named "Center Plex"-- Change to tent display layoutdo shell script "/usr/local/bin/displayplacer \"id:A9CC45E4-678C-A6FD-A018-13BE2FEEFE49 res:960x600 color_depth:8 scaling:on origin:(0,0) degree:90\""
-
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>13CA79F6-78CA-4115-9B94-DC25740E929B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>plex</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F47F4518-E897-4B9E-8C2C-9AFA070C71DC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-	</array>
-	<key>readme</key>
-	<string></string>
-	<key>uidata</key>
-	<dict>
-		<key>13CA79F6-78CA-4115-9B94-DC25740E929B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>225</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>F47F4518-E897-4B9E-8C2C-9AFA070C71DC</key>
-		<dict>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-	</dict>
-	<key>webaddress</key>
-	<string></string>
-</dict>
-</plist>
