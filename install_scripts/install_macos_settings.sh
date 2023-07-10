@@ -304,6 +304,7 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Disable Spotlight Hotleys
+# TODO fix
 # ./disable_spotlight_keys.sh
 
 

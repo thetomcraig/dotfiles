@@ -36,6 +36,7 @@ openemu
 phoenix
 plex
 postman
+private-internet-access
 signal
 slack
 soundsource
