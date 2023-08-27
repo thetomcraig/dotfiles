@@ -412,6 +412,7 @@ mysides add Pictures file://${HOME}/Pictures
 # (The "Open With" option)
 # Can find the bundle ID of an application with:
 #    osascript -e 'id of app "<APP NAME"'
+duti -s com.flexibits.fantastical2.mac .ics all
 duti -s abnerworks.Typora .md all
 duti -s org.freecadteam.freecad .stl all
 duti -s org.vim.MacVim .sh all
@@ -419,6 +420,8 @@ duti -s org.vim.MacVim .yaml all
 duti -s org.vim.MacVim .yml all
 duti -s org.vim.MacVim .json all
 duti -s org.vim.MacVim .log all
+duti -s org.vim.MacVim .ts all
+duti -s org.vim.MacVim .tsx all
 duti -s org.videolan.vlc .avi all
 duti -s org.videolan.vlc .mkv all
 duti -s org.videolan.vlc .mov all
