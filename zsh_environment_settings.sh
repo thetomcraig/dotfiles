@@ -70,18 +70,6 @@ fi
 
 
 if [[ "${ARCH}" == *"mac"* ]]; then
-  # NVM
-  # echo "load nvm"
-  # if [[ "${ARCH}" == *"mac_intel"* ]]; then
-    # export NVM_DIR="$HOME/.nvm"
-      # [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-      # [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-  # else
-    # export NVM_DIR="$HOME/.nvm"
-      # [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-      # [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-  # fi
-
   # AVR GCC (QMK)
   export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
   # BREW
@@ -98,6 +86,9 @@ if [[ "${ARCH}" == *"mac"* ]]; then
 fi
 
 eval "$(direnv hook zsh)"
+
+# Testing lunarvim
+export PATH=/Users/tomcraig/.local/bin:$PATH
 
 
 ########
@@ -118,24 +109,4 @@ if [[ "${ARCH}" == *"mac"* ]]; then
     tmux source-file ~/.tmux.conf
     fi
   }
-fi
-
-#########
-# CONDA #
-#########
-if [[ "${IN_COREAD}" == "true" ]]; then
-  # >>> conda initialize >>>
-  # !! Contents within this block are managed by 'conda init' !!
-  __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-  if [ $? -eq 0 ]; then
-      eval "$__conda_setup"
-  else
-      if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-          . "/opt/miniconda3/etc/profile.d/conda.sh"
-      else
-          export PATH="/opt/miniconda3/bin:$PATH"
-      fi
-  fi
-  unset __conda_setup
-  # <<< conda initialize <<<
 fi
