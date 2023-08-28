@@ -33,7 +33,7 @@ alias db="cd ${HOME}/Documents"
 alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
 alias notes="cd ${HOME}/Documents/03\ Notes && mytree"
 alias refs="cd ${HOME}/Documents/04\ References && mytree"
-alias docs="cd ${HOME}/Documents/06\ Documents && mytree"
+alias docs="cd ${HOME}/Documents && mytree"
 alias proj="cd ${PROJECTS_ROOT}"
 
 alias s="source $DOTFILES_LOCATION/zsh.sh"
