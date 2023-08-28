@@ -1,0 +1,396 @@
+[
+  {
+    "tag": "books",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/commentary/articles/most_tech_content_is_bullshit_|_Hacker_News.md"
+    ]
+  },
+  {
+    "tag": "technology",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/commentary/articles/most_tech_content_is_bullshit_|_Hacker_News.md"
+    ]
+  },
+  {
+    "tag": "content",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/commentary/articles/most_tech_content_is_bullshit_|_Hacker_News.md"
+    ]
+  },
+  {
+    "tag": "linux",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/commentary/articles/most_tech_content_is_bullshit_|_Hacker_News.md"
+    ]
+  },
+  {
+    "tag": "app-feedback",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/career/feedback/performance_reviews/ceres/2020Q1/jeff.md"
+    ]
+  },
+  {
+    "tag": "installation",
+    "tagCount": 2,
+    "relativePaths": [
+      "04 References/career/2013_Redwood/redwood/README.md"
+    ]
+  },
+  {
+    "tag": "getting",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/career/2013_Redwood/redwood/README.md"
+    ]
+  },
+  {
+    "tag": "file",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/career/2013_Redwood/redwood/README.md"
+    ]
+  },
+  {
+    "tag": "future",
+    "tagCount": 1,
+    "relativePaths": [
+      "04 References/career/2013_Redwood/redwood/README.md"
+    ]
+  },
+  {
+    "tag": "s",
+    "tagCount": 3,
+    "relativePaths": [
+      "01 Projects/website/node_modules/webpack-dev-server/node_modules/yargs/CHANGELOG.md",
+      "01 Projects/website/node_modules/istanbul-reports/CHANGELOG.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/istanbul-reports/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "webpack",
+    "tagCount": 8,
+    "relativePaths": [
+      "01 Projects/website/node_modules/webpack-dev-server/README.md",
+      "01 Projects/website/node_modules/webpack-dev-middleware/README.md",
+      "01 Projects/website/node_modules/webpack/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/webpack-dev-server/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/webpack-dev-middleware/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/webpack/README.md"
+    ]
+  },
+  {
+    "tag": "typescript",
+    "tagCount": 14,
+    "relativePaths": [
+      "01 Projects/website/node_modules/tslib/README.md",
+      "01 Projects/website/node_modules/pascal-case/node_modules/tslib/README.md",
+      "01 Projects/website/node_modules/param-case/node_modules/tslib/README.md",
+      "01 Projects/website/node_modules/no-case/node_modules/tslib/README.md",
+      "01 Projects/website/node_modules/lower-case/node_modules/tslib/README.md",
+      "01 Projects/website/node_modules/dot-case/node_modules/tslib/README.md",
+      "01 Projects/website/node_modules/camel-case/node_modules/tslib/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/typescript/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/tslib/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@angular-devkit/schematics/node_modules/tslib/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@angular-devkit/core/node_modules/tslib/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@angular-devkit/build-webpack/node_modules/tslib/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@angular-devkit/build-angular/node_modules/rxjs/node_modules/tslib/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@angular-devkit/architect/node_modules/tslib/README.md"
+    ]
+  },
+  {
+    "tag": "name",
+    "tagCount": 4,
+    "relativePaths": [
+      "01 Projects/website/node_modules/terser-webpack-plugin/node_modules/commander/CHANGELOG.md",
+      "01 Projects/website/node_modules/terser/node_modules/commander/CHANGELOG.md",
+      "01 Projects/website/node_modules/commander/CHANGELOG.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/commander/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "rollup/658",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/rollup-plugin-babel/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "__pure__",
+    "tagCount": 3,
+    "relativePaths": [
+      "01 Projects/website/node_modules/rollup/CHANGELOG.md",
+      "01 Projects/website/node_modules/@babel/helper-annotate-as-pure/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@babel/helper-annotate-as-pure/README.md"
+    ]
+  },
+  {
+    "tag": "_pure",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/rollup/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "rework-custom-media/5",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/postcss-custom-media/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "object",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/object.assign/README.md"
+    ]
+  },
+  {
+    "tag": "object-keys",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/website/node_modules/object-keys/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/object-keys/README.md"
+    ]
+  },
+  {
+    "tag": "object-is",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/object-is/README.md"
+    ]
+  },
+  {
+    "tag": "forgejs",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/website/node_modules/node-forge/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/node-forge/README.md"
+    ]
+  },
+  {
+    "tag": "jsdom",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/jsdom/README.md"
+    ]
+  },
+  {
+    "tag": "ff0000",
+    "tagCount": 32,
+    "relativePaths": [
+      "01 Projects/website/node_modules/jest-watcher/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-watch-typeahead/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-validate/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-util/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-snapshot/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-runtime/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-runner/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-resolve/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-message-util/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-matcher-utils/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-jasmine2/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-each/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-diff/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-config/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest-circus/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/jest/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/eslint/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/babel-jest/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@types/jest/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@testing-library/jest-dom/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@testing-library/dom/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@jest/types/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@jest/transform/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@jest/reporters/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@jest/core/node_modules/chalk/readme.md",
+      "01 Projects/website/node_modules/@jest/console/node_modules/chalk/readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/ora/node_modules/chalk/readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/log-symbols/node_modules/chalk/readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/inquirer/node_modules/chalk/readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/critters/node_modules/chalk/readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/chalk/readme.md"
+    ]
+  },
+  {
+    "tag": "options",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/website/node_modules/http-proxy/CHANGELOG.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/http-proxy/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "all",
+    "tagCount": 4,
+    "relativePaths": [
+      "01 Projects/website/node_modules/flat-cache/changelog.md"
+    ]
+  },
+  {
+    "tag": "express",
+    "tagCount": 3,
+    "relativePaths": [
+      "01 Projects/website/node_modules/express/Readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/express/Readme.md",
+      "01 Projects/coreadai/data-engine/node_test/node_modules/express/Readme.md"
+    ]
+  },
+  {
+    "tag": "getindexfromloc",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/eslint/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "define-properties",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/define-properties/README.md"
+    ]
+  },
+  {
+    "tag": "rrggbbaa",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/cssdb/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "boolbase",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/website/node_modules/boolbase/README.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/boolbase/README.md"
+    ]
+  },
+  {
+    "tag": "use",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/base/README.md"
+    ]
+  },
+  {
+    "tag": "extend",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/base/README.md"
+    ]
+  },
+  {
+    "tag": "mixin",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/base/README.md"
+    ]
+  },
+  {
+    "tag": "mixins",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/base/README.md"
+    ]
+  },
+  {
+    "tag": "inherit",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/website/node_modules/base/README.md"
+    ]
+  },
+  {
+    "tag": "setdefaults",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/website/node_modules/argparse/CHANGELOG.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/argparse/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "n",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/stylus/Changelog.md"
+    ]
+  },
+  {
+    "tag": "eeeeee",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/stylus/Changelog.md"
+    ]
+  },
+  {
+    "tag": "nn",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/stylus/Changelog.md"
+    ]
+  },
+  {
+    "tag": "efefef",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/stylus/Changelog.md"
+    ]
+  },
+  {
+    "tag": "selenium",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/selenium-webdriver/README.md"
+    ]
+  },
+  {
+    "tag": "kill",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/selenium-webdriver/CHANGES.md"
+    ]
+  },
+  {
+    "tag": "lookupenum",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/protobufjs/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "copyright",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/lie/license.md"
+    ]
+  },
+  {
+    "tag": "socket",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/engine.io-parser/Readme.md",
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/engine.io/README.md"
+    ]
+  },
+  {
+    "tag": "unreleased",
+    "tagCount": 1,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/test-crud/firebase-test/node_modules/@firebase/storage/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "studies",
+    "tagCount": 2,
+    "relativePaths": [
+      "01 Projects/coreadai/data-engine/CoPilot/CHANGELOG.md",
+      "01 Projects/coreadai/copilot-docker-test/CoPilot/CHANGELOG.md"
+    ]
+  }
+]

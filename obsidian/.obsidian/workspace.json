@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "f7f0587fda5ef696",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb9652cd06e0522f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8dba1418cb5e743",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 References/career/2023_search/Notes.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d299b303cee56379",
+    "type": "split",
+    "children": [
+      {
+        "id": "76b9ab38ac80f14a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca6847896fb58282",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a1bba07b390b0bba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": " ft",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d249f97b5b0d6ed5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "60e10af90b4ec409",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3c5ae75b86c9bfe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8e137c637d4bbbb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "04 References/career/2023_search/Notes.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b2a4701ecaab20d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "04 References/career/2023_search/Notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "592819333bd2307e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2023683de900059a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "04 References/career/2023_search/Notes.md"
+              }
+            }
+          },
+          {
+            "id": "b742a32e49d9bd6d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "b8dba1418cb5e743",
+  "lastOpenFiles": [
+    "03 Notes/dnd/revenge_of_the_nerds/locations.md",
+    "03 Notes/dnd/revenge_of_the_nerds/lo_life_burgers.md",
+    "03 Notes/dnd/revenge_of_the_nerds/basement.md",
+    "03 Notes/dnd/revenge_of_the_nerds/Arcade.md",
+    "03 Notes/dnd/revenge_of_the_nerds/Library.md",
+    "04 References/career/2023_search/Notes.md",
+    "2023-08-26.md",
+    "04 References/career/interviewing/questions_and_answers/system_design_questions.md",
+    "04 References/career/interviewing/questions_and_answers/answers_to_give.md",
+    "04 References/career/interviewing/questions_and_answers/questions_to_ask.md",
+    "macOS.zip",
+    "Unconfirmed 729954.crdownload",
+    "04 References/career/2021_job_search/mission_at_companies.md",
+    "04 References/career/2021_job_search/future_jobs.md",
+    "04 References/career/2021_job_search/careerareads_of_interest2021-04-11.md",
+    "04 References/career/2021_job_search/README.md",
+    "04 References/career/2021_job_search/Job Search.pdf",
+    "04 References/career/2021_job_search",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/packal/com.tedwise.networkinfo.pub",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/packal/package.xml",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/parser.rb",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/packal",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/main.rb",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/info.plist",
+    "06 Settings/Alfred.alfredpreferences/workflows/user.workflow.84D5F597-C57D-441E-A026-5816A6978E61/icon.png",
+    "OCR-Screenshots.md",
+    "questions.md",
+    "00 Inbox/Notes.md",
+    "00 Inbox/computer_pile_logos/NeXT-Logo.wine.png",
+    "00 Inbox/computer_pile_logos/Screen Shot 2022-08-23 at 12.26.47 PM.png",
+    "03 Notes/dnd/campaign_2/README.md",
+    "Untitled.md"
+  ]
+}
