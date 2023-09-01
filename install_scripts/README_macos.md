@@ -109,6 +109,7 @@
 - [ ] iTerm
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
+  - NOTE: this causes syncing issues - may be better to do a one-time loading
 
 - [x] Hosts file
 
