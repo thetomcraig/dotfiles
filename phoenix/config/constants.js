@@ -3,6 +3,7 @@
 
 const HYPER = ['shift', 'alt', 'ctrl'];
 const HYPER_SHIFT = [...HYPER, 'shift'];
+const CMD_ALT = ['cmd', 'alt'];
 const DOUBLE_KEY_INTERVAL = 250;
 
 /* OTHERS */
@@ -40,3 +41,18 @@ const SPACES_ALFRED_PRESELECT = true;
 const SPACES_ALFRED_PRESELECT_DELAY = 0.1;
 const SPACES_UPDATE_CYCLES = 5;
 const SPACES_UPDATE_INTERVAL = 500;
+
+// Can use "displayplacer" to update these
+const DISPLAY_IDS = 
+[
+  // Internal
+  "37D8832A-2D66-02CA-B9F7-8F30A301B230",
+  // Dell 27
+  "95458444-A649-45C1-94AA-7D8880A7144F",
+  // Dell 25
+  "912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD",
+  // Kogoda
+  "B2085621-B801-4448-8FB9-30E7D08C1419",
+  // HDMI Strip
+  "3913815D-56F0-4FE7-90F7-6CB91892A81D"
+];

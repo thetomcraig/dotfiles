@@ -1,3 +1,4 @@
+// TO LOG/DEBUG
 // /usr/bin/log stream --process Phoenix
 
 /* IMPORT */
@@ -13,6 +14,7 @@ require ( './helpers/focus_window.js' );
 require ( './helpers/get_focused_screen.js' );
 require ( './helpers/get_named_anchor.js' );
 require ( './helpers/get_named_frame.js' );
+require ( './helpers/get_frame_ratio.js' );
 // require ( './helpers/get_space_index.js' );
 // require ( './helpers/get_space_name.js' );
 require ( './helpers/grow_frame.js' );
@@ -39,6 +41,8 @@ require ( './helpers/write_json.js' );
 // require ( './shortcuts/brightness.js' );
 require ( './shortcuts/center.js' );
 require ( './shortcuts/cycle_displays.js' );
+require ( './shortcuts/move_window_to_display.js' );
+require ( './shortcuts/focus_app_on_display.js' );
 require ( './shortcuts/corners.js' );
 require ( './shortcuts/expand.js' );
 // require ( './shortcuts/focus.js' );
