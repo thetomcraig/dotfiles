@@ -33,13 +33,13 @@ count=0
 displayNum=0
 until [ $count -gt $((${#screenarray[@]} + 1 )) ]; do
   if [[ "${screenarray[count]}" == *"${dell27}"* ]]; then
-    $desktoppr $displayNum "${wallpaperFolder}/wave_2.jpg"
+    $desktoppr $displayNum "${wallpaperFolder}/wave_1_large.png"
     displayNum=$(( $displayNum + 1 ))
   elif [[ "${screenarray[count]}" == *"${dell25}"* ]]; then
     $desktoppr $displayNum "${wallpaperFolder}/wave_3.jpeg"
     displayNum=$(( $displayNum + 1 ))
   elif [[ "${screenarray[count]}" == *"${internal}"* ]]; then
-    $desktoppr $displayNum "${wallpaperFolder}/wave_1_no_notch.png"
+    $desktoppr $displayNum "${wallpaperFolder}/wave_2_no_notch.png"
     echo "${wallpaperFolder}/wave_1_no_notch.png"
     displayNum=$(( $displayNum + 1 ))
   elif [[ "${screenarray[count]}" == *"${hdmiStrip}"* ]]; then
