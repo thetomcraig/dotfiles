@@ -57,13 +57,11 @@ export IN_SSH="${in_ssh}"
 # PATH AND HOOKS #
 ##################
 if [[ "${ARCH}" == *"${linux}"* ]]; then
-  if [[ "${IN_COREAD}" != "true" ]]; then
-    # PYENV
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    # RBENV
-    export PATH=$HOME/.rbenv/bin:$PATH
-  fi
+  # PYENV
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  # RBENV
+  export PATH=$HOME/.rbenv/bin:$PATH
   # fzf
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
@@ -75,20 +73,18 @@ if [[ "${ARCH}" == *"mac"* ]]; then
   # BREW
   export PATH=/opt/homebrew/bin:$PATH
   export PATH=/opt/homebrew/sbin:$PATH
-  # PYENV
-  eval "$(pyenv init --path)"
-  # PYENV VIRTUALENV
-  eval "$(pyenv virtualenv-init -)"
   # RBENV
   eval "$(rbenv init -)"
-
   export PATH="/usr/local/sbin:$PATH"
 fi
 
 eval "$(direnv hook zsh)"
 
-# Testing lunarvim
-export PATH=/Users/tomcraig/.local/bin:$PATH
+# PYENV
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 
 ########
