@@ -175,7 +175,7 @@ nmap <Space>bg :Grepper-buffer
 set rtp+=/usr/local/bin/fzf
 "command! -bang -nargs=? -complete=dir Files
 "    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
-let g:fzf_preview_window = 'right:80%'
+let g:fzf_preview_window = 'right:0'
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -209,24 +209,18 @@ let g:ale_python_isort_options = '-l 120'
 let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116,E722'
 let g:ale_python_black_options = '--exclude migrations --line-length 100'
 
-let g:remark_settings = '--setting "\"list-item-indent\":\"1\""'
-
-"remark-lint-checkbox-character-style
-
-let g:ale_markdown_remark_lint_options = remark_settings
 
 function! FixWithRemarkLint(test_arg)
-  let remark_cmd="! remark " . g:remark_settings . " " . fnameescape(expand('%:p')) . " -o"
-  write
-  silent execute remark_cmd 
-  edit
-  redraw!
+  execute '! remark ' . fnameescape(expand('%:p')) . ' -o'
+  edit %
+  " redraw!
 endfunction
 
 let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': ['eslint'],
     \ 'typescript': ['prettier'],
+    \ 'json': ['prettier'],
     \ 'python': ['flake8'],
     \ 'sass': [],
     \ 'scss': ['prettier'],
@@ -238,7 +232,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
     \ 'html': ['prettier'],
     \ 'javascript': [''],
-    \ 'json': ['jsonlint'],
+    \ 'json': ['prettier'],
     \ 'less': [],
     \ 'python': ['isort', 'black'],
     \ 'sass': [],
@@ -246,7 +240,7 @@ let g:ale_fixers = {
     \ 'sh': [],
     \ 'vim': ['vint'],
     \ 'vimwiki': ['FixWithRemarkLint'],
-    \ 'markdown': ['FixWithRemarkLint'],
+    \ 'markdown': ['remark'],
 \ }
 
 nnoremap <Space>ad :ALEDisable<CR>
@@ -370,7 +364,6 @@ let g:zettel_options = [{"template" :  $DOTFILES_LOCATION . "/vim/vim-zettel-tem
 nnoremap <Space>gt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
 nnoremap <Space>zn :ZettelNew<space>
 
-"setlocal foldlevel=3
 nnoremap gl+ :VimwikiChangeSymbolTo +<CR>
 nnoremap gl= :VimwikiChangeSymbolTo +<CR>
 nnoremap gl- :VimwikiChangeSymbolTo -<CR>
@@ -552,7 +545,7 @@ autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebrea
 autocmd FileType python setlocal nosmartindent
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
 
-set foldlevelstart=1
+
 autocmd BufRead,BufNewFile *.vue setfiletype html
 
 
@@ -560,10 +553,6 @@ let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
 let g:airline_section_z = airline#section#create(['%1p%% col:%1v'])
-
-
-
-
 
 
 " TODO Function to make a tmux session for this
