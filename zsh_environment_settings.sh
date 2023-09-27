@@ -36,9 +36,7 @@ fi
 #########
 # SERVERS 
 #########
-alias sshariston="ssh tom@ariston"
-# alias ssharistonremote="ssh tom@24.130.253.28 -p 56970"
-alias sshjuno="ssh tom@juno"
+alias sshariston="mosh tom@ariston"
 
 
 
