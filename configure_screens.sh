@@ -2,7 +2,7 @@
 
 desktoppr="/usr/local/bin/desktoppr"
 displayPlacer="/opt/homebrew/bin/displayplacer"
-wallpaperFolder="${HOME}/Documents/05 Pictures/Wallpapers"
+wallpaperFolder="${HOME}/Documents/04 Pictures/Wallpapers"
 
 #################
 # DISPLAY NAMES #
