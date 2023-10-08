@@ -1,0 +1,2 @@
+- Alacritty
+  - With Nord theme:  
