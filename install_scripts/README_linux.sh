@@ -1,8 +1,9 @@
 # Environment Installation Guide
 
 ## Packages Install
-- [X] Install Brew Packages
+- [X] Install Apt Packages
   ```
+  sudo apt update
   sudo ./install_apt_packages.sh
   ```
   
