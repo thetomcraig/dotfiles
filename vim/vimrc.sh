@@ -9,9 +9,10 @@ au BufReadPost vimrc.sh set ft=vim.rc
 """""""""
 "General"
 """""""""
+" NOT NEEDED?
 " See the information here:
 " https://stackoverflow.com/questions/62702766/termguicolors-in-vim-makes-everything-black-and-white
-set termguicolors
+"set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
@@ -37,6 +38,7 @@ set hidden
 set undofile
 set diffopt+=vertical
 set undodir=$HOME."/.undodir"
+set foldlevel=99
 
 
 
@@ -347,13 +349,13 @@ command! GitShow call s:show_commit_under_cursor()
 """"""""""
 "MARKDOWN"
 """"""""""
-"let g:livedown_browser = 'safari'
-"let g:vim_markdown_folding_disabled = 1
 "let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
 "VIMWIKI"
+let g:vimwiki_option_template_date_format = '%Y_%m_%d'
 let g:vimwiki_folding = 'expr'
 let g:vimwiki_list = [
+    \ {'path': $HOME . '/notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': $DROPBOX_ROOT . '/04 Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': $DROPBOX_ROOT . '/03 References', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': $DROPBOX_ROOT . '/03 References/DnD/campaign_2', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
@@ -379,7 +381,7 @@ nnoremap gl[ ^bwwi[ ] <C-c>
 "<Leader>w<Leader>w today 
 "<Leader>w<Leader>m tomorrow
 "<Leader>w<Leader>y yesterday
-nnoremap <Space>w<Space>p :VimwikiDiaryPrevDay<CR>
+nnoremap <Space>w<Space>m :VimwikiDiaryPrevDay<CR>
 nnoremap <Space>w<Space>n :VimwikiDiaryNextDay<CR>
 " TODO: remove - bullet and make line "normal"
 " Will need a function that removes checkbox, then adds -, then removes it
@@ -632,3 +634,5 @@ endfunction
 command! OpenCurrentPDFFileInSplit call s:openCurrentPDFFileInSplit()
 
 nnoremap <Space>ft :NERDTreeFind<CR>
+
+color nord
