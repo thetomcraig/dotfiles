@@ -85,3 +85,12 @@ if [[ "${ARCH}" == *"mac"* ]]; then
     fi
   }
 fi
+
+########
+# WORK #
+########
+IN_AYA=false
+if [ "$(hostname)" = "RM-TCRAIG" ]; then
+  IN_AYA=true
+fi
+export IN_AYA="${IN_AYA}"
