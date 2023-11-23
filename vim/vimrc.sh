@@ -4,7 +4,14 @@ let g:scripts_root="~/.projects_root/scripts"
 " Set the syntax and filetype of this file to .rc "
 au BufReadPost vimrc.sh set ft=vim.rc
 
+set clipboard=unnamed
 
+if $IN_WSL==# '' 
+  augroup Yank
+  autocmd!
+  autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+  augroup END
+endif
 
 """""""""
 "General"
@@ -31,7 +38,6 @@ set mouse=nicr                              "Scroll with mouse
 set splitright                              "Open splits to the right
 set wildmenu                                "Put completion menu in command mode
 set shortmess+=A                            "Ignore warning when swp file exists
-set clipboard=unnamed
 set shell=/bin/zsh
 set notagbsearch
 set hidden
@@ -39,6 +45,7 @@ set undofile
 set diffopt+=vertical
 set undodir=$HOME."/.undodir"
 set foldlevel=99
+set iskeyword+=-                            "make a - be considered part of a word"
 
 
 
@@ -87,13 +94,28 @@ endfunction
 set spellfile="$DOTFILES_LOCATION"."/vim/spell/en.utf-8.add"
 
 
-""""""""""""""""""""""""""""""""""
-"General Space (Leader) shortcuts"
-""""""""""""""""""""""""""""""""""
+""""""""""""
+" Mappings "
+""""""""""""
+" General shortcuts"
+" jk in insert mode to esc
+inoremap jj <esc>
+command! Q q " Bind :Q to :q
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cnoremap w!! w !sudo tee > /dev/null %
+
+" Space (Leader) shortcuts"
 let mapleader=" "
 let maplocalleader="\<Space>"
+
+
+" leader gg acks for the given text.
+vnoremap <Space>gg y:Rg "<c-r>""<cr>
+
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
+nnoremap <Space>o :only<CR>
+
 nmap <Space>s <Plug>(choosewin)
 nnoremap <Space>noh :noh<CR>
 nnoremap <Space>i :set list!<CR>
@@ -397,15 +419,6 @@ function! s:insertStringTitle(string)
   execute "normal! a# " . a:string
 endfunction
 
-" insertDayTitle
-" 
-" Insert the current date as a top-level header in the current file
-function! s:insertDayTitle()
-  let date_string=s:getFormattedDateString()
-  call s:insertStringTitle(date_string)
-endfunction
-command! InsertDayTitle call s:insertDayTitle()
-
 " insertDate
 " 
 " Insert the current date as a top-level header in the current file
@@ -428,9 +441,9 @@ command! GetFormattedDateString call s:getFormattedDateString()
 function! s:copyToDos()
   " Go to the 'ToDo' Section
   execute "normal! gg"
-  execute "normal! /ToDo\<CR>"
+  call search("TODO", "w")
   " Select all text in the section to the z register
-  execute "normal \<Plug>VimwikiGoToNextHeader"
+  call feedkeys("]]", 'n')
   execute "normal! kkVN"
   execute "normal! \"zy<CR>"
 endfunction
@@ -446,17 +459,18 @@ endfunction
 " ToDos from yesterday to the file
 function! s:startToday()
   " Go to yesterday
-  " VimwikiMakeYesterdayDiaryNote
+  VimwikiMakeYesterdayDiaryNote
   " Visually select ToDos from yesterday
-  " execute "normal! zR"
-  " call s:copyToDos()
+  " Open folds if need be
+  execute "normal! zR"
+  call s:copyToDos()
   " Go to todday
   VimwikiMakeDiaryNote
   redraw
   " Insert date
   let date_string=system("echo $(date +'\%A, \%b \%e \%Y')")
   call s:insertStringTitle(date_string)
-  " call s:pasteToDos()
+  call s:pasteToDos()
 endfunction
 command! StartToday call s:startToday()
 
@@ -525,7 +539,7 @@ let g:NERDTreeDirArrowCollapsible = 'v'
 let NERDTreeIgnore = ['\.pyc$', '*.sw*', '__pycache__', '__pycache__']
 
 let g:NERDSpaceDelims=1
-let g:NERDCustomDelimiters = { 'vue': { 'left': '//','right': '' } }
+let g:NERDCustomDelimiters = {}
 
 
 
@@ -543,7 +557,7 @@ setlocal tabstop=4
 setlocal softtabstop=4
 
 
-autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:6 spell
+autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:6 spell textwidth=100
 autocmd FileType python setlocal nosmartindent
 autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
 
