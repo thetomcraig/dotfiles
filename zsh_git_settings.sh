@@ -104,8 +104,12 @@ gitPushAndSetMatchingUpstream() {
 }
 
 createBranchAya() {
-  current_date=$(date +'%Y%m%d')
-  git checkout -b "users/thetomcraig-aya/${current_date}_${1}"
+  # Usage:
+  # createBranchAya TICKET-NUM shortname
+  CURRENT_DATE=$(date +'%Y%m%d')
+  TICKET_UPPER=$(echo ${1} | tr '[:lower:]' '[:upper:]')
+  BRANCH_NAME="users/thetomcraig-aya/${CURRENT_DATE}_${TICKET_UPPER}_${2}"
+  git checkout -b ${BRANCH_NAME}
 }
 
 
