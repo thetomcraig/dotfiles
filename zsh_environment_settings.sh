@@ -5,21 +5,8 @@
 PROJECTS_ROOT=~/.projects_root
 
 source "${DOTFILES_LOCATION}/get_arch.sh"
-#########
-# HOST/OS
-#########
-in_linux=false
-in_macos=false
-case "$(uname -s)" in
-   Darwin)
-     in_macos=true
-     ;;
-   Linux)
-     in_linux=true
-     ;;
-esac
 
-if $in_macos; then
+if [[ "${ARCH}" == *"mac"* ]]; then
   alias rm="trash"
 
   DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
@@ -27,11 +14,7 @@ if $in_macos; then
   export PROJECTS_ROOT="${PROJECTS_ROOT}"
 fi
 
-in_ssh=false
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-  # Inside ssh session
-  in_ssh=true
-fi
+
 
 #########
 # SERVERS 
@@ -47,7 +30,6 @@ export VIM_EXTRA="${VIM_EXTRA}"
 export VIM_COLORSCHEME="${VIM_COLORSCHEME}"
 export VIM_AIRLINE_THEME="${VIM_AIRLINE_THEME}"
 export TMUX_SESSION_NAME="${TMUX_SESSION_NAME}"
-export IN_SSH="${in_ssh}"
 
 
 
