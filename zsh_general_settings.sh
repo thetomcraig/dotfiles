@@ -28,6 +28,10 @@ alias cpb="pwd | pbcopy"
 alias cpr="rsync -Pa $1 $2"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
+dockerbash() {
+  docker exec -it $1 /bin/bash
+}
+alias de=dockerbash
 
 alias dot="cd ${DOTFILES_LOCATION}"
 alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
@@ -46,10 +50,6 @@ alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
 
 alias start="./start.command"
 
-dockerbash() {
-  docker exec -it $1 /bin/bash
-}
-alias de=dockerbash
 
 mytree() {
   #this does tree with 1 level

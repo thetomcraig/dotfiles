@@ -106,7 +106,7 @@ Plug 'posva/vim-vue'
 Plug 'gregsexton/matchtag'
 
 Plug 'skanehira/preview-markdown.vim'
-Plug 'thetomcraig/vim-chit'
+"Plug 'thetomcraig/vim-chit'
 Plug 'ivanov/vim-ipython'
 Plug 'tpope/vim-obsession'
 
