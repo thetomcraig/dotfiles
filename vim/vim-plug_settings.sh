@@ -65,13 +65,13 @@ Plug 'lifepillar/vim-colortemplate'
 
 " Markdown and Writing"
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'shime/vim-livedown'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vim-zettel'
 Plug 'mattn/calendar-vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord'
 Plug 'jszakmeister/markdown2ctags'
+Plug 'mzlogin/vim-markdown-toc'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'freitass/todo.txt-vim'
