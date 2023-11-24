@@ -649,3 +649,5 @@ endfunction
 command! OpenCurrentPDFFileInSplit call s:openCurrentPDFFileInSplit()
 
 nnoremap <Space>ft :NERDTreeFind<CR>
+
+color nord
