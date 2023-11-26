@@ -17,6 +17,167 @@
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
+    {
+      "description": "swap control/command fix home/end/redo except for iterm2/vim",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "command",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "end"
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "home"
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_control"
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.vim\\.",
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
                     {
                         "description": "Capslock to Hyper Modifier",
                         "manipulators": [
@@ -287,18 +448,19 @@
                         ]
                     },
                     {
-                        "description": "Home to Command + Left",
+                        "description": "Home to Beginning of Line",
                         "manipulators": [
                             {
-                                "conditions": [],
+                                "conditions": [
+                                ],
                                 "from": {
                                     "key_code": "home"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow",
+                                        "key_code": "a",
                                         "modifiers": [
-                                            "left_command"
+                                            "left_control"
                                         ]
                                     }
                                 ],
@@ -307,18 +469,19 @@
                         ]
                     },
                     {
-                        "description": "End to Command + Right",
+                        "description": "End to End of Line",
                         "manipulators": [
                             {
-                                "conditions": [],
+                                "conditions": [
+                                ],
                                 "from": {
                                     "key_code": "end"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_arrow",
+                                        "key_code": "e",
                                         "modifiers": [
-                                            "left_command"
+                                            "left_control"
                                         ]
                                     }
                                 ],
