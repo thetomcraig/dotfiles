@@ -16,7 +16,40 @@
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
+
                 "rules": [
+                    {
+                        "description": "Home/End to Readline Start/End of line",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "end"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "e",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "home"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "conditions": []
+                            }
+                        ]
+                    },
+
                     {
                         "description": "Capslock to Hyper Modifier",
                         "manipulators": [
@@ -253,82 +286,6 @@
                                     {
                                         "key_code": "delete_or_backspace",
                                         "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Home to Beginning of Line",
-                        "manipulators": [
-                            {
-                                "conditions": [],
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": ["left_control", "left_option"]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "End to End of Line",
-                        "manipulators": [
-                            {
-                                "conditions": [],
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": ["left_control", "left_option"]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Word-wise Left",
-                        "manipulators": [
-                            {
-                                "conditions": [],
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": ["left_control", "left_option"]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Word-wise Right",
-                        "manipulators": [
-                            {
-                                "conditions": [],
-                                "from": {
-                                    "key_code": "o",
-                                    "modifiers": ["left_control", "left_option"]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_option"]
                                     }
                                 ],
                                 "type": "basic"
