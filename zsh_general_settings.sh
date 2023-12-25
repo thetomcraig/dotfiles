@@ -25,6 +25,7 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
+alias cpr="rsync -Pa $1 $2"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 dockerbash() {
@@ -73,6 +74,7 @@ alias t=mytree
 #tt for maximum depth tree
 alias tt="mytree 999"
 alias ll="exa -T -L=${level} ${directory}"
+alias lsz="du -h --max-depth=1"
 
 alias imgcat="${DOTFILES_LOCATION}/imgcat.sh"
 alias imgls="${DOTFILES_LOCATION}/imgls.sh"

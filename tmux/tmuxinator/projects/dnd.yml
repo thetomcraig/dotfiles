@@ -1,6 +1,5 @@
 name: dnd
-root: "${HOME}/Documents/03\ References/00\ Notes/dnd"
-
+root: "Documents/03 References/00 Notes/dnd"
 
 windows:
   - Vim:

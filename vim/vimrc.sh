@@ -197,7 +197,6 @@ nmap <Space>bg :Grepper-buffer
 " FZF "
 """""""
 set rtp+=/usr/local/bin/fzf
-"command! -bang -nargs=? -complete=dir Files
 "    \ call fzf#vim#files(<q-args>, {'options': ['--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 let g:fzf_preview_window = 'right:0'
 let g:fzf_colors =
@@ -233,13 +232,6 @@ let g:ale_python_isort_options = '-l 120'
 let g:ale_python_flake8_options = '--max-line-length=100 --ignore=E116,E722'
 let g:ale_python_black_options = '--exclude migrations --line-length 100'
 
-
-function! FixWithRemarkLint(test_arg)
-  execute '! remark ' . fnameescape(expand('%:p')) . ' -o'
-  edit %
-  " redraw!
-endfunction
-
 let g:ale_linters = {
     \ 'html': [],
     \ 'javascript': ['eslint'],
@@ -263,8 +255,8 @@ let g:ale_fixers = {
     \ 'scss': ['prettier'],
     \ 'sh': [],
     \ 'vim': ['vint'],
-    \ 'vimwiki': ['FixWithRemarkLint'],
-    \ 'markdown': ['remark'],
+    \ 'vimwiki': ['remark-lint'],
+    \ 'markdown': ['remark-lint'],
 \ }
 
 nnoremap <Space>ad :ALEDisable<CR>
@@ -371,22 +363,28 @@ command! GitShow call s:show_commit_under_cursor()
 """"""""""
 "MARKDOWN"
 """"""""""
+"let g:livedown_browser = 'safari'
+"let g:vim_markdown_folding_disabled = 1
 "let g:vim_markdown_new_list_item_indent = 2
 "let g:vim_markdown_auto_insert_bullets = 1
+let g:vim_markdown_new_list_item_indent = 4
+
+"MarkdownPreview"
+let g:mkdp_browser = '/Applications/Safari.app'
+" let g:mkdp_markdown_css = '/Users/tomcraig/Desktop/nord/nord.css'
+let g:vmt_list_item_char = "-"
+
 "VIMWIKI"
 let g:vimwiki_option_template_date_format = '%Y_%m_%d'
 let g:vimwiki_folding = 'expr'
 let g:vimwiki_list = [
-    \ {'path': $HOME . '/notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': $DROPBOX_ROOT . '/04 Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': $DROPBOX_ROOT . '/03 References', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': $DROPBOX_ROOT . '/03 References/DnD/campaign_2', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
     \ ]
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
-let g:zettel_options = [{"template" :  $DOTFILES_LOCATION . "/vim/vim-zettel-template.tpl"}]
 nnoremap <Space>gt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
-nnoremap <Space>zn :ZettelNew<space>
 
 nnoremap gl+ :VimwikiChangeSymbolTo +<CR>
 nnoremap gl= :VimwikiChangeSymbolTo +<CR>
@@ -532,6 +530,7 @@ command! MakeSlides call s:makeSlides()
 """"""""""""""""""""""
 map <Space>jj <Plug>(easymotion-s)
 
+nnoremap <Space>ft :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen=1
 let g:NERDTreeFileManagerProgram='open'
 let g:NERDTreeDirArrowExpandable = '>'
@@ -633,6 +632,7 @@ onoremap <silent> [L :call NextIndent(1, 0, 1, 1)<CR>
 onoremap <silent> ]L :call NextIndent(1, 1, 1, 1)<CR>
 
 
+
 " TODO: spaces are not being escaped properly
 " ALso, need to try with an older version of termpdf that works with tmux
 function! s:viewPDFInSplit(args)
@@ -644,6 +644,7 @@ endfunction
 function! s:openCurrentPDFFileInSplit()
   let file_path = expand("%:p")
   call s:viewPDFInSplit("'" . file_path . "'")
+
 endfunction
 command! OpenCurrentPDFFileInSplit call s:openCurrentPDFFileInSplit()
 

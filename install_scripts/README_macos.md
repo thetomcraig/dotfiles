@@ -42,6 +42,17 @@
   sudo ./install_brew_packages.sh
   ```
   - (This will install Xcode tools)
+- [ ] Install NPM Packages
+  - TODO: need to get NVM setup first, then install these things globally
+    ```
+    prettier
+    remark-cli
+    remark-preset-lint-markdown-stye-guide
+    remark-preset-lint-consistent
+    remark-preset-lint-recommended
+    remark-stringify
+    ```
+  - (This will install Xcode tools)
 - [X] Set up Dropbox and start syncing
 - [X] Install Mac App Store Apps
   ```
@@ -141,6 +152,8 @@
   2. Quit Music
   3. Replace the Music library file on disk, with the one from the old machine
   4. Hold down `alt`, open Music again, and select the new library file
+
+- [ ] BetterDiscord, with nord theme
 
 ## Step 6: Developer Tools
 - Pyenv python versions
