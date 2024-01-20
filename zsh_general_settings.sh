@@ -25,8 +25,11 @@ alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
+alias dcu="docker compose up"
+alias dcd="docker compose down"
+alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
+alias doco="docker"
+
 
 alias dot="cd ${DOTFILES_LOCATION}"
 alias db="cd ${HOME}/Documents"
