@@ -37,6 +37,7 @@ interactiveCheckout() {
   git checkout $(git for-each-ref refs/heads/ --format='%(refname:short)' | fzf)
 }
 alias gv="interactiveCheckout"
+alias gvv="git branch -vv"
 
 
 # Large and complicated ones
