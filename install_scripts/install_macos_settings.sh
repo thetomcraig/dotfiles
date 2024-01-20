@@ -415,6 +415,7 @@ mysides add Pictures file://${HOME}/Pictures
 duti -s com.flexibits.fantastical2.mac .ics all
 duti -s abnerworks.Typora .md all
 duti -s org.freecadteam.freecad .stl all
+duti -s nl.ultimaker.cura_UltiMaker_Cura_5.2.2 .gcode all
 duti -s org.vim.MacVim .sh all
 duti -s org.vim.MacVim .yaml all
 duti -s org.vim.MacVim .yml all

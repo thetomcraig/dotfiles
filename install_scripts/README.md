@@ -1,4 +1,5 @@
 # Environment Installation Guide
 
-- [macOS](./README_macos.sh)
-- [Linux](./README_linux.sh)
+- [macOS](./README_macos.md)
+- [Linux](./README_linux.md)
+- [Windows](./README_windows.md)

@@ -32,10 +32,12 @@ alias gba="git branch -a"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
+alias gca=createBranchAya
 interactiveCheckout() {
   git checkout $(git for-each-ref refs/heads/ --format='%(refname:short)' | fzf)
 }
 alias gv="interactiveCheckout"
+alias gvv="git branch -vv"
 
 
 # Large and complicated ones
@@ -101,6 +103,16 @@ gitPushAndSetMatchingUpstream() {
   local BRANCH_NAME=$(getLocalBranchName)
   git push --set-upstream origin "${BRANCH_NAME}"
 }
+
+createBranchAya() {
+  # Usage:
+  # createBranchAya TICKET-NUM shortname
+  CURRENT_DATE=$(date +'%Y%m%d')
+  TICKET_UPPER=$(echo ${1} | tr '[:lower:]' '[:upper:]')
+  BRANCH_NAME="users/thetomcraig-aya/${CURRENT_DATE}_${TICKET_UPPER}_${2}"
+  git checkout -b ${BRANCH_NAME}
+}
+
 
 # Get the jira number from the current banch name
 alias jj=getCurrentJiraNumber

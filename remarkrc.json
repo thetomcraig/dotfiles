@@ -1,0 +1,18 @@
+{
+    "plugins": {
+        "remark-preset-lint-consistent": [],
+        "remark-preset-lint-recommended": [],
+        "remark-lint-maximum-line-length": ["warning", 100],
+        "remark-lint-list-item-bullet-indent": [],
+        "remark-stringify": [],
+        "remark-parse": [],
+        "remark-toc": []
+
+    },
+    "settings": {
+        "listItemIndent": "one",
+        "bullet": "-",
+        "strong": "*",
+        "emphasis": "_"
+    }
+}

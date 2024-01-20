@@ -2,7 +2,7 @@
 
 desktoppr="/usr/local/bin/desktoppr"
 displayPlacer="/opt/homebrew/bin/displayplacer"
-wallpaperFolder="${HOME}/Documents/05 Pictures/Wallpapers"
+wallpaperFolder="${HOME}/Documents/04 Pictures/Wallpapers"
 
 #################
 # DISPLAY NAMES #
@@ -56,7 +56,7 @@ done
 # ARRANGEMENT #
 ###############
 # It takes two tries to get this right because of bugginess in the resolution
-displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2304x1296 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 scaling:on origin:(-1728,179) degree:0" "id:912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD res:1152x2048 hz:60 color_depth:8 scaling:off origin:(2304,-396) degree:270" "id:B2085621-B801-4448-8FB9-30E7D08C1419 res:1344x756 hz:60 color_depth:8 scaling:off origin:(960,1296) degree:0"
+displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2304x1296 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 scaling:on origin:(-1728,179) degree:0" "id:912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD res:1152x2048 hz:60 color_depth:8 scaling:off origin:(2304,-396) degree:270" "id:3913815D-56F0-4FE7-90F7-6CB91892A81D res:1920x550 hz:60 color_depth:8 scaling:on origin:(191,-550) degree:180" "id:B2085621-B801-4448-8FB9-30E7D08C1419 res:1344x756 hz:60 color_depth:8 scaling:off origin:(960,1296) degree:0"
 
 # This is the REAL configuration line
-displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2304x1296 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 scaling:on origin:(-1728,179) degree:0" "id:912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD res:1152x2048 hz:60 color_depth:8 scaling:off origin:(2304,-396) degree:270" "id:3913815D-56F0-4FE7-90F7-6CB91892A81D res:1920x550 hz:60 color_depth:8 scaling:on origin:(191,-550) degree:180" "id:B2085621-B801-4448-8FB9-30E7D08C1419 res:1344x756 hz:60 color_depth:8 scaling:off origin:(960,1296) degree:0"
+displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2304x1296 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 scaling:on origin:(-1728,179) degree:0" "id:B2085621-B801-4448-8FB9-30E7D08C1419 res:1344x756 hz:60 color_depth:8 scaling:off origin:(237,1296) degree:0" "id:3913815D-56F0-4FE7-90F7-6CB91892A81D res:1920x550 hz:60 color_depth:8 scaling:on origin:(384,-550) degree:180" "id:912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD res:1152x2048 hz:60 color_depth:8 scaling:off origin:(2304,-396) degree:270"

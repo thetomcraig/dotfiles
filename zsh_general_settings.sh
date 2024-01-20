@@ -20,22 +20,26 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 #########
 # ALIASES
 #########
-#alias ctags="`brew --prefix`/bin/ctags"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
-alias dcu="docker compose up"
-alias dcd="docker compose down"
-alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
+
+alias dbcu="docker compose up"
+alias dbcd="docker compose down"
+alias dbps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
 alias doco="docker"
 
+alias cpr="rsync -Pa $1 $2"
+dockerbash() {
+  docker exec -it $1 /bin/bash
+}
+alias dcb=dockerbash
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias db="cd ${HOME}/Documents"
 alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
-alias notes="cd ${HOME}/Documents/03\ Notes && mytree"
-alias refs="cd ${HOME}/Documents/04\ References && mytree"
+alias notes="cd ${HOME}/Documents/03\ References/00\ Notes && mytree"
+alias refs="cd ${HOME}/Documents/03\ References && mytree"
 alias docs="cd ${HOME}/Documents && mytree"
 alias proj="cd ${PROJECTS_ROOT}"
 
@@ -49,10 +53,6 @@ alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
 
 alias start="./start.command"
 
-dockerbash() {
-  docker exec -it $1 /bin/bash
-}
-alias de=dockerbash
 
 mytree() {
   #this does tree with 1 level
@@ -77,6 +77,7 @@ alias t=mytree
 #tt for maximum depth tree
 alias tt="mytree 999"
 alias ll="exa -T -L=${level} ${directory}"
+alias lsz="du -h --max-depth=1"
 
 alias imgcat="${DOTFILES_LOCATION}/imgcat.sh"
 alias imgls="${DOTFILES_LOCATION}/imgls.sh"

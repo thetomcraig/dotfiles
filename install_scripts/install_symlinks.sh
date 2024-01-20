@@ -1,6 +1,6 @@
-# ARCH=$(../get_arch.sh)
-source "${DOTFILES_LOCATION}/get_arch.sh"
+#! /bin/bash
 
+ARCH=$(../get_arch.sh)
 
 cd "${HOME}"
 DOTFILES_LOCATION="${HOME}"/dotfiles
@@ -34,11 +34,17 @@ ln -s $DOTFILES_LOCATION/p10k.sh .p10k.zsh
 rm -f -- ~/.vimrc
 ln -s $DOTFILES_LOCATION/vim/vimrc.sh .vimrc
 
+rm -f -- ~/.remarkrc.json
+ln -s $DOTFILES_LOCATION/remarkrc.json .remarkrc.json
+
+rm -f -- ~/.prettierrc.json
+ln -s $DOTFILES_LOCATION/remarkrc.json .prettierrc.json
+
 rm -f -- ~/.gvimrc
 ln -s $DOTFILES_LOCATION/vim/gvimrc.sh .gvimrc
 
-#rm -f -- ~/.vim/spell
-#ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
+rm -f -- ~/.vim/spell
+ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
 
 rm -f -- ~/.tmux.conf
 ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
