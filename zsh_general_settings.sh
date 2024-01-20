@@ -25,9 +25,9 @@ alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
 
-alias dbcu="docker compose up"
-alias dbcd="docker compose down"
-alias dbps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
+alias dcu="docker compose up"
+alias dcd="docker compose down"
+alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
 alias doco="docker"
 
 alias cpr="rsync -Pa $1 $2"
