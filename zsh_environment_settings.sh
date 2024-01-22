@@ -19,6 +19,7 @@ fi
 #########
 # SERVERS 
 #########
+# alias sshariston="ssh tom@ariston"
 alias sshariston="mosh tom@ariston"
 
 

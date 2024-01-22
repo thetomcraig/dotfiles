@@ -20,19 +20,21 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 #########
 # ALIASES
 #########
-#alias ctags="`brew --prefix`/bin/ctags"
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
 alias cpb="pwd | pbcopy"
 alias cpr="rsync -Pa $1 $2"
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
-alias dps='docker ps --format "table{{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}"'
+
+alias dcu="docker compose up"
+alias dcd="docker compose down"
+alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
+alias doco="docker"
+
 dockerbash() {
   docker exec -it $1 /bin/bash
 }
-alias de=dockerbash
+alias dcb=dockerbash
 
 alias dot="cd ${DOTFILES_LOCATION}"
 alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
