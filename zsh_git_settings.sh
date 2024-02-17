@@ -33,11 +33,35 @@ alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="git checkout -b"
 alias gca=createBranchAya
+
 interactiveCheckout() {
   git checkout $(git for-each-ref refs/heads/ --format='%(refname:short)' | fzf)
 }
 alias gv="interactiveCheckout"
-alias gvv="git branch -vv"
+
+shortBranchMappings() {
+  # Declare an array
+  declare -a branch_tuples
+
+  # Read the output of git for-each-ref into the array
+  while IFS= read -r line; do
+    current_branch=$(echo "$line" | awk '{gsub(/^[^\/]+\/[^\/]+/, "..."); print $1}')
+    current_branch="\e[34m$current_branch\e[0m"
+    upstream_branch=$(echo "$line" | awk '{print $2}')
+    branch_tuples+=(" $current_branch -> $upstream_branch")
+  done < <(git for-each-ref --format='%(color:blue)%(refname:short) %(color:red)%(upstream:short)%(color:reset)' --color=always refs/heads)
+
+
+
+  if [ "$#" -eq 1 ]; then
+    # Use "head" to shorten the array here
+  fi
+  # Print the array of tuples
+  for tuple in "${branch_tuples[@]}"; do
+    echo -e "$tuple"
+  done
+}
+alias gvv="shortBranchMappings"
 
 
 # Large and complicated ones
