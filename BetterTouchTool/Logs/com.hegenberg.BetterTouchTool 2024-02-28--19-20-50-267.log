@@ -1,0 +1,946 @@
+2024/02/28 11:20:50:263|SYS|Running on macOS: 14.3.1|
+2024/02/28 11:20:50:263|SYS|BTT Version: (null)|
+2024/02/28 11:20:50:263|SYS|Device: Mac15,3|
+2024/02/28 11:20:50:309|usage|loading todays usage|
+2024/02/28 11:20:50:309|ASL|0 elapsed 0.083308|
+2024/02/28 11:20:50:310|LAUNCH|DIDLaunch START NSConcreteNotification 0x600003e1fc80 {name = NSApplicationDidFinishLaunchingNotification; object = <BTTApplication: 0x1376081c0>; userInfo = {
+    NSApplicationLaunchIsDefaultLaunchKey = 1;
+}}|
+2024/02/28 11:20:50:322|ASL|1 elapsed 0.096085|
+2024/02/28 11:20:50:322|ASL|2 elapsed 0.096112|
+2024/02/28 11:20:50:323|ASL|3 elapsed 0.096365|
+2024/02/28 11:20:50:323|ASL|4 elapsed 0.096424|
+2024/02/28 11:20:50:324|ASL|5 elapsed 0.097538|
+2024/02/28 11:20:50:324|ASL|6 elapsed 0.097578|
+2024/02/28 11:20:50:324|INIT|START PREVIOUSLYININIT|
+2024/02/28 11:20:50:391|short|init|
+2024/02/28 11:20:50:391|ASL|Hyper key used 0|
+2024/02/28 11:20:50:558|STORE|The store already exists in udefs|
+2024/02/28 11:20:50:558|xw|the new store already exists btt_data_store.version_4_402_build_44020|
+2024/02/28 11:20:50:559|DEL|Deleting tmp backup btt_data_store.version_4_361_build_43610_tmp_backup72BCDE68-61B8-4878-B8A4-47C777A711DE-wal|
+2024/02/28 11:20:50:560|DEL|Deleting tmp backup btt_data_store.version_4_361_build_43610_tmp_backup72BCDE68-61B8-4878-B8A4-47C777A711DE-shm|
+2024/02/28 11:20:50:560|DEL|Deleting tmp backup btt_data_store.version_4_389_build_43890_tmp_backup1C9AF3D1-94F3-4E7A-91BD-7166847FA63D|
+2024/02/28 11:20:50:561|DEL|Deleting tmp backup btt_data_store.version_4_361_build_43610_tmp_backup72BCDE68-61B8-4878-B8A4-47C777A711DE|
+2024/02/28 11:20:50:563|DEL|Deleting tmp backup btt_data_store.version_4_389_build_43890_tmp_backup1C9AF3D1-94F3-4E7A-91BD-7166847FA63D-shm|
+2024/02/28 11:20:50:563|DEL|Deleting tmp backup btt_data_store.version_4_389_build_43890_tmp_backup1C9AF3D1-94F3-4E7A-91BD-7166847FA63D-wal|
+2024/02/28 11:20:50:577|migrate|fixing uuids2|
+2024/02/28 11:20:50:580|LIC|idate 2024-02-19 17:12:23 +0000|
+2024/02/28 11:20:50:582|INIT|FINISH PREVIOUSLYININIT|
+2024/02/28 11:20:50:582|ASL|7 elapsed 0.355825|
+2024/02/28 11:20:50:583|LIC|closing previous instance of BetterTouchTool relaunch|
+2024/02/28 11:20:50:583|ASL|8 elapsed 0.356575|
+2024/02/28 11:20:50:598|ASL|9 elapsed 0.372050|
+2024/02/28 11:20:50:598|ASL|10 elapsed 0.372111|
+2024/02/28 11:20:50:600|ASL|11 elapsed 0.373318|
+2024/02/28 11:20:50:615|LIC|license appears to be valid|
+2024/02/28 11:20:50:615|LIC|license dictionary {
+    CheckoutName = "Tom Craig";
+    Email = "thetomcraig@icloud.com";
+    LicenseType = paddle;
+    Licenses = 1;
+    Name = "Tom Craig";
+    OrderID = d02047264731f927f5ed973ba226a5b6;
+    Product = BetterTouchTool;
+    Signature = {length = 128, bytes = 0x86b1d688 2dcec870 a2ec81cc 8baaa981 ... 3ae16d65 c67d77f5 };
+    Timestamp = 1707327738;
+    TransactionID = "252801297-chre7aec9a464d2-5a9a04c903";
+}|
+2024/02/28 11:20:50:615|LIC|systemdate 2024-02-07 17:42:18 +0000|
+2024/02/28 11:20:50:615|LIC|using date 1707327738|
+2024/02/28 11:20:50:616|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 11:20:50:616|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 11:20:50:616|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 11:20:50:616|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 11:20:50:617|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 11:20:50:617|LIC|License is valid for this version|
+2024/02/28 11:20:50:623|ASL|12 elapsed 0.396471|
+2024/02/28 11:20:50:623|ASL|disablign app nap|
+2024/02/28 11:20:50:623|ASL|disabling app nap done|
+2024/02/28 11:20:50:623|ASL|13 elapsed 0.396505|
+2024/02/28 11:20:50:623|ASL|14 elapsed 0.396523|
+2024/02/28 11:20:50:972|ASL|15 elapsed 0.745548|
+2024/02/28 11:20:50:983|ASL|16 elapsed 0.757093|
+2024/02/28 11:20:50:983|ASL|17 elapsed 0.757162|
+2024/02/28 11:20:50:989|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 11:20:50:989|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 11:20:50:989|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 11:20:50:989|ASL|18 elapsed 0.762790|
+2024/02/28 11:20:50:989|ASL|19 elapsed 0.762823|
+2024/02/28 11:20:50:989|ASL|20 elapsed 0.763171|
+2024/02/28 11:20:50:989|ASL|21 elapsed 0.763208|
+2024/02/28 11:20:50:989|ASL|22 elapsed 0.763223|
+2024/02/28 11:20:50:990|ASL|23 elapsed 0.763904|
+2024/02/28 11:20:50:990|ASL|24 elapsed 0.763930|
+2024/02/28 11:20:50:990|ASL|25 elapsed 0.763964|
+2024/02/28 11:20:50:990|ASL|26 elapsed 0.764152|
+2024/02/28 11:20:51:083|ASL|27 elapsed 0.857059|
+2024/02/28 11:20:51:085|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 11:20:51:085|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 11:20:51:088|ASL|menubar height 24.000000|
+2024/02/28 11:20:51:088|xw|is trusted|
+2024/02/28 11:20:51:138|short|call sharedInstance4|
+2024/02/28 11:20:51:204|TB|touchbar screen size {1085, 30}|
+2024/02/28 11:20:51:204|ASL|28 elapsed 0.978174|
+2024/02/28 11:20:51:204|ASL|29 elapsed 0.978200|
+2024/02/28 11:20:51:204|ASL|30 elapsed 0.978208|
+2024/02/28 11:20:51:204|ASL|31 elapsed 0.978214|
+2024/02/28 11:20:51:206|ASL|32 elapsed 0.979584|
+2024/02/28 11:20:51:207|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 11:20:51:208|ASL|33 elapsed 0.981748|
+2024/02/28 11:20:51:208|ASL|34 elapsed 0.981980|
+2024/02/28 11:20:51:208|START|TB VISIBLE 0|
+2024/02/28 11:20:51:208|START|TB FORCED HIDDEN 0|
+2024/02/28 11:20:51:208|ASL|35 elapsed 0.982001|
+2024/02/28 11:20:51:213|ASL|36 elapsed 0.986332|
+2024/02/28 11:20:51:214|ASL|37 elapsed 0.988002|
+2024/02/28 11:20:51:214|ASL|38 elapsed 0.988019|
+2024/02/28 11:20:51:214|LAUNCH|DIDLaunch END frontmostApp: com.microsoft.VSCode, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 0, tpRotateUsed 0|
+2024/02/28 11:20:51:214|ASL|39 elapsed 0.988056|
+2024/02/28 11:20:51:214|ASL|40 elapsed 0.988298|
+2024/02/28 11:20:51:838|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 11:20:51:866|PERM|Can record screen 1|
+2024/02/28 11:20:51:886|SLEEP|FORCESHOWAFTERSLEEP2|
+2024/02/28 11:20:51:886|TB|Force show Touch Bar|
+2024/02/28 11:20:51:887|M|mt_stop10|
+2024/02/28 11:20:51:904|ASL|WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.|
+2024/02/28 11:20:52:138|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 11:20:52:139|M|register touchbar mbp trackpad|
+2024/02/28 11:20:52:139|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 11:20:52:139|M|register magic trackpad 2|
+2024/02/28 11:20:52:139|STDEV|6d81|
+2024/02/28 11:20:52:142|SLEEP|FORCESHOWAFTERSLEEP3B|
+2024/02/28 11:20:52:142|TB|Force show Touch Bar|
+2024/02/28 11:20:52:142|M|mt_stop2|
+2024/02/28 11:20:52:150|TB|PresentationMode appWithControlStrip (null)|
+2024/02/28 11:20:52:151|M|unregister tb trackpad|
+2024/02/28 11:20:52:152|M|unregister magic trackpad 2|
+2024/02/28 11:20:52:153|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 11:20:52:153|M|register touchbar mbp trackpad|
+2024/02/28 11:20:52:153|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 11:20:52:154|M|register magic trackpad 2|
+2024/02/28 11:20:52:154|STDEV|6d81|
+2024/02/28 11:20:52:396|short|eventtap success|
+2024/02/28 11:20:53:447|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/02/28 11:20:53:450|SNAPAREA|return existing (updated)|
+2024/02/28 11:20:53:450|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/02/28 11:20:53:451|SNAPAREA|return existing (updated)|
+2024/02/28 11:20:53:451|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/02/28 11:20:53:451|SNAP|Did recognize 41049 4251086178 dragpoints: 0 - 0|
+2024/02/28 11:20:54:224|M|mt_stop2|
+2024/02/28 11:20:54:230|M|unregister tb trackpad|
+2024/02/28 11:20:54:232|M|unregister magic trackpad 2|
+2024/02/28 11:20:54:234|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 11:20:54:235|M|register touchbar mbp trackpad|
+2024/02/28 11:20:54:235|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 11:20:54:236|M|register magic trackpad 2|
+2024/02/28 11:20:54:236|STDEV|6d81|
+2024/02/28 11:20:57:377|M|mt_stop2|
+2024/02/28 11:20:57:385|M|unregister tb trackpad|
+2024/02/28 11:20:57:386|M|unregister magic trackpad 2|
+2024/02/28 11:20:57:390|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 11:20:57:390|M|register touchbar mbp trackpad|
+2024/02/28 11:20:57:391|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 11:20:57:391|M|register magic trackpad 2|
+2024/02/28 11:20:57:391|STDEV|6d81|
+2024/02/28 11:21:02:631|M|mt_stop2|
+2024/02/28 11:21:02:636|M|unregister tb trackpad|
+2024/02/28 11:21:02:638|M|unregister magic trackpad 2|
+2024/02/28 11:21:02:639|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 11:21:02:640|M|register touchbar mbp trackpad|
+2024/02/28 11:21:02:640|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 11:21:02:640|M|register magic trackpad 2|
+2024/02/28 11:21:02:640|STDEV|6d81|
+2024/02/28 11:23:58:762|xw|shell script contains error and crashes BTT|
+2024/02/28 11:23:58:777|xw|interrupt reply|
+2024/02/28 11:24:04:774|xw|apple script contains error and crashes BTT|
+2024/02/28 11:24:04:801|xw|interrupt reply|
+2024/02/28 11:25:00:050|xw|shell script contains error and crashes BTT|
+2024/02/28 11:25:00:085|xw|interrupt reply|
+2024/02/28 11:29:00:217|ASL|performing 366|
+2024/02/28 11:29:00:218|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 11:29:00:218|ASL|performing 21|
+2024/02/28 11:29:00:220|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 11:29:00:263|ASL|already replied 103|
+2024/02/28 11:30:51:903|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 11:37:18:328|ASL|performing 366|
+2024/02/28 11:37:18:328|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 11:37:18:328|ASL|performing 19|
+2024/02/28 11:37:18:329|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 11:37:18:354|ASL|already 8|
+2024/02/28 11:40:43:715|xw|shell script contains error and crashes BTT|
+2024/02/28 11:40:43:770|xw|interrupt reply|
+2024/02/28 11:42:12:356|ASL|performing 366|
+2024/02/28 11:42:12:361|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 11:42:12:362|ASL|performing 19|
+2024/02/28 11:42:12:365|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 11:42:13:126|ASL|already 8|
+2024/02/28 11:44:53:099|xw|shell script contains error and crashes BTT|
+2024/02/28 11:44:53:117|xw|interrupt reply|
+2024/02/28 11:45:33:238|xw|shell script contains error and crashes BTT|
+2024/02/28 11:45:33:253|xw|interrupt reply|
+2024/02/28 11:46:03:381|xw|shell script contains error and crashes BTT|
+2024/02/28 11:46:03:399|xw|interrupt reply|
+2024/02/28 11:51:44:775|ASL|performing 366|
+2024/02/28 11:51:44:775|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 11:51:44:776|ASL|performing 19|
+2024/02/28 11:51:44:776|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 11:51:44:803|ASL|already 8|
+2024/02/28 11:52:48:727|ASL|performing 366|
+2024/02/28 11:52:48:727|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 11:52:48:727|ASL|performing 20|
+2024/02/28 11:52:48:727|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 11:52:48:746|ASL|already replied 103|
+2024/02/28 11:57:27:048|ASL|performing 366|
+2024/02/28 11:57:27:048|ASL|triggering action Empty Placeholder - 50495B49-BF11-464F-ADC9-DCB77FE2E77E|
+2024/02/28 11:57:27:048|ASL|performing 21|
+2024/02/28 11:57:27:048|ASL|triggering action Maximize Window - F4B3B705-33EF-4AEC-B518-4E843C3E1B7D|
+2024/02/28 11:57:27:049|ASL|already replied 103|
+2024/02/28 12:14:52:094|xw|shell script contains error and crashes BTT|
+2024/02/28 12:14:52:126|xw|interrupt reply|
+2024/02/28 12:34:22:628|SEC|SecureInputActive com.brave.Browser 50367|
+2024/02/28 12:34:31:627|SEC|SecureInputDisabled com.brave.Browser|
+2024/02/28 12:39:42:980|ASL|performing 366|
+2024/02/28 12:39:42:980|ASL|triggering action Empty Placeholder - 259D0597-1F2E-4357-ABBB-E440A50DE296|
+2024/02/28 12:39:42:981|ASL|performing 91|
+2024/02/28 12:39:42:981|ASL|triggering action Resize Window to Bottom Left Quarter / Corner - E77B6B0C-C60D-4EBE-806D-ECC11583C2C1|
+2024/02/28 12:39:43:016|ASL|already replied 103|
+2024/02/28 12:39:45:805|ASL|performing 366|
+2024/02/28 12:39:45:805|ASL|triggering action Empty Placeholder - 4F217D06-2774-4D3E-8FF0-AB87B20065D3|
+2024/02/28 12:39:45:805|ASL|performing 322|
+2024/02/28 12:39:45:805|ASL|triggering action Frontmost Windows In Quarters (First Top Left) - D78C26E7-723A-4E7D-B02B-5707458CA30A|
+2024/02/28 12:39:45:942|ASL|already replied 103|
+2024/02/28 12:40:11:608|ASL|performing 366|
+2024/02/28 12:40:11:608|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 12:40:11:608|ASL|performing 20|
+2024/02/28 12:40:11:608|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 12:40:11:640|ASL|already replied 103|
+2024/02/28 12:44:54:099|xw|shell script contains error and crashes BTT|
+2024/02/28 12:44:54:159|xw|interrupt reply|
+2024/02/28 12:46:46:799|ASL|performing 366|
+2024/02/28 12:46:46:799|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 12:46:46:800|ASL|performing 19|
+2024/02/28 12:46:46:800|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 12:46:46:831|ASL|already 8|
+2024/02/28 13:06:56:817|xw|shell script contains error and crashes BTT|
+2024/02/28 13:06:56:855|xw|interrupt reply|
+2024/02/28 13:07:00:377|SEC|SecureInputActive com.apple.loginwindow 373|
+2024/02/28 13:07:53:057|xw|shell script contains error and crashes BTT|
+2024/02/28 13:07:53:070|xw|interrupt reply|
+2024/02/28 13:36:36:703|xw|shell script contains error and crashes BTT|
+2024/02/28 13:36:36:736|xw|interrupt reply|
+2024/02/28 13:37:50:011|xw|shell script contains error and crashes BTT|
+2024/02/28 13:37:50:024|xw|interrupt reply|
+2024/02/28 14:06:27:679|xw|shell script contains error and crashes BTT|
+2024/02/28 14:06:27:710|xw|interrupt reply|
+2024/02/28 14:07:12:249|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/02/28 14:07:22:081|SYS|Running on macOS: 14.3.1|
+2024/02/28 14:07:22:081|SYS|BTT Version: (null)|
+2024/02/28 14:07:22:081|SYS|Device: Mac15,3|
+2024/02/28 14:07:22:117|usage|loading todays usage|
+2024/02/28 14:07:22:118|ASL|0 elapsed 0.056355|
+2024/02/28 14:07:22:118|LAUNCH|DIDLaunch START NSConcreteNotification 0x600002077ce0 {name = NSApplicationDidFinishLaunchingNotification; object = <BTTApplication: 0x12d6066c0>; userInfo = {
+    NSApplicationLaunchIsDefaultLaunchKey = 1;
+}}|
+2024/02/28 14:07:22:130|ASL|1 elapsed 0.069151|
+2024/02/28 14:07:22:130|ASL|2 elapsed 0.069178|
+2024/02/28 14:07:22:131|ASL|3 elapsed 0.069287|
+2024/02/28 14:07:22:131|ASL|4 elapsed 0.069338|
+2024/02/28 14:07:22:132|ASL|5 elapsed 0.070377|
+2024/02/28 14:07:22:132|ASL|6 elapsed 0.070408|
+2024/02/28 14:07:22:132|INIT|START PREVIOUSLYININIT|
+2024/02/28 14:07:22:194|short|init|
+2024/02/28 14:07:22:194|ASL|Hyper key used 0|
+2024/02/28 14:07:22:398|STORE|The store already exists in udefs|
+2024/02/28 14:07:22:398|xw|the new store already exists btt_data_store.version_4_402_build_44020|
+2024/02/28 14:07:22:430|migrate|fixing uuids2|
+2024/02/28 14:07:22:432|LIC|idate 2024-02-19 17:12:23 +0000|
+2024/02/28 14:07:22:435|INIT|FINISH PREVIOUSLYININIT|
+2024/02/28 14:07:22:435|ASL|7 elapsed 0.373601|
+2024/02/28 14:07:22:436|LIC|closing previous instance of BetterTouchTool relaunch|
+2024/02/28 14:07:22:436|ASL|8 elapsed 0.375009|
+2024/02/28 14:07:22:441|ASL|9 elapsed 0.379786|
+2024/02/28 14:07:22:441|ASL|10 elapsed 0.379860|
+2024/02/28 14:07:22:443|ASL|11 elapsed 0.381260|
+2024/02/28 14:07:22:458|LIC|license appears to be valid|
+2024/02/28 14:07:22:459|LIC|license dictionary {
+    CheckoutName = "Tom Craig";
+    Email = "thetomcraig@icloud.com";
+    LicenseType = paddle;
+    Licenses = 1;
+    Name = "Tom Craig";
+    OrderID = d02047264731f927f5ed973ba226a5b6;
+    Product = BetterTouchTool;
+    Signature = {length = 128, bytes = 0x86b1d688 2dcec870 a2ec81cc 8baaa981 ... 3ae16d65 c67d77f5 };
+    Timestamp = 1707327738;
+    TransactionID = "252801297-chre7aec9a464d2-5a9a04c903";
+}|
+2024/02/28 14:07:22:459|LIC|systemdate 2024-02-07 17:42:18 +0000|
+2024/02/28 14:07:22:459|LIC|using date 1707327738|
+2024/02/28 14:07:22:459|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 14:07:22:459|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 14:07:22:460|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 14:07:22:460|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 14:07:22:460|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 14:07:22:460|LIC|License is valid for this version|
+2024/02/28 14:07:22:465|ASL|12 elapsed 0.403864|
+2024/02/28 14:07:22:465|ASL|disablign app nap|
+2024/02/28 14:07:22:465|ASL|disabling app nap done|
+2024/02/28 14:07:22:465|ASL|13 elapsed 0.403915|
+2024/02/28 14:07:22:465|ASL|14 elapsed 0.403941|
+2024/02/28 14:07:22:792|ASL|15 elapsed 0.730499|
+2024/02/28 14:07:22:806|ASL|16 elapsed 0.745192|
+2024/02/28 14:07:22:807|ASL|17 elapsed 0.745244|
+2024/02/28 14:07:22:813|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 14:07:22:813|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 14:07:22:814|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 14:07:22:814|ASL|18 elapsed 0.752403|
+2024/02/28 14:07:22:814|ASL|19 elapsed 0.752446|
+2024/02/28 14:07:22:814|ASL|20 elapsed 0.753112|
+2024/02/28 14:07:22:814|ASL|21 elapsed 0.753162|
+2024/02/28 14:07:22:814|ASL|22 elapsed 0.753177|
+2024/02/28 14:07:22:815|ASL|23 elapsed 0.753852|
+2024/02/28 14:07:22:815|ASL|24 elapsed 0.753898|
+2024/02/28 14:07:22:815|ASL|25 elapsed 0.753962|
+2024/02/28 14:07:22:815|ASL|26 elapsed 0.754112|
+2024/02/28 14:07:22:930|ASL|27 elapsed 0.869191|
+2024/02/28 14:07:22:932|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/28 14:07:22:933|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/28 14:07:22:936|ASL|menubar height 24.000000|
+2024/02/28 14:07:22:937|xw|is trusted|
+2024/02/28 14:07:22:981|short|call sharedInstance4|
+2024/02/28 14:07:23:019|TB|touchbar screen size {1085, 30}|
+2024/02/28 14:07:23:020|ASL|28 elapsed 0.958453|
+2024/02/28 14:07:23:020|ASL|29 elapsed 0.958474|
+2024/02/28 14:07:23:020|ASL|30 elapsed 0.958481|
+2024/02/28 14:07:23:020|ASL|31 elapsed 0.958487|
+2024/02/28 14:07:23:021|ASL|32 elapsed 0.959840|
+2024/02/28 14:07:23:023|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 14:07:23:023|ASL|33 elapsed 0.961971|
+2024/02/28 14:07:23:024|ASL|34 elapsed 0.962629|
+2024/02/28 14:07:23:024|START|TB VISIBLE 0|
+2024/02/28 14:07:23:024|START|TB FORCED HIDDEN 0|
+2024/02/28 14:07:23:024|ASL|35 elapsed 0.962650|
+2024/02/28 14:07:23:028|ASL|36 elapsed 0.966839|
+2024/02/28 14:07:23:029|ASL|37 elapsed 0.968034|
+2024/02/28 14:07:23:029|ASL|38 elapsed 0.968050|
+2024/02/28 14:07:23:029|LAUNCH|DIDLaunch END frontmostApp: com.microsoft.teams2, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 0, tpRotateUsed 0|
+2024/02/28 14:07:23:029|ASL|39 elapsed 0.968079|
+2024/02/28 14:07:23:030|ASL|40 elapsed 0.968272|
+2024/02/28 14:07:23:583|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 14:07:23:615|PERM|Can record screen 1|
+2024/02/28 14:07:23:633|SLEEP|FORCESHOWAFTERSLEEP2|
+2024/02/28 14:07:23:633|TB|Force show Touch Bar|
+2024/02/28 14:07:23:634|M|mt_stop10|
+2024/02/28 14:07:23:650|ASL|WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.|
+2024/02/28 14:07:23:854|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 14:07:23:854|M|register touchbar mbp trackpad|
+2024/02/28 14:07:23:854|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 14:07:23:854|M|register magic trackpad 2|
+2024/02/28 14:07:23:854|STDEV|6d81|
+2024/02/28 14:07:23:857|SLEEP|FORCESHOWAFTERSLEEP3B|
+2024/02/28 14:07:23:857|TB|Force show Touch Bar|
+2024/02/28 14:07:23:946|M|mt_stop2|
+2024/02/28 14:07:23:947|M|unregister tb trackpad|
+2024/02/28 14:07:23:949|M|unregister magic trackpad 2|
+2024/02/28 14:07:23:949|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 14:07:23:949|M|register touchbar mbp trackpad|
+2024/02/28 14:07:23:949|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 14:07:23:950|M|register magic trackpad 2|
+2024/02/28 14:07:23:950|STDEV|6d81|
+2024/02/28 14:07:23:992|TB|PresentationMode appWithControlStrip (null)|
+2024/02/28 14:07:24:158|short|eventtap success|
+2024/02/28 14:07:25:084|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/02/28 14:07:25:087|SNAPAREA|return existing (updated)|
+2024/02/28 14:07:25:087|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/02/28 14:07:25:088|SNAPAREA|return existing (updated)|
+2024/02/28 14:07:25:088|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/02/28 14:07:25:088|SNAP|Did recognize 41049 4251086178 dragpoints: 0 - 0|
+2024/02/28 14:07:26:045|M|mt_stop2|
+2024/02/28 14:07:26:047|M|unregister tb trackpad|
+2024/02/28 14:07:26:048|M|unregister magic trackpad 2|
+2024/02/28 14:07:26:050|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 14:07:26:051|M|register touchbar mbp trackpad|
+2024/02/28 14:07:26:051|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 14:07:26:051|M|register magic trackpad 2|
+2024/02/28 14:07:26:052|STDEV|6d81|
+2024/02/28 14:07:29:195|M|mt_stop2|
+2024/02/28 14:07:29:197|M|unregister tb trackpad|
+2024/02/28 14:07:29:198|M|unregister magic trackpad 2|
+2024/02/28 14:07:29:200|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 14:07:29:201|M|register touchbar mbp trackpad|
+2024/02/28 14:07:29:201|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 14:07:29:202|M|register magic trackpad 2|
+2024/02/28 14:07:29:202|STDEV|6d81|
+2024/02/28 14:07:34:446|M|mt_stop2|
+2024/02/28 14:07:34:448|M|unregister tb trackpad|
+2024/02/28 14:07:34:449|M|unregister magic trackpad 2|
+2024/02/28 14:07:34:453|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/28 14:07:34:453|M|register touchbar mbp trackpad|
+2024/02/28 14:07:34:454|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/28 14:07:34:454|M|register magic trackpad 2|
+2024/02/28 14:07:34:454|STDEV|6d81|
+2024/02/28 14:07:54:595|ASL|performing 366|
+2024/02/28 14:07:54:595|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 14:07:54:596|ASL|performing 21|
+2024/02/28 14:07:54:596|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 14:07:54:668|ASL|already replied 103|
+2024/02/28 14:08:05:929|ASL|performing 366|
+2024/02/28 14:08:05:929|ASL|triggering action Empty Placeholder - EF353308-A97B-41ED-8685-CCB9CFC20A9B|
+2024/02/28 14:08:05:929|ASL|performing 4|
+2024/02/28 14:08:05:929|ASL|triggering action Right Click - E5466E3B-CD34-440A-8D17-481A99C7610B|
+2024/02/28 14:08:05:942|ASL|already replied 103|
+2024/02/28 14:08:33:583|ASL|performing 366|
+2024/02/28 14:08:33:583|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 14:08:33:583|ASL|performing 21|
+2024/02/28 14:08:33:583|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 14:08:33:660|ASL|already replied 103|
+2024/02/28 14:16:46:844|ASL|performing 366|
+2024/02/28 14:16:46:844|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 14:16:46:845|ASL|performing 21|
+2024/02/28 14:16:46:845|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 14:16:46:888|ASL|already replied 103|
+2024/02/28 14:17:23:111|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 14:28:43:843|ASL|performing 366|
+2024/02/28 14:28:43:845|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/28 14:28:43:845|ASL|performing 47|
+2024/02/28 14:28:43:846|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/28 14:28:43:934|ASL|already replied 103|
+2024/02/28 14:28:47:571|ASL|performing 366|
+2024/02/28 14:28:47:571|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/28 14:28:47:571|ASL|performing 47|
+2024/02/28 14:28:47:572|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/28 14:28:47:587|ASL|already replied 103|
+2024/02/28 14:35:45:358|ASL|performing 366|
+2024/02/28 14:35:45:358|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 14:35:45:358|ASL|performing 21|
+2024/02/28 14:35:45:359|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 14:35:45:378|ASL|already replied 103|
+2024/02/28 14:36:34:996|ASL|performing 366|
+2024/02/28 14:36:34:996|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 14:36:34:996|ASL|performing 20|
+2024/02/28 14:36:34:996|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 14:36:35:013|ASL|already replied 103|
+2024/02/28 14:36:49:155|ASL|performing 366|
+2024/02/28 14:36:49:155|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 14:36:49:155|ASL|performing 19|
+2024/02/28 14:36:49:155|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 14:36:49:181|ASL|already 8|
+2024/02/28 14:44:08:476|ASL|performing 366|
+2024/02/28 14:44:08:477|ASL|triggering action Empty Placeholder - EF353308-A97B-41ED-8685-CCB9CFC20A9B|
+2024/02/28 14:44:08:477|ASL|performing 4|
+2024/02/28 14:44:08:477|ASL|triggering action Right Click - E5466E3B-CD34-440A-8D17-481A99C7610B|
+2024/02/28 14:44:08:478|ASL|already replied 103|
+2024/02/28 14:46:35:707|xw|shell script contains error and crashes BTT|
+2024/02/28 14:46:35:748|xw|interrupt reply|
+2024/02/28 14:46:57:781|xw|apple script contains error and crashes BTT|
+2024/02/28 14:46:57:833|xw|interrupt reply|
+2024/02/28 14:53:25:752|ASL|performing 366|
+2024/02/28 14:53:25:752|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 14:53:25:752|ASL|performing 20|
+2024/02/28 14:53:25:752|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 14:53:25:802|ASL|already replied 103|
+2024/02/28 14:54:27:351|ASL|performing 366|
+2024/02/28 14:54:27:351|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 14:54:27:351|ASL|performing 19|
+2024/02/28 14:54:27:351|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 14:54:27:406|ASL|already 8|
+2024/02/28 14:55:03:319|ASL|performing 366|
+2024/02/28 14:55:03:319|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 14:55:03:319|ASL|performing 21|
+2024/02/28 14:55:03:319|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 14:55:03:364|ASL|already replied 103|
+2024/02/28 14:56:46:004|ASL|performing 366|
+2024/02/28 14:56:46:004|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 14:56:46:004|ASL|performing 20|
+2024/02/28 14:56:46:004|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 14:56:46:037|ASL|already replied 103|
+2024/02/28 15:16:25:660|xw|shell script contains error and crashes BTT|
+2024/02/28 15:16:25:690|xw|interrupt reply|
+2024/02/28 15:16:46:419|ASL|performing 366|
+2024/02/28 15:16:46:419|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 15:16:46:419|ASL|performing 20|
+2024/02/28 15:16:46:420|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 15:16:46:472|ASL|already replied 103|
+2024/02/28 15:16:50:246|ASL|performing 366|
+2024/02/28 15:16:50:247|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 15:16:50:247|ASL|performing 19|
+2024/02/28 15:16:50:247|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 15:16:50:257|ASL|already 8|
+2024/02/28 15:16:52:104|ASL|performing 366|
+2024/02/28 15:16:52:104|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 15:16:52:104|ASL|performing 19|
+2024/02/28 15:16:52:104|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 15:16:52:110|ASL|already 8|
+2024/02/28 15:16:52:779|ASL|performing 366|
+2024/02/28 15:16:52:779|ASL|triggering action Empty Placeholder - F4BD6DA7-AD33-4225-9320-CCB9E97D244E|
+2024/02/28 15:16:52:779|ASL|performing 95|
+2024/02/28 15:16:52:779|ASL|triggering action Maximize Window to Bottom Half - 5A61228D-0687-44E7-AF27-FF2F327C8384|
+2024/02/28 15:16:52:808|ASL|already replied 103|
+2024/02/28 15:16:53:928|ASL|performing 366|
+2024/02/28 15:16:53:928|ASL|triggering action Empty Placeholder - 4F217D06-2774-4D3E-8FF0-AB87B20065D3|
+2024/02/28 15:16:53:928|ASL|performing 322|
+2024/02/28 15:16:53:928|ASL|triggering action Frontmost Windows In Quarters (First Top Left) - D78C26E7-723A-4E7D-B02B-5707458CA30A|
+2024/02/28 15:16:54:196|ASL|already replied 103|
+2024/02/28 15:16:54:202|ASL|performing 366|
+2024/02/28 15:16:54:202|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 15:16:54:202|ASL|performing 19|
+2024/02/28 15:16:54:202|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 15:16:54:218|ASL|already 8|
+2024/02/28 15:16:57:225|ASL|performing 366|
+2024/02/28 15:16:57:225|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 15:16:57:225|ASL|performing 21|
+2024/02/28 15:16:57:225|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 15:16:57:235|ASL|already replied 103|
+2024/02/28 15:16:59:752|ASL|performing 366|
+2024/02/28 15:16:59:753|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 15:16:59:753|ASL|performing 20|
+2024/02/28 15:16:59:753|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 15:16:59:790|ASL|already replied 103|
+2024/02/28 15:17:48:942|xw|shell script contains error and crashes BTT|
+2024/02/28 15:17:48:955|xw|interrupt reply|
+2024/02/28 15:21:29:096|ASL|performing 366|
+2024/02/28 15:21:29:097|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 15:21:29:097|ASL|performing 19|
+2024/02/28 15:21:29:097|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 15:21:29:165|ASL|already 8|
+2024/02/28 15:21:31:269|SWI|PID MISMATCH FIX|
+2024/02/28 15:21:32:183|ASL|performing 366|
+2024/02/28 15:21:32:183|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/28 15:21:32:184|ASL|performing 20|
+2024/02/28 15:21:32:184|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/28 15:21:32:632|ASL|already replied 103|
+2024/02/28 15:21:38:541|xw|shell script contains error and crashes BTT|
+2024/02/28 15:21:38:566|xw|interrupt reply|
+2024/02/28 15:28:14:132|ASL|performing 366|
+2024/02/28 15:28:14:132|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 15:28:14:133|ASL|performing 19|
+2024/02/28 15:28:14:133|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 15:28:14:170|ASL|already 8|
+2024/02/28 15:28:19:174|xw|shell script contains error and crashes BTT|
+2024/02/28 15:28:19:202|xw|interrupt reply|
+2024/02/28 15:29:27:398|xw|shell script contains error and crashes BTT|
+2024/02/28 15:29:27:418|xw|interrupt reply|
+2024/02/28 15:39:09:788|xw|shell script contains error and crashes BTT|
+2024/02/28 15:39:09:805|xw|interrupt reply|
+2024/02/28 15:40:33:518|ASL|performing 366|
+2024/02/28 15:40:33:518|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/28 15:40:33:518|ASL|performing 19|
+2024/02/28 15:40:33:519|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/28 15:40:33:545|ASL|already 8|
+2024/02/28 15:45:02:392|xw|shell script contains error and crashes BTT|
+2024/02/28 15:45:02:843|xw|interrupt reply|
+2024/02/28 15:45:48:529|xw|shell script contains error and crashes BTT|
+2024/02/28 15:45:48:575|xw|interrupt reply|
+2024/02/28 15:47:48:988|ASL|performing 366|
+2024/02/28 15:47:48:989|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 15:47:48:989|ASL|performing 21|
+2024/02/28 15:47:48:990|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 15:47:49:043|ASL|already replied 103|
+2024/02/28 15:52:09:213|ASL|performing 366|
+2024/02/28 15:52:09:213|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 15:52:09:213|ASL|performing 21|
+2024/02/28 15:52:09:213|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 15:52:09:232|ASL|already replied 103|
+2024/02/28 15:54:50:731|xw|shell script contains error and crashes BTT|
+2024/02/28 15:54:50:747|xw|interrupt reply|
+2024/02/28 15:55:54:923|xw|shell script contains error and crashes BTT|
+2024/02/28 15:55:54:939|xw|interrupt reply|
+2024/02/28 15:59:00:980|xw|shell script contains error and crashes BTT|
+2024/02/28 15:59:02:542|xw|interrupt reply|
+2024/02/28 16:00:24:207|ASL|performing 366|
+2024/02/28 16:00:24:208|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/28 16:00:24:208|ASL|performing 47|
+2024/02/28 16:00:24:209|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/28 16:00:24:312|ASL|already replied 103|
+2024/02/28 16:09:02:042|xw|shell script contains error and crashes BTT|
+2024/02/28 16:09:02:062|xw|interrupt reply|
+2024/02/28 16:19:26:116|SEC|SecureInputActive com.apple.loginwindow 373|
+2024/02/28 16:35:35:285|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/02/28 16:35:45:325|xw|shell script contains error and crashes BTT|
+2024/02/28 16:35:45:358|xw|interrupt reply|
+2024/02/28 16:36:39:821|ASL|performing 366|
+2024/02/28 16:36:39:822|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/28 16:36:39:822|ASL|performing 21|
+2024/02/28 16:36:39:823|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/28 16:36:39:896|ASL|already replied 103|
+2024/02/28 16:52:36:510|SEC|SecureInputActive com.brave.Browser 50367|
+2024/02/28 16:52:39:509|SEC|SecureInputDisabled com.brave.Browser|
+2024/02/28 17:06:26:629|xw|shell script contains error and crashes BTT|
+2024/02/28 17:06:26:695|xw|interrupt reply|
+2024/02/28 17:09:49:273|SLEEP|messageType e0000280, arg 0b2c005d|
+2024/02/28 17:09:49:295|ASL|disablign app nap|
+2024/02/28 17:09:49:295|ASL|disabling app nap done|
+2024/02/28 17:09:49:296|SLEEP|WILLSLEEP|
+2024/02/28 17:09:49:618|TouchBar|Don't show because sleep|
+2024/02/28 17:09:49:688|SEC|SecureInputActive com.apple.loginwindow 373|
+2024/02/28 18:42:46:963|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 18:42:46:965|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 18:42:46:971|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 19:31:30:905|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 20:08:33:233|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/28 20:50:22:484|xw|shell script contains error and crashes BTT|
+2024/02/28 20:50:22:502|xw|interrupt reply|
+2024/02/28 21:19:38:783|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/02/28 23:12:07:063|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 00:10:01:476|usage|loading todays usage|
+2024/02/29 04:40:13:358|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/02/29 06:28:53:452|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/02/29 08:30:50:645|xw|shell script contains error and crashes BTT|
+2024/02/29 08:30:50:688|xw|interrupt reply|
+2024/02/29 09:10:45:996|TouchBar|Don't show because sleep|
+2024/02/29 09:10:46:039|SLEEP|messageType e0000320, arg 00000000|
+2024/02/29 09:10:46:107|SLEEP|messageType e0000300, arg 00000000|
+2024/02/29 09:10:46:107|ASL|disablign app nap|
+2024/02/29 09:10:46:107|ASL|disabling app nap done|
+2024/02/29 09:10:46:107|SLEEP|WOKE VIA IOKIT|
+2024/02/29 09:10:46:108|ASL|toggle after sleep 0|
+2024/02/29 09:10:46:112|xw|disable|
+2024/02/29 09:10:46:509|xw|enable|
+2024/02/29 09:10:46:540|NOTCH|did unhide (null)|
+2024/02/29 09:10:46:540|ASL|unregister d|
+2024/02/29 09:10:46:543|WAKE|EVENTHANDLER RESET|
+2024/02/29 09:10:46:545|M|mt_stop2|
+2024/02/29 09:10:46:546|SNAP|Did reset snap areas 0 0|
+2024/02/29 09:10:46:546|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 1|
+2024/02/29 09:10:47:002|TouchBar|Don't show because sleep|
+2024/02/29 09:10:47:005|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/02/29 09:10:47:013|M|unregister tb trackpad|
+2024/02/29 09:10:47:015|M|unregister magic trackpad 2|
+2024/02/29 09:10:47:018|WAKE|DIDWAKE|
+2024/02/29 09:10:47:018|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 09:10:47:018|ASL|disablign app nap|
+2024/02/29 09:10:47:018|ASL|disabling app nap done|
+2024/02/29 09:10:47:019|M|register touchbar mbp trackpad|
+2024/02/29 09:10:47:019|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 09:10:47:019|M|register magic trackpad 2|
+2024/02/29 09:10:47:019|STDEV|6d81|
+2024/02/29 09:10:47:026|WAKE|DIDWAKE2|
+2024/02/29 09:10:47:027|WAKE|NO RESTART|
+2024/02/29 09:10:47:027|ASL|toggle after sleep 1|
+2024/02/29 09:10:47:027|xw|disable|
+2024/02/29 09:10:47:032|xw|enable|
+2024/02/29 09:10:47:032|NOTCH|did unhide (null)|
+2024/02/29 09:10:47:032|ASL|unregister d|
+2024/02/29 09:10:47:035|WAKE|EVENTHANDLER RESET|
+2024/02/29 09:10:47:037|M|mt_stop2|
+2024/02/29 09:10:47:038|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/02/29 09:10:47:040|SNAPAREA|return existing (updated)|
+2024/02/29 09:10:47:040|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/02/29 09:10:47:041|SNAPAREA|return existing (updated)|
+2024/02/29 09:10:47:041|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/02/29 09:10:47:041|SNAP|Did recognize 41049 4251086178 dragpoints: 0 - 0|
+2024/02/29 09:10:47:041|SNAP|Did reset snap areas 0 0|
+2024/02/29 09:10:47:041|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 2|
+2024/02/29 09:10:47:235|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/02/29 09:10:47:235|TB|Force show Touch Bar|
+2024/02/29 09:10:47:258|SEC|SecureInputActive com.apple.loginwindow 373|
+2024/02/29 09:10:47:261|M|unregister tb trackpad|
+2024/02/29 09:10:47:263|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/02/29 09:10:47:263|TB|Force show Touch Bar|
+2024/02/29 09:10:47:263|M|unregister magic trackpad 2|
+2024/02/29 09:10:47:265|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 09:10:47:266|M|register touchbar mbp trackpad|
+2024/02/29 09:10:47:267|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 09:10:47:267|M|register magic trackpad 2|
+2024/02/29 09:10:47:267|STDEV|6d81|
+2024/02/29 09:10:47:270|NOTCH|S3|
+2024/02/29 09:10:47:533|NOTCH|S3|
+2024/02/29 09:11:29:337|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/02/29 09:33:09:179|xw|shell script contains error and crashes BTT|
+2024/02/29 09:33:09:211|xw|interrupt reply|
+2024/02/29 09:33:32:344|SEC|SecureInputActive com.apple.loginwindow 373|
+2024/02/29 09:33:53:226|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/02/29 09:33:53:349|ASL|trigger after login screen 2 - /Applications/Brave Browser.app - com.brave.Browser|
+2024/02/29 09:33:53:349|LOGIN|triggerAfterLoginScreenActions|
+2024/02/29 09:33:53:349|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/02/29 09:33:53:349|ASL|reset after login screen 2|
+2024/02/29 09:33:53:349|WAKE|EVENTHANDLER RESET|
+2024/02/29 09:33:53:356|M|mt_stop2|
+2024/02/29 09:33:53:360|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/02/29 09:33:53:362|SNAPAREA|return existing (updated)|
+2024/02/29 09:33:53:362|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/02/29 09:33:53:363|SNAPAREA|return existing (updated)|
+2024/02/29 09:33:53:363|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/02/29 09:33:53:363|SNAP|Did recognize 41049 4251086178 dragpoints: 0 - 0|
+2024/02/29 09:33:53:364|SNAP|Did reset snap areas 0 0|
+2024/02/29 09:33:53:364|ASL|toggle after sleep 2|
+2024/02/29 09:33:53:364|xw|disable|
+2024/02/29 09:33:53:369|xw|enable|
+2024/02/29 09:33:53:378|NOTCH|did unhide (null)|
+2024/02/29 09:33:53:378|ASL|unregister d|
+2024/02/29 09:33:53:385|WAKE|EVENTHANDLER RESET|
+2024/02/29 09:33:53:392|M|mt_stop2|
+2024/02/29 09:33:53:392|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/02/29 09:33:53:393|SNAPAREA|return existing (updated)|
+2024/02/29 09:33:53:393|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/02/29 09:33:53:394|SNAPAREA|return existing (updated)|
+2024/02/29 09:33:53:394|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/02/29 09:33:53:394|SNAP|Did recognize 41049 4251086178 dragpoints: 0 - 0|
+2024/02/29 09:33:53:394|SNAP|Did reset snap areas 0 0|
+2024/02/29 09:33:53:394|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 3|
+2024/02/29 09:33:53:401|ASL|performing after wake actions|
+2024/02/29 09:33:53:403|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/02/29 09:33:53:403|TB|Force show Touch Bar|
+2024/02/29 09:33:53:404|M|unregister tb trackpad|
+2024/02/29 09:33:53:406|M|unregister magic trackpad 2|
+2024/02/29 09:33:53:409|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 09:33:53:409|M|register touchbar mbp trackpad|
+2024/02/29 09:33:53:409|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 09:33:53:409|M|register magic trackpad 2|
+2024/02/29 09:33:53:410|STDEV|6d81|
+2024/02/29 09:33:53:437|M|unregister tb trackpad|
+2024/02/29 09:33:53:439|M|unregister magic trackpad 2|
+2024/02/29 09:33:53:447|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 09:33:53:452|M|register touchbar mbp trackpad|
+2024/02/29 09:33:53:452|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 09:33:53:453|M|register magic trackpad 2|
+2024/02/29 09:33:53:453|STDEV|6d81|
+2024/02/29 09:33:53:603|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/02/29 09:33:53:603|TB|Force show Touch Bar|
+2024/02/29 09:33:53:890|NOTCH|S3|
+2024/02/29 09:36:24:646|ASL|performing 366|
+2024/02/29 09:36:24:647|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/29 09:36:24:648|ASL|performing 47|
+2024/02/29 09:36:24:648|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/29 09:36:24:719|ASL|already replied 103|
+2024/02/29 09:38:17:056|xw|shell script contains error and crashes BTT|
+2024/02/29 09:38:17:392|xw|interrupt reply|
+2024/02/29 09:46:29:567|xw|shell script contains error and crashes BTT|
+2024/02/29 09:46:29:595|xw|interrupt reply|
+2024/02/29 09:49:14:361|xw|shell script contains error and crashes BTT|
+2024/02/29 09:49:14:406|xw|interrupt reply|
+2024/02/29 09:50:01:478|xw|shell script contains error and crashes BTT|
+2024/02/29 09:50:01:497|xw|interrupt reply|
+2024/02/29 09:50:42:393|ASL|performing 366|
+2024/02/29 09:50:42:394|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/29 09:50:42:394|ASL|performing 47|
+2024/02/29 09:50:42:395|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/29 09:50:42:463|ASL|already replied 103|
+2024/02/29 09:50:50:189|ASL|performing 366|
+2024/02/29 09:50:50:189|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/29 09:50:50:190|ASL|performing 47|
+2024/02/29 09:50:50:190|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/29 09:50:50:231|ASL|already replied 103|
+2024/02/29 09:50:51:786|ASL|performing 366|
+2024/02/29 09:50:51:786|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/02/29 09:50:51:786|ASL|performing 19|
+2024/02/29 09:50:51:786|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/02/29 09:50:51:846|ASL|already 8|
+2024/02/29 09:50:55:410|ASL|performing 366|
+2024/02/29 09:50:55:410|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/29 09:50:55:411|ASL|performing 20|
+2024/02/29 09:50:55:411|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/29 09:50:55:428|ASL|already replied 103|
+2024/02/29 09:52:21:686|ASL|performing 366|
+2024/02/29 09:52:21:686|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/29 09:52:21:686|ASL|performing 20|
+2024/02/29 09:52:21:686|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/29 09:52:21:717|ASL|already replied 103|
+2024/02/29 09:52:38:947|xw|shell script contains error and crashes BTT|
+2024/02/29 09:52:38:964|xw|interrupt reply|
+2024/02/29 09:53:57:271|xw|shell script contains error and crashes BTT|
+2024/02/29 09:53:57:283|xw|interrupt reply|
+2024/02/29 10:03:11:018|xw|shell script contains error and crashes BTT|
+2024/02/29 10:03:11:061|xw|interrupt reply|
+2024/02/29 10:04:26:206|xw|shell script contains error and crashes BTT|
+2024/02/29 10:04:26:263|xw|interrupt reply|
+2024/02/29 10:05:42:341|xw|shell script contains error and crashes BTT|
+2024/02/29 10:05:42:380|xw|interrupt reply|
+2024/02/29 10:06:22:446|xw|shell script contains error and crashes BTT|
+2024/02/29 10:06:22:608|xw|interrupt reply|
+2024/02/29 10:11:11:360|xw|shell script contains error and crashes BTT|
+2024/02/29 10:11:11:374|xw|interrupt reply|
+2024/02/29 10:12:17:596|xw|shell script contains error and crashes BTT|
+2024/02/29 10:12:17:610|xw|interrupt reply|
+2024/02/29 10:14:21:788|SYS|Running on macOS: 14.3.1|
+2024/02/29 10:14:21:788|SYS|BTT Version: (null)|
+2024/02/29 10:14:21:788|SYS|Device: Mac15,3|
+2024/02/29 10:14:21:831|usage|loading todays usage|
+2024/02/29 10:14:21:831|ASL|0 elapsed 0.078120|
+2024/02/29 10:14:21:831|LAUNCH|DIDLaunch START NSConcreteNotification 0x600002c0d1a0 {name = NSApplicationDidFinishLaunchingNotification; object = <BTTApplication: 0x136e068d0>; userInfo = {
+    NSApplicationLaunchIsDefaultLaunchKey = 1;
+}}|
+2024/02/29 10:14:21:845|ASL|1 elapsed 0.091979|
+2024/02/29 10:14:21:845|ASL|2 elapsed 0.092005|
+2024/02/29 10:14:21:845|ASL|3 elapsed 0.092119|
+2024/02/29 10:14:21:845|ASL|4 elapsed 0.092166|
+2024/02/29 10:14:21:846|ASL|5 elapsed 0.093238|
+2024/02/29 10:14:21:846|ASL|6 elapsed 0.093273|
+2024/02/29 10:14:21:846|INIT|START PREVIOUSLYININIT|
+2024/02/29 10:14:21:889|short|init|
+2024/02/29 10:14:21:889|ASL|Hyper key used 0|
+2024/02/29 10:14:22:062|STORE|The store already exists in udefs|
+2024/02/29 10:14:22:063|xw|the new store already exists btt_data_store.version_4_402_build_44020|
+2024/02/29 10:14:22:081|migrate|fixing uuids2|
+2024/02/29 10:14:22:084|LIC|idate 2024-02-19 17:12:23 +0000|
+2024/02/29 10:14:22:087|INIT|FINISH PREVIOUSLYININIT|
+2024/02/29 10:14:22:087|ASL|7 elapsed 0.333911|
+2024/02/29 10:14:22:087|LIC|closing previous instance of BetterTouchTool relaunch|
+2024/02/29 10:14:22:087|ASL|8 elapsed 0.334605|
+2024/02/29 10:14:22:105|ASL|9 elapsed 0.352113|
+2024/02/29 10:14:22:105|ASL|10 elapsed 0.352178|
+2024/02/29 10:14:22:106|ASL|11 elapsed 0.353324|
+2024/02/29 10:14:22:112|LIC|license appears to be valid|
+2024/02/29 10:14:22:112|LIC|license dictionary {
+    CheckoutName = "Tom Craig";
+    Email = "thetomcraig@icloud.com";
+    LicenseType = paddle;
+    Licenses = 1;
+    Name = "Tom Craig";
+    OrderID = d02047264731f927f5ed973ba226a5b6;
+    Product = BetterTouchTool;
+    Signature = {length = 128, bytes = 0x86b1d688 2dcec870 a2ec81cc 8baaa981 ... 3ae16d65 c67d77f5 };
+    Timestamp = 1707327738;
+    TransactionID = "252801297-chre7aec9a464d2-5a9a04c903";
+}|
+2024/02/29 10:14:22:112|LIC|systemdate 2024-02-07 17:42:18 +0000|
+2024/02/29 10:14:22:112|LIC|using date 1707327738|
+2024/02/29 10:14:22:112|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/29 10:14:22:112|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/29 10:14:22:113|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/29 10:14:22:113|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/29 10:14:22:113|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 10:14:22:113|LIC|License is valid for this version|
+2024/02/29 10:14:22:119|ASL|12 elapsed 0.366135|
+2024/02/29 10:14:22:119|ASL|disablign app nap|
+2024/02/29 10:14:22:119|ASL|disabling app nap done|
+2024/02/29 10:14:22:119|ASL|13 elapsed 0.366167|
+2024/02/29 10:14:22:119|ASL|14 elapsed 0.366186|
+2024/02/29 10:14:22:467|ASL|15 elapsed 0.714257|
+2024/02/29 10:14:22:490|ASL|16 elapsed 0.737467|
+2024/02/29 10:14:22:490|ASL|17 elapsed 0.737503|
+2024/02/29 10:14:22:493|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/29 10:14:22:493|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/29 10:14:22:493|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 10:14:22:493|ASL|18 elapsed 0.740083|
+2024/02/29 10:14:22:493|ASL|19 elapsed 0.740097|
+2024/02/29 10:14:22:493|ASL|20 elapsed 0.740584|
+2024/02/29 10:14:22:493|ASL|21 elapsed 0.740603|
+2024/02/29 10:14:22:493|ASL|22 elapsed 0.740611|
+2024/02/29 10:14:22:494|ASL|23 elapsed 0.740958|
+2024/02/29 10:14:22:494|ASL|24 elapsed 0.740969|
+2024/02/29 10:14:22:494|ASL|25 elapsed 0.740983|
+2024/02/29 10:14:22:494|ASL|26 elapsed 0.741050|
+2024/02/29 10:14:22:689|ASL|27 elapsed 0.935586|
+2024/02/29 10:14:22:692|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/02/29 10:14:22:692|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/02/29 10:14:22:699|ASL|menubar height 24.000000|
+2024/02/29 10:14:22:699|xw|is trusted|
+2024/02/29 10:14:22:754|short|call sharedInstance4|
+2024/02/29 10:14:22:819|TB|touchbar screen size {1085, 30}|
+2024/02/29 10:14:22:819|ASL|28 elapsed 1.066574|
+2024/02/29 10:14:22:819|ASL|29 elapsed 1.066596|
+2024/02/29 10:14:22:819|ASL|30 elapsed 1.066606|
+2024/02/29 10:14:22:819|ASL|31 elapsed 1.066614|
+2024/02/29 10:14:22:821|ASL|32 elapsed 1.067995|
+2024/02/29 10:14:22:822|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 10:14:22:823|ASL|33 elapsed 1.069931|
+2024/02/29 10:14:22:823|ASL|34 elapsed 1.070404|
+2024/02/29 10:14:22:823|START|TB VISIBLE 0|
+2024/02/29 10:14:22:823|START|TB FORCED HIDDEN 0|
+2024/02/29 10:14:22:823|ASL|35 elapsed 1.070436|
+2024/02/29 10:14:22:828|ASL|36 elapsed 1.074906|
+2024/02/29 10:14:22:829|ASL|37 elapsed 1.075772|
+2024/02/29 10:14:22:829|ASL|38 elapsed 1.075787|
+2024/02/29 10:14:22:829|LAUNCH|DIDLaunch END frontmostApp: com.googlecode.iterm2, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 0, tpRotateUsed 0|
+2024/02/29 10:14:22:829|ASL|39 elapsed 1.075826|
+2024/02/29 10:14:22:829|ASL|40 elapsed 1.076130|
+2024/02/29 10:14:23:415|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 10:14:23:445|PERM|Can record screen 1|
+2024/02/29 10:14:23:466|SLEEP|FORCESHOWAFTERSLEEP2|
+2024/02/29 10:14:23:466|TB|Force show Touch Bar|
+2024/02/29 10:14:23:466|M|mt_stop10|
+2024/02/29 10:14:23:485|ASL|WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.|
+2024/02/29 10:14:23:682|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 10:14:23:682|M|register touchbar mbp trackpad|
+2024/02/29 10:14:23:682|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 10:14:23:683|M|register magic trackpad 2|
+2024/02/29 10:14:23:683|STDEV|6d81|
+2024/02/29 10:14:23:686|SLEEP|FORCESHOWAFTERSLEEP3B|
+2024/02/29 10:14:23:686|TB|Force show Touch Bar|
+2024/02/29 10:14:23:699|M|mt_stop2|
+2024/02/29 10:14:23:701|M|unregister tb trackpad|
+2024/02/29 10:14:23:703|M|unregister magic trackpad 2|
+2024/02/29 10:14:23:703|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 10:14:23:704|M|register touchbar mbp trackpad|
+2024/02/29 10:14:23:704|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 10:14:23:704|M|register magic trackpad 2|
+2024/02/29 10:14:23:704|STDEV|6d81|
+2024/02/29 10:14:23:765|TB|PresentationMode appWithControlStrip (null)|
+2024/02/29 10:14:23:990|short|eventtap success|
+2024/02/29 10:14:24:919|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/02/29 10:14:24:921|SNAPAREA|return existing (updated)|
+2024/02/29 10:14:24:921|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/02/29 10:14:24:922|SNAPAREA|return existing (updated)|
+2024/02/29 10:14:24:922|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/02/29 10:14:24:922|SNAP|Did recognize 41049 4251086178 dragpoints: 0 - 0|
+2024/02/29 10:14:25:769|M|mt_stop2|
+2024/02/29 10:14:25:776|M|unregister tb trackpad|
+2024/02/29 10:14:25:777|M|unregister magic trackpad 2|
+2024/02/29 10:14:25:779|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 10:14:25:779|M|register touchbar mbp trackpad|
+2024/02/29 10:14:25:779|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 10:14:25:779|M|register magic trackpad 2|
+2024/02/29 10:14:25:780|STDEV|6d81|
+2024/02/29 10:14:28:925|M|mt_stop2|
+2024/02/29 10:14:28:930|M|unregister tb trackpad|
+2024/02/29 10:14:28:932|M|unregister magic trackpad 2|
+2024/02/29 10:14:28:934|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 10:14:28:934|M|register touchbar mbp trackpad|
+2024/02/29 10:14:28:934|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 10:14:28:935|M|register magic trackpad 2|
+2024/02/29 10:14:28:935|STDEV|6d81|
+2024/02/29 10:14:33:952|M|mt_stop2|
+2024/02/29 10:14:33:958|M|unregister tb trackpad|
+2024/02/29 10:14:33:959|M|unregister magic trackpad 2|
+2024/02/29 10:14:33:961|BTT|mt device 0x07000000000000B0,0x6d - 109 - internal 1 - force 1|
+2024/02/29 10:14:33:961|M|register touchbar mbp trackpad|
+2024/02/29 10:14:33:961|BTT|mt device 0x0300000002100000,0x81 - 129 - internal 0 - force 1|
+2024/02/29 10:14:33:962|M|register magic trackpad 2|
+2024/02/29 10:14:33:962|STDEV|6d81|
+2024/02/29 10:24:06:153|ASL|performing 366|
+2024/02/29 10:24:06:154|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/29 10:24:06:154|ASL|performing 21|
+2024/02/29 10:24:06:154|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/29 10:24:06:213|ASL|already replied 103|
+2024/02/29 10:24:23:548|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 10:30:03:235|ASL|performing 366|
+2024/02/29 10:30:03:236|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/02/29 10:30:03:236|ASL|performing 47|
+2024/02/29 10:30:03:236|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/02/29 10:30:03:344|ASL|already replied 103|
+2024/02/29 10:30:06:377|ASL|performing 366|
+2024/02/29 10:30:06:377|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/02/29 10:30:06:377|ASL|performing 21|
+2024/02/29 10:30:06:377|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/02/29 10:30:06:446|ASL|already replied 103|
+2024/02/29 10:32:26:307|ASL|performing 366|
+2024/02/29 10:32:26:307|ASL|triggering action Empty Placeholder - 50495B49-BF11-464F-ADC9-DCB77FE2E77E|
+2024/02/29 10:32:26:307|ASL|performing 21|
+2024/02/29 10:32:26:307|ASL|triggering action Maximize Window - F4B3B705-33EF-4AEC-B518-4E843C3E1B7D|
+2024/02/29 10:32:26:324|ASL|already replied 103|
+2024/02/29 10:49:22:790|SEC|SecureInputActive com.apple.loginwindow 373|
+2024/02/29 11:01:42:169|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/02/29 11:06:43:058|LIC|ADD REGISTER MENU ITEM|
+2024/02/29 11:06:43:062|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 11:06:43:075|xw|adapting icon state global 0 perApp 0 clip 0|
+2024/02/29 11:07:01:896|TB|PresentationMode appWithControlStrip (null)|
+2024/02/29 11:10:42:474|ASL|performing 366|
+2024/02/29 11:10:42:474|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/02/29 11:10:42:475|ASL|performing 20|
+2024/02/29 11:10:42:475|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/02/29 11:10:42:589|ASL|already replied 103|
+2024/02/29 11:13:29:243|TB|PresentationMode appWithControlStrip (null)|
+2024/02/29 11:27:04:020|TB|PresentationMode appWithControlStrip (null)|
+2024/02/29 11:27:34:864|TB|PresentationMode appWithControlStrip (null)|
+2024/02/29 11:44:28:599|c00|10|
+2024/02/29 11:45:25:666|xw|shell script contains error and crashes BTT|
+2024/02/29 11:45:25:702|xw|interrupt reply|
+2024/02/29 11:46:05:801|xw|apple script contains error and crashes BTT|
+2024/02/29 11:46:05:850|xw|interrupt reply|
+2024/02/29 12:01:33:344|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/02/29 12:25:15:663|xw|shell script contains error and crashes BTT|
+2024/02/29 12:25:15:715|xw|interrupt reply|
+2024/02/29 12:25:58:017|LIC|ADD REGISTER MENU ITEM|
+2024/02/29 12:25:58:028|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
+2024/02/29 12:25:58:028|xw|adapting icon state global 0 perApp 0 clip 0|
