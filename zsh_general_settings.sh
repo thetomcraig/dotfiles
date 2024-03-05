@@ -70,7 +70,7 @@ mytree() {
     fi
   fi
 
-  exa -T -L=${level} ${directory}
+  eza -T -L=${level} ${directory}
 }
 #t for tree
 alias t=mytree
