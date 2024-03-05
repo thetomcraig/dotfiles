@@ -27,9 +27,6 @@ defaults write NSGlobalDomain AppleScrollerPagingBehavior -int 1
 # Prefer tabs when opening documents
 defaults write .GlobalPreferences AppleWindowTabbingMode -string "always"
 
-# Double-click a window's title bar to minimize
-defaults write .GlobalPreferences AppleActionOnDoubleClick -string "Minimize"
-
 # When switching to an application, switch to a Space with open windows for the application
 defaults write .GlobalPreferences AppleSpacesSwitchOnActivate -bool true
 
@@ -396,14 +393,8 @@ defaults write org.m0k.transmission WarningLegal -bool false
 
 
 
-# MYSIDES 
-mysides remove Recents
-mysides remove Downloads
-mysides add tomcraig file://${HOME}
-mysides add TomCraig file://${HOME}/Dropbox/TomCraig
-mysides add Music file://${HOME}/Music
-mysides add Movies file://${HOME}/Movies
-mysides add Pictures file://${HOME}/Pictures
+# Can use mysides here, but not using it right now
+# mysides add tomcraig file://${HOME}
 
 
 
