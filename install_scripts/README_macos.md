@@ -26,11 +26,12 @@
 - [X] Manual/Brew Cask
   - Search Applications folder for anything not listed in:
     - `brew_cask_packages.txt`
-    - OR
-    - Step 3 below
   - Add missing Applications to one of these two
   - Search if brew cask installable
     - `brew search --casks <APP NAME>`
+
+- [X] Backup Settings
+  - VSCode
 
 ## Initial Operating System Setup (Destination Machine)
 - [X] Copy this folder to new machine
@@ -53,7 +54,6 @@
     remark-stringify
     ```
   - (This will install Xcode tools)
-- [X] Set up Dropbox and start syncing
 - [X] Install Mac App Store Apps
   ```
   ./install-mas-apps.sh
@@ -84,10 +84,19 @@
 
 ## Step 5: Configurations
 
-- [x] Open Karabiner and give it permissions
-- [x] TODO finder show items on Desktop 
+- [x] Alfred
+  - [x] Power Pack
+  - [x] Sync Folder Location
+  - [x] Show the list view primarily with large items
+
+- [X] Open then quit BetterTouchTool
+
+- [x] TODO
+  - finder show items on Desktop 
+  - finder show invible files
+  - text size of Messages
 - [x] Copy all the home folder files over from the last computer
-- [x] Install fonts
+- [x] Install fonts and dicts
   - `proj && git clone git@github.com:thetomcraig/fonts.git`
 - [x] Sign into 1Password
 - [x] Install backblaze from the brew installer
@@ -99,15 +108,6 @@
 - [x] Photos
   - Preferences -> iCloud -> Download Originals to this Mac
   - Everything should be in iCloud, but make sure the size of the library on disk is correct
-
-- [x] Alfred
-  - [x] Power Pack
-  - [x] Sync Folder Location
-
-- [x] Fantastical
-  - Sign into Flexibits account
-  - Make a new iCloud app password
-  - https://appleid.apple.com/account/manage
 
 - [ ] Brave
   - [x] Turn on Sync in Settings
@@ -123,10 +123,7 @@
   - NOTE: this causes syncing issues - may be better to do a one-time loading
 
 - [x] Hosts file
-
   - Copy contents of `for_hosts_file.txt` into `/etc/hosts`
-
-- [x] Turn off Notifications 
 
 - [x] Add Wallpaper folder to desktop options
 
