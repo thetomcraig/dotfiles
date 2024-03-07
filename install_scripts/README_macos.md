@@ -1,141 +1,110 @@
 # Environment Installation Guide
 
-## Decommission Origin Machine
+## Origin Machine
 
 ### Misc
-- [X] Move anything from the computer desktop
-- [X] Clean up torrents
-- [X] Push any git updates to dotfiles repo
+- Move anything from the computer desktop
+- Clean up torrents
+- Push any git updates to dotfiles repo
+- Copy all the home folder files (Not in icloud Drive)
 
 ### Update Applications Lists
-- [X] Mac App Store
-  - Output full list with
-    - `mas list`
+- Mac App Store
+  - Output full list with: `mas list`
   - Paste any new application names into following command
-    - Update the following command and run it
-      ```
-      mas list | grep -E '
-      The Unarchiver | \
-      Fantastical | \
-      Amphetamine | \
-      Key Codes | \
-      Xcode | \
-      Gemini 2' \
-      | awk '{print $1}' > mac_app_store_app_ids.txt
-      ```
-- [X] Manual/Brew Cask
-  - Search Applications folder for anything not listed in:
-    - `brew_cask_packages.txt`
-  - Add missing Applications to one of these two
-  - Search if brew cask installable
-    - `brew search --casks <APP NAME>`
-
-- [X] Backup Settings
-  - VSCode
-
-## Initial Operating System Setup (Destination Machine)
-- [X] Copy this folder to new machine
-  - Manually, because git isn't set up yet
-
-## Brew Install
-- [X] Install Brew Packages
-  ```
-  sudo ./install_brew_packages.sh
-  ```
-  - (This will install Xcode tools)
-- [ ] Install NPM Packages
-  - TODO: need to get NVM setup first, then install these things globally
     ```
-    prettier
-    remark-cli
-    remark-preset-lint-markdown-stye-guide
-    remark-preset-lint-consistent
-    remark-preset-lint-recommended
-    remark-stringify
+    mas list | grep -E '
+    The Unarchiver | \
+    Fantastical | \
+    Amphetamine | \
+    Key Codes | \
+    Xcode | \
+    Gemini 2' \
+    | awk '{print $1}' > mac_app_store_app_ids.txt
     ```
-  - (This will install Xcode tools)
-- [X] Install Mac App Store Apps
+- Manual/Brew Cask
+  - Add missing Applications to `brew_cask_packages.txt`
+  - To search: `brew search --casks <APP NAME>`
+
+### Settings
+- VSCode
+- BetterTouchTool
+
+## Destination Machine
+### Git Setup
+- Set up GitHub SSH key and clone this repo  
+
+### Application Install
+- Install Homebrew Packages (This will install Xcode tools)  
+  ```
+    ./install_brew_packages.sh
+    ```
+- Install Personal programs - if on personal (non work) machine
+  ```
+    brew install $(cat brew_cask_packages_personal.txt)
+    ```
+- Install Mac App Store Apps
   ```
   ./install-mas-apps.sh
   ```
-- [X] Install Dot Files
+- Install Command Line Applications
   ```
-  sudo ./install_dotfiles.sh
-  ```
-
-- [x] Install macOS settings
-  ```
-  sudo ./install_macos_settings.sh
+  ./install_cli_apps.sh
   ```
 
-- [x] Restart
-  
-- [x] Install Command Line Applications
-  
-  ```
-  sudo ./install_cli_apps.sh
-  ```
-  
-- [x] Symlink Dot Files
-
+### Settings Configuration
+- Symlink Dot Files
   ```
   ./install_symlinks.sh
   ```
+- Install macOS settings
+  ```
+  ./install_macos_settings.sh
+  ```
+- Restart Machine
 
-## Step 5: Configurations
+## Step Configurations
+- Alfred
+  - Power Pack
+  - Sync Folder Location
+  - Show the list view primarily with large items
 
-- [x] Alfred
-  - [x] Power Pack
-  - [x] Sync Folder Location
-  - [x] Show the list view primarily with large items
+- BetterTouchTool
+  - Open then quit it
+  - Then copy over settings
 
-- [X] Open then quit BetterTouchTool
+- Sign into 1Password
+- Start Backing up with Backblaze
 
-- [x] TODO
-  - finder show items on Desktop 
-  - finder show invible files
-  - text size of Messages
-- [x] Copy all the home folder files over from the last computer
-- [x] Install fonts and dicts
-  - `proj && git clone git@github.com:thetomcraig/fonts.git`
-- [x] Sign into 1Password
-- [x] Install backblaze from the brew installer
-  - Have it start backing up
-
-- [x] Mail
+- Mail
   - Turn on all Rules
 
-- [x] Photos
+- Photos
   - Preferences -> iCloud -> Download Originals to this Mac
   - Everything should be in iCloud, but make sure the size of the library on disk is correct
 
-- [ ] Brave
-  - [x] Turn on Sync in Settings
-    - [x] Sync everything except bookmarks and Reading list
-  - [x] Turn OFF webtorrent
-  - [x] X Browser Sync
-  - [ ] uBlock Origin 
+- Brave
+  - Turn on Sync in Settings
+  - Turn OFF webtorrent
+  - uBlock Origin 
     - https://github.com/gorhill/uBlock/wiki/Cloud-storage
 
-- [ ] iTerm
+- iTerm
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
   - NOTE: this causes syncing issues - may be better to do a one-time loading
 
-- [x] Hosts file
+- Hosts file
   - Copy contents of `for_hosts_file.txt` into `/etc/hosts`
 
-- [x] Add Wallpaper folder to desktop options
+- Add Wallpaper folder to desktop options
 
-- [x] NAS
-  - `smb://ariston`
-  - [x] Connect with finder
-  - [x] Add to login item
+- NAS in Finer: `smb://ariston`
 
-- [x] Calibre
+- Calibre
   - Hold down `alt` when starting, select the library fro the NAS
 
-- [x] Music
+- Music
   1. Initial settings
     - Open Music and sign in and let iCloud stuff sync
     - Preferences -> Files 
@@ -150,13 +119,25 @@
   3. Replace the Music library file on disk, with the one from the old machine
   4. Hold down `alt`, open Music again, and select the new library file
 
-- [ ] BetterDiscord, with nord theme
+- BetterDiscord with nord theme
 
-## Step 6: Developer Tools
-- Pyenv python versions
-- NVM node versions
-- Conda python versions
+## Developer Tools
+- NPM
+  - TODO: need to get NVM setup first, then install these things globally
+    ```
+    prettier
+    remark-cli
+    remark-preset-lint-markdown-stye-guide
+    remark-preset-lint-consistent
+    remark-preset-lint-recommended
+    remark-stringify
+    ```
 
-## Step 7: Misc
-- Look for newer versions of software:
-  - Office, Photoshop, Fusion
+## Misc
+- Install fonts and dicts
+  - `proj && git clone git@github.com:thetomcraig/words.git`
+
+- TODO
+  - finder show items on Desktop 
+  - finder show invible files
+  - text size of Messages and Notes
