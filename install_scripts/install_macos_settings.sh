@@ -15,9 +15,6 @@ defaults write NSDomain NSDocumentSaveNewDocumentsToCloud -bool false
 defaults write .GlobalPreferences AppleAccentColor -int 3
 defaults write .GlobalPreferences AppleHighlightColor -string "0.752941 0.964706 0.678431 Green"
 
-# Disable gatekeeper
-sudo spctl --master-disable
-
 # Show bars when scrolling
 defaults write .GlobalPreferences AppleShowScrollBars -string "WhenScrolling"
 
@@ -151,9 +148,10 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 
 
+# TODO - not working
 # UNIVERSAL ACCESS
 # Reduce Motion
-defaults write com.apple.universalaccess reduceMotion -bool true
+# defaults write com.apple.universalaccess reduceMotion -bool true
 
 
 
@@ -173,22 +171,13 @@ defaults write com.apple.dock persistent-apps -array
 # Put all my applications into the dock
 for app in \
   "/System/Applications/Messages.app" \
-  "/Applications/Discord.app" \
-  "/Applications/Slack.app" \
   "/System/Applications/Mail.app" \
-  "/Applications/Fantastical.app" \
   "/Applications/Brave Browser.app" \
   "/Applications/Google Chrome.app" \
   "/System/Applications/Reminders.app" \
   "/Applications/iTerm.app" \
   "/Applications/Visual Studio Code.app" \
-  "/Applications/zoom.us.app" \
   "/System/Applications/Preview.app" \
-  "/System/Applications/Photos.app" \
-  "/System/Applications/Music.app" \
-  "/Applications/Transmission.app" \
-  "/Applications/Transmit.app" \
-  "/Applications/Plex.app" \
   "/System/Applications/System Preferences.app"; do
   defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>${app}</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 done
@@ -226,7 +215,7 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 
 
 
-# TRACKPAD ADN MOSUE
+# TRACKPAD AND MOSUE
 # Four finger swipe up for mission control
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
@@ -324,30 +313,32 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 
 
-# SAFARI
-# Enable Safari’s debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+# TODO Not working
+# # SAFARI
+# # Enable Safari’s debug menu
+# defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
-# Enable the Develop menu and the Web Inspector in Safari
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+# # Enable the Develop menu and the Web Inspector in Safari
+# defaults write com.apple.Safari IncludeDevelopMenu -bool true
+# defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
 
 
+# TODO Not working
 # MAIL
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+# # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+# defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-# Display emails in threaded mode, sorted by date (oldest at the top)
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
+# # Display emails in threaded mode, sorted by date (oldest at the top)
+# defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
+# defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
+# defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
 
-# Disable inline attachments (just show the icons)
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
-# Add the keyboard ⌘ ^a to archive
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@^a"
+# # Disable inline attachments (just show the icons)
+# defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
+# # Add the keyboard ⌘ ^a to archive
+# defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@^a"
 
 
 
@@ -367,43 +358,11 @@ defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 
-
-# Transmission
-# Use `~/Documents/Torrents` to store incomplete downloads
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
-
-# Use `~/Downloads` to store completed downloads
-defaults write org.m0k.transmission DownloadLocationConstant -bool true
-
-# Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
-defaults write org.m0k.transmission MagnetOpenAsk -bool false
-
-# Don’t prompt for confirmation before removing non-downloading active transfers
-defaults write org.m0k.transmission CheckRemoveDownloading -bool true
-
-# Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-# Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
-# Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
-
-
-
-# Can use mysides here, but not using it right now
-# mysides add tomcraig file://${HOME}
-
-
-
 # DUTI
 # Change the default applications for filetypes
 # (The "Open With" option)
 # Can find the bundle ID of an application with:
 #    osascript -e 'id of app "<APP NAME"'
-duti -s com.flexibits.fantastical2.mac .ics all
 duti -s abnerworks.Typora .md all
 duti -s org.freecadteam.freecad .stl all
 duti -s nl.ultimaker.cura_UltiMaker_Cura_5.2.2 .gcode all
@@ -441,3 +400,8 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+
+
+# Disable gatekeeper
+sudo spctl --master-disable
