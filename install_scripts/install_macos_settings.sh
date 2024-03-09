@@ -148,13 +148,6 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 
 
-# TODO - not working
-# UNIVERSAL ACCESS
-# Reduce Motion
-# defaults write com.apple.universalaccess reduceMotion -bool true
-
-
-
 # DOCK
 # Do not show recent items in the dock
 defaults write com.apple.dock show-recents -bool false
@@ -358,6 +351,8 @@ defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 
+
+
 # DUTI
 # Change the default applications for filetypes
 # (The "Open With" option)
@@ -403,5 +398,3 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 
 
 
-# Disable gatekeeper
-sudo spctl --master-disable
