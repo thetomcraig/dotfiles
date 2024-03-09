@@ -43,10 +43,6 @@
   ```
     brew install $(cat brew_cask_packages_personal.txt)
     ```
-- Install Mac App Store Apps
-  ```
-  ./install-mas-apps.sh
-  ```
 - Install Command Line Applications
   ```
   ./install_cli_apps.sh
@@ -62,6 +58,10 @@
   ./install_macos_settings.sh
   ```
 - Restart Machine
+- Install Mac App Store Apps
+  ```
+  ./install-mas-apps.sh
+  ```
 
 ## Step Configurations
 - Alfred
@@ -93,6 +93,10 @@
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
   - NOTE: this causes syncing issues - may be better to do a one-time loading
+
+- Install Vim Plugins
+
+- Install TPM Plugins
 
 - Hosts file
   - Copy contents of `for_hosts_file.txt` into `/etc/hosts`

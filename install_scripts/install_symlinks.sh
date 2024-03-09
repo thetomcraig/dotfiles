@@ -12,16 +12,6 @@ if [[ "${ARCH}" == *"${mac}"* ]]; then
 
   rm -f -- ~/.PROJECTS_ROOT
   ln -s $PROJECTS_ROOT .projects_root
-
-  rm -f -- ~/.phoenix.js
-  ln -s $DOTFILES_LOCATION/phoenix/phoenix.js .phoenix.js
-
-  mkdir -p .config
-  mkdir -p .config/karabiner
-
-  rm -f -- ~/.config/karabiner/karabiner.json
-  ln -s $DOTFILES_LOCATION/karabiner/karabiner.json .config/karabiner/karabiner.json
-
 fi
 
 
