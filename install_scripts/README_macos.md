@@ -33,7 +33,10 @@
 ## Destination Machine
 ### Git Setup
 - Set up GitHub SSH key and clone this repo  
-
+- Disable gatekeeper
+  ```
+  sudo spctl --master-disable
+  ```
 ### Application Install
 - Install Homebrew Packages (This will install Xcode tools)  
   ```
