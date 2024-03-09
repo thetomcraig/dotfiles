@@ -944,3 +944,1189 @@
 2024/02/29 12:25:58:017|LIC|ADD REGISTER MENU ITEM|
 2024/02/29 12:25:58:028|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-02-13 11:02:04 +0000|
 2024/02/29 12:25:58:028|xw|adapting icon state global 0 perApp 0 clip 0|
+2024/03/07 14:53:36:939|SYS|Running on macOS: 14.4.0|
+2024/03/07 14:53:36:939|SYS|BTT Version: 4.431|
+2024/03/07 14:53:36:940|SYS|Device: Mac15,11|
+2024/03/07 14:53:36:981|usage|loading todays usage|
+2024/03/07 14:53:36:982|ASL|0 elapsed 0.082599|
+2024/03/07 14:53:36:982|LAUNCH|DIDLaunch START NSConcreteNotification 0x6000027e84a0 {name = NSApplicationDidFinishLaunchingNotification; object = <BTTApplication: 0x14be057f0>; userInfo = {
+    NSApplicationLaunchIsDefaultLaunchKey = 1;
+}}|
+2024/03/07 14:53:36:993|ASL|1 elapsed 0.094386|
+2024/03/07 14:53:36:993|ASL|2 elapsed 0.094410|
+2024/03/07 14:53:36:994|ASL|3 elapsed 0.094535|
+2024/03/07 14:53:36:994|ASL|4 elapsed 0.094834|
+2024/03/07 14:53:36:995|ASL|5 elapsed 0.095934|
+2024/03/07 14:53:36:995|ASL|6 elapsed 0.095964|
+2024/03/07 14:53:36:995|INIT|START PREVIOUSLYININIT|
+2024/03/07 14:53:36:995|ASL|sub 0 elapsed 0.000000 - prev|
+2024/03/07 14:53:37:004|ASL|sub 1 elapsed 0.008880 - prev|
+2024/03/07 14:53:37:004|ASL|sub 2 elapsed 0.009187 - prev|
+2024/03/07 14:53:37:004|ASL|sub 3 elapsed 0.009342 - prev|
+2024/03/07 14:53:37:013|ASL|sub 4 elapsed 0.017782 - prevk|
+2024/03/07 14:53:37:013|short|init|
+2024/03/07 14:53:37:013|ASL|Hyper key used 0|
+2024/03/07 14:53:37:105|STORE|The store already exists in udefs|
+2024/03/07 14:53:37:105|STORE|Creating a backup btt_data_store.version_4_402_build_44020|
+2024/03/07 14:53:37:107|xw|last used store: btt_data_store.version_4_402_build_44020, newStore: btt_data_store.version_4_431_build_44310|
+2024/03/07 14:53:37:107|xw|copy btt_data_store.version_4_402_build_44020 => btt_data_store.version_4_431_build_44310|
+2024/03/07 14:53:37:107|xw|copy btt_data_store.version_4_402_build_44020 => btt_data_store.version_4_431_build_44310 success|
+2024/03/07 14:53:37:107|xw|copy btt_data_store.version_4_402_build_44020-shm => btt_data_store.version_4_431_build_44310-shm|
+2024/03/07 14:53:37:107|xw|copy-shm btt_data_store.version_4_402_build_44020 => btt_data_store.version_4_431_build_44310-shm success|
+2024/03/07 14:53:37:107|xw|copy btt_data_store.version_4_402_build_44020-wal => btt_data_store.version_4_431_build_44310-wal|
+2024/03/07 14:53:37:107|xw|copy-wal btt_data_store.version_4_402_build_44020 => btt_data_store.version_4_431_build_44310-wal success|
+2024/03/07 14:53:40:762|migrate|fixing uuids2|
+2024/03/07 14:53:40:768|LIC|idate 2024-03-07 22:53:40 +0000|
+2024/03/07 14:53:40:771|ASL|sub 5 elapsed 3.775642 - prevke|
+2024/03/07 14:53:40:771|INIT|FINISH PREVIOUSLYININIT|
+2024/03/07 14:53:40:771|ASL|7 elapsed 3.871681|
+2024/03/07 14:53:40:772|ASL|8 elapsed 3.872546|
+2024/03/07 14:53:40:783|ASL|9 elapsed 3.883473|
+2024/03/07 14:53:40:783|ASL|10 elapsed 3.883554|
+2024/03/07 14:53:40:785|ASL|11 elapsed 3.885818|
+2024/03/07 14:53:40:795|LIC|license appears to be valid|
+2024/03/07 14:53:40:796|LIC|license dictionary {
+    CheckoutName = "Tom Craig";
+    Email = "thetomcraig@icloud.com";
+    LicenseType = paddle;
+    Licenses = 1;
+    Name = "Tom Craig";
+    OrderID = d02047264731f927f5ed973ba226a5b6;
+    Product = BetterTouchTool;
+    Signature = {length = 128, bytes = 0x86b1d688 2dcec870 a2ec81cc 8baaa981 ... 3ae16d65 c67d77f5 };
+    Timestamp = 1707327738;
+    TransactionID = "252801297-chre7aec9a464d2-5a9a04c903";
+}|
+2024/03/07 14:53:40:796|LIC|systemdate 2024-02-07 17:42:18 +0000|
+2024/03/07 14:53:40:796|LIC|using date 1707327738|
+2024/03/07 14:53:40:796|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/07 14:53:40:796|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/07 14:53:40:799|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/07 14:53:40:799|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/07 14:53:40:799|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:40:799|LIC|License is valid for this version|
+2024/03/07 14:53:40:808|ASL|12 elapsed 3.908949|
+2024/03/07 14:53:40:808|ASL|disablign app nap|
+2024/03/07 14:53:40:808|ASL|disabling app nap done|
+2024/03/07 14:53:40:808|ASL|13 elapsed 3.909154|
+2024/03/07 14:53:40:808|ASL|14 elapsed 3.909237|
+2024/03/07 14:53:41:007|ASL|15 elapsed 4.107549|
+2024/03/07 14:53:41:025|ASL|16 elapsed 4.125432|
+2024/03/07 14:53:41:025|ASL|17 elapsed 4.125547|
+2024/03/07 14:53:41:037|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/07 14:53:41:037|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/07 14:53:41:038|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:41:038|ASL|18 elapsed 4.138991|
+2024/03/07 14:53:41:038|ASL|19 elapsed 4.139113|
+2024/03/07 14:53:41:040|ASL|20 elapsed 4.140638|
+2024/03/07 14:53:41:040|ASL|21 elapsed 4.140928|
+2024/03/07 14:53:41:040|ASL|22 elapsed 4.140998|
+2024/03/07 14:53:41:042|ASL|23 elapsed 4.143421|
+2024/03/07 14:53:41:043|ASL|24 elapsed 4.143493|
+2024/03/07 14:53:41:043|ASL|25 elapsed 4.143619|
+2024/03/07 14:53:41:043|ASL|26 elapsed 4.143959|
+2024/03/07 14:53:41:072|ASL|27 elapsed 4.172589|
+2024/03/07 14:53:41:074|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/07 14:53:41:074|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/07 14:53:41:078|ASL|menubar height 37.000000|
+2024/03/07 14:53:41:079|xw|is trusted|
+2024/03/07 14:53:41:132|short|call sharedInstance4|
+2024/03/07 14:53:41:235|TB|touchbar screen size {1085, 30}|
+2024/03/07 14:53:41:236|ASL|28 elapsed 4.336725|
+2024/03/07 14:53:41:236|ASL|29 elapsed 4.336743|
+2024/03/07 14:53:41:236|ASL|30 elapsed 4.336751|
+2024/03/07 14:53:41:236|ASL|31 elapsed 4.336757|
+2024/03/07 14:53:41:237|ASL|32 elapsed 4.337860|
+2024/03/07 14:53:41:238|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:41:240|ASL|33 elapsed 4.340891|
+2024/03/07 14:53:41:240|ASL|adding lastUsed|
+2024/03/07 14:53:41:241|ASL|34 elapsed 4.342058|
+2024/03/07 14:53:41:241|START|TB VISIBLE 0|
+2024/03/07 14:53:41:241|START|TB FORCED HIDDEN 0|
+2024/03/07 14:53:41:241|ASL|35 elapsed 4.342078|
+2024/03/07 14:53:41:245|ASL|36 elapsed 4.345592|
+2024/03/07 14:53:41:246|ASL|37 elapsed 4.346549|
+2024/03/07 14:53:41:246|ASL|38 elapsed 4.346560|
+2024/03/07 14:53:41:246|LAUNCH|DIDLaunch END frontmostApp: com.googlecode.iterm2, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 0, tpRotateUsed 0|
+2024/03/07 14:53:41:246|ASL|39 elapsed 4.346590|
+2024/03/07 14:53:41:246|ASL|40 elapsed 4.346775|
+2024/03/07 14:53:41:386|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:41:415|PERM|Can record screen 0|
+2024/03/07 14:53:41:435|SLEEP|FORCESHOWAFTERSLEEP2|
+2024/03/07 14:53:41:435|TB|Force show Touch Bar|
+2024/03/07 14:53:41:436|M|mt_stop10|
+2024/03/07 14:53:41:449|ASL|WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.|
+2024/03/07 14:53:41:547|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/07 14:53:41:547|M|register touchbar mbp trackpad|
+2024/03/07 14:53:41:548|STDEV|6f|
+2024/03/07 14:53:41:552|SLEEP|FORCESHOWAFTERSLEEP3B|
+2024/03/07 14:53:41:552|TB|Force show Touch Bar|
+2024/03/07 14:53:41:948|short|eventtap success|
+2024/03/07 14:53:42:081|M|mt_stop2|
+2024/03/07 14:53:42:083|M|unregister tb trackpad|
+2024/03/07 14:53:42:084|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/07 14:53:42:084|M|register touchbar mbp trackpad|
+2024/03/07 14:53:42:084|STDEV|6f|
+2024/03/07 14:53:42:148|TB|PresentationMode appWithControlStrip (null)|
+2024/03/07 14:53:42:979|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/07 14:53:42:982|SNAPAREA|return existing (updated)|
+2024/03/07 14:53:42:983|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/07 14:53:43:148|LIC|ADD REGISTER MENU ITEM|
+2024/03/07 14:53:43:153|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:43:158|xw|adapting icon state global 0 perApp 0 clip 0|
+2024/03/07 14:53:44:084|M|mt_stop2|
+2024/03/07 14:53:44:087|M|unregister tb trackpad|
+2024/03/07 14:53:44:090|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/07 14:53:44:091|M|register touchbar mbp trackpad|
+2024/03/07 14:53:44:091|STDEV|6f|
+2024/03/07 14:53:45:550|PREFS|showing prefs <NSMenuItem: 0x600000c9e140 Configuration>|
+2024/03/07 14:53:45:586|ASL|prepare <NSStoryboardSegue:0x6000028fb0c0 identifier='(null)', source='<BTTMainUIStructureVC: 0x600001c92700>', destination='<BTTAppListVC: 0x6000018bc5a0>'>|
+2024/03/07 14:53:45:596|ASL|Warning: Column selection is not supported in view-based table and outline views (<BTTPreferencesTableView: 0x10f879a00>).|
+2024/03/07 14:53:45:596|ASL|view did load BTTAppListVC|
+2024/03/07 14:53:45:598|ASL|prepare <NSStoryboardSegue:0x600002890ed0 identifier='EmbedTopMenuVC', source='<BTTMainUIStructureVC: 0x600001c92700>', destination='<BTTTopMenuVC: 0x10383ecb0>'>|
+2024/03/07 14:53:45:616|ASL|view did load BTTTopMenuVC|
+2024/03/07 14:53:45:619|ASL|window did load BTTRootPreferencesWC|
+2024/03/07 14:53:45:619|ASL|did set <BTTMainUIStructureVC: 0x600001c92700> BTTMainUIStructureVC|
+2024/03/07 14:53:45:619|ASL|did set <BTTLevel1VC: 0x600001890960> BTTLevel1VC|
+2024/03/07 14:53:45:619|ASL|did set <BTTMainSplitViewController: 0x600001c92a40> BTTMainSplitViewController|
+2024/03/07 14:53:45:619|ASL|did set <BTTLevel3VC: 0x600001a1dc00> BTTLevel3VC|
+2024/03/07 14:53:45:619|ASL|did set <BTTConfigurationVC: 0x10de25d30> BTTConfigurationVC|
+2024/03/07 14:53:45:619|ASL|did set <BTTOutlineModeVC: 0x6000018bc690> BTTOutlineModeVC|
+2024/03/07 14:53:45:619|ASL|did set <BTTConfigurationVC: 0x11bf2bc80> BTTConfigurationVC|
+2024/03/07 14:53:45:619|ASL|did set <BTTTopMenuVC: 0x10383ecb0> BTTTopMenuVC|
+2024/03/07 14:53:45:651|LIC|ADD REGISTER MENU ITEM|
+2024/03/07 14:53:45:653|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:45:693|LIC|ADD REGISTER MENU ITEM|
+2024/03/07 14:53:45:695|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:45:732|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/07 14:53:45:757|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/07 14:53:45:778|LIC|ADD REGISTER MENU ITEM|
+2024/03/07 14:53:45:780|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 14:53:45:905|ASL|did load level 3|
+2024/03/07 14:53:45:957|FORM|2UUID (null) == (null) editing 0 == 0|
+2024/03/07 14:53:46:097|NEWUI|Loading Config Debounced|
+2024/03/07 14:53:46:097|FORM|1UUID (null) == (null) editing 0 == 0|
+2024/03/07 14:53:46:974|NEWUI|Loading Config Debounced|
+2024/03/07 14:53:47:071|NEWUI|Loading Config Debounced|
+2024/03/07 14:53:47:088|M|mt_stop2|
+2024/03/07 14:53:47:090|M|unregister tb trackpad|
+2024/03/07 14:53:47:090|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/07 14:53:47:091|M|register touchbar mbp trackpad|
+2024/03/07 14:53:47:091|STDEV|6f|
+2024/03/07 14:53:47:718|NEWUI|Loading Config Debounced|
+2024/03/07 14:53:48:563|NEWUI|Loading Config Debounced|
+2024/03/07 14:53:50:680|PREFS|DID SELECT TRIGGER TYPE 19|
+2024/03/07 14:53:50:682|UI|Level 1 Focused|
+2024/03/07 14:53:50:704|FORM|2UUID B3733942-C9D2-41C2-A915-DA4F926013E9 == 43D370D9-A27F-4446-A9BD-9D8E33B0F502 editing 0 == 0|
+2024/03/07 14:53:51:067|FORM|2UUID B3733942-C9D2-41C2-A915-DA4F926013E9 == B3733942-C9D2-41C2-A915-DA4F926013E9 editing 0 == 0|
+2024/03/07 14:53:52:152|M|mt_stop2|
+2024/03/07 14:53:52:154|M|unregister tb trackpad|
+2024/03/07 14:53:52:155|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/07 14:53:52:155|M|register touchbar mbp trackpad|
+2024/03/07 14:53:52:155|STDEV|6f|
+2024/03/07 14:53:54:453|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/07 14:53:54:468|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/07 14:53:55:468|ASL|deallocating root Window controller|
+2024/03/07 14:53:55:483|ASL|dealloc main ui structure vc|
+2024/03/07 14:53:55:492|ASL|dealloc level1|
+2024/03/07 14:53:55:492|ASL|dealloc level3|
+2024/03/07 14:56:05:897|TB|PresentationMode appWithControlStrip (null)|
+2024/03/07 15:03:41:303|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/07 15:03:59:620|TB|PresentationMode appWithControlStrip (null)|
+2024/03/07 15:17:16:976|ASL|performing 366|
+2024/03/07 15:17:16:976|ASL|triggering action Empty Placeholder - 50495B49-BF11-464F-ADC9-DCB77FE2E77E|
+2024/03/07 15:17:16:977|ASL|performing 21|
+2024/03/07 15:17:16:977|ASL|triggering action Maximize Window - F4B3B705-33EF-4AEC-B518-4E843C3E1B7D|
+2024/03/07 15:17:16:985|ASL|already replied 103|
+2024/03/07 15:35:34:982|ASL|performing 366|
+2024/03/07 15:35:34:983|ASL|triggering action Empty Placeholder - 50495B49-BF11-464F-ADC9-DCB77FE2E77E|
+2024/03/07 15:35:34:983|ASL|performing 21|
+2024/03/07 15:35:34:983|ASL|triggering action Maximize Window - F4B3B705-33EF-4AEC-B518-4E843C3E1B7D|
+2024/03/07 15:35:34:991|ASL|already replied 103|
+2024/03/07 15:44:14:480|SEC|SecureInputActive org.pgadmin.pgadmin4 85175|
+2024/03/07 15:44:17:429|SEC|SecureInputDisabled org.pgadmin.pgadmin4|
+2024/03/07 16:06:17:582|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/07 16:06:57:621|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/07 16:07:11:323|TB|PresentationMode appWithControlStrip (null)|
+2024/03/07 16:07:18:588|SEC|SecureInputActive com.apple.systempreferences 11356|
+2024/03/07 16:07:20:993|TB|PresentationMode appWithControlStrip (null)|
+2024/03/07 16:07:21:020|SEC|SecureInputDisabled com.apple.systempreferences|
+2024/03/07 16:07:35:195|SEC|SecureInputActive org.pgadmin.pgadmin4 85175|
+2024/03/07 16:07:41:309|SEC|SecureInputDisabled org.pgadmin.pgadmin4|
+2024/03/07 16:16:00:294|TB|PresentationMode appWithControlStrip (null)|
+2024/03/07 16:23:29:281|SLEEP|messageType e0000280, arg 01780061|
+2024/03/07 16:23:29:291|ASL|disablign app nap|
+2024/03/07 16:23:29:291|ASL|disabling app nap done|
+2024/03/07 16:23:29:436|SLEEP|WILLSLEEP|
+2024/03/07 16:23:29:480|TouchBar|Don't show because sleep|
+2024/03/07 16:23:29:521|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 01:19:15:379|usage|loading todays usage|
+2024/03/08 08:49:44:518|SLEEP|messageType e0000320, arg 00000000|
+2024/03/08 08:49:44:742|SLEEP|messageType e0000300, arg 00000000|
+2024/03/08 08:49:44:742|ASL|disablign app nap|
+2024/03/08 08:49:44:742|ASL|disabling app nap done|
+2024/03/08 08:49:44:742|SLEEP|WOKE VIA IOKIT|
+2024/03/08 08:49:44:742|ASL|toggle after sleep 0|
+2024/03/08 08:49:44:743|xw|disable|
+2024/03/08 08:49:44:791|xw|enable|
+2024/03/08 08:49:44:794|NOTCH|did unhide (null)|
+2024/03/08 08:49:44:794|ASL|unregister d|
+2024/03/08 08:49:44:802|WAKE|EVENTHANDLER RESET|
+2024/03/08 08:49:44:804|M|mt_stop2|
+2024/03/08 08:49:44:804|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 08:49:44:808|SNAPAREA|return existing (updated)|
+2024/03/08 08:49:44:808|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 08:49:44:808|SNAP|Did reset snap areas 0 0|
+2024/03/08 08:49:44:808|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 1|
+2024/03/08 08:49:44:847|TouchBar|Don't show because sleep|
+2024/03/08 08:49:44:868|M|unregister tb trackpad|
+2024/03/08 08:49:44:869|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 08:49:44:869|M|register touchbar mbp trackpad|
+2024/03/08 08:49:44:869|STDEV|6f|
+2024/03/08 08:49:44:908|WAKE|DIDWAKE|
+2024/03/08 08:49:44:908|ASL|disablign app nap|
+2024/03/08 08:49:44:908|ASL|disabling app nap done|
+2024/03/08 08:49:44:914|WAKE|DIDWAKE2|
+2024/03/08 08:49:44:915|WAKE|NO RESTART|
+2024/03/08 08:49:44:915|ASL|toggle after sleep 1|
+2024/03/08 08:49:44:915|xw|disable|
+2024/03/08 08:49:44:917|xw|enable|
+2024/03/08 08:49:44:918|NOTCH|did unhide (null)|
+2024/03/08 08:49:44:918|ASL|unregister d|
+2024/03/08 08:49:44:920|WAKE|EVENTHANDLER RESET|
+2024/03/08 08:49:44:922|M|mt_stop2|
+2024/03/08 08:49:44:922|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 08:49:44:923|SNAPAREA|return existing (updated)|
+2024/03/08 08:49:44:923|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 08:49:44:923|SNAP|Did reset snap areas 0 0|
+2024/03/08 08:49:44:923|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 2|
+2024/03/08 08:49:45:340|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 08:49:45:340|TB|Force show Touch Bar|
+2024/03/08 08:49:45:341|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 08:49:45:341|TB|Force show Touch Bar|
+2024/03/08 08:49:45:341|M|unregister tb trackpad|
+2024/03/08 08:49:45:343|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 08:49:45:344|M|register touchbar mbp trackpad|
+2024/03/08 08:49:45:345|STDEV|6f|
+2024/03/08 08:49:45:354|NOTCH|S3|
+2024/03/08 08:49:45:422|NOTCH|S3|
+2024/03/08 08:49:51:617|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:51:617|USB|Device "USB2.1 Hub" connected, Vendor ID: 0x0bda Product ID: 0x5411, Serial (null)|
+2024/03/08 08:49:51:617|SYS|USB Connect Count 1|
+2024/03/08 08:49:51:827|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:51:827|USB|Device "HID Device" connected, Vendor ID: 0x0bda Product ID: 0x1101, Serial (null)|
+2024/03/08 08:49:51:827|SYS|USB Connect Count 2|
+2024/03/08 08:49:51:863|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:51:863|USB|Device "4-Port USB 2.0 Hub" connected, Vendor ID: 0x0bda Product ID: 0x5411, Serial (null)|
+2024/03/08 08:49:51:863|SYS|USB Connect Count 3|
+2024/03/08 08:49:52:376|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:52:376|USB|Device "USB Advanced Audio Device" connected, Vendor ID: 0x0d8c Product ID: 0x016c, Serial (null)|
+2024/03/08 08:49:52:376|SYS|USB Connect Count 4|
+2024/03/08 08:49:52:384|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:52:385|USB|Device "USB Advanced Audio Device" connected, Vendor ID: 0x0d8c Product ID: 0x0022, Serial (null)|
+2024/03/08 08:49:52:385|SYS|USB Connect Count 5|
+2024/03/08 08:49:52:451|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:52:451|USB|Device "Magic Trackpad" connected, Vendor ID: 0x05ac Product ID: 0x0265, Serial CC2814203HDJ17LAQ|
+2024/03/08 08:49:52:451|SYS|USB Connect Count 6|
+2024/03/08 08:49:52:530|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:52:530|USB|Device "w-corne-choc(STM32)" connected, Vendor ID: 0xfeed Product ID: 0x0007, Serial vial:f64c2b3c|
+2024/03/08 08:49:52:530|SYS|USB Connect Count 7|
+2024/03/08 08:49:52:921|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:52:921|USB|Device "HD Pro Webcam C920" connected, Vendor ID: 0x046d Product ID: 0x0892, Serial 3D1D85EF|
+2024/03/08 08:49:52:921|SYS|USB Connect Count 8|
+2024/03/08 08:49:52:931|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 08:49:52:932|SNAPAREA|return existing (updated)|
+2024/03/08 08:49:52:932|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 08:49:52:932|SNAPAREA|return existing (updated)|
+2024/03/08 08:49:52:932|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 08:49:52:932|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 08:49:52:932|SNAP|Did reset snap areas 0 0|
+2024/03/08 08:49:53:227|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:53:227|USB|Device "USB2.0 Hub" connected, Vendor ID: 0x05e3 Product ID: 0x0608, Serial (null)|
+2024/03/08 08:49:53:227|SYS|USB Connect Count 9|
+2024/03/08 08:49:53:502|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 08:49:53:503|SNAPAREA|return existing (updated)|
+2024/03/08 08:49:53:503|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 08:49:53:504|SNAPAREA|return existing (updated)|
+2024/03/08 08:49:53:504|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 08:49:53:504|SNAPAREA|step2, 0 displays|
+2024/03/08 08:49:53:504|SNAPAREA|step3, 0 displays|
+2024/03/08 08:49:53:504|SNAPAREA|step4, 0 displays|
+2024/03/08 08:49:53:504|SNAPAREA|did not recognize display 2 53358 | {{1920, -503}, {1440, 2560}} | 825379404|
+2024/03/08 08:49:53:504|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 08:49:53:504|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 08:49:53:504|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 08:49:53:504|SNAP|Did reset snap areas 0 0|
+2024/03/08 08:49:53:507|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:49:53:507|USB|Device "Generic Billboard Device" connected, Vendor ID: 0x1d5c Product ID: 0x7102, Serial (null)|
+2024/03/08 08:49:53:507|SYS|USB Connect Count 10|
+2024/03/08 08:49:53:954|M|mt_stop2|
+2024/03/08 08:49:53:960|M|unregister tb trackpad|
+2024/03/08 08:49:53:962|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 08:49:53:962|M|register touchbar mbp trackpad|
+2024/03/08 08:49:53:962|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 08:49:53:963|M|register magic trackpad 2|
+2024/03/08 08:49:53:963|STDEV|6f81|
+2024/03/08 08:49:54:801|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/08 08:50:17:314|ASL|trigger after login screen 2 - /System/Applications/System Settings.app - com.apple.systempreferences|
+2024/03/08 08:50:17:314|LOGIN|triggerAfterLoginScreenActions|
+2024/03/08 08:50:17:314|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/08 08:50:17:314|ASL|reset after login screen 2|
+2024/03/08 08:50:17:314|WAKE|EVENTHANDLER RESET|
+2024/03/08 08:50:17:317|M|mt_stop2|
+2024/03/08 08:50:17:318|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 08:50:17:320|SNAPAREA|return existing (updated)|
+2024/03/08 08:50:17:320|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 08:50:17:321|SNAPAREA|return existing (updated)|
+2024/03/08 08:50:17:321|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 08:50:17:322|SNAPAREA|return existing (updated)|
+2024/03/08 08:50:17:323|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 08:50:17:323|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 08:50:17:323|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 08:50:17:323|SNAP|Did reset snap areas 0 0|
+2024/03/08 08:50:17:323|ASL|toggle after sleep 2|
+2024/03/08 08:50:17:323|xw|disable|
+2024/03/08 08:50:17:326|xw|enable|
+2024/03/08 08:50:17:333|NOTCH|did unhide (null)|
+2024/03/08 08:50:17:333|ASL|unregister d|
+2024/03/08 08:50:17:340|WAKE|EVENTHANDLER RESET|
+2024/03/08 08:50:17:342|M|mt_stop2|
+2024/03/08 08:50:17:342|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 08:50:17:344|SNAPAREA|return existing (updated)|
+2024/03/08 08:50:17:344|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 08:50:17:345|SNAPAREA|return existing (updated)|
+2024/03/08 08:50:17:345|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 08:50:17:346|SNAPAREA|return existing (updated)|
+2024/03/08 08:50:17:346|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 08:50:17:346|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 08:50:17:346|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 08:50:17:346|SNAP|Did reset snap areas 0 0|
+2024/03/08 08:50:17:346|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 3|
+2024/03/08 08:50:17:353|ASL|performing after wake actions|
+2024/03/08 08:50:17:353|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 08:50:17:353|TB|Force show Touch Bar|
+2024/03/08 08:50:17:355|M|unregister tb trackpad|
+2024/03/08 08:50:17:356|M|unregister magic trackpad 2|
+2024/03/08 08:50:17:358|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 08:50:17:358|M|register touchbar mbp trackpad|
+2024/03/08 08:50:17:359|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 08:50:17:359|M|register magic trackpad 2|
+2024/03/08 08:50:17:359|STDEV|6f81|
+2024/03/08 08:50:17:378|M|unregister tb trackpad|
+2024/03/08 08:50:17:379|M|unregister magic trackpad 2|
+2024/03/08 08:50:17:382|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 08:50:17:384|M|register touchbar mbp trackpad|
+2024/03/08 08:50:17:387|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 08:50:17:387|M|register magic trackpad 2|
+2024/03/08 08:50:17:387|STDEV|6f81|
+2024/03/08 08:50:17:535|SYS|USB DEVICE DISCONNECTED|
+2024/03/08 08:50:17:536|USB|Device "USB2.0 Hub" disconnected, Vendor ID: 0x000005e3 Product ID: 0x00000608, Serial (null)|
+2024/03/08 08:50:17:536|SYS|USB DEVICE DISCONNECTED|
+2024/03/08 08:50:17:537|USB|Device "Generic Billboard Device" disconnected, Vendor ID: 0x00001d5c Product ID: 0x00007102, Serial (null)|
+2024/03/08 08:50:17:548|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 08:50:17:548|TB|Force show Touch Bar|
+2024/03/08 08:50:17:550|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:50:17:550|USB|Device "USB2.0 Hub" connected, Vendor ID: 0x05e3 Product ID: 0x0608, Serial (null)|
+2024/03/08 08:50:17:550|SYS|USB Connect Count 3|
+2024/03/08 08:50:17:839|SYS|USB DEVICE CONNECTED|
+2024/03/08 08:50:17:840|USB|Device "Generic Billboard Device" connected, Vendor ID: 0x1d5c Product ID: 0x7102, Serial (null)|
+2024/03/08 08:50:17:840|SYS|USB Connect Count 4|
+2024/03/08 08:50:17:840|NOTCH|S3|
+2024/03/08 08:50:24:842|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 08:56:05:972|SEC|SecureInputActive com.cisco.anyconnect.gui 57761|
+2024/03/08 08:56:09:847|SEC|SecureInputDisabled com.cisco.anyconnect.gui|
+2024/03/08 08:57:36:463|SEC|SecureInputActive com.brave.Browser 1433|
+2024/03/08 08:57:38:572|SEC|SecureInputDisabled com.brave.Browser|
+2024/03/08 08:57:38:776|ASL|performing 366|
+2024/03/08 08:57:38:776|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 08:57:38:776|ASL|performing 21|
+2024/03/08 08:57:38:776|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 08:57:38:825|ASL|already replied 103|
+2024/03/08 08:58:00:839|SEC|SecureInputActive com.brave.Browser 1433|
+2024/03/08 08:58:03:846|SEC|SecureInputDisabled com.brave.Browser|
+2024/03/08 09:01:41:200|WISNA|Focus doesn't match window pid|
+2024/03/08 09:01:55:904|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:03:05:352|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 09:03:05:353|SNAPAREA|return existing (updated)|
+2024/03/08 09:03:05:353|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 09:03:05:354|SNAPAREA|return existing (updated)|
+2024/03/08 09:03:05:354|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 09:03:05:354|SNAPAREA|return existing (updated)|
+2024/03/08 09:03:05:354|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 09:03:05:354|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 09:03:05:354|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 09:03:05:354|SNAP|Did reset snap areas 0 0|
+2024/03/08 09:03:08:959|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:03:42:840|SEC|SecureInputActive com.brave.Browser 1433|
+2024/03/08 09:03:51:274|SEC|SecureInputDisabled com.brave.Browser|
+2024/03/08 09:04:07:800|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:04:09:067|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:04:15:843|SEC|SecureInputActive com.apple.systempreferences 66713|
+2024/03/08 09:04:17:941|SEC|SecureInputDisabled com.apple.systempreferences|
+2024/03/08 09:04:41:059|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:04:50:489|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:04:55:957|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 09:04:55:958|SNAPAREA|return existing (updated)|
+2024/03/08 09:04:55:958|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 09:04:55:959|SNAPAREA|return existing (updated)|
+2024/03/08 09:04:55:959|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 09:04:55:960|SNAPAREA|step2, 0 displays|
+2024/03/08 09:04:55:960|SNAPAREA|step3, 0 displays|
+2024/03/08 09:04:55:960|SNAPAREA|step4, 0 displays|
+2024/03/08 09:04:55:960|SNAPAREA|did not recognize display 2 53358 | {{1920, 137}, {1080, 1920}} | 825379404|
+2024/03/08 09:04:55:960|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 09:04:55:960|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 09:04:55:960|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 09:04:55:960|SNAP|Did reset snap areas 0 0|
+2024/03/08 09:05:00:903|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 09:05:00:903|SNAPAREA|return existing (updated)|
+2024/03/08 09:05:00:903|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 09:05:00:904|SNAPAREA|return existing (updated)|
+2024/03/08 09:05:00:904|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 09:05:00:904|SNAPAREA|step2, 0 displays|
+2024/03/08 09:05:00:904|SNAPAREA|step3, 0 displays|
+2024/03/08 09:05:00:904|SNAPAREA|step4, 0 displays|
+2024/03/08 09:05:00:905|SNAPAREA|did not recognize display 2 53358 | {{1920, 457}, {900, 1600}} | 825379404|
+2024/03/08 09:05:00:905|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 09:05:00:905|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 09:05:00:905|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 09:05:00:905|SNAP|Did reset snap areas 0 0|
+2024/03/08 09:05:06:035|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 09:05:06:036|SNAPAREA|return existing (updated)|
+2024/03/08 09:05:06:036|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 09:05:06:036|SNAPAREA|return existing (updated)|
+2024/03/08 09:05:06:036|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 09:05:06:037|SNAPAREA|return existing (updated)|
+2024/03/08 09:05:06:037|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 09:05:06:037|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 09:05:06:037|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 09:05:06:037|SNAP|Did reset snap areas 0 0|
+2024/03/08 09:21:26:103|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:22:37:050|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 09:31:31:169|WISNA|Focus doesn't match window pid|
+2024/03/08 09:31:41:716|ASL|performing 366|
+2024/03/08 09:31:41:716|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 09:31:41:716|ASL|performing 21|
+2024/03/08 09:31:41:716|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 09:31:41:734|ASL|already replied 103|
+2024/03/08 09:38:10:418|ASL|performing 366|
+2024/03/08 09:38:10:418|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 09:38:10:418|ASL|performing 21|
+2024/03/08 09:38:10:418|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 09:38:10:425|ASL|already replied 103|
+2024/03/08 09:47:06:632|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 09:49:24:938|ASL|performing 366|
+2024/03/08 09:49:24:938|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 09:49:24:938|ASL|performing 47|
+2024/03/08 09:49:24:938|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 09:49:24:999|ASL|already replied 103|
+2024/03/08 09:49:25:531|ASL|performing 366|
+2024/03/08 09:49:25:531|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 09:49:25:531|ASL|performing 47|
+2024/03/08 09:49:25:531|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 09:49:25:590|ASL|already replied 103|
+2024/03/08 09:49:27:378|ASL|performing 366|
+2024/03/08 09:49:27:378|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 09:49:27:378|ASL|performing 21|
+2024/03/08 09:49:27:378|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 09:49:27:423|ASL|already replied 103|
+2024/03/08 09:49:38:371|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/08 09:58:24:735|ASL|performing 366|
+2024/03/08 09:58:24:735|ASL|triggering action Empty Placeholder - 50495B49-BF11-464F-ADC9-DCB77FE2E77E|
+2024/03/08 09:58:24:735|ASL|performing 21|
+2024/03/08 09:58:24:735|ASL|triggering action Maximize Window - F4B3B705-33EF-4AEC-B518-4E843C3E1B7D|
+2024/03/08 09:58:24:741|ASL|already replied 103|
+2024/03/08 09:59:33:130|SEC|SecureInputActive com.brave.Browser 1433|
+2024/03/08 09:59:36:879|SEC|SecureInputDisabled com.brave.Browser|
+2024/03/08 10:03:15:790|ASL|performing 366|
+2024/03/08 10:03:15:790|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 10:03:15:790|ASL|performing 47|
+2024/03/08 10:03:15:790|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 10:03:16:009|ASL|already replied 103|
+2024/03/08 10:03:18:677|ASL|performing 366|
+2024/03/08 10:03:18:677|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 10:03:18:677|ASL|performing 21|
+2024/03/08 10:03:18:677|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 10:03:18:752|ASL|already replied 103|
+2024/03/08 10:03:22:130|ASL|performing 366|
+2024/03/08 10:03:22:130|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 10:03:22:130|ASL|performing 47|
+2024/03/08 10:03:22:130|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 10:03:22:153|ASL|already replied 103|
+2024/03/08 10:03:22:879|ASL|performing 366|
+2024/03/08 10:03:22:879|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 10:03:22:879|ASL|performing 47|
+2024/03/08 10:03:22:879|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 10:03:22:891|ASL|already replied 103|
+2024/03/08 10:03:23:818|ASL|performing 366|
+2024/03/08 10:03:23:818|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 10:03:23:818|ASL|performing 21|
+2024/03/08 10:03:23:818|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 10:03:23:905|ASL|already replied 103|
+2024/03/08 10:07:08:792|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 10:07:08:793|SNAPAREA|return existing (updated)|
+2024/03/08 10:07:08:793|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 10:07:08:794|SNAPAREA|step2, 0 displays|
+2024/03/08 10:07:08:794|SNAPAREA|step3, 0 displays|
+2024/03/08 10:07:08:794|SNAPAREA|step4, 0 displays|
+2024/03/08 10:07:08:794|SNAPAREA|did not recognize display 1 41041 | {{-2056, -27}, {2056, 1329}} | 4251086178|
+2024/03/08 10:07:08:794|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 10:07:08:795|SNAPAREA|return existing (updated)|
+2024/03/08 10:07:08:796|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 10:07:08:796|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 10:07:08:796|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 10:07:08:796|SNAP|Did reset snap areas 0 0|
+2024/03/08 10:07:11:300|WISNA|Focus doesn't match window pid|
+2024/03/08 10:07:14:746|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 10:07:14:747|SNAPAREA|return existing (updated)|
+2024/03/08 10:07:14:747|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 10:07:14:747|SNAPAREA|return existing (updated)|
+2024/03/08 10:07:14:747|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 10:07:14:748|SNAPAREA|return existing (updated)|
+2024/03/08 10:07:14:748|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 10:07:14:748|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 10:07:14:748|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 10:07:14:748|SNAP|Did reset snap areas 0 0|
+2024/03/08 10:39:34:575|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 10:48:24:076|ASL|performing 366|
+2024/03/08 10:48:24:076|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 10:48:24:076|ASL|performing 47|
+2024/03/08 10:48:24:076|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 10:48:24:155|ASL|already replied 103|
+2024/03/08 10:48:24:789|ASL|performing 366|
+2024/03/08 10:48:24:789|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 10:48:24:789|ASL|performing 47|
+2024/03/08 10:48:24:789|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 10:48:24:815|ASL|already replied 103|
+2024/03/08 10:48:25:769|ASL|performing 366|
+2024/03/08 10:48:25:769|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 10:48:25:769|ASL|performing 21|
+2024/03/08 10:48:25:769|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 10:48:25:805|ASL|already replied 103|
+2024/03/08 10:54:54:726|ASL|disablign app nap|
+2024/03/08 10:54:54:726|ASL|disabling app nap done|
+2024/03/08 10:54:54:729|SLEEP|WILLSLEEP|
+2024/03/08 10:54:54:730|SLEEP|messageType e0000280, arg 071f005e|
+2024/03/08 10:54:54:833|TouchBar|Don't show because sleep|
+2024/03/08 10:54:54:881|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 11:17:15:321|TouchBar|Don't show because sleep|
+2024/03/08 11:17:29:496|TouchBar|Don't show because sleep|
+2024/03/08 12:08:19:286|SLEEP|messageType e0000320, arg 00000000|
+2024/03/08 12:08:19:561|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/08 12:08:21:269|TouchBar|Don't show because sleep|
+2024/03/08 12:08:23:737|SLEEP|messageType e0000300, arg 00000000|
+2024/03/08 12:08:23:737|ASL|disablign app nap|
+2024/03/08 12:08:23:737|ASL|disabling app nap done|
+2024/03/08 12:08:23:737|SLEEP|WOKE VIA IOKIT|
+2024/03/08 12:08:23:737|ASL|toggle after sleep 3|
+2024/03/08 12:08:23:737|xw|disable|
+2024/03/08 12:08:23:743|xw|enable|
+2024/03/08 12:08:23:747|NOTCH|did unhide (null)|
+2024/03/08 12:08:23:747|ASL|unregister d|
+2024/03/08 12:08:23:751|WAKE|EVENTHANDLER RESET|
+2024/03/08 12:08:23:782|M|mt_stop2|
+2024/03/08 12:08:23:784|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 12:08:23:786|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:23:786|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 12:08:23:787|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:23:787|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 12:08:23:787|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:23:787|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 12:08:23:787|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 12:08:23:787|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 12:08:23:787|SNAP|Did reset snap areas 0 0|
+2024/03/08 12:08:23:788|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 4|
+2024/03/08 12:08:23:830|TouchBar|Don't show because sleep|
+2024/03/08 12:08:23:844|M|unregister tb trackpad|
+2024/03/08 12:08:23:845|M|unregister magic trackpad 2|
+2024/03/08 12:08:23:848|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 12:08:23:848|M|register touchbar mbp trackpad|
+2024/03/08 12:08:23:849|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 12:08:23:849|M|register magic trackpad 2|
+2024/03/08 12:08:23:849|STDEV|6f81|
+2024/03/08 12:08:23:888|WAKE|DIDWAKE|
+2024/03/08 12:08:23:888|ASL|disablign app nap|
+2024/03/08 12:08:23:888|ASL|disabling app nap done|
+2024/03/08 12:08:23:897|WAKE|DIDWAKE2|
+2024/03/08 12:08:24:020|WAKE|NO RESTART|
+2024/03/08 12:08:24:020|ASL|toggle after sleep 4|
+2024/03/08 12:08:24:020|xw|disable|
+2024/03/08 12:08:24:040|xw|enable|
+2024/03/08 12:08:24:043|NOTCH|did unhide (null)|
+2024/03/08 12:08:24:043|ASL|unregister d|
+2024/03/08 12:08:24:051|WAKE|EVENTHANDLER RESET|
+2024/03/08 12:08:24:054|M|mt_stop2|
+2024/03/08 12:08:24:054|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 12:08:24:055|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:056|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 12:08:24:057|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:057|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 12:08:24:058|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:058|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 12:08:24:058|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 12:08:24:058|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 12:08:24:058|SNAP|Did reset snap areas 0 0|
+2024/03/08 12:08:24:058|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 5|
+2024/03/08 12:08:24:073|ASL|trigger after login screen 5 - /Applications/Microsoft Outlook.app - com.microsoft.Outlook|
+2024/03/08 12:08:24:073|LOGIN|triggerAfterLoginScreenActions|
+2024/03/08 12:08:24:073|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/08 12:08:24:073|ASL|reset after login screen 5|
+2024/03/08 12:08:24:073|WAKE|EVENTHANDLER RESET|
+2024/03/08 12:08:24:088|M|mt_stop2|
+2024/03/08 12:08:24:088|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 12:08:24:089|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:089|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 12:08:24:090|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:090|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 12:08:24:091|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:091|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 12:08:24:091|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 12:08:24:091|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 12:08:24:091|SNAP|Did reset snap areas 0 0|
+2024/03/08 12:08:24:091|ASL|toggle after sleep 5|
+2024/03/08 12:08:24:091|xw|disable|
+2024/03/08 12:08:24:094|xw|enable|
+2024/03/08 12:08:24:095|NOTCH|did unhide (null)|
+2024/03/08 12:08:24:095|ASL|unregister d|
+2024/03/08 12:08:24:102|WAKE|EVENTHANDLER RESET|
+2024/03/08 12:08:24:104|M|mt_stop2|
+2024/03/08 12:08:24:105|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 12:08:24:106|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:106|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 12:08:24:107|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:107|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 12:08:24:108|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:24:108|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 12:08:24:108|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 12:08:24:108|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 12:08:24:108|SNAP|Did reset snap areas 0 0|
+2024/03/08 12:08:24:108|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 6|
+2024/03/08 12:08:24:113|ASL|performing after wake actions|
+2024/03/08 12:08:28:441|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 12:08:28:441|TB|Force show Touch Bar|
+2024/03/08 12:08:28:471|M|unregister tb trackpad|
+2024/03/08 12:08:28:472|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 12:08:28:472|TB|Force show Touch Bar|
+2024/03/08 12:08:28:473|M|unregister magic trackpad 2|
+2024/03/08 12:08:28:474|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 12:08:28:474|M|register touchbar mbp trackpad|
+2024/03/08 12:08:28:474|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 12:08:28:474|M|register magic trackpad 2|
+2024/03/08 12:08:28:474|STDEV|6f81|
+2024/03/08 12:08:28:476|M|unregister tb trackpad|
+2024/03/08 12:08:28:477|M|unregister magic trackpad 2|
+2024/03/08 12:08:28:480|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 12:08:28:480|M|register touchbar mbp trackpad|
+2024/03/08 12:08:28:480|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 12:08:28:480|M|register magic trackpad 2|
+2024/03/08 12:08:28:480|STDEV|6f81|
+2024/03/08 12:08:28:489|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 12:08:28:489|TB|Force show Touch Bar|
+2024/03/08 12:08:28:490|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 12:08:28:490|TB|Force show Touch Bar|
+2024/03/08 12:08:28:491|M|unregister tb trackpad|
+2024/03/08 12:08:28:492|M|unregister magic trackpad 2|
+2024/03/08 12:08:28:494|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 12:08:28:494|M|register touchbar mbp trackpad|
+2024/03/08 12:08:28:495|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 12:08:28:495|M|register magic trackpad 2|
+2024/03/08 12:08:28:495|STDEV|6f81|
+2024/03/08 12:08:28:513|NOTCH|S3|
+2024/03/08 12:08:28:513|NOTCH|S3|
+2024/03/08 12:08:28:513|NOTCH|S3|
+2024/03/08 12:08:28:590|ASL|trigger after login screen 6 - /Applications/Cisco/Cisco Secure Client.app - com.cisco.anyconnect.gui|
+2024/03/08 12:08:28:590|LOGIN|triggerAfterLoginScreenActions|
+2024/03/08 12:08:28:590|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/08 12:08:28:590|ASL|reset after login screen 6|
+2024/03/08 12:08:28:590|WAKE|EVENTHANDLER RESET|
+2024/03/08 12:08:28:593|M|mt_stop2|
+2024/03/08 12:08:28:593|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 12:08:28:593|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:28:594|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 12:08:28:594|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:28:594|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 12:08:28:594|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:28:594|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 12:08:28:594|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 12:08:28:594|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 12:08:28:594|SNAP|Did reset snap areas 0 0|
+2024/03/08 12:08:28:594|ASL|toggle after sleep 6|
+2024/03/08 12:08:28:594|xw|disable|
+2024/03/08 12:08:28:595|xw|enable|
+2024/03/08 12:08:28:599|NOTCH|did unhide (null)|
+2024/03/08 12:08:28:599|ASL|unregister d|
+2024/03/08 12:08:28:602|WAKE|EVENTHANDLER RESET|
+2024/03/08 12:08:28:604|M|mt_stop2|
+2024/03/08 12:08:28:604|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 12:08:28:604|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:28:604|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 12:08:28:605|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:28:605|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 12:08:28:605|SNAPAREA|return existing (updated)|
+2024/03/08 12:08:28:605|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 12:08:28:605|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 12:08:28:605|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 12:08:28:605|SNAP|Did reset snap areas 0 0|
+2024/03/08 12:08:28:605|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 7|
+2024/03/08 12:08:28:608|ASL| wasn't sleeping|
+2024/03/08 12:08:28:611|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 12:08:28:611|TB|Force show Touch Bar|
+2024/03/08 12:08:28:616|M|unregister tb trackpad|
+2024/03/08 12:08:28:617|M|unregister magic trackpad 2|
+2024/03/08 12:08:28:618|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 12:08:28:618|M|register touchbar mbp trackpad|
+2024/03/08 12:08:28:619|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 12:08:28:619|M|register magic trackpad 2|
+2024/03/08 12:08:28:619|STDEV|6f81|
+2024/03/08 12:08:28:632|M|unregister tb trackpad|
+2024/03/08 12:08:28:634|M|unregister magic trackpad 2|
+2024/03/08 12:08:28:638|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 12:08:28:638|M|register touchbar mbp trackpad|
+2024/03/08 12:08:28:638|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 12:08:28:638|M|register magic trackpad 2|
+2024/03/08 12:08:28:639|STDEV|6f81|
+2024/03/08 12:08:28:814|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 12:08:28:814|TB|Force show Touch Bar|
+2024/03/08 12:08:28:918|short|eventtap success|
+2024/03/08 12:08:29:102|NOTCH|S3|
+2024/03/08 12:08:29:835|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 12:08:45:362|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/08 12:40:27:018|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 12:51:07:700|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/08 12:51:56:793|SWI|PID MISMATCH FIX|
+2024/03/08 12:54:37:567|ASL|performing 366|
+2024/03/08 12:54:37:568|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 12:54:37:568|ASL|performing 21|
+2024/03/08 12:54:37:568|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 12:54:37:588|ASL|already replied 103|
+2024/03/08 12:56:59:531|ASL|performing 366|
+2024/03/08 12:56:59:531|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 12:56:59:531|ASL|performing 47|
+2024/03/08 12:56:59:531|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 12:56:59:567|ASL|already replied 103|
+2024/03/08 12:57:00:283|ASL|performing 366|
+2024/03/08 12:57:00:283|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 12:57:00:283|ASL|performing 47|
+2024/03/08 12:57:00:283|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 12:57:00:313|ASL|already replied 103|
+2024/03/08 12:57:01:062|ASL|performing 366|
+2024/03/08 12:57:01:062|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 12:57:01:062|ASL|performing 21|
+2024/03/08 12:57:01:062|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 12:57:01:082|ASL|already replied 103|
+2024/03/08 12:58:27:295|xw|shell script contains error and crashes BTT|
+2024/03/08 12:58:27:352|xw|interrupt reply|
+2024/03/08 13:18:05:892|WISNA|Focus doesn't match window pid|
+2024/03/08 13:18:12:466|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 13:18:24:716|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 13:28:14:663|SEC|SecureInputActive com.brave.Browser 1433|
+2024/03/08 13:28:16:909|SEC|SecureInputDisabled com.brave.Browser|
+2024/03/08 13:29:30:985|ASL|performing 366|
+2024/03/08 13:29:30:985|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 13:29:30:985|ASL|performing 47|
+2024/03/08 13:29:30:985|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 13:29:31:019|ASL|already replied 103|
+2024/03/08 13:29:31:784|ASL|performing 366|
+2024/03/08 13:29:31:784|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 13:29:31:784|ASL|performing 21|
+2024/03/08 13:29:31:784|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 13:29:31:811|ASL|already replied 103|
+2024/03/08 13:33:48:014|ASL|performing 366|
+2024/03/08 13:33:48:014|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 13:33:48:014|ASL|performing 47|
+2024/03/08 13:33:48:014|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 13:33:48:114|ASL|already replied 103|
+2024/03/08 13:33:48:693|ASL|performing 366|
+2024/03/08 13:33:48:693|ASL|triggering action Empty Placeholder - DEFC9288-D21C-4B0C-B94C-369D736CD2C0|
+2024/03/08 13:33:48:693|ASL|performing 47|
+2024/03/08 13:33:48:693|ASL|triggering action Move Window to Next Monitor - B63A519A-8141-4992-AA26-9240AE2E83F5|
+2024/03/08 13:33:48:774|ASL|already replied 103|
+2024/03/08 13:33:49:761|ASL|performing 366|
+2024/03/08 13:33:49:761|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 13:33:49:761|ASL|performing 21|
+2024/03/08 13:33:49:761|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 13:33:49:832|ASL|already replied 103|
+2024/03/08 13:34:23:533|xw|shell script contains error and crashes BTT|
+2024/03/08 13:34:23:554|xw|interrupt reply|
+2024/03/08 13:58:07:513|SLEEP|messageType e0000270, arg 074b0055|
+2024/03/08 13:58:07:798|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 13:58:07:806|ASL|disablign app nap|
+2024/03/08 13:58:07:806|ASL|disabling app nap done|
+2024/03/08 13:58:07:806|SLEEP|WILLSLEEP|
+2024/03/08 13:58:07:807|SLEEP|messageType e0000280, arg 074c0054|
+2024/03/08 14:12:37:443|SLEEP|messageType e0000320, arg 00000000|
+2024/03/08 14:12:38:752|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:38:772|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:38:772|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:38:773|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:38:773|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:38:773|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:38:773|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:38:776|TouchBar|Don't show because sleep|
+2024/03/08 14:12:38:896|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/08 14:12:39:081|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:39:082|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:39:082|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:39:082|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:39:082|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:39:082|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:39:082|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:39:524|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:39:524|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:39:524|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:39:524|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:39:524|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:39:525|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:39:525|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:39:525|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:39:525|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:39:525|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:42:315|TouchBar|Don't show because sleep|
+2024/03/08 14:12:45:361|SLEEP|messageType e0000300, arg 00000000|
+2024/03/08 14:12:45:361|ASL|disablign app nap|
+2024/03/08 14:12:45:361|ASL|disabling app nap done|
+2024/03/08 14:12:45:361|SLEEP|WOKE VIA IOKIT|
+2024/03/08 14:12:45:361|ASL|toggle after sleep 7|
+2024/03/08 14:12:45:362|xw|disable|
+2024/03/08 14:12:45:365|xw|enable|
+2024/03/08 14:12:45:370|NOTCH|did unhide (null)|
+2024/03/08 14:12:45:370|ASL|unregister d|
+2024/03/08 14:12:45:373|WAKE|EVENTHANDLER RESET|
+2024/03/08 14:12:45:379|M|mt_stop2|
+2024/03/08 14:12:45:380|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:45:381|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:381|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:45:381|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:381|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:45:382|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:382|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:45:382|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:45:382|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:45:382|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:45:382|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 8|
+2024/03/08 14:12:45:423|TouchBar|Don't show because sleep|
+2024/03/08 14:12:45:430|M|unregister tb trackpad|
+2024/03/08 14:12:45:432|M|unregister magic trackpad 2|
+2024/03/08 14:12:45:433|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 14:12:45:433|M|register touchbar mbp trackpad|
+2024/03/08 14:12:45:434|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 14:12:45:434|M|register magic trackpad 2|
+2024/03/08 14:12:45:434|STDEV|6f81|
+2024/03/08 14:12:45:482|WAKE|DIDWAKE|
+2024/03/08 14:12:45:482|ASL|disablign app nap|
+2024/03/08 14:12:45:482|ASL|disabling app nap done|
+2024/03/08 14:12:45:490|WAKE|DIDWAKE2|
+2024/03/08 14:12:45:614|WAKE|NO RESTART|
+2024/03/08 14:12:45:614|ASL|toggle after sleep 8|
+2024/03/08 14:12:45:614|xw|disable|
+2024/03/08 14:12:45:617|xw|enable|
+2024/03/08 14:12:45:618|NOTCH|did unhide (null)|
+2024/03/08 14:12:45:618|ASL|unregister d|
+2024/03/08 14:12:45:625|WAKE|EVENTHANDLER RESET|
+2024/03/08 14:12:45:627|M|mt_stop2|
+2024/03/08 14:12:45:627|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:45:628|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:628|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:45:629|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:629|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:45:630|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:630|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:45:630|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:45:630|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:45:630|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:45:630|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 9|
+2024/03/08 14:12:45:630|ASL|trigger after login screen 9 - /Applications/Microsoft Teams (work or school).app - com.microsoft.teams2|
+2024/03/08 14:12:45:630|LOGIN|triggerAfterLoginScreenActions|
+2024/03/08 14:12:45:630|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/08 14:12:45:630|ASL|reset after login screen 9|
+2024/03/08 14:12:45:631|WAKE|EVENTHANDLER RESET|
+2024/03/08 14:12:45:632|M|mt_stop2|
+2024/03/08 14:12:45:633|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:45:634|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:634|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:45:635|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:635|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:45:635|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:635|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:45:635|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:45:635|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:45:635|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:45:636|ASL|toggle after sleep 9|
+2024/03/08 14:12:45:636|xw|disable|
+2024/03/08 14:12:45:642|xw|enable|
+2024/03/08 14:12:45:643|NOTCH|did unhide (null)|
+2024/03/08 14:12:45:643|ASL|unregister d|
+2024/03/08 14:12:45:649|WAKE|EVENTHANDLER RESET|
+2024/03/08 14:12:45:651|M|mt_stop2|
+2024/03/08 14:12:45:652|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:45:652|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:652|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:45:652|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:652|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:45:653|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:45:653|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:45:653|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:45:653|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:45:653|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:45:653|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 10|
+2024/03/08 14:12:45:656|ASL|performing after wake actions|
+2024/03/08 14:12:51:965|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 14:12:51:965|TB|Force show Touch Bar|
+2024/03/08 14:12:52:020|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 14:12:52:020|TB|Force show Touch Bar|
+2024/03/08 14:12:52:023|M|unregister tb trackpad|
+2024/03/08 14:12:52:025|M|unregister magic trackpad 2|
+2024/03/08 14:12:52:029|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 14:12:52:030|M|register touchbar mbp trackpad|
+2024/03/08 14:12:52:030|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 14:12:52:031|M|register magic trackpad 2|
+2024/03/08 14:12:52:031|STDEV|6f81|
+2024/03/08 14:12:52:033|M|unregister tb trackpad|
+2024/03/08 14:12:52:034|M|unregister magic trackpad 2|
+2024/03/08 14:12:52:042|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 14:12:52:042|M|register touchbar mbp trackpad|
+2024/03/08 14:12:52:042|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 14:12:52:042|M|register magic trackpad 2|
+2024/03/08 14:12:52:043|STDEV|6f81|
+2024/03/08 14:12:52:055|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 14:12:52:055|TB|Force show Touch Bar|
+2024/03/08 14:12:52:056|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 14:12:52:056|TB|Force show Touch Bar|
+2024/03/08 14:12:52:056|M|unregister tb trackpad|
+2024/03/08 14:12:52:058|M|unregister magic trackpad 2|
+2024/03/08 14:12:52:063|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 14:12:52:064|M|register touchbar mbp trackpad|
+2024/03/08 14:12:52:064|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 14:12:52:064|M|register magic trackpad 2|
+2024/03/08 14:12:52:065|STDEV|6f81|
+2024/03/08 14:12:52:113|NOTCH|S3|
+2024/03/08 14:12:52:113|NOTCH|S3|
+2024/03/08 14:12:52:113|NOTCH|S3|
+2024/03/08 14:12:52:145|ASL|trigger after login screen 10 - /Applications/Microsoft Teams (work or school).app - com.microsoft.teams2|
+2024/03/08 14:12:52:145|LOGIN|triggerAfterLoginScreenActions|
+2024/03/08 14:12:52:145|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/08 14:12:52:145|ASL|reset after login screen 10|
+2024/03/08 14:12:52:145|WAKE|EVENTHANDLER RESET|
+2024/03/08 14:12:52:153|M|mt_stop2|
+2024/03/08 14:12:52:153|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:52:154|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:52:154|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:52:155|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:52:155|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:52:155|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:52:155|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:52:155|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:52:155|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:52:155|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:52:155|ASL|toggle after sleep 10|
+2024/03/08 14:12:52:156|xw|disable|
+2024/03/08 14:12:52:158|xw|enable|
+2024/03/08 14:12:52:159|NOTCH|did unhide (null)|
+2024/03/08 14:12:52:160|ASL|unregister d|
+2024/03/08 14:12:52:164|WAKE|EVENTHANDLER RESET|
+2024/03/08 14:12:52:166|M|mt_stop2|
+2024/03/08 14:12:52:167|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 14:12:52:167|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:52:167|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 14:12:52:168|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:52:168|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 14:12:52:168|SNAPAREA|return existing (updated)|
+2024/03/08 14:12:52:168|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 14:12:52:168|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 14:12:52:168|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 14:12:52:168|SNAP|Did reset snap areas 0 0|
+2024/03/08 14:12:52:168|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 11|
+2024/03/08 14:12:52:174|ASL| wasn't sleeping|
+2024/03/08 14:12:52:174|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 14:12:52:174|TB|Force show Touch Bar|
+2024/03/08 14:12:52:176|M|unregister tb trackpad|
+2024/03/08 14:12:52:177|M|unregister magic trackpad 2|
+2024/03/08 14:12:52:185|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 14:12:52:185|M|register touchbar mbp trackpad|
+2024/03/08 14:12:52:185|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 14:12:52:187|M|register magic trackpad 2|
+2024/03/08 14:12:52:189|STDEV|6f81|
+2024/03/08 14:12:52:207|M|unregister tb trackpad|
+2024/03/08 14:12:52:209|M|unregister magic trackpad 2|
+2024/03/08 14:12:52:217|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 14:12:52:219|M|register touchbar mbp trackpad|
+2024/03/08 14:12:52:219|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 14:12:52:220|M|register magic trackpad 2|
+2024/03/08 14:12:52:220|STDEV|6f81|
+2024/03/08 14:12:52:369|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 14:12:52:369|TB|Force show Touch Bar|
+2024/03/08 14:12:52:518|short|eventtap success|
+2024/03/08 14:12:52:669|NOTCH|S3|
+2024/03/08 14:12:53:523|xw|mouseclick lost, sending left mouse up event|
+2024/03/08 14:16:02:208|SLEEP|messageType e0000280, arg 07650054|
+2024/03/08 14:16:02:220|ASL|disablign app nap|
+2024/03/08 14:16:02:220|ASL|disabling app nap done|
+2024/03/08 14:16:02:221|SLEEP|WILLSLEEP|
+2024/03/08 14:16:02:421|TouchBar|Don't show because sleep|
+2024/03/08 14:16:02:438|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 15:15:19:909|SLEEP|messageType e0000320, arg 00000000|
+2024/03/08 15:15:19:934|SLEEP|messageType e0000300, arg 00000000|
+2024/03/08 15:15:19:934|ASL|disablign app nap|
+2024/03/08 15:15:19:934|ASL|disabling app nap done|
+2024/03/08 15:15:19:934|SLEEP|WOKE VIA IOKIT|
+2024/03/08 15:15:19:934|ASL|toggle after sleep 11|
+2024/03/08 15:15:19:934|xw|disable|
+2024/03/08 15:15:20:733|xw|enable|
+2024/03/08 15:15:20:742|NOTCH|did unhide (null)|
+2024/03/08 15:15:20:742|ASL|unregister d|
+2024/03/08 15:15:20:749|WAKE|EVENTHANDLER RESET|
+2024/03/08 15:15:20:751|M|mt_stop2|
+2024/03/08 15:15:20:752|SNAP|Did reset snap areas 0 0|
+2024/03/08 15:15:20:752|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 12|
+2024/03/08 15:15:20:791|TouchBar|Don't show because sleep|
+2024/03/08 15:15:20:794|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/08 15:15:20:803|M|unregister tb trackpad|
+2024/03/08 15:15:20:804|M|unregister magic trackpad 2|
+2024/03/08 15:15:20:807|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 15:15:20:808|M|register touchbar mbp trackpad|
+2024/03/08 15:15:20:808|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 15:15:20:809|M|register magic trackpad 2|
+2024/03/08 15:15:20:809|STDEV|6f81|
+2024/03/08 15:15:20:852|WAKE|DIDWAKE|
+2024/03/08 15:15:20:852|ASL|disablign app nap|
+2024/03/08 15:15:20:852|ASL|disabling app nap done|
+2024/03/08 15:15:20:857|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 15:15:20:859|WAKE|DIDWAKE2|
+2024/03/08 15:15:20:860|WAKE|NO RESTART|
+2024/03/08 15:15:20:860|ASL|toggle after sleep 12|
+2024/03/08 15:15:20:860|xw|disable|
+2024/03/08 15:15:20:863|xw|enable|
+2024/03/08 15:15:20:864|NOTCH|did unhide (null)|
+2024/03/08 15:15:20:864|ASL|unregister d|
+2024/03/08 15:15:20:867|WAKE|EVENTHANDLER RESET|
+2024/03/08 15:15:20:869|M|mt_stop2|
+2024/03/08 15:15:20:869|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 15:15:20:870|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:20:870|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 15:15:20:870|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:20:870|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 15:15:20:870|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:20:870|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 15:15:20:870|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 15:15:20:870|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 15:15:20:870|SNAP|Did reset snap areas 0 0|
+2024/03/08 15:15:20:870|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 13|
+2024/03/08 15:15:25:782|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/08 15:15:25:974|M|unregister tb trackpad|
+2024/03/08 15:15:25:975|M|unregister magic trackpad 2|
+2024/03/08 15:15:25:978|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 15:15:25:979|M|register touchbar mbp trackpad|
+2024/03/08 15:15:25:979|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 15:15:25:979|M|register magic trackpad 2|
+2024/03/08 15:15:25:980|STDEV|6f81|
+2024/03/08 15:15:25:990|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 15:15:25:990|TB|Force show Touch Bar|
+2024/03/08 15:15:25:990|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 15:15:25:990|TB|Force show Touch Bar|
+2024/03/08 15:15:26:089|NOTCH|S3|
+2024/03/08 15:15:26:089|NOTCH|S3|
+2024/03/08 15:15:26:092|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 15:15:26:101|ASL|trigger after login screen 13 - /Applications/Cisco/Cisco Secure Client.app - com.cisco.anyconnect.gui|
+2024/03/08 15:15:26:101|LOGIN|triggerAfterLoginScreenActions|
+2024/03/08 15:15:26:101|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/08 15:15:26:101|ASL|reset after login screen 13|
+2024/03/08 15:15:26:101|WAKE|EVENTHANDLER RESET|
+2024/03/08 15:15:26:106|M|mt_stop2|
+2024/03/08 15:15:26:106|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 15:15:26:107|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:26:107|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 15:15:26:108|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:26:108|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 15:15:26:108|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:26:108|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 15:15:26:108|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 15:15:26:108|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 15:15:26:108|SNAP|Did reset snap areas 0 0|
+2024/03/08 15:15:26:108|ASL|toggle after sleep 13|
+2024/03/08 15:15:26:108|xw|disable|
+2024/03/08 15:15:26:113|xw|enable|
+2024/03/08 15:15:26:117|NOTCH|did unhide (null)|
+2024/03/08 15:15:26:117|ASL|unregister d|
+2024/03/08 15:15:26:120|WAKE|EVENTHANDLER RESET|
+2024/03/08 15:15:26:123|M|mt_stop2|
+2024/03/08 15:15:26:123|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 15:15:26:124|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:26:124|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 15:15:26:125|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:26:125|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 15:15:26:125|SNAPAREA|return existing (updated)|
+2024/03/08 15:15:26:125|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 15:15:26:125|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 15:15:26:125|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 15:15:26:125|SNAP|Did reset snap areas 0 0|
+2024/03/08 15:15:26:125|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 14|
+2024/03/08 15:15:26:130|ASL|performing after wake actions|
+2024/03/08 15:15:26:130|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 15:15:26:130|TB|Force show Touch Bar|
+2024/03/08 15:15:26:132|M|unregister tb trackpad|
+2024/03/08 15:15:26:133|M|unregister magic trackpad 2|
+2024/03/08 15:15:26:135|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 15:15:26:135|M|register touchbar mbp trackpad|
+2024/03/08 15:15:26:135|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 15:15:26:136|M|register magic trackpad 2|
+2024/03/08 15:15:26:136|STDEV|6f81|
+2024/03/08 15:15:26:163|M|unregister tb trackpad|
+2024/03/08 15:15:26:166|M|unregister magic trackpad 2|
+2024/03/08 15:15:26:170|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 15:15:26:171|M|register touchbar mbp trackpad|
+2024/03/08 15:15:26:171|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 15:15:26:171|M|register magic trackpad 2|
+2024/03/08 15:15:26:171|STDEV|6f81|
+2024/03/08 15:15:26:328|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/08 15:15:26:328|TB|Force show Touch Bar|
+2024/03/08 15:15:26:620|NOTCH|S3|
+2024/03/08 15:19:46:900|ASL|performing 366|
+2024/03/08 15:19:46:901|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/03/08 15:19:46:901|ASL|performing 21|
+2024/03/08 15:19:46:901|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/03/08 15:19:46:955|ASL|already replied 103|
+2024/03/08 15:19:51:474|LIC|ADD REGISTER MENU ITEM|
+2024/03/08 15:19:51:482|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 15:19:51:483|xw|adapting icon state global 0 perApp 0 clip 0|
+2024/03/08 15:19:54:902|PREFS|showing prefs <NSMenuItem: 0x600000cf2610 Configuration>|
+2024/03/08 15:19:55:000|ASL|prepare <NSStoryboardSegue:0x600002b95380 identifier='(null)', source='<BTTMainUIStructureVC: 0x600001cff330>', destination='<BTTAppListVC: 0x6000018f5b30>'>|
+2024/03/08 15:19:55:004|ASL|view did load BTTAppListVC|
+2024/03/08 15:19:55:008|ASL|prepare <NSStoryboardSegue:0x600002b99c50 identifier='EmbedTopMenuVC', source='<BTTMainUIStructureVC: 0x600001cff330>', destination='<BTTTopMenuVC: 0x1183123e0>'>|
+2024/03/08 15:19:55:018|ASL|view did load BTTTopMenuVC|
+2024/03/08 15:19:55:036|ASL|window did load BTTRootPreferencesWC|
+2024/03/08 15:19:55:036|ASL|did set <BTTMainUIStructureVC: 0x600001cff330> BTTMainUIStructureVC|
+2024/03/08 15:19:55:036|ASL|did set <BTTLevel1VC: 0x6000018b11d0> BTTLevel1VC|
+2024/03/08 15:19:55:036|ASL|did set <BTTMainSplitViewController: 0x600001cc28a0> BTTMainSplitViewController|
+2024/03/08 15:19:55:036|ASL|did set <BTTConfigurationVC: 0x15be44a40> BTTConfigurationVC|
+2024/03/08 15:19:55:036|ASL|did set <BTTLevel3VC: 0x600001ba3800> BTTLevel3VC|
+2024/03/08 15:19:55:036|ASL|did set <BTTConfigurationVC: 0x10de47110> BTTConfigurationVC|
+2024/03/08 15:19:55:036|ASL|did set <BTTOutlineModeVC: 0x6000018a4780> BTTOutlineModeVC|
+2024/03/08 15:19:55:036|ASL|did set <BTTTopMenuVC: 0x1183123e0> BTTTopMenuVC|
+2024/03/08 15:19:55:045|LIC|ADD REGISTER MENU ITEM|
+2024/03/08 15:19:55:047|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 15:19:55:158|LIC|ADD REGISTER MENU ITEM|
+2024/03/08 15:19:55:160|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 15:19:55:192|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/08 15:19:55:208|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/08 15:19:55:283|LIC|ADD REGISTER MENU ITEM|
+2024/03/08 15:19:55:286|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 15:19:55:317|ASL|did load level 3|
+2024/03/08 15:19:55:358|FORM|2UUID C96DF329-5BEA-4B8A-9A00-D30B62EE9FBB == (null) editing 0 == 0|
+2024/03/08 15:19:55:496|NEWUI|Loading Config Debounced|
+2024/03/08 15:19:55:496|FORM|1UUID C96DF329-5BEA-4B8A-9A00-D30B62EE9FBB == C96DF329-5BEA-4B8A-9A00-D30B62EE9FBB editing 0 == 0|
+2024/03/08 15:19:55:704|FORM|2UUID C96DF329-5BEA-4B8A-9A00-D30B62EE9FBB == C96DF329-5BEA-4B8A-9A00-D30B62EE9FBB editing 0 == 0|
+2024/03/08 15:19:56:865|FORM|2UUID 3676B442-3F88-4F12-A1BD-1E5BE4416261 == C96DF329-5BEA-4B8A-9A00-D30B62EE9FBB editing 0 == 0|
+2024/03/08 15:19:56:942|NEWUI|Loading Config Debounced|
+2024/03/08 15:19:56:942|FORM|1UUID 3676B442-3F88-4F12-A1BD-1E5BE4416261 == 3676B442-3F88-4F12-A1BD-1E5BE4416261 editing 0 == 0|
+2024/03/08 15:19:58:031|ASL|enable shortcut fetch|
+2024/03/08 15:19:58:031|SHORTCUT|SHORTCUT FETCH ENABLED|
+2024/03/08 15:19:58:042|SHORTCUT|SHORTCUT FETCH ENABLED|
+2024/03/08 15:19:59:503|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/08 15:19:59:711|SHORTCUT|SHORTCUT FETCH DISABLE 2|
+2024/03/08 15:19:59:711|SHORTCUT|SHORTCUT FETCH DISABLE 3|
+2024/03/08 15:20:00:653|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/08 15:20:00:674|SHORTCUT|SHORTCUT FETCH DISABLE 1|
+2024/03/08 15:20:00:862|SHORTCUT|SHORTCUT FETCH DISABLE 2|
+2024/03/08 15:20:00:880|SHORTCUT|SHORTCUT FETCH DISABLE 2|
+2024/03/08 15:30:02:925|SEC|SecureInputActive com.brave.Browser 1433|
+2024/03/08 15:30:05:892|SEC|SecureInputDisabled com.brave.Browser|
