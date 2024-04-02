@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>5732415C-A97A-4554-8C5F-E7EAEDEADC2E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D8994EB-62A2-4AA9-8568-F469C8D820A9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5EAFB4F3-1106-4DA4-846D-7DCC1F8445E9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EFA86157-8E50-4C5E-AE69-2BBFDE4C831D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>895714EA-9F30-4EE4-B1B5-ED2E38177394</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>925807C0-D866-454D-9F0A-041BF009E2FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E60AFE55-5DBB-4FD0-96EF-B1F3C8337342</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B49F6A88-0BF0-47CB-B638-ED11209E05F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>925807C0-D866-454D-9F0A-041BF009E2FB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BADD6089-80BA-4196-86A0-A28DE1B2CF31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4FB77BE5-4EF1-4BCB-80DE-8FC7CFA47CE7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B49F6A88-0BF0-47CB-B638-ED11209E05F4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5EAFB4F3-1106-4DA4-846D-7DCC1F8445E9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BADD6089-80BA-4196-86A0-A28DE1B2CF31</key>
+		<array/>
+		<key>E60AFE55-5DBB-4FD0-96EF-B1F3C8337342</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5732415C-A97A-4554-8C5F-E7EAEDEADC2E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Kmonad</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/zsh 
+
+
+
+output=$(ps aux | grep ./kmonad_bin | grep -v "grep" | awk '{print $2}')
+
+IFS=' ' read -r pid_list &lt;&lt;&lt; "$output"
+
+for pid in "${pid_list[@]}"; do
+    cat ~/.sudo_pass | sudo -S kill $pid
+done
+
+
+cd ~/.projects_root/keyboard_utilities/layouts/kmonad
+cat ~/.sudo_pass | sudo -S ./kmonad_bin -l debug internal_mac.kbd
+
+exit 0</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BADD6089-80BA-4196-86A0-A28DE1B2CF31</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>restart</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>925807C0-D866-454D-9F0A-041BF009E2FB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"start","arg":"restart","subtitle":"[Re]start Kmonad"},{"title":"stop","arg":"stop","subtitle":"Stop Kmonad"},{"title":"restart","arg":"restart","subtitle":"[Re]start Kmonad"},{"title":"disable internal","arg":"disable","subtitle":"Disable Mac Keyboard"}]</string>
+				<key>keyword</key>
+				<string>km</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>895714EA-9F30-4EE4-B1B5-ED2E38177394</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Started Kmonad (Internal)</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>4FB77BE5-4EF1-4BCB-80DE-8FC7CFA47CE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+output=$(ps aux | grep ./kmonad_bin | grep -v "grep" | awk '{print $2}')
+
+IFS=' ' read -r pid_list &lt;&lt;&lt; "$output"
+
+for pid in "${pid_list[@]}"; do
+    cat ~/.sudo_pass | sudo -S kill $pid
+    sleep 1
+done</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5732415C-A97A-4554-8C5F-E7EAEDEADC2E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Stopped Kmonad (Internal)</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>4D8994EB-62A2-4AA9-8568-F469C8D820A9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>stop</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>E60AFE55-5DBB-4FD0-96EF-B1F3C8337342</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Stopped Kmonad (Internal)</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>EFA86157-8E50-4C5E-AE69-2BBFDE4C831D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/zsh 
+
+
+
+output=$(ps aux | grep ./kmonad_bin | grep -v "grep" | awk '{print $2}')
+
+IFS=' ' read -r pid_list &lt;&lt;&lt; "$output"
+
+for pid in "${pid_list[@]}"; do
+    cat ~/.sudo_pass | sudo -S kill $pid
+done
+
+
+cd ~/.projects_root/keyboard_utilities/layouts/kmonad
+cat ~/.sudo_pass | sudo -S ./kmonad_bin -l debug internal_mac_disable.kbd
+
+exit 0</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5EAFB4F3-1106-4DA4-846D-7DCC1F8445E9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>disable</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>B49F6A88-0BF0-47CB-B638-ED11209E05F4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>4D8994EB-62A2-4AA9-8568-F469C8D820A9</key>
+		<dict>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>4FB77BE5-4EF1-4BCB-80DE-8FC7CFA47CE7</key>
+		<dict>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>205</real>
+		</dict>
+		<key>5732415C-A97A-4554-8C5F-E7EAEDEADC2E</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>5EAFB4F3-1106-4DA4-846D-7DCC1F8445E9</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>530</real>
+		</dict>
+		<key>895714EA-9F30-4EE4-B1B5-ED2E38177394</key>
+		<dict>
+			<key>xpos</key>
+			<real>105</real>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>925807C0-D866-454D-9F0A-041BF009E2FB</key>
+		<dict>
+			<key>note</key>
+			<string>Restart Kmonad</string>
+			<key>xpos</key>
+			<real>375</real>
+			<key>ypos</key>
+			<real>110</real>
+		</dict>
+		<key>B49F6A88-0BF0-47CB-B638-ED11209E05F4</key>
+		<dict>
+			<key>note</key>
+			<string>Run the disable keymap</string>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>560</real>
+		</dict>
+		<key>BADD6089-80BA-4196-86A0-A28DE1B2CF31</key>
+		<dict>
+			<key>xpos</key>
+			<real>550</real>
+			<key>ypos</key>
+			<real>35</real>
+		</dict>
+		<key>E60AFE55-5DBB-4FD0-96EF-B1F3C8337342</key>
+		<dict>
+			<key>note</key>
+			<string>Stop Kmonad</string>
+			<key>xpos</key>
+			<real>370</real>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>EFA86157-8E50-4C5E-AE69-2BBFDE4C831D</key>
+		<dict>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>530</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
