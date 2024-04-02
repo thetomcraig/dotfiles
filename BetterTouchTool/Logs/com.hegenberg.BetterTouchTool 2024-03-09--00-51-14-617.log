@@ -1,0 +1,523 @@
+2024/03/08 16:51:14:616|ASL|DDLogFileInfo: setxattr(lumberjack.log.archived, /Users/tomcraig/Library/Application Support/BetterTouchTool/Logs/com.hegenberg.BetterTouchTool 2024-03-08--23-42-39-046.log): error = No such file or directory|
+2024/03/08 16:53:50:758|SYS|Running on macOS: 14.4.0|
+2024/03/08 16:53:50:758|SYS|BTT Version: 4.431|
+2024/03/08 16:53:50:758|SYS|Device: Mac15,11|
+2024/03/08 16:53:50:786|usage|loading todays usage|
+2024/03/08 16:53:50:787|ASL|0 elapsed 0.045586|
+2024/03/08 16:53:50:787|LAUNCH|DIDLaunch START NSConcreteNotification 0x6000000900e0 {name = NSApplicationDidFinishLaunchingNotification; object = <BTTApplication: 0x111a05690>; userInfo = {
+    NSApplicationLaunchIsDefaultLaunchKey = 1;
+}}|
+2024/03/08 16:53:50:800|ASL|1 elapsed 0.059018|
+2024/03/08 16:53:50:800|ASL|2 elapsed 0.059044|
+2024/03/08 16:53:50:800|ASL|3 elapsed 0.059155|
+2024/03/08 16:53:50:800|ASL|4 elapsed 0.059210|
+2024/03/08 16:53:50:803|ASL|5 elapsed 0.062126|
+2024/03/08 16:53:50:803|ASL|6 elapsed 0.062190|
+2024/03/08 16:53:50:803|INIT|START PREVIOUSLYININIT|
+2024/03/08 16:53:50:803|ASL|sub 0 elapsed 0.000000 - prev|
+2024/03/08 16:53:50:811|ASL|sub 1 elapsed 0.008138 - prev|
+2024/03/08 16:53:50:812|ASL|sub 2 elapsed 0.008447 - prev|
+2024/03/08 16:53:50:812|ASL|sub 3 elapsed 0.008615 - prev|
+2024/03/08 16:53:50:818|ASL|sub 4 elapsed 0.014827 - prevk|
+2024/03/08 16:53:50:818|short|init|
+2024/03/08 16:53:50:818|ASL|Hyper key used 0|
+2024/03/08 16:53:50:980|STORE|The store already exists in udefs|
+2024/03/08 16:53:50:980|xw|the new store already exists btt_data_store.version_4_431_build_44310|
+2024/03/08 16:53:50:992|migrate|fixing uuids2|
+2024/03/08 16:53:50:995|LIC|idate 2024-03-07 22:53:36 +0000|
+2024/03/08 16:53:50:997|ASL|sub 5 elapsed 0.194120 - prevke|
+2024/03/08 16:53:50:997|INIT|FINISH PREVIOUSLYININIT|
+2024/03/08 16:53:50:997|ASL|7 elapsed 0.256355|
+2024/03/08 16:53:50:998|LIC|closing previous instance of BetterTouchTool relaunch|
+2024/03/08 16:53:50:998|ASL|8 elapsed 0.257035|
+2024/03/08 16:53:51:001|ASL|9 elapsed 0.260342|
+2024/03/08 16:53:51:001|ASL|10 elapsed 0.260391|
+2024/03/08 16:53:51:002|ASL|11 elapsed 0.261438|
+2024/03/08 16:53:51:005|LIC|license appears to be valid|
+2024/03/08 16:53:51:006|LIC|license dictionary {
+    CheckoutName = "Tom Craig";
+    Email = "thetomcraig@icloud.com";
+    LicenseType = paddle;
+    Licenses = 1;
+    Name = "Tom Craig";
+    OrderID = d02047264731f927f5ed973ba226a5b6;
+    Product = BetterTouchTool;
+    Signature = {length = 128, bytes = 0x86b1d688 2dcec870 a2ec81cc 8baaa981 ... 3ae16d65 c67d77f5 };
+    Timestamp = 1707327738;
+    TransactionID = "252801297-chre7aec9a464d2-5a9a04c903";
+}|
+2024/03/08 16:53:51:006|LIC|systemdate 2024-02-07 17:42:18 +0000|
+2024/03/08 16:53:51:006|LIC|using date 1707327738|
+2024/03/08 16:53:51:006|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:53:51:006|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:53:51:007|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:53:51:007|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:53:51:007|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:53:51:007|LIC|License is valid for this version|
+2024/03/08 16:53:51:009|ASL|12 elapsed 0.268171|
+2024/03/08 16:53:51:009|ASL|disablign app nap|
+2024/03/08 16:53:51:009|ASL|disabling app nap done|
+2024/03/08 16:53:51:009|ASL|13 elapsed 0.268208|
+2024/03/08 16:53:51:009|ASL|14 elapsed 0.268219|
+2024/03/08 16:53:51:364|ASL|15 elapsed 0.623382|
+2024/03/08 16:53:51:382|ASL|16 elapsed 0.640776|
+2024/03/08 16:53:51:382|ASL|17 elapsed 0.640835|
+2024/03/08 16:53:51:387|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:53:51:387|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:53:51:387|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:53:51:387|ASL|18 elapsed 0.646194|
+2024/03/08 16:53:51:387|ASL|19 elapsed 0.646231|
+2024/03/08 16:53:51:388|ASL|20 elapsed 0.647211|
+2024/03/08 16:53:51:388|ASL|21 elapsed 0.647298|
+2024/03/08 16:53:51:388|ASL|22 elapsed 0.647315|
+2024/03/08 16:53:51:389|ASL|23 elapsed 0.648030|
+2024/03/08 16:53:51:389|ASL|24 elapsed 0.648070|
+2024/03/08 16:53:51:389|ASL|25 elapsed 0.648104|
+2024/03/08 16:53:51:389|ASL|26 elapsed 0.648323|
+2024/03/08 16:53:51:454|ASL|27 elapsed 0.713153|
+2024/03/08 16:53:51:457|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:53:51:457|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:53:51:461|ASL|menubar height 24.000000|
+2024/03/08 16:53:51:462|xw|is trusted|
+2024/03/08 16:53:51:509|short|call sharedInstance4|
+2024/03/08 16:53:51:603|TB|touchbar screen size {1085, 30}|
+2024/03/08 16:53:51:604|ASL|28 elapsed 0.863266|
+2024/03/08 16:53:51:604|ASL|29 elapsed 0.863288|
+2024/03/08 16:53:51:604|ASL|30 elapsed 0.863297|
+2024/03/08 16:53:51:604|ASL|31 elapsed 0.863303|
+2024/03/08 16:53:51:606|ASL|32 elapsed 0.864671|
+2024/03/08 16:53:51:607|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:53:51:608|ASL|33 elapsed 0.866950|
+2024/03/08 16:53:51:608|ASL|34 elapsed 0.867304|
+2024/03/08 16:53:51:608|START|TB VISIBLE 0|
+2024/03/08 16:53:51:608|START|TB FORCED HIDDEN 0|
+2024/03/08 16:53:51:608|ASL|35 elapsed 0.867324|
+2024/03/08 16:53:51:613|ASL|36 elapsed 0.871804|
+2024/03/08 16:53:51:614|ASL|37 elapsed 0.873051|
+2024/03/08 16:53:51:614|ASL|38 elapsed 0.873067|
+2024/03/08 16:53:51:614|LAUNCH|DIDLaunch END frontmostApp: com.brave.Browser, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 0, tpRotateUsed 0|
+2024/03/08 16:53:51:614|ASL|39 elapsed 0.873104|
+2024/03/08 16:53:51:614|ASL|40 elapsed 0.873291|
+2024/03/08 16:53:52:167|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:53:52:194|PERM|Can record screen 0|
+2024/03/08 16:53:52:214|SLEEP|FORCESHOWAFTERSLEEP2|
+2024/03/08 16:53:52:214|TB|Force show Touch Bar|
+2024/03/08 16:53:52:215|M|mt_stop10|
+2024/03/08 16:53:52:227|ASL|WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.|
+2024/03/08 16:53:52:395|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:53:52:395|M|register touchbar mbp trackpad|
+2024/03/08 16:53:52:396|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:53:52:396|M|register magic trackpad 2|
+2024/03/08 16:53:52:396|STDEV|6f81|
+2024/03/08 16:53:52:398|SLEEP|FORCESHOWAFTERSLEEP3B|
+2024/03/08 16:53:52:398|TB|Force show Touch Bar|
+2024/03/08 16:53:52:944|M|mt_stop2|
+2024/03/08 16:53:52:946|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 16:53:52:946|short|eventtap success|
+2024/03/08 16:53:52:960|c00|4|
+2024/03/08 16:53:52:961|M|unregister tb trackpad|
+2024/03/08 16:53:52:962|M|unregister magic trackpad 2|
+2024/03/08 16:53:52:963|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:53:52:963|M|register touchbar mbp trackpad|
+2024/03/08 16:53:52:963|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:53:52:964|M|register magic trackpad 2|
+2024/03/08 16:53:52:964|STDEV|6f81|
+2024/03/08 16:53:53:426|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 16:53:53:428|SNAPAREA|return existing (updated)|
+2024/03/08 16:53:53:428|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 16:53:53:429|SNAPAREA|return existing (updated)|
+2024/03/08 16:53:53:429|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 16:53:53:430|SNAPAREA|return existing (updated)|
+2024/03/08 16:53:53:430|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 16:53:53:431|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 16:53:53:431|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 16:53:55:042|M|mt_stop2|
+2024/03/08 16:53:55:044|M|unregister tb trackpad|
+2024/03/08 16:53:55:046|M|unregister magic trackpad 2|
+2024/03/08 16:53:55:048|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:53:55:048|M|register touchbar mbp trackpad|
+2024/03/08 16:53:55:048|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:53:55:049|M|register magic trackpad 2|
+2024/03/08 16:53:55:049|STDEV|6f81|
+2024/03/08 16:53:58:193|M|mt_stop2|
+2024/03/08 16:53:58:196|M|unregister tb trackpad|
+2024/03/08 16:53:58:198|M|unregister magic trackpad 2|
+2024/03/08 16:53:58:202|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:53:58:202|M|register touchbar mbp trackpad|
+2024/03/08 16:53:58:202|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:53:58:202|M|register magic trackpad 2|
+2024/03/08 16:53:58:203|STDEV|6f81|
+2024/03/08 16:54:03:443|M|mt_stop2|
+2024/03/08 16:54:03:445|M|unregister tb trackpad|
+2024/03/08 16:54:03:447|M|unregister magic trackpad 2|
+2024/03/08 16:54:03:450|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:54:03:450|M|register touchbar mbp trackpad|
+2024/03/08 16:54:03:450|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:54:03:451|M|register magic trackpad 2|
+2024/03/08 16:54:03:451|STDEV|6f81|
+2024/03/08 16:54:03:692|c00|4|
+2024/03/08 16:54:23:497|SYS|Running on macOS: 14.4.0|
+2024/03/08 16:54:23:497|SYS|BTT Version: 4.431|
+2024/03/08 16:54:23:497|SYS|Device: Mac15,11|
+2024/03/08 16:54:23:511|usage|loading todays usage|
+2024/03/08 16:54:23:511|ASL|0 elapsed 0.020374|
+2024/03/08 16:54:23:511|LAUNCH|DIDLaunch START NSConcreteNotification 0x600003a8dec0 {name = NSApplicationDidFinishLaunchingNotification; object = <BTTApplication: 0x144f05b80>; userInfo = {
+    NSApplicationLaunchIsDefaultLaunchKey = 1;
+}}|
+2024/03/08 16:54:23:524|ASL|1 elapsed 0.032921|
+2024/03/08 16:54:23:524|ASL|2 elapsed 0.032951|
+2024/03/08 16:54:23:524|ASL|3 elapsed 0.033067|
+2024/03/08 16:54:23:524|ASL|4 elapsed 0.033122|
+2024/03/08 16:54:23:525|ASL|5 elapsed 0.034244|
+2024/03/08 16:54:23:525|ASL|6 elapsed 0.034294|
+2024/03/08 16:54:23:525|INIT|START PREVIOUSLYININIT|
+2024/03/08 16:54:23:525|ASL|sub 0 elapsed 0.000000 - prev|
+2024/03/08 16:54:23:529|ASL|sub 1 elapsed 0.004127 - prev|
+2024/03/08 16:54:23:530|ASL|sub 2 elapsed 0.004469 - prev|
+2024/03/08 16:54:23:530|ASL|sub 3 elapsed 0.004727 - prev|
+2024/03/08 16:54:23:531|ASL|sub 4 elapsed 0.006135 - prevk|
+2024/03/08 16:54:23:531|short|init|
+2024/03/08 16:54:23:531|ASL|Hyper key used 0|
+2024/03/08 16:54:23:680|STORE|The store already exists in udefs|
+2024/03/08 16:54:23:680|xw|the new store already exists btt_data_store.version_4_431_build_44310|
+2024/03/08 16:54:23:686|migrate|fixing uuids2|
+2024/03/08 16:54:23:688|LIC|idate 2024-03-07 22:53:36 +0000|
+2024/03/08 16:54:23:689|ASL|sub 5 elapsed 0.164183 - prevke|
+2024/03/08 16:54:23:689|INIT|FINISH PREVIOUSLYININIT|
+2024/03/08 16:54:23:689|ASL|7 elapsed 0.198521|
+2024/03/08 16:54:23:690|LIC|closing previous instance of BetterTouchTool relaunch|
+2024/03/08 16:54:23:690|ASL|8 elapsed 0.199187|
+2024/03/08 16:54:23:691|ASL|9 elapsed 0.199820|
+2024/03/08 16:54:23:691|ASL|10 elapsed 0.199882|
+2024/03/08 16:54:23:692|ASL|11 elapsed 0.201109|
+2024/03/08 16:54:23:693|LIC|license appears to be valid|
+2024/03/08 16:54:23:694|LIC|license dictionary {
+    CheckoutName = "Tom Craig";
+    Email = "thetomcraig@icloud.com";
+    LicenseType = paddle;
+    Licenses = 1;
+    Name = "Tom Craig";
+    OrderID = d02047264731f927f5ed973ba226a5b6;
+    Product = BetterTouchTool;
+    Signature = {length = 128, bytes = 0x86b1d688 2dcec870 a2ec81cc 8baaa981 ... 3ae16d65 c67d77f5 };
+    Timestamp = 1707327738;
+    TransactionID = "252801297-chre7aec9a464d2-5a9a04c903";
+}|
+2024/03/08 16:54:23:694|LIC|systemdate 2024-02-07 17:42:18 +0000|
+2024/03/08 16:54:23:694|LIC|using date 1707327738|
+2024/03/08 16:54:23:694|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:54:23:694|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:54:23:696|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:54:23:696|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:54:23:696|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:54:23:696|LIC|License is valid for this version|
+2024/03/08 16:54:23:696|ASL|12 elapsed 0.205600|
+2024/03/08 16:54:23:696|ASL|disablign app nap|
+2024/03/08 16:54:23:696|ASL|disabling app nap done|
+2024/03/08 16:54:23:696|ASL|13 elapsed 0.205653|
+2024/03/08 16:54:23:696|ASL|14 elapsed 0.205669|
+2024/03/08 16:54:23:698|ASL|15 elapsed 0.207204|
+2024/03/08 16:54:23:701|ASL|16 elapsed 0.209854|
+2024/03/08 16:54:23:701|ASL|17 elapsed 0.209879|
+2024/03/08 16:54:23:703|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:54:23:703|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:54:23:703|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:54:23:703|ASL|18 elapsed 0.212447|
+2024/03/08 16:54:23:703|ASL|19 elapsed 0.212467|
+2024/03/08 16:54:23:703|ASL|20 elapsed 0.212536|
+2024/03/08 16:54:23:703|ASL|21 elapsed 0.212555|
+2024/03/08 16:54:23:703|ASL|22 elapsed 0.212563|
+2024/03/08 16:54:23:704|ASL|23 elapsed 0.212887|
+2024/03/08 16:54:23:704|ASL|24 elapsed 0.212902|
+2024/03/08 16:54:23:704|ASL|25 elapsed 0.212919|
+2024/03/08 16:54:23:704|ASL|26 elapsed 0.212994|
+2024/03/08 16:54:23:712|ASL|27 elapsed 0.220850|
+2024/03/08 16:54:23:713|lic|newest date 2024-02-07 17:42:18 +0000|
+2024/03/08 16:54:23:713|lic|lict 252801297-chre7aec9a464d2-5a9a04c903|
+2024/03/08 16:54:23:715|ASL|menubar height 24.000000|
+2024/03/08 16:54:23:716|xw|is trusted|
+2024/03/08 16:54:23:742|short|call sharedInstance4|
+2024/03/08 16:54:23:807|TB|touchbar screen size {1085, 30}|
+2024/03/08 16:54:23:808|ASL|28 elapsed 0.317346|
+2024/03/08 16:54:23:808|ASL|29 elapsed 0.317366|
+2024/03/08 16:54:23:808|ASL|30 elapsed 0.317375|
+2024/03/08 16:54:23:808|ASL|31 elapsed 0.317382|
+2024/03/08 16:54:23:809|ASL|32 elapsed 0.317791|
+2024/03/08 16:54:23:811|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:54:23:812|ASL|33 elapsed 0.321104|
+2024/03/08 16:54:23:812|ASL|34 elapsed 0.321485|
+2024/03/08 16:54:23:812|START|TB VISIBLE 0|
+2024/03/08 16:54:23:812|START|TB FORCED HIDDEN 0|
+2024/03/08 16:54:23:812|ASL|35 elapsed 0.321504|
+2024/03/08 16:54:23:816|ASL|36 elapsed 0.325638|
+2024/03/08 16:54:23:818|ASL|37 elapsed 0.326802|
+2024/03/08 16:54:23:818|ASL|38 elapsed 0.326822|
+2024/03/08 16:54:23:818|LAUNCH|DIDLaunch END frontmostApp: com.brave.Browser, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 0, tpRotateUsed 0|
+2024/03/08 16:54:23:818|ASL|39 elapsed 0.326861|
+2024/03/08 16:54:23:818|ASL|40 elapsed 0.327092|
+2024/03/08 16:54:24:357|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 16:54:24:379|PERM|Can record screen 0|
+2024/03/08 16:54:24:393|SLEEP|FORCESHOWAFTERSLEEP2|
+2024/03/08 16:54:24:393|TB|Force show Touch Bar|
+2024/03/08 16:54:24:394|M|mt_stop10|
+2024/03/08 16:54:24:405|ASL|WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:.|
+2024/03/08 16:54:24:489|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:54:24:489|M|register touchbar mbp trackpad|
+2024/03/08 16:54:24:489|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:54:24:490|M|register magic trackpad 2|
+2024/03/08 16:54:24:490|STDEV|6f81|
+2024/03/08 16:54:24:490|SLEEP|FORCESHOWAFTERSLEEP3B|
+2024/03/08 16:54:24:490|TB|Force show Touch Bar|
+2024/03/08 16:54:24:761|M|mt_stop2|
+2024/03/08 16:54:24:761|TB|PresentationMode appWithControlStrip (null)|
+2024/03/08 16:54:24:763|M|unregister tb trackpad|
+2024/03/08 16:54:24:764|M|unregister magic trackpad 2|
+2024/03/08 16:54:24:765|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:54:24:765|M|register touchbar mbp trackpad|
+2024/03/08 16:54:24:765|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:54:24:766|M|register magic trackpad 2|
+2024/03/08 16:54:24:766|STDEV|6f81|
+2024/03/08 16:54:24:912|short|eventtap success|
+2024/03/08 16:54:25:437|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL S2722QC|
+2024/03/08 16:54:25:439|SNAPAREA|return existing (updated)|
+2024/03/08 16:54:25:439|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/08 16:54:25:440|SNAPAREA|return existing (updated)|
+2024/03/08 16:54:25:440|SNAPAREA|step1, 0 displays- match mode 0 - searching DELL U2515H|
+2024/03/08 16:54:25:441|SNAPAREA|return existing (updated)|
+2024/03/08 16:54:25:441|SNAP|Did recognize 41424 810037570 dragpoints: 0 - 0|
+2024/03/08 16:54:25:441|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/08 16:54:25:441|SNAP|Did recognize 53358 825379404 dragpoints: 0 - 0|
+2024/03/08 16:54:26:862|M|mt_stop2|
+2024/03/08 16:54:26:864|M|unregister tb trackpad|
+2024/03/08 16:54:26:866|M|unregister magic trackpad 2|
+2024/03/08 16:54:26:869|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:54:26:869|M|register touchbar mbp trackpad|
+2024/03/08 16:54:26:870|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:54:26:870|M|register magic trackpad 2|
+2024/03/08 16:54:26:870|STDEV|6f81|
+2024/03/08 16:54:30:012|M|mt_stop2|
+2024/03/08 16:54:30:014|M|unregister tb trackpad|
+2024/03/08 16:54:30:015|M|unregister magic trackpad 2|
+2024/03/08 16:54:30:018|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:54:30:018|M|register touchbar mbp trackpad|
+2024/03/08 16:54:30:018|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:54:30:018|M|register magic trackpad 2|
+2024/03/08 16:54:30:018|STDEV|6f81|
+2024/03/08 16:54:30:163|c00|4|
+2024/03/08 16:54:35:262|M|mt_stop2|
+2024/03/08 16:54:35:264|M|unregister tb trackpad|
+2024/03/08 16:54:35:265|M|unregister magic trackpad 2|
+2024/03/08 16:54:35:268|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/08 16:54:35:268|M|register touchbar mbp trackpad|
+2024/03/08 16:54:35:268|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/08 16:54:35:269|M|register magic trackpad 2|
+2024/03/08 16:54:35:269|STDEV|6f81|
+2024/03/08 16:57:07:498|SLEEP|messageType e0000280, arg 07960070|
+2024/03/08 16:57:07:508|ASL|disablign app nap|
+2024/03/08 16:57:07:508|ASL|disabling app nap done|
+2024/03/08 16:57:07:509|SLEEP|WILLSLEEP|
+2024/03/08 16:57:07:736|TouchBar|Don't show because sleep|
+2024/03/08 16:57:07:794|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/08 17:20:36:735|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 18:52:39:120|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 21:52:49:909|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/08 23:40:39:229|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/08 23:43:11:298|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/09 00:01:37:713|usage|loading todays usage|
+2024/03/09 01:01:35:223|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 03:57:37:717|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 08:44:01:269|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 09:29:09:081|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 12:35:28:627|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/09 14:14:48:716|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 15:26:47:107|SLEEP|messageType e0000320, arg 00000000|
+2024/03/09 15:26:47:132|SLEEP|messageType e0000300, arg 00000000|
+2024/03/09 15:26:47:132|ASL|disablign app nap|
+2024/03/09 15:26:47:132|ASL|disabling app nap done|
+2024/03/09 15:26:47:132|SLEEP|WOKE VIA IOKIT|
+2024/03/09 15:26:47:132|ASL|toggle after sleep 0|
+2024/03/09 15:26:47:133|xw|disable|
+2024/03/09 15:26:47:837|xw|enable|
+2024/03/09 15:26:47:844|NOTCH|did unhide (null)|
+2024/03/09 15:26:47:844|ASL|unregister d|
+2024/03/09 15:26:47:860|WAKE|EVENTHANDLER RESET|
+2024/03/09 15:26:47:863|M|mt_stop2|
+2024/03/09 15:26:47:864|SNAP|Did reset snap areas 0 0|
+2024/03/09 15:26:47:864|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 1|
+2024/03/09 15:26:47:920|TouchBar|Don't show because sleep|
+2024/03/09 15:26:48:033|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/09 15:26:48:042|M|unregister tb trackpad|
+2024/03/09 15:26:48:045|M|unregister magic trackpad 2|
+2024/03/09 15:26:48:047|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/09 15:26:48:047|M|register touchbar mbp trackpad|
+2024/03/09 15:26:48:047|BTT|mt device 0x0300000003100000,0x81 - 129 - internal 0 - force 1|
+2024/03/09 15:26:48:047|M|register magic trackpad 2|
+2024/03/09 15:26:48:047|STDEV|6f81|
+2024/03/09 15:26:48:072|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/09 15:26:48:072|TB|Force show Touch Bar|
+2024/03/09 15:26:48:352|NOTCH|S3|
+2024/03/09 15:26:58:812|SLEEP|messageType e0000280, arg 09f7006a|
+2024/03/09 16:32:13:318|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 18:58:37:546|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 19:33:36:996|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/09 20:55:11:310|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/09 23:47:47:023|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/10 00:06:01:499|usage|loading todays usage|
+2024/03/10 03:37:37:904|BTTRelaunch|NOT handling reopen due to BTT relaunch|
+2024/03/10 03:43:14:107|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/10 05:51:29:652|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-03-07 10:17:41 +0000|
+2024/03/10 19:03:42:187|SLEEP|messageType e0000320, arg 00000000|
+2024/03/10 19:03:42:222|SLEEP|messageType e0000300, arg 00000000|
+2024/03/10 19:03:42:222|ASL|disablign app nap|
+2024/03/10 19:03:42:222|ASL|disabling app nap done|
+2024/03/10 19:03:42:222|SLEEP|WOKE VIA IOKIT|
+2024/03/10 19:03:42:222|ASL|toggle after sleep 1|
+2024/03/10 19:03:42:222|xw|disable|
+2024/03/10 19:03:43:276|xw|enable|
+2024/03/10 19:03:43:286|NOTCH|did unhide (null)|
+2024/03/10 19:03:43:286|ASL|unregister d|
+2024/03/10 19:03:43:289|WAKE|EVENTHANDLER RESET|
+2024/03/10 19:03:43:332|M|mt_stop2|
+2024/03/10 19:03:43:332|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:03:43:332|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 2|
+2024/03/10 19:03:43:359|TouchBar|Don't show because sleep|
+2024/03/10 19:03:43:441|M|unregister tb trackpad|
+2024/03/10 19:03:43:442|M|unregister magic trackpad 2|
+2024/03/10 19:03:43:444|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:03:43:445|M|register touchbar mbp trackpad|
+2024/03/10 19:03:43:445|STDEV|6f|
+2024/03/10 19:03:43:447|WAKE|DIDWAKE|
+2024/03/10 19:03:43:447|ASL|disablign app nap|
+2024/03/10 19:03:43:447|ASL|disabling app nap done|
+2024/03/10 19:03:43:544|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/10 19:03:43:550|WAKE|DIDWAKE2|
+2024/03/10 19:03:43:551|WAKE|NO RESTART|
+2024/03/10 19:03:43:551|ASL|toggle after sleep 2|
+2024/03/10 19:03:43:551|xw|disable|
+2024/03/10 19:03:43:567|xw|enable|
+2024/03/10 19:03:43:568|NOTCH|did unhide (null)|
+2024/03/10 19:03:43:568|ASL|unregister d|
+2024/03/10 19:03:43:576|WAKE|EVENTHANDLER RESET|
+2024/03/10 19:03:43:577|M|mt_stop2|
+2024/03/10 19:03:43:578|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/10 19:03:43:580|SNAPAREA|return existing (updated)|
+2024/03/10 19:03:43:580|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/10 19:03:43:580|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:03:43:580|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 3|
+2024/03/10 19:03:43:933|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/10 19:03:43:934|SNAPAREA|return existing (updated)|
+2024/03/10 19:03:43:934|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/10 19:03:43:934|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:03:43:939|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/10 19:03:43:939|TB|Force show Touch Bar|
+2024/03/10 19:03:43:951|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/10 19:03:43:951|TB|Force show Touch Bar|
+2024/03/10 19:03:43:952|M|unregister tb trackpad|
+2024/03/10 19:03:43:953|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:03:43:953|M|register touchbar mbp trackpad|
+2024/03/10 19:03:43:953|BTT|mt device 0x040000003BABF187,0x81 - 129 - internal 0 - force 1|
+2024/03/10 19:03:43:953|M|register magic trackpad 2|
+2024/03/10 19:03:43:953|STDEV|6f81|
+2024/03/10 19:03:43:958|NOTCH|S3|
+2024/03/10 19:03:44:077|NOTCH|S3|
+2024/03/10 19:03:44:918|M|mt_stop2|
+2024/03/10 19:03:44:932|M|unregister tb trackpad|
+2024/03/10 19:03:44:933|M|unregister magic trackpad 2|
+2024/03/10 19:03:44:936|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:03:44:937|M|register touchbar mbp trackpad|
+2024/03/10 19:03:44:937|BTT|mt device 0x040000003BABF187,0x81 - 129 - internal 0 - force 1|
+2024/03/10 19:03:44:937|M|register magic trackpad 2|
+2024/03/10 19:03:44:938|STDEV|6f81|
+2024/03/10 19:04:14:475|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/10 19:04:37:094|SLEEP|messageType e0000280, arg 0efa0068|
+2024/03/10 19:04:37:103|ASL|disablign app nap|
+2024/03/10 19:04:37:103|ASL|disabling app nap done|
+2024/03/10 19:04:37:107|SLEEP|WILLSLEEP|
+2024/03/10 19:11:31:924|SEC|SecureInputActive com.apple.loginwindow 421|
+2024/03/10 19:14:07:997|SLEEP|messageType e0000320, arg 00000000|
+2024/03/10 19:14:08:159|SLEEP|messageType e0000300, arg 00000000|
+2024/03/10 19:14:08:159|ASL|disablign app nap|
+2024/03/10 19:14:08:159|ASL|disabling app nap done|
+2024/03/10 19:14:08:159|SLEEP|WOKE VIA IOKIT|
+2024/03/10 19:14:08:159|ASL|toggle after sleep 3|
+2024/03/10 19:14:08:159|xw|disable|
+2024/03/10 19:14:08:164|xw|enable|
+2024/03/10 19:14:08:638|NOTCH|did unhide (null)|
+2024/03/10 19:14:08:638|ASL|unregister d|
+2024/03/10 19:14:08:646|WAKE|EVENTHANDLER RESET|
+2024/03/10 19:14:08:651|M|mt_stop2|
+2024/03/10 19:14:08:651|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/10 19:14:08:652|SNAPAREA|return existing (updated)|
+2024/03/10 19:14:08:652|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/10 19:14:08:652|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:14:08:652|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 4|
+2024/03/10 19:14:08:670|TouchBar|Don't show because sleep|
+2024/03/10 19:14:08:676|M|unregister tb trackpad|
+2024/03/10 19:14:08:677|M|unregister magic trackpad 2|
+2024/03/10 19:14:08:678|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:14:08:678|M|register touchbar mbp trackpad|
+2024/03/10 19:14:08:679|STDEV|6f|
+2024/03/10 19:14:08:752|WAKE|DIDWAKE|
+2024/03/10 19:14:08:752|ASL|disablign app nap|
+2024/03/10 19:14:08:752|ASL|disabling app nap done|
+2024/03/10 19:14:08:756|WAKE|DIDWAKE2|
+2024/03/10 19:14:08:756|WAKE|NO RESTART|
+2024/03/10 19:14:08:756|ASL|toggle after sleep 4|
+2024/03/10 19:14:08:756|xw|disable|
+2024/03/10 19:14:08:760|xw|enable|
+2024/03/10 19:14:08:761|NOTCH|did unhide (null)|
+2024/03/10 19:14:08:761|ASL|unregister d|
+2024/03/10 19:14:08:763|WAKE|EVENTHANDLER RESET|
+2024/03/10 19:14:08:767|M|mt_stop2|
+2024/03/10 19:14:08:768|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/10 19:14:08:768|SNAPAREA|return existing (updated)|
+2024/03/10 19:14:08:768|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/10 19:14:08:768|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:14:08:768|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 5|
+2024/03/10 19:14:08:999|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/10 19:14:08:999|TB|Force show Touch Bar|
+2024/03/10 19:14:08:999|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/10 19:14:08:999|TB|Force show Touch Bar|
+2024/03/10 19:14:09:000|M|unregister tb trackpad|
+2024/03/10 19:14:09:001|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:14:09:002|M|register touchbar mbp trackpad|
+2024/03/10 19:14:09:002|STDEV|6f|
+2024/03/10 19:14:09:141|NOTCH|S3|
+2024/03/10 19:14:09:298|NOTCH|S3|
+2024/03/10 19:14:16:027|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/03/10 19:14:16:042|ASL|trigger after login screen 5 - /Applications/Brave Browser.app - com.brave.Browser|
+2024/03/10 19:14:16:042|LOGIN|triggerAfterLoginScreenActions|
+2024/03/10 19:14:16:042|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/03/10 19:14:16:042|ASL|reset after login screen 5|
+2024/03/10 19:14:16:042|WAKE|EVENTHANDLER RESET|
+2024/03/10 19:14:16:045|M|mt_stop2|
+2024/03/10 19:14:16:045|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/10 19:14:16:046|SNAPAREA|return existing (updated)|
+2024/03/10 19:14:16:046|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/10 19:14:16:046|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:14:16:046|ASL|toggle after sleep 5|
+2024/03/10 19:14:16:046|xw|disable|
+2024/03/10 19:14:16:049|xw|enable|
+2024/03/10 19:14:16:052|NOTCH|did unhide (null)|
+2024/03/10 19:14:16:052|ASL|unregister d|
+2024/03/10 19:14:16:058|WAKE|EVENTHANDLER RESET|
+2024/03/10 19:14:16:059|M|mt_stop2|
+2024/03/10 19:14:16:059|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/03/10 19:14:16:060|SNAPAREA|return existing (updated)|
+2024/03/10 19:14:16:060|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/03/10 19:14:16:060|SNAP|Did reset snap areas 0 0|
+2024/03/10 19:14:16:060|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 6|
+2024/03/10 19:14:16:064|ASL|performing after wake actions|
+2024/03/10 19:14:16:068|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/10 19:14:16:068|TB|Force show Touch Bar|
+2024/03/10 19:14:16:069|M|unregister tb trackpad|
+2024/03/10 19:14:16:070|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:14:16:070|M|register touchbar mbp trackpad|
+2024/03/10 19:14:16:070|STDEV|6f|
+2024/03/10 19:14:16:093|M|unregister tb trackpad|
+2024/03/10 19:14:16:095|BTT|mt device 0x0700000000000031,0x6f - 111 - internal 1 - force 1|
+2024/03/10 19:14:16:096|M|register touchbar mbp trackpad|
+2024/03/10 19:14:16:096|STDEV|6f|
+2024/03/10 19:14:16:261|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/03/10 19:14:16:261|TB|Force show Touch Bar|
+2024/03/10 19:14:16:553|NOTCH|S3|
