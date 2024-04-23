@@ -36,6 +36,14 @@ dockerbash() {
 }
 alias dcb=dockerbash
 
+dockernuke() {
+  docker stop $(docker ps -a -q)
+  docker rm $(docker ps -a -q)
+  docker rmi $(docker images -q)
+  docker volume rm $(docker volume ls -q)
+}
+alias dcnk=dockernuke
+
 alias dot="cd ${DOTFILES_LOCATION}"
 alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
 alias notes="cd ${HOME}/Documents/eferences/00\ Notes && mytree"
@@ -73,8 +81,15 @@ mytree() {
   eza -T -L=${level} ${directory}
 }
 #t for tree
-alias t=mytree
+# alias t=mytree
 #tt for maximum depth tree
+# Testing out nnn
+alias t=nnn -e
+export NNN_PLUG='p:preview-tui;'
+export NNN_FIFO=/tmp/nnn.fifo
+
+
+
 alias tt="mytree 999"
 alias ll="exa -T -L=${level} ${directory}"
 alias lsz="du -h --max-depth=1"
