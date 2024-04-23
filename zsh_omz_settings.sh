@@ -2,7 +2,7 @@ export ZSH=${HOME}/.oh-my-zsh
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(zsh-autosuggestions fzf-tab nvm)
+plugins=(zsh-autosuggestions fzf-tab nvm poetry pyenv z)
 
 source $ZSH/oh-my-zsh.sh
 
