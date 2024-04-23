@@ -58,7 +58,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>High Time</string>
 	<key>objects</key>
