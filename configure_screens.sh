@@ -52,6 +52,13 @@ until [ $count -gt $((${#screenarray[@]} + 1 )) ]; do
   count=$(( $count + 1 ))
 done
 
+
+
+# display placer command for screens with top strip:
+# displayplacer "id:35120216-2552-4D1B-A398-C1EC8C9A4D7D res:2304x1296 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:AF1BCCA1-F0C7-48F2-AD48-78343323861D res:1152x2048 hz:60 color_depth:8 enabled:true scaling:on origin:(2304,-440) degree:270" "id:12B5BF48-FC89-42C3-AF36-12434AA8CA8B res:3008x862 hz:60 color_depth:8 enabled:true scaling:on origin:(-704,-862) degree:180" "id:3344420E-5B08-40B6-9BE1-248F1B14B280 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:on origin:(-1920,0) degree:0"
+
+
+
 ###############
 # ARRANGEMENT #
 ###############
