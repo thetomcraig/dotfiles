@@ -6,7 +6,8 @@
 - Move anything from the computer desktop
 - Clean up torrents
 - Push any git updates to dotfiles repo
-- Copy all the home folder files (Not in icloud Drive)
+- Copy all the home folder files (Not in iCloud Drive)
+- Push ublock Origin settings from host machine to cloud
 
 ### Update Applications Lists
 - Mac App Store
@@ -25,10 +26,6 @@
 - Manual/Brew Cask
   - Add missing Applications to `brew_cask_packages.txt`
   - To search: `brew search --casks <APP NAME>`
-
-### Settings
-- VSCode
-- BetterTouchTool
 
 ## Destination Machine
 ### Git Setup
@@ -51,6 +48,12 @@
   ./install_cli_apps.sh
   ```
 
+### Populate Necessary Base Settings
+- Some UI apps will need to be opened once to generate their setting files/folders
+- Open these and quit them:
+  - BetterTouchTool
+
+
 ### Settings Configuration
 - Symlink Dot Files
   ```
@@ -71,10 +74,6 @@
   - Power Pack
   - Sync Folder Location
   - Show the list view primarily with large items
-
-- BetterTouchTool
-  - Open then quit it
-  - Then copy over settings
 
 - Sign into 1Password
 - Start Backing up with Backblaze
