@@ -46,8 +46,8 @@ alias dcnk=dockernuke
 
 alias dot="cd ${DOTFILES_LOCATION}"
 alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
-alias notes="cd ${HOME}/Documents/eferences/00\ Notes && mytree"
-alias refs="cd ${HOME}/Documents/eferences && mytree"
+alias notes="cd ${HOME}/Documents/references/00\ Notes && mytree"
+alias refs="cd ${HOME}/Documents/references && mytree"
 alias docs="cd ${HOME}/Documents && mytree"
 alias proj="cd ${PROJECTS_ROOT}"
 

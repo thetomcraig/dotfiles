@@ -17,7 +17,7 @@
       "backgroundSelected" : "#4C566AFF",
       "text" : {
         "size" : 22,
-        "colorSelected" : "#88C0D0FF",
+        "colorSelected" : "#5D80ABFF",
         "font" : "System Light",
         "color" : "#D8DEE9DD"
       },
@@ -27,14 +27,14 @@
       "iconSize" : 24
     },
     "search" : {
-      "backgroundSelected" : "#D7DEE8FF",
+      "backgroundSelected" : "#3A4252FF",
       "paddingHorizontal" : 8,
       "spacing" : 4,
       "text" : {
         "size" : 29,
-        "colorSelected" : "#B46EADFF",
+        "colorSelected" : "#D7DEE9FF",
         "font" : "System Light",
-        "color" : "#B46EADFF"
+        "color" : "#8EBCBAFF"
       },
       "background" : "#2D343FFF",
       "roundness" : 0,
