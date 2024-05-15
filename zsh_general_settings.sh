@@ -85,9 +85,10 @@ mytree() {
 #tt for maximum depth tree
 # Testing out nnn
 alias t=nnn -e
-export NNN_PLUG='p:preview-tui;'
+export VISUAL=vim
+export NNN_PLUG='p:preview-tui;o:vim $NNN_FILE'
 export NNN_FIFO=/tmp/nnn.fifo
-
+# export NNN_OPENER='o:vim $NNN_FILE'
 
 
 alias tt="mytree 999"
