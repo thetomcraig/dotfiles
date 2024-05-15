@@ -161,6 +161,12 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Wipe all (default) app icons from the Dock
 defaults write com.apple.dock persistent-apps -array
 
+# Delay the drag-to-menubar mission control opening action
+# Works with BTT which I have set up to maximize windows 
+# when dragged to the top
+defaults write com.apple.dock workspaces-edge-delay -float 5.0
+
+
 # Put all my applications into the dock
 for app in \
   "/System/Applications/Messages.app" \
