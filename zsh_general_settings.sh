@@ -81,10 +81,10 @@ mytree() {
   eza -T -L=${level} ${directory}
 }
 #t for tree
-# alias t=mytree
+alias t=mytree
 #tt for maximum depth tree
 # Testing out nnn
-alias t=nnn -e
+# alias t=nnn -e
 export VISUAL=vim
 export NNN_PLUG='p:preview-tui;o:vim $NNN_FILE'
 export NNN_FIFO=/tmp/nnn.fifo
