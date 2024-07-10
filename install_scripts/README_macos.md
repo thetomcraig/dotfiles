@@ -8,6 +8,7 @@
 - Push any git updates to dotfiles repo
 - Copy all the home folder files (Not in iCloud Drive)
 - Push ublock Origin settings from host machine to cloud
+- Backup bookmarks
 
 ### Update Applications Lists
 - Mac App Store
