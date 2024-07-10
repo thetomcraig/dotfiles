@@ -97,7 +97,7 @@ export NVM_DIR="$HOME/.nvm"
 # WORK #
 ########
 IN_AYA=false
-if [ "$(hostname)" = "RM-TCRAIG" ]; then
+if [[ $(hostname) =~ "RM-C" ]]; then
   IN_AYA=true
 fi
 export IN_AYA="${IN_AYA}"
