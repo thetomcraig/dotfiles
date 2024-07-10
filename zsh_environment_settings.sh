@@ -21,6 +21,7 @@ fi
 #########
 # alias sshariston="ssh tom@ariston"
 alias sshariston="mosh tom@ariston"
+alias ssharistonremote="tom@techdaddy.onthewifi.com -p 6969"
 
 
 
@@ -72,6 +73,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+#########
+# CARGO #
+#########
+export PATH="${HOME}/.cargo/bin:$PATH"
 
 ########
 # CHIT #
