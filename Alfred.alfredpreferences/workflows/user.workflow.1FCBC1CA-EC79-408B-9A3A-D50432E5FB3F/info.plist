@@ -6,6 +6,19 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
+		<key>078466CE-E514-416E-8981-C8616255F887</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E262AC9-A64E-46FE-8E61-92A140A59D93</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2856591D-B9C9-4F68-AE7E-9FE5070C1140</key>
 		<array>
 			<dict>
@@ -32,15 +45,38 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4E262AC9-A64E-46FE-8E61-92A140A59D93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F0DB41B-B2B6-4BC9-9A06-4C14B0673B24</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>64CCDA32-656C-4099-91F2-089362C0BF74</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string></string>
 	<key>description</key>
-	<string>Reconfigure Screens</string>
+	<string>IO devices and settings</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Screens</string>
+	<string>I/O</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -110,11 +146,116 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Audio Output Switched to Device {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8F0DB41B-B2B6-4BC9-9A06-4C14B0673B24</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"d3837e349fe407e9f76c196723692df6ad87b760.png","title":"External Speakers","arg":"external","subtitle":"External Speakers"},{"imagefile":"b938fa2e18d1d909f695b783cec28785c631fbce.png","title":"Airpods","arg":"airbuds","subtitle":"Airpods"},{"title":"Internal Speakers","arg":"internal","subtitle":"Internal Speakers"}]</string>
+				<key>keyword</key>
+				<string>temp</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>4E262AC9-A64E-46FE-8E61-92A140A59D93</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>audio switch</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Switch audio output device</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>078466CE-E514-416E-8981-C8616255F887</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/zsh 
+
+/Users/tomcraig/dotfiles/configure_audio.sh $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64CCDA32-656C-4099-91F2-089362C0BF74</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>078466CE-E514-416E-8981-C8616255F887</key>
+		<dict>
+			<key>xpos</key>
+			<real>85</real>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
 		<key>2856591D-B9C9-4F68-AE7E-9FE5070C1140</key>
 		<dict>
 			<key>xpos</key>
@@ -128,6 +269,27 @@
 			<real>85</real>
 			<key>ypos</key>
 			<real>280</real>
+		</dict>
+		<key>4E262AC9-A64E-46FE-8E61-92A140A59D93</key>
+		<dict>
+			<key>xpos</key>
+			<real>300</real>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>64CCDA32-656C-4099-91F2-089362C0BF74</key>
+		<dict>
+			<key>xpos</key>
+			<real>500</real>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>8F0DB41B-B2B6-4BC9-9A06-4C14B0673B24</key>
+		<dict>
+			<key>xpos</key>
+			<real>500</real>
+			<key>ypos</key>
+			<real>325</real>
 		</dict>
 		<key>B2E52C31-2952-42EE-86BD-A57003469364</key>
 		<dict>

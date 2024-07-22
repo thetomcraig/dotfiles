@@ -56,6 +56,17 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>8DCA268A-DAD8-4C0C-9DD2-C4A7B45037C2</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>jira</string>
+			<key>text</key>
+			<string>Open Jira Ticket</string>
+			<key>url</key>
+			<string>https://ayadev.atlassian.net/browse/MCZ-{query}</string>
+		</dict>
 		<key>9CFEC4D2-392C-4320-AE10-DF0E3E879E57</key>
 		<dict>
 			<key>enabled</key>
