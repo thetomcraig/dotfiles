@@ -102,7 +102,7 @@ export PATH="${HOME}/.cargo/bin:$PATH"
 # WORK #
 ########
 IN_AYA=false
-if [[ $(hostname) =~ "RM-C" ]]; then
+if [[ $(hostname) =~ "RM-TCraig-Mac" ]]; then
   IN_AYA=true
 fi
 export IN_AYA="${IN_AYA}"
