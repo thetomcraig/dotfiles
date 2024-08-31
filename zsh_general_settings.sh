@@ -28,7 +28,7 @@ alias cpr="rsync -Pa $1 $2"
 
 alias dcu="docker compose up"
 alias dcd="docker compose down"
-alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
+alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}' | grep -v k8s_"
 alias doco="docker"
 
 dockerbash() {
