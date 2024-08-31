@@ -3,7 +3,7 @@
     "result" : {
       "textSpacing" : 8,
       "subtext" : {
-        "size" : 10,
+        "size" : 15,
         "colorSelected" : "#D8DEE9FF",
         "font" : "System Light",
         "color" : "#D8DEE999"
@@ -43,8 +43,8 @@
     "window" : {
       "color" : "#2E3440FF",
       "paddingHorizontal" : 0,
-      "width" : 550,
-      "borderPadding" : 4,
+      "width" : 663,
+      "borderPadding" : 7,
       "borderColor" : "#2E3440FF",
       "blur" : 40,
       "roundness" : 4,
