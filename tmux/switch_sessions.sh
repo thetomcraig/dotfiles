@@ -3,10 +3,6 @@
 
 # List of active sessions
 all_sessions=($( tmux ls | awk '{printf $1}' | tr ':' '\n'))
-echo "all_sessions"
-echo "${all_sessions[0]}"
-echo "${all_sessions[1]}"
-echo "${all_sessions[2]}"
 
 # list of tmuxinator projects
 mux_projects=($(tmuxinator list | tail -n +2))
@@ -28,8 +24,6 @@ create_or_find_then_attach() {
   # CASE 0 #
   ##########
   # Brand-new session
-  # echo "\nsession_name"
-  # echo $session_name
   if [ "${session_name}" = "NEW" ]; then
     new_session_name=0
     IFS=$'\n' sorted_sessions=($(sort -n <<<"${all_sessions[*]}"))
@@ -114,7 +108,3 @@ else
   desired_session_name=$(get_desired_name_from_list)
   create_or_find_then_attach $desired_session_name
 fi
-
-# if were in a tmux session, get the current session name, then use send keys to kill this pane
-# might be able to do this without send keys, actually
-# tmux send-keys -t dotfiles "tmux kill-pane" ENTER
