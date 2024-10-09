@@ -31,7 +31,7 @@
 - Export VSCode settings
   `cp ~/Library/Application\ Support/Code/User/keybindings.json $DOTFILES_LOCATION/vscode_settings/keybindings.json`  
   `cp ~/Library/Application\ Support/Code/User/settings.json $DOTFILES_LOCATION/vscode_settings/settings.json`  
-  `code --list-extensions > $DOTFILES_LOCATION/vscode_settings/keybindings.json`
+  `code --list-extensions > $DOTFILES_LOCATION/vscode_settings/extensions.json`
  
 ## Destination Machine
 ### Git Setup

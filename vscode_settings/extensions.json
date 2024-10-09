@@ -63,10 +63,12 @@ pokey.command-server
 pokey.cursorless
 pokey.parse-tree
 pokey.talon
+redhat.vscode-yaml
 richie5um2.vscode-sort-json
 rvest.vs-code-prettier-eslint
 shadowndacorner.vscode-easymotion
 sleistner.vscode-fileutils
+sonarsource.sonarlint-vscode
 streetsidesoftware.code-spell-checker
 teabyii.ayu
 tomoki1207.pdf
