@@ -108,6 +108,12 @@
       ]
     },
     {
+      "before": ["leader", "r"],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
       "before": ["leader", "d"],
       "commands": ["editor.action.revealDefinition"]
     },
@@ -318,7 +324,7 @@
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
   "peacock.color": "#d08770",
-  "window.zoomLevel": 0.3,
+  "window.zoomLevel": 1.2,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
@@ -343,4 +349,7 @@
     }
   ],
   "debug.onTaskErrors": "showErrors",
+  "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}focus:[${focusedView}]",
+  "githubPullRequests.fileListLayout": "tree",
+  "redhat.telemetry.enabled": false
 }
