@@ -8,6 +8,10 @@
 - Push any git updates to dotfiles repo
 - Copy all the home folder files (Not in iCloud Drive)
 - Push ublock Origin settings from host machine to cloud
+- Copy macOS dictionary to dotfiles
+  ```
+  cp ~/Library/Group\ Containers/group.com.apple.AppleSpell/Library/Spelling/LocalDictionary $DOTFILES_LOCATION/macos_localdictionary
+  ```
 
 ### Update Applications Lists
 - Mac App Store
@@ -55,6 +59,10 @@
 
 
 ### Settings Configuration
+- Install dictionary
+  ```
+  cp macos_localdictionary ~/Library/Group\ Containers/group.com.apple.AppleSpell/Library/Spelling/LocalDictionary 
+  ```
 - Symlink Dot Files
   ```
   ./install_symlinks.sh
