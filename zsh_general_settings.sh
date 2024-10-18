@@ -28,7 +28,7 @@ alias cpr="rsync -Pa $1 $2"
 
 alias dcu="docker compose up"
 alias dcd="docker compose down"
-alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}'"
+alias dps="docker ps --format 'table{{.Names}}\t{{.Image}}' | grep -v k8s_"
 alias doco="docker"
 
 dockerbash() {
@@ -41,6 +41,7 @@ dockernuke() {
   docker rm $(docker ps -a -q)
   docker rmi $(docker images -q)
   docker volume rm $(docker volume ls -q)
+  docker system prune
 }
 alias dcnk=dockernuke
 
@@ -58,6 +59,8 @@ alias eb="vim ${HOME}/.zshrc"
 alias ebe="vim ${DOTFILES_LOCATION}/zsh_environment_settings.sh"
 alias ebg="vim ${DOTFILES_LOCATION}/zsh_general_settings.sh"
 alias ebgit="vim ${DOTFILES_LOCATION}/zsh_git_settings.sh"
+
+alias check_repos="${DOTFILES_LOCATION}/check_git_repos.sh"
 
 alias start="./start.command"
 

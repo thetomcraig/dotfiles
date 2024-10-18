@@ -12,6 +12,7 @@
   ```
   cp ~/Library/Group\ Containers/group.com.apple.AppleSpell/Library/Spelling/LocalDictionary $DOTFILES_LOCATION/macos_localdictionary
   ```
+- Backup bookmarks
 
 ### Update Applications Lists
 - Mac App Store
@@ -31,6 +32,11 @@
   - Add missing Applications to `brew_cask_packages.txt`
   - To search: `brew search --casks <APP NAME>`
 
+- Export VSCode settings
+  `cp ~/Library/Application\ Support/Code/User/keybindings.json $DOTFILES_LOCATION/vscode_settings/keybindings.json`  
+  `cp ~/Library/Application\ Support/Code/User/settings.json $DOTFILES_LOCATION/vscode_settings/settings.json`  
+  `code --list-extensions > $DOTFILES_LOCATION/vscode_settings/extensions.json`
+ 
 ## Destination Machine
 ### Git Setup
 - Set up GitHub SSH key and clone this repo  
@@ -53,9 +59,7 @@
   ```
 
 ### Populate Necessary Base Settings
-- Some UI apps will need to be opened once to generate their setting files/folders
-- Open these and quit them:
-  - BetterTouchTool
+- Pass
 
 
 ### Settings Configuration
@@ -103,6 +107,15 @@
   - Go to Preferences -> General -> Preferences -> Load preferences...
   - And click Browse, and select the dotfiles folder
   - NOTE: this causes syncing issues - may be better to do a one-time loading
+
+- BetterTouchTool
+  - Can import the config through its UI 
+
+- VSCode
+  - Open it first to get things syncing etc, then quit it 
+  `cp ./vscode_settings/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json`
+  `cp ./vscode_settings/settings.json ~/Library/Application\ Support/Code/User/settings.json`  
+  `cat vscode_extensions.txt | xargs -n 1 code --install-extension`  
 
 - Install Vim Plugins
 

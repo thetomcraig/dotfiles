@@ -1,0 +1,3092 @@
+2024/10/16 11:33:45:060|ASL|The Mac is connected to AC power.|
+2024/10/16 11:34:45:059|ASL|The Mac is connected to AC power.|
+2024/10/16 11:35:45:065|ASL|The Mac is connected to AC power.|
+2024/10/16 11:36:45:053|ASL|The Mac is connected to AC power.|
+2024/10/16 11:37:45:054|ASL|The Mac is connected to AC power.|
+2024/10/16 11:38:45:053|ASL|The Mac is connected to AC power.|
+2024/10/16 11:39:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 11:40:45:047|ASL|The Mac is connected to AC power.|
+2024/10/16 11:41:45:066|ASL|The Mac is connected to AC power.|
+2024/10/16 11:42:45:117|ASL|The Mac is connected to AC power.|
+2024/10/16 11:43:45:067|ASL|The Mac is connected to AC power.|
+2024/10/16 11:44:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 11:45:45:062|ASL|The Mac is connected to AC power.|
+2024/10/16 11:46:45:066|ASL|The Mac is connected to AC power.|
+2024/10/16 11:47:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 11:48:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 11:49:45:058|ASL|The Mac is connected to AC power.|
+2024/10/16 11:50:45:067|ASL|The Mac is connected to AC power.|
+2024/10/16 11:51:45:067|ASL|The Mac is connected to AC power.|
+2024/10/16 11:52:45:082|ASL|The Mac is connected to AC power.|
+2024/10/16 11:53:45:063|ASL|The Mac is connected to AC power.|
+2024/10/16 11:54:45:067|ASL|The Mac is connected to AC power.|
+2024/10/16 11:55:45:058|ASL|The Mac is connected to AC power.|
+2024/10/16 11:56:45:060|ASL|The Mac is connected to AC power.|
+2024/10/16 11:57:45:053|ASL|The Mac is connected to AC power.|
+2024/10/16 11:58:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 11:59:45:069|ASL|The Mac is connected to AC power.|
+2024/10/16 12:00:45:111|ASL|The Mac is connected to AC power.|
+2024/10/16 12:01:45:069|ASL|The Mac is connected to AC power.|
+2024/10/16 12:02:45:111|ASL|The Mac is connected to AC power.|
+2024/10/16 12:03:45:068|ASL|The Mac is connected to AC power.|
+2024/10/16 12:04:45:067|ASL|The Mac is connected to AC power.|
+2024/10/16 12:05:45:071|ASL|The Mac is connected to AC power.|
+2024/10/16 12:06:45:071|ASL|The Mac is connected to AC power.|
+2024/10/16 12:08:45:075|ASL|The Mac is connected to AC power.|
+2024/10/16 12:09:45:065|ASL|The Mac is connected to AC power.|
+2024/10/16 12:10:45:063|ASL|The Mac is connected to AC power.|
+2024/10/16 12:11:45:063|ASL|The Mac is connected to AC power.|
+2024/10/16 12:12:45:103|ASL|The Mac is connected to AC power.|
+2024/10/16 12:13:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 12:14:45:062|ASL|The Mac is connected to AC power.|
+2024/10/16 12:15:45:049|ASL|The Mac is connected to AC power.|
+2024/10/16 12:16:45:063|ASL|The Mac is connected to AC power.|
+2024/10/16 12:17:45:060|ASL|The Mac is connected to AC power.|
+2024/10/16 12:18:45:063|ASL|The Mac is connected to AC power.|
+2024/10/16 12:19:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 12:20:45:062|ASL|The Mac is connected to AC power.|
+2024/10/16 12:21:45:070|ASL|The Mac is connected to AC power.|
+2024/10/16 12:22:45:103|ASL|The Mac is connected to AC power.|
+2024/10/16 12:23:45:063|ASL|The Mac is connected to AC power.|
+2024/10/16 12:24:45:059|ASL|The Mac is connected to AC power.|
+2024/10/16 12:25:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 12:26:45:062|ASL|The Mac is connected to AC power.|
+2024/10/16 12:27:45:061|ASL|The Mac is connected to AC power.|
+2024/10/16 12:28:45:060|ASL|The Mac is connected to AC power.|
+2024/10/16 12:29:45:059|ASL|The Mac is connected to AC power.|
+2024/10/16 12:30:45:037|ASL|The Mac is connected to AC power.|
+2024/10/16 12:31:45:062|ASL|The Mac is connected to AC power.|
+2024/10/16 12:32:45:109|ASL|The Mac is connected to AC power.|
+2024/10/16 12:33:45:067|ASL|The Mac is connected to AC power.|
+2024/10/16 13:16:45:095|ASL|The Mac is connected to AC power.|
+2024/10/16 15:37:11:677|SLEEP|messageType e0000320, arg 00000000|
+2024/10/16 15:37:11:685|SLEEP|messageType e0000300, arg 00000000|
+2024/10/16 15:37:11:686|ASL|disablign app nap|
+2024/10/16 15:37:11:686|ASL|disabling app nap done|
+2024/10/16 15:37:11:686|SLEEP|WOKE VIA IOKIT|
+2024/10/16 15:37:11:686|ASL|toggle after sleep 138|
+2024/10/16 15:37:11:686|xw|disable|
+2024/10/16 15:37:11:693|xw|enable|
+2024/10/16 15:37:11:694|ASL|unregister d|
+2024/10/16 15:37:11:698|WAKE|EVENTHANDLER RESET|
+2024/10/16 15:37:11:719|M|mt_stop2|
+2024/10/16 15:37:11:720|SNAP|Did reset snap areas 0 0|
+2024/10/16 15:37:11:720|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 139|
+2024/10/16 15:37:11:745|TouchBar|Don't show because sleep|
+2024/10/16 15:37:11:759|M|unregister tb trackpad|
+2024/10/16 15:37:11:760|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 15:37:11:761|M|register touchbar mbp trackpad|
+2024/10/16 15:37:11:761|STDEV|69|
+2024/10/16 15:37:11:820|WAKE|DIDWAKE|
+2024/10/16 15:37:11:820|ASL|disablign app nap|
+2024/10/16 15:37:11:820|ASL|disabling app nap done|
+2024/10/16 15:37:11:826|WAKE|DIDWAKE2|
+2024/10/16 15:37:11:827|WAKE|NO RESTART|
+2024/10/16 15:37:11:827|ASL|toggle after sleep 139|
+2024/10/16 15:37:11:827|xw|disable|
+2024/10/16 15:37:11:830|xw|enable|
+2024/10/16 15:37:11:831|ASL|unregister d|
+2024/10/16 15:37:11:834|WAKE|EVENTHANDLER RESET|
+2024/10/16 15:37:11:834|M|mt_stop2|
+2024/10/16 15:37:11:834|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 15:37:11:835|SNAPAREA|return existing (updated)|
+2024/10/16 15:37:11:835|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 15:37:11:835|SNAP|Did reset snap areas 0 0|
+2024/10/16 15:37:11:835|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 140|
+2024/10/16 15:37:12:042|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 15:37:12:042|TB|Force show Touch Bar|
+2024/10/16 15:37:12:043|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 15:37:12:043|TB|Force show Touch Bar|
+2024/10/16 15:37:12:043|M|unregister tb trackpad|
+2024/10/16 15:37:12:044|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 15:37:12:044|M|register touchbar mbp trackpad|
+2024/10/16 15:37:12:044|STDEV|69|
+2024/10/16 15:37:13:867|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/10/16 15:37:13:939|ASL|trigger after login screen 140 - /System/Applications/Calendar.app - com.apple.iCal|
+2024/10/16 15:37:13:939|LOGIN|triggerAfterLoginScreenActions|
+2024/10/16 15:37:13:939|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/10/16 15:37:13:939|ASL|reset after login screen 140|
+2024/10/16 15:37:13:939|WAKE|EVENTHANDLER RESET|
+2024/10/16 15:37:13:943|M|mt_stop2|
+2024/10/16 15:37:13:943|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 15:37:13:943|SNAPAREA|return existing (updated)|
+2024/10/16 15:37:13:943|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 15:37:13:943|SNAP|Did reset snap areas 0 0|
+2024/10/16 15:37:13:944|ASL|toggle after sleep 140|
+2024/10/16 15:37:13:944|xw|disable|
+2024/10/16 15:37:13:950|xw|enable|
+2024/10/16 15:37:13:952|ASL|unregister d|
+2024/10/16 15:37:13:961|WAKE|EVENTHANDLER RESET|
+2024/10/16 15:37:13:965|M|mt_stop2|
+2024/10/16 15:37:13:966|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 15:37:13:967|SNAPAREA|return existing (updated)|
+2024/10/16 15:37:13:967|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 15:37:13:967|SNAP|Did reset snap areas 0 0|
+2024/10/16 15:37:13:967|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 141|
+2024/10/16 15:37:13:980|ASL|performing after wake actions|
+2024/10/16 15:37:13:982|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 15:37:13:982|TB|Force show Touch Bar|
+2024/10/16 15:37:13:983|M|unregister tb trackpad|
+2024/10/16 15:37:13:984|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 15:37:13:984|M|register touchbar mbp trackpad|
+2024/10/16 15:37:13:984|STDEV|69|
+2024/10/16 15:37:14:000|M|unregister tb trackpad|
+2024/10/16 15:37:14:007|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 15:37:14:007|M|register touchbar mbp trackpad|
+2024/10/16 15:37:14:007|STDEV|69|
+2024/10/16 15:37:14:173|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 15:37:14:173|TB|Force show Touch Bar|
+2024/10/16 15:37:14:446|short|eventtap success|
+2024/10/16 15:55:07:469|SLEEP|messageType e0000280, arg 3ab3004d|
+2024/10/16 15:55:07:483|ASL|disablign app nap|
+2024/10/16 15:55:07:483|ASL|disabling app nap done|
+2024/10/16 15:55:07:484|SLEEP|WILLSLEEP|
+2024/10/16 15:55:07:626|TouchBar|Don't show because sleep|
+2024/10/16 15:55:07:988|SEC|SecureInputActive com.apple.loginwindow 188|
+2024/10/16 15:55:26:710|ASL|The Mac is running on battery power.|
+2024/10/16 16:05:57:145|M|mt_stop2|
+2024/10/16 16:05:57:149|M|unregister tb trackpad|
+2024/10/16 16:05:57:150|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:05:57:151|M|register touchbar mbp trackpad|
+2024/10/16 16:05:57:151|STDEV|69|
+2024/10/16 16:07:32:064|M|mt_stop2|
+2024/10/16 16:07:32:072|M|unregister tb trackpad|
+2024/10/16 16:07:32:073|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:07:32:073|M|register touchbar mbp trackpad|
+2024/10/16 16:07:32:074|STDEV|69|
+2024/10/16 16:07:50:674|M|mt_stop2|
+2024/10/16 16:07:50:681|M|unregister tb trackpad|
+2024/10/16 16:07:50:682|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:07:50:683|M|register touchbar mbp trackpad|
+2024/10/16 16:07:50:683|STDEV|69|
+2024/10/16 16:10:31:900|M|mt_stop2|
+2024/10/16 16:10:31:911|M|unregister tb trackpad|
+2024/10/16 16:10:31:912|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:10:31:913|M|register touchbar mbp trackpad|
+2024/10/16 16:10:31:913|STDEV|69|
+2024/10/16 16:24:03:406|M|mt_stop2|
+2024/10/16 16:24:03:416|M|unregister tb trackpad|
+2024/10/16 16:24:03:417|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:24:03:417|M|register touchbar mbp trackpad|
+2024/10/16 16:24:03:417|STDEV|69|
+2024/10/16 16:24:46:683|M|mt_stop2|
+2024/10/16 16:24:46:690|M|unregister tb trackpad|
+2024/10/16 16:24:46:691|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:24:46:692|M|register touchbar mbp trackpad|
+2024/10/16 16:24:46:692|STDEV|69|
+2024/10/16 16:24:48:374|TouchBar|Don't show because sleep|
+2024/10/16 16:24:54:058|TouchBar|Don't show because sleep|
+2024/10/16 16:25:05:037|M|mt_stop2|
+2024/10/16 16:25:05:045|M|unregister tb trackpad|
+2024/10/16 16:25:05:046|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:25:05:046|M|register touchbar mbp trackpad|
+2024/10/16 16:25:05:046|STDEV|69|
+2024/10/16 16:33:54:131|M|mt_stop2|
+2024/10/16 16:33:54:139|M|unregister tb trackpad|
+2024/10/16 16:33:54:141|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:33:54:141|M|register touchbar mbp trackpad|
+2024/10/16 16:33:54:141|STDEV|69|
+2024/10/16 16:40:17:974|M|mt_stop2|
+2024/10/16 16:40:17:982|M|unregister tb trackpad|
+2024/10/16 16:40:17:983|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:40:17:984|M|register touchbar mbp trackpad|
+2024/10/16 16:40:17:984|STDEV|69|
+2024/10/16 16:41:42:509|M|mt_stop2|
+2024/10/16 16:41:42:516|M|unregister tb trackpad|
+2024/10/16 16:41:42:517|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:41:42:518|M|register touchbar mbp trackpad|
+2024/10/16 16:41:42:518|STDEV|69|
+2024/10/16 16:42:00:309|M|mt_stop2|
+2024/10/16 16:42:00:320|M|unregister tb trackpad|
+2024/10/16 16:42:00:321|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:42:00:321|M|register touchbar mbp trackpad|
+2024/10/16 16:42:00:322|STDEV|69|
+2024/10/16 16:43:38:217|M|mt_stop2|
+2024/10/16 16:43:38:228|M|unregister tb trackpad|
+2024/10/16 16:43:38:230|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:43:38:231|M|register touchbar mbp trackpad|
+2024/10/16 16:43:38:231|STDEV|69|
+2024/10/16 16:49:51:424|M|mt_stop2|
+2024/10/16 16:49:51:432|M|unregister tb trackpad|
+2024/10/16 16:49:51:433|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:49:51:433|M|register touchbar mbp trackpad|
+2024/10/16 16:49:51:433|STDEV|69|
+2024/10/16 16:50:02:567|M|mt_stop2|
+2024/10/16 16:50:02:575|M|unregister tb trackpad|
+2024/10/16 16:50:02:575|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:50:02:575|M|register touchbar mbp trackpad|
+2024/10/16 16:50:02:575|STDEV|69|
+2024/10/16 16:51:30:079|M|mt_stop2|
+2024/10/16 16:51:30:090|M|unregister tb trackpad|
+2024/10/16 16:51:30:091|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 16:51:30:092|M|register touchbar mbp trackpad|
+2024/10/16 16:51:30:092|STDEV|69|
+2024/10/16 17:00:20:814|M|mt_stop2|
+2024/10/16 17:00:20:821|M|unregister tb trackpad|
+2024/10/16 17:00:20:822|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:00:20:823|M|register touchbar mbp trackpad|
+2024/10/16 17:00:20:823|STDEV|69|
+2024/10/16 17:04:46:195|M|mt_stop2|
+2024/10/16 17:04:46:202|M|unregister tb trackpad|
+2024/10/16 17:04:46:204|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:04:46:204|M|register touchbar mbp trackpad|
+2024/10/16 17:04:46:205|STDEV|69|
+2024/10/16 17:05:02:355|M|mt_stop2|
+2024/10/16 17:05:02:365|M|unregister tb trackpad|
+2024/10/16 17:05:02:366|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:05:02:367|M|register touchbar mbp trackpad|
+2024/10/16 17:05:02:367|STDEV|69|
+2024/10/16 17:06:10:118|M|mt_stop2|
+2024/10/16 17:06:10:127|M|unregister tb trackpad|
+2024/10/16 17:06:10:128|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:06:10:129|M|register touchbar mbp trackpad|
+2024/10/16 17:06:10:129|STDEV|69|
+2024/10/16 17:08:44:583|M|mt_stop2|
+2024/10/16 17:08:44:596|M|unregister tb trackpad|
+2024/10/16 17:08:44:598|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:08:44:599|M|register touchbar mbp trackpad|
+2024/10/16 17:08:44:600|STDEV|69|
+2024/10/16 17:09:00:011|M|mt_stop2|
+2024/10/16 17:09:00:019|M|unregister tb trackpad|
+2024/10/16 17:09:00:021|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:09:00:022|M|register touchbar mbp trackpad|
+2024/10/16 17:09:00:022|STDEV|69|
+2024/10/16 17:09:24:511|M|mt_stop2|
+2024/10/16 17:09:24:532|M|unregister tb trackpad|
+2024/10/16 17:09:24:533|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:09:24:533|M|register touchbar mbp trackpad|
+2024/10/16 17:09:24:534|STDEV|69|
+2024/10/16 17:15:32:495|M|mt_stop2|
+2024/10/16 17:15:32:502|M|unregister tb trackpad|
+2024/10/16 17:15:32:503|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:15:32:504|M|register touchbar mbp trackpad|
+2024/10/16 17:15:32:504|STDEV|69|
+2024/10/16 17:18:41:807|M|mt_stop2|
+2024/10/16 17:18:41:819|M|unregister tb trackpad|
+2024/10/16 17:18:41:821|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:18:41:822|M|register touchbar mbp trackpad|
+2024/10/16 17:18:41:822|STDEV|69|
+2024/10/16 17:34:17:439|M|mt_stop2|
+2024/10/16 17:34:17:453|M|unregister tb trackpad|
+2024/10/16 17:34:17:454|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:34:17:454|M|register touchbar mbp trackpad|
+2024/10/16 17:34:17:455|STDEV|69|
+2024/10/16 17:39:12:225|SLEEP|messageType e0000320, arg 00000000|
+2024/10/16 17:39:12:366|SLEEP|messageType e0000300, arg 00000000|
+2024/10/16 17:39:12:366|ASL|disablign app nap|
+2024/10/16 17:39:12:366|ASL|disabling app nap done|
+2024/10/16 17:39:12:366|SLEEP|WOKE VIA IOKIT|
+2024/10/16 17:39:12:366|ASL|toggle after sleep 141|
+2024/10/16 17:39:12:366|xw|disable|
+2024/10/16 17:39:12:442|xw|enable|
+2024/10/16 17:39:12:443|ASL|unregister d|
+2024/10/16 17:39:12:453|WAKE|EVENTHANDLER RESET|
+2024/10/16 17:39:12:457|M|mt_stop2|
+2024/10/16 17:39:12:457|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 17:39:12:459|SNAPAREA|return existing (updated)|
+2024/10/16 17:39:12:459|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 17:39:12:459|SNAP|Did reset snap areas 0 0|
+2024/10/16 17:39:12:459|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 142|
+2024/10/16 17:39:12:470|TouchBar|Don't show because sleep|
+2024/10/16 17:39:12:473|M|unregister tb trackpad|
+2024/10/16 17:39:12:474|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:39:12:474|M|register touchbar mbp trackpad|
+2024/10/16 17:39:12:475|STDEV|69|
+2024/10/16 17:39:12:559|WAKE|DIDWAKE|
+2024/10/16 17:39:12:559|ASL|disablign app nap|
+2024/10/16 17:39:12:559|ASL|disabling app nap done|
+2024/10/16 17:39:12:562|WAKE|DIDWAKE2|
+2024/10/16 17:39:12:563|WAKE|NO RESTART|
+2024/10/16 17:39:12:563|ASL|toggle after sleep 142|
+2024/10/16 17:39:12:564|xw|disable|
+2024/10/16 17:39:12:566|xw|enable|
+2024/10/16 17:39:12:567|ASL|unregister d|
+2024/10/16 17:39:12:569|WAKE|EVENTHANDLER RESET|
+2024/10/16 17:39:12:570|M|mt_stop2|
+2024/10/16 17:39:12:570|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 17:39:12:571|SNAPAREA|return existing (updated)|
+2024/10/16 17:39:12:571|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 17:39:12:571|SNAP|Did reset snap areas 0 0|
+2024/10/16 17:39:12:571|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 143|
+2024/10/16 17:39:14:168|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/10/16 17:39:14:189|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 17:39:14:189|TB|Force show Touch Bar|
+2024/10/16 17:39:14:190|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 17:39:14:190|TB|Force show Touch Bar|
+2024/10/16 17:39:14:191|M|unregister tb trackpad|
+2024/10/16 17:39:14:191|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:39:14:192|M|register touchbar mbp trackpad|
+2024/10/16 17:39:14:192|STDEV|69|
+2024/10/16 17:39:14:222|ASL|trigger after login screen 143 - /System/Library/CoreServices/Finder.app - com.apple.finder|
+2024/10/16 17:39:14:222|LOGIN|triggerAfterLoginScreenActions|
+2024/10/16 17:39:14:222|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/10/16 17:39:14:222|ASL|reset after login screen 143|
+2024/10/16 17:39:14:222|WAKE|EVENTHANDLER RESET|
+2024/10/16 17:39:14:224|M|mt_stop2|
+2024/10/16 17:39:14:225|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 17:39:14:225|SNAPAREA|return existing (updated)|
+2024/10/16 17:39:14:225|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 17:39:14:225|SNAP|Did reset snap areas 0 0|
+2024/10/16 17:39:14:225|ASL|toggle after sleep 143|
+2024/10/16 17:39:14:225|xw|disable|
+2024/10/16 17:39:14:228|xw|enable|
+2024/10/16 17:39:14:228|ASL|unregister d|
+2024/10/16 17:39:14:232|WAKE|EVENTHANDLER RESET|
+2024/10/16 17:39:14:233|M|mt_stop2|
+2024/10/16 17:39:14:233|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 17:39:14:233|SNAPAREA|return existing (updated)|
+2024/10/16 17:39:14:234|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 17:39:14:234|SNAP|Did reset snap areas 0 0|
+2024/10/16 17:39:14:234|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 144|
+2024/10/16 17:39:14:239|ASL|performing after wake actions|
+2024/10/16 17:39:14:521|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 17:39:14:521|TB|Force show Touch Bar|
+2024/10/16 17:39:14:522|M|unregister tb trackpad|
+2024/10/16 17:39:14:523|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:39:14:523|M|register touchbar mbp trackpad|
+2024/10/16 17:39:14:523|STDEV|69|
+2024/10/16 17:39:14:532|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 17:39:14:532|TB|Force show Touch Bar|
+2024/10/16 17:39:14:533|M|unregister tb trackpad|
+2024/10/16 17:39:14:538|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:39:14:538|M|register touchbar mbp trackpad|
+2024/10/16 17:39:14:539|STDEV|69|
+2024/10/16 17:39:14:726|short|eventtap success|
+2024/10/16 17:39:15:249|M|mt_stop2|
+2024/10/16 17:39:15:255|M|unregister tb trackpad|
+2024/10/16 17:39:15:258|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 17:39:15:260|M|register touchbar mbp trackpad|
+2024/10/16 17:39:15:260|STDEV|69|
+2024/10/16 17:39:29:797|SEC|SecureInputActive com.apple.systempreferences 50825|
+2024/10/16 17:39:33:731|SEC|SecureInputDisabled com.apple.systempreferences|
+2024/10/16 17:39:36:722|TB|PresentationMode appWithControlStrip (null)|
+2024/10/16 17:41:12:056|ASL|The Mac is running on battery power.|
+2024/10/16 17:42:12:060|ASL|The Mac is running on battery power.|
+2024/10/16 17:42:25:041|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/16 17:43:12:060|ASL|The Mac is running on battery power.|
+2024/10/16 17:44:12:056|ASL|The Mac is running on battery power.|
+2024/10/16 17:44:49:095|TB|PresentationMode appWithControlStrip (null)|
+2024/10/16 17:44:51:728|SEC|SecureInputActive com.apple.Passwords 52950|
+2024/10/16 17:44:59:696|SEC|SecureInputDisabled com.apple.Passwords|
+2024/10/16 17:45:03:746|TB|PresentationMode appWithControlStrip (null)|
+2024/10/16 17:45:07:070|TB|PresentationMode appWithControlStrip (null)|
+2024/10/16 17:45:12:054|ASL|The Mac is running on battery power.|
+2024/10/16 17:46:12:058|ASL|The Mac is running on battery power.|
+2024/10/16 17:46:35:749|SLEEP|messageType e0000280, arg 3bbe004d|
+2024/10/16 17:46:35:757|ASL|disablign app nap|
+2024/10/16 17:46:35:757|ASL|disabling app nap done|
+2024/10/16 17:46:35:758|SLEEP|WILLSLEEP|
+2024/10/16 17:46:35:897|TouchBar|Don't show because sleep|
+2024/10/16 17:46:35:930|SEC|SecureInputActive com.apple.loginwindow 188|
+2024/10/16 18:03:08:276|ASL|The Mac is running on battery power.|
+2024/10/16 18:03:09:321|M|mt_stop2|
+2024/10/16 18:03:09:324|M|unregister tb trackpad|
+2024/10/16 18:03:09:325|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:03:09:325|M|register touchbar mbp trackpad|
+2024/10/16 18:03:09:325|STDEV|69|
+2024/10/16 18:15:25:584|M|mt_stop2|
+2024/10/16 18:15:25:593|M|unregister tb trackpad|
+2024/10/16 18:15:25:593|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:15:25:594|M|register touchbar mbp trackpad|
+2024/10/16 18:15:25:594|STDEV|69|
+2024/10/16 18:31:01:424|M|mt_stop2|
+2024/10/16 18:31:01:431|M|unregister tb trackpad|
+2024/10/16 18:31:01:432|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:31:01:433|M|register touchbar mbp trackpad|
+2024/10/16 18:31:01:433|STDEV|69|
+2024/10/16 18:48:23:343|M|mt_stop2|
+2024/10/16 18:48:23:351|M|unregister tb trackpad|
+2024/10/16 18:48:23:352|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:48:23:352|M|register touchbar mbp trackpad|
+2024/10/16 18:48:23:353|STDEV|69|
+2024/10/16 18:50:00:362|M|mt_stop2|
+2024/10/16 18:50:00:371|M|unregister tb trackpad|
+2024/10/16 18:50:00:372|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:50:00:373|M|register touchbar mbp trackpad|
+2024/10/16 18:50:00:373|STDEV|69|
+2024/10/16 18:50:24:675|SLEEP|messageType e0000320, arg 00000000|
+2024/10/16 18:50:25:038|SLEEP|messageType e0000300, arg 00000000|
+2024/10/16 18:50:25:038|ASL|disablign app nap|
+2024/10/16 18:50:25:038|ASL|disabling app nap done|
+2024/10/16 18:50:25:038|SLEEP|WOKE VIA IOKIT|
+2024/10/16 18:50:25:038|ASL|toggle after sleep 144|
+2024/10/16 18:50:25:039|xw|disable|
+2024/10/16 18:50:25:041|xw|enable|
+2024/10/16 18:50:25:042|ASL|unregister d|
+2024/10/16 18:50:25:045|WAKE|EVENTHANDLER RESET|
+2024/10/16 18:50:25:046|M|mt_stop2|
+2024/10/16 18:50:25:046|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 18:50:25:046|SNAPAREA|return existing (updated)|
+2024/10/16 18:50:25:046|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 18:50:25:046|SNAP|Did reset snap areas 0 0|
+2024/10/16 18:50:25:046|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 145|
+2024/10/16 18:50:25:062|TouchBar|Don't show because sleep|
+2024/10/16 18:50:25:065|M|unregister tb trackpad|
+2024/10/16 18:50:25:066|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:50:25:066|M|register touchbar mbp trackpad|
+2024/10/16 18:50:25:066|STDEV|69|
+2024/10/16 18:50:25:138|WAKE|DIDWAKE|
+2024/10/16 18:50:25:138|ASL|disablign app nap|
+2024/10/16 18:50:25:138|ASL|disabling app nap done|
+2024/10/16 18:50:25:144|WAKE|DIDWAKE2|
+2024/10/16 18:50:25:145|WAKE|NO RESTART|
+2024/10/16 18:50:25:145|ASL|toggle after sleep 145|
+2024/10/16 18:50:25:145|xw|disable|
+2024/10/16 18:50:25:148|xw|enable|
+2024/10/16 18:50:25:148|ASL|unregister d|
+2024/10/16 18:50:25:150|WAKE|EVENTHANDLER RESET|
+2024/10/16 18:50:25:156|M|mt_stop2|
+2024/10/16 18:50:25:156|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 18:50:25:156|SNAPAREA|return existing (updated)|
+2024/10/16 18:50:25:156|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 18:50:25:156|SNAP|Did reset snap areas 0 0|
+2024/10/16 18:50:25:156|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 146|
+2024/10/16 18:50:25:388|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 18:50:25:388|TB|Force show Touch Bar|
+2024/10/16 18:50:25:388|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 18:50:25:388|TB|Force show Touch Bar|
+2024/10/16 18:50:25:389|M|unregister tb trackpad|
+2024/10/16 18:50:25:391|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:50:25:391|M|register touchbar mbp trackpad|
+2024/10/16 18:50:25:391|STDEV|69|
+2024/10/16 18:50:26:414|M|mt_stop2|
+2024/10/16 18:50:26:423|M|unregister tb trackpad|
+2024/10/16 18:50:26:425|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:50:26:426|M|register touchbar mbp trackpad|
+2024/10/16 18:50:26:426|STDEV|69|
+2024/10/16 18:50:26:505|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/10/16 18:50:26:659|ASL|trigger after login screen 146 - /Applications/Brave Browser.app - com.brave.Browser|
+2024/10/16 18:50:26:659|LOGIN|triggerAfterLoginScreenActions|
+2024/10/16 18:50:26:659|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/10/16 18:50:26:659|ASL|reset after login screen 146|
+2024/10/16 18:50:26:659|WAKE|EVENTHANDLER RESET|
+2024/10/16 18:50:26:667|M|mt_stop2|
+2024/10/16 18:50:26:668|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 18:50:26:671|SNAPAREA|return existing (updated)|
+2024/10/16 18:50:26:671|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 18:50:26:671|SNAP|Did reset snap areas 0 0|
+2024/10/16 18:50:26:671|ASL|toggle after sleep 146|
+2024/10/16 18:50:26:672|xw|disable|
+2024/10/16 18:50:26:678|xw|enable|
+2024/10/16 18:50:26:678|ASL|unregister d|
+2024/10/16 18:50:26:683|WAKE|EVENTHANDLER RESET|
+2024/10/16 18:50:26:684|M|mt_stop2|
+2024/10/16 18:50:26:684|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/16 18:50:26:685|SNAPAREA|return existing (updated)|
+2024/10/16 18:50:26:685|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/16 18:50:26:685|SNAP|Did reset snap areas 0 0|
+2024/10/16 18:50:26:685|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 147|
+2024/10/16 18:50:26:690|ASL|performing after wake actions|
+2024/10/16 18:50:26:691|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 18:50:26:691|TB|Force show Touch Bar|
+2024/10/16 18:50:26:692|M|unregister tb trackpad|
+2024/10/16 18:50:26:693|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:50:26:693|M|register touchbar mbp trackpad|
+2024/10/16 18:50:26:693|STDEV|69|
+2024/10/16 18:50:26:705|M|unregister tb trackpad|
+2024/10/16 18:50:26:717|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 18:50:26:717|M|register touchbar mbp trackpad|
+2024/10/16 18:50:26:718|STDEV|69|
+2024/10/16 18:50:26:892|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/16 18:50:26:892|TB|Force show Touch Bar|
+2024/10/16 18:50:27:165|short|eventtap success|
+2024/10/16 18:50:36:002|TB|PresentationMode appWithControlStrip (null)|
+2024/10/16 18:50:44:754|ASL|performing 366|
+2024/10/16 18:50:44:754|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/10/16 18:50:44:754|ASL|performing 20|
+2024/10/16 18:50:44:754|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/10/16 18:50:44:757|ASL|sequoia snapping param 4|
+2024/10/16 18:50:44:768|ASL|already replied 103|
+2024/10/16 18:52:24:052|ASL|The Mac is running on battery power.|
+2024/10/16 18:53:24:058|ASL|The Mac is running on battery power.|
+2024/10/16 18:54:24:057|ASL|The Mac is running on battery power.|
+2024/10/16 18:55:00:165|ASL|performing 366|
+2024/10/16 18:55:00:165|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/10/16 18:55:00:165|ASL|performing 21|
+2024/10/16 18:55:00:165|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/10/16 18:55:00:169|ASL|sequoia snapping param 0|
+2024/10/16 18:55:00:184|ASL|already replied 103|
+2024/10/16 18:55:05:225|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/16 18:55:05:226|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/16 18:55:24:055|ASL|The Mac is running on battery power.|
+2024/10/16 18:55:47:359|ASL|performing 366|
+2024/10/16 18:55:47:359|ASL|triggering action Empty Placeholder - 9D76D3B1-CCD0-44B8-A083-0056E9727B58|
+2024/10/16 18:55:47:359|ASL|performing 20|
+2024/10/16 18:55:47:359|ASL|triggering action Maximize Window Right Half - 34C0F63B-AE7A-4D01-ACDB-392ACFB39EAC|
+2024/10/16 18:55:47:363|ASL|sequoia snapping param 4|
+2024/10/16 18:55:47:381|ASL|already replied 103|
+2024/10/16 18:56:24:057|ASL|The Mac is running on battery power.|
+2024/10/16 18:57:24:060|ASL|The Mac is running on battery power.|
+2024/10/16 18:58:24:062|ASL|The Mac is running on battery power.|
+2024/10/16 18:59:24:056|ASL|The Mac is running on battery power.|
+2024/10/16 19:00:24:071|ASL|The Mac is running on battery power.|
+2024/10/16 19:01:24:053|ASL|The Mac is running on battery power.|
+2024/10/16 19:02:24:053|ASL|The Mac is running on battery power.|
+2024/10/16 19:03:24:063|ASL|The Mac is running on battery power.|
+2024/10/16 19:04:24:064|ASL|The Mac is running on battery power.|
+2024/10/16 19:05:24:063|ASL|The Mac is running on battery power.|
+2024/10/16 19:06:24:060|ASL|The Mac is running on battery power.|
+2024/10/16 19:07:24:058|ASL|The Mac is running on battery power.|
+2024/10/16 19:08:24:064|ASL|The Mac is running on battery power.|
+2024/10/16 19:09:24:059|ASL|The Mac is running on battery power.|
+2024/10/16 19:10:24:082|ASL|The Mac is running on battery power.|
+2024/10/16 19:11:24:049|ASL|The Mac is running on battery power.|
+2024/10/16 19:12:24:063|ASL|The Mac is running on battery power.|
+2024/10/16 19:13:24:058|ASL|The Mac is running on battery power.|
+2024/10/16 19:14:24:054|ASL|The Mac is running on battery power.|
+2024/10/16 19:15:05:205|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/16 19:15:24:048|ASL|The Mac is running on battery power.|
+2024/10/16 19:16:24:054|ASL|The Mac is running on battery power.|
+2024/10/16 19:17:24:046|ASL|The Mac is running on battery power.|
+2024/10/16 19:17:33:414|ASL|performing 366|
+2024/10/16 19:17:33:414|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/10/16 19:17:33:414|ASL|performing 21|
+2024/10/16 19:17:33:415|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/10/16 19:17:33:419|ASL|sequoia snapping param 0|
+2024/10/16 19:17:33:557|ASL|already replied 103|
+2024/10/16 19:18:24:039|ASL|The Mac is running on battery power.|
+2024/10/16 19:19:24:056|ASL|The Mac is running on battery power.|
+2024/10/16 19:20:24:075|ASL|The Mac is running on battery power.|
+2024/10/16 19:21:24:047|ASL|The Mac is running on battery power.|
+2024/10/16 19:22:24:054|ASL|The Mac is running on battery power.|
+2024/10/16 19:23:24:062|ASL|The Mac is running on battery power.|
+2024/10/16 19:24:24:053|ASL|The Mac is running on battery power.|
+2024/10/16 19:25:05:207|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/16 19:25:05:210|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/16 19:25:24:054|ASL|The Mac is running on battery power.|
+2024/10/16 19:26:24:066|ASL|The Mac is running on battery power.|
+2024/10/16 19:27:24:053|ASL|The Mac is running on battery power.|
+2024/10/16 19:28:24:053|ASL|The Mac is running on battery power.|
+2024/10/16 19:29:24:055|ASL|The Mac is running on battery power.|
+2024/10/16 19:30:24:100|ASL|The Mac is running on battery power.|
+2024/10/16 19:31:24:058|ASL|The Mac is running on battery power.|
+2024/10/16 19:32:24:060|ASL|The Mac is running on battery power.|
+2024/10/16 19:33:24:058|ASL|The Mac is running on battery power.|
+2024/10/16 19:33:35:736|SLEEP|messageType e0000280, arg 3bff004d|
+2024/10/16 19:33:35:748|ASL|disablign app nap|
+2024/10/16 19:33:35:748|ASL|disabling app nap done|
+2024/10/16 19:33:35:748|SLEEP|WILLSLEEP|
+2024/10/16 19:33:35:867|TouchBar|Don't show because sleep|
+2024/10/16 19:33:40:145|SEC|SecureInputActive com.apple.loginwindow 188|
+2024/10/16 19:34:29:042|ASL|The Mac is running on battery power.|
+2024/10/16 19:34:30:043|M|mt_stop2|
+2024/10/16 19:34:30:045|M|unregister tb trackpad|
+2024/10/16 19:34:30:046|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 19:34:30:046|M|register touchbar mbp trackpad|
+2024/10/16 19:34:30:047|STDEV|69|
+2024/10/16 19:39:50:981|ASL|The Mac is running on battery power.|
+2024/10/16 19:39:51:984|M|mt_stop2|
+2024/10/16 19:39:51:992|M|unregister tb trackpad|
+2024/10/16 19:39:51:993|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 19:39:51:994|M|register touchbar mbp trackpad|
+2024/10/16 19:39:51:994|STDEV|69|
+2024/10/16 19:40:01:544|M|mt_stop2|
+2024/10/16 19:40:01:555|M|unregister tb trackpad|
+2024/10/16 19:40:01:557|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 19:40:01:558|M|register touchbar mbp trackpad|
+2024/10/16 19:40:01:558|STDEV|69|
+2024/10/16 19:41:55:473|M|mt_stop2|
+2024/10/16 19:41:55:485|M|unregister tb trackpad|
+2024/10/16 19:41:55:486|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 19:41:55:487|M|register touchbar mbp trackpad|
+2024/10/16 19:41:55:487|STDEV|69|
+2024/10/16 19:59:40:447|M|mt_stop2|
+2024/10/16 19:59:40:455|M|unregister tb trackpad|
+2024/10/16 19:59:40:456|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 19:59:40:456|M|register touchbar mbp trackpad|
+2024/10/16 19:59:40:457|STDEV|69|
+2024/10/16 20:00:13:957|M|mt_stop2|
+2024/10/16 20:00:13:964|M|unregister tb trackpad|
+2024/10/16 20:00:13:965|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:00:13:965|M|register touchbar mbp trackpad|
+2024/10/16 20:00:13:965|STDEV|69|
+2024/10/16 20:00:57:245|M|mt_stop2|
+2024/10/16 20:00:57:252|M|unregister tb trackpad|
+2024/10/16 20:00:57:253|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:00:57:253|M|register touchbar mbp trackpad|
+2024/10/16 20:00:57:254|STDEV|69|
+2024/10/16 20:17:39:337|M|mt_stop2|
+2024/10/16 20:17:39:345|M|unregister tb trackpad|
+2024/10/16 20:17:39:346|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:17:39:347|M|register touchbar mbp trackpad|
+2024/10/16 20:17:39:347|STDEV|69|
+2024/10/16 20:26:00:439|M|mt_stop2|
+2024/10/16 20:26:00:447|M|unregister tb trackpad|
+2024/10/16 20:26:00:448|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:26:00:448|M|register touchbar mbp trackpad|
+2024/10/16 20:26:00:449|STDEV|69|
+2024/10/16 20:26:11:495|M|mt_stop2|
+2024/10/16 20:26:11:504|M|unregister tb trackpad|
+2024/10/16 20:26:11:505|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:26:11:506|M|register touchbar mbp trackpad|
+2024/10/16 20:26:11:507|STDEV|69|
+2024/10/16 20:26:20:739|M|mt_stop2|
+2024/10/16 20:26:20:752|M|unregister tb trackpad|
+2024/10/16 20:26:20:754|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:26:20:755|M|register touchbar mbp trackpad|
+2024/10/16 20:26:20:755|STDEV|69|
+2024/10/16 20:26:30:359|M|mt_stop2|
+2024/10/16 20:26:30:371|M|unregister tb trackpad|
+2024/10/16 20:26:30:373|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:26:30:374|M|register touchbar mbp trackpad|
+2024/10/16 20:26:30:374|STDEV|69|
+2024/10/16 20:27:06:849|M|mt_stop2|
+2024/10/16 20:27:06:860|M|unregister tb trackpad|
+2024/10/16 20:27:06:860|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:27:06:860|M|register touchbar mbp trackpad|
+2024/10/16 20:27:06:861|STDEV|69|
+2024/10/16 20:29:15:300|M|mt_stop2|
+2024/10/16 20:29:15:312|M|unregister tb trackpad|
+2024/10/16 20:29:15:314|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:29:15:315|M|register touchbar mbp trackpad|
+2024/10/16 20:29:15:316|STDEV|69|
+2024/10/16 20:29:27:327|M|mt_stop2|
+2024/10/16 20:29:27:339|M|unregister tb trackpad|
+2024/10/16 20:29:27:340|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:29:27:341|M|register touchbar mbp trackpad|
+2024/10/16 20:29:27:341|STDEV|69|
+2024/10/16 20:46:29:402|M|mt_stop2|
+2024/10/16 20:46:29:410|M|unregister tb trackpad|
+2024/10/16 20:46:29:411|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 20:46:29:411|M|register touchbar mbp trackpad|
+2024/10/16 20:46:29:412|STDEV|69|
+2024/10/16 21:00:05:842|M|mt_stop2|
+2024/10/16 21:00:05:849|M|unregister tb trackpad|
+2024/10/16 21:00:05:850|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:00:05:851|M|register touchbar mbp trackpad|
+2024/10/16 21:00:05:851|STDEV|69|
+2024/10/16 21:00:20:621|M|mt_stop2|
+2024/10/16 21:00:20:629|M|unregister tb trackpad|
+2024/10/16 21:00:20:630|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:00:20:630|M|register touchbar mbp trackpad|
+2024/10/16 21:00:20:631|STDEV|69|
+2024/10/16 21:00:57:529|M|mt_stop2|
+2024/10/16 21:00:57:539|M|unregister tb trackpad|
+2024/10/16 21:00:57:540|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:00:57:541|M|register touchbar mbp trackpad|
+2024/10/16 21:00:57:541|STDEV|69|
+2024/10/16 21:04:03:115|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/16 21:04:03:765|M|mt_stop2|
+2024/10/16 21:04:03:768|M|unregister tb trackpad|
+2024/10/16 21:04:03:769|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:04:03:769|M|register touchbar mbp trackpad|
+2024/10/16 21:04:03:770|STDEV|69|
+2024/10/16 21:04:20:219|M|mt_stop2|
+2024/10/16 21:04:20:223|M|unregister tb trackpad|
+2024/10/16 21:04:20:223|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:04:20:223|M|register touchbar mbp trackpad|
+2024/10/16 21:04:20:224|STDEV|69|
+2024/10/16 21:05:49:232|M|mt_stop2|
+2024/10/16 21:05:49:243|M|unregister tb trackpad|
+2024/10/16 21:05:49:245|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:05:49:246|M|register touchbar mbp trackpad|
+2024/10/16 21:05:49:246|STDEV|69|
+2024/10/16 21:05:59:529|M|mt_stop2|
+2024/10/16 21:05:59:541|M|unregister tb trackpad|
+2024/10/16 21:05:59:543|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:05:59:544|M|register touchbar mbp trackpad|
+2024/10/16 21:05:59:544|STDEV|69|
+2024/10/16 21:06:12:289|M|mt_stop2|
+2024/10/16 21:06:12:300|M|unregister tb trackpad|
+2024/10/16 21:06:12:302|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:06:12:303|M|register touchbar mbp trackpad|
+2024/10/16 21:06:12:304|STDEV|69|
+2024/10/16 21:14:00:893|M|mt_stop2|
+2024/10/16 21:14:00:904|M|unregister tb trackpad|
+2024/10/16 21:14:00:906|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:14:00:907|M|register touchbar mbp trackpad|
+2024/10/16 21:14:00:907|STDEV|69|
+2024/10/16 21:21:37:054|M|mt_stop2|
+2024/10/16 21:21:37:066|M|unregister tb trackpad|
+2024/10/16 21:21:37:068|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:21:37:068|M|register touchbar mbp trackpad|
+2024/10/16 21:21:37:069|STDEV|69|
+2024/10/16 21:26:47:559|M|mt_stop2|
+2024/10/16 21:26:47:567|M|unregister tb trackpad|
+2024/10/16 21:26:47:568|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:26:47:568|M|register touchbar mbp trackpad|
+2024/10/16 21:26:47:569|STDEV|69|
+2024/10/16 21:34:36:336|M|mt_stop2|
+2024/10/16 21:34:36:344|M|unregister tb trackpad|
+2024/10/16 21:34:36:345|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:34:36:345|M|register touchbar mbp trackpad|
+2024/10/16 21:34:36:346|STDEV|69|
+2024/10/16 21:51:42:413|M|mt_stop2|
+2024/10/16 21:51:42:420|M|unregister tb trackpad|
+2024/10/16 21:51:42:421|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:51:42:422|M|register touchbar mbp trackpad|
+2024/10/16 21:51:42:422|STDEV|69|
+2024/10/16 21:55:02:325|M|mt_stop2|
+2024/10/16 21:55:02:336|M|unregister tb trackpad|
+2024/10/16 21:55:02:338|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 21:55:02:339|M|register touchbar mbp trackpad|
+2024/10/16 21:55:02:340|STDEV|69|
+2024/10/16 22:04:52:368|M|mt_stop2|
+2024/10/16 22:04:52:375|M|unregister tb trackpad|
+2024/10/16 22:04:52:376|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 22:04:52:377|M|register touchbar mbp trackpad|
+2024/10/16 22:04:52:377|STDEV|69|
+2024/10/16 22:22:53:349|M|mt_stop2|
+2024/10/16 22:22:53:356|M|unregister tb trackpad|
+2024/10/16 22:22:53:357|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 22:22:53:357|M|register touchbar mbp trackpad|
+2024/10/16 22:22:53:358|STDEV|69|
+2024/10/16 22:35:37:279|M|mt_stop2|
+2024/10/16 22:35:37:286|M|unregister tb trackpad|
+2024/10/16 22:35:37:287|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 22:35:37:288|M|register touchbar mbp trackpad|
+2024/10/16 22:35:37:288|STDEV|69|
+2024/10/16 22:53:04:679|M|mt_stop2|
+2024/10/16 22:53:04:686|M|unregister tb trackpad|
+2024/10/16 22:53:04:687|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 22:53:04:687|M|register touchbar mbp trackpad|
+2024/10/16 22:53:04:688|STDEV|69|
+2024/10/16 23:09:27:311|M|mt_stop2|
+2024/10/16 23:09:27:315|M|unregister tb trackpad|
+2024/10/16 23:09:27:315|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:09:27:315|M|register touchbar mbp trackpad|
+2024/10/16 23:09:27:315|STDEV|69|
+2024/10/16 23:23:38:575|M|mt_stop2|
+2024/10/16 23:23:38:583|M|unregister tb trackpad|
+2024/10/16 23:23:38:585|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:23:38:586|M|register touchbar mbp trackpad|
+2024/10/16 23:23:38:586|STDEV|69|
+2024/10/16 23:24:58:082|M|mt_stop2|
+2024/10/16 23:24:58:089|M|unregister tb trackpad|
+2024/10/16 23:24:58:090|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:24:58:091|M|register touchbar mbp trackpad|
+2024/10/16 23:24:58:091|STDEV|69|
+2024/10/16 23:27:44:299|M|mt_stop2|
+2024/10/16 23:27:44:309|M|unregister tb trackpad|
+2024/10/16 23:27:44:310|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:27:44:311|M|register touchbar mbp trackpad|
+2024/10/16 23:27:44:311|STDEV|69|
+2024/10/16 23:28:47:435|M|mt_stop2|
+2024/10/16 23:28:47:446|M|unregister tb trackpad|
+2024/10/16 23:28:47:447|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:28:47:448|M|register touchbar mbp trackpad|
+2024/10/16 23:28:47:448|STDEV|69|
+2024/10/16 23:28:57:813|M|mt_stop2|
+2024/10/16 23:28:57:824|M|unregister tb trackpad|
+2024/10/16 23:28:57:827|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:28:57:828|M|register touchbar mbp trackpad|
+2024/10/16 23:28:57:829|STDEV|69|
+2024/10/16 23:29:31:656|M|mt_stop2|
+2024/10/16 23:29:31:668|M|unregister tb trackpad|
+2024/10/16 23:29:31:670|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:29:31:671|M|register touchbar mbp trackpad|
+2024/10/16 23:29:31:671|STDEV|69|
+2024/10/16 23:42:34:263|M|mt_stop2|
+2024/10/16 23:42:34:271|M|unregister tb trackpad|
+2024/10/16 23:42:34:272|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:42:34:273|M|register touchbar mbp trackpad|
+2024/10/16 23:42:34:273|STDEV|69|
+2024/10/16 23:42:43:984|M|mt_stop2|
+2024/10/16 23:42:43:992|M|unregister tb trackpad|
+2024/10/16 23:42:43:993|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:42:43:994|M|register touchbar mbp trackpad|
+2024/10/16 23:42:43:994|STDEV|69|
+2024/10/16 23:58:59:369|M|mt_stop2|
+2024/10/16 23:58:59:381|M|unregister tb trackpad|
+2024/10/16 23:58:59:383|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/16 23:58:59:383|M|register touchbar mbp trackpad|
+2024/10/16 23:58:59:384|STDEV|69|
+2024/10/17 00:12:46:654|M|mt_stop2|
+2024/10/17 00:12:46:658|M|unregister tb trackpad|
+2024/10/17 00:12:46:658|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:12:46:658|M|register touchbar mbp trackpad|
+2024/10/17 00:12:46:659|STDEV|69|
+2024/10/17 00:14:32:177|usage|loading todays usage|
+2024/10/17 00:14:33:323|M|mt_stop2|
+2024/10/17 00:14:33:328|M|unregister tb trackpad|
+2024/10/17 00:14:33:329|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:14:33:329|M|register touchbar mbp trackpad|
+2024/10/17 00:14:33:330|STDEV|69|
+2024/10/17 00:14:43:734|M|mt_stop2|
+2024/10/17 00:14:43:744|M|unregister tb trackpad|
+2024/10/17 00:14:43:745|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:14:43:746|M|register touchbar mbp trackpad|
+2024/10/17 00:14:43:747|STDEV|69|
+2024/10/17 00:20:42:482|M|mt_stop2|
+2024/10/17 00:20:42:490|M|unregister tb trackpad|
+2024/10/17 00:20:42:491|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:20:42:491|M|register touchbar mbp trackpad|
+2024/10/17 00:20:42:491|STDEV|69|
+2024/10/17 00:20:51:768|M|mt_stop2|
+2024/10/17 00:20:51:775|M|unregister tb trackpad|
+2024/10/17 00:20:51:776|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:20:51:776|M|register touchbar mbp trackpad|
+2024/10/17 00:20:51:777|STDEV|69|
+2024/10/17 00:25:41:844|M|mt_stop2|
+2024/10/17 00:25:41:852|M|unregister tb trackpad|
+2024/10/17 00:25:41:853|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:25:41:854|M|register touchbar mbp trackpad|
+2024/10/17 00:25:41:854|STDEV|69|
+2024/10/17 00:43:19:529|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 00:43:20:344|M|mt_stop2|
+2024/10/17 00:43:20:346|M|unregister tb trackpad|
+2024/10/17 00:43:20:347|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:43:20:348|M|register touchbar mbp trackpad|
+2024/10/17 00:43:20:348|STDEV|69|
+2024/10/17 00:59:18:319|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 00:59:18:319|M|mt_stop2|
+2024/10/17 00:59:18:321|M|unregister tb trackpad|
+2024/10/17 00:59:18:321|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 00:59:18:321|M|register touchbar mbp trackpad|
+2024/10/17 00:59:18:322|STDEV|69|
+2024/10/17 01:16:19:325|M|mt_stop2|
+2024/10/17 01:16:19:333|M|unregister tb trackpad|
+2024/10/17 01:16:19:334|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 01:16:19:335|M|register touchbar mbp trackpad|
+2024/10/17 01:16:19:335|STDEV|69|
+2024/10/17 01:32:51:283|M|mt_stop2|
+2024/10/17 01:32:51:288|M|unregister tb trackpad|
+2024/10/17 01:32:51:288|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 01:32:51:289|M|register touchbar mbp trackpad|
+2024/10/17 01:32:51:289|STDEV|69|
+2024/10/17 01:44:11:735|ASL|The Mac is running on battery power.|
+2024/10/17 01:44:12:788|M|mt_stop2|
+2024/10/17 01:44:12:795|M|unregister tb trackpad|
+2024/10/17 01:44:12:796|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 01:44:12:797|M|register touchbar mbp trackpad|
+2024/10/17 01:44:12:797|STDEV|69|
+2024/10/17 01:46:11:047|ASL|The Mac is running on battery power.|
+2024/10/17 02:01:46:574|ASL|The Mac is running on battery power.|
+2024/10/17 02:01:46:748|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 02:01:47:514|M|mt_stop2|
+2024/10/17 02:01:47:516|M|unregister tb trackpad|
+2024/10/17 02:01:47:517|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 02:01:47:518|M|register touchbar mbp trackpad|
+2024/10/17 02:01:47:518|STDEV|69|
+2024/10/17 02:17:10:327|M|mt_stop2|
+2024/10/17 02:17:10:335|M|unregister tb trackpad|
+2024/10/17 02:17:10:337|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 02:17:10:337|M|register touchbar mbp trackpad|
+2024/10/17 02:17:10:337|STDEV|69|
+2024/10/17 02:27:14:656|M|mt_stop2|
+2024/10/17 02:27:14:662|M|unregister tb trackpad|
+2024/10/17 02:27:14:663|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 02:27:14:664|M|register touchbar mbp trackpad|
+2024/10/17 02:27:14:664|STDEV|69|
+2024/10/17 02:43:03:367|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 02:43:03:973|M|mt_stop2|
+2024/10/17 02:43:03:975|M|unregister tb trackpad|
+2024/10/17 02:43:03:976|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 02:43:03:976|M|register touchbar mbp trackpad|
+2024/10/17 02:43:03:977|STDEV|69|
+2024/10/17 02:43:14:434|M|mt_stop2|
+2024/10/17 02:43:14:446|M|unregister tb trackpad|
+2024/10/17 02:43:14:447|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 02:43:14:448|M|register touchbar mbp trackpad|
+2024/10/17 02:43:14:448|STDEV|69|
+2024/10/17 03:00:00:291|M|mt_stop2|
+2024/10/17 03:00:00:295|M|unregister tb trackpad|
+2024/10/17 03:00:00:296|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:00:00:296|M|register touchbar mbp trackpad|
+2024/10/17 03:00:00:296|STDEV|69|
+2024/10/17 03:15:03:302|M|mt_stop2|
+2024/10/17 03:15:03:312|M|unregister tb trackpad|
+2024/10/17 03:15:03:314|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:15:03:314|M|register touchbar mbp trackpad|
+2024/10/17 03:15:03:315|STDEV|69|
+2024/10/17 03:32:20:316|M|mt_stop2|
+2024/10/17 03:32:20:323|M|unregister tb trackpad|
+2024/10/17 03:32:20:324|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:32:20:325|M|register touchbar mbp trackpad|
+2024/10/17 03:32:20:325|STDEV|69|
+2024/10/17 03:50:10:338|M|mt_stop2|
+2024/10/17 03:50:10:350|M|unregister tb trackpad|
+2024/10/17 03:50:10:352|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:50:10:353|M|register touchbar mbp trackpad|
+2024/10/17 03:50:10:353|STDEV|69|
+2024/10/17 03:54:30:409|M|mt_stop2|
+2024/10/17 03:54:30:418|M|unregister tb trackpad|
+2024/10/17 03:54:30:420|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:54:30:420|M|register touchbar mbp trackpad|
+2024/10/17 03:54:30:421|STDEV|69|
+2024/10/17 03:54:40:437|M|mt_stop2|
+2024/10/17 03:54:40:444|M|unregister tb trackpad|
+2024/10/17 03:54:40:445|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:54:40:446|M|register touchbar mbp trackpad|
+2024/10/17 03:54:40:446|STDEV|69|
+2024/10/17 03:55:02:394|M|mt_stop2|
+2024/10/17 03:55:02:402|M|unregister tb trackpad|
+2024/10/17 03:55:02:403|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:55:02:403|M|register touchbar mbp trackpad|
+2024/10/17 03:55:02:403|STDEV|69|
+2024/10/17 03:55:15:287|M|mt_stop2|
+2024/10/17 03:55:15:294|M|unregister tb trackpad|
+2024/10/17 03:55:15:295|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:55:15:295|M|register touchbar mbp trackpad|
+2024/10/17 03:55:15:296|STDEV|69|
+2024/10/17 03:55:28:041|M|mt_stop2|
+2024/10/17 03:55:28:050|M|unregister tb trackpad|
+2024/10/17 03:55:28:052|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:55:28:053|M|register touchbar mbp trackpad|
+2024/10/17 03:55:28:053|STDEV|69|
+2024/10/17 03:55:37:099|M|mt_stop2|
+2024/10/17 03:55:37:107|M|unregister tb trackpad|
+2024/10/17 03:55:37:108|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:55:37:108|M|register touchbar mbp trackpad|
+2024/10/17 03:55:37:109|STDEV|69|
+2024/10/17 03:55:45:466|M|mt_stop2|
+2024/10/17 03:55:45:474|M|unregister tb trackpad|
+2024/10/17 03:55:45:475|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 03:55:45:476|M|register touchbar mbp trackpad|
+2024/10/17 03:55:45:476|STDEV|69|
+2024/10/17 04:03:37:203|M|mt_stop2|
+2024/10/17 04:03:37:207|M|unregister tb trackpad|
+2024/10/17 04:03:37:207|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 04:03:37:207|M|register touchbar mbp trackpad|
+2024/10/17 04:03:37:207|STDEV|69|
+2024/10/17 04:07:36:287|M|mt_stop2|
+2024/10/17 04:07:36:296|M|unregister tb trackpad|
+2024/10/17 04:07:36:298|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 04:07:36:299|M|register touchbar mbp trackpad|
+2024/10/17 04:07:36:299|STDEV|69|
+2024/10/17 04:24:02:683|M|mt_stop2|
+2024/10/17 04:24:02:691|M|unregister tb trackpad|
+2024/10/17 04:24:02:692|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 04:24:02:693|M|register touchbar mbp trackpad|
+2024/10/17 04:24:02:693|STDEV|69|
+2024/10/17 04:28:15:358|M|mt_stop2|
+2024/10/17 04:28:15:362|M|unregister tb trackpad|
+2024/10/17 04:28:15:362|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 04:28:15:362|M|register touchbar mbp trackpad|
+2024/10/17 04:28:15:362|STDEV|69|
+2024/10/17 04:40:12:498|M|mt_stop2|
+2024/10/17 04:40:12:506|M|unregister tb trackpad|
+2024/10/17 04:40:12:507|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 04:40:12:508|M|register touchbar mbp trackpad|
+2024/10/17 04:40:12:508|STDEV|69|
+2024/10/17 04:56:50:324|M|mt_stop2|
+2024/10/17 04:56:50:334|M|unregister tb trackpad|
+2024/10/17 04:56:50:337|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 04:56:50:337|M|register touchbar mbp trackpad|
+2024/10/17 04:56:50:337|STDEV|69|
+2024/10/17 05:14:15:603|ASL|The Mac is running on battery power.|
+2024/10/17 05:14:16:627|M|mt_stop2|
+2024/10/17 05:14:16:635|M|unregister tb trackpad|
+2024/10/17 05:14:16:636|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 05:14:16:637|M|register touchbar mbp trackpad|
+2024/10/17 05:14:16:637|STDEV|69|
+2024/10/17 05:26:37:353|M|mt_stop2|
+2024/10/17 05:26:37:361|M|unregister tb trackpad|
+2024/10/17 05:26:37:362|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 05:26:37:363|M|register touchbar mbp trackpad|
+2024/10/17 05:26:37:363|STDEV|69|
+2024/10/17 05:29:16:632|M|mt_stop2|
+2024/10/17 05:29:16:643|M|unregister tb trackpad|
+2024/10/17 05:29:16:645|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 05:29:16:646|M|register touchbar mbp trackpad|
+2024/10/17 05:29:16:646|STDEV|69|
+2024/10/17 05:46:36:385|M|mt_stop2|
+2024/10/17 05:46:36:392|M|unregister tb trackpad|
+2024/10/17 05:46:36:395|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 05:46:36:395|M|register touchbar mbp trackpad|
+2024/10/17 05:46:36:396|STDEV|69|
+2024/10/17 06:00:19:871|M|mt_stop2|
+2024/10/17 06:00:19:882|M|unregister tb trackpad|
+2024/10/17 06:00:19:883|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:00:19:883|M|register touchbar mbp trackpad|
+2024/10/17 06:00:19:884|STDEV|69|
+2024/10/17 06:00:30:255|M|mt_stop2|
+2024/10/17 06:00:30:267|M|unregister tb trackpad|
+2024/10/17 06:00:30:269|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:00:30:269|M|register touchbar mbp trackpad|
+2024/10/17 06:00:30:270|STDEV|69|
+2024/10/17 06:01:04:725|M|mt_stop2|
+2024/10/17 06:01:04:736|M|unregister tb trackpad|
+2024/10/17 06:01:04:738|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:01:04:738|M|register touchbar mbp trackpad|
+2024/10/17 06:01:04:739|STDEV|69|
+2024/10/17 06:10:10:331|M|mt_stop2|
+2024/10/17 06:10:10:342|M|unregister tb trackpad|
+2024/10/17 06:10:10:344|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:10:10:345|M|register touchbar mbp trackpad|
+2024/10/17 06:10:10:345|STDEV|69|
+2024/10/17 06:10:20:702|M|mt_stop2|
+2024/10/17 06:10:20:714|M|unregister tb trackpad|
+2024/10/17 06:10:20:716|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:10:20:717|M|register touchbar mbp trackpad|
+2024/10/17 06:10:20:717|STDEV|69|
+2024/10/17 06:17:53:359|M|mt_stop2|
+2024/10/17 06:17:53:367|M|unregister tb trackpad|
+2024/10/17 06:17:53:368|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:17:53:369|M|register touchbar mbp trackpad|
+2024/10/17 06:17:53:369|STDEV|69|
+2024/10/17 06:29:15:852|M|mt_stop2|
+2024/10/17 06:29:15:861|M|unregister tb trackpad|
+2024/10/17 06:29:15:862|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:29:15:863|M|register touchbar mbp trackpad|
+2024/10/17 06:29:15:863|STDEV|69|
+2024/10/17 06:30:21:144|M|mt_stop2|
+2024/10/17 06:30:21:152|M|unregister tb trackpad|
+2024/10/17 06:30:21:154|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:30:21:154|M|register touchbar mbp trackpad|
+2024/10/17 06:30:21:155|STDEV|69|
+2024/10/17 06:42:35:529|M|mt_stop2|
+2024/10/17 06:42:35:536|M|unregister tb trackpad|
+2024/10/17 06:42:35:538|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:42:35:538|M|register touchbar mbp trackpad|
+2024/10/17 06:42:35:539|STDEV|69|
+2024/10/17 06:42:47:545|M|mt_stop2|
+2024/10/17 06:42:47:554|M|unregister tb trackpad|
+2024/10/17 06:42:47:555|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:42:47:555|M|register touchbar mbp trackpad|
+2024/10/17 06:42:47:556|STDEV|69|
+2024/10/17 06:42:57:153|M|mt_stop2|
+2024/10/17 06:42:57:161|M|unregister tb trackpad|
+2024/10/17 06:42:57:162|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:42:57:162|M|register touchbar mbp trackpad|
+2024/10/17 06:42:57:163|STDEV|69|
+2024/10/17 06:43:51:246|M|mt_stop2|
+2024/10/17 06:43:51:258|M|unregister tb trackpad|
+2024/10/17 06:43:51:258|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:43:51:259|M|register touchbar mbp trackpad|
+2024/10/17 06:43:51:259|STDEV|69|
+2024/10/17 06:55:25:645|M|mt_stop2|
+2024/10/17 06:55:25:652|M|unregister tb trackpad|
+2024/10/17 06:55:25:653|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:55:25:654|M|register touchbar mbp trackpad|
+2024/10/17 06:55:25:654|STDEV|69|
+2024/10/17 06:57:53:067|M|mt_stop2|
+2024/10/17 06:57:53:078|M|unregister tb trackpad|
+2024/10/17 06:57:53:080|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 06:57:53:081|M|register touchbar mbp trackpad|
+2024/10/17 06:57:53:082|STDEV|69|
+2024/10/17 07:00:16:688|M|mt_stop2|
+2024/10/17 07:00:16:696|M|unregister tb trackpad|
+2024/10/17 07:00:16:697|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:00:16:697|M|register touchbar mbp trackpad|
+2024/10/17 07:00:16:698|STDEV|69|
+2024/10/17 07:06:46:967|M|mt_stop2|
+2024/10/17 07:06:46:975|M|unregister tb trackpad|
+2024/10/17 07:06:46:976|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:06:46:976|M|register touchbar mbp trackpad|
+2024/10/17 07:06:46:977|STDEV|69|
+2024/10/17 07:10:25:713|M|mt_stop2|
+2024/10/17 07:10:25:723|M|unregister tb trackpad|
+2024/10/17 07:10:25:724|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:10:25:725|M|register touchbar mbp trackpad|
+2024/10/17 07:10:25:726|STDEV|69|
+2024/10/17 07:10:41:404|M|mt_stop2|
+2024/10/17 07:10:41:415|M|unregister tb trackpad|
+2024/10/17 07:10:41:417|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:10:41:418|M|register touchbar mbp trackpad|
+2024/10/17 07:10:41:419|STDEV|69|
+2024/10/17 07:10:55:985|M|mt_stop2|
+2024/10/17 07:10:55:996|M|unregister tb trackpad|
+2024/10/17 07:10:55:998|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:10:55:998|M|register touchbar mbp trackpad|
+2024/10/17 07:10:55:999|STDEV|69|
+2024/10/17 07:17:55:823|M|mt_stop2|
+2024/10/17 07:17:55:833|M|unregister tb trackpad|
+2024/10/17 07:17:55:835|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:17:55:836|M|register touchbar mbp trackpad|
+2024/10/17 07:17:55:836|STDEV|69|
+2024/10/17 07:25:14:212|M|mt_stop2|
+2024/10/17 07:25:14:224|M|unregister tb trackpad|
+2024/10/17 07:25:14:225|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:25:14:226|M|register touchbar mbp trackpad|
+2024/10/17 07:25:14:227|STDEV|69|
+2024/10/17 07:25:24:320|M|mt_stop2|
+2024/10/17 07:25:24:333|M|unregister tb trackpad|
+2024/10/17 07:25:24:334|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:25:24:335|M|register touchbar mbp trackpad|
+2024/10/17 07:25:24:335|STDEV|69|
+2024/10/17 07:30:17:319|M|mt_stop2|
+2024/10/17 07:30:17:326|M|unregister tb trackpad|
+2024/10/17 07:30:17:328|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:30:17:329|M|register touchbar mbp trackpad|
+2024/10/17 07:30:17:329|STDEV|69|
+2024/10/17 07:45:28:885|M|mt_stop2|
+2024/10/17 07:45:28:897|M|unregister tb trackpad|
+2024/10/17 07:45:28:899|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:45:28:900|M|register touchbar mbp trackpad|
+2024/10/17 07:45:28:900|STDEV|69|
+2024/10/17 07:45:39:209|M|mt_stop2|
+2024/10/17 07:45:39:220|M|unregister tb trackpad|
+2024/10/17 07:45:39:223|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:45:39:224|M|register touchbar mbp trackpad|
+2024/10/17 07:45:39:225|STDEV|69|
+2024/10/17 07:50:19:705|M|mt_stop2|
+2024/10/17 07:50:19:716|M|unregister tb trackpad|
+2024/10/17 07:50:19:718|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:50:19:719|M|register touchbar mbp trackpad|
+2024/10/17 07:50:19:720|STDEV|69|
+2024/10/17 07:50:29:417|M|mt_stop2|
+2024/10/17 07:50:29:424|M|unregister tb trackpad|
+2024/10/17 07:50:29:425|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 07:50:29:425|M|register touchbar mbp trackpad|
+2024/10/17 07:50:29:426|STDEV|69|
+2024/10/17 08:05:44:331|ASL|The Mac is running on battery power.|
+2024/10/17 08:05:45:335|M|mt_stop2|
+2024/10/17 08:05:45:342|M|unregister tb trackpad|
+2024/10/17 08:05:45:343|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:05:45:344|M|register touchbar mbp trackpad|
+2024/10/17 08:05:45:344|STDEV|69|
+2024/10/17 08:10:40:314|M|mt_stop2|
+2024/10/17 08:10:40:322|M|unregister tb trackpad|
+2024/10/17 08:10:40:323|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:10:40:323|M|register touchbar mbp trackpad|
+2024/10/17 08:10:40:323|STDEV|69|
+2024/10/17 08:10:50:072|M|mt_stop2|
+2024/10/17 08:10:50:088|M|unregister tb trackpad|
+2024/10/17 08:10:50:089|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:10:50:089|M|register touchbar mbp trackpad|
+2024/10/17 08:10:50:090|STDEV|69|
+2024/10/17 08:14:36:146|M|mt_stop2|
+2024/10/17 08:14:36:150|M|unregister tb trackpad|
+2024/10/17 08:14:36:151|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:14:36:151|M|register touchbar mbp trackpad|
+2024/10/17 08:14:36:152|STDEV|69|
+2024/10/17 08:14:46:592|M|mt_stop2|
+2024/10/17 08:14:46:599|M|unregister tb trackpad|
+2024/10/17 08:14:46:600|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:14:46:601|M|register touchbar mbp trackpad|
+2024/10/17 08:14:46:601|STDEV|69|
+2024/10/17 08:31:18:350|M|mt_stop2|
+2024/10/17 08:31:18:359|M|unregister tb trackpad|
+2024/10/17 08:31:18:361|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:31:18:362|M|register touchbar mbp trackpad|
+2024/10/17 08:31:18:362|STDEV|69|
+2024/10/17 08:35:53:436|M|mt_stop2|
+2024/10/17 08:35:53:443|M|unregister tb trackpad|
+2024/10/17 08:35:53:444|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:35:53:445|M|register touchbar mbp trackpad|
+2024/10/17 08:35:53:445|STDEV|69|
+2024/10/17 08:36:02:988|M|mt_stop2|
+2024/10/17 08:36:02:996|M|unregister tb trackpad|
+2024/10/17 08:36:02:997|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:36:02:998|M|register touchbar mbp trackpad|
+2024/10/17 08:36:02:998|STDEV|69|
+2024/10/17 08:51:22:063|M|mt_stop2|
+2024/10/17 08:51:22:070|M|unregister tb trackpad|
+2024/10/17 08:51:22:071|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 08:51:22:072|M|register touchbar mbp trackpad|
+2024/10/17 08:51:22:072|STDEV|69|
+2024/10/17 09:04:46:067|M|mt_stop2|
+2024/10/17 09:04:46:075|M|unregister tb trackpad|
+2024/10/17 09:04:46:076|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:04:46:076|M|register touchbar mbp trackpad|
+2024/10/17 09:04:46:076|STDEV|69|
+2024/10/17 09:04:57:369|M|mt_stop2|
+2024/10/17 09:04:57:377|M|unregister tb trackpad|
+2024/10/17 09:04:57:378|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:04:57:379|M|register touchbar mbp trackpad|
+2024/10/17 09:04:57:379|STDEV|69|
+2024/10/17 09:05:06:073|M|mt_stop2|
+2024/10/17 09:05:06:084|M|unregister tb trackpad|
+2024/10/17 09:05:06:086|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:05:06:086|M|register touchbar mbp trackpad|
+2024/10/17 09:05:06:087|STDEV|69|
+2024/10/17 09:06:04:113|M|mt_stop2|
+2024/10/17 09:06:04:125|M|unregister tb trackpad|
+2024/10/17 09:06:04:126|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:06:04:127|M|register touchbar mbp trackpad|
+2024/10/17 09:06:04:128|STDEV|69|
+2024/10/17 09:11:57:461|M|mt_stop2|
+2024/10/17 09:11:57:473|M|unregister tb trackpad|
+2024/10/17 09:11:57:475|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:11:57:476|M|register touchbar mbp trackpad|
+2024/10/17 09:11:57:476|STDEV|69|
+2024/10/17 09:14:11:506|M|mt_stop2|
+2024/10/17 09:14:11:516|M|unregister tb trackpad|
+2024/10/17 09:14:11:518|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:14:11:518|M|register touchbar mbp trackpad|
+2024/10/17 09:14:11:519|STDEV|69|
+2024/10/17 09:14:21:089|M|mt_stop2|
+2024/10/17 09:14:21:099|M|unregister tb trackpad|
+2024/10/17 09:14:21:101|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:14:21:101|M|register touchbar mbp trackpad|
+2024/10/17 09:14:21:102|STDEV|69|
+2024/10/17 09:19:23:912|M|mt_stop2|
+2024/10/17 09:19:23:919|M|unregister tb trackpad|
+2024/10/17 09:19:23:920|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:19:23:921|M|register touchbar mbp trackpad|
+2024/10/17 09:19:23:921|STDEV|69|
+2024/10/17 09:19:33:190|M|mt_stop2|
+2024/10/17 09:19:33:198|M|unregister tb trackpad|
+2024/10/17 09:19:33:199|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:19:33:199|M|register touchbar mbp trackpad|
+2024/10/17 09:19:33:200|STDEV|69|
+2024/10/17 09:20:06:793|M|mt_stop2|
+2024/10/17 09:20:06:805|M|unregister tb trackpad|
+2024/10/17 09:20:06:806|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:20:06:807|M|register touchbar mbp trackpad|
+2024/10/17 09:20:06:807|STDEV|69|
+2024/10/17 09:27:39:476|M|mt_stop2|
+2024/10/17 09:27:39:484|M|unregister tb trackpad|
+2024/10/17 09:27:39:485|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:27:39:485|M|register touchbar mbp trackpad|
+2024/10/17 09:27:39:486|STDEV|69|
+2024/10/17 09:27:49:027|M|mt_stop2|
+2024/10/17 09:27:49:034|M|unregister tb trackpad|
+2024/10/17 09:27:49:035|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:27:49:036|M|register touchbar mbp trackpad|
+2024/10/17 09:27:49:036|STDEV|69|
+2024/10/17 09:32:19:359|M|mt_stop2|
+2024/10/17 09:32:19:369|M|unregister tb trackpad|
+2024/10/17 09:32:19:370|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:32:19:370|M|register touchbar mbp trackpad|
+2024/10/17 09:32:19:370|STDEV|69|
+2024/10/17 09:33:31:881|M|mt_stop2|
+2024/10/17 09:33:31:890|M|unregister tb trackpad|
+2024/10/17 09:33:31:891|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:33:31:892|M|register touchbar mbp trackpad|
+2024/10/17 09:33:31:892|STDEV|69|
+2024/10/17 09:34:59:109|M|mt_stop2|
+2024/10/17 09:34:59:121|M|unregister tb trackpad|
+2024/10/17 09:34:59:123|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:34:59:124|M|register touchbar mbp trackpad|
+2024/10/17 09:34:59:124|STDEV|69|
+2024/10/17 09:35:20:812|M|mt_stop2|
+2024/10/17 09:35:20:823|M|unregister tb trackpad|
+2024/10/17 09:35:20:825|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:35:20:825|M|register touchbar mbp trackpad|
+2024/10/17 09:35:20:826|STDEV|69|
+2024/10/17 09:36:28:439|M|mt_stop2|
+2024/10/17 09:36:28:448|M|unregister tb trackpad|
+2024/10/17 09:36:28:450|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:36:28:450|M|register touchbar mbp trackpad|
+2024/10/17 09:36:28:451|STDEV|69|
+2024/10/17 09:37:01:797|M|mt_stop2|
+2024/10/17 09:37:01:809|M|unregister tb trackpad|
+2024/10/17 09:37:01:811|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:37:01:811|M|register touchbar mbp trackpad|
+2024/10/17 09:37:01:812|STDEV|69|
+2024/10/17 09:37:45:060|M|mt_stop2|
+2024/10/17 09:37:45:069|M|unregister tb trackpad|
+2024/10/17 09:37:45:070|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:37:45:070|M|register touchbar mbp trackpad|
+2024/10/17 09:37:45:070|STDEV|69|
+2024/10/17 09:38:38:629|M|mt_stop2|
+2024/10/17 09:38:38:636|M|unregister tb trackpad|
+2024/10/17 09:38:38:638|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:38:38:638|M|register touchbar mbp trackpad|
+2024/10/17 09:38:38:638|STDEV|69|
+2024/10/17 09:41:03:303|M|mt_stop2|
+2024/10/17 09:41:03:315|M|unregister tb trackpad|
+2024/10/17 09:41:03:317|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:41:03:317|M|register touchbar mbp trackpad|
+2024/10/17 09:41:03:318|STDEV|69|
+2024/10/17 09:47:09:007|M|mt_stop2|
+2024/10/17 09:47:09:019|M|unregister tb trackpad|
+2024/10/17 09:47:09:021|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:47:09:022|M|register touchbar mbp trackpad|
+2024/10/17 09:47:09:022|STDEV|69|
+2024/10/17 09:50:38:768|M|mt_stop2|
+2024/10/17 09:50:38:776|M|unregister tb trackpad|
+2024/10/17 09:50:38:777|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:50:38:778|M|register touchbar mbp trackpad|
+2024/10/17 09:50:38:778|STDEV|69|
+2024/10/17 09:53:17:941|M|mt_stop2|
+2024/10/17 09:53:17:950|M|unregister tb trackpad|
+2024/10/17 09:53:17:951|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:53:17:952|M|register touchbar mbp trackpad|
+2024/10/17 09:53:17:952|STDEV|69|
+2024/10/17 09:59:51:125|M|mt_stop2|
+2024/10/17 09:59:51:132|M|unregister tb trackpad|
+2024/10/17 09:59:51:134|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 09:59:51:134|M|register touchbar mbp trackpad|
+2024/10/17 09:59:51:135|STDEV|69|
+2024/10/17 10:03:43:584|M|mt_stop2|
+2024/10/17 10:03:43:592|M|unregister tb trackpad|
+2024/10/17 10:03:43:593|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:03:43:593|M|register touchbar mbp trackpad|
+2024/10/17 10:03:43:594|STDEV|69|
+2024/10/17 10:13:05:820|M|mt_stop2|
+2024/10/17 10:13:05:827|M|unregister tb trackpad|
+2024/10/17 10:13:05:829|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:13:05:829|M|register touchbar mbp trackpad|
+2024/10/17 10:13:05:829|STDEV|69|
+2024/10/17 10:14:05:517|ASL|The Mac is running on battery power.|
+2024/10/17 10:14:06:565|M|mt_stop2|
+2024/10/17 10:14:06:576|M|unregister tb trackpad|
+2024/10/17 10:14:06:578|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:14:06:579|M|register touchbar mbp trackpad|
+2024/10/17 10:14:06:579|STDEV|69|
+2024/10/17 10:14:47:734|M|mt_stop2|
+2024/10/17 10:14:47:744|M|unregister tb trackpad|
+2024/10/17 10:14:47:746|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:14:47:747|M|register touchbar mbp trackpad|
+2024/10/17 10:14:47:747|STDEV|69|
+2024/10/17 10:16:18:122|M|mt_stop2|
+2024/10/17 10:16:18:133|M|unregister tb trackpad|
+2024/10/17 10:16:18:134|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:16:18:135|M|register touchbar mbp trackpad|
+2024/10/17 10:16:18:135|STDEV|69|
+2024/10/17 10:16:56:342|M|mt_stop2|
+2024/10/17 10:16:56:350|M|unregister tb trackpad|
+2024/10/17 10:16:56:351|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:16:56:351|M|register touchbar mbp trackpad|
+2024/10/17 10:16:56:352|STDEV|69|
+2024/10/17 10:23:16:469|M|mt_stop2|
+2024/10/17 10:23:16:477|M|unregister tb trackpad|
+2024/10/17 10:23:16:479|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:23:16:479|M|register touchbar mbp trackpad|
+2024/10/17 10:23:16:479|STDEV|69|
+2024/10/17 10:23:51:086|M|mt_stop2|
+2024/10/17 10:23:51:095|M|unregister tb trackpad|
+2024/10/17 10:23:51:096|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:23:51:097|M|register touchbar mbp trackpad|
+2024/10/17 10:23:51:097|STDEV|69|
+2024/10/17 10:27:10:794|M|mt_stop2|
+2024/10/17 10:27:10:806|M|unregister tb trackpad|
+2024/10/17 10:27:10:807|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:27:10:808|M|register touchbar mbp trackpad|
+2024/10/17 10:27:10:808|STDEV|69|
+2024/10/17 10:29:54:838|M|mt_stop2|
+2024/10/17 10:29:54:844|M|unregister tb trackpad|
+2024/10/17 10:29:54:845|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:29:54:845|M|register touchbar mbp trackpad|
+2024/10/17 10:29:54:846|STDEV|69|
+2024/10/17 10:32:15:193|M|mt_stop2|
+2024/10/17 10:32:15:205|M|unregister tb trackpad|
+2024/10/17 10:32:15:207|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:32:15:207|M|register touchbar mbp trackpad|
+2024/10/17 10:32:15:208|STDEV|69|
+2024/10/17 10:38:55:371|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 10:38:55:935|M|mt_stop2|
+2024/10/17 10:38:55:937|M|unregister tb trackpad|
+2024/10/17 10:38:55:938|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:38:55:939|M|register touchbar mbp trackpad|
+2024/10/17 10:38:55:939|STDEV|69|
+2024/10/17 10:39:30:892|M|mt_stop2|
+2024/10/17 10:39:30:901|M|unregister tb trackpad|
+2024/10/17 10:39:30:902|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:39:30:902|M|register touchbar mbp trackpad|
+2024/10/17 10:39:30:902|STDEV|69|
+2024/10/17 10:39:50:144|M|mt_stop2|
+2024/10/17 10:39:50:151|M|unregister tb trackpad|
+2024/10/17 10:39:50:153|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:39:50:153|M|register touchbar mbp trackpad|
+2024/10/17 10:39:50:153|STDEV|69|
+2024/10/17 10:49:19:088|M|mt_stop2|
+2024/10/17 10:49:19:095|M|unregister tb trackpad|
+2024/10/17 10:49:19:097|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:49:19:097|M|register touchbar mbp trackpad|
+2024/10/17 10:49:19:098|STDEV|69|
+2024/10/17 10:55:02:190|M|mt_stop2|
+2024/10/17 10:55:02:198|M|unregister tb trackpad|
+2024/10/17 10:55:02:199|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:55:02:199|M|register touchbar mbp trackpad|
+2024/10/17 10:55:02:200|STDEV|69|
+2024/10/17 10:56:36:994|M|mt_stop2|
+2024/10/17 10:56:37:004|M|unregister tb trackpad|
+2024/10/17 10:56:37:005|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 10:56:37:005|M|register touchbar mbp trackpad|
+2024/10/17 10:56:37:006|STDEV|69|
+2024/10/17 11:00:47:015|M|mt_stop2|
+2024/10/17 11:00:47:023|M|unregister tb trackpad|
+2024/10/17 11:00:47:024|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:00:47:024|M|register touchbar mbp trackpad|
+2024/10/17 11:00:47:025|STDEV|69|
+2024/10/17 11:03:05:916|M|mt_stop2|
+2024/10/17 11:03:05:928|M|unregister tb trackpad|
+2024/10/17 11:03:05:929|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:03:05:930|M|register touchbar mbp trackpad|
+2024/10/17 11:03:05:930|STDEV|69|
+2024/10/17 11:10:17:288|M|mt_stop2|
+2024/10/17 11:10:17:301|M|unregister tb trackpad|
+2024/10/17 11:10:17:303|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:10:17:305|M|register touchbar mbp trackpad|
+2024/10/17 11:10:17:306|STDEV|69|
+2024/10/17 11:10:17:325|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 11:12:53:465|M|mt_stop2|
+2024/10/17 11:12:53:478|M|unregister tb trackpad|
+2024/10/17 11:12:53:478|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:12:53:478|M|register touchbar mbp trackpad|
+2024/10/17 11:12:53:479|STDEV|69|
+2024/10/17 11:14:07:501|M|mt_stop2|
+2024/10/17 11:14:07:513|M|unregister tb trackpad|
+2024/10/17 11:14:07:515|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:14:07:516|M|register touchbar mbp trackpad|
+2024/10/17 11:14:07:516|STDEV|69|
+2024/10/17 11:17:07:708|M|mt_stop2|
+2024/10/17 11:17:07:716|M|unregister tb trackpad|
+2024/10/17 11:17:07:717|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:17:07:718|M|register touchbar mbp trackpad|
+2024/10/17 11:17:07:718|STDEV|69|
+2024/10/17 11:17:52:494|M|mt_stop2|
+2024/10/17 11:17:52:505|M|unregister tb trackpad|
+2024/10/17 11:17:52:506|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:17:52:507|M|register touchbar mbp trackpad|
+2024/10/17 11:17:52:507|STDEV|69|
+2024/10/17 11:28:29:858|M|mt_stop2|
+2024/10/17 11:28:29:865|M|unregister tb trackpad|
+2024/10/17 11:28:29:866|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:28:29:866|M|register touchbar mbp trackpad|
+2024/10/17 11:28:29:867|STDEV|69|
+2024/10/17 11:31:18:414|M|mt_stop2|
+2024/10/17 11:31:18:422|M|unregister tb trackpad|
+2024/10/17 11:31:18:423|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:31:18:424|M|register touchbar mbp trackpad|
+2024/10/17 11:31:18:424|STDEV|69|
+2024/10/17 11:33:20:230|M|mt_stop2|
+2024/10/17 11:33:20:238|M|unregister tb trackpad|
+2024/10/17 11:33:20:239|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:33:20:240|M|register touchbar mbp trackpad|
+2024/10/17 11:33:20:240|STDEV|69|
+2024/10/17 11:45:01:194|M|mt_stop2|
+2024/10/17 11:45:01:201|M|unregister tb trackpad|
+2024/10/17 11:45:01:202|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:45:01:202|M|register touchbar mbp trackpad|
+2024/10/17 11:45:01:202|STDEV|69|
+2024/10/17 11:54:48:731|M|mt_stop2|
+2024/10/17 11:54:48:739|M|unregister tb trackpad|
+2024/10/17 11:54:48:740|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 11:54:48:740|M|register touchbar mbp trackpad|
+2024/10/17 11:54:48:741|STDEV|69|
+2024/10/17 12:02:17:018|ASL|The Mac is running on battery power.|
+2024/10/17 12:02:18:080|M|mt_stop2|
+2024/10/17 12:02:18:087|M|unregister tb trackpad|
+2024/10/17 12:02:18:088|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:02:18:089|M|register touchbar mbp trackpad|
+2024/10/17 12:02:18:089|STDEV|69|
+2024/10/17 12:04:50:470|M|mt_stop2|
+2024/10/17 12:04:50:480|M|unregister tb trackpad|
+2024/10/17 12:04:50:481|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:04:50:482|M|register touchbar mbp trackpad|
+2024/10/17 12:04:50:482|STDEV|69|
+2024/10/17 12:14:33:627|M|mt_stop2|
+2024/10/17 12:14:33:637|M|unregister tb trackpad|
+2024/10/17 12:14:33:638|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:14:33:639|M|register touchbar mbp trackpad|
+2024/10/17 12:14:33:640|STDEV|69|
+2024/10/17 12:15:45:646|M|mt_stop2|
+2024/10/17 12:15:45:652|M|unregister tb trackpad|
+2024/10/17 12:15:45:652|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:15:45:653|M|register touchbar mbp trackpad|
+2024/10/17 12:15:45:653|STDEV|69|
+2024/10/17 12:17:02:010|M|mt_stop2|
+2024/10/17 12:17:02:018|M|unregister tb trackpad|
+2024/10/17 12:17:02:019|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:17:02:019|M|register touchbar mbp trackpad|
+2024/10/17 12:17:02:019|STDEV|69|
+2024/10/17 12:17:58:848|M|mt_stop2|
+2024/10/17 12:17:58:856|M|unregister tb trackpad|
+2024/10/17 12:17:58:857|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:17:58:858|M|register touchbar mbp trackpad|
+2024/10/17 12:17:58:858|STDEV|69|
+2024/10/17 12:21:03:527|M|mt_stop2|
+2024/10/17 12:21:03:535|M|unregister tb trackpad|
+2024/10/17 12:21:03:537|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:21:03:538|M|register touchbar mbp trackpad|
+2024/10/17 12:21:03:538|STDEV|69|
+2024/10/17 12:21:39:572|M|mt_stop2|
+2024/10/17 12:21:39:578|M|unregister tb trackpad|
+2024/10/17 12:21:39:579|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:21:39:580|M|register touchbar mbp trackpad|
+2024/10/17 12:21:39:580|STDEV|69|
+2024/10/17 12:27:59:739|M|mt_stop2|
+2024/10/17 12:27:59:746|M|unregister tb trackpad|
+2024/10/17 12:27:59:747|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:27:59:748|M|register touchbar mbp trackpad|
+2024/10/17 12:27:59:748|STDEV|69|
+2024/10/17 12:29:34:143|M|mt_stop2|
+2024/10/17 12:29:34:154|M|unregister tb trackpad|
+2024/10/17 12:29:34:155|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:29:34:156|M|register touchbar mbp trackpad|
+2024/10/17 12:29:34:156|STDEV|69|
+2024/10/17 12:30:10:531|M|mt_stop2|
+2024/10/17 12:30:10:539|M|unregister tb trackpad|
+2024/10/17 12:30:10:540|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:30:10:540|M|register touchbar mbp trackpad|
+2024/10/17 12:30:10:540|STDEV|69|
+2024/10/17 12:32:09:346|M|mt_stop2|
+2024/10/17 12:32:09:357|M|unregister tb trackpad|
+2024/10/17 12:32:09:359|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:32:09:361|M|register touchbar mbp trackpad|
+2024/10/17 12:32:09:361|STDEV|69|
+2024/10/17 12:32:59:544|M|mt_stop2|
+2024/10/17 12:32:59:555|M|unregister tb trackpad|
+2024/10/17 12:32:59:556|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:32:59:556|M|register touchbar mbp trackpad|
+2024/10/17 12:32:59:557|STDEV|69|
+2024/10/17 12:33:48:885|M|mt_stop2|
+2024/10/17 12:33:48:897|M|unregister tb trackpad|
+2024/10/17 12:33:48:899|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:33:48:900|M|register touchbar mbp trackpad|
+2024/10/17 12:33:48:900|STDEV|69|
+2024/10/17 12:39:36:139|M|mt_stop2|
+2024/10/17 12:39:36:147|M|unregister tb trackpad|
+2024/10/17 12:39:36:148|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:39:36:148|M|register touchbar mbp trackpad|
+2024/10/17 12:39:36:149|STDEV|69|
+2024/10/17 12:40:06:141|M|mt_stop2|
+2024/10/17 12:40:06:148|M|unregister tb trackpad|
+2024/10/17 12:40:06:149|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:40:06:149|M|register touchbar mbp trackpad|
+2024/10/17 12:40:06:149|STDEV|69|
+2024/10/17 12:40:35:217|M|mt_stop2|
+2024/10/17 12:40:35:229|M|unregister tb trackpad|
+2024/10/17 12:40:35:230|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:40:35:230|M|register touchbar mbp trackpad|
+2024/10/17 12:40:35:230|STDEV|69|
+2024/10/17 12:47:11:133|M|mt_stop2|
+2024/10/17 12:47:11:146|M|unregister tb trackpad|
+2024/10/17 12:47:11:147|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:47:11:148|M|register touchbar mbp trackpad|
+2024/10/17 12:47:11:148|STDEV|69|
+2024/10/17 12:50:37:150|M|mt_stop2|
+2024/10/17 12:50:37:161|M|unregister tb trackpad|
+2024/10/17 12:50:37:163|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:50:37:164|M|register touchbar mbp trackpad|
+2024/10/17 12:50:37:164|STDEV|69|
+2024/10/17 12:53:58:242|M|mt_stop2|
+2024/10/17 12:53:58:250|M|unregister tb trackpad|
+2024/10/17 12:53:58:251|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:53:58:252|M|register touchbar mbp trackpad|
+2024/10/17 12:53:58:252|STDEV|69|
+2024/10/17 12:55:02:300|M|mt_stop2|
+2024/10/17 12:55:02:312|M|unregister tb trackpad|
+2024/10/17 12:55:02:314|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:55:02:315|M|register touchbar mbp trackpad|
+2024/10/17 12:55:02:315|STDEV|69|
+2024/10/17 12:59:13:172|M|mt_stop2|
+2024/10/17 12:59:13:175|M|unregister tb trackpad|
+2024/10/17 12:59:13:176|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 12:59:13:176|M|register touchbar mbp trackpad|
+2024/10/17 12:59:13:177|STDEV|69|
+2024/10/17 13:04:18:015|M|mt_stop2|
+2024/10/17 13:04:18:022|M|unregister tb trackpad|
+2024/10/17 13:04:18:024|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:04:18:024|M|register touchbar mbp trackpad|
+2024/10/17 13:04:18:024|STDEV|69|
+2024/10/17 13:05:41:380|M|mt_stop2|
+2024/10/17 13:05:41:388|M|unregister tb trackpad|
+2024/10/17 13:05:41:390|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:05:41:391|M|register touchbar mbp trackpad|
+2024/10/17 13:05:41:391|STDEV|69|
+2024/10/17 13:07:58:131|ASL|The Mac is running on battery power.|
+2024/10/17 13:07:59:134|M|mt_stop2|
+2024/10/17 13:07:59:142|M|unregister tb trackpad|
+2024/10/17 13:07:59:143|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:07:59:143|M|register touchbar mbp trackpad|
+2024/10/17 13:07:59:144|STDEV|69|
+2024/10/17 13:14:20:940|M|mt_stop2|
+2024/10/17 13:14:20:948|M|unregister tb trackpad|
+2024/10/17 13:14:20:949|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:14:20:950|M|register touchbar mbp trackpad|
+2024/10/17 13:14:20:950|STDEV|69|
+2024/10/17 13:15:36:516|M|mt_stop2|
+2024/10/17 13:15:36:528|M|unregister tb trackpad|
+2024/10/17 13:15:36:530|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:15:36:530|M|register touchbar mbp trackpad|
+2024/10/17 13:15:36:530|STDEV|69|
+2024/10/17 13:29:41:972|M|mt_stop2|
+2024/10/17 13:29:41:983|M|unregister tb trackpad|
+2024/10/17 13:29:41:984|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:29:41:985|M|register touchbar mbp trackpad|
+2024/10/17 13:29:41:985|STDEV|69|
+2024/10/17 13:33:37:531|M|mt_stop2|
+2024/10/17 13:33:37:543|M|unregister tb trackpad|
+2024/10/17 13:33:37:544|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:33:37:545|M|register touchbar mbp trackpad|
+2024/10/17 13:33:37:546|STDEV|69|
+2024/10/17 13:51:23:270|M|mt_stop2|
+2024/10/17 13:51:23:273|M|unregister tb trackpad|
+2024/10/17 13:51:23:273|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 13:51:23:273|M|register touchbar mbp trackpad|
+2024/10/17 13:51:23:273|STDEV|69|
+2024/10/17 14:06:39:207|M|mt_stop2|
+2024/10/17 14:06:39:215|M|unregister tb trackpad|
+2024/10/17 14:06:39:216|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 14:06:39:216|M|register touchbar mbp trackpad|
+2024/10/17 14:06:39:216|STDEV|69|
+2024/10/17 14:24:39:185|M|mt_stop2|
+2024/10/17 14:24:39:200|M|unregister tb trackpad|
+2024/10/17 14:24:39:201|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 14:24:39:201|M|register touchbar mbp trackpad|
+2024/10/17 14:24:39:201|STDEV|69|
+2024/10/17 14:28:15:494|M|mt_stop2|
+2024/10/17 14:28:15:505|M|unregister tb trackpad|
+2024/10/17 14:28:15:507|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 14:28:15:508|M|register touchbar mbp trackpad|
+2024/10/17 14:28:15:508|STDEV|69|
+2024/10/17 14:30:54:244|M|mt_stop2|
+2024/10/17 14:30:54:251|M|unregister tb trackpad|
+2024/10/17 14:30:54:252|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 14:30:54:252|M|register touchbar mbp trackpad|
+2024/10/17 14:30:54:253|STDEV|69|
+2024/10/17 14:33:36:926|M|mt_stop2|
+2024/10/17 14:33:36:934|M|unregister tb trackpad|
+2024/10/17 14:33:36:935|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 14:33:36:935|M|register touchbar mbp trackpad|
+2024/10/17 14:33:36:936|STDEV|69|
+2024/10/17 14:50:11:191|M|mt_stop2|
+2024/10/17 14:50:11:198|M|unregister tb trackpad|
+2024/10/17 14:50:11:199|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 14:50:11:200|M|register touchbar mbp trackpad|
+2024/10/17 14:50:11:200|STDEV|69|
+2024/10/17 15:05:32:104|M|mt_stop2|
+2024/10/17 15:05:32:112|M|unregister tb trackpad|
+2024/10/17 15:05:32:113|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:05:32:113|M|register touchbar mbp trackpad|
+2024/10/17 15:05:32:114|STDEV|69|
+2024/10/17 15:08:37:411|M|mt_stop2|
+2024/10/17 15:08:37:420|M|unregister tb trackpad|
+2024/10/17 15:08:37:422|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:08:37:423|M|register touchbar mbp trackpad|
+2024/10/17 15:08:37:423|STDEV|69|
+2024/10/17 15:10:15:112|M|mt_stop2|
+2024/10/17 15:10:15:120|M|unregister tb trackpad|
+2024/10/17 15:10:15:121|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:10:15:122|M|register touchbar mbp trackpad|
+2024/10/17 15:10:15:122|STDEV|69|
+2024/10/17 15:11:11:636|M|mt_stop2|
+2024/10/17 15:11:11:649|M|unregister tb trackpad|
+2024/10/17 15:11:11:651|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:11:11:652|M|register touchbar mbp trackpad|
+2024/10/17 15:11:11:652|STDEV|69|
+2024/10/17 15:19:54:935|M|mt_stop2|
+2024/10/17 15:19:54:939|M|unregister tb trackpad|
+2024/10/17 15:19:54:939|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:19:54:940|M|register touchbar mbp trackpad|
+2024/10/17 15:19:54:940|STDEV|69|
+2024/10/17 15:20:28:896|M|mt_stop2|
+2024/10/17 15:20:28:904|M|unregister tb trackpad|
+2024/10/17 15:20:28:905|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:20:28:906|M|register touchbar mbp trackpad|
+2024/10/17 15:20:28:906|STDEV|69|
+2024/10/17 15:20:55:325|M|mt_stop2|
+2024/10/17 15:20:55:333|M|unregister tb trackpad|
+2024/10/17 15:20:55:335|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:20:55:335|M|register touchbar mbp trackpad|
+2024/10/17 15:20:55:335|STDEV|69|
+2024/10/17 15:21:42:441|M|mt_stop2|
+2024/10/17 15:21:42:449|M|unregister tb trackpad|
+2024/10/17 15:21:42:450|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:21:42:451|M|register touchbar mbp trackpad|
+2024/10/17 15:21:42:451|STDEV|69|
+2024/10/17 15:21:55:761|M|mt_stop2|
+2024/10/17 15:21:55:768|M|unregister tb trackpad|
+2024/10/17 15:21:55:769|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:21:55:769|M|register touchbar mbp trackpad|
+2024/10/17 15:21:55:769|STDEV|69|
+2024/10/17 15:22:32:534|M|mt_stop2|
+2024/10/17 15:22:32:541|M|unregister tb trackpad|
+2024/10/17 15:22:32:542|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:22:32:543|M|register touchbar mbp trackpad|
+2024/10/17 15:22:32:543|STDEV|69|
+2024/10/17 15:34:15:966|M|mt_stop2|
+2024/10/17 15:34:15:973|M|unregister tb trackpad|
+2024/10/17 15:34:15:975|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:34:15:975|M|register touchbar mbp trackpad|
+2024/10/17 15:34:15:975|STDEV|69|
+2024/10/17 15:36:17:210|M|mt_stop2|
+2024/10/17 15:36:17:217|M|unregister tb trackpad|
+2024/10/17 15:36:17:218|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:36:17:219|M|register touchbar mbp trackpad|
+2024/10/17 15:36:17:219|STDEV|69|
+2024/10/17 15:36:56:533|M|mt_stop2|
+2024/10/17 15:36:56:545|M|unregister tb trackpad|
+2024/10/17 15:36:56:547|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:36:56:548|M|register touchbar mbp trackpad|
+2024/10/17 15:36:56:548|STDEV|69|
+2024/10/17 15:47:32:749|ASL|The Mac is running on battery power.|
+2024/10/17 15:47:33:752|M|mt_stop2|
+2024/10/17 15:47:33:759|M|unregister tb trackpad|
+2024/10/17 15:47:33:760|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:47:33:761|M|register touchbar mbp trackpad|
+2024/10/17 15:47:33:761|STDEV|69|
+2024/10/17 15:48:51:230|M|mt_stop2|
+2024/10/17 15:48:51:239|M|unregister tb trackpad|
+2024/10/17 15:48:51:240|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:48:51:240|M|register touchbar mbp trackpad|
+2024/10/17 15:48:51:240|STDEV|69|
+2024/10/17 15:49:58:186|M|mt_stop2|
+2024/10/17 15:49:58:198|M|unregister tb trackpad|
+2024/10/17 15:49:58:200|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:49:58:201|M|register touchbar mbp trackpad|
+2024/10/17 15:49:58:201|STDEV|69|
+2024/10/17 15:50:39:630|M|mt_stop2|
+2024/10/17 15:50:39:641|M|unregister tb trackpad|
+2024/10/17 15:50:39:643|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:50:39:644|M|register touchbar mbp trackpad|
+2024/10/17 15:50:39:644|STDEV|69|
+2024/10/17 15:59:17:867|M|mt_stop2|
+2024/10/17 15:59:17:878|M|unregister tb trackpad|
+2024/10/17 15:59:17:880|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 15:59:17:880|M|register touchbar mbp trackpad|
+2024/10/17 15:59:17:881|STDEV|69|
+2024/10/17 16:13:49:276|M|mt_stop2|
+2024/10/17 16:13:49:283|M|unregister tb trackpad|
+2024/10/17 16:13:49:284|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:13:49:284|M|register touchbar mbp trackpad|
+2024/10/17 16:13:49:285|STDEV|69|
+2024/10/17 16:14:07:908|M|mt_stop2|
+2024/10/17 16:14:07:918|M|unregister tb trackpad|
+2024/10/17 16:14:07:920|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:14:07:920|M|register touchbar mbp trackpad|
+2024/10/17 16:14:07:921|STDEV|69|
+2024/10/17 16:14:36:155|M|mt_stop2|
+2024/10/17 16:14:36:163|M|unregister tb trackpad|
+2024/10/17 16:14:36:164|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:14:36:165|M|register touchbar mbp trackpad|
+2024/10/17 16:14:36:165|STDEV|69|
+2024/10/17 16:17:15:473|M|mt_stop2|
+2024/10/17 16:17:15:481|M|unregister tb trackpad|
+2024/10/17 16:17:15:482|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:17:15:483|M|register touchbar mbp trackpad|
+2024/10/17 16:17:15:483|STDEV|69|
+2024/10/17 16:17:40:263|M|mt_stop2|
+2024/10/17 16:17:40:270|M|unregister tb trackpad|
+2024/10/17 16:17:40:271|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:17:40:272|M|register touchbar mbp trackpad|
+2024/10/17 16:17:40:272|STDEV|69|
+2024/10/17 16:19:27:740|M|mt_stop2|
+2024/10/17 16:19:27:751|M|unregister tb trackpad|
+2024/10/17 16:19:27:752|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:19:27:753|M|register touchbar mbp trackpad|
+2024/10/17 16:19:27:753|STDEV|69|
+2024/10/17 16:19:48:168|M|mt_stop2|
+2024/10/17 16:19:48:183|M|unregister tb trackpad|
+2024/10/17 16:19:48:185|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:19:48:185|M|register touchbar mbp trackpad|
+2024/10/17 16:19:48:186|STDEV|69|
+2024/10/17 16:20:56:828|M|mt_stop2|
+2024/10/17 16:20:56:838|M|unregister tb trackpad|
+2024/10/17 16:20:56:840|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:20:56:841|M|register touchbar mbp trackpad|
+2024/10/17 16:20:56:842|STDEV|69|
+2024/10/17 16:21:07:147|M|mt_stop2|
+2024/10/17 16:21:07:158|M|unregister tb trackpad|
+2024/10/17 16:21:07:159|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:21:07:160|M|register touchbar mbp trackpad|
+2024/10/17 16:21:07:160|STDEV|69|
+2024/10/17 16:27:04:803|M|mt_stop2|
+2024/10/17 16:27:04:811|M|unregister tb trackpad|
+2024/10/17 16:27:04:812|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:27:04:812|M|register touchbar mbp trackpad|
+2024/10/17 16:27:04:813|STDEV|69|
+2024/10/17 16:31:13:665|M|mt_stop2|
+2024/10/17 16:31:13:672|M|unregister tb trackpad|
+2024/10/17 16:31:13:673|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:31:13:673|M|register touchbar mbp trackpad|
+2024/10/17 16:31:13:674|STDEV|69|
+2024/10/17 16:32:58:429|M|mt_stop2|
+2024/10/17 16:32:58:436|M|unregister tb trackpad|
+2024/10/17 16:32:58:437|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:32:58:438|M|register touchbar mbp trackpad|
+2024/10/17 16:32:58:438|STDEV|69|
+2024/10/17 16:33:14:415|M|mt_stop2|
+2024/10/17 16:33:14:423|M|unregister tb trackpad|
+2024/10/17 16:33:14:425|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:33:14:425|M|register touchbar mbp trackpad|
+2024/10/17 16:33:14:426|STDEV|69|
+2024/10/17 16:35:16:261|M|mt_stop2|
+2024/10/17 16:35:16:273|M|unregister tb trackpad|
+2024/10/17 16:35:16:275|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:35:16:275|M|register touchbar mbp trackpad|
+2024/10/17 16:35:16:276|STDEV|69|
+2024/10/17 16:37:49:468|M|mt_stop2|
+2024/10/17 16:37:49:472|M|unregister tb trackpad|
+2024/10/17 16:37:49:472|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:37:49:472|M|register touchbar mbp trackpad|
+2024/10/17 16:37:49:473|STDEV|69|
+2024/10/17 16:40:01:570|M|mt_stop2|
+2024/10/17 16:40:01:574|M|unregister tb trackpad|
+2024/10/17 16:40:01:574|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:40:01:574|M|register touchbar mbp trackpad|
+2024/10/17 16:40:01:574|STDEV|69|
+2024/10/17 16:41:51:503|M|mt_stop2|
+2024/10/17 16:41:51:510|M|unregister tb trackpad|
+2024/10/17 16:41:51:511|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:41:51:512|M|register touchbar mbp trackpad|
+2024/10/17 16:41:51:512|STDEV|69|
+2024/10/17 16:44:30:069|M|mt_stop2|
+2024/10/17 16:44:30:080|M|unregister tb trackpad|
+2024/10/17 16:44:30:082|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:44:30:082|M|register touchbar mbp trackpad|
+2024/10/17 16:44:30:083|STDEV|69|
+2024/10/17 16:55:02:374|M|mt_stop2|
+2024/10/17 16:55:02:382|M|unregister tb trackpad|
+2024/10/17 16:55:02:383|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 16:55:02:383|M|register touchbar mbp trackpad|
+2024/10/17 16:55:02:383|STDEV|69|
+2024/10/17 17:06:59:683|TouchBar|Don't show because sleep|
+2024/10/17 17:06:59:695|M|mt_stop2|
+2024/10/17 17:06:59:699|M|unregister tb trackpad|
+2024/10/17 17:06:59:700|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:06:59:700|M|register touchbar mbp trackpad|
+2024/10/17 17:06:59:700|STDEV|69|
+2024/10/17 17:06:59:904|SLEEP|messageType e0000320, arg 00000000|
+2024/10/17 17:06:59:924|SLEEP|messageType e0000300, arg 00000000|
+2024/10/17 17:06:59:924|ASL|disablign app nap|
+2024/10/17 17:06:59:924|ASL|disabling app nap done|
+2024/10/17 17:06:59:924|SLEEP|WOKE VIA IOKIT|
+2024/10/17 17:06:59:924|ASL|toggle after sleep 147|
+2024/10/17 17:06:59:924|xw|disable|
+2024/10/17 17:06:59:932|xw|enable|
+2024/10/17 17:06:59:932|ASL|unregister d|
+2024/10/17 17:06:59:936|WAKE|EVENTHANDLER RESET|
+2024/10/17 17:06:59:938|M|mt_stop2|
+2024/10/17 17:06:59:938|SNAP|Did reset snap areas 0 0|
+2024/10/17 17:06:59:938|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 148|
+2024/10/17 17:06:59:944|TouchBar|Don't show because sleep|
+2024/10/17 17:06:59:948|M|unregister tb trackpad|
+2024/10/17 17:06:59:949|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:06:59:949|M|register touchbar mbp trackpad|
+2024/10/17 17:06:59:949|STDEV|69|
+2024/10/17 17:07:00:140|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/17 17:07:00:140|TB|Force show Touch Bar|
+2024/10/17 17:07:04:990|SLEEP|messageType e0000280, arg 45a0004d|
+2024/10/17 17:13:23:261|ASL|The Mac is running on battery power.|
+2024/10/17 17:13:24:313|M|mt_stop2|
+2024/10/17 17:13:24:321|M|unregister tb trackpad|
+2024/10/17 17:13:24:322|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:13:24:322|M|register touchbar mbp trackpad|
+2024/10/17 17:13:24:322|STDEV|69|
+2024/10/17 17:14:25:571|M|mt_stop2|
+2024/10/17 17:14:25:581|M|unregister tb trackpad|
+2024/10/17 17:14:25:582|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:14:25:583|M|register touchbar mbp trackpad|
+2024/10/17 17:14:25:583|STDEV|69|
+2024/10/17 17:16:28:649|M|mt_stop2|
+2024/10/17 17:16:28:656|M|unregister tb trackpad|
+2024/10/17 17:16:28:657|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:16:28:658|M|register touchbar mbp trackpad|
+2024/10/17 17:16:28:658|STDEV|69|
+2024/10/17 17:25:02:321|M|mt_stop2|
+2024/10/17 17:25:02:329|M|unregister tb trackpad|
+2024/10/17 17:25:02:330|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:25:02:330|M|register touchbar mbp trackpad|
+2024/10/17 17:25:02:330|STDEV|69|
+2024/10/17 17:36:17:387|M|mt_stop2|
+2024/10/17 17:36:17:395|M|unregister tb trackpad|
+2024/10/17 17:36:17:396|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:36:17:397|M|register touchbar mbp trackpad|
+2024/10/17 17:36:17:397|STDEV|69|
+2024/10/17 17:41:32:722|M|mt_stop2|
+2024/10/17 17:41:32:726|M|unregister tb trackpad|
+2024/10/17 17:41:32:727|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:41:32:727|M|register touchbar mbp trackpad|
+2024/10/17 17:41:32:728|STDEV|69|
+2024/10/17 17:42:08:311|M|mt_stop2|
+2024/10/17 17:42:08:319|M|unregister tb trackpad|
+2024/10/17 17:42:08:320|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:42:08:320|M|register touchbar mbp trackpad|
+2024/10/17 17:42:08:321|STDEV|69|
+2024/10/17 17:43:12:452|M|mt_stop2|
+2024/10/17 17:43:12:465|M|unregister tb trackpad|
+2024/10/17 17:43:12:466|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:43:12:467|M|register touchbar mbp trackpad|
+2024/10/17 17:43:12:467|STDEV|69|
+2024/10/17 17:43:27:660|M|mt_stop2|
+2024/10/17 17:43:27:667|M|unregister tb trackpad|
+2024/10/17 17:43:27:668|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:43:27:669|M|register touchbar mbp trackpad|
+2024/10/17 17:43:27:669|STDEV|69|
+2024/10/17 17:50:50:595|M|mt_stop2|
+2024/10/17 17:50:50:603|M|unregister tb trackpad|
+2024/10/17 17:50:50:604|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:50:50:605|M|register touchbar mbp trackpad|
+2024/10/17 17:50:50:605|STDEV|69|
+2024/10/17 17:51:43:193|M|mt_stop2|
+2024/10/17 17:51:43:205|M|unregister tb trackpad|
+2024/10/17 17:51:43:207|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:51:43:208|M|register touchbar mbp trackpad|
+2024/10/17 17:51:43:208|STDEV|69|
+2024/10/17 17:52:30:954|M|mt_stop2|
+2024/10/17 17:52:30:963|M|unregister tb trackpad|
+2024/10/17 17:52:30:964|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:52:30:964|M|register touchbar mbp trackpad|
+2024/10/17 17:52:30:965|STDEV|69|
+2024/10/17 17:52:50:035|M|mt_stop2|
+2024/10/17 17:52:50:043|M|unregister tb trackpad|
+2024/10/17 17:52:50:043|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:52:50:044|M|register touchbar mbp trackpad|
+2024/10/17 17:52:50:044|STDEV|69|
+2024/10/17 17:55:00:551|M|mt_stop2|
+2024/10/17 17:55:00:560|M|unregister tb trackpad|
+2024/10/17 17:55:00:562|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 17:55:00:563|M|register touchbar mbp trackpad|
+2024/10/17 17:55:00:563|STDEV|69|
+2024/10/17 18:00:11:238|M|mt_stop2|
+2024/10/17 18:00:11:246|M|unregister tb trackpad|
+2024/10/17 18:00:11:247|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:00:11:248|M|register touchbar mbp trackpad|
+2024/10/17 18:00:11:248|STDEV|69|
+2024/10/17 18:00:43:758|M|mt_stop2|
+2024/10/17 18:00:43:767|M|unregister tb trackpad|
+2024/10/17 18:00:43:769|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:00:43:770|M|register touchbar mbp trackpad|
+2024/10/17 18:00:43:770|STDEV|69|
+2024/10/17 18:01:08:879|M|mt_stop2|
+2024/10/17 18:01:08:887|M|unregister tb trackpad|
+2024/10/17 18:01:08:888|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:01:08:888|M|register touchbar mbp trackpad|
+2024/10/17 18:01:08:888|STDEV|69|
+2024/10/17 18:04:01:578|M|mt_stop2|
+2024/10/17 18:04:01:586|M|unregister tb trackpad|
+2024/10/17 18:04:01:587|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:04:01:587|M|register touchbar mbp trackpad|
+2024/10/17 18:04:01:588|STDEV|69|
+2024/10/17 18:04:11:685|M|mt_stop2|
+2024/10/17 18:04:11:693|M|unregister tb trackpad|
+2024/10/17 18:04:11:694|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:04:11:695|M|register touchbar mbp trackpad|
+2024/10/17 18:04:11:695|STDEV|69|
+2024/10/17 18:10:15:162|M|mt_stop2|
+2024/10/17 18:10:15:170|M|unregister tb trackpad|
+2024/10/17 18:10:15:171|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:10:15:171|M|register touchbar mbp trackpad|
+2024/10/17 18:10:15:172|STDEV|69|
+2024/10/17 18:11:40:439|M|mt_stop2|
+2024/10/17 18:11:40:450|M|unregister tb trackpad|
+2024/10/17 18:11:40:452|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:11:40:452|M|register touchbar mbp trackpad|
+2024/10/17 18:11:40:453|STDEV|69|
+2024/10/17 18:12:29:940|M|mt_stop2|
+2024/10/17 18:12:29:947|M|unregister tb trackpad|
+2024/10/17 18:12:29:949|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:12:29:949|M|register touchbar mbp trackpad|
+2024/10/17 18:12:29:949|STDEV|69|
+2024/10/17 18:13:12:500|M|mt_stop2|
+2024/10/17 18:13:12:506|M|unregister tb trackpad|
+2024/10/17 18:13:12:508|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:13:12:508|M|register touchbar mbp trackpad|
+2024/10/17 18:13:12:509|STDEV|69|
+2024/10/17 18:13:28:879|M|mt_stop2|
+2024/10/17 18:13:28:887|M|unregister tb trackpad|
+2024/10/17 18:13:28:889|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:13:28:889|M|register touchbar mbp trackpad|
+2024/10/17 18:13:28:889|STDEV|69|
+2024/10/17 18:13:44:840|M|mt_stop2|
+2024/10/17 18:13:44:848|M|unregister tb trackpad|
+2024/10/17 18:13:44:849|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:13:44:849|M|register touchbar mbp trackpad|
+2024/10/17 18:13:44:850|STDEV|69|
+2024/10/17 18:14:46:444|M|mt_stop2|
+2024/10/17 18:14:46:451|M|unregister tb trackpad|
+2024/10/17 18:14:46:452|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:14:46:453|M|register touchbar mbp trackpad|
+2024/10/17 18:14:46:453|STDEV|69|
+2024/10/17 18:16:26:037|M|mt_stop2|
+2024/10/17 18:16:26:044|M|unregister tb trackpad|
+2024/10/17 18:16:26:045|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:16:26:045|M|register touchbar mbp trackpad|
+2024/10/17 18:16:26:046|STDEV|69|
+2024/10/17 18:17:21:939|M|mt_stop2|
+2024/10/17 18:17:21:944|M|unregister tb trackpad|
+2024/10/17 18:17:21:945|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:17:21:945|M|register touchbar mbp trackpad|
+2024/10/17 18:17:21:945|STDEV|69|
+2024/10/17 18:17:47:551|M|mt_stop2|
+2024/10/17 18:17:47:561|M|unregister tb trackpad|
+2024/10/17 18:17:47:562|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:17:47:562|M|register touchbar mbp trackpad|
+2024/10/17 18:17:47:562|STDEV|69|
+2024/10/17 18:23:06:227|M|mt_stop2|
+2024/10/17 18:23:06:236|M|unregister tb trackpad|
+2024/10/17 18:23:06:238|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:23:06:238|M|register touchbar mbp trackpad|
+2024/10/17 18:23:06:239|STDEV|69|
+2024/10/17 18:23:50:020|ASL|The Mac is running on battery power.|
+2024/10/17 18:23:51:073|M|mt_stop2|
+2024/10/17 18:23:51:081|M|unregister tb trackpad|
+2024/10/17 18:23:51:082|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:23:51:082|M|register touchbar mbp trackpad|
+2024/10/17 18:23:51:082|STDEV|69|
+2024/10/17 18:27:18:030|M|mt_stop2|
+2024/10/17 18:27:18:039|M|unregister tb trackpad|
+2024/10/17 18:27:18:041|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:27:18:041|M|register touchbar mbp trackpad|
+2024/10/17 18:27:18:042|STDEV|69|
+2024/10/17 18:27:50:707|M|mt_stop2|
+2024/10/17 18:27:50:719|M|unregister tb trackpad|
+2024/10/17 18:27:50:719|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:27:50:720|M|register touchbar mbp trackpad|
+2024/10/17 18:27:50:720|STDEV|69|
+2024/10/17 18:32:45:010|M|mt_stop2|
+2024/10/17 18:32:45:022|M|unregister tb trackpad|
+2024/10/17 18:32:45:025|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:32:45:026|M|register touchbar mbp trackpad|
+2024/10/17 18:32:45:027|STDEV|69|
+2024/10/17 18:36:05:588|M|mt_stop2|
+2024/10/17 18:36:05:596|M|unregister tb trackpad|
+2024/10/17 18:36:05:597|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:36:05:598|M|register touchbar mbp trackpad|
+2024/10/17 18:36:05:599|STDEV|69|
+2024/10/17 18:36:15:358|M|mt_stop2|
+2024/10/17 18:36:15:371|M|unregister tb trackpad|
+2024/10/17 18:36:15:372|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:36:15:372|M|register touchbar mbp trackpad|
+2024/10/17 18:36:15:373|STDEV|69|
+2024/10/17 18:37:49:580|M|mt_stop2|
+2024/10/17 18:37:49:588|M|unregister tb trackpad|
+2024/10/17 18:37:49:589|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:37:49:590|M|register touchbar mbp trackpad|
+2024/10/17 18:37:49:590|STDEV|69|
+2024/10/17 18:39:56:542|M|mt_stop2|
+2024/10/17 18:39:56:551|M|unregister tb trackpad|
+2024/10/17 18:39:56:553|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:39:56:553|M|register touchbar mbp trackpad|
+2024/10/17 18:39:56:554|STDEV|69|
+2024/10/17 18:48:01:109|M|mt_stop2|
+2024/10/17 18:48:01:119|M|unregister tb trackpad|
+2024/10/17 18:48:01:120|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:48:01:121|M|register touchbar mbp trackpad|
+2024/10/17 18:48:01:121|STDEV|69|
+2024/10/17 18:50:31:788|M|mt_stop2|
+2024/10/17 18:50:31:797|M|unregister tb trackpad|
+2024/10/17 18:50:31:798|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 18:50:31:799|M|register touchbar mbp trackpad|
+2024/10/17 18:50:31:799|STDEV|69|
+2024/10/17 18:52:30:059|ASL|The Mac is running on battery power.|
+2024/10/17 19:09:12:189|ASL|The Mac is running on battery power.|
+2024/10/17 19:09:13:246|M|mt_stop2|
+2024/10/17 19:09:13:254|M|unregister tb trackpad|
+2024/10/17 19:09:13:255|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:09:13:255|M|register touchbar mbp trackpad|
+2024/10/17 19:09:13:255|STDEV|69|
+2024/10/17 19:13:39:609|M|mt_stop2|
+2024/10/17 19:13:39:617|M|unregister tb trackpad|
+2024/10/17 19:13:39:618|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:13:39:619|M|register touchbar mbp trackpad|
+2024/10/17 19:13:39:619|STDEV|69|
+2024/10/17 19:15:02:738|M|mt_stop2|
+2024/10/17 19:15:02:747|M|unregister tb trackpad|
+2024/10/17 19:15:02:749|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:15:02:750|M|register touchbar mbp trackpad|
+2024/10/17 19:15:02:750|STDEV|69|
+2024/10/17 19:19:09:390|M|mt_stop2|
+2024/10/17 19:19:09:402|M|unregister tb trackpad|
+2024/10/17 19:19:09:403|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:19:09:404|M|register touchbar mbp trackpad|
+2024/10/17 19:19:09:404|STDEV|69|
+2024/10/17 19:19:53:223|M|mt_stop2|
+2024/10/17 19:19:53:233|M|unregister tb trackpad|
+2024/10/17 19:19:53:235|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:19:53:236|M|register touchbar mbp trackpad|
+2024/10/17 19:19:53:236|STDEV|69|
+2024/10/17 19:20:27:577|M|mt_stop2|
+2024/10/17 19:20:27:584|M|unregister tb trackpad|
+2024/10/17 19:20:27:585|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:20:27:585|M|register touchbar mbp trackpad|
+2024/10/17 19:20:27:586|STDEV|69|
+2024/10/17 19:21:03:190|M|mt_stop2|
+2024/10/17 19:21:03:197|M|unregister tb trackpad|
+2024/10/17 19:21:03:198|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:21:03:199|M|register touchbar mbp trackpad|
+2024/10/17 19:21:03:199|STDEV|69|
+2024/10/17 19:21:36:982|M|mt_stop2|
+2024/10/17 19:21:36:992|M|unregister tb trackpad|
+2024/10/17 19:21:36:994|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:21:36:995|M|register touchbar mbp trackpad|
+2024/10/17 19:21:36:996|STDEV|69|
+2024/10/17 19:22:12:219|M|mt_stop2|
+2024/10/17 19:22:12:230|M|unregister tb trackpad|
+2024/10/17 19:22:12:231|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:22:12:232|M|register touchbar mbp trackpad|
+2024/10/17 19:22:12:232|STDEV|69|
+2024/10/17 19:23:35:164|M|mt_stop2|
+2024/10/17 19:23:35:172|M|unregister tb trackpad|
+2024/10/17 19:23:35:173|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:23:35:173|M|register touchbar mbp trackpad|
+2024/10/17 19:23:35:174|STDEV|69|
+2024/10/17 19:24:04:372|M|mt_stop2|
+2024/10/17 19:24:04:382|M|unregister tb trackpad|
+2024/10/17 19:24:04:384|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:24:04:384|M|register touchbar mbp trackpad|
+2024/10/17 19:24:04:385|STDEV|69|
+2024/10/17 19:24:39:588|M|mt_stop2|
+2024/10/17 19:24:39:600|M|unregister tb trackpad|
+2024/10/17 19:24:39:602|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:24:39:602|M|register touchbar mbp trackpad|
+2024/10/17 19:24:39:603|STDEV|69|
+2024/10/17 19:25:09:874|M|mt_stop2|
+2024/10/17 19:25:09:883|M|unregister tb trackpad|
+2024/10/17 19:25:09:885|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:25:09:886|M|register touchbar mbp trackpad|
+2024/10/17 19:25:09:886|STDEV|69|
+2024/10/17 19:31:44:047|M|mt_stop2|
+2024/10/17 19:31:44:055|M|unregister tb trackpad|
+2024/10/17 19:31:44:056|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:31:44:056|M|register touchbar mbp trackpad|
+2024/10/17 19:31:44:057|STDEV|69|
+2024/10/17 19:32:18:657|M|mt_stop2|
+2024/10/17 19:32:18:666|M|unregister tb trackpad|
+2024/10/17 19:32:18:668|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:32:18:669|M|register touchbar mbp trackpad|
+2024/10/17 19:32:18:670|STDEV|69|
+2024/10/17 19:32:40:983|M|mt_stop2|
+2024/10/17 19:32:40:991|M|unregister tb trackpad|
+2024/10/17 19:32:40:992|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:32:40:992|M|register touchbar mbp trackpad|
+2024/10/17 19:32:40:993|STDEV|69|
+2024/10/17 19:33:23:388|M|mt_stop2|
+2024/10/17 19:33:23:402|M|unregister tb trackpad|
+2024/10/17 19:33:23:404|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:33:23:405|M|register touchbar mbp trackpad|
+2024/10/17 19:33:23:405|STDEV|69|
+2024/10/17 19:34:49:439|M|mt_stop2|
+2024/10/17 19:34:49:447|M|unregister tb trackpad|
+2024/10/17 19:34:49:449|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:34:49:450|M|register touchbar mbp trackpad|
+2024/10/17 19:34:49:450|STDEV|69|
+2024/10/17 19:35:22:780|M|mt_stop2|
+2024/10/17 19:35:22:787|M|unregister tb trackpad|
+2024/10/17 19:35:22:788|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:35:22:789|M|register touchbar mbp trackpad|
+2024/10/17 19:35:22:789|STDEV|69|
+2024/10/17 19:35:35:671|M|mt_stop2|
+2024/10/17 19:35:35:681|M|unregister tb trackpad|
+2024/10/17 19:35:35:683|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:35:35:683|M|register touchbar mbp trackpad|
+2024/10/17 19:35:35:684|STDEV|69|
+2024/10/17 19:36:51:261|M|mt_stop2|
+2024/10/17 19:36:51:273|M|unregister tb trackpad|
+2024/10/17 19:36:51:274|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:36:51:275|M|register touchbar mbp trackpad|
+2024/10/17 19:36:51:275|STDEV|69|
+2024/10/17 19:37:36:300|M|mt_stop2|
+2024/10/17 19:37:36:310|M|unregister tb trackpad|
+2024/10/17 19:37:36:312|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:37:36:312|M|register touchbar mbp trackpad|
+2024/10/17 19:37:36:313|STDEV|69|
+2024/10/17 19:38:13:380|M|mt_stop2|
+2024/10/17 19:38:13:392|M|unregister tb trackpad|
+2024/10/17 19:38:13:394|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:38:13:395|M|register touchbar mbp trackpad|
+2024/10/17 19:38:13:395|STDEV|69|
+2024/10/17 19:39:21:007|M|mt_stop2|
+2024/10/17 19:39:21:015|M|unregister tb trackpad|
+2024/10/17 19:39:21:016|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:39:21:016|M|register touchbar mbp trackpad|
+2024/10/17 19:39:21:016|STDEV|69|
+2024/10/17 19:40:13:779|ASL|The Mac is running on battery power.|
+2024/10/17 19:40:14:826|M|mt_stop2|
+2024/10/17 19:40:14:833|M|unregister tb trackpad|
+2024/10/17 19:40:14:834|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:40:14:835|M|register touchbar mbp trackpad|
+2024/10/17 19:40:14:835|STDEV|69|
+2024/10/17 19:46:02:161|M|mt_stop2|
+2024/10/17 19:46:02:169|M|unregister tb trackpad|
+2024/10/17 19:46:02:170|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:46:02:171|M|register touchbar mbp trackpad|
+2024/10/17 19:46:02:171|STDEV|69|
+2024/10/17 19:47:51:523|M|mt_stop2|
+2024/10/17 19:47:51:534|M|unregister tb trackpad|
+2024/10/17 19:47:51:536|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:47:51:537|M|register touchbar mbp trackpad|
+2024/10/17 19:47:51:537|STDEV|69|
+2024/10/17 19:48:39:016|M|mt_stop2|
+2024/10/17 19:48:39:027|M|unregister tb trackpad|
+2024/10/17 19:48:39:029|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:48:39:029|M|register touchbar mbp trackpad|
+2024/10/17 19:48:39:029|STDEV|69|
+2024/10/17 19:49:10:558|M|mt_stop2|
+2024/10/17 19:49:10:567|M|unregister tb trackpad|
+2024/10/17 19:49:10:569|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:49:10:569|M|register touchbar mbp trackpad|
+2024/10/17 19:49:10:569|STDEV|69|
+2024/10/17 19:50:03:193|M|mt_stop2|
+2024/10/17 19:50:03:204|M|unregister tb trackpad|
+2024/10/17 19:50:03:206|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:50:03:207|M|register touchbar mbp trackpad|
+2024/10/17 19:50:03:207|STDEV|69|
+2024/10/17 19:50:49:902|M|mt_stop2|
+2024/10/17 19:50:49:914|M|unregister tb trackpad|
+2024/10/17 19:50:49:915|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:50:49:916|M|register touchbar mbp trackpad|
+2024/10/17 19:50:49:916|STDEV|69|
+2024/10/17 19:51:44:174|M|mt_stop2|
+2024/10/17 19:51:44:185|M|unregister tb trackpad|
+2024/10/17 19:51:44:186|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:51:44:187|M|register touchbar mbp trackpad|
+2024/10/17 19:51:44:187|STDEV|69|
+2024/10/17 19:55:08:872|M|mt_stop2|
+2024/10/17 19:55:08:879|M|unregister tb trackpad|
+2024/10/17 19:55:08:880|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:55:08:881|M|register touchbar mbp trackpad|
+2024/10/17 19:55:08:881|STDEV|69|
+2024/10/17 19:56:21:879|M|mt_stop2|
+2024/10/17 19:56:21:887|M|unregister tb trackpad|
+2024/10/17 19:56:21:888|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:56:21:888|M|register touchbar mbp trackpad|
+2024/10/17 19:56:21:888|STDEV|69|
+2024/10/17 19:57:13:909|M|mt_stop2|
+2024/10/17 19:57:13:916|M|unregister tb trackpad|
+2024/10/17 19:57:13:917|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 19:57:13:917|M|register touchbar mbp trackpad|
+2024/10/17 19:57:13:918|STDEV|69|
+2024/10/17 20:00:10:870|M|mt_stop2|
+2024/10/17 20:00:10:881|M|unregister tb trackpad|
+2024/10/17 20:00:10:883|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:00:10:885|M|register touchbar mbp trackpad|
+2024/10/17 20:00:10:885|STDEV|69|
+2024/10/17 20:06:09:049|M|mt_stop2|
+2024/10/17 20:06:09:057|M|unregister tb trackpad|
+2024/10/17 20:06:09:058|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:06:09:059|M|register touchbar mbp trackpad|
+2024/10/17 20:06:09:059|STDEV|69|
+2024/10/17 20:11:48:641|M|mt_stop2|
+2024/10/17 20:11:48:649|M|unregister tb trackpad|
+2024/10/17 20:11:48:650|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:11:48:650|M|register touchbar mbp trackpad|
+2024/10/17 20:11:48:651|STDEV|69|
+2024/10/17 20:12:13:089|M|mt_stop2|
+2024/10/17 20:12:13:097|M|unregister tb trackpad|
+2024/10/17 20:12:13:098|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:12:13:098|M|register touchbar mbp trackpad|
+2024/10/17 20:12:13:098|STDEV|69|
+2024/10/17 20:15:13:459|M|mt_stop2|
+2024/10/17 20:15:13:470|M|unregister tb trackpad|
+2024/10/17 20:15:13:473|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:15:13:473|M|register touchbar mbp trackpad|
+2024/10/17 20:15:13:474|STDEV|69|
+2024/10/17 20:15:26:149|M|mt_stop2|
+2024/10/17 20:15:26:157|M|unregister tb trackpad|
+2024/10/17 20:15:26:158|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:15:26:158|M|register touchbar mbp trackpad|
+2024/10/17 20:15:26:159|STDEV|69|
+2024/10/17 20:16:13:665|M|mt_stop2|
+2024/10/17 20:16:13:673|M|unregister tb trackpad|
+2024/10/17 20:16:13:674|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:16:13:675|M|register touchbar mbp trackpad|
+2024/10/17 20:16:13:675|STDEV|69|
+2024/10/17 20:17:11:220|M|mt_stop2|
+2024/10/17 20:17:11:232|M|unregister tb trackpad|
+2024/10/17 20:17:11:233|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:17:11:235|M|register touchbar mbp trackpad|
+2024/10/17 20:17:11:235|STDEV|69|
+2024/10/17 20:21:47:175|ASL|The Mac is running on battery power.|
+2024/10/17 20:21:48:178|M|mt_stop2|
+2024/10/17 20:21:48:189|M|unregister tb trackpad|
+2024/10/17 20:21:48:190|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:21:48:191|M|register touchbar mbp trackpad|
+2024/10/17 20:21:48:191|STDEV|69|
+2024/10/17 20:25:52:034|M|mt_stop2|
+2024/10/17 20:25:52:044|M|unregister tb trackpad|
+2024/10/17 20:25:52:045|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:25:52:046|M|register touchbar mbp trackpad|
+2024/10/17 20:25:52:046|STDEV|69|
+2024/10/17 20:27:02:626|M|mt_stop2|
+2024/10/17 20:27:02:635|M|unregister tb trackpad|
+2024/10/17 20:27:02:636|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:27:02:637|M|register touchbar mbp trackpad|
+2024/10/17 20:27:02:637|STDEV|69|
+2024/10/17 20:28:49:980|M|mt_stop2|
+2024/10/17 20:28:49:988|M|unregister tb trackpad|
+2024/10/17 20:28:49:989|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:28:49:989|M|register touchbar mbp trackpad|
+2024/10/17 20:28:49:990|STDEV|69|
+2024/10/17 20:32:27:907|M|mt_stop2|
+2024/10/17 20:32:27:918|M|unregister tb trackpad|
+2024/10/17 20:32:27:920|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:32:27:921|M|register touchbar mbp trackpad|
+2024/10/17 20:32:27:921|STDEV|69|
+2024/10/17 20:33:02:308|M|mt_stop2|
+2024/10/17 20:33:02:316|M|unregister tb trackpad|
+2024/10/17 20:33:02:318|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:33:02:319|M|register touchbar mbp trackpad|
+2024/10/17 20:33:02:319|STDEV|69|
+2024/10/17 20:37:18:236|M|mt_stop2|
+2024/10/17 20:37:18:244|M|unregister tb trackpad|
+2024/10/17 20:37:18:245|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:37:18:245|M|register touchbar mbp trackpad|
+2024/10/17 20:37:18:245|STDEV|69|
+2024/10/17 20:37:55:852|M|mt_stop2|
+2024/10/17 20:37:55:863|M|unregister tb trackpad|
+2024/10/17 20:37:55:865|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:37:55:866|M|register touchbar mbp trackpad|
+2024/10/17 20:37:55:866|STDEV|69|
+2024/10/17 20:38:21:882|M|mt_stop2|
+2024/10/17 20:38:21:889|M|unregister tb trackpad|
+2024/10/17 20:38:21:890|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:38:21:891|M|register touchbar mbp trackpad|
+2024/10/17 20:38:21:891|STDEV|69|
+2024/10/17 20:38:53:904|M|mt_stop2|
+2024/10/17 20:38:53:912|M|unregister tb trackpad|
+2024/10/17 20:38:53:913|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:38:53:914|M|register touchbar mbp trackpad|
+2024/10/17 20:38:53:914|STDEV|69|
+2024/10/17 20:54:48:211|M|mt_stop2|
+2024/10/17 20:54:48:218|M|unregister tb trackpad|
+2024/10/17 20:54:48:219|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 20:54:48:220|M|register touchbar mbp trackpad|
+2024/10/17 20:54:48:220|STDEV|69|
+2024/10/17 21:00:13:268|M|mt_stop2|
+2024/10/17 21:00:13:277|M|unregister tb trackpad|
+2024/10/17 21:00:13:278|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:00:13:279|M|register touchbar mbp trackpad|
+2024/10/17 21:00:13:279|STDEV|69|
+2024/10/17 21:00:49:026|M|mt_stop2|
+2024/10/17 21:00:49:037|M|unregister tb trackpad|
+2024/10/17 21:00:49:039|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:00:49:040|M|register touchbar mbp trackpad|
+2024/10/17 21:00:49:040|STDEV|69|
+2024/10/17 21:17:16:245|M|mt_stop2|
+2024/10/17 21:17:16:253|M|unregister tb trackpad|
+2024/10/17 21:17:16:254|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:17:16:255|M|register touchbar mbp trackpad|
+2024/10/17 21:17:16:255|STDEV|69|
+2024/10/17 21:26:49:440|M|mt_stop2|
+2024/10/17 21:26:49:448|M|unregister tb trackpad|
+2024/10/17 21:26:49:449|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:26:49:449|M|register touchbar mbp trackpad|
+2024/10/17 21:26:49:450|STDEV|69|
+2024/10/17 21:38:18:579|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/17 21:38:19:215|M|mt_stop2|
+2024/10/17 21:38:19:218|M|unregister tb trackpad|
+2024/10/17 21:38:19:219|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:38:19:219|M|register touchbar mbp trackpad|
+2024/10/17 21:38:19:219|STDEV|69|
+2024/10/17 21:45:30:062|M|mt_stop2|
+2024/10/17 21:45:30:071|M|unregister tb trackpad|
+2024/10/17 21:45:30:073|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:45:30:074|M|register touchbar mbp trackpad|
+2024/10/17 21:45:30:074|STDEV|69|
+2024/10/17 21:48:04:293|M|mt_stop2|
+2024/10/17 21:48:04:300|M|unregister tb trackpad|
+2024/10/17 21:48:04:302|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:48:04:302|M|register touchbar mbp trackpad|
+2024/10/17 21:48:04:302|STDEV|69|
+2024/10/17 21:55:02:214|M|mt_stop2|
+2024/10/17 21:55:02:225|M|unregister tb trackpad|
+2024/10/17 21:55:02:228|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:55:02:229|M|register touchbar mbp trackpad|
+2024/10/17 21:55:02:230|STDEV|69|
+2024/10/17 21:57:50:314|M|mt_stop2|
+2024/10/17 21:57:50:324|M|unregister tb trackpad|
+2024/10/17 21:57:50:326|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 21:57:50:327|M|register touchbar mbp trackpad|
+2024/10/17 21:57:50:328|STDEV|69|
+2024/10/17 22:14:38:190|M|mt_stop2|
+2024/10/17 22:14:38:197|M|unregister tb trackpad|
+2024/10/17 22:14:38:199|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 22:14:38:199|M|register touchbar mbp trackpad|
+2024/10/17 22:14:38:199|STDEV|69|
+2024/10/17 22:30:47:194|M|mt_stop2|
+2024/10/17 22:30:47:201|M|unregister tb trackpad|
+2024/10/17 22:30:47:202|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 22:30:47:203|M|register touchbar mbp trackpad|
+2024/10/17 22:30:47:203|STDEV|69|
+2024/10/17 22:39:20:373|M|mt_stop2|
+2024/10/17 22:39:20:382|M|unregister tb trackpad|
+2024/10/17 22:39:20:384|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 22:39:20:384|M|register touchbar mbp trackpad|
+2024/10/17 22:39:20:385|STDEV|69|
+2024/10/17 22:40:19:092|ASL|The Mac is running on battery power.|
+2024/10/17 22:43:53:183|ASL|The Mac is running on battery power.|
+2024/10/17 22:43:54:227|M|mt_stop2|
+2024/10/17 22:43:54:235|M|unregister tb trackpad|
+2024/10/17 22:43:54:236|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 22:43:54:236|M|register touchbar mbp trackpad|
+2024/10/17 22:43:54:237|STDEV|69|
+2024/10/17 22:54:11:405|M|mt_stop2|
+2024/10/17 22:54:11:413|M|unregister tb trackpad|
+2024/10/17 22:54:11:414|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 22:54:11:415|M|register touchbar mbp trackpad|
+2024/10/17 22:54:11:415|STDEV|69|
+2024/10/17 23:09:19:329|M|mt_stop2|
+2024/10/17 23:09:19:339|M|unregister tb trackpad|
+2024/10/17 23:09:19:342|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:09:19:342|M|register touchbar mbp trackpad|
+2024/10/17 23:09:19:343|STDEV|69|
+2024/10/17 23:21:55:885|M|mt_stop2|
+2024/10/17 23:21:55:895|M|unregister tb trackpad|
+2024/10/17 23:21:55:896|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:21:55:896|M|register touchbar mbp trackpad|
+2024/10/17 23:21:55:897|STDEV|69|
+2024/10/17 23:23:10:600|M|mt_stop2|
+2024/10/17 23:23:10:611|M|unregister tb trackpad|
+2024/10/17 23:23:10:612|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:23:10:612|M|register touchbar mbp trackpad|
+2024/10/17 23:23:10:613|STDEV|69|
+2024/10/17 23:23:20:872|M|mt_stop2|
+2024/10/17 23:23:20:882|M|unregister tb trackpad|
+2024/10/17 23:23:20:884|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:23:20:884|M|register touchbar mbp trackpad|
+2024/10/17 23:23:20:885|STDEV|69|
+2024/10/17 23:24:08:543|M|mt_stop2|
+2024/10/17 23:24:08:555|M|unregister tb trackpad|
+2024/10/17 23:24:08:556|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:24:08:557|M|register touchbar mbp trackpad|
+2024/10/17 23:24:08:560|STDEV|69|
+2024/10/17 23:26:20:061|M|mt_stop2|
+2024/10/17 23:26:20:069|M|unregister tb trackpad|
+2024/10/17 23:26:20:070|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:26:20:070|M|register touchbar mbp trackpad|
+2024/10/17 23:26:20:070|STDEV|69|
+2024/10/17 23:26:40:565|ASL|The Mac is running on battery power.|
+2024/10/17 23:26:41:622|M|mt_stop2|
+2024/10/17 23:26:41:634|M|unregister tb trackpad|
+2024/10/17 23:26:41:635|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:26:41:636|M|register touchbar mbp trackpad|
+2024/10/17 23:26:41:636|STDEV|69|
+2024/10/17 23:42:01:249|M|mt_stop2|
+2024/10/17 23:42:01:262|M|unregister tb trackpad|
+2024/10/17 23:42:01:263|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:42:01:263|M|register touchbar mbp trackpad|
+2024/10/17 23:42:01:263|STDEV|69|
+2024/10/17 23:59:30:217|M|mt_stop2|
+2024/10/17 23:59:30:225|M|unregister tb trackpad|
+2024/10/17 23:59:30:226|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/17 23:59:30:226|M|register touchbar mbp trackpad|
+2024/10/17 23:59:30:226|STDEV|69|
+2024/10/18 00:08:06:231|M|mt_stop2|
+2024/10/18 00:08:06:238|M|unregister tb trackpad|
+2024/10/18 00:08:06:239|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:08:06:240|M|register touchbar mbp trackpad|
+2024/10/18 00:08:06:240|STDEV|69|
+2024/10/18 00:08:26:397|usage|loading todays usage|
+2024/10/18 00:19:16:481|M|mt_stop2|
+2024/10/18 00:19:16:489|M|unregister tb trackpad|
+2024/10/18 00:19:16:490|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:19:16:490|M|register touchbar mbp trackpad|
+2024/10/18 00:19:16:490|STDEV|69|
+2024/10/18 00:27:06:195|M|mt_stop2|
+2024/10/18 00:27:06:206|M|unregister tb trackpad|
+2024/10/18 00:27:06:207|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:27:06:208|M|register touchbar mbp trackpad|
+2024/10/18 00:27:06:208|STDEV|69|
+2024/10/18 00:27:36:073|M|mt_stop2|
+2024/10/18 00:27:36:082|M|unregister tb trackpad|
+2024/10/18 00:27:36:084|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:27:36:084|M|register touchbar mbp trackpad|
+2024/10/18 00:27:36:085|STDEV|69|
+2024/10/18 00:35:22:619|M|mt_stop2|
+2024/10/18 00:35:22:629|M|unregister tb trackpad|
+2024/10/18 00:35:22:630|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:35:22:630|M|register touchbar mbp trackpad|
+2024/10/18 00:35:22:631|STDEV|69|
+2024/10/18 00:43:01:651|M|mt_stop2|
+2024/10/18 00:43:01:659|M|unregister tb trackpad|
+2024/10/18 00:43:01:660|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:43:01:661|M|register touchbar mbp trackpad|
+2024/10/18 00:43:01:661|STDEV|69|
+2024/10/18 00:44:25:770|M|mt_stop2|
+2024/10/18 00:44:25:781|M|unregister tb trackpad|
+2024/10/18 00:44:25:784|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:44:25:785|M|register touchbar mbp trackpad|
+2024/10/18 00:44:25:786|STDEV|69|
+2024/10/18 00:46:43:444|M|mt_stop2|
+2024/10/18 00:46:43:453|M|unregister tb trackpad|
+2024/10/18 00:46:43:455|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:46:43:456|M|register touchbar mbp trackpad|
+2024/10/18 00:46:43:457|STDEV|69|
+2024/10/18 00:48:10:498|M|mt_stop2|
+2024/10/18 00:48:10:505|M|unregister tb trackpad|
+2024/10/18 00:48:10:506|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:48:10:506|M|register touchbar mbp trackpad|
+2024/10/18 00:48:10:507|STDEV|69|
+2024/10/18 00:49:16:717|M|mt_stop2|
+2024/10/18 00:49:16:724|M|unregister tb trackpad|
+2024/10/18 00:49:16:726|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 00:49:16:726|M|register touchbar mbp trackpad|
+2024/10/18 00:49:16:727|STDEV|69|
+2024/10/18 01:05:27:231|M|mt_stop2|
+2024/10/18 01:05:27:239|M|unregister tb trackpad|
+2024/10/18 01:05:27:240|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:05:27:240|M|register touchbar mbp trackpad|
+2024/10/18 01:05:27:241|STDEV|69|
+2024/10/18 01:05:53:543|M|mt_stop2|
+2024/10/18 01:05:53:554|M|unregister tb trackpad|
+2024/10/18 01:05:53:556|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:05:53:556|M|register touchbar mbp trackpad|
+2024/10/18 01:05:53:557|STDEV|69|
+2024/10/18 01:10:41:087|M|mt_stop2|
+2024/10/18 01:10:41:098|M|unregister tb trackpad|
+2024/10/18 01:10:41:102|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:10:41:103|M|register touchbar mbp trackpad|
+2024/10/18 01:10:41:103|STDEV|69|
+2024/10/18 01:10:51:722|M|mt_stop2|
+2024/10/18 01:10:51:729|M|unregister tb trackpad|
+2024/10/18 01:10:51:731|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:10:51:731|M|register touchbar mbp trackpad|
+2024/10/18 01:10:51:732|STDEV|69|
+2024/10/18 01:13:11:871|M|mt_stop2|
+2024/10/18 01:13:11:881|M|unregister tb trackpad|
+2024/10/18 01:13:11:882|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:13:11:883|M|register touchbar mbp trackpad|
+2024/10/18 01:13:11:883|STDEV|69|
+2024/10/18 01:31:39:893|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/18 01:31:40:221|M|mt_stop2|
+2024/10/18 01:31:40:224|M|unregister tb trackpad|
+2024/10/18 01:31:40:225|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:31:40:225|M|register touchbar mbp trackpad|
+2024/10/18 01:31:40:225|STDEV|69|
+2024/10/18 01:44:12:368|M|mt_stop2|
+2024/10/18 01:44:12:376|M|unregister tb trackpad|
+2024/10/18 01:44:12:377|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 01:44:12:378|M|register touchbar mbp trackpad|
+2024/10/18 01:44:12:378|STDEV|69|
+2024/10/18 02:02:06:231|M|mt_stop2|
+2024/10/18 02:02:06:240|M|unregister tb trackpad|
+2024/10/18 02:02:06:241|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 02:02:06:242|M|register touchbar mbp trackpad|
+2024/10/18 02:02:06:242|STDEV|69|
+2024/10/18 02:17:14:509|ASL|The Mac is running on battery power.|
+2024/10/18 02:17:15:557|M|mt_stop2|
+2024/10/18 02:17:15:565|M|unregister tb trackpad|
+2024/10/18 02:17:15:566|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 02:17:15:566|M|register touchbar mbp trackpad|
+2024/10/18 02:17:15:567|STDEV|69|
+2024/10/18 02:32:27:232|M|mt_stop2|
+2024/10/18 02:32:27:239|M|unregister tb trackpad|
+2024/10/18 02:32:27:241|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 02:32:27:241|M|register touchbar mbp trackpad|
+2024/10/18 02:32:27:241|STDEV|69|
+2024/10/18 02:49:14:347|M|mt_stop2|
+2024/10/18 02:49:14:354|M|unregister tb trackpad|
+2024/10/18 02:49:14:355|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 02:49:14:355|M|register touchbar mbp trackpad|
+2024/10/18 02:49:14:356|STDEV|69|
+2024/10/18 03:05:12:328|M|mt_stop2|
+2024/10/18 03:05:12:338|M|unregister tb trackpad|
+2024/10/18 03:05:12:340|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 03:05:12:340|M|register touchbar mbp trackpad|
+2024/10/18 03:05:12:341|STDEV|69|
+2024/10/18 03:22:14:233|M|mt_stop2|
+2024/10/18 03:22:14:236|M|unregister tb trackpad|
+2024/10/18 03:22:14:237|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 03:22:14:237|M|register touchbar mbp trackpad|
+2024/10/18 03:22:14:237|STDEV|69|
+2024/10/18 03:29:35:162|M|mt_stop2|
+2024/10/18 03:29:35:169|M|unregister tb trackpad|
+2024/10/18 03:29:35:170|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 03:29:35:171|M|register touchbar mbp trackpad|
+2024/10/18 03:29:35:171|STDEV|69|
+2024/10/18 03:48:14:206|M|mt_stop2|
+2024/10/18 03:48:14:210|M|unregister tb trackpad|
+2024/10/18 03:48:14:211|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 03:48:14:211|M|register touchbar mbp trackpad|
+2024/10/18 03:48:14:211|STDEV|69|
+2024/10/18 03:55:02:222|M|mt_stop2|
+2024/10/18 03:55:02:230|M|unregister tb trackpad|
+2024/10/18 03:55:02:231|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 03:55:02:232|M|register touchbar mbp trackpad|
+2024/10/18 03:55:02:232|STDEV|69|
+2024/10/18 04:10:55:331|M|mt_stop2|
+2024/10/18 04:10:55:343|M|unregister tb trackpad|
+2024/10/18 04:10:55:345|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 04:10:55:345|M|register touchbar mbp trackpad|
+2024/10/18 04:10:55:346|STDEV|69|
+2024/10/18 04:28:42:230|M|mt_stop2|
+2024/10/18 04:28:42:239|M|unregister tb trackpad|
+2024/10/18 04:28:42:240|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 04:28:42:240|M|register touchbar mbp trackpad|
+2024/10/18 04:28:42:240|STDEV|69|
+2024/10/18 04:33:28:230|M|mt_stop2|
+2024/10/18 04:33:28:238|M|unregister tb trackpad|
+2024/10/18 04:33:28:240|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 04:33:28:240|M|register touchbar mbp trackpad|
+2024/10/18 04:33:28:240|STDEV|69|
+2024/10/18 04:49:40:213|M|mt_stop2|
+2024/10/18 04:49:40:218|M|unregister tb trackpad|
+2024/10/18 04:49:40:218|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 04:49:40:219|M|register touchbar mbp trackpad|
+2024/10/18 04:49:40:219|STDEV|69|
+2024/10/18 05:05:21:227|M|mt_stop2|
+2024/10/18 05:05:21:234|M|unregister tb trackpad|
+2024/10/18 05:05:21:235|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 05:05:21:236|M|register touchbar mbp trackpad|
+2024/10/18 05:05:21:236|STDEV|69|
+2024/10/18 05:15:02:634|M|mt_stop2|
+2024/10/18 05:15:02:644|M|unregister tb trackpad|
+2024/10/18 05:15:02:645|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 05:15:02:649|M|register touchbar mbp trackpad|
+2024/10/18 05:15:02:650|STDEV|69|
+2024/10/18 05:15:59:407|M|mt_stop2|
+2024/10/18 05:15:59:415|M|unregister tb trackpad|
+2024/10/18 05:15:59:416|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 05:15:59:416|M|register touchbar mbp trackpad|
+2024/10/18 05:15:59:416|STDEV|69|
+2024/10/18 05:33:26:213|ASL|The Mac is running on battery power.|
+2024/10/18 05:33:27:270|M|mt_stop2|
+2024/10/18 05:33:27:278|M|unregister tb trackpad|
+2024/10/18 05:33:27:279|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 05:33:27:279|M|register touchbar mbp trackpad|
+2024/10/18 05:33:27:279|STDEV|69|
+2024/10/18 05:51:10:269|M|mt_stop2|
+2024/10/18 05:51:10:277|M|unregister tb trackpad|
+2024/10/18 05:51:10:280|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 05:51:10:281|M|register touchbar mbp trackpad|
+2024/10/18 05:51:10:281|STDEV|69|
+2024/10/18 05:55:02:393|M|mt_stop2|
+2024/10/18 05:55:02:400|M|unregister tb trackpad|
+2024/10/18 05:55:02:401|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 05:55:02:402|M|register touchbar mbp trackpad|
+2024/10/18 05:55:02:402|STDEV|69|
+2024/10/18 06:00:18:339|M|mt_stop2|
+2024/10/18 06:00:18:347|M|unregister tb trackpad|
+2024/10/18 06:00:18:348|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:00:18:348|M|register touchbar mbp trackpad|
+2024/10/18 06:00:18:349|STDEV|69|
+2024/10/18 06:04:21:653|M|mt_stop2|
+2024/10/18 06:04:21:661|M|unregister tb trackpad|
+2024/10/18 06:04:21:662|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:04:21:662|M|register touchbar mbp trackpad|
+2024/10/18 06:04:21:662|STDEV|69|
+2024/10/18 06:21:05:294|M|mt_stop2|
+2024/10/18 06:21:05:302|M|unregister tb trackpad|
+2024/10/18 06:21:05:303|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:21:05:303|M|register touchbar mbp trackpad|
+2024/10/18 06:21:05:303|STDEV|69|
+2024/10/18 06:26:45:258|M|mt_stop2|
+2024/10/18 06:26:45:268|M|unregister tb trackpad|
+2024/10/18 06:26:45:269|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:26:45:269|M|register touchbar mbp trackpad|
+2024/10/18 06:26:45:270|STDEV|69|
+2024/10/18 06:26:55:594|M|mt_stop2|
+2024/10/18 06:26:55:605|M|unregister tb trackpad|
+2024/10/18 06:26:55:606|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:26:55:606|M|register touchbar mbp trackpad|
+2024/10/18 06:26:55:606|STDEV|69|
+2024/10/18 06:27:13:757|M|mt_stop2|
+2024/10/18 06:27:13:769|M|unregister tb trackpad|
+2024/10/18 06:27:13:771|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:27:13:772|M|register touchbar mbp trackpad|
+2024/10/18 06:27:13:772|STDEV|69|
+2024/10/18 06:34:29:344|M|mt_stop2|
+2024/10/18 06:34:29:352|M|unregister tb trackpad|
+2024/10/18 06:34:29:353|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:34:29:354|M|register touchbar mbp trackpad|
+2024/10/18 06:34:29:354|STDEV|69|
+2024/10/18 06:43:56:337|M|mt_stop2|
+2024/10/18 06:43:56:345|M|unregister tb trackpad|
+2024/10/18 06:43:56:346|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:43:56:346|M|register touchbar mbp trackpad|
+2024/10/18 06:43:56:347|STDEV|69|
+2024/10/18 06:44:11:820|M|mt_stop2|
+2024/10/18 06:44:11:829|M|unregister tb trackpad|
+2024/10/18 06:44:11:830|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:44:11:830|M|register touchbar mbp trackpad|
+2024/10/18 06:44:11:831|STDEV|69|
+2024/10/18 06:44:39:772|M|mt_stop2|
+2024/10/18 06:44:39:784|M|unregister tb trackpad|
+2024/10/18 06:44:39:786|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:44:39:786|M|register touchbar mbp trackpad|
+2024/10/18 06:44:39:787|STDEV|69|
+2024/10/18 06:56:54:675|M|mt_stop2|
+2024/10/18 06:56:54:687|M|unregister tb trackpad|
+2024/10/18 06:56:54:689|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 06:56:54:690|M|register touchbar mbp trackpad|
+2024/10/18 06:56:54:691|STDEV|69|
+2024/10/18 07:14:17:234|M|mt_stop2|
+2024/10/18 07:14:17:242|M|unregister tb trackpad|
+2024/10/18 07:14:17:243|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:14:17:243|M|register touchbar mbp trackpad|
+2024/10/18 07:14:17:243|STDEV|69|
+2024/10/18 07:30:29:207|M|mt_stop2|
+2024/10/18 07:30:29:215|M|unregister tb trackpad|
+2024/10/18 07:30:29:216|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:30:29:216|M|register touchbar mbp trackpad|
+2024/10/18 07:30:29:216|STDEV|69|
+2024/10/18 07:35:30:244|M|mt_stop2|
+2024/10/18 07:35:30:252|M|unregister tb trackpad|
+2024/10/18 07:35:30:254|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:35:30:254|M|register touchbar mbp trackpad|
+2024/10/18 07:35:30:255|STDEV|69|
+2024/10/18 07:46:49:604|ASL|The Mac is running on battery power.|
+2024/10/18 07:46:50:606|M|mt_stop2|
+2024/10/18 07:46:50:614|M|unregister tb trackpad|
+2024/10/18 07:46:50:615|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:46:50:615|M|register touchbar mbp trackpad|
+2024/10/18 07:46:50:616|STDEV|69|
+2024/10/18 07:48:26:243|M|mt_stop2|
+2024/10/18 07:48:26:247|M|unregister tb trackpad|
+2024/10/18 07:48:26:247|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:48:26:247|M|register touchbar mbp trackpad|
+2024/10/18 07:48:26:247|STDEV|69|
+2024/10/18 07:49:00:194|M|mt_stop2|
+2024/10/18 07:49:00:203|M|unregister tb trackpad|
+2024/10/18 07:49:00:205|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:49:00:206|M|register touchbar mbp trackpad|
+2024/10/18 07:49:00:206|STDEV|69|
+2024/10/18 07:49:26:821|M|mt_stop2|
+2024/10/18 07:49:26:828|M|unregister tb trackpad|
+2024/10/18 07:49:26:831|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:49:26:832|M|register touchbar mbp trackpad|
+2024/10/18 07:49:26:832|STDEV|69|
+2024/10/18 07:59:22:134|M|mt_stop2|
+2024/10/18 07:59:22:141|M|unregister tb trackpad|
+2024/10/18 07:59:22:143|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 07:59:22:143|M|register touchbar mbp trackpad|
+2024/10/18 07:59:22:143|STDEV|69|
+2024/10/18 08:01:33:197|M|mt_stop2|
+2024/10/18 08:01:33:208|M|unregister tb trackpad|
+2024/10/18 08:01:33:210|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 08:01:33:210|M|register touchbar mbp trackpad|
+2024/10/18 08:01:33:211|STDEV|69|
+2024/10/18 08:19:20:508|LIC|license purchase date 2024-02-07 17:42:18 +0000 | license lifetime until: 2026-02-06 17:42:18 +0000 | version date 2024-09-18 09:20:21 +0000|
+2024/10/18 08:19:21:230|M|mt_stop2|
+2024/10/18 08:19:21:232|M|unregister tb trackpad|
+2024/10/18 08:19:21:233|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 08:19:21:234|M|register touchbar mbp trackpad|
+2024/10/18 08:19:21:234|STDEV|69|
+2024/10/18 08:22:03:613|M|mt_stop2|
+2024/10/18 08:22:03:618|M|unregister tb trackpad|
+2024/10/18 08:22:03:618|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 08:22:03:619|M|register touchbar mbp trackpad|
+2024/10/18 08:22:03:619|STDEV|69|
+2024/10/18 08:36:31:293|M|mt_stop2|
+2024/10/18 08:36:31:303|M|unregister tb trackpad|
+2024/10/18 08:36:31:304|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 08:36:31:305|M|register touchbar mbp trackpad|
+2024/10/18 08:36:31:306|STDEV|69|
+2024/10/18 08:37:40:561|M|mt_stop2|
+2024/10/18 08:37:40:573|M|unregister tb trackpad|
+2024/10/18 08:37:40:575|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 08:37:40:575|M|register touchbar mbp trackpad|
+2024/10/18 08:37:40:576|STDEV|69|
+2024/10/18 08:55:17:132|M|mt_stop2|
+2024/10/18 08:55:17:139|M|unregister tb trackpad|
+2024/10/18 08:55:17:140|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 08:55:17:141|M|register touchbar mbp trackpad|
+2024/10/18 08:55:17:141|STDEV|69|
+2024/10/18 09:11:40:297|M|mt_stop2|
+2024/10/18 09:11:40:306|M|unregister tb trackpad|
+2024/10/18 09:11:40:307|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:11:40:308|M|register touchbar mbp trackpad|
+2024/10/18 09:11:40:308|STDEV|69|
+2024/10/18 09:19:43:988|M|mt_stop2|
+2024/10/18 09:19:43:995|M|unregister tb trackpad|
+2024/10/18 09:19:43:997|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:19:43:997|M|register touchbar mbp trackpad|
+2024/10/18 09:19:43:997|STDEV|69|
+2024/10/18 09:22:58:725|M|mt_stop2|
+2024/10/18 09:22:58:732|M|unregister tb trackpad|
+2024/10/18 09:22:58:734|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:22:58:734|M|register touchbar mbp trackpad|
+2024/10/18 09:22:58:734|STDEV|69|
+2024/10/18 09:32:01:537|M|mt_stop2|
+2024/10/18 09:32:01:544|M|unregister tb trackpad|
+2024/10/18 09:32:01:545|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:32:01:546|M|register touchbar mbp trackpad|
+2024/10/18 09:32:01:546|STDEV|69|
+2024/10/18 09:33:09:755|ASL|The Mac is running on battery power.|
+2024/10/18 09:33:10:806|M|mt_stop2|
+2024/10/18 09:33:10:814|M|unregister tb trackpad|
+2024/10/18 09:33:10:815|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:33:10:816|M|register touchbar mbp trackpad|
+2024/10/18 09:33:10:816|STDEV|69|
+2024/10/18 09:34:32:978|M|mt_stop2|
+2024/10/18 09:34:32:989|M|unregister tb trackpad|
+2024/10/18 09:34:32:991|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:34:32:992|M|register touchbar mbp trackpad|
+2024/10/18 09:34:32:992|STDEV|69|
+2024/10/18 09:35:46:978|M|mt_stop2|
+2024/10/18 09:35:46:989|M|unregister tb trackpad|
+2024/10/18 09:35:46:991|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:35:46:992|M|register touchbar mbp trackpad|
+2024/10/18 09:35:46:992|STDEV|69|
+2024/10/18 09:37:31:170|M|mt_stop2|
+2024/10/18 09:37:31:178|M|unregister tb trackpad|
+2024/10/18 09:37:31:179|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:37:31:179|M|register touchbar mbp trackpad|
+2024/10/18 09:37:31:180|STDEV|69|
+2024/10/18 09:38:32:472|M|mt_stop2|
+2024/10/18 09:38:32:489|M|unregister tb trackpad|
+2024/10/18 09:38:32:490|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:38:32:490|M|register touchbar mbp trackpad|
+2024/10/18 09:38:32:490|STDEV|69|
+2024/10/18 09:39:16:087|M|mt_stop2|
+2024/10/18 09:39:16:095|M|unregister tb trackpad|
+2024/10/18 09:39:16:096|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:39:16:097|M|register touchbar mbp trackpad|
+2024/10/18 09:39:16:097|STDEV|69|
+2024/10/18 09:40:03:403|M|mt_stop2|
+2024/10/18 09:40:03:412|M|unregister tb trackpad|
+2024/10/18 09:40:03:413|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:40:03:413|M|register touchbar mbp trackpad|
+2024/10/18 09:40:03:414|STDEV|69|
+2024/10/18 09:43:07:954|M|mt_stop2|
+2024/10/18 09:43:07:962|M|unregister tb trackpad|
+2024/10/18 09:43:07:963|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:43:07:964|M|register touchbar mbp trackpad|
+2024/10/18 09:43:07:964|STDEV|69|
+2024/10/18 09:44:10:776|M|mt_stop2|
+2024/10/18 09:44:10:788|M|unregister tb trackpad|
+2024/10/18 09:44:10:790|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:44:10:791|M|register touchbar mbp trackpad|
+2024/10/18 09:44:10:791|STDEV|69|
+2024/10/18 09:47:51:688|M|mt_stop2|
+2024/10/18 09:47:51:695|M|unregister tb trackpad|
+2024/10/18 09:47:51:697|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:47:51:697|M|register touchbar mbp trackpad|
+2024/10/18 09:47:51:697|STDEV|69|
+2024/10/18 09:59:04:380|M|mt_stop2|
+2024/10/18 09:59:04:387|M|unregister tb trackpad|
+2024/10/18 09:59:04:390|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 09:59:04:390|M|register touchbar mbp trackpad|
+2024/10/18 09:59:04:391|STDEV|69|
+2024/10/18 10:00:16:687|M|mt_stop2|
+2024/10/18 10:00:16:693|M|unregister tb trackpad|
+2024/10/18 10:00:16:694|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:00:16:694|M|register touchbar mbp trackpad|
+2024/10/18 10:00:16:695|STDEV|69|
+2024/10/18 10:08:54:907|M|mt_stop2|
+2024/10/18 10:08:54:916|M|unregister tb trackpad|
+2024/10/18 10:08:54:917|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:08:54:917|M|register touchbar mbp trackpad|
+2024/10/18 10:08:54:917|STDEV|69|
+2024/10/18 10:10:11:440|M|mt_stop2|
+2024/10/18 10:10:11:448|M|unregister tb trackpad|
+2024/10/18 10:10:11:450|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:10:11:451|M|register touchbar mbp trackpad|
+2024/10/18 10:10:11:451|STDEV|69|
+2024/10/18 10:18:18:660|M|mt_stop2|
+2024/10/18 10:18:18:669|M|unregister tb trackpad|
+2024/10/18 10:18:18:670|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:18:18:671|M|register touchbar mbp trackpad|
+2024/10/18 10:18:18:671|STDEV|69|
+2024/10/18 10:18:49:040|M|mt_stop2|
+2024/10/18 10:18:49:044|M|unregister tb trackpad|
+2024/10/18 10:18:49:044|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:18:49:044|M|register touchbar mbp trackpad|
+2024/10/18 10:18:49:045|STDEV|69|
+2024/10/18 10:21:38:726|M|mt_stop2|
+2024/10/18 10:21:38:733|M|unregister tb trackpad|
+2024/10/18 10:21:38:734|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:21:38:734|M|register touchbar mbp trackpad|
+2024/10/18 10:21:38:735|STDEV|69|
+2024/10/18 10:22:23:602|M|mt_stop2|
+2024/10/18 10:22:23:612|M|unregister tb trackpad|
+2024/10/18 10:22:23:613|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:22:23:614|M|register touchbar mbp trackpad|
+2024/10/18 10:22:23:614|STDEV|69|
+2024/10/18 10:24:11:713|M|mt_stop2|
+2024/10/18 10:24:11:721|M|unregister tb trackpad|
+2024/10/18 10:24:11:722|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:24:11:722|M|register touchbar mbp trackpad|
+2024/10/18 10:24:11:723|STDEV|69|
+2024/10/18 10:36:56:600|M|mt_stop2|
+2024/10/18 10:36:56:607|M|unregister tb trackpad|
+2024/10/18 10:36:56:609|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:36:56:609|M|register touchbar mbp trackpad|
+2024/10/18 10:36:56:609|STDEV|69|
+2024/10/18 10:38:32:409|M|mt_stop2|
+2024/10/18 10:38:32:420|M|unregister tb trackpad|
+2024/10/18 10:38:32:422|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:38:32:423|M|register touchbar mbp trackpad|
+2024/10/18 10:38:32:423|STDEV|69|
+2024/10/18 10:40:25:189|ASL|The Mac is running on battery power.|
+2024/10/18 10:40:26:240|M|mt_stop2|
+2024/10/18 10:40:26:248|M|unregister tb trackpad|
+2024/10/18 10:40:26:249|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:40:26:249|M|register touchbar mbp trackpad|
+2024/10/18 10:40:26:250|STDEV|69|
+2024/10/18 10:51:22:507|M|mt_stop2|
+2024/10/18 10:51:22:519|M|unregister tb trackpad|
+2024/10/18 10:51:22:521|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:51:22:522|M|register touchbar mbp trackpad|
+2024/10/18 10:51:22:522|STDEV|69|
+2024/10/18 10:53:41:921|M|mt_stop2|
+2024/10/18 10:53:41:927|M|unregister tb trackpad|
+2024/10/18 10:53:41:928|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 10:53:41:929|M|register touchbar mbp trackpad|
+2024/10/18 10:53:41:929|STDEV|69|
+2024/10/18 11:03:35:512|M|mt_stop2|
+2024/10/18 11:03:35:522|M|unregister tb trackpad|
+2024/10/18 11:03:35:524|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:03:35:524|M|register touchbar mbp trackpad|
+2024/10/18 11:03:35:525|STDEV|69|
+2024/10/18 11:05:38:106|M|mt_stop2|
+2024/10/18 11:05:38:115|M|unregister tb trackpad|
+2024/10/18 11:05:38:116|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:05:38:117|M|register touchbar mbp trackpad|
+2024/10/18 11:05:38:117|STDEV|69|
+2024/10/18 11:05:50:166|M|mt_stop2|
+2024/10/18 11:05:50:173|M|unregister tb trackpad|
+2024/10/18 11:05:50:175|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:05:50:175|M|register touchbar mbp trackpad|
+2024/10/18 11:05:50:175|STDEV|69|
+2024/10/18 11:06:14:613|M|mt_stop2|
+2024/10/18 11:06:14:624|M|unregister tb trackpad|
+2024/10/18 11:06:14:626|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:06:14:626|M|register touchbar mbp trackpad|
+2024/10/18 11:06:14:627|STDEV|69|
+2024/10/18 11:24:09:289|M|mt_stop2|
+2024/10/18 11:24:09:292|M|unregister tb trackpad|
+2024/10/18 11:24:09:293|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:24:09:293|M|register touchbar mbp trackpad|
+2024/10/18 11:24:09:293|STDEV|69|
+2024/10/18 11:34:41:560|TouchBar|Don't show because sleep|
+2024/10/18 11:34:41:576|M|mt_stop2|
+2024/10/18 11:34:41:584|M|unregister tb trackpad|
+2024/10/18 11:34:41:585|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:34:41:585|M|register touchbar mbp trackpad|
+2024/10/18 11:34:41:585|STDEV|69|
+2024/10/18 11:34:41:797|SLEEP|messageType e0000320, arg 00000000|
+2024/10/18 11:34:41:808|SLEEP|messageType e0000300, arg 00000000|
+2024/10/18 11:34:41:808|ASL|disablign app nap|
+2024/10/18 11:34:41:808|ASL|disabling app nap done|
+2024/10/18 11:34:41:808|SLEEP|WOKE VIA IOKIT|
+2024/10/18 11:34:41:808|ASL|toggle after sleep 148|
+2024/10/18 11:34:41:808|xw|disable|
+2024/10/18 11:34:41:812|xw|enable|
+2024/10/18 11:34:41:812|ASL|unregister d|
+2024/10/18 11:34:41:816|WAKE|EVENTHANDLER RESET|
+2024/10/18 11:34:41:817|M|mt_stop2|
+2024/10/18 11:34:41:817|SNAP|Did reset snap areas 0 0|
+2024/10/18 11:34:41:817|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 149|
+2024/10/18 11:34:41:822|TouchBar|Don't show because sleep|
+2024/10/18 11:34:41:826|M|unregister tb trackpad|
+2024/10/18 11:34:41:827|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:34:41:828|M|register touchbar mbp trackpad|
+2024/10/18 11:34:41:828|STDEV|69|
+2024/10/18 11:34:42:023|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/18 11:34:42:023|TB|Force show Touch Bar|
+2024/10/18 11:34:46:985|SLEEP|messageType e0000280, arg 4dfc004d|
+2024/10/18 11:35:49:577|M|mt_stop2|
+2024/10/18 11:35:49:587|M|unregister tb trackpad|
+2024/10/18 11:35:49:588|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:35:49:588|M|register touchbar mbp trackpad|
+2024/10/18 11:35:49:588|STDEV|69|
+2024/10/18 11:39:33:228|M|mt_stop2|
+2024/10/18 11:39:33:236|M|unregister tb trackpad|
+2024/10/18 11:39:33:237|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:39:33:237|M|register touchbar mbp trackpad|
+2024/10/18 11:39:33:238|STDEV|69|
+2024/10/18 11:47:27:424|M|mt_stop2|
+2024/10/18 11:47:27:432|M|unregister tb trackpad|
+2024/10/18 11:47:27:433|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:47:27:433|M|register touchbar mbp trackpad|
+2024/10/18 11:47:27:434|STDEV|69|
+2024/10/18 11:55:25:982|M|mt_stop2|
+2024/10/18 11:55:25:990|M|unregister tb trackpad|
+2024/10/18 11:55:25:991|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:55:25:992|M|register touchbar mbp trackpad|
+2024/10/18 11:55:25:992|STDEV|69|
+2024/10/18 11:55:33:762|SLEEP|messageType e0000320, arg 00000000|
+2024/10/18 11:55:33:771|SLEEP|messageType e0000300, arg 00000000|
+2024/10/18 11:55:33:771|ASL|disablign app nap|
+2024/10/18 11:55:33:771|ASL|disabling app nap done|
+2024/10/18 11:55:33:771|SLEEP|WOKE VIA IOKIT|
+2024/10/18 11:55:33:771|ASL|toggle after sleep 149|
+2024/10/18 11:55:33:771|xw|disable|
+2024/10/18 11:55:33:850|xw|enable|
+2024/10/18 11:55:33:851|ASL|unregister d|
+2024/10/18 11:55:33:855|WAKE|EVENTHANDLER RESET|
+2024/10/18 11:55:33:856|M|mt_stop2|
+2024/10/18 11:55:33:857|SNAP|Did reset snap areas 0 0|
+2024/10/18 11:55:33:857|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 150|
+2024/10/18 11:55:33:861|TouchBar|Don't show because sleep|
+2024/10/18 11:55:33:866|M|unregister tb trackpad|
+2024/10/18 11:55:33:867|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:55:33:867|M|register touchbar mbp trackpad|
+2024/10/18 11:55:33:867|STDEV|69|
+2024/10/18 11:55:33:957|WAKE|DIDWAKE|
+2024/10/18 11:55:33:957|ASL|disablign app nap|
+2024/10/18 11:55:33:957|ASL|disabling app nap done|
+2024/10/18 11:55:33:967|WAKE|DIDWAKE2|
+2024/10/18 11:55:33:968|WAKE|NO RESTART|
+2024/10/18 11:55:33:968|ASL|toggle after sleep 150|
+2024/10/18 11:55:33:968|xw|disable|
+2024/10/18 11:55:33:970|xw|enable|
+2024/10/18 11:55:33:971|ASL|unregister d|
+2024/10/18 11:55:33:974|WAKE|EVENTHANDLER RESET|
+2024/10/18 11:55:33:974|M|mt_stop2|
+2024/10/18 11:55:33:975|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/18 11:55:33:977|SNAPAREA|return existing (updated)|
+2024/10/18 11:55:33:977|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/18 11:55:33:977|SNAP|Did reset snap areas 0 0|
+2024/10/18 11:55:33:977|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 151|
+2024/10/18 11:55:34:187|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/18 11:55:34:187|TB|Force show Touch Bar|
+2024/10/18 11:55:34:188|M|unregister tb trackpad|
+2024/10/18 11:55:34:188|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/18 11:55:34:188|TB|Force show Touch Bar|
+2024/10/18 11:55:34:189|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:55:34:189|M|register touchbar mbp trackpad|
+2024/10/18 11:55:34:189|STDEV|69|
+2024/10/18 11:55:35:587|SEC|SecureInputDisabled com.apple.loginwindow|
+2024/10/18 11:55:35:785|ASL|trigger after login screen 151 - /System/Applications/Mail.app - com.apple.mail|
+2024/10/18 11:55:35:785|LOGIN|triggerAfterLoginScreenActions|
+2024/10/18 11:55:35:785|LOGIN|RELOAD AFTER LOGINWINDOW|
+2024/10/18 11:55:35:785|ASL|reset after login screen 151|
+2024/10/18 11:55:35:785|WAKE|EVENTHANDLER RESET|
+2024/10/18 11:55:35:794|M|mt_stop2|
+2024/10/18 11:55:35:794|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/18 11:55:35:797|SNAPAREA|return existing (updated)|
+2024/10/18 11:55:35:797|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/18 11:55:35:797|SNAP|Did reset snap areas 0 0|
+2024/10/18 11:55:35:797|ASL|toggle after sleep 151|
+2024/10/18 11:55:35:797|xw|disable|
+2024/10/18 11:55:35:804|xw|enable|
+2024/10/18 11:55:35:807|ASL|unregister d|
+2024/10/18 11:55:35:814|WAKE|EVENTHANDLER RESET|
+2024/10/18 11:55:35:819|M|mt_stop2|
+2024/10/18 11:55:35:820|SNAPAREA|step1, 0 displays- match mode 0 - searching Built-in Retina Display|
+2024/10/18 11:55:35:820|SNAPAREA|return existing (updated)|
+2024/10/18 11:55:35:820|SNAP|Did recognize 41041 4251086178 dragpoints: 0 - 0|
+2024/10/18 11:55:35:820|SNAP|Did reset snap areas 0 0|
+2024/10/18 11:55:35:820|SLEEP|DIDRESETAFTERSLEEP_TOGGLED_ENABLE 152|
+2024/10/18 11:55:35:824|ASL|performing after wake actions|
+2024/10/18 11:55:35:825|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/18 11:55:35:825|TB|Force show Touch Bar|
+2024/10/18 11:55:35:826|M|unregister tb trackpad|
+2024/10/18 11:55:35:827|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:55:35:827|M|register touchbar mbp trackpad|
+2024/10/18 11:55:35:828|STDEV|69|
+2024/10/18 11:55:35:837|M|unregister tb trackpad|
+2024/10/18 11:55:35:839|BTT|mt device 0x0200000000000033,0x69 - 105 - internal 1 - force 1|
+2024/10/18 11:55:35:840|M|register touchbar mbp trackpad|
+2024/10/18 11:55:35:840|STDEV|69|
+2024/10/18 11:55:36:030|SLEEP|FORCESHOWAFTERSESSIONBEGIN|
+2024/10/18 11:55:36:030|TB|Force show Touch Bar|
+2024/10/18 11:55:36:288|short|eventtap success|
+2024/10/18 11:56:33:026|ASL|The Mac is running on battery power.|
+2024/10/18 11:57:33:058|ASL|The Mac is running on battery power.|
+2024/10/18 11:58:33:070|ASL|The Mac is running on battery power.|
+2024/10/18 11:59:33:052|ASL|The Mac is running on battery power.|
+2024/10/18 12:00:33:059|ASL|The Mac is running on battery power.|
+2024/10/18 12:00:55:909|SWI|PID MISMATCH FIX|
+2024/10/18 12:01:33:060|ASL|The Mac is running on battery power.|
+2024/10/18 12:02:33:060|ASL|The Mac is running on battery power.|
+2024/10/18 12:03:33:058|ASL|The Mac is running on battery power.|
+2024/10/18 12:04:33:063|ASL|The Mac is running on battery power.|
+2024/10/18 12:04:52:173|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/18 12:04:52:175|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/18 12:05:33:091|ASL|The Mac is running on battery power.|
+2024/10/18 12:06:33:062|ASL|The Mac is running on battery power.|
+2024/10/18 12:07:33:063|ASL|The Mac is running on battery power.|
+2024/10/18 12:08:33:063|ASL|The Mac is running on battery power.|
+2024/10/18 12:09:33:052|ASL|The Mac is running on battery power.|
+2024/10/18 12:10:33:058|ASL|The Mac is running on battery power.|
+2024/10/18 12:11:33:058|ASL|The Mac is running on battery power.|
+2024/10/18 12:12:33:056|ASL|The Mac is running on battery power.|
+2024/10/18 12:13:19:950|SWI|PID MISMATCH FIX|
+2024/10/18 12:13:33:055|ASL|The Mac is running on battery power.|
+2024/10/18 12:14:33:057|ASL|The Mac is running on battery power.|
+2024/10/18 12:15:33:093|ASL|The Mac is running on battery power.|
+2024/10/18 12:16:33:049|ASL|The Mac is running on battery power.|
+2024/10/18 12:17:33:055|ASL|The Mac is running on battery power.|
+2024/10/18 12:18:33:066|ASL|The Mac is running on battery power.|
+2024/10/18 12:19:33:063|ASL|The Mac is running on battery power.|
+2024/10/18 12:20:33:062|ASL|The Mac is running on battery power.|
+2024/10/18 12:21:33:055|ASL|The Mac is running on battery power.|
+2024/10/18 12:21:38:388|ASL|performing 366|
+2024/10/18 12:21:38:388|ASL|triggering action Empty Placeholder - 60D4F1BA-0910-4EA7-A638-24B189E0408C|
+2024/10/18 12:21:38:388|ASL|performing 19|
+2024/10/18 12:21:38:388|ASL|triggering action Maximize Window Left Half - EE96C4CA-D9EA-4283-A8DA-8C1C47D9E883|
+2024/10/18 12:21:38:392|ASL|sequoia snapping param 2|
+2024/10/18 12:21:38:411|ASL|already 8|
+2024/10/18 12:22:33:055|ASL|The Mac is running on battery power.|
+2024/10/18 12:23:33:060|ASL|The Mac is running on battery power.|
+2024/10/18 12:24:33:055|ASL|The Mac is running on battery power.|
+2024/10/18 12:24:52:177|ASL|can not show window com.hegenberg.BetterTouchTool (BetterTouchTool)|
+2024/10/18 12:25:33:083|ASL|The Mac is running on battery power.|
+2024/10/18 12:25:56:857|ASL|performing 366|
+2024/10/18 12:25:56:857|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/10/18 12:25:56:857|ASL|performing 21|
+2024/10/18 12:25:56:858|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/10/18 12:25:56:862|ASL|sequoia snapping param 0|
+2024/10/18 12:25:56:876|ASL|already replied 103|
+2024/10/18 12:26:33:100|ASL|The Mac is running on battery power.|
+2024/10/18 12:26:52:755|c00|10|
+2024/10/18 12:27:33:060|ASL|The Mac is running on battery power.|
+2024/10/18 12:28:33:056|ASL|The Mac is running on battery power.|
+2024/10/18 12:29:33:062|ASL|The Mac is running on battery power.|
+2024/10/18 12:30:13:722|ASL|performing 366|
+2024/10/18 12:30:13:722|ASL|triggering action Empty Placeholder - 3676B442-3F88-4F12-A1BD-1E5BE4416261|
+2024/10/18 12:30:13:722|ASL|performing 21|
+2024/10/18 12:30:13:722|ASL|triggering action Maximize Window - 250E5CD2-8A98-4F60-8395-2906FA566A50|
+2024/10/18 12:30:13:724|ASL|sequoia snapping param 0|
+2024/10/18 12:30:13:750|ASL|already replied 103|
