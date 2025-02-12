@@ -30,13 +30,16 @@ ln -s $DOTFILES_LOCATION/remarkrc.json .remarkrc.json
 rm -f -- ~/.prettierrc.json
 ln -s $DOTFILES_LOCATION/remarkrc.json .prettierrc.json
 
+rm -f -- ~/.tigrc
+ln -s $DOTFILES_LOCATION/tigrc.sh .tigrc
+
 rm -f -- ~/.gvimrc
 ln -s $DOTFILES_LOCATION/vim/gvimrc.sh .gvimrc
+
 
 rm -f -- ~/.vim/spell
 ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
 
 rm -f -- ~/.tmux.conf
 ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
-
 
