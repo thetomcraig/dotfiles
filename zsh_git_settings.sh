@@ -132,7 +132,8 @@ createBranchAya() {
   # Usage: createBranchAya name of the branch here
   CURRENT_DATE=$(date +'%Y%m%d')
   ARGS=$(echo "$*" | tr ' ' '_')
-  BRANCH_NAME="users/thetomcraig-aya/${CURRENT_DATE}_${ARGS}"
+  # BRANCH_NAME="users/thetomcraig-aya/${CURRENT_DATE}_${ARGS}"
+  BRANCH_NAME="${ARGS}"
   git checkout -b "$BRANCH_NAME"
 }
 
