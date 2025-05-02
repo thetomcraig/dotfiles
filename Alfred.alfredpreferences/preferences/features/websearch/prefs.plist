@@ -61,9 +61,9 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>jira</string>
+			<string>mcz</string>
 			<key>text</key>
-			<string>Open Jira Ticket</string>
+			<string>Open MCZ Jira Ticket</string>
 			<key>url</key>
 			<string>https://ayadev.atlassian.net/browse/MCZ-{query}</string>
 		</dict>
@@ -103,6 +103,17 @@
 			<string>https://trakt.tv/search?query={query}</string>
 			<key>utf8</key>
 			<true/>
+		</dict>
+		<key>C9B57951-B589-4064-AFCA-A89BCAB13611</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>win</string>
+			<key>text</key>
+			<string>Open WIN Jira Ticket</string>
+			<key>url</key>
+			<string>https://ayadev.atlassian.net/browse/WIN-{query}</string>
 		</dict>
 		<key>D94C8145-3608-47D0-A80E-78DB6EB0093F</key>
 		<dict>
