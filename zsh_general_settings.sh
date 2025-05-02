@@ -65,57 +65,7 @@ alias check_repos="${DOTFILES_LOCATION}/check_git_repos.sh"
 alias start="./start.command"
 
 
-mytree() {
-  #this does tree with 1 level
-  #if no first parameter,
-  #and otherwise uses the
-  #supplied parameter for level depth
-  local level=1
-  local directory="."
-
-  # first one is the desired dir,
-  # if not supplied, use "."
-  if [[ -z "$1" ]]; then
-      directory=${1}
-  fi
-  # second is desired level,
-  # if not supplied, use "1"
-  if [[ -z "$2" ]]; then
-  # third is extra flags
-  if [[ -z "$3" ]]; then
-
-  # Examine all arguments
-  # if the argument starts with "-",
-  # its a flag to pass on.
-  # Otherwise, it's a regular argument,
-  # which should be the desired dir
-  local flags=""
-  local args=""
-  for arg in "$@"; do
-    if [[ "$arg" == -* ]]; then
-      flags+="$arg "
-    else
-      args+="$arg "
-    fi
-  done
-
-  echo "args: $args"
-  echo "flags: $flags"
-
-
-
-  # if [ "$#" -eq 1 ]; then
-  #   if [[ $1 =~ ^-?[0-9]+$ ]]; then
-  #     level=${1-1}
-  #   else
-  #     directory=${1}
-  #   fi
-  # fi
-
-  # eza -T -L=${level} ${directory}
-}
-#t for tree
-alias t=mytree
+alias t="eza -L=1 -lT ."
 alias ti="eza -L=1 -alT ."
 #tt for maximum depth tree
 # Testing out nnn
