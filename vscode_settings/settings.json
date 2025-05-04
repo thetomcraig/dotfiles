@@ -1,5 +1,6 @@
 {
   "security.workspace.trust.untrustedFiles": "open",
+
   "files.defaultLanguage": "markdown",
 
   "explorer.confirmDragAndDrop": false,
@@ -17,8 +18,8 @@
     "**/out": true,
   },
 
-  "workbench.preferredDarkColorTheme": "Nord",
-  "workbench.colorTheme": "Nord",
+  "workbench.preferredDarkColorTheme": "Abyss",
+  "workbench.colorTheme": "Noctis Azureus",
   "workbench.startupEditor": "none",
 
   "editor.fontSize": 13,
@@ -64,6 +65,7 @@
     },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    // IDE Navigation
     {
         "key": "ctrl+h",
         "command": "workbench.action.navigateLeft"
@@ -89,37 +91,28 @@
       "after": ["2", "0", "j"]
     },
     {
-      "before": ["leader", "w"],
-      "commands": ["workbench.action.files.save"]
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.navigateLeft"]
     },
     {
-      "before": ["<leader>", "q"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.navigateDown"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.navigateUp"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.navigateRight"]
+    },
+    {
+      "before": ["C-`"],
+      "commands": ["workbench.action.focusActiveEditorGroup", "workbench.action.terminal.focus"]
     },
     {
       "before": ["<leader>", "o"],
       "commands": [":only"]
-    },
-    {
-      "before": ["leader", "g"],
-      "commands": [
-        "editor.action.addSelectionToNextFindMatch",
-        "workbench.action.findInFiles",
-      ]
-    },
-    {
-      "before": ["leader", "r"],
-      "commands": [
-        "editor.action.rename"
-      ]
-    },
-    {
-      "before": ["leader", "d"],
-      "commands": ["editor.action.revealDefinition"]
-    },
-    {
-      "before": ["<leader>", "j", "j"],
-      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["<leader>", "f", "t"],
@@ -131,6 +124,12 @@
       "before": ["<leader>", "f", "t"],
       "commands": ["workbench.files.action.focusFilesExplorer"],
       "when": "sideBarVisible && !filesExplorerFocus && !suggestWidgetVisible && vim.mode != 'Insert'",
+      "after": []
+    },
+    {
+      "before": ["<leader>", "f", "t"],
+      "commands": ["workbench.files.action.focusFilesExplorer"],
+      "when": "!sideBarVisible && !suggestWidgetVisible && vim.mode != 'Insert'",
       "after": []
     },
     {
@@ -175,6 +174,96 @@
       "before": ["<leader>", "t", "o"],
       "commands": ["workbench.action.closeOtherEditors"]
     },
+    // "Isolate" closes extra panels
+    {
+      "before": ["<leader>", "i", "s"],
+      "commands": ["workbench.action.closeSidebar",
+                   "workbench.action.closePanel",
+                   "workbench.action.closeAuxiliaryBar"
+      ]
+    },
+    {
+      "before": ["<leader>", "v", "e"],
+      "commands": ["workbench.action.openSettingsJson"]
+    },
+
+
+    // Code Stuff
+    {
+      "before": ["leader", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "j", "j"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+
+    // File management
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "u"],
+      "commands": [
+        "editor.action.addSelectionToNextFindMatch",
+        "workbench.action.findInFiles",
+      ]
+    },
+    {
+      "before": ["leader", "r"],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+
+    // Source control
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["workbench.view.scm"]
+    },
+
+    // for changes on the current line
+    {
+      "before": ["<leader>", "g", "l", "d"],
+      "commands": ["gitlens.diffLineWithWorking"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["gitlens.compareWorkingWith"]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.pull"]
+    },
+    {
+      "before": ["<leader>", "g", "v"],
+      "commands": ["git.checkout"]
+    },
+    {
+      "before": ["<leader>", "g", "c", "b"],
+      "commands": ["git.branchFrom"]
+    },
+    {
+      "before": ["<leader>", "g", "n"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
+    },
+    {
+      "before": ["<leader>", "g", "m"],
+      "commands": ["workbench.action.compareEditor.previoushange"]
+    },
+    {
+      "before": ["<leader>", "g", "o"],
+      "commands": ["gitlens.openFileOnRemote"]
+    },
     // {
     //   "before": ["<leader>", "g", "h"],
     //   "commands": ["timeline.focus"]
@@ -183,15 +272,102 @@
     //   "before": ["<leader>", "g", "m"],
     //   "commands": ["git blame??"]
     // },
+
+    // Debugging
     {
-      "before": ["<leader>", "i", "s"],
-      "commands": ["workbench.action.closeSidebar",
-                   "workbench.action.closePanel",
-                   "workbench.action.closeAuxiliaryBar"
-      ]
+      "before": ["<leader>", "d", "c"],
+      "commands": ["workbench.action.debug.continue"]
+    },
+    {
+      "before": ["<leader>", "d", "o"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["<leader>", "d", "s"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["<leader>", "d", "p"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "before": ["<leader>", "d", "r"],
+      "commands": ["workbench.action.debug.restart"]
+    },
+    {
+      "before": ["<leader>", "d", "t"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+
+    // Copilot
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["workbench.panel.chat"],
+      "after": []
+    },
+    {
+      "before": ["<leader>", "c", "i"],
+      "commands": ["inlineChat.startWithCurrentLine"],
+      "after": []
+    },
+    // Wiki/knowledgebase stuff
+    {
+      "before": ["<leader>", "w", "<leader>", "w"],
+      "commands": ["dendron.createDailyJournalNote"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["dendron.completeTask"]
     },
   ],
 
+  // MACROS
+  // Matched up toe keybindings
+"multiCommand.commands": [
+  {
+    "command": "multiCommand.checkboxToggle",
+    "sequence": [
+      "editor.action.clipboardCopyWithSyntaxHighlightingAction",
+      "cursorHome",
+      "actions.find",
+      {
+        "command": "type",
+        "args": { "text": "\\[ \\]" }
+      },
+      "editor.action.nextMatchFindAction",
+      {
+        "command": "editor.action.deleteLines",
+        "args": { "forward": false }
+      },
+      {
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
+        }
+      },
+      "closeFindWidget",
+      {
+        "command": "type",
+        "args": "\n"
+      },
+    ]
+  }
+],
+
+
+
+
+
+
+
+
+  // LANGUAGE SETTINGS
+  // MARKDOWN
+  "[markdown]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // JSON
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -202,6 +378,7 @@
   },
 
   // PYTHON 
+  "python.languageServer": "Pylance",
   "python.analysis.extraPaths": [
     "/Applications/Talon.app/Contents/Resources",
     "/Applications/Talon.app/Contents/Resources/python/lib/python3.11/site-packages" 
@@ -214,6 +391,17 @@
         "source.organizeImports": "always",
     },
   },
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "*test*.py",
+    "--reuse-db"
+  ],
+
   // HTML
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -229,9 +417,12 @@
   // TYPESCRIPT
   "typescript.updateImportsOnFileMove.enabled": "always",
   "eslint.format.enable": true,
-  "typescript.validate.enable": false,
+  "typescript.validate.enable": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
 
   // CSS
@@ -285,11 +476,10 @@
     "play": true
   },
   "editor.lineHeight": 30,
-  "workbench.iconTheme": "Dimi Theme Icons",
+  "workbench.iconTheme": "ayu",
   "remote.autoForwardPortsSource": "hybrid",
   "cmake.showOptionsMovedNotification": false,
   "clangd.detectExtensionConflicts": false,
-  "isort.check": true,
   "cursorless.experimental.keyboard.modal.keybindings.vscodeCommand": {
 
   },
@@ -309,9 +499,6 @@
     "file:///Users/tomcraig/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
   ],
   "debug.toolBarLocation": "commandCenter",
-  "[markdown]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingComments": "never",
   "editor.autoClosingQuotes": "never",
@@ -324,32 +511,40 @@
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
   "peacock.color": "#d08770",
-  "window.zoomLevel": 1.2,
+  "window.zoomLevel": 1.4,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
       "label": "Waiting For My Review",
-      "query": "is:open review-requested:${user}"
+      "query": "repo:${owner}/${repository} is:open review-requested:${user}"
     },
     {
       "label": "Assigned To Me",
-      "query": "is:open assignee:${user}"
+      "query": "repo:${owner}/${repository} is:open assignee:${user}"
     },
     {
       "label": "Created By Me",
-      "query": "is:open author:${user}"
+      "query": "repo:${owner}/${repository} is:open author:${user}"
     },
     {
       "label": "All Merged",
-      "query": "is:merged"
-    },
-    {
-      "label": "Jason's",
-      "query": "author:jredd-aya"
+      "query": "repo:${owner}/${repository} is:merged"
     }
   ],
   "debug.onTaskErrors": "showErrors",
   "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}focus:[${focusedView}]",
   "githubPullRequests.fileListLayout": "tree",
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "@azure.argTenant": "",
+  "database-client.autoSync": true,
+  "npm.packageManager": "pnpm",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "- @azure Rule - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
+    }
+  ],
+  "security.promptForLocalFileProtocolHandling": false
 }

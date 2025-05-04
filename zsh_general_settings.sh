@@ -65,26 +65,8 @@ alias check_repos="${DOTFILES_LOCATION}/check_git_repos.sh"
 alias start="./start.command"
 
 
-mytree() {
-  #this does tree with 1 level
-  #if no first parameter,
-  #and otherwise uses the
-  #supplied paramter for level depth
-  local level=1
-  local directory="."
-
-  if [ "$#" -eq 1 ]; then
-    if [[ $1 =~ ^-?[0-9]+$ ]]; then
-      level=${1-1}
-    else
-      directory=${1}
-    fi
-  fi
-
-  eza -T -L=${level} ${directory}
-}
-#t for tree
-alias t=mytree
+alias t="eza -L=1 -lT ."
+alias ti="eza -L=1 -alT ."
 #tt for maximum depth tree
 # Testing out nnn
 # alias t=nnn -e
@@ -95,7 +77,6 @@ export NNN_FIFO=/tmp/nnn.fifo
 
 
 alias tt="mytree 999"
-alias ll="exa -T -L=${level} ${directory}"
 alias lsz="du -h --max-depth=1"
 
 alias imgcat="${DOTFILES_LOCATION}/imgcat.sh"

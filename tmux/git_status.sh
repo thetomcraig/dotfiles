@@ -29,7 +29,7 @@ git_changes() {
 }
 
 git_status() {
-  local status=$(git rev-parse --abbrev-ref HEAD)
+  local status=$(git rev-parse --abbrev-ref HEAD | cut -d'-' -f1-2)
   local changes=$(git_changes)
 
   if [[ -n $status ]]; then

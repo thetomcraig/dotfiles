@@ -14,3 +14,4 @@ typora
 visual-studio-code
 zoom
 talon
+lookaway

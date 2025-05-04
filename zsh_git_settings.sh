@@ -8,13 +8,19 @@ alias g="git status -sb"
 alias gpu="git push"
 alias gpf="git push -f"
 alias gpl="git pull"
-
+alias ga="git add"
 alias gc="git checkout"
 alias gcp="git cherry-pick ${1}"
 
-alias ga="git add"
+# Shortened git commit
+# e.g. "gm descriptive words for commit message"
+# If nothing specified after gm, open the commit message editor
 _gm () {
-  git commit -m "$*"
+  if [ $# -eq 0 ]; then
+    git commit
+  else
+    git commit -m "$*"
+  fi
 }
 alias gm="_gm"
 
@@ -24,6 +30,7 @@ alias gD="git diff develop..${getLocalBranchName}"
 alias grd="git rebase -i develop"
 alias grc="git rebase --continue"
 alias gra="git rebase --abort"
+alias gma="git merge --abort"
 # Pretty looking git log
 alias gl1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
@@ -31,8 +38,7 @@ alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias gba="git branch -a"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
-alias gcb="git checkout -b"
-alias gca=createBranchAya
+alias gcb=createBranch
 
 interactiveCheckout() {
   git checkout $(git for-each-ref refs/heads/ --format='%(refname:short)' | fzf)
@@ -66,11 +72,8 @@ alias gvv="shortBranchMappings"
 
 # Large and complicated ones
 # Make local branch tracking remote that matches a regex
-# For example gg hotfix nov-14
-alias gs=regexcheckout
-alias gg=regexcheckoutnew
-# Stage the deletion of any files you've deleted
-alias grm="git ls-files --deleted -z | xargs -0 git rm"
+# For example gg hotfix
+alias gg=regexcheckout
 # Push this branch and make a new upstream with the same name
 alias gsu=gitPushAndSetMatchingUpstream
 # Start a pull request for the current branch
@@ -89,20 +92,6 @@ getRemoteBranchName() {
   echo $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
 }
 
-# Input: URL that looks like: "PROJECT-763: Add dropdown to homepage"
-# Output: string that looks like: "PROJECT-763_add_dropdown_to"
-constructBranchName() {
-  local JIRA_NUMBER=$(echo "${1}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
-
-  local WORDS=($(echo "${1}"| grep -oE "([A-z]+)"))
-  local FIRST_THREE_WORDS="${WORDS[@]:1:3}"
-  local FIRST_THREE_WORDS_NO_SPACES=$(echo "${FIRST_THREE_WORDS}" | sed 's/\ /_/g')
-  local FIRST_THREE_WORDS_LOWER=$(echo "${FIRST_THREE_WORDS_NO_SPACES}" | tr '[:upper:]' '[:lower:]')
-  local BRANCH_NAME="${JIRA_NUMBER}_${FIRST_THREE_WORDS_LOWER}"
-
-  echo "${BRANCH_NAME}"
-}
-
 
 gitpullrequest() {
   local BRANCH_NAME="$(git branch | grep \* | cut -d ' ' -f2)?expand\=1"
@@ -110,12 +99,6 @@ gitpullrequest() {
 }
 
 regexcheckout() {
-  # For checking out a present branch
-  local DESIRED_BRANCH=$(git branch | grep ${1} | xargs)
-  git checkout "${DESIRED_BRANCH}"
-}
-
-regexcheckoutnew() {
   # Find a remote branch that includes the string in ${1}
   # Make a new branch to track the remote branch, with a matching name
   git pull && \
@@ -128,19 +111,8 @@ gitPushAndSetMatchingUpstream() {
   git push --set-upstream origin "${BRANCH_NAME}"
 }
 
-createBranchAya() {
-  # Usage: createBranchAya name of the branch here
-  CURRENT_DATE=$(date +'%Y%m%d')
-  ARGS=$(echo "$*" | tr ' ' '_')
-  BRANCH_NAME="users/thetomcraig-aya/${CURRENT_DATE}_${ARGS}"
+createBranch() {
+  ARGS=$(echo "$*" | tr ' ' '-')
+  BRANCH_NAME="${ARGS}"
   git checkout -b "$BRANCH_NAME"
-}
-
-
-# Get the jira number from the current banch name
-alias jj=getCurrentJiraNumber
-getCurrentJiraNumber() {
-  local BRANCH_NAME=$(getLocalBranchName)
-  local JIRA_NUMBER=$(echo "${BRANCH_NAME}" | grep -oE "(${PROJECT_PREFIX}\-[0-9]+)")
-  echo "${JIRA_NUMBER}"
 }

@@ -183,6 +183,7 @@ nmap <Space>wd :q<CR>
 
 
 
+
 """""""""""""
 "RG and GREP"
 """""""""""""
@@ -377,11 +378,7 @@ let g:vmt_list_item_char = "-"
 "VIMWIKI"
 let g:vimwiki_option_template_date_format = '%Y_%m_%d'
 let g:vimwiki_folding = 'expr'
-let g:vimwiki_list = [
-    \ {'path': $DROPBOX_ROOT . '/04 Notes', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
-    \ {'path': $DROPBOX_ROOT . '/03 References', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
-    \ {'path': $DROPBOX_ROOT . '/03 References/DnD/campaign_2', 'index': 'README', 'syntax': 'markdown', 'ext': '.md'},
-    \ ]
+let g:vimwiki_list = []
 let g:vimwiki_dir_link = 'README'
 let g:vimwiki_hl_headers = 1
 nnoremap <Space>gt :VimwikiRebuildTags!<cr>:VimwikiGenerateTagLinks<cr><c-l>
