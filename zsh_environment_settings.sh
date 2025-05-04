@@ -21,7 +21,7 @@ fi
 #########
 # alias sshariston="ssh tom@ariston"
 alias sshariston="mosh tom@ariston"
-alias ssharistonremote="tom@techdaddy.onthewifi.com -p 6969"
+alias ssharistonremote="mosh tom@techdaddy.lol"
 
 
 
