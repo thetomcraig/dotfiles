@@ -449,7 +449,7 @@
   "editor.inlineSuggest.suppressSuggestions": true,
   "git.ignoreMissingGitWarning": true,
   "files.eol": "\n",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "git.openRepositoryInParentFolders": "never",
   "git.autofetch": true,
   "git.confirmSync": false,
