@@ -34,16 +34,16 @@ defaults write .GlobalPreferences AppleFirstWeekday -dict gregorian 2
 # Disable automatic termination of inactive apps
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
-# Disable automatic capitalization as it’s annoying when typing code
+# Disable automatic capitalization as it's annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
-# Disable smart dashes as they’re annoying when typing code
+# Disable smart dashes as they're annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-# Disable automatic period substitution as it’s annoying when typing code
+# Disable automatic period substitution as it's annoying when typing code
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
-# Disable smart quotes as they’re annoying when typing code
+# Disable smart quotes as they're annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Trackpad: enable tap to click for this user and for the login screen
@@ -112,7 +112,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Expand the following File Info panes:
-# “General”, “Open with”, and “Sharing & Permissions”
+# "General", Open with", and "Sharing & Permissions"
 defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
@@ -184,7 +184,7 @@ done
 # Autohide dock
 defaults write com.apple.dock autohide -bool true
 
-# Don’t automatically rearrange Spaces based on most recent use
+# Don't automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
 # Set Dock auto-hide delay
@@ -192,7 +192,7 @@ defaults write com.apple.dock autohide-delay -float .25
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
 
-# Don’t group windows by application in Mission Control
+# Don't group windows by application in Mission Control
 # (i.e. use the old Exposé behavior instead)
 defaults write com.apple.dock expose-group-by-app -bool false
 # Hot corners
@@ -250,7 +250,7 @@ defaults write com.apple.commerce AutoUpdate -bool true
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# Disable the “Are you sure you want to open this application?” dialog
+# Disable the "Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Disable the crash reporter
@@ -314,7 +314,7 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 # TODO Not working
 # # SAFARI
-# # Enable Safari’s debug menu
+# # Enable Safari's debug menu
 # defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
 # # Enable the Develop menu and the Web Inspector in Safari
@@ -341,8 +341,8 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 
 
-# MESSAAGES
-# Disable smart quotes as it’s annoying for messages that contain code
+# MESSAGES
+# Disable smart quotes as it's annoying for messages that contain code
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
 
@@ -381,6 +381,7 @@ duti -s org.videolan.vlc .mp4 all
 duti -s cx.c3.theunarchiver .rar all
 duti -s cx.c3.theunarchiver .7z all
 duti -s cx.c3.theunarchiver .zip all
+duti -s $(osascript -e 'id of app "Cura"') .3mf all
 
 
 
