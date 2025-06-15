@@ -65,8 +65,8 @@ alias check_repos="${DOTFILES_LOCATION}/check_git_repos.sh"
 alias start="./start.command"
 
 
-alias t="eza -L=1 -lT ."
-alias ti="eza -L=1 -alT ."
+alias t="eza -L=1 --git -lT ."
+alias ti="eza -L=1 --git -alT ."
 #tt for maximum depth tree
 # Testing out nnn
 # alias t=nnn -e
