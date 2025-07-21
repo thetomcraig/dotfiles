@@ -2,7 +2,7 @@
 
 desktoppr="/usr/local/bin/desktoppr"
 displayPlacer="/opt/homebrew/bin/displayplacer"
-wallpaperFolder="${HOME}/Documents/pictures/Wallpapers"
+wallpaperFolder="${DOTFILES_LOCATION}/wallpapers"
 
 #################
 # DISPLAY NAMES #
@@ -46,7 +46,6 @@ until [ $count -gt $((${#screenarray[@]} + 1 )) ]; do
     displayNum=$(( $displayNum + 1 ))
   elif [[ "${screenarray[count]}" == *"${internal}"* ]]; then
     $desktoppr $displayNum "${wallpaperFolder}/wave_2_no_notch.png"
-    echo "${wallpaperFolder}/wave_1_no_notch.png"
     displayNum=$(( $displayNum + 1 ))
   elif [[ "${screenarray[count]}" == *"${hdmiStrip}"* ]]; then
     $desktoppr $displayNum "${wallpaperFolder}/wave_4.jpeg"
@@ -77,8 +76,13 @@ done
 #
 #
 #
-#
+
+numScreens=$(system_profiler SPDisplaysDataType | grep -c "Display Type")
+if [ $numScreens -eq 1 ];
+then
+  displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
+else
+  displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1312x848 hz:120 color_depth:8 enabled:true scaling:on origin:(-1312,0) degree:0" "id:8C00957C-866B-4464-AECE-0DE2FEAB9F0F res:1440x2560 hz:60 color_depth:8 enabled:true scaling:off origin:(2560,-933) degree:270"
+fi
 # It takes two tries to get this right because of bugginess in the resolution
-displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2304x1296 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1496x967 hz:120 color_depth:8 scaling:on origin:(-1496,0) degree:0" "id:912EDD5D-2AB5-4DAA-9A74-674C7BBD99FD res:1152x2048 hz:60 color_depth:8 scaling:off origin:(2304,-396) degree:270"
-# This is the REAL configuration line
-displayplacer "id:95458444-A649-45C1-94AA-7D8880A7144F res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1312x848 hz:120 color_depth:8 enabled:true scaling:on origin:(-1312,0) degree:0" "id:8C00957C-866B-4464-AECE-0DE2FEAB9F0F res:1440x2560 hz:60 color_depth:8 enabled:true scaling:off origin:(2560,-933) degree:270"
+# DOES it??
