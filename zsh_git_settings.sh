@@ -4,15 +4,16 @@ PROJECT_PREFIX='[a-zA-Z]+'
 # ALIASES 
 #########
 alias g="git status -sb"
-alias gpu="git push"
+alias gu="git pull"
+alias gp="git push"
 alias gpf="git push -f"
-alias gpl="git pull"
 alias ga="git add"
-alias gc="git checkout"
-alias gcp="git cherry-pick ${1}"
-alias gm="_gm"
 alias gd="git diff"
 alias gD="git diff develop..${getLocalBranchName}"
+alias gc="git checkout"
+alias gv="interactiveCheckout"
+alias gcp="git cherry-pick ${1}"
+alias gm="_gm"
 alias grd="git rebase -i develop"
 alias grc="git rebase --continue"
 alias gra="git rebase --abort"
@@ -21,7 +22,6 @@ alias gba="git branch -a"
 alias gbd="git branch -d ${1}"
 alias gbD="git branch -D ${1}"
 alias gcb="createBranchWithJiraNumber"
-alias gv="interactiveCheckout"
 alias gvv="shortBranchMappings"
 # Pretty looking git log
 alias gl1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
@@ -118,7 +118,11 @@ createBranch() {
 }
 
 interactiveCheckout() {
-  git checkout $(git for-each-ref refs/heads/ --format='%(refname:short)' | fzf)
+  git checkout "$(
+    git for-each-ref --sort=-committerdate refs/heads/ \
+      --format='%(refname:short)' \
+    | fzf
+  )"
 }
 
 shortBranchMappings() {
