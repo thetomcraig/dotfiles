@@ -6,14 +6,6 @@ PROJECTS_ROOT=~/.projects_root
 
 source "${DOTFILES_LOCATION}/get_arch.sh"
 
-if [[ "${ARCH}" == *"mac"* ]]; then
-  alias rm="trash"
-
-  DROPBOX_ROOT="${HOME}/Dropbox/TomCraig"
-  export DROPBOX_ROOT="${DROPBOX_ROOT}"
-  export PROJECTS_ROOT="${PROJECTS_ROOT}"
-fi
-
 
 
 #########
@@ -50,6 +42,8 @@ fi
 
 
 if [[ "${ARCH}" == *"mac"* ]]; then
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+  alias rm="trash"
   # AVR GCC (QMK)
   export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
   # BREW
@@ -62,12 +56,9 @@ fi
 
 eval "$(direnv hook zsh)"
 
-# PYENV
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
+# bind to the up key, which depends on terminal mode
+bindkey '^[[A' atuin-up-search
+bindkey '^[OA' atuin-up-search
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -102,7 +93,7 @@ export PATH="${HOME}/.cargo/bin:$PATH"
 # WORK #
 ########
 IN_AYA=false
-if [[ $(hostname) =~ "RM-TCraig-Mac" ]]; then
+if [[ $(hostname) =~ "RM-39VVKD41-Mac" ]]; then
   IN_AYA=true
 fi
 export IN_AYA="${IN_AYA}"
