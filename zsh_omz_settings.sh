@@ -13,3 +13,8 @@ DISABLE_AUTO_TITLE=true
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 zstyle ':omz:plugins:nvm' lazy yes
+
+export ATUIN_NOBIND="true"
+eval "$(atuin init zsh)"
+
+bindkey '^r' atuin-search
