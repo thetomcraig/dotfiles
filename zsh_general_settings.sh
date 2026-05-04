@@ -20,6 +20,9 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 #########
 # ALIASES
 #########
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias h="history"
 alias hg="history | grep $1"
 alias c="clear "
@@ -46,10 +49,6 @@ dockernuke() {
 alias dcnk=dockernuke
 
 alias dot="cd ${DOTFILES_LOCATION}"
-alias dbi="cd ${HOME}/Documents/00\ Inbox && mytree"
-alias notes="cd ${HOME}/Documents/references/00\ Notes && mytree"
-alias refs="cd ${HOME}/Documents/references && mytree"
-alias docs="cd ${HOME}/Documents && mytree"
 alias proj="cd ${PROJECTS_ROOT}"
 
 alias s="source $DOTFILES_LOCATION/zsh.sh"
@@ -64,19 +63,43 @@ alias check_repos="${DOTFILES_LOCATION}/check_git_repos.sh"
 
 alias start="./start.command"
 
-
-alias t="eza -L=1 -lT ."
-alias ti="eza -L=1 -alT ."
-#tt for maximum depth tree
-# Testing out nnn
-# alias t=nnn -e
 export VISUAL=vim
-export NNN_PLUG='p:preview-tui;o:vim $NNN_FILE'
-export NNN_FIFO=/tmp/nnn.fifo
-# export NNN_OPENER='o:vim $NNN_FILE'
+
+better_tree() {
+  local level dir
+
+  # No args: default dir="." and level=1
+  if [[ $# -eq 0 ]]; then
+    dir="."
+    level=1
+
+  # One arg: could be level OR dir
+  elif [[ $# -eq 1 ]]; then
+    if [[ "$1" =~ ^[0-9]+$ ]]; then
+      dir="."
+      level="$1"
+    else
+      dir="$1"
+      level=1
+    fi
+
+  # Two args: dir then level (even if level is 1 or 2 etc.)
+  else
+    dir="$1"
+    if [[ "$2" =~ ^[0-9]+$ ]]; then
+      level="$2"
+    else
+      level=1
+    fi
+  fi
+
+  eza -L="$level" -lT -- "$dir"
+}
+
+alias t="better_tree"
+alias ti="eza -L=1 -alT ."
 
 
-alias tt="mytree 999"
 alias lsz="du -h --max-depth=1"
 
 alias imgcat="${DOTFILES_LOCATION}/imgcat.sh"
