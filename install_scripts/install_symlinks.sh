@@ -36,6 +36,8 @@ ln -s $DOTFILES_LOCATION/tigrc.sh .tigrc
 rm -f -- ~/.gvimrc
 ln -s $DOTFILES_LOCATION/vim/gvimrc.sh .gvimrc
 
+rm -f -- ~/.gitconfig
+ln -f $DOTFILES_LOCATION/git_config_global.sh .gitconfig
 
 rm -f -- ~/.vim/spell
 ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
