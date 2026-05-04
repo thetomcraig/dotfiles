@@ -31,3 +31,4 @@ vim
 wget
 youtube-dl
 zsh
+desktoppr
