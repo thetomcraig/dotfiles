@@ -38,3 +38,9 @@ This file is intended as a general foundation for project-level guidance. It is 
 - Code should be easily readable.
 - It is acceptable to make extra variables if it makes code more understandable, within reason.
 - Use descriptive names for variables, functions, classes, and files.
+- DO NOT generate tests with new code, unles explicitly asked.
+
+## Natural Langugage Guidlines
+- Always refer to a projects README.md file for context
+- When updating markdown files, follow these guidelines
+    - Use succinct wording
