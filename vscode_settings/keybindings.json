@@ -95,10 +95,17 @@
         "when": "chatIsEnabled && inChat && !config.chat.unifiedChatView && chatLocation != 'editing-session'"
     },
     {
-    "key": "alt+x",  // You can change this to your preferred key combination
-    "command": "multiCommand.checkboxToggle",
-    "when": "editorTextFocus"
-  }
-
-
+        "key": "ctrl+enter",
+        "command": "-dendron.gotoNote",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "dendron.goto",
+    },
+    // {
+    //     "key": "o",
+    //     "command": "multiCommand.smartMarkdownO",
+    //     "when": "editorTextFocus && editorLangId == 'markdown'",
+    // }
 ]
