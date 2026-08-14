@@ -19,7 +19,7 @@
   },
 
   "workbench.preferredDarkColorTheme": "Abyss",
-  "workbench.colorTheme": "Noctis Azureus",
+  "workbench.colorTheme": "Nord",
   "workbench.startupEditor": "none",
 
   "editor.fontSize": 13,
@@ -264,14 +264,6 @@
       "before": ["<leader>", "g", "o"],
       "commands": ["gitlens.openFileOnRemote"]
     },
-    // {
-    //   "before": ["<leader>", "g", "h"],
-    //   "commands": ["timeline.focus"]
-    // },
-    // {
-    //   "before": ["<leader>", "g", "m"],
-    //   "commands": ["git blame??"]
-    // },
 
     // Debugging
     {
@@ -323,7 +315,7 @@
 
   // MACROS
   // Matched up toe keybindings
-"multiCommand.commands": [
+  "multiCommand.commands": [
   {
     "command": "multiCommand.checkboxToggle",
     "sequence": [
@@ -511,9 +503,13 @@
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
   "peacock.color": "#d08770",
-  "window.zoomLevel": 1.4,
+  "window.zoomLevel": 0.6,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
+    {
+      "label": "Local Pull Request Branches",
+      "query": "default"
+    },
     {
       "label": "Waiting For My Review",
       "query": "repo:${owner}/${repository} is:open review-requested:${user}"
@@ -529,6 +525,10 @@
     {
       "label": "All Merged",
       "query": "repo:${owner}/${repository} is:merged"
+    },
+    {
+      "label": "All Open",
+      "query": "default"
     }
   ],
   "debug.onTaskErrors": "showErrors",
@@ -541,11 +541,33 @@
   "npm.packageManager": "pnpm",
   "githubPullRequests.createOnPublishBranch": "never",
   "diffEditor.ignoreTrimWhitespace": false,
-  "github.copilot.chat.codeGeneration.instructions": [
-    {
-      "text": "- @azure Rule - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
-    }
-  ],
+  "github.copilot.chat.codeGeneration.instructions": [],
   "security.promptForLocalFileProtocolHandling": false,
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-pre-request.instructions.md": true
+  },
+  "yaml.disableSchemaDetection": [
+    "**/docker-compose.yml",
+    "**/docker-compose.yaml",
+    "**/docker-compose.*.yml",
+    "**/docker-compose.*.yaml",
+    "**/compose.yml",
+    "**/compose.yaml",
+    "**/compose.*.yml",
+    "**/compose.*.yaml",
+    "azure-pipelines.yml",
+    "azure-pipelines.yaml"
+  ],
+  "pendant.runtimeSource": "external"
 }
+
