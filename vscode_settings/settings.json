@@ -355,12 +355,7 @@
       {
         "command": "editor.action.deleteLines",
         "args": { "forward": false }
-      },
-      {
-        "command": "editor.action.insertSnippet",
-        "args": {
-          "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
-        }
+      }
       ]
     },
     // This makes the "o" key in a markdown file behave like the enter {
@@ -600,7 +595,7 @@
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
   "peacock.color": "#4c566a",
-  "window.zoomLevel": 2.2,
+  "window.zoomLevel": 0.1,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
@@ -640,19 +635,7 @@
   "github.copilot.chat.codeGeneration.instructions": [],
   "security.promptForLocalFileProtocolHandling": false,
   "chat.commandCenter.enabled": false,
-  "yaml.disableSchemaDetection": [
-    "**/docker-compose.yml",
-    "**/docker-compose.yaml",
-    "**/docker-compose.*.yml",
-    "**/docker-compose.*.yaml",
-    "**/compose.yml",
-    "**/compose.yaml",
-    "**/compose.*.yml",
-    "**/compose.*.yaml",
-    "azure-pipelines.yml",
-    "azure-pipelines.yaml"
-  ],
-  "pendant.runtimeSource": "external"
+  "pendant.runtimeSource": "external",
   "insertDateString.format": "# MMM D, YYYY",
   "insertDateString.formatDate": "# MMM D, YYYY",
   "insertDateString.formatTime": "hh:mm",
@@ -727,7 +710,6 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "workbench.colorTheme": "Nord",
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
@@ -759,8 +741,6 @@
   "yaml.disableSchemaDetection": [
     "azure-pipelines.yml",
     "azure-pipelines.yaml"
-  ],
-  "gitlens.ai.model": "gitkraken",
-  "gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash"
+  ]
 }
 
