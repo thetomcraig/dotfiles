@@ -339,7 +339,6 @@
   ],
 
   // MACROS
-<<<<<<< HEAD
   // Matched up toe keybindings
   "multiCommand.commands": [
   {
@@ -361,23 +360,6 @@
         "command": "editor.action.insertSnippet",
         "args": {
           "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
-=======
-  // Used with keybindings
-  // Toggle a checkbox ([ ] -> [x])
-  "multiCommand.commands": [
-    {
-      "command": "multiCommand.completeTask",
-      "sequence": [
-        "editor.action.clipboardCopyWithSyntaxHighlightingAction",
-        "cursorHome",
-        "deleteAllRight",
-        "cursorHome",
-        {
-          "command": "editor.action.insertSnippet",
-          "args": {
-            "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
-          }
->>>>>>> c94b1636ad4837d40f9894a5a83c3cbfff6f72c3
         }
       ]
     },

@@ -95,20 +95,15 @@
         "when": "chatIsEnabled && inChat && !config.chat.unifiedChatView && chatLocation != 'editing-session'"
     },
     {
-    "key": "alt+x",  // You can change this to your preferred key combination
-    "command": "multiCommand.checkboxToggle",
-    "when": "editorTextFocus"
-  },
-
-  {
-  "key": "shift+alt+z",
-  "command": "extension.multiCommand.execute",
-  "args": {
-    // "interval": 200,   // not necessary
-    "sequence": [
-      "terminal.focus",
-      "workbench.action.terminal.moveToEditor",
-      "workbench.action.experimentalMoveEditorIntoNewWindowAction"
-        ]
+    "key": "shift+alt+z",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        // "interval": 200,   // not necessary
+        "sequence": [
+        "terminal.focus",
+        "workbench.action.terminal.moveToEditor",
+        "workbench.action.experimentalMoveEditorIntoNewWindowAction"
+            ]
+        }
     }
 ]
