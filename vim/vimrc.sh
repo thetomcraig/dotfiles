@@ -300,13 +300,13 @@ function! s:closeGStatus()
 endfunction
 command! GstatusClose call s:closeGStatus()
 
+
 nnoremap <space>g :Git<CR>
-nnoremap <space>gpu :Dispatch! git push<CR>
+" nothing for branch
+nnoremap <space>gu :Dispatch! git pull<CR>
+nnoremap <space>gp :Dispatch! git push<CR>
 nnoremap <space>gpf :Dispatch! git push --force<CR>
-nnoremap <space>gpl :Dispatch! git pull<CR>
-
 nnoremap <space>ga :Git add %:p<CR><CR>
-
 nnoremap <space>gd :Gdiff<CR>
 "nnoremap <space>gdd :Gvdiffsplit develop:%<CR>
 nnoremap <space>gdd :Gvdiffsplit dev:%<CR>
@@ -553,12 +553,6 @@ setlocal tabstop=4
 setlocal softtabstop=4
 
 
-autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 linebreak breakindent breakindentopt=shift:6 spell textwidth=100
-autocmd FileType python setlocal nosmartindent
-autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2 
-
-
-autocmd BufRead,BufNewFile *.vue setfiletype html
 
 
 let g:airline_section_b = ''

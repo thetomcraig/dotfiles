@@ -108,9 +108,7 @@
     "sequence": [
       "terminal.focus",
       "workbench.action.terminal.moveToEditor",
-      "workbench.action.experimentalMoveEditorIntoNewWindowAction",
-    ]
-  },
-}
-
+      "workbench.action.experimentalMoveEditorIntoNewWindowAction"
+        ]
+    }
 ]

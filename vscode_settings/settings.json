@@ -8,14 +8,28 @@
 
   "search.useIgnoreFiles": false,
   "search.exclude": {
-    "**/*.git": true,
     ".angular": true,
+    ".env": true,
     ".firebase": true,
-    "dist": true,
-    "dist/*": true,
-    "package-lock.json": true,
+    "**/.pytest_cache": true,
+    "**/*.git": true,
+    "**/build": true,
+    "**/dist": true,
     "**/node_modules": true,
     "**/out": true,
+    "package-lock.json": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+  "files.exclude": {
+    "**/.env": true,
+    "**/.pytest_cache": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true
   },
 
   "workbench.preferredDarkColorTheme": "Abyss",
@@ -116,25 +130,7 @@
     },
     {
       "before": ["<leader>", "f", "t"],
-      "command": "nerdtree.unfocusSidebarOrClose",
-      "when": "sideBarVisible && filesExplorerFocus",
-      "after": []
-    },
-    {
-      "before": ["<leader>", "f", "t"],
-      "commands": ["workbench.files.action.focusFilesExplorer"],
-      "when": "sideBarVisible && !filesExplorerFocus && !suggestWidgetVisible && vim.mode != 'Insert'",
-      "after": []
-    },
-    {
-      "before": ["<leader>", "f", "t"],
-      "commands": ["workbench.files.action.focusFilesExplorer"],
-      "when": "!sideBarVisible && !suggestWidgetVisible && vim.mode != 'Insert'",
-      "after": []
-    },
-    {
-      "before": ["<leader>", "f", "t"],
-      "commands": ["workbench.files.action.focusFilesExplorer"],
+      "commands": ["workbench.files.action.focusOpenEditorsView"],
       "when": "!sideBarVisible && !suggestWidgetVisible && vim.mode != 'Insert'",
       "after": []
     },
@@ -174,6 +170,10 @@
       "before": ["<leader>", "t", "o"],
       "commands": ["workbench.action.closeOtherEditors"]
     },
+    {
+      "before": ["<leader>", "s", "o"],
+      "commands": ["workbench.action.closeEditorsInOtherGroups"]
+    },
     // "Isolate" closes extra panels
     {
       "before": ["<leader>", "i", "s"],
@@ -187,15 +187,17 @@
       "commands": ["workbench.action.openSettingsJson"]
     },
 
-
-    // Code Stuff
     {
-      "before": ["leader", "d"],
+      "before": ["<leader>", "d"],
       "commands": ["editor.action.revealDefinition"]
     },
     {
       "before": ["<leader>", "j", "j"],
       "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["textmarker.toggleHighlight"]
     },
 
     // File management
@@ -227,11 +229,49 @@
       "commands": ["workbench.view.scm"]
     },
     {
-      "before": ["<leader>", "g", "d"],
-      "commands": ["workbench.view.scm"]
+      "before": ["<leader>", "g", "c"],
+      "commands": ["git.checkout"]
     },
-
-    // for changes on the current line
+    {
+      "before": ["<leader>", "g", "v"],
+      "commands": ["git.checkout"]
+    },
+    {
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.pull"]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.push"]
+    },
+    {
+      "before": ["<leader>", "g", "p", "f"],
+      "commands": ["git.pushForce"]
+    },
+    {
+      "before": ["<leader>", "g", "b"],
+      "commands": ["git.branchFrom"]
+    },
+    {
+      "before": ["<leader>", "g", "a"],
+      "commands": ["git.stage"]
+    },
+    {
+      "before": ["<leader>", "g", "a", "."],
+      "commands": ["git.stageAll"]
+    },
+    {
+      "before": ["<leader>", "g", "m"],
+      "commands": ["extension.conventionalCommits"]
+    },
+    {
+      "before": ["<leader>", "g", "d", "n"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
+    },
+    {
+      "before": ["<leader>", "g", "d", "m"],
+      "commands": ["workbench.action.compareEditor.previoushange"]
+    },
     {
       "before": ["<leader>", "g", "l", "d"],
       "commands": ["gitlens.diffLineWithWorking"]
@@ -239,26 +279,6 @@
     {
       "before": ["<leader>", "g", "d"],
       "commands": ["gitlens.compareWorkingWith"]
-    },
-    {
-      "before": ["<leader>", "g", "p"],
-      "commands": ["git.pull"]
-    },
-    {
-      "before": ["<leader>", "g", "v"],
-      "commands": ["git.checkout"]
-    },
-    {
-      "before": ["<leader>", "g", "c", "b"],
-      "commands": ["git.branchFrom"]
-    },
-    {
-      "before": ["<leader>", "g", "n"],
-      "commands": ["workbench.action.compareEditor.nextChange"]
-    },
-    {
-      "before": ["<leader>", "g", "m"],
-      "commands": ["workbench.action.compareEditor.previoushange"]
     },
     {
       "before": ["<leader>", "g", "o"],
@@ -304,16 +324,22 @@
     },
     // Wiki/knowledgebase stuff
     {
-      "before": ["<leader>", "w", "<leader>", "w"],
+      "before": ["<leader>", "w", "w"],
       "commands": ["dendron.createDailyJournalNote"]
     },
     {
-      "before": ["<leader>", "c"],
-      "commands": ["dendron.completeTask"]
+      "before": ["<leader>", "w", "c"],
+      "commands": ["multiCommand.completeTask"]
     },
+    // TODO
+    // {
+    //   "before": ["<leader>", "w", "t"],
+    //   "commands": ["multiCommand.addBox"]
+    // },
   ],
 
   // MACROS
+<<<<<<< HEAD
   // Matched up toe keybindings
   "multiCommand.commands": [
   {
@@ -335,28 +361,92 @@
         "command": "editor.action.insertSnippet",
         "args": {
           "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
+=======
+  // Used with keybindings
+  // Toggle a checkbox ([ ] -> [x])
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.completeTask",
+      "sequence": [
+        "editor.action.clipboardCopyWithSyntaxHighlightingAction",
+        "cursorHome",
+        "deleteAllRight",
+        "cursorHome",
+        {
+          "command": "editor.action.insertSnippet",
+          "args": {
+            "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
+          }
+>>>>>>> c94b1636ad4837d40f9894a5a83c3cbfff6f72c3
         }
-      },
-      "closeFindWidget",
-      {
-        "command": "type",
-        "args": "\n"
-      },
-    ]
-  }
-],
+      ]
+    },
+    // This makes the "o" key in a markdown file behave like the enter {
+    // so it will insert a "-" when in a bulleted list
+    {
+      "command": "multiCommand.smartMarkdownO",
+      "sequence": [
+        "cursorLineEnd",
+        {
+          "command": "type",
+          "args": { "text": "i" }
+        },
+        "markdown.extension.onEnterKey",
+      ]
+    },
+    // Adds " - [ ] " to the beginning of a line
+    {
+      "command": "multiCommand.addBox",
+      "sequence": [
+        {
+          "command": "type",
+          "args": { "text": "i - [ ]" }
+        },
+      ]
+    },
+    // {
+    //   "command": "multiCommand.convertToTask",
+    //   "sequence": [
+    //     "cursorHome",
+    //     {
+    //       "command": "editor.action.clipboardCopyAction",
+    //       "args": {}
+    //     },
+    //     {
+    //       "command": "editor.action.replaceOne",
+    //       "args": {
+    //         "find": "^\\-\\s",
+    //         "replace": "",
+    //         "matchCase": true,
+    //         "wholeWord": false,
+    //         "isRegex": true
+    //       }
+    //     },
+    //     {
+    //       "command": "editor.action.insertSnippet",
+    //       "args": {
+    //         "snippet": "- [ ] ${TM_SELECTED_TEXT}"
+    //       }
+    //     }
+    //   ]
+    // }
 
 
-
-
-
-
-
+  ],
 
   // LANGUAGE SETTINGS
   // MARKDOWN
   "[markdown]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "markdownlint.config": {
+    "MD034": false, // No bare URLs
+    "MD025": false, // Multiple top level headings in the same document
+    "MD022": false, // Headers should be surrounded by blank lines
+    "MD032": false, // Lists should be surrounded by blank lines
+    "MD012": false, // Multiple consecutive blank lines
+    "MD031":false, // Fenced code blocks should be surrounded by blank lines
+    "MD047": false, // Code blocks should be surrounded by blank lines
   },
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -370,18 +460,35 @@
   },
 
   // PYTHON 
-  "python.languageServer": "Pylance",
   "python.analysis.extraPaths": [
+    "/Users/tomcraig/.pyenv/versions/3.12.4/envs/winnow/lib/python3.12/site-packages",
     "/Applications/Talon.app/Contents/Resources",
     "/Applications/Talon.app/Contents/Resources/python/lib/python3.11/site-packages" 
   ],
-  "python.defaultInterpreterPath": "/Applications/Talon.app/Contents/Resources/python/bin/python3",
-  "python.analysis.stubPath": "/Applications/Talon.app/Contents/Resources/python/lib/python3.11/site-packages",
+  "python.defaultInterpreterPath": "/Users/tomcraig/.pyenv/versions/3.12.4/envs/winnow/bin/python",
+  // "python.defaultInterpreterPath": "/Users/tomcraig/.pyenv/shims/python",
+  "python.analysis.stubPath": "/Users/tomcraig/.pyenv/versions/3.12.4/envs/winnow/lib/python3.12/site-packages",
+  "python.languageServer": "Pylance",
+
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.diagnosticSeverityOverrides": {
+      "reportMissingImports": "error",
+      "reportUndefinedVariable": "error",
+      "reportGeneralTypeIssues": "error"
+  },
+
   "[python]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "always",
-    },
+    // "editor.formatOnSave": true,
+  //   "editor.codeActionsOnSave": {
+  //       "source.organizeImports": "always",
+  //   },
+  //   "editor.defaultFormatter": "ms-python.black-formatter",
+  //   "diffEditor.ignoreTrimWhitespace": true,
+  // },
+    // "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": true,
@@ -393,6 +500,15 @@
     "*test*.py",
     "--reuse-db"
   ],
+  "flake8.args": [],
+  "flake8.severity": {
+      "E": "Error",
+      "W": "Warning", 
+      "F": "Error"
+  },
+  "flake8.importStrategy": "fromEnvironment",
+  "flake8.interpreter": ["/Users/tomcraig/.pyenv/versions/3.12.4/envs/winnow/bin/python"],
+  "flake8.cwd": "${workspaceFolder}/app",
 
   // HTML
   "[html]": {
@@ -441,7 +557,7 @@
   "editor.inlineSuggest.suppressSuggestions": true,
   "git.ignoreMissingGitWarning": true,
   "files.eol": "\n",
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "git.openRepositoryInParentFolders": "never",
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -465,10 +581,10 @@
     "curve": true,
     "fox": true,
     "frame": true,
-    "play": true
+    "play": true,
+    "eye": true
   },
-  "editor.lineHeight": 30,
-  "workbench.iconTheme": "ayu",
+  "editor.lineHeight": 25,
   "remote.autoForwardPortsSource": "hybrid",
   "cmake.showOptionsMovedNotification": false,
   "clangd.detectExtensionConflicts": false,
@@ -481,15 +597,14 @@
   "editor.inlayHints.enabled": "off",
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#1073cf2d",
-    "editor.lineHighlightBorder": "#9fced11f"
+    "editor.lineHighlightBorder": "#9fced11f",
+    "diffEditor.removedTextBackground": "#281d1e",
+    "diffEditor.insertedTextBackground": "#254405"
   },
   "editor.wordWrap": "off",
   "diffEditor.wordWrap": "off",
   "editor.guides.indentation": false,
   "editor.guides.bracketPairs": false,
-  "vscode_custom_css.imports": [
-    "file:///Users/tomcraig/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
-  ],
   "debug.toolBarLocation": "commandCenter",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingComments": "never",
@@ -502,8 +617,8 @@
   "gitlens.views.commits.files.layout": "tree",
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
-  "peacock.color": "#d08770",
-  "window.zoomLevel": 0.6,
+  "peacock.color": "#4c566a",
+  "window.zoomLevel": 2.2,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
@@ -532,7 +647,6 @@
     }
   ],
   "debug.onTaskErrors": "showErrors",
-  "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}focus:[${focusedView}]",
   "githubPullRequests.fileListLayout": "tree",
   "redhat.telemetry.enabled": false,
   "chat.editing.alwaysSaveWithGeneratedChanges": true,
@@ -544,18 +658,6 @@
   "github.copilot.chat.codeGeneration.instructions": [],
   "security.promptForLocalFileProtocolHandling": false,
   "chat.commandCenter.enabled": false,
-  "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    ".claude/rules": true,
-    "~/.copilot/instructions": true,
-    "~/.claude/rules": true,
-    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-post-response.instructions.md": true,
-    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-pre-request.instructions.md": true,
-    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-post-response.instructions.md": true,
-    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-pre-request.instructions.md": true,
-    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-post-response.instructions.md": true,
-    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-pre-request.instructions.md": true
-  },
   "yaml.disableSchemaDetection": [
     "**/docker-compose.yml",
     "**/docker-compose.yaml",
@@ -569,5 +671,114 @@
     "azure-pipelines.yaml"
   ],
   "pendant.runtimeSource": "external"
+  "insertDateString.format": "# MMM D, YYYY",
+  "insertDateString.formatDate": "# MMM D, YYYY",
+  "insertDateString.formatTime": "hh:mm",
+  "mssql.connections": [],
+  "window.titleSeparator": " | ",
+  "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}focus:[${focusedView}]",
+  "githubPullRequests.createDefaultBaseBranch": "repositoryDefault",
+  "githubPullRequests.defaultCommentType": "single",
+  "githubPullRequests.showPullRequestNumberInTree": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-pre-request.instructions.md": true
+  },
+  "gitlens.rebaseEditor.ordering": "asc",
+  "cursorless.colors.light": {
+    "pink": "#edb62b",
+    "blue": "#0ABEFF",
+    "green": "#00FF11"
+  },
+  "cursorless.colors.dark": {
+    "yellow": "#ffff38",
+    "userColor1": "#7b7aff"
+  },
+  "python.analysis.generateWithTypeAnnotation": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "git.allowForcePush": true,
+  "conventionalCommits.gitmoji": false,
+  "conventionalCommits.promptBody": false,
+  "conventionalCommits.promptScopes": false,
+  "conventionalCommits.promptFooter": false,
+  "gitlens.graph.layout": "editor",
+  "gitlens.views.scm.grouped.hiddenViews": {
+    "commits": false,
+    "worktrees": false,
+    "branches": true,
+    "remotes": false,
+    "stashes": false,
+    "tags": false,
+    "contributors": false,
+    "repositories": true,
+    "fileHistory": false,
+    "launchpad": false,
+    "searchAndCompare": false
+  },
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": true,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "fileHistory": false,
+    "repositories": true,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
+  "gitlens.views.branches.showBranchComparison": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "workbench.colorTheme": "Nord",
+  "[yaml]": {
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.theme": "castle",
+  "chat.viewSessions.orientation": "stacked",
+  "notebook.lineNumbers": "on",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  },
+  "ruff.configuration": "app/pyproject.toml",
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "5BA0D1DA-C03B-4E4F-93F5-0430A1DEB25C",
+      "isDefault": true
+    }
+  ],
+  "chat.notifyWindowOnConfirmation": "off",
+  "chat.notifyWindowOnResponseReceived": "off",
+  "update.showReleaseNotes": false,
+  "chat.mcp.gallery.enabled": true,
+  "yaml.disableSchemaDetection": [
+    "azure-pipelines.yml",
+    "azure-pipelines.yaml"
+  ],
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash"
 }
 

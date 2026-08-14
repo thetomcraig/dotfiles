@@ -6,11 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>69D0F9A9-A459-42A2-B77B-C1301DC4C939</key>
+		<key>23DB4214-80B2-4891-8A4D-B9AA09C41E15</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3A08A24F-9C92-49FB-837C-CF19DD0F6214</string>
+				<string>09E91617-DA9D-4A35-8FC5-615905EC4DF8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -19,11 +19,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>908B976A-3A6E-44F6-8786-E77FF5D7F296</key>
+		<key>5B71B5B0-ECDC-4F5C-8B77-7BA2A5DB4D48</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A2D1F88E-39B1-4CB8-822C-C55ECAEF418B</string>
+				<string>5BB4805B-9B67-419C-BFCB-030327D3E639</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>69D0F9A9-A459-42A2-B77B-C1301DC4C939</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A08A24F-9C92-49FB-837C-CF19DD0F6214</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,50 +58,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A2D1F88E-39B1-4CB8-822C-C55ECAEF418B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E0C892EC-2465-44CC-97EA-5D5FD9B125CD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D01625DA-8540-43FB-ACF7-FAEEEFE6EF80</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>512E10BE-88C1-407E-9AA7-FD4217525248</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E0C892EC-2465-44CC-97EA-5D5FD9B125CD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E3EC02AC-C619-40CC-A1B7-6B2FDA2D3FE8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E3EC02AC-C619-40CC-A1B7-6B2FDA2D3FE8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1521664D-29DD-4927-9886-FC0148769CDE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -160,27 +134,6 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>7BD756FD-1AE2-4D0D-9A4A-0F03D60AC41E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>test</string>
-				<key>title</key>
-				<string>test {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>1521664D-29DD-4927-9886-FC0148769CDE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -259,7 +212,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://dev.azure.com/AyaTechTeam/WorkforceAI/_build?definitionScope=%5CWinnow%5CV3</string>
+				<string>https://dev.azure.com/AyaTechTeam/WorkforceAI/_build?definitionScope=%5CNew%20and%20Improved%20Winnow%20Pipelines&amp;treeState=XE5ldyBhbmQgSW1wcm92ZWQgV2lubm93IFBpcGVsaW5lc1xCRSRcTmV3IGFuZCBJbXByb3ZlZCBXaW5ub3cgUGlwZWxpbmVzXEJFXEJ1aWxk</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -271,13 +224,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>seconds</key>
-				<string>3</string>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>win sprint</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open Winnow Sprint</string>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.delay</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>E0C892EC-2465-44CC-97EA-5D5FD9B125CD</string>
+			<string>A25E6733-7F88-491D-BEF2-C0682853A8AC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -308,59 +269,18 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>win sprint</string>
+				<string>shd sprint</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Open Winnow Sprint</string>
+				<string>Open Shadow Sprint</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>A25E6733-7F88-491D-BEF2-C0682853A8AC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>release notes</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Create Release Notes</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>908B976A-3A6E-44F6-8786-E77FF5D7F296</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>javascript_code</key>
-					<string>javascript:(function() {  const items = Array.from(new Set(    Array.from(document.querySelectorAll('[data-testid="commit-row-item"] a[title]'))      .map(el =&gt; el.title)  ));  const repoName = document.querySelector('span[class="AppHeader-context-item-label  "]').innerText;  let outputNotes = repoName + " PR: " + window.location.href + "\n";  outputNotes += "PRs Merged:\n";  items.forEach(title =&gt; {    if (title.includes('Merge pull request')) {      outputNotes += "\t" + title.split('\n')[0] + "\n";    }  });  console.log(outputNotes);  navigator.clipboard.writeText(outputNotes)})();</string>
-					<key>popup_browser</key>
-					<string>Brave Browser</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.extras/web-browsers/chromium-browsers/chromium.tabs.current.run.javascript</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>E3EC02AC-C619-40CC-A1B7-6B2FDA2D3FE8</string>
+			<string>23DB4214-80B2-4891-8A4D-B9AA09C41E15</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -376,12 +296,54 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>{query}/commits</string>
+				<string>https://ayadev.atlassian.net/jira/software/c/projects/SHD/boards/7953</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>A2D1F88E-39B1-4CB8-822C-C55ECAEF418B</string>
+			<string>09E91617-DA9D-4A35-8FC5-615905EC4DF8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>mcz sprint</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open MCZ Sprint</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5B71B5B0-ECDC-4F5C-8B77-7BA2A5DB4D48</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://ayadev.atlassian.net/jira/software/c/projects/MCZ/boards/1433</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5BB4805B-9B67-419C-BFCB-030327D3E639</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -390,12 +352,19 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>1521664D-29DD-4927-9886-FC0148769CDE</key>
+		<key>09E91617-DA9D-4A35-8FC5-615905EC4DF8</key>
 		<dict>
 			<key>xpos</key>
-			<real>980</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>585</real>
+		</dict>
+		<key>23DB4214-80B2-4891-8A4D-B9AA09C41E15</key>
+		<dict>
+			<key>xpos</key>
+			<real>140</real>
+			<key>ypos</key>
+			<real>585</real>
 		</dict>
 		<key>3A08A24F-9C92-49FB-837C-CF19DD0F6214</key>
 		<dict>
@@ -410,6 +379,20 @@
 			<real>315</real>
 			<key>ypos</key>
 			<real>195</real>
+		</dict>
+		<key>5B71B5B0-ECDC-4F5C-8B77-7BA2A5DB4D48</key>
+		<dict>
+			<key>xpos</key>
+			<real>145</real>
+			<key>ypos</key>
+			<real>800</real>
+		</dict>
+		<key>5BB4805B-9B67-419C-BFCB-030327D3E639</key>
+		<dict>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>800</real>
 		</dict>
 		<key>5F7C03B4-64FB-4323-B4B3-00281688C35C</key>
 		<dict>
@@ -432,13 +415,6 @@
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
-		<key>908B976A-3A6E-44F6-8786-E77FF5D7F296</key>
-		<dict>
-			<key>xpos</key>
-			<real>140</real>
-			<key>ypos</key>
-			<real>595</real>
-		</dict>
 		<key>A25E6733-7F88-491D-BEF2-C0682853A8AC</key>
 		<dict>
 			<key>xpos</key>
@@ -446,33 +422,12 @@
 			<key>ypos</key>
 			<real>460</real>
 		</dict>
-		<key>A2D1F88E-39B1-4CB8-822C-C55ECAEF418B</key>
-		<dict>
-			<key>xpos</key>
-			<real>310</real>
-			<key>ypos</key>
-			<real>595</real>
-		</dict>
 		<key>D01625DA-8540-43FB-ACF7-FAEEEFE6EF80</key>
 		<dict>
 			<key>xpos</key>
 			<real>140</real>
 			<key>ypos</key>
 			<real>195</real>
-		</dict>
-		<key>E0C892EC-2465-44CC-97EA-5D5FD9B125CD</key>
-		<dict>
-			<key>xpos</key>
-			<real>945</real>
-			<key>ypos</key>
-			<real>340</real>
-		</dict>
-		<key>E3EC02AC-C619-40CC-A1B7-6B2FDA2D3FE8</key>
-		<dict>
-			<key>xpos</key>
-			<real>715</real>
-			<key>ypos</key>
-			<real>595</real>
 		</dict>
 		<key>E5D710F2-43C5-472E-93DE-1FD68F910BE5</key>
 		<dict>

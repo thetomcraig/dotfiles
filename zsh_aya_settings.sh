@@ -1,2 +1,3 @@
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/usr/local/share/dotnet:$PATH"
+alias docker=podman

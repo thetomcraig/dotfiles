@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+# DEBUG="true"
 # List of active sessions
 all_sessions=($( tmux ls | awk '{printf $1}' | tr ':' '\n'))
 
@@ -20,11 +21,18 @@ get_desired_name_from_list() {
 
 create_or_find_then_attach() {
   session_name="${1}"
+  if [ "${DEBUG}" = "true" ]; then
+    printf "Create of find a session with name: '${session_name}'\n"
+  fi
+
   ##########
   # CASE 0 #
   ##########
   # Brand-new session
-  if [ "${session_name}" = "NEW" ]; then
+  if [[ ${session_name} = *"NEW"* ]]; then
+    if [ "${DEBUG}" = "true" ]; then
+      printf "Case 0: Creating a new session, not in tmuxinator\n"
+    fi
     new_session_name=0
     IFS=$'\n' sorted_sessions=($(sort -n <<<"${all_sessions[*]}"))
     highest_session_number="${sorted_sessions[0]}"
@@ -48,15 +56,20 @@ create_or_find_then_attach() {
   # There is already a running session named session_name
   IFS=':'
   all_sessions=($(tmux ls | awk '{printf $1}'))
+  if [ "${DEBUG}" = "true" ]; then
+    printf "Looking at all running tmux sessions\n"
+  fi
   for name in "${all_sessions[@]}"; do
     if [ "${session_name}" == "${name}" ]; then
       if ! { [ -n "$TMUX" ]; } then
-        # If outside a tmux session,
-        # attach to the desired session
+        if [ "${DEBUG}" = "true" ]; then
+          printf "Case 1: Found running session, outside tmux\n"
+        fi
         tmux attach -t $session_name
       else
-        # If inside a tmux session already,
-        # switch to the desired session
+        if [ "${DEBUG}" = "true" ]; then
+          printf "Case 1: Found running session, inside tmux\n"
+        fi
         tmux switch-client -t $session_name
       fi
       return
@@ -72,14 +85,17 @@ create_or_find_then_attach() {
   for name in "${mux_projects[@]}"; do
     if [ "${session_name}" == "${name}" ]; then
       if ! { [ -n "$TMUX" ]; } then
-        # If not inside a tmux session,
-        # start the tmuxinator project
+        if [ "${DEBUG}" = "true" ]; then
+          printf "Case 2: No running session, outside tmux. Starting tmuxinator\n"
+        fi
         tmuxinator start $session_name
-      fi
-        # If inside a tmux session already,
-        # start in the background, then attach
+      else
+        if [ "${DEBUG}" = "true" ]; then
+          printf "Case 2: No running session, insude tmux. Starting tmuxinator\n"
+        fi
         $(tmuxinator start $session_name &)
         tmux switch-client -t $session_name
+      fi
       return
     fi
   done
@@ -91,8 +107,14 @@ create_or_find_then_attach() {
   # AND there is no tmuxinator project with the name either.
   # So start/attach to a new tmux session
   if ! { [ -n "$TMUX" ]; } then
+    if [ "${DEBUG}" = "true" ]; then
+      printf "Case 3: No running session and no tmuxinator project found, outside tmux. Starting tmux\n"
+    fi
     tmux new -s $session_name
   else
+    if [ "${DEBUG}" = "true" ]; then
+      printf "Case 3: No running session and no tmuxinator project found, inside tmux. Starting tmux\n"
+    fi
     tmux new -s $session_name -d
     tmux switch-client -t $session_name
   fi
@@ -100,6 +122,8 @@ create_or_find_then_attach() {
 
 
 if [ "$#" -eq 1 ]; then
+  # If an argument was passed,
+  # create or find a session with the argument as its name
   desired_session_name=$(basename $1)
   create_or_find_then_attach $desired_session_name
 else
