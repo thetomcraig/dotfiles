@@ -535,7 +535,6 @@
   "git.ignoreMissingGitWarning": true,
   "files.eol": "\n",
   "editor.renderWhitespace": "all",
-  "git.openRepositoryInParentFolders": "never",
   "git.autofetch": true,
   "git.confirmSync": false,
   "cmake.configureOnOpen": true,
@@ -595,7 +594,7 @@
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
   "peacock.color": "#4c566a",
-  "window.zoomLevel": 0.1,
+  "window.zoomLevel": 0.6,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
@@ -649,12 +648,21 @@
   "github.copilot.nextEditSuggestions.enabled": true,
   "chat.instructionsFilesLocations": {
     ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-http-request-post-response.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-http-request-pre-request.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-collections-post-response.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-collections-pre-request.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-post-response.instructions.md": true,
-    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-pre-request.instructions.md": true
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-pre-request.instructions.md": true
   },
   "gitlens.rebaseEditor.ordering": "asc",
   "cursorless.colors.light": {
@@ -740,7 +748,22 @@
   "chat.mcp.gallery.enabled": true,
   "yaml.disableSchemaDetection": [
     "azure-pipelines.yml",
-    "azure-pipelines.yaml"
-  ]
+    "azure-pipelines.yaml",
+    "**/docker-compose.yml",
+    "**/docker-compose.yaml",
+    "**/docker-compose.*.yml",
+    "**/docker-compose.*.yaml",
+    "**/compose.yml",
+    "**/compose.yaml",
+    "**/compose.*.yml",
+    "**/compose.*.yaml"
+  ],
+  "editor.bracketPairColorization.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "cSpell.userWords": [
+    "libbys"
+  ],
+  "opencode.cliPath": "/opt/homebrew/bin/opencode",
+  "chat.disableAIFeatures": true
 }
 
