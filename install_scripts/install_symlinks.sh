@@ -45,6 +45,12 @@ ln -s $DOTFILES_LOCATION/vim/spell .vim/spell
 \rm -f -- ~/.tmux.conf
 ln -s $DOTFILES_LOCATION/tmux/tmux.conf .tmux.conf
 
+\rm -f -- ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s $DOTFILES_LOCATION/vscode_settings/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+\rm -f -- ~/Library/Application\ Support/Code/User/settings.json
+ln -s $DOTFILES_LOCATION/vscode_settings/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
+
 \rm -f -- ~/.codex/AGENTS.md
 ln -s $DOTFILES_LOCATION/codex/AGENTS.md .codex/AGENTS.md
 \rm -f -- ~/.codex/skills

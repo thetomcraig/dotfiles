@@ -95,17 +95,15 @@
         "when": "chatIsEnabled && inChat && !config.chat.unifiedChatView && chatLocation != 'editing-session'"
     },
     {
-        "key": "ctrl+enter",
-        "command": "-dendron.gotoNote",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+enter",
-        "command": "dendron.goto",
-    },
-    // {
-    //     "key": "o",
-    //     "command": "multiCommand.smartMarkdownO",
-    //     "when": "editorTextFocus && editorLangId == 'markdown'",
-    // }
+    "key": "shift+alt+z",
+    "command": "extension.multiCommand.execute",
+    "args": {
+        // "interval": 200,   // not necessary
+        "sequence": [
+        "terminal.focus",
+        "workbench.action.terminal.moveToEditor",
+        "workbench.action.experimentalMoveEditorIntoNewWindowAction"
+            ]
+        }
+    }
 ]

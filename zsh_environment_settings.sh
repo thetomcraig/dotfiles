@@ -13,6 +13,8 @@ source "${DOTFILES_LOCATION}/get_arch.sh"
 #########
 # alias sshariston="ssh tom@ariston"
 alias sshariston="mosh tom@ariston"
+alias sshaesop="mosh tom@aesop"
+alias sshe="mosh tom@aesop"
 alias ssharistonremote="mosh tom@techdaddy.lol"
 
 

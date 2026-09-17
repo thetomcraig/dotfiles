@@ -33,6 +33,7 @@
   },
 
   "workbench.preferredDarkColorTheme": "Abyss",
+  "workbench.colorTheme": "Nord",
   "workbench.startupEditor": "none",
 
   "editor.fontSize": 13,
@@ -283,14 +284,6 @@
       "before": ["<leader>", "g", "o"],
       "commands": ["gitlens.openFileOnRemote"]
     },
-    // {
-    //   "before": ["<leader>", "g", "h"],
-    //   "commands": ["timeline.focus"]
-    // },
-    // {
-    //   "before": ["<leader>", "g", "m"],
-    //   "commands": ["git blame??"]
-    // },
 
     // Debugging
     {
@@ -346,22 +339,23 @@
   ],
 
   // MACROS
-  // Used with keybindings
-  // Toggle a checkbox ([ ] -> [x])
+  // Matched up toe keybindings
   "multiCommand.commands": [
-    {
-      "command": "multiCommand.completeTask",
-      "sequence": [
-        "editor.action.clipboardCopyWithSyntaxHighlightingAction",
-        "cursorHome",
-        "deleteAllRight",
-        "cursorHome",
-        {
-          "command": "editor.action.insertSnippet",
-          "args": {
-            "snippet": "${CLIPBOARD/\\[ \\]/[x]/g}"
-          }
-        }
+  {
+    "command": "multiCommand.checkboxToggle",
+    "sequence": [
+      "editor.action.clipboardCopyWithSyntaxHighlightingAction",
+      "cursorHome",
+      "actions.find",
+      {
+        "command": "type",
+        "args": { "text": "\\[ \\]" }
+      },
+      "editor.action.nextMatchFindAction",
+      {
+        "command": "editor.action.deleteLines",
+        "args": { "forward": false }
+      }
       ]
     },
     // This makes the "o" key in a markdown file behave like the enter {
@@ -416,7 +410,6 @@
 
 
   ],
-  // TODO: hotkey to trigger "> dendron"
 
   // LANGUAGE SETTINGS
   // MARKDOWN
@@ -542,7 +535,6 @@
   "git.ignoreMissingGitWarning": true,
   "files.eol": "\n",
   "editor.renderWhitespace": "all",
-  "git.openRepositoryInParentFolders": "never",
   "git.autofetch": true,
   "git.confirmSync": false,
   "cmake.configureOnOpen": true,
@@ -602,7 +594,7 @@
   "gitlens.views.commitDetails.files.layout": "tree",
   "workbench.editor.tabSizing": "fixed",
   "peacock.color": "#4c566a",
-  "window.zoomLevel": 2.2,
+  "window.zoomLevel": 0.6,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
@@ -642,21 +634,10 @@
   "github.copilot.chat.codeGeneration.instructions": [],
   "security.promptForLocalFileProtocolHandling": false,
   "chat.commandCenter.enabled": false,
+  "pendant.runtimeSource": "external",
   "insertDateString.format": "# MMM D, YYYY",
   "insertDateString.formatDate": "# MMM D, YYYY",
   "insertDateString.formatTime": "hh:mm",
-  "mssql.connectionGroups": [
-    {
-      "name": "ROOT",
-      "id": "ROOT"
-    },
-    {
-      "name": "sg-winnow-admins-stg",
-      "color": "#B146C2",
-      "id": "317d1d2f-e60c-4f4f-a0a9-15b34eea1764",
-      "parentId": "ROOT"
-    }
-  ],
   "mssql.connections": [],
   "window.titleSeparator": " | ",
   "window.title": "${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}focus:[${focusedView}]",
@@ -667,12 +648,21 @@
   "github.copilot.nextEditSuggestions.enabled": true,
   "chat.instructionsFilesLocations": {
     ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-http-request-post-response.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-http-request-pre-request.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-collections-post-response.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-collections-pre-request.instructions.md": true,
     "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-post-response.instructions.md": true,
-    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-pre-request.instructions.md": true
+    "/var/folders/km/gzfmffxn3219fbtl84mfnhq00000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/4q/0vdtwf9933g6xgch2tqkml6c0000gn/T/postman-http-request-pre-request.instructions.md": true
   },
   "gitlens.rebaseEditor.ordering": "asc",
   "cursorless.colors.light": {
@@ -728,7 +718,6 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "workbench.colorTheme": "Nord",
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
@@ -753,37 +742,28 @@
       "isDefault": true
     }
   ],
-  "pgsql.connections": [
-    {
-      "id": "7805A5B6-1880-447F-9B9B-76E15B7C742B",
-      "groupId": "5BA0D1DA-C03B-4E4F-93F5-0430A1DEB25C",
-      "authenticationType": "SqlLogin",
-      "connectTimeout": 15,
-      "applicationName": "vscode-pgsql",
-      "clientEncoding": "utf8",
-      "sslmode": "require",
-      "sshSavePassword": true,
-      "savePassword": true,
-      "sslRootCertMode": "none",
-      "server": "10.170.39.10",
-      "user": "tom.craig",
-      "password": "",
-      "profileName": "DocCafe, <default> (tom.craig)",
-      "expiresOn": 0,
-      "sshPassword": ""
-    }
-  ],
   "chat.notifyWindowOnConfirmation": "off",
   "chat.notifyWindowOnResponseReceived": "off",
   "update.showReleaseNotes": false,
   "chat.mcp.gallery.enabled": true,
   "yaml.disableSchemaDetection": [
     "azure-pipelines.yml",
-    "azure-pipelines.yaml"
+    "azure-pipelines.yaml",
+    "**/docker-compose.yml",
+    "**/docker-compose.yaml",
+    "**/docker-compose.*.yml",
+    "**/docker-compose.*.yaml",
+    "**/compose.yml",
+    "**/compose.yaml",
+    "**/compose.*.yml",
+    "**/compose.*.yaml"
   ],
-  "gitlens.ai.model": "gitkraken",
-  "gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash",
-  "polyvoice.provider": "openai",
-  "polyvoice.voice": "sage",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "cSpell.userWords": [
+    "libbys"
+  ],
+  "opencode.cliPath": "/opt/homebrew/bin/opencode",
+  "chat.disableAIFeatures": true
 }
 

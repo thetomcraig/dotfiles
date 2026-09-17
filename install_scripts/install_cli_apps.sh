@@ -14,8 +14,5 @@ sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUST
 sudo git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 
 #NVM
-mkdir -p ~/.nvm
-
-# Configure stuff
 git config --global core.editor "vim"
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
