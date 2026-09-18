@@ -58,6 +58,8 @@ fi
 
 eval "$(direnv hook zsh)"
 
+eval "$(zoxide init zsh)"
+
 # bind to the up key, which depends on terminal mode
 bindkey '^[[A' atuin-up-search
 bindkey '^[OA' atuin-up-search
@@ -71,25 +73,6 @@ export NVM_DIR="$HOME/.nvm"
 #########
 export PATH="${HOME}/.cargo/bin:$PATH"
 
-########
-# CHIT #
-########
-# if [[ "${ARCH}" == *"mac"* ]]; then
-#   eval "$(chit shell-init)"
-#   cst () {
-#     chit set-theme "${1}"
-#     eval "$(chit export-env-vars)"
-#   }
-
-#   cs() {
-#     chit set-theme "${1}"
-#     eval "$(chit export-env-vars)"
-#     if [ -n "$TMUX" ]; then
-#       Reload tmux environment variables
-#     tmux source-file ~/.tmux.conf
-#     fi
-#   }
-# fi
 
 ########
 # WORK #
