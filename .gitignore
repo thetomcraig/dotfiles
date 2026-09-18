@@ -8,3 +8,5 @@ tags
 .envrc
 Alfred.alfredpreferences/workflows/user.workflow.C4B5ECEA-934A-45E7-904A-466BD579AFF4
 codex/skills/.system/*
+
+.vscode/settings.json
